@@ -26,7 +26,11 @@ export async function generateMetadata({
     robots: { index: true, follow: true },
     alternates: {
       canonical: `/${locale}/review/`,
-      languages: { en: "/en/review/", zh: "/zh/review/" },
+      languages: {
+        en: "/en/review/",
+        zh: "/zh/review/",
+        "x-default": "/en/review/",
+      },
     },
   };
 }

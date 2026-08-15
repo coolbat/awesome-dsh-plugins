@@ -26,7 +26,11 @@ export async function generateMetadata({
       : "Browse DeepSeek Harness plugins reviewed against immutable source evidence.",
     alternates: {
       canonical: `/${locale}/plugins/`,
-      languages: { en: "/en/plugins/", zh: "/zh/plugins/" },
+      languages: {
+        en: "/en/plugins/",
+        zh: "/zh/plugins/",
+        "x-default": "/en/plugins/",
+      },
     },
   };
 }

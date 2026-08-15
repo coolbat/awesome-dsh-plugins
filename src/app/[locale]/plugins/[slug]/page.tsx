@@ -44,6 +44,7 @@ export async function generateMetadata({
       languages: {
         en: `/en/plugins/${plugin.id}/`,
         zh: `/zh/plugins/${plugin.id}/`,
+        "x-default": `/en/plugins/${plugin.id}/`,
       },
     },
   };

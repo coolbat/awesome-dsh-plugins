@@ -19,7 +19,11 @@ export async function generateMetadata({
         : "Learn how DSH Plugin Index discovers, pins, statically inspects, and reviews plugin candidates.",
     alternates: {
       canonical: `/${locale}/methodology/`,
-      languages: { en: "/en/methodology/", zh: "/zh/methodology/" },
+      languages: {
+        en: "/en/methodology/",
+        zh: "/zh/methodology/",
+        "x-default": "/en/methodology/",
+      },
     },
   };
 }

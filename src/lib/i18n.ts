@@ -14,11 +14,14 @@ const messages = {
     },
     home: {
       eyebrow: "DISCOVERY · EVIDENCE · REVIEW",
-      title: "A clearer way to inspect DeepSeek Harness plugins",
+      title: "Find reviewed DeepSeek Harness plugins",
       description:
-        "Browse fixed-source records, separate capability signals from trust claims, and decide what deserves your own review.",
-      primaryAction: "Browse plugins",
-      secondaryAction: "Read the methodology",
+        "Search an evidence-led DSH plugin directory with pinned source commits, package structure, license details, compatibility signals, and transparent review notes.",
+      primaryAction: "Browse all plugins",
+      secondaryAction: "See how reviews work",
+      searchLabel: "Search the DSH plugin directory",
+      searchPlaceholder: "Plugin, repository, package, or capability",
+      searchAction: "Search",
       warning:
         "Third-party plugins are untrusted code. Inclusion means the native bundle structure was observed at one fixed commit; it is not a safety or compatibility endorsement.",
       sectionTitle: "Evidence before recommendation",
@@ -44,6 +47,52 @@ const messages = {
       latestTitle: "Browse the reviewed catalog",
       latestDescription:
         "Search by name, repository, category, compatibility statement, or observed capability signal.",
+      introEyebrow: "DEEPSEEK HARNESS PLUGIN DIRECTORY",
+      introTitle: "What is a DeepSeek Harness plugin?",
+      introParagraphs: [
+        "A DeepSeek Harness plugin is a bundle that extends the harness with tools, interfaces, skills, workflows, or external integrations. A native bundle connects a package manifest to a DSH patch at a specific source revision.",
+        "This directory helps developers discover DSH plugins without treating a topic tag or moving branch as proof. Every public record links back to immutable source evidence and keeps capability facts separate from trust decisions.",
+      ],
+      checklistTitle: "What each plugin record includes",
+      checklistItems: [
+        "Repository and full commit SHA",
+        "Package manifest and referenced DSH patch",
+        "Repository and package license declarations",
+        "Lifecycle hooks and material capability signals",
+        "Compatibility evidence and an explicit review note",
+      ],
+      checklistAction: "Read the complete review methodology",
+      faqEyebrow: "COMMON QUESTIONS",
+      faqTitle: "DeepSeek Harness plugin FAQ",
+      faqDescription:
+        "Short answers about discovery, review status, compatibility, safety, and catalog updates.",
+      faqs: [
+        {
+          question: "What is a DeepSeek Harness plugin?",
+          answer:
+            "It is a bundle that extends DeepSeek Harness with tools, interfaces, skills, workflows, or integrations. This index looks for the package manifest and DSH patch that define the bundle at one fixed commit.",
+        },
+        {
+          question: "How are DSH plugins discovered?",
+          answer:
+            "Automated discovery searches GitHub topics and structure-related queries. Matches enter a candidate queue only; they are not published until a fixed-source review is completed.",
+        },
+        {
+          question: "Does reviewed mean safe to install?",
+          answer:
+            "No. Reviewed means the repository structure and recorded evidence were inspected statically. The index does not execute third-party code, and static inspection cannot prove safe runtime behavior.",
+        },
+        {
+          question: "How do I check plugin compatibility?",
+          answer:
+            "Open the plugin record and compare its declared DSH versions, lifecycle scripts, package identity, patch, and pinned source against your own Harness version before installation.",
+        },
+        {
+          question: "How often is the plugin directory updated?",
+          answer:
+            "Candidate discovery runs on a schedule. Public catalog changes remain review-gated and appear after the reviewed data is merged into the main repository branch.",
+        },
+      ],
     },
     catalog: {
       eyebrow: "REVIEWED PLUGIN DIRECTORY",
@@ -142,11 +191,14 @@ const messages = {
     },
     home: {
       eyebrow: "发现 · 证据 · 审核",
-      title: "更清晰地检查 DeepSeek Harness 插件",
+      title: "查找经过审核的 DeepSeek Harness 插件",
       description:
-        "浏览固定源码记录，把能力信号与信任结论分开，再决定哪些插件值得你继续审查。",
-      primaryAction: "浏览插件",
-      secondaryAction: "阅读核验方法",
+        "搜索以证据为基础的 DSH 插件目录，查看固定源码、包结构、许可证、兼容性信号与透明审核备注。",
+      primaryAction: "浏览全部插件",
+      secondaryAction: "了解审核方法",
+      searchLabel: "搜索 DSH 插件目录",
+      searchPlaceholder: "插件、仓库、包名或能力",
+      searchAction: "搜索",
       warning:
         "第三方插件是不受信任的代码。收录仅代表在一个固定提交上观察到原生 Bundle 结构，并不构成安全或兼容性背书。",
       sectionTitle: "先看证据，再谈推荐",
@@ -172,6 +224,52 @@ const messages = {
       latestTitle: "浏览已审核目录",
       latestDescription:
         "可以按名称、仓库、分类、兼容性声明或观察到的能力信号搜索。",
+      introEyebrow: "DEEPSEEK HARNESS 插件目录",
+      introTitle: "什么是 DeepSeek Harness 插件？",
+      introParagraphs: [
+        "DeepSeek Harness 插件是一种扩展 Bundle，可为 Harness 增加工具、界面、Skills、工作流或外部集成。原生 Bundle 会在一个确定的源码版本上，把 package manifest 与 DSH patch 连接起来。",
+        "这个目录帮助开发者发现 DSH 插件，但不会把 Topic 标签或持续变化的分支当成证明。每条公开记录都链接到不可变源码证据，并把能力事实与信任判断分开呈现。",
+      ],
+      checklistTitle: "每条插件记录包含什么",
+      checklistItems: [
+        "源码仓库与完整提交 SHA",
+        "Package manifest 与引用的 DSH patch",
+        "仓库和包的许可证声明",
+        "生命周期脚本与重要能力信号",
+        "兼容性证据与明确的审核备注",
+      ],
+      checklistAction: "阅读完整审核方法",
+      faqEyebrow: "常见问题",
+      faqTitle: "DeepSeek Harness 插件常见问题",
+      faqDescription:
+        "快速了解插件发现、审核状态、兼容性、安全边界与目录更新方式。",
+      faqs: [
+        {
+          question: "什么是 DeepSeek Harness 插件？",
+          answer:
+            "它是为 DeepSeek Harness 增加工具、界面、Skills、工作流或集成能力的 Bundle。本索引会在固定提交上检查定义 Bundle 的 package manifest 与 DSH patch。",
+        },
+        {
+          question: "DSH 插件是如何被发现的？",
+          answer:
+            "自动发现流程会搜索 GitHub Topic 和结构相关关键词。匹配结果只会进入候选队列，完成固定源码审核之前不会公开发布。",
+        },
+        {
+          question: "“已审核”是否代表可以安全安装？",
+          answer:
+            "不是。已审核只表示仓库结构与记录的证据经过静态检查。目录不会执行第三方代码，而静态检查也无法证明运行时绝对安全。",
+        },
+        {
+          question: "如何判断插件是否兼容？",
+          answer:
+            "打开插件记录，比较其声明的 DSH 版本、生命周期脚本、包身份、patch 和固定源码，再与自己使用的 Harness 版本核对。",
+        },
+        {
+          question: "插件目录多久更新一次？",
+          answer:
+            "候选发现会按计划自动运行；公开目录仍需人工审核，只有审核后的数据合并到仓库 main 分支后才会更新。",
+        },
+      ],
     },
     catalog: {
       eyebrow: "已审核插件目录",
