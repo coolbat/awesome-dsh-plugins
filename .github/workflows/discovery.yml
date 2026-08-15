@@ -1,0 +1,159 @@
+name: Discover DSH plugin candidates
+
+on:
+  schedule:
+    - cron: "17 1,7,13,19 * * *"
+    - cron: "41 3 * * 0"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Discovery mode
+        required: true
+        default: incremental
+        type: choice
+        options:
+          - incremental
+          - full
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: catalog-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - name: Restore the checkpoint and open review queue
+        run: |
+          git fetch origin bot/catalog-discovery-state:refs/remotes/origin/bot/catalog-discovery-state || true
+          git fetch origin bot/catalog-discovery:refs/remotes/origin/bot/catalog-discovery || true
+
+          if git show-ref --verify --quiet refs/remotes/origin/bot/catalog-discovery-state; then
+            git restore \
+              --source=refs/remotes/origin/bot/catalog-discovery-state \
+              --worktree \
+              -- data/discovery-state.json reports/discovery/latest.json
+          fi
+
+          if git show-ref --verify --quiet refs/remotes/origin/bot/catalog-discovery; then
+            git restore \
+              --source=refs/remotes/origin/bot/catalog-discovery \
+              --worktree \
+              -- data/candidates.json
+          fi
+      - name: Run bounded static discovery
+        id: discovery
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FULL_DISCOVERY: ${{ (github.event_name == 'workflow_dispatch' && inputs.mode == 'full') || github.event.schedule == '41 3 * * 0' }}
+        run: |
+          if [ "$FULL_DISCOVERY" = "true" ]; then
+            npm run discover -- --full
+          else
+            npm run discover
+          fi
+      - run: npm run validate:candidates
+      - name: Save discovery outputs
+        run: |
+          mkdir -p "$RUNNER_TEMP/dsh-discovery"
+          cp data/candidates.json "$RUNNER_TEMP/dsh-discovery/candidates.json"
+          cp data/discovery-state.json "$RUNNER_TEMP/dsh-discovery/discovery-state.json"
+          cp reports/discovery/latest.json "$RUNNER_TEMP/dsh-discovery/latest.json"
+      - name: Persist the discovery checkpoint
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git restore --worktree -- data/candidates.json data/discovery-state.json reports/discovery/latest.json
+          git switch -C bot/catalog-discovery-state main
+          cp "$RUNNER_TEMP/dsh-discovery/discovery-state.json" data/discovery-state.json
+          cp "$RUNNER_TEMP/dsh-discovery/latest.json" reports/discovery/latest.json
+          git add data/discovery-state.json reports/discovery/latest.json
+
+          if git diff --cached --quiet; then
+            echo "Discovery checkpoint is unchanged."
+          else
+            git commit -m "chore: update discovery checkpoint"
+            git push --force-with-lease origin bot/catalog-discovery-state
+          fi
+      - name: Open or refresh the candidate review PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ensure_review_pr() {
+            open_pr=$(gh pr list --state open --head bot/catalog-discovery --json number --jq '.[0].number // empty')
+            if [ -n "$open_pr" ]; then
+              echo "Candidate review PR #$open_pr is already open."
+              return
+            fi
+
+            closed_pr=$(gh pr list --state closed --head bot/catalog-discovery --json number,mergedAt --jq '[.[] | select(.mergedAt == null)][0].number // empty')
+            if [ -n "$closed_pr" ] && gh pr reopen "$closed_pr"; then
+              return
+            fi
+
+            gh pr create \
+              --base main \
+              --head bot/catalog-discovery \
+              --title "chore: review discovered DSH plugin candidates" \
+              --body "Automated fixed-source candidate discovery. This PR updates the review queue only; it does not publish plugins or execute third-party code."
+          }
+
+          git switch main
+          cp "$RUNNER_TEMP/dsh-discovery/candidates.json" data/candidates.json
+
+          if git show-ref --verify --quiet refs/remotes/origin/bot/catalog-discovery; then
+            comparison=refs/remotes/origin/bot/catalog-discovery
+          else
+            comparison=HEAD
+          fi
+
+          if git diff --quiet "$comparison" -- data/candidates.json; then
+            if [ "$comparison" != "HEAD" ]; then
+              if ! git diff --quiet main "$comparison" -- data/candidates.json; then
+                ensure_review_pr
+                exit 0
+              fi
+
+              open_pr=$(gh pr list --state open --head bot/catalog-discovery --json number --jq '.[0].number // empty')
+              if [ -n "$open_pr" ]; then
+                gh pr close "$open_pr" --comment "The candidate queue now matches main; closing this empty review."
+              fi
+            fi
+            echo "No candidate evidence changed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -C bot/catalog-discovery main
+          cp "$RUNNER_TEMP/dsh-discovery/candidates.json" data/candidates.json
+          git add data/candidates.json
+
+          if git diff --cached --quiet; then
+            git push --force-with-lease origin bot/catalog-discovery
+            gh pr close bot/catalog-discovery --comment "The candidate queue now matches main; closing this empty review." || true
+            exit 0
+          fi
+
+          git commit -m "chore: refresh DSH plugin candidates"
+          git push --force-with-lease origin bot/catalog-discovery
+          ensure_review_pr
+      - name: Preserve fail-closed discovery status
+        if: steps.discovery.outcome == 'failure'
+        run: |
+          echo "Discovery was partial or failed; the review queue was preserved without advancing the success watermark."
+          exit 1

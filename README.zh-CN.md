@@ -22,6 +22,33 @@ patch、许可证线索、包身份、生命周期脚本和重要能力信号。
 > 结构核验不等于安全审计，也不等于运行兼容性测试。DSH 插件会以你的本机权限
 > 执行第三方代码。安装前请阅读源码、检查生命周期脚本，并优先使用不可变版本。
 
+## 网站
+
+本仓库同时也是双语静态网站的源码。网站、自动生成的 README 目录、插件详情页、
+审核记录、sitemap 和统计数字全部读取
+[`data/plugins.json`](./data/plugins.json)，因此目录修改与展示页面会在同一个提交中
+发布，不需要跨仓库同步。
+
+```bash
+npm install
+npm run dev
+```
+
+生产校验使用 `npm run check && npm run build`，静态文件输出到 `out/`，可直接部署到
+Cloudflare Pages。参见[部署说明](./docs/DEPLOYMENT.md)。网站不包含 AI、登录、
+数据库、支付，也不会执行任何第三方插件代码。
+
+## 自动发现候选
+
+GitHub Actions 每 6 小时执行一次有预算上限的 GitHub API 增量发现，每周再执行一次
+完整查询。流程会把命中仓库解析到 40 位提交，只读取 `package.json` 和其引用的
+patch 路径，不 clone、不安装、也不执行第三方代码。只有候选队列发生实质变化时
+才会创建或刷新审核 PR；增量水位保存在独立 bot 分支，因此空运行不会制造审核 PR
+噪音。候选绝不会自动写入 `data/plugins.json`。
+
+查询词与请求预算位于 [`config/discovery.json`](./config/discovery.json)。维护者也可
+在本地运行 `GITHUB_TOKEN=... npm run discover -- --dry-run`。
+
 ## 这里有什么不同
 
 - **固定证据：** 每个判断都链接到完整的 40 位提交。

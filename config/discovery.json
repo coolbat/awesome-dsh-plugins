@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "github": {
+    "queries": [
+      "topic:dsh-plugin",
+      "topic:dsh-external",
+      "\"DeepSeek Harness\" plugin in:name,description,readme",
+      "\"dsh.bundle.patch\" in:readme",
+      "deepseek-harness in:name,description,readme"
+    ],
+    "incrementalLookbackHours": 48,
+    "firstRunLookbackDays": 30,
+    "maxPagesPerQuery": 2,
+    "maxRepositoriesPerRun": 60,
+    "maxManifestsPerRepository": 30,
+    "maxRepositoryTreeEntries": 20000,
+    "maxResponseBytes": 5000000,
+    "requestTimeoutMs": 15000
+  }
+}

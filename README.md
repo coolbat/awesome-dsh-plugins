@@ -24,6 +24,37 @@ discovery list with fixed-source evidence and an explicit hold queue.
 > DSH plugins execute third-party code with your permissions. Read the source,
 > inspect lifecycle scripts, and prefer immutable versions before installing.
 
+## Website
+
+This repository is also the source for the bilingual static website. The site,
+generated README catalogs, plugin detail pages, review log, sitemap, and counts
+all read from [`data/plugins.json`](./data/plugins.json), so a reviewed catalog
+change and its presentation ship in the same commit.
+
+```bash
+npm install
+npm run dev
+```
+
+Production verification uses `npm run check && npm run build`. The static
+export is written to `out/` and is ready for Cloudflare Pages. See the
+[deployment guide](./docs/DEPLOYMENT.md). No AI, authentication, database,
+payment, or third-party plugin execution is part of the website.
+
+## Automatic candidate discovery
+
+GitHub Actions runs bounded GitHub API discovery every six hours and a full
+query pass weekly. It resolves each matching repository to a 40-character
+commit, inspects `package.json` and the referenced patch path without cloning,
+installing, or executing third-party code, and opens a review PR only when the
+candidate queue materially changes. A separate bot branch stores the incremental
+checkpoint, so empty runs do not create or churn review PRs. Candidates are
+never promoted into `data/plugins.json` automatically.
+
+The query set and request budgets live in
+[`config/discovery.json`](./config/discovery.json). A maintainer can also run
+`GITHUB_TOKEN=... npm run discover -- --dry-run` locally.
+
 ## What is different here
 
 - **Immutable evidence:** every decision links to a full 40-character commit.

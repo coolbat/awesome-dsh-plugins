@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "mode": null,
+  "observedAt": null,
+  "partial": false,
+  "queries": [],
+  "summary": {
+    "repositoriesObserved": 0,
+    "bundleManifestsFound": 0,
+    "errors": 0
+  },
+  "errors": []
+}
