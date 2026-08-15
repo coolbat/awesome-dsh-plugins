@@ -1,0 +1,26 @@
+name: Correct a catalog entry
+description: Report stale, incomplete, or incorrect evidence.
+title: "[Correction]: "
+labels:
+  - correction
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Catalog entry
+      placeholder: owner/repository
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Immutable supporting evidence
+      description: Link a full commit and the exact source paths.
+    validations:
+      required: true

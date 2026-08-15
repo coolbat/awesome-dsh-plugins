@@ -1,0 +1,59 @@
+name: Submit a plugin
+description: Propose a fixed-source DSH plugin candidate for review.
+title: "[Plugin]: "
+labels:
+  - candidate
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submissions are evidence records, not endorsement requests. Use immutable source URLs.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      placeholder: owner/repository
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Full commit SHA
+      placeholder: 40 hexadecimal characters
+    validations:
+      required: true
+  - type: input
+    id: manifest
+    attributes:
+      label: Manifest path
+      placeholder: package.json
+    validations:
+      required: true
+  - type: input
+    id: patch
+    attributes:
+      label: Referenced patch path
+      placeholder: cordis.patch.yml
+    validations:
+      required: true
+  - type: input
+    id: identity
+    attributes:
+      label: Package or Git-source identity
+      placeholder: package-name or github:owner/repository#sha
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: License, lifecycle, compatibility, and capability evidence
+      description: Keep unknown fields explicit. Do not paste secrets.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Review boundary
+      options:
+        - label: I understand that inclusion is not a security or compatibility endorsement.
+          required: true

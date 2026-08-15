@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/coolbat/awesome-dsh-plugins/schema/plugin-catalog.schema.json",
+  "title": "Awesome DSH Plugins catalog",
+  "type": "object",
+  "required": ["schemaVersion", "snapshot", "plugins"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "snapshot": {
+      "type": "object",
+      "required": ["reviewedAt", "dshContract", "discoverySources"]
+    },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "repository",
+          "package",
+          "category",
+          "status",
+          "summaryEn",
+          "summaryZh",
+          "branch",
+          "commit",
+          "manifest",
+          "patch",
+          "repoLicense",
+          "packageLicense",
+          "compatibility",
+          "lifecycle",
+          "signals",
+          "noteEn",
+          "noteZh"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "repository": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+          },
+          "package": {
+            "type": ["string", "null"]
+          },
+          "category": {
+            "type": "string"
+          },
+          "status": {
+            "enum": ["reviewed", "held", "excluded"]
+          },
+          "summaryEn": {
+            "type": "string",
+            "minLength": 1
+          },
+          "summaryZh": {
+            "type": "string",
+            "minLength": 1
+          },
+          "branch": {
+            "type": "string",
+            "minLength": 1
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "manifest": {
+            "type": "string",
+            "minLength": 1
+          },
+          "patch": {
+            "type": ["string", "null"]
+          },
+          "repoLicense": {
+            "type": "string",
+            "minLength": 1
+          },
+          "packageLicense": {
+            "type": "string",
+            "minLength": 1
+          },
+          "compatibility": {
+            "enum": [
+              "declared-rc6",
+              "mixed",
+              "unknown",
+              "behind-baseline",
+              "unsupported"
+            ]
+          },
+          "lifecycle": {
+            "type": "string",
+            "minLength": 1
+          },
+          "signals": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "noteEn": {
+            "type": "string",
+            "minLength": 1
+          },
+          "noteZh": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

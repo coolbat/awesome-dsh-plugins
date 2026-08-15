@@ -1,0 +1,16 @@
+{
+  "name": "awesome-dsh-plugins",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An evidence-led, bilingual directory of DeepSeek Harness plugins.",
+  "scripts": {
+    "generate": "node scripts/generate-readmes.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check": "npm run validate && node scripts/generate-readmes.mjs --check"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
