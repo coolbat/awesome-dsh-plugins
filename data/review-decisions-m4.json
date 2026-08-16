@@ -1,0 +1,409 @@
+{
+  "milestone": "M4",
+  "reviewedAt": "2026-08-16",
+  "sourceCommit": "24654ed5260cfef3ca11568487d69c5bf9f1c42a",
+  "decisions": [
+    {
+      "sequence": 226,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tonywang-hub-dsh-plugin-trust-center",
+      "reason": null
+    },
+    {
+      "sequence": 227,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit invalid-patch-schema test fixture for the Trust Center."
+    },
+    {
+      "sequence": 228,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit example registry bundle fixture for the Trust Center."
+    },
+    {
+      "sequence": 229,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit risky-bundle test fixture for the Trust Center."
+    },
+    {
+      "sequence": 230,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit safe-bundle test fixture for the Trust Center."
+    },
+    {
+      "sequence": 231,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tough-respawn-dsh-defensive-prompt-injection",
+      "reason": null
+    },
+    {
+      "sequence": 232,
+      "disposition": "catalog-reviewed",
+      "catalogId": "trynewthin-dsh-subagent-roles",
+      "reason": null
+    },
+    {
+      "sequence": 233,
+      "disposition": "catalog-held",
+      "catalogId": "uckkk-dsh-html-parse",
+      "reason": null
+    },
+    {
+      "sequence": 234,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ulabe-dsh-conversation-nav",
+      "reason": null
+    },
+    {
+      "sequence": 235,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ultronen-dsh-archived-chats",
+      "reason": null
+    },
+    {
+      "sequence": 236,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ustc-xef2-dsh-llm-ustc",
+      "reason": null
+    },
+    {
+      "sequence": 237,
+      "disposition": "catalog-reviewed",
+      "catalogId": "uwu9039-dsh-unarchive",
+      "reason": null
+    },
+    {
+      "sequence": 238,
+      "disposition": "catalog-reviewed",
+      "catalogId": "veritas501-dsh-chatflow-rail",
+      "reason": null
+    },
+    {
+      "sequence": 239,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wallpap-dsh-compact-activity",
+      "reason": null
+    },
+    {
+      "sequence": 240,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wangxing-git-dsh-autogate",
+      "reason": null
+    },
+    {
+      "sequence": 241,
+      "disposition": "catalog-held",
+      "catalogId": "weiye6-dsh-handoff",
+      "reason": null
+    },
+    {
+      "sequence": 242,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-weixin package points to caoyilearnai/dsh-weixin, while this candidate documents only a placeholder Git owner."
+    },
+    {
+      "sequence": 243,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 244,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 245,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 246,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 247,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 248,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 249,
+      "disposition": "catalog-reviewed",
+      "catalogId": "whaleharness-whale-status",
+      "reason": null
+    },
+    {
+      "sequence": 250,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 251,
+      "disposition": "catalog-reviewed",
+      "catalogId": "whitefirer-dsh-browser-fs",
+      "reason": null
+    },
+    {
+      "sequence": 252,
+      "disposition": "catalog-reviewed",
+      "catalogId": "whyihaveyou-dsh-suite-all",
+      "reason": null
+    },
+    {
+      "sequence": 253,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Uninstantiated create-dsh-plugin event template containing placeholder package metadata."
+    },
+    {
+      "sequence": 254,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Uninstantiated create-dsh-plugin tool template containing placeholder package metadata."
+    },
+    {
+      "sequence": 255,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Uninstantiated create-dsh-plugin Web UI template containing placeholder package metadata."
+    },
+    {
+      "sequence": 256,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one aggregate record."
+    },
+    {
+      "sequence": 257,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one aggregate record."
+    },
+    {
+      "sequence": 258,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one aggregate record."
+    },
+    {
+      "sequence": 259,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one aggregate record."
+    },
+    {
+      "sequence": 260,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one aggregate record."
+    },
+    {
+      "sequence": 261,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one aggregate record."
+    },
+    {
+      "sequence": 262,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wjnct55555-dsh-achievements",
+      "reason": null
+    },
+    {
+      "sequence": 263,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wloops-dsh-git-worktree",
+      "reason": null
+    },
+    {
+      "sequence": 264,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wqx-txdsyl-dsh-ds-attach",
+      "reason": null
+    },
+    {
+      "sequence": 265,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wubing2023-deepsee",
+      "reason": null
+    },
+    {
+      "sequence": 266,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wulun811-dsh-plugin-vet",
+      "reason": null
+    },
+    {
+      "sequence": 267,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xczhanjun-dsh-lazeword",
+      "reason": null
+    },
+    {
+      "sequence": 268,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xenia0922-dsh-opencode-go-usage",
+      "reason": null
+    },
+    {
+      "sequence": 269,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 270,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xiluovo-dsh-session-timeline",
+      "reason": null
+    },
+    {
+      "sequence": 271,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xlight-dsh-visionary",
+      "reason": null
+    },
+    {
+      "sequence": 272,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xq-rxslcq-dsh-launcher",
+      "reason": null
+    },
+    {
+      "sequence": 273,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xsoc1-math-research-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 274,
+      "disposition": "catalog-held",
+      "catalogId": "xu-kai-quan-dsh-tool-diagnose",
+      "reason": null
+    },
+    {
+      "sequence": 275,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yan-zero-dsh-remote-ssh",
+      "reason": null
+    },
+    {
+      "sequence": 276,
+      "disposition": "catalog-held",
+      "catalogId": "yelebai-dsh-plugin-marketplace",
+      "reason": null
+    },
+    {
+      "sequence": 277,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yhlooo-dsh-bridges",
+      "reason": null
+    },
+    {
+      "sequence": 278,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yjlzsl-dsh-furrhaven-toolbox",
+      "reason": null
+    },
+    {
+      "sequence": 279,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zasenjc-dsh-plugin-store",
+      "reason": null
+    },
+    {
+      "sequence": 280,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zby1211-cordis-transfer-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 281,
+      "disposition": "catalog-held",
+      "catalogId": "zcma11-dsh-vision-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 282,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zenjibad-dsh-cost-usage-status",
+      "reason": null
+    },
+    {
+      "sequence": 283,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zeroa234-dsh-tool-gitbash",
+      "reason": null
+    },
+    {
+      "sequence": 284,
+      "disposition": "catalog-held",
+      "catalogId": "zerodegress-dsh-model-redactor",
+      "reason": null
+    },
+    {
+      "sequence": 285,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zfu691531-dsh-realtime-voice",
+      "reason": null
+    },
+    {
+      "sequence": 286,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zhangxiang1993621-dsh-context-panel",
+      "reason": null
+    },
+    {
+      "sequence": 287,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zhouzhencheng07-dsh-free-search",
+      "reason": null
+    },
+    {
+      "sequence": 288,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zhuiyueya-dsh-im-gateway",
+      "reason": null
+    },
+    {
+      "sequence": 289,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zoahdev-dsh-poison-guard",
+      "reason": null
+    },
+    {
+      "sequence": 290,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ztlovelsw-dsh-model-profile",
+      "reason": null
+    },
+    {
+      "sequence": 291,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zyar-er-dsh-notify-bell",
+      "reason": null
+    },
+    {
+      "sequence": 292,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zynieie-dsh-lan-fix",
+      "reason": null
+    }
+  ]
+}

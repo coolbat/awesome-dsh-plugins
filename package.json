@@ -11,12 +11,13 @@
     "generate": "node scripts/generate-readmes.mjs",
     "discover": "node scripts/discover.mjs",
     "validate:candidates": "node scripts/validate-candidates.mjs",
-    "validate": "node scripts/validate.mjs && npm run validate:candidates",
+    "validate:review": "node scripts/validate-review-ledger.mjs",
+    "validate": "node scripts/validate.mjs && npm run validate:candidates && npm run validate:review",
     "docs:check": "node scripts/generate-readmes.mjs --check",
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/**/*.test.ts",
-    "lint": "prettier --check src tests scripts/discover.mjs scripts/validate-candidates.mjs scripts/lib/discovery.mjs scripts/lib/discovery.d.mts config/discovery.json data/candidates.json data/discovery-state.json data/tombstones.json reports/discovery/latest.json .github/workflows next.config.ts tsconfig.json package.json",
-    "format": "prettier --write src tests scripts/discover.mjs scripts/validate-candidates.mjs scripts/lib/discovery.mjs scripts/lib/discovery.d.mts config/discovery.json data/candidates.json data/discovery-state.json data/tombstones.json reports/discovery/latest.json .github/workflows next.config.ts tsconfig.json package.json",
+    "lint": "prettier --check src tests scripts/discover.mjs scripts/validate-candidates.mjs scripts/validate-review-ledger.mjs scripts/lib/discovery.mjs scripts/lib/discovery.d.mts scripts/lib/review-ledger.mjs scripts/lib/review-ledger.d.mts config/discovery.json data/candidates.json data/discovery-state.json data/review-*.json data/tombstones.json reports/discovery/latest.json .github/workflows next.config.ts tsconfig.json package.json",
+    "format": "prettier --write src tests scripts/discover.mjs scripts/validate-candidates.mjs scripts/validate-review-ledger.mjs scripts/lib/discovery.mjs scripts/lib/discovery.d.mts scripts/lib/review-ledger.mjs scripts/lib/review-ledger.d.mts config/discovery.json data/candidates.json data/discovery-state.json data/review-*.json data/tombstones.json reports/discovery/latest.json .github/workflows next.config.ts tsconfig.json package.json",
     "check": "npm run validate && npm run docs:check && npm run typecheck && npm run test && npm run lint"
   },
   "dependencies": {
