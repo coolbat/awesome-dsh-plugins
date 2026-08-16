@@ -300,7 +300,7 @@
       "name": "dsh-context",
       "repository": "bowenliang123/dsh-context",
       "package": "dsh-context",
-      "category": "UI & Workspace",
+      "category": "Memory",
       "status": "reviewed",
       "summaryEn": "Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.",
       "summaryZh": "上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。",
