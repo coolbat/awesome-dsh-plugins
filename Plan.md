@@ -51,14 +51,14 @@ Stop conditions: Stop before executing third-party code, guessing identity or li
 Evidence: 2026-08-16T23:19:10+08:00; M4-A11-S1-PASS; all 67 final-wave dispositions complete, catalog 269 total with 235 reviewed, 33 held, and 1 excluded, completion mode reports 0 pending, 34 tests pass, lint passes, and Next.js generated 550 static pages
 
 ## Milestone M5: Reconcile, deliver, and verify the review branch
-Status: in_progress
+Status: done
 Priority: P1
 Dependencies: M4
 Scope: Prove complete ledger coverage, regenerate derived catalogs, run final branch gates, push the dedicated branch, and open or refresh its review pull request.
 Acceptance: All 292 keys are dispositioned exactly once, final tests and build pass, branch CI is green, and a review PR exists without merge or production deployment.
 Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 Stop conditions: Stop before merge, production deployment, deleting evidence, or claiming runtime safety or compatibility.
-Evidence: 2026-08-16T23:21:31+08:00; M5-A13-PR-OPEN; commit 5f01b10526e6b32472bd7290492728ec6ee5ddd9 is pushed on codex/review-remaining-292 and review PR #4 is open; remote CI remains to be verified
+Evidence: 2026-08-16T23:24:04+08:00; M5-A14-CI-PASS; PR #4 at 29c02d0fa5c47db2df670a8c444f81da56111b9e is clean, quality and Cloudflare Pages checks pass, and the branch preview returns HTTP 200 without merge or production deployment
 
 ## Queue Notes
 

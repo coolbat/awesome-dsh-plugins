@@ -401,7 +401,8 @@
 ## Closure Evidence
 
 - Final required levels: S1 and S2
-- Delivery artifact: pending dedicated branch and review PR
+- Delivery artifact: branch `codex/review-remaining-292`, PR #4, and branch
+  preview
 - User confirmation: task contract confirmed; final confirmation pending
 - Cleanup action and result: review branch retained
 - Durable promotion: none
@@ -675,6 +676,32 @@
 - Pull request: https://github.com/coolbat/awesome-dsh-plugins/pull/4
 - Result: branch pushed and review PR open; merge and deployment untouched
 - Next action: verify remote CI
+
+### Failure M5-F3
+
+- Milestone: M5
+- Attempt number: 14
+- Result: the first closure synchronization patch was rejected atomically on
+  stale context
+- Repair: applied smaller exact patches; no partial changes from the rejected
+  patch were retained
+- Blocker class: repo_fixable and repaired
+
+### Evidence M5-A14-CI-PASS
+
+- Milestone: M5
+- Attempt number: 14
+- Branch: `codex/review-remaining-292`
+- Verified commit: `29c02d0fa5c47db2df670a8c444f81da56111b9e`
+- Pull request: https://github.com/coolbat/awesome-dsh-plugins/pull/4
+- Preview: https://codex-review-remaining-292.awesome-dsh-plugins.pages.dev
+- Result: PR merge state CLEAN; GitHub quality and Cloudflare Pages checks
+  successful; branch preview returned HTTP 200; remote branch SHA matched
+- Known failure: M5-F1 through M5-F3 repaired and retained
+- Blocker class: none
+- Boundary: merge and production deployment untouched; static review does not
+  certify runtime compatibility or safety
+- Next action: human review and explicit merge decision
 
 ## Morning Handoff Evidence
 

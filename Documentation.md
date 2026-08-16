@@ -6,13 +6,13 @@
   `/Users/coolbat/awesome-dsh-plugins`
 - Delivery scope: branch and review PR only
 - Needs-decision queue: 0/3
-- Active milestone: M2
-- Current status: in_progress
+- Active milestone: none; M0 through M5 are complete
+- Current status: complete
 - Approved decisions in force: freeze PR #2 head `24654ed`; statically process
   all 292 ready records; do not merge or deploy
 - Changed assumptions: none
-- Known failures: M1-F1 through M1-F8 repaired; M2-F1 source acquisition is
-  partially active and M2-F2 synchronization drift is repaired
+- Known failures: all recorded failures are repaired or explicitly
+  dispositioned and retained in the evidence history
 - Residual risks: candidate repositories or registry metadata may disappear;
   static review cannot prove safety or runtime compatibility
 
@@ -488,6 +488,24 @@
   agent-loop-state.md=2026-08-16T23:21:31+08:00;
   release-evidence.md=M5-A13-PR-OPEN
 
+### Attempt 14 M5 remote verification and closure
+
+- Milestone: M5
+- Changed assumptions: none
+- Command or observation: verified PR #4 head and merge state, GitHub quality
+  and Cloudflare Pages checks, the branch-preview HTTP response, and the remote
+  branch SHA
+- Result: pass at `29c02d0fa5c47db2df670a8c444f81da56111b9e`;
+  PR state CLEAN, both checks successful, and the branch preview returned HTTP
+  200 without merge or production deployment
+- Known failure: M5-F1 and M5-F2 repaired and retained; M5-F3 closure patch
+  rejected stale context atomically and was repaired with exact patches
+- Blocker class: none
+- Next action: human review of PR #4 and an explicit merge decision
+- Synced surfaces: Plan.md=M5 done;
+  agent-loop-state.md=2026-08-16T23:24:04+08:00;
+  release-evidence.md=M5-A14-CI-PASS
+
 ## Morning Handoff
 
 - Stop reason and limits reached: none
@@ -503,8 +521,11 @@
 
 ## Closure Record
 
-- Final test levels and evidence: pending
-- Delivery state: local dedicated branch
+- Final test levels and evidence: S1 and S2 pass locally; remote quality and
+  Cloudflare Pages checks pass; branch preview returns HTTP 200
+- Delivery state: dedicated branch `codex/review-remaining-292`, PR #4, and
+  branch preview; merge and production deployment untouched
 - User confirmation: task contract confirmed; final acceptance pending
-- Cleanup candidates and status: review branch retained
+- Cleanup candidates and status: review branch retained until the user accepts
+  or rejects PR #4
 - Durable knowledge promoted: none

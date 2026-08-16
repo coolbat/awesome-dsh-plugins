@@ -13,10 +13,12 @@ Needs-decision WIP limit: 3
 
 ## Selected Milestone
 
-- Milestone: M2
-- Approved scope boundary: next selection may statically review frozen records 76 through 150 and update only their ledger dispositions plus evidence-complete catalog records
-- Required validation gate: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
-- Stop conditions: stop before executing third-party code, guessing evidence, publishing an unresolved record as reviewed, or changing methodology
+- Milestone: none; M0 through M5 are complete
+- Approved scope boundary: no additional implementation work; PR #4 awaits
+  human review
+- Required validation gate: completed locally and remotely
+- Stop conditions: stop before merge, production deployment, or claiming
+  runtime safety or compatibility
 
 ## Decision Rules
 
@@ -318,11 +320,30 @@ Needs-decision WIP limit: 3
 - Synchronized status: Plan.md=in_progress; Documentation.md=updated;
   agent-loop-state.md=updated; release-evidence.md=updated
 
+### Attempt 14
+
+- Selected milestone: M5
+- Changed assumptions: none
+- Action: verify the remote review delivery and close the task contract
+- Command or observation: PR head and merge-state inspection, GitHub quality
+  and Cloudflare Pages checks, preview HTTP request, and remote SHA comparison
+- Test level and environment: S2; GitHub and Cloudflare branch preview
+- Result: pass at `29c02d0fa5c47db2df670a8c444f81da56111b9e`;
+  PR #4 is CLEAN, both remote checks pass, and the branch preview returns HTTP
+  200
+- Known failure: M5-F1 and M5-F2 repaired and retained; M5-F3 closure patch
+  rejected stale context atomically and was repaired with exact patches
+- Blocker class: none
+- Next action: hand PR #4 to the user for review; do not merge or deploy
+- Synchronized status: Plan.md=M5 done; Documentation.md=updated;
+  agent-loop-state.md=complete; release-evidence.md=M5-A14-CI-PASS
+
 ## Closure
 
 - Final required levels: S1 and S2
 - Final delivery state: dedicated branch and review PR only
-- Change explainer / post-change quiz: pending final scope assessment
-- User confirmation: pending
+- Change explainer / post-change quiz: not required for this static catalog and
+  review-ledger change
+- User confirmation: task contract confirmed; final PR acceptance pending
 - Cleanup candidates: dedicated branch after user accepts or rejects the PR
 - Cleanup status: retained
