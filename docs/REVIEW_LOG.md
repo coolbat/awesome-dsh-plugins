@@ -34,3 +34,24 @@ volatile and do not establish trust, compatibility, or installability.
 - Execution boundary: GitHub metadata and fixed-commit manifests, patches,
   repository trees, and source text only; no package, lifecycle hook, plugin,
   helper, browser, server, native dependency, or test suite was executed.
+
+## 2026-08-16 — Automated queue review batch 2
+
+- Input: PR #2 at candidate head
+  `bfb31d901feabc4e79033ed2973e2096899f0825`.
+- Scope: twenty distinct current bundles selected after separating archive
+  versions, examples, fixtures, core mirrors, and duplicate manifests.
+- Decisions: 19 reviewed, 1 held.
+- Held: `abab996/dsh-autonomy` because its documented unscoped npm name
+  resolves to another public repository even though local source installation
+  is separately documented.
+- Identity notes: Git-source evidence, rather than colliding npm names, is
+  recorded for `2160039878-cyber/dsh-plugin-market` and
+  `Aisland-SJL/dsh-usage`.
+- Unpublished blocker: `apbigking-cell/dsh-plugin-square` became unavailable
+  after discovery and could not be reproduced, so it was not added to the
+  catalog or counted in the twenty fixed-source decisions.
+- Execution boundary: fixed-commit manifests, patches, licenses, documentation,
+  source text, repository metadata, and registry metadata only; no package,
+  lifecycle hook, plugin, installer, remote binary, browser, server,
+  subprocess, native helper, or test suite was executed.
