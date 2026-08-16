@@ -55,3 +55,25 @@ volatile and do not establish trust, compatibility, or installability.
   source text, repository metadata, and registry metadata only; no package,
   lifecycle hook, plugin, installer, remote binary, browser, server,
   subprocess, native helper, or test suite was executed.
+
+## 2026-08-16 — Automated queue review batch 3
+
+- Input: PR #2 at candidate head
+  `0ebcdc0a64534b6a1ef66b30a00f50329afc567e`.
+- Scope: twenty distinct current bundles selected after separating archive,
+  example, test, and duplicate manifests from installable plugin candidates.
+- Decisions: 16 reviewed, 4 held.
+- Held: `DimitriLIAN/dsh-habits` because its README uses a placeholder owner
+  in the installation target and the npm identity does not resolve.
+- Held: `dkjsiogu/dsh-path-browser` because the fixed source has no README or
+  author-documented public installation identity and the npm name does not
+  resolve.
+- Held: `DosterBool/dsh-shutup` because no public installation documentation
+  or resolvable package target was found at the fixed commit.
+- Held: `dshplugin-me/dsh-precedent` because its author states that the
+  documented `v0.1.0` Git target is not tagged and will not currently resolve.
+- Execution boundary: fixed-commit manifests, patches, licenses, documentation,
+  source text, repository metadata, and registry metadata only; no package,
+  lifecycle hook, plugin, installer, remote binary, browser, server,
+  subprocess, native helper, file operation, model request, or test suite was
+  executed.
