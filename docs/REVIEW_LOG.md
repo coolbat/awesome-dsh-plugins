@@ -19,3 +19,18 @@ The initial set combines two focused samples: a topic-led capability sample and
 a follow-up sample drawn from the broad Awesome DSH list. Stars were observed
 during discovery but deliberately omitted from this catalog because they are
 volatile and do not establish trust, compatibility, or installability.
+
+## 2026-08-16 — Automated queue review batch 1
+
+- Input: the fixed-source candidate queue maintained on
+  `bot/catalog-discovery` and surfaced by PR #2.
+- Scope: ten high-signal root-level bundles, selected after separating repeated
+  archive/example/test manifests from distinct repositories.
+- Decisions: 9 reviewed, 1 held.
+- Held: `zuorn/Tydora` because the root package is a desktop application, the
+  bundle loads local TypeScript source, `postinstall` runs `patch-package`, the
+  package license is undeclared, and a separate install identity was not
+  confirmed.
+- Execution boundary: GitHub metadata and fixed-commit manifests, patches,
+  repository trees, and source text only; no package, lifecycle hook, plugin,
+  helper, browser, server, native dependency, or test suite was executed.

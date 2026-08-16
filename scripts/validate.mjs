@@ -13,7 +13,7 @@ const allowedCompatibility = new Set([
   "mixed",
   "unknown",
   "behind-baseline",
-  "unsupported"
+  "unsupported",
 ]);
 const allowedCategories = new Set([
   "Agent & Workflow",
@@ -26,13 +26,20 @@ const allowedCategories = new Set([
   "Search & Research",
   "Skills & Methods",
   "UI & Workspace",
-  "Vision & Media"
+  "Vision & Media",
 ]);
-const allowedLifecycle = new Set(["none", "prepack", "prepublishOnly", "prepare"]);
+const allowedLifecycle = new Set([
+  "none",
+  "prepack",
+  "prepublishOnly",
+  "prepare",
+  "postinstall",
+]);
 
 const errors = [];
 const fail = (where, message) => errors.push(`${where}: ${message}`);
-const isCommit = (value) => typeof value === "string" && /^[0-9a-f]{40}$/.test(value);
+const isCommit = (value) =>
+  typeof value === "string" && /^[0-9a-f]{40}$/.test(value);
 const isText = (value) => typeof value === "string" && value.trim().length > 0;
 const isSafePath = (value) =>
   isText(value) &&
@@ -47,7 +54,10 @@ if (catalog.schemaVersion !== 1) {
   fail("schemaVersion", "must equal 1");
 }
 
-if (!catalog.snapshot || !/^\d{4}-\d{2}-\d{2}$/.test(catalog.snapshot.reviewedAt ?? "")) {
+if (
+  !catalog.snapshot ||
+  !/^\d{4}-\d{2}-\d{2}$/.test(catalog.snapshot.reviewedAt ?? "")
+) {
   fail("snapshot.reviewedAt", "must be an ISO date");
 }
 
@@ -81,14 +91,25 @@ for (const [index, plugin] of (catalog.plugins ?? []).entries()) {
     repositories.add(plugin.repository.toLowerCase());
   }
 
-  for (const field of ["name", "summaryEn", "summaryZh", "branch", "manifest", "noteEn", "noteZh"]) {
+  for (const field of [
+    "name",
+    "summaryEn",
+    "summaryZh",
+    "branch",
+    "manifest",
+    "noteEn",
+    "noteZh",
+  ]) {
     if (!isText(plugin[field])) {
       fail(`${where}.${field}`, "must be non-empty text");
     } else if (plugin[field].includes("\n")) {
       fail(`${where}.${field}`, "must stay on one line");
     }
     if (containsMarkupInjection(plugin[field])) {
-      fail(`${where}.${field}`, "must not contain HTML or scriptable URL markup");
+      fail(
+        `${where}.${field}`,
+        "must not contain HTML or scriptable URL markup",
+      );
     }
   }
 
@@ -116,7 +137,10 @@ for (const [index, plugin] of (catalog.plugins ?? []).entries()) {
     fail(`${where}.patch`, "must be a safe repository-relative path");
   }
   if (!isText(plugin.repoLicense) || !isText(plugin.packageLicense)) {
-    fail(`${where}.license`, "repository and package license fields are required");
+    fail(
+      `${where}.license`,
+      "repository and package license fields are required",
+    );
   }
   if (plugin.package !== null && !isText(plugin.package)) {
     fail(`${where}.package`, "must be non-empty text or null");
@@ -124,7 +148,10 @@ for (const [index, plugin] of (catalog.plugins ?? []).entries()) {
     plugin.package !== null &&
     !/^[@A-Za-z0-9_.\/-]+$/.test(plugin.package)
   ) {
-    fail(`${where}.package`, "contains unsupported package identity characters");
+    fail(
+      `${where}.package`,
+      "contains unsupported package identity characters",
+    );
   }
   if (!allowedLifecycle.has(plugin.lifecycle)) {
     fail(`${where}.lifecycle`, "has an unsupported install lifecycle value");
@@ -133,11 +160,16 @@ for (const [index, plugin] of (catalog.plugins ?? []).entries()) {
     fail(`${where}.signals`, "must contain at least one observed signal");
   } else if (new Set(plugin.signals).size !== plugin.signals.length) {
     fail(`${where}.signals`, "must not contain duplicates");
-  } else if (plugin.signals.some((signal) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(signal))) {
+  } else if (
+    plugin.signals.some((signal) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(signal))
+  ) {
     fail(`${where}.signals`, "must use lowercase hyphenated values");
   }
   if ("installCommand" in plugin) {
-    fail(`${where}.installCommand`, "floating install recommendations are intentionally disallowed");
+    fail(
+      `${where}.installCommand`,
+      "floating install recommendations are intentionally disallowed",
+    );
   }
 }
 
@@ -147,7 +179,7 @@ const markdownFiles = [
   "CONTRIBUTING.md",
   "SECURITY.md",
   "docs/METHODOLOGY.md",
-  "docs/REVIEW_LOG.md"
+  "docs/REVIEW_LOG.md",
 ];
 
 for (const relativeFile of markdownFiles) {
@@ -165,8 +197,8 @@ for (const relativeFile of markdownFiles) {
 const counts = Object.fromEntries(
   [...allowedStatuses].map((status) => [
     status,
-    (catalog.plugins ?? []).filter((plugin) => plugin.status === status).length
-  ])
+    (catalog.plugins ?? []).filter((plugin) => plugin.status === status).length,
+  ]),
 );
 
 if (errors.length > 0) {
@@ -176,5 +208,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `Catalog valid: ${catalog.plugins.length} candidates (${counts.reviewed} reviewed, ${counts.held} held, ${counts.excluded} excluded).`
+  `Catalog valid: ${catalog.plugins.length} candidates (${counts.reviewed} reviewed, ${counts.held} held, ${counts.excluded} excluded).`,
 );
