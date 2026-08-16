@@ -7,6 +7,7 @@ import {
   getBundleIdentity,
   inspectRepositoryTree,
   interleaveRepositoryBatches,
+  isEmptyRepositoryError,
   isSafeRepositoryPath,
   mergeCandidateQueue,
   mergeRepositories,
@@ -146,6 +147,30 @@ test("unsafe patch traversal is rejected", () => {
   assert.equal(isSafeRepositoryPath("../secret.yml"), false);
   assert.equal(isSafeRepositoryPath("/absolute/patch.yml"), false);
   assert.equal(isSafeRepositoryPath("packages/dsh/patch.yml"), true);
+});
+
+test("only GitHub's explicit empty-repository response is skippable", () => {
+  assert.equal(
+    isEmptyRepositoryError({
+      status: 409,
+      message: "GitHub request failed (409): Git Repository is empty.",
+    }),
+    true,
+  );
+  assert.equal(
+    isEmptyRepositoryError({
+      status: 409,
+      message: "GitHub request failed (409): another conflict",
+    }),
+    false,
+  );
+  assert.equal(
+    isEmptyRepositoryError({
+      status: 403,
+      message: "GitHub request failed (403): rate limit exceeded",
+    }),
+    false,
+  );
 });
 
 test("candidate queue never re-adds tombstoned entries", () => {

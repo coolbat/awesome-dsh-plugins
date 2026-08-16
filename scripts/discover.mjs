@@ -9,6 +9,7 @@ import {
   getBundleIdentity,
   inspectRepositoryTree,
   interleaveRepositoryBatches,
+  isEmptyRepositoryError,
   isSafeRepositoryPath,
   mergeCandidateQueue,
   mergeRepositories,
@@ -255,6 +256,7 @@ async function run() {
         ...(await inspectRepository(github, repository, config.github)),
       );
     } catch (error) {
+      if (isEmptyRepositoryError(error)) continue;
       errors.push({
         query: null,
         repository: repository.repository,

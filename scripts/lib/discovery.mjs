@@ -13,6 +13,13 @@ export function isSafeRepositoryPath(value) {
   );
 }
 
+export function isEmptyRepositoryError(error) {
+  return (
+    error?.status === 409 &&
+    error?.message === "GitHub request failed (409): Git Repository is empty."
+  );
+}
+
 export function buildSearchQueries(config, state, now, full = false) {
   const queries = config.github.queries;
   if (full) return queries;

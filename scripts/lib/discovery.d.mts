@@ -1,4 +1,5 @@
 export function isSafeRepositoryPath(value: unknown): boolean;
+export function isEmptyRepositoryError(error: unknown): boolean;
 export function buildSearchQueries(
   config: any,
   state: any,
