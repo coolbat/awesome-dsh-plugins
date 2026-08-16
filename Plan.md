@@ -58,7 +58,7 @@ Scope: Prove complete ledger coverage, regenerate derived catalogs, run final br
 Acceptance: All 292 keys are dispositioned exactly once, final tests and build pass, branch CI is green, and a review PR exists without merge or production deployment.
 Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 Stop conditions: Stop before merge, production deployment, deleting evidence, or claiming runtime safety or compatibility.
-Evidence: 2026-08-16T23:20:08+08:00; M5-A12-RECONCILE-PASS; corrected reconciliation proves 292 unique decisions covering sequences 1 through 292, catalog 269 with 269 unique ids and repositories, completion mode has 0 pending, and diff whitespace validation passes
+Evidence: 2026-08-16T23:21:31+08:00; M5-A13-PR-OPEN; commit 5f01b10526e6b32472bd7290492728ec6ee5ddd9 is pushed on codex/review-remaining-292 and review PR #4 is open; remote CI remains to be verified
 
 ## Queue Notes
 

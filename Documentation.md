@@ -471,6 +471,23 @@
   agent-loop-state.md=2026-08-16T23:20:08+08:00;
   release-evidence.md=M5-A12-RECONCILE-PASS
 
+### Attempt 13 M5 branch and PR delivery
+
+- Milestone: M5
+- Changed assumptions: none
+- Command or observation: committed the complete review as
+  `5f01b10526e6b32472bd7290492728ec6ee5ddd9`, pushed
+  `codex/review-remaining-292`, and opened PR #4
+- Result: pass; remote branch and review PR exist, with merge and deployment
+  still intentionally untouched
+- Known failure: M5-F2 initial multi-file synchronization patch rejected a
+  stale context; smaller exact patches repaired it without partial changes
+- Blocker class: none
+- Next action: verify all GitHub Actions checks, then record closure evidence
+- Synced surfaces: Plan.md=in_progress;
+  agent-loop-state.md=2026-08-16T23:21:31+08:00;
+  release-evidence.md=M5-A13-PR-OPEN
+
 ## Morning Handoff
 
 - Stop reason and limits reached: none

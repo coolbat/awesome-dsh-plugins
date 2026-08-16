@@ -8,36 +8,36 @@
 - Needs-decision WIP: 0/3
 - Queue limit reached: false
 - Last test level: S1
-- Delivery environment: local
-- Closure status: not-started
+- Delivery environment: GitHub review PR #4
+- Closure status: remote-verification
 
 ## Current Selection
 
 - Run ID: review-remaining-292-2026-08-16
 - Selected milestone: M5
-- Attempt number: 12
+- Attempt number: 13
 - Resume milestone: M5
 - Runnable order: none while M5 is in_progress
 - Blocked: none
 - Needs decision: none
 - Stop reason: none
-- Next action: stage and inspect the complete diff, commit, push the dedicated
-  branch, open the review PR, and verify branch CI
+- Next action: wait for and verify all GitHub Actions checks on PR #4, then
+  synchronize final closure evidence without merging
 
 ## Last Synchronized Attempt
 
 - Milestone: M5
 - Changed assumptions: none
-- Command or observation: corrected aggregate decision and catalog uniqueness
-  summaries plus diff whitespace validation
-- Result: pass; 292 unique decisions span 1 through 292, catalog has 269 unique
-  ids and repositories, and completion mode remains at zero pending
-- Known failure: M5-F1 repaired and retained
+- Command or observation: committed the complete review diff, pushed the
+  dedicated branch, and opened review PR #4
+- Result: commit 5f01b10526e6b32472bd7290492728ec6ee5ddd9 is remote and
+  https://github.com/coolbat/awesome-dsh-plugins/pull/4 is open
+- Known failure: M5-F1 and M5-F2 repaired and retained
 - Blocker class: none
 - Plan.md status: in_progress
-- Documentation.md record: Attempt 12 M5 reconciliation repair
-- release-evidence.md record: M5-A12-RECONCILE-PASS
-- Synchronized at: 2026-08-16T23:20:08+08:00
+- Documentation.md record: Attempt 13 M5 branch and PR delivery
+- release-evidence.md record: M5-A13-PR-OPEN
+- Synchronized at: 2026-08-16T23:21:31+08:00
 
 ## Morning Handoff Snapshot
 
