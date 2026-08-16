@@ -1,0 +1,457 @@
+{
+  "milestone": "M3",
+  "reviewedAt": "2026-08-16",
+  "sourceCommit": "24654ed5260cfef3ca11568487d69c5bf9f1c42a",
+  "decisions": [
+    {
+      "sequence": 151,
+      "disposition": "catalog-reviewed",
+      "catalogId": "maxeaglet-dsh-bash-terminal",
+      "reason": null
+    },
+    {
+      "sequence": 152,
+      "disposition": "catalog-reviewed",
+      "catalogId": "meomeo-dev-dsh-voice",
+      "reason": null
+    },
+    {
+      "sequence": 153,
+      "disposition": "catalog-reviewed",
+      "catalogId": "meowlynxsea-dsh-cot-summarization",
+      "reason": null
+    },
+    {
+      "sequence": 154,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit clean-plugin fixture for upstream-radar tests, not a distributable catalog plugin."
+    },
+    {
+      "sequence": 155,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit compatible-probe fixture for upstream-radar tests, not a distributable catalog plugin."
+    },
+    {
+      "sequence": 156,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit incompatible-probe fixture for upstream-radar tests, not a distributable catalog plugin."
+    },
+    {
+      "sequence": 157,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit unknown-risk fixture with an install hook, not a distributable catalog plugin."
+    },
+    {
+      "sequence": 158,
+      "disposition": "catalog-reviewed",
+      "catalogId": "micromilo-upstream-radar",
+      "reason": null
+    },
+    {
+      "sequence": 159,
+      "disposition": "catalog-held",
+      "catalogId": "minyang2020-dsh-feishu-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 160,
+      "disposition": "catalog-reviewed",
+      "catalogId": "msilita-dsh-waker-trigger",
+      "reason": null
+    },
+    {
+      "sequence": 161,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mtty-ai-mmx-quota-tool",
+      "reason": null
+    },
+    {
+      "sequence": 162,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nexu-io-open-design-runtime",
+      "reason": null
+    },
+    {
+      "sequence": 163,
+      "disposition": "catalog-held",
+      "catalogId": "nexusagentx-dsh-mcp-adapter",
+      "reason": null
+    },
+    {
+      "sequence": 164,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Browser half is represented by the repository's canonical explorer aggregate record."
+    },
+    {
+      "sequence": 165,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Host half is represented by the repository's canonical explorer aggregate record."
+    },
+    {
+      "sequence": 166,
+      "disposition": "catalog-reviewed",
+      "catalogId": "no-prm-dsh-explorer",
+      "reason": null
+    },
+    {
+      "sequence": 167,
+      "disposition": "catalog-reviewed",
+      "catalogId": "noone89a-dsh-gauge",
+      "reason": null
+    },
+    {
+      "sequence": 168,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nwflower-dsh-chat-import",
+      "reason": null
+    },
+    {
+      "sequence": 169,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Folio event component is represented by the repository's canonical tools record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 170,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nyantused-cpun-folio-tools",
+      "reason": null
+    },
+    {
+      "sequence": 171,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nzl153-dsh-pet-whale",
+      "reason": null
+    },
+    {
+      "sequence": 172,
+      "disposition": "catalog-reviewed",
+      "catalogId": "omdsh-dev-dsh-cron",
+      "reason": null
+    },
+    {
+      "sequence": 173,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Terminal application bundle derived from DSH core, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 174,
+      "disposition": "catalog-held",
+      "catalogId": "opentritium-dsh-codex-shim",
+      "reason": null
+    },
+    {
+      "sequence": 175,
+      "disposition": "catalog-reviewed",
+      "catalogId": "orangeofcarl0-sys-dsh-large-proj-perf",
+      "reason": null
+    },
+    {
+      "sequence": 176,
+      "disposition": "catalog-reviewed",
+      "catalogId": "p2coder-dsh-task-control",
+      "reason": null
+    },
+    {
+      "sequence": 177,
+      "disposition": "catalog-reviewed",
+      "catalogId": "plutokeating-dsh-lark-bot",
+      "reason": null
+    },
+    {
+      "sequence": 178,
+      "disposition": "catalog-reviewed",
+      "catalogId": "pppolf-dsh-webgate",
+      "reason": null
+    },
+    {
+      "sequence": 179,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qcytsn-dsh-dafeiyu",
+      "reason": null
+    },
+    {
+      "sequence": 180,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qimidandapigu-dsh-xiaotangyuan-game",
+      "reason": null
+    },
+    {
+      "sequence": 181,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qingsiweisan-dsh-htb-skills",
+      "reason": null
+    },
+    {
+      "sequence": 182,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qiqikuaidianpao-mypet",
+      "reason": null
+    },
+    {
+      "sequence": 183,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qomob-dsh-plugin-hub",
+      "reason": null
+    },
+    {
+      "sequence": 184,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qswwltn-dsh-ue-assets-operator",
+      "reason": null
+    },
+    {
+      "sequence": 185,
+      "disposition": "catalog-reviewed",
+      "catalogId": "r05en1cu-dsh-neoforge",
+      "reason": null
+    },
+    {
+      "sequence": 186,
+      "disposition": "catalog-reviewed",
+      "catalogId": "radres-dsh-plugin-call-me",
+      "reason": null
+    },
+    {
+      "sequence": 187,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Terminal application gateway bundle derived from DSH core, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 188,
+      "disposition": "catalog-reviewed",
+      "catalogId": "relistencode-dsh-extension-hub",
+      "reason": null
+    },
+    {
+      "sequence": 189,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "My Rules component is represented by the repository's canonical Extension Hub record."
+    },
+    {
+      "sequence": 190,
+      "disposition": "catalog-reviewed",
+      "catalogId": "relistencode-dsh-recall",
+      "reason": null
+    },
+    {
+      "sequence": 191,
+      "disposition": "catalog-reviewed",
+      "catalogId": "reluckylucy-dsh-rhine-lab-theme",
+      "reason": null
+    },
+    {
+      "sequence": 192,
+      "disposition": "catalog-held",
+      "catalogId": "royenheart-dsh-mcp-support",
+      "reason": null
+    },
+    {
+      "sequence": 193,
+      "disposition": "catalog-reviewed",
+      "catalogId": "royenheart-dsh-structured-output",
+      "reason": null
+    },
+    {
+      "sequence": 194,
+      "disposition": "catalog-reviewed",
+      "catalogId": "royougishiki-dsh-restart-systemd",
+      "reason": null
+    },
+    {
+      "sequence": 195,
+      "disposition": "catalog-reviewed",
+      "catalogId": "saktawdi-ha-orchestrator",
+      "reason": null
+    },
+    {
+      "sequence": 196,
+      "disposition": "catalog-held",
+      "catalogId": "sanchaji-dsh-yi",
+      "reason": null
+    },
+    {
+      "sequence": 197,
+      "disposition": "catalog-reviewed",
+      "catalogId": "scorp1o117-dsh-plugin-marketplace",
+      "reason": null
+    },
+    {
+      "sequence": 198,
+      "disposition": "catalog-reviewed",
+      "catalogId": "singleone-dsh-notify-center",
+      "reason": null
+    },
+    {
+      "sequence": 199,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sjh9714-dsh-lean",
+      "reason": null
+    },
+    {
+      "sequence": 200,
+      "disposition": "catalog-reviewed",
+      "catalogId": "skillre-dsh-wiki",
+      "reason": null
+    },
+    {
+      "sequence": 201,
+      "disposition": "catalog-reviewed",
+      "catalogId": "skr311-dsh-codex-pet",
+      "reason": null
+    },
+    {
+      "sequence": 202,
+      "disposition": "catalog-reviewed",
+      "catalogId": "skydog221-dsh-minimal-powershell",
+      "reason": null
+    },
+    {
+      "sequence": 203,
+      "disposition": "catalog-reviewed",
+      "catalogId": "smalldy-godot-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 204,
+      "disposition": "catalog-reviewed",
+      "catalogId": "solismuchengxue-dsh-swift-cycle",
+      "reason": null
+    },
+    {
+      "sequence": 205,
+      "disposition": "catalog-reviewed",
+      "catalogId": "songoao25-bottom-info-bar",
+      "reason": null
+    },
+    {
+      "sequence": 206,
+      "disposition": "catalog-reviewed",
+      "catalogId": "spacexun2-dsh-worktime-board",
+      "reason": null
+    },
+    {
+      "sequence": 207,
+      "disposition": "catalog-reviewed",
+      "catalogId": "starchen-cycler-octie-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 208,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Root manifest duplicates the nested Octie distributable and has no referenced patch."
+    },
+    {
+      "sequence": 209,
+      "disposition": "catalog-reviewed",
+      "catalogId": "stimqq-dsh-plugin-check",
+      "reason": null
+    },
+    {
+      "sequence": 210,
+      "disposition": "catalog-reviewed",
+      "catalogId": "stnt04-dsh-msg-index",
+      "reason": null
+    },
+    {
+      "sequence": 211,
+      "disposition": "catalog-reviewed",
+      "catalogId": "struggleyang-dsh-project-kanban",
+      "reason": null
+    },
+    {
+      "sequence": 212,
+      "disposition": "catalog-reviewed",
+      "catalogId": "stvlynn-dsh-fish-hub",
+      "reason": null
+    },
+    {
+      "sequence": 213,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sundusk-dsh-moodball",
+      "reason": null
+    },
+    {
+      "sequence": 214,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sunse666-dsh-vimina",
+      "reason": null
+    },
+    {
+      "sequence": 215,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Evidence Dashboard component is represented by the repository's canonical Prior Probe record."
+    },
+    {
+      "sequence": 216,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sutang-vain-dsh-prior-probe",
+      "reason": null
+    },
+    {
+      "sequence": 217,
+      "disposition": "catalog-reviewed",
+      "catalogId": "syncended-dsh-pip",
+      "reason": null
+    },
+    {
+      "sequence": 218,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-better-sidebar package and manifest repository point to the already-cataloged omdsh-dev/DSH-better-sidebar source, not this fork."
+    },
+    {
+      "sequence": 219,
+      "disposition": "catalog-reviewed",
+      "catalogId": "taichuy-deepseek-harness-auth",
+      "reason": null
+    },
+    {
+      "sequence": 220,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tancheng33-dsh-yogacara",
+      "reason": null
+    },
+    {
+      "sequence": 221,
+      "disposition": "catalog-reviewed",
+      "catalogId": "taontech-dsh-git",
+      "reason": null
+    },
+    {
+      "sequence": 222,
+      "disposition": "catalog-reviewed",
+      "catalogId": "taylor-cat-dsh-macos-desktop",
+      "reason": null
+    },
+    {
+      "sequence": 223,
+      "disposition": "catalog-held",
+      "catalogId": "tianya-dao-dsh-wallpaper-engine",
+      "reason": null
+    },
+    {
+      "sequence": 224,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tinqiao-oss-dsh-engramory",
+      "reason": null
+    },
+    {
+      "sequence": 225,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tipus0731-dsh-expert-team",
+      "reason": null
+    }
+  ]
+}

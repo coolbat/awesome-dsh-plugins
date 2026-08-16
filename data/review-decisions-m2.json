@@ -1,0 +1,457 @@
+{
+  "milestone": "M2",
+  "reviewedAt": "2026-08-16",
+  "sourceCommit": "24654ed5260cfef3ca11568487d69c5bf9f1c42a",
+  "decisions": [
+    {
+      "sequence": 76,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fectivnfy112357-dsh-plugin-guide",
+      "reason": null
+    },
+    {
+      "sequence": 77,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fishquito7-dsh-skill-viewer",
+      "reason": null
+    },
+    {
+      "sequence": 78,
+      "disposition": "catalog-reviewed",
+      "catalogId": "flyingtimes-dsh-voice-info",
+      "reason": null
+    },
+    {
+      "sequence": 79,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fuzzysoul-dsh-chatvoice",
+      "reason": null
+    },
+    {
+      "sequence": 80,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ganfne123-dsh-plugin-api-quota",
+      "reason": null
+    },
+    {
+      "sequence": 81,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ggighub-dsh-plugin-index",
+      "reason": null
+    },
+    {
+      "sequence": 82,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository is represented by the canonical workbench bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 83,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository is represented by the canonical workbench bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 84,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ghbhiee-dsh-workbench",
+      "reason": null
+    },
+    {
+      "sequence": 85,
+      "disposition": "catalog-reviewed",
+      "catalogId": "godchen520-dsh-web-remote",
+      "reason": null
+    },
+    {
+      "sequence": 86,
+      "disposition": "catalog-reviewed",
+      "catalogId": "gptsapp-dsh-stylevault",
+      "reason": null
+    },
+    {
+      "sequence": 87,
+      "disposition": "catalog-reviewed",
+      "catalogId": "guoxinshan-dsh-yzj",
+      "reason": null
+    },
+    {
+      "sequence": 88,
+      "disposition": "catalog-reviewed",
+      "catalogId": "haibinwang9-dsh-web-access",
+      "reason": null
+    },
+    {
+      "sequence": 89,
+      "disposition": "catalog-reviewed",
+      "catalogId": "haitang1-dsh-image-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 90,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit installation fixture used by the repository test suite, not a distributable catalog plugin."
+    },
+    {
+      "sequence": 91,
+      "disposition": "catalog-reviewed",
+      "catalogId": "harzva-harness-flow-hub",
+      "reason": null
+    },
+    {
+      "sequence": 92,
+      "disposition": "catalog-held",
+      "catalogId": "heidi-dang-flowdeck-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 93,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hellosky983-dsh-mc-launcher",
+      "reason": null
+    },
+    {
+      "sequence": 94,
+      "disposition": "catalog-reviewed",
+      "catalogId": "highland0971-dsh-native-memory",
+      "reason": null
+    },
+    {
+      "sequence": 95,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hisonwarren-dsh-dashscope-media",
+      "reason": null
+    },
+    {
+      "sequence": 96,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository is represented by the canonical DashScope media bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 97,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Toolkit component is represented by the canonical nudge bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 98,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Toolkit component is represented by the canonical nudge bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 99,
+      "disposition": "catalog-reviewed",
+      "catalogId": "huangmouren2023-dsh-nudge",
+      "reason": null
+    },
+    {
+      "sequence": 100,
+      "disposition": "catalog-reviewed",
+      "catalogId": "huaqiu-electronics-dsh-pcb-parts-search",
+      "reason": null
+    },
+    {
+      "sequence": 101,
+      "disposition": "catalog-reviewed",
+      "catalogId": "huntersxy-dsh-plugin-toggle",
+      "reason": null
+    },
+    {
+      "sequence": 102,
+      "disposition": "catalog-reviewed",
+      "catalogId": "huxint-dsh-team",
+      "reason": null
+    },
+    {
+      "sequence": 103,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hxy91819-dsh-auth",
+      "reason": null
+    },
+    {
+      "sequence": 104,
+      "disposition": "catalog-reviewed",
+      "catalogId": "icodesign-orbis-remote-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 105,
+      "disposition": "catalog-reviewed",
+      "catalogId": "igugyj-project-ai-docs",
+      "reason": null
+    },
+    {
+      "sequence": 106,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ihow1-dsh-ihow-memory",
+      "reason": null
+    },
+    {
+      "sequence": 107,
+      "disposition": "catalog-reviewed",
+      "catalogId": "imsai-sh-dsh-1024store",
+      "reason": null
+    },
+    {
+      "sequence": 108,
+      "disposition": "catalog-held",
+      "catalogId": "iriskadev-dsh-desktop",
+      "reason": null
+    },
+    {
+      "sequence": 109,
+      "disposition": "catalog-reviewed",
+      "catalogId": "isanti2016-dsh-console",
+      "reason": null
+    },
+    {
+      "sequence": 110,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jackeywilder-dsh-file-picker",
+      "reason": null
+    },
+    {
+      "sequence": 111,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 112,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 113,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness TUI application core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 114,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web application core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 115,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jescoi-dsh-balance-bubble",
+      "reason": null
+    },
+    {
+      "sequence": 116,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jifeng15-dsh-web-hot",
+      "reason": null
+    },
+    {
+      "sequence": 117,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jimingyang25-la-feng-ui",
+      "reason": null
+    },
+    {
+      "sequence": 118,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jinhuang712-dsh-survey",
+      "reason": null
+    },
+    {
+      "sequence": 119,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jinplu-dsh-discussion-intent",
+      "reason": null
+    },
+    {
+      "sequence": 120,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jmwasky-creative-ten-methods-tutor",
+      "reason": null
+    },
+    {
+      "sequence": 121,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jolly-j-dsh-deepseek-billing",
+      "reason": null
+    },
+    {
+      "sequence": 122,
+      "disposition": "catalog-held",
+      "catalogId": "kanneiren-dsh-windows-manager-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 123,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-model-reasoning package points to karoc/dsh-model-reasoning rather than this vendored desktop copy."
+    },
+    {
+      "sequence": 124,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second vendored copy of the same source-conflicting dsh-model-reasoning package in the desktop repository."
+    },
+    {
+      "sequence": 125,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kc0ed-dsh-bottom-bar",
+      "reason": null
+    },
+    {
+      "sequence": 126,
+      "disposition": "catalog-held",
+      "catalogId": "kexuejin-dsh-zhihu-dashboard",
+      "reason": null
+    },
+    {
+      "sequence": 127,
+      "disposition": "catalog-reviewed",
+      "catalogId": "khalilyamber-dsh-session-summarizer",
+      "reason": null
+    },
+    {
+      "sequence": 128,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kkkkkklze-dsh-context-structurer",
+      "reason": null
+    },
+    {
+      "sequence": 129,
+      "disposition": "catalog-reviewed",
+      "catalogId": "klnormal-dsh-whalegirl",
+      "reason": null
+    },
+    {
+      "sequence": 130,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kunisme-dsh-filescope",
+      "reason": null
+    },
+    {
+      "sequence": 131,
+      "disposition": "catalog-reviewed",
+      "catalogId": "laplace-bit-dsh-bell-notify",
+      "reason": null
+    },
+    {
+      "sequence": 132,
+      "disposition": "catalog-reviewed",
+      "catalogId": "laplaceyoung-dsh-directorx",
+      "reason": null
+    },
+    {
+      "sequence": 133,
+      "disposition": "catalog-reviewed",
+      "catalogId": "leo-ayh-oday-dsh-orcana",
+      "reason": null
+    },
+    {
+      "sequence": 134,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Linux-specific Orcana profile is represented by the repository's canonical general runtime-pack record."
+    },
+    {
+      "sequence": 135,
+      "disposition": "catalog-reviewed",
+      "catalogId": "leotangjc-dsh-plan-execute",
+      "reason": null
+    },
+    {
+      "sequence": 136,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lhf6623-dsh-keyboard",
+      "reason": null
+    },
+    {
+      "sequence": 137,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lhf6623-dsh-proxy-config",
+      "reason": null
+    },
+    {
+      "sequence": 138,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lhy723-dsh-neu-theme",
+      "reason": null
+    },
+    {
+      "sequence": 139,
+      "disposition": "catalog-reviewed",
+      "catalogId": "liguanyu-dsh-prompt-recall",
+      "reason": null
+    },
+    {
+      "sequence": 140,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lilwhich-my-better-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 141,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 142,
+      "disposition": "catalog-reviewed",
+      "catalogId": "linhut-gongwen-skill",
+      "reason": null
+    },
+    {
+      "sequence": 143,
+      "disposition": "catalog-held",
+      "catalogId": "liuqh16-dsh-processes",
+      "reason": null
+    },
+    {
+      "sequence": 144,
+      "disposition": "catalog-held",
+      "catalogId": "lmy414-dsh-marketplace",
+      "reason": null
+    },
+    {
+      "sequence": 145,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lo2589-dsh-provider-quick-config",
+      "reason": null
+    },
+    {
+      "sequence": 146,
+      "disposition": "catalog-reviewed",
+      "catalogId": "losebird-dsh-plugin-market",
+      "reason": null
+    },
+    {
+      "sequence": 147,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lql341-dsh-scnet",
+      "reason": null
+    },
+    {
+      "sequence": 148,
+      "disposition": "catalog-reviewed",
+      "catalogId": "makuralymi-dsh-frosted-glass",
+      "reason": null
+    },
+    {
+      "sequence": 149,
+      "disposition": "catalog-held",
+      "catalogId": "marecgents-dsh-hub",
+      "reason": null
+    },
+    {
+      "sequence": 150,
+      "disposition": "catalog-held",
+      "catalogId": "marvina-dsh-api-usage",
+      "reason": null
+    }
+  ]
+}

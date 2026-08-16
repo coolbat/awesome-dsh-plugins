@@ -1,0 +1,457 @@
+{
+  "milestone": "M1",
+  "reviewedAt": "2026-08-16",
+  "sourceCommit": "24654ed5260cfef3ca11568487d69c5bf9f1c42a",
+  "decisions": [
+    {
+      "sequence": 1,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness base bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 2,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness headless bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 3,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness web-app bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 4,
+      "disposition": "catalog-reviewed",
+      "catalogId": "1473382-dsh-popper",
+      "reason": null
+    },
+    {
+      "sequence": 5,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.1.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 6,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 7,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.1 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 8,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.2 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 9,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.3 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 10,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.3.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 11,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit demo capability under examples; the repository's root bundle is already cataloged."
+    },
+    {
+      "sequence": 12,
+      "disposition": "catalog-held",
+      "catalogId": "9087-dsh-diff-approval",
+      "reason": null
+    },
+    {
+      "sequence": 13,
+      "disposition": "catalog-reviewed",
+      "catalogId": "abcdefgxw-dsh-toolbox-web",
+      "reason": null
+    },
+    {
+      "sequence": 14,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 15,
+      "disposition": "catalog-held",
+      "catalogId": "adwmc-helm-d-router",
+      "reason": null
+    },
+    {
+      "sequence": 16,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 17,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 18,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 19,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 20,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 21,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 22,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 23,
+      "disposition": "catalog-reviewed",
+      "catalogId": "afap-dsh-input-file-ref",
+      "reason": null
+    },
+    {
+      "sequence": 24,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Private root source manifest is superseded by the same repository's already-cataloged distributable nested bundle."
+    },
+    {
+      "sequence": 25,
+      "disposition": "catalog-reviewed",
+      "catalogId": "angeloszou-dsh-python-tempfile-shim",
+      "reason": null
+    },
+    {
+      "sequence": 26,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 27,
+      "disposition": "catalog-reviewed",
+      "catalogId": "atesahmet0-dh-multiagents",
+      "reason": null
+    },
+    {
+      "sequence": 28,
+      "disposition": "catalog-reviewed",
+      "catalogId": "bcy2020-dsh-cc-agents",
+      "reason": null
+    },
+    {
+      "sequence": 29,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 30,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 31,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 32,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 33,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 34,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 35,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web-app core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 36,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 37,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 38,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 39,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 40,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 41,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 42,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 43,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 44,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 45,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 46,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 47,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 48,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 49,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 50,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 51,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 52,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 53,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 54,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 55,
+      "disposition": "catalog-reviewed",
+      "catalogId": "captain1275-dsh-web-ui-all",
+      "reason": null
+    },
+    {
+      "sequence": 56,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 57,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 58,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 59,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 60,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 61,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 62,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin-center component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 63,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 64,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 65,
+      "disposition": "catalog-reviewed",
+      "catalogId": "charrywhite-dsh-sticky-notes",
+      "reason": null
+    },
+    {
+      "sequence": 66,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "IDE monorepo component represented by the canonical EasySSH workspace record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 67,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chenw2759-wq-dsh-easyssh",
+      "reason": null
+    },
+    {
+      "sequence": 68,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "SSH engine component is reused by the repository's canonical EasySSH workspace record."
+    },
+    {
+      "sequence": 69,
+      "disposition": "catalog-reviewed",
+      "catalogId": "corrinehu-dsh-chat-imagine",
+      "reason": null
+    },
+    {
+      "sequence": 70,
+      "disposition": "catalog-reviewed",
+      "catalogId": "daisy2048-dsh-captain-call",
+      "reason": null
+    },
+    {
+      "sequence": 71,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-desktop package points to anywhere-labs/deepseek-harness-desktop rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 72,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ddddjaak-dsh-ae-team",
+      "reason": null
+    },
+    {
+      "sequence": 73,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dream12347-dsh-delete-session",
+      "reason": null
+    },
+    {
+      "sequence": 74,
+      "disposition": "catalog-reviewed",
+      "catalogId": "duyanta123-arch-doc",
+      "reason": null
+    },
+    {
+      "sequence": 75,
+      "disposition": "catalog-reviewed",
+      "catalogId": "february2015-dsh-taskswarm",
+      "reason": null
+    }
+  ]
+}
