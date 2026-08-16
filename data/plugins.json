@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "snapshot": {
-    "reviewedAt": "2026-08-15",
+    "reviewedAt": "2026-08-16",
     "dshContract": {
       "repository": "deepseek-ai/deepseek-harness",
       "commit": "47f943859bef60e4160492346772ded9b24f765a",
@@ -294,6 +294,27 @@
       "signals": ["git-source", "dynamic-content", "client-injection", "web-routes"],
       "noteEn": "Git-source install and dynamic client rendering are explicit review surfaces.",
       "noteZh": "Git 源安装与动态客户端渲染是明确的重点审查面。"
+    },
+    {
+      "id": "bowenliang123-dsh-context",
+      "name": "dsh-context",
+      "repository": "bowenliang123/dsh-context",
+      "package": "dsh-context",
+      "category": "UI & Workspace",
+      "status": "reviewed",
+      "summaryEn": "Context insight panel: see what the model's context window is made of and how it evolves — composition vs. window size, per-request history, compression/injection events, and per-message token stats.",
+      "summaryZh": "上下文洞察面板：一眼看清模型上下文窗口的组成与变化——构成对照窗口大小、按请求历史趋势、压缩/注入事件、消息级 token 统计。",
+      "branch": "main",
+      "commit": "aca38b24d714106f7256280dc8f9c9ec5b8e4552",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Apache-2.0",
+      "packageLicense": "Apache-2.0",
+      "compatibility": "unknown",
+      "lifecycle": "prepare",
+      "signals": ["client-injection", "session-projection"],
+      "noteEn": "Native manifest-to-patch structure confirmed at the recorded commit; client injection and context-data reads are the observed surface. Runtime compatibility was not tested.",
+      "noteZh": "已在记录提交确认原生 manifest-to-patch 结构；观察到客户端注入与上下文数据读取。未做运行兼容性测试。"
     },
     {
       "id": "csyangwen-dsh-memory-evolve",
