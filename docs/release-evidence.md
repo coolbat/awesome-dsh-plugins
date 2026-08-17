@@ -1188,3 +1188,39 @@
 - Verdict: pass; all 210 records are complete and branch-PR delivery acceptance
   is satisfied without merge or production deployment
 - Next action: human review of PR #5 and explicit merge authorization
+
+### Evidence M10-A17-PREVIEW-FAIL
+
+- Milestone: post-closure verification
+- Attempt number: 17
+- Environment: final Cloudflare Pages check-run output and local evidence files
+- Observation: final PR head `83d2291fc766906d7b3480fcd93088df954cff46`
+  is CLEAN and both checks pass, but a single-line expression attempted to parse
+  a multiline HTML summary; the first evidence patch then used stale context
+- Errors: curl error 3, `URL rejected: No host part in the URL`; apply_patch
+  verification failure with no partial file changes
+- Hypothesis: the URL expression cannot cross summary newlines and the agent
+  state had a different known-failure line than the broad patch expected
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: auxiliary final-head preview response confirmation only;
+  Cloudflare's final-head deployment check itself is successful
+- Next action: use smaller exact patches, then request the explicit immutable
+  preview URL already emitted by the successful check run
+
+### Evidence M10-A17-PREVIEW-PASS
+
+- Milestone: post-closure verification
+- Attempt number: 17
+- Environment: GitHub and Cloudflare Pages final-head preview
+- Commands or observations: direct curl of the explicit immutable preview URL,
+  PR JSON inspection, and local/remote SHA reads
+- Result: PR #5 head `83d2291fc766906d7b3480fcd93088df954cff46`
+  is CLEAN; quality and Cloudflare checks conclude success; immutable preview
+  https://72e5519f.awesome-dsh-plugins.pages.dev/en/ returns HTTP 200; local
+  and remote branch SHAs match
+- Known failure: M10-F1 and M10-F2 repaired and retained
+- Blocker class: none
+- Verdict: pass; auxiliary final-head response verification is restored
+- Next action: commit and push this final evidence record, then verify the
+  resulting documentation-only head without further repository changes

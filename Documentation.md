@@ -1041,3 +1041,34 @@
 - Cleanup candidates and status: review branch retained until the user accepts
   or rejects PR #4
 - Durable knowledge promoted: none
+
+### Follow-on attempt 17 post-closure diagnostic failure
+
+- Milestone: post-closure verification
+- Changed assumptions: none
+- Command or observation: attempted to parse multiline Cloudflare check output
+  with a single-line expression, then attempted one stale-context record patch
+- Result: final-head remote checks remained green, but curl error 3 occurred
+  before a request and the first record patch was rejected atomically
+- Known failure: M10-F1 preview parser mismatch; M10-F2 stale patch context
+- Blocker class: repo_fixable
+- Next action: use smaller exact patches and request the explicit immutable URL
+- Synced surfaces: Plan.md=M10 done;
+  agent-loop-state.md=2026-08-18T01:05:15+08:00;
+  release-evidence.md=M10-A17-PREVIEW-FAIL
+
+### Follow-on attempt 17 post-closure diagnostic repair
+
+- Milestone: post-closure verification
+- Changed assumptions: none
+- Command or observation: directly requested the immutable preview URL shown
+  by Cloudflare and reread PR state and local/remote SHAs
+- Result: pass; head `83d2291fc766906d7b3480fcd93088df954cff46`
+  is CLEAN with both checks successful, preview `/en/` returns HTTP 200, and
+  local and remote SHAs match
+- Known failure: M10-F1 and M10-F2 repaired and retained
+- Blocker class: none
+- Next action: push this final evidence record and verify the resulting head
+- Synced surfaces: Plan.md=M10 done;
+  agent-loop-state.md=2026-08-18T01:06:10+08:00;
+  release-evidence.md=M10-A17-PREVIEW-PASS

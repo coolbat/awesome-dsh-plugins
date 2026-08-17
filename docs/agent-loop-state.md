@@ -15,28 +15,28 @@
 
 - Run ID: review-current-210-2026-08-18
 - Selected milestone: none
-- Attempt number: 16
+- Attempt number: 17
 - Resume milestone: none
 - Runnable order: none; all milestones complete
 - Blocked: none
 - Needs decision: none
 - Stop reason: none
-- Next action: hand PR #5 to the user for review; do not merge or deploy
+- Next action: commit and push the final evidence record, then verify its checks
 
 ## Last Synchronized Attempt
 
-- Milestone: M10 closure
+- Milestone: post-closure verification
 - Changed assumptions: none
-- Command or observation: verified PR head and merge state, remote checks,
-  Cloudflare preview HTTP response, and local/remote SHA equality
-- Result: pass at 47515f13379dd66a3b344eda297aa2021876f772;
-  PR #5 CLEAN, quality and Cloudflare checks successful, preview HTTP 200
-- Known failure: none
+- Command or observation: directly requested the explicit immutable preview
+  URL and reread PR state plus local and remote SHAs
+- Result: pass at 83d2291fc766906d7b3480fcd93088df954cff46;
+  PR CLEAN, both checks successful, preview HTTP 200, and SHAs equal
+- Known failure: M10-F1 and M10-F2 repaired and retained
 - Blocker class: none
 - Plan.md status: M10 done
-- Documentation.md record: Follow-on attempt 16 M10 remote verification and closure
-- release-evidence.md record: M10-A16-CI-PASS
-- Synchronized at: 2026-08-18T01:02:21+08:00
+- Documentation.md record: Follow-on attempt 17 post-closure diagnostic repair
+- release-evidence.md record: M10-A17-PREVIEW-PASS
+- Synchronized at: 2026-08-18T01:06:10+08:00
 
 ## Morning Handoff Snapshot
 

@@ -864,3 +864,39 @@ Needs-decision WIP limit: 3
 - User confirmation: task contract confirmed; final PR acceptance pending
 - Cleanup candidates: dedicated branch after user accepts or rejects the PR
 - Cleanup status: retained
+
+### Follow-on attempt 17 post-closure diagnostic failure
+
+- Selected milestone: none; closure verification only
+- Changed assumptions: none
+- Action: extract the final immutable Cloudflare preview URL and request `/en/`
+- Command or observation: a single-line sed parser was applied to a multiline
+  check-run summary, then an initial synchronized-record patch used stale
+  agent-state context
+- Test level and environment: post-closure diagnostic; local and Cloudflare
+- Result: curl received an empty host and returned error 3; the first record
+  patch was rejected atomically and changed no files
+- Known failure: M10-F1 preview parser mismatch; M10-F2 stale patch context
+- Blocker class: repo_fixable
+- Next action: preserve this evidence with smaller exact patches, request the
+  explicit immutable URL, and reconfirm the final head
+- Synchronized status: Plan.md=M10 done; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M10-A17-PREVIEW-FAIL
+
+### Follow-on attempt 17 post-closure diagnostic repair
+
+- Selected milestone: none; closure verification only
+- Changed assumptions: none
+- Action: request the explicit immutable preview URL and reconfirm PR and SHAs
+- Command or observation: direct curl of the URL emitted by Cloudflare plus PR
+  JSON and local/remote SHA reads
+- Test level and environment: post-closure diagnostic; GitHub and Cloudflare
+- Result: pass; final head `83d2291fc766906d7b3480fcd93088df954cff46`
+  is CLEAN with both checks successful, preview `/en/` returns HTTP 200, and
+  local and remote SHAs match
+- Known failure: M10-F1 and M10-F2 repaired and retained
+- Blocker class: none
+- Next action: commit and push this final evidence record, then verify the
+  resulting documentation-only head checks without further repository changes
+- Synchronized status: Plan.md=M10 done; Documentation.md=updated;
+  agent-loop-state.md=complete; release-evidence.md=M10-A17-PREVIEW-PASS
