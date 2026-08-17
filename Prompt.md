@@ -4,12 +4,12 @@
 
 The public DSH Plugin Index is built from evidence records in this repository.
 Automated discovery maintains a review-only queue in PR #2; the user approved
-continuing the remaining 292 `ready-for-review` records from candidate head
-`24654ed5260cfef3ca11568487d69c5bf9f1c42a`.
+reviewing the 210 currently unreviewed `ready-for-review` records from candidate
+head `e5fb3f0ab8186d4d25974d1b0e88a2eab16e76f0`.
 
 ## Goal
 
-Process every one of the 292 frozen queue records into a reproducible static
+Process every one of the 210 frozen queue records into a reproducible static
 review disposition, publish evidence-complete distinct plugin bundles to the
 catalog branch, and leave duplicates, examples, archives, broken structures,
 or unresolved install identities explicitly accounted for.
@@ -26,7 +26,7 @@ or unresolved install identities explicitly accounted for.
 
 ## Deliverables
 
-- A frozen copy of the 292-record source queue with its PR commit recorded.
+- A frozen copy of the 210-record source queue with its PR commit recorded.
 - A disposition ledger covering every frozen record exactly once.
 - Catalog and review-log updates for evidence-complete distinct bundles.
 - Fixed-source identity, structure, license, lifecycle, compatibility, and
@@ -74,8 +74,11 @@ or unresolved install identities explicitly accounted for.
 
 ## Approved Assumptions
 
-- PR #2 head `24654ed5260cfef3ca11568487d69c5bf9f1c42a` is the approved frozen discovery
+- PR #2 head `e5fb3f0ab8186d4d25974d1b0e88a2eab16e76f0` is the approved frozen discovery
   input for this run.
+- The source discovery run was partial because four external queries failed;
+  the 450-record queue passed schema validation, but this run does not claim
+  discovery completeness beyond its 210 frozen ready records.
 - GitHub and npm registry metadata may be read without executing candidate code.
 - The existing catalog methodology and schema remain authoritative.
 - Pushing a dedicated review branch and opening a pull request are approved;

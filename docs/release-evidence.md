@@ -714,3 +714,444 @@
 - Changed assumptions: none
 - Risks: static review does not prove safety or runtime compatibility
 - Next runnable: M2
+
+### Evidence M6-PREFLIGHT
+
+- Milestone: M6 preflight
+- Attempt number: 0
+- Environment: GitHub and local branch
+  `codex/review-new-candidates-20260818`
+- Source PR: https://github.com/coolbat/awesome-dsh-plugins/pull/2
+- Source commit: `e5fb3f0ab8186d4d25974d1b0e88a2eab16e76f0`
+- Observation: candidate schema validation passed for 450 leads; 239 are
+  already listed, 1 held, and 210 ready across 122 repositories and 123 fixed
+  commits; 107 candidate keys overlap the prior completed snapshot
+- Known failure: discovery run 32037224983 reported four external-query errors
+  and exited partial after preserving the valid queue
+- Blocker class: none for reviewing the frozen 210 records
+- Verdict: pass for task preflight, with discovery completeness explicitly
+  excluded
+- Next action: run contract checker and select M6
+
+### Evidence M6-A1-SELECT
+
+- Milestone: M6
+- Attempt number: 1
+- Environment: local dedicated branch
+- Command: `python3 /Users/coolbat/.codex/skills/long-horizon-task/scripts/check_task_contract.py --project . --json`
+- Result: exit 0; ready true; no errors or warnings; M6 first in runnable order
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; M6 selected before review-data changes
+- Next action: implement deterministic queue freezing and run M6 validation
+
+### Evidence M6-A2-RED
+
+- Milestone: M6
+- Attempt number: 2
+- Command: `node --import tsx --test tests/review-ledger.test.ts`
+- Result: exit 1; 17 tests, 16 pass, 1 expected fail
+- Error: expected `buildFrozenReview` to be a function, actual `undefined`
+- Hypothesis: the test correctly detects the missing initializer behavior
+- Repair attempted: none before RED evidence
+- Blocker class: repo_fixable
+- Affected acceptance: deterministic 210-record snapshot and ledger creation
+- Next action: implement the minimum function and rerun the same test
+
+### Evidence M6-A2-GREEN
+
+- Milestone: M6
+- Attempt number: 2
+- Command: `node --import tsx --test tests/review-ledger.test.ts`
+- Result: exit 0; 17 tests, 17 pass, 0 fail
+- Artifacts: `scripts/lib/review-ledger.mjs`,
+  `scripts/freeze-review-queue.mjs`, and focused test
+- Known failure: M6-F1 repaired and retained
+- Blocker class: none
+- Verdict: pass; ready to freeze the fixed queue
+- Next action: import PR #2 head e5fb3f0, freeze, and validate
+
+### Evidence M6-A3-S1-FAIL
+
+- Milestone: M6
+- Attempt number: 3
+- Command: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 1 before build; catalog, 450-candidate queue, 210-record ledger,
+  generated docs, and typecheck passed; test suite had 34 pass and 1 fail
+- Error: repository CLI fixture expected `292 records (0 pending)` but the
+  newly frozen active queue correctly reported `210 records (210 pending)`
+- Hypothesis: the integration expectation intentionally tracks the active
+  repository queue and was not yet advanced with the frozen data
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: clean S1 gate for M6
+- Next action: update the active-queue expectation and rerun full S1
+
+### Evidence M6-A3-FORMAT-FAIL
+
+- Milestone: M6
+- Attempt number: 3
+- Command: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 1 before build; validation, docs, typecheck, and 35 of 35 tests
+  passed; Prettier rejected two JSON files
+- Error: `data/candidates.json` and `data/review-snapshot.json` formatting drift
+- Hypothesis: the GitHub-produced candidate JSON and local freeze serializer do
+  not exactly match the repository's Prettier formatting
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: clean S1 gate for M6
+- Next action: format the two files and rerun full S1
+
+### Evidence M6-A3-S1-PASS
+
+- Milestone: M6
+- Attempt number: 3
+- Environment: local dedicated branch
+- Commands: `npx prettier --write data/candidates.json data/review-snapshot.json`
+  then `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 0; 450-candidate queue valid, 210 frozen records and 210 pending
+  ledger rows valid, 35 tests pass, formatting and typecheck pass, generated
+  docs are current, and Next.js generated 550 static pages
+- Artifact: `data/review-snapshot.json` bound to PR #2 head e5fb3f0 and matching
+  `data/review-ledger.json`
+- Known failure: M6-F1 through M6-F3 repaired and retained
+- Blocker class: none
+- Verdict: pass; M6 acceptance satisfied
+- Next action: mark M6 done, mechanically release M7, and rerun checker
+
+### Evidence M7-A4-SELECT
+
+- Milestone: M7
+- Attempt number: 4
+- Environment: local dedicated branch
+- Observation: checker selected M7; exact key and exact commit comparison with
+  the prior ledger found 54 reusable non-catalog decisions and 16 records that
+  require new or changed-source review
+- Result: M7 selected before source acquisition or decision writes
+- Known failure: none
+- Blocker class: none
+- Verdict: pass
+- Next action: acquire fixed source and classify wave records 1 through 70
+
+### Evidence M7-A5-RED
+
+- Milestone: M7
+- Attempt number: 5
+- Command: `node --import tsx --test tests/review-ledger.test.ts`
+- Result: exit 1; 19 tests, 17 pass, 2 expected fail
+- Error: `applyReviewWave` is undefined
+- Hypothesis: tests correctly detect the missing exact-reuse, explicit-decision,
+  and missing-evidence guard behavior
+- Repair attempted: none before RED evidence
+- Blocker class: repo_fixable
+- Affected acceptance: complete, reproducible wave dispositions
+- Next action: implement the minimum merger and rerun the same tests
+
+### Evidence M7-A5-GREEN
+
+- Milestone: M7
+- Attempt number: 5
+- Command: `node --import tsx --test tests/review-ledger.test.ts`
+- Result: exit 0; 19 tests, 19 pass, 0 fail
+- Artifacts: fail-closed `applyReviewWave` function and typed declaration
+- Known failure: M7-F1 repaired and retained
+- Blocker class: none
+- Verdict: pass
+- Next action: encode and apply M7 explicit and exact historical decisions
+
+### Evidence M7-A6-S1-FAIL
+
+- Milestone: M7
+- Attempt number: 6
+- Command: `npm run generate && npm run format && npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 1 before build; catalog validation reports 280 total, 243
+  reviewed, 36 held, and 1 excluded; ledger reports 140 pending; test suite has
+  35 pass and 2 fail
+- Error: tests retained prior 269/235/33 catalog counts
+- Hypothesis: these integration fixtures intentionally track the active catalog
+  snapshot and need the verified M7 counts
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: clean S1 gate for M7
+- Next action: update the active count fixture and rerun S1
+
+### Evidence M7-A6-S1-PASS
+
+- Milestone: M7
+- Attempt number: 6
+- Environment: local dedicated branch
+- Commands: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 0; 70 records dispositioned as 8 reviewed, 3 held, 40
+  duplicates, 8 fixtures, 10 non-plugin packages, and 1 unavailable; catalog
+  280 total with 243 reviewed, 36 held, and 1 excluded; 37 tests, formatting,
+  typecheck, generated docs, and 572 static pages pass
+- Known failure: M7-F1 and M7-F2 repaired and retained
+- Blocker class: none
+- Verdict: pass; M7 acceptance satisfied
+- Next action: mark M7 done, mechanically release M8, and rerun checker
+
+### Evidence M8-A7-SELECT
+
+- Milestone: M8
+- Attempt number: 7
+- Environment: local dedicated branch
+- Command: `python3 /Users/coolbat/.codex/skills/long-horizon-task/scripts/check_task_contract.py --project . --json`
+- Result: exit 0; ready true; no errors or warnings; M8 first in runnable order
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; M8 selected before source inspection or decision writes
+- Next action: compare exact historical evidence, reacquire remaining fixed
+  sources, and classify records 71 through 140
+
+### Evidence M8-A8-INVENTORY-FAIL
+
+- Milestone: M8
+- Attempt number: 8
+- Environment: local temporary source directory
+- Observation: 43 of 43 exact GitHub source archives acquired; static manifest
+  inventory emitted jq errors while joining catalog repository identities
+- Error: `Cannot index number with string "repository"`
+- Hypothesis: `data/plugins.json` is an object and records live at `.plugins[]`
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: accurate existing-catalog overlap evidence for M8
+- Next action: correct the read-only query and rebuild the inventory
+
+### Evidence M8-A8-INVENTORY-PASS
+
+- Milestone: M8
+- Attempt number: 8
+- Environment: local temporary source directory
+- Observation: corrected the join to `.plugins[]` and rebuilt the inventory
+- Result: 52 manifests and 52 patch files present across all 43 fixed sources;
+  one fresh row maps to an already cataloged repository
+- Known failure: M8-F1 repaired and retained
+- Blocker class: none
+- Verdict: pass; fixed-source classification may continue
+- Next action: inspect license, install identity, lifecycle, and capability
+  evidence and encode M8 decisions
+
+### Evidence M8-A9-SCAN-FAIL
+
+- Milestone: M8
+- Attempt number: 9
+- Environment: local temporary source directory
+- Observation: auxiliary evidence scan for KUNTING0701/dsh-aurora-bg used an
+  unmatched zsh `README*` glob
+- Error: `zsh: no matches found: .../README*`
+- Hypothesis: this fixed source has no README and the scan was not empty-safe
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: complete static signal inventory for M8
+- Next action: use explicit file discovery and continue classification
+
+### Evidence M8-A9-SCAN-PASS
+
+- Milestone: M8
+- Attempt number: 9
+- Environment: local temporary source directory
+- Observation: explicit file discovery found only the manifest, patch, and MIT
+  license in KUNTING0701/dsh-aurora-bg
+- Result: pass; the empty-injection patch has no additional executable source
+  to inspect
+- Known failure: M8-F2 repaired and retained
+- Blocker class: none
+- Verdict: pass; M8 classification may continue
+- Next action: finish identity and lifecycle decisions and encode the wave
+
+### Evidence M8-A10-REGISTRY-FAIL
+
+- Milestone: M8
+- Attempt number: 10
+- Environment: read-only npm registry probes
+- Observation: 52 probes completed with 19 published and 33 unpublished
+  identities; the report loop then assigned `status`
+- Error: `zsh: read-only variable: status`
+- Hypothesis: `status` is reserved by zsh, while probe artifacts remain valid
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: inspectable registry identity report for M8
+- Next action: rename the report variable and render preserved metadata
+
+### Evidence M8-A10-REGISTRY-PASS
+
+- Milestone: M8
+- Attempt number: 10
+- Environment: read-only npm registry probes
+- Observation: renamed the loop variable and rendered all preserved metadata
+- Result: pass; 19 published and 33 unpublished package identities accounted
+  for, with source conflicts isolated for fail-closed disposition
+- Known failure: M8-F3 repaired and retained
+- Blocker class: none
+- Verdict: pass; M8 decisions may be encoded
+- Next action: write explicit decisions and catalog records, apply the wave,
+  and run S1
+
+### Evidence M8-A11-S1-FAIL
+
+- Milestone: M8
+- Attempt number: 11
+- Environment: local dedicated branch
+- Command: `npm run generate && npm run format && npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 1 before tests; catalog validation passed at 314 total, 266
+  reviewed, 47 held, and 1 excluded
+- Error: Jemius ledger row did not resolve because the catalog used the renamed
+  current repository while the frozen source records its former redirect name
+- Hypothesis: exact ledger evidence deliberately requires repository, manifest,
+  and commit equality
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: clean M8 S1 gate
+- Next action: retain the frozen repository string, document the rename in the
+  note, reapply M8, and rerun S1
+
+### Evidence M8-A11-COUNT-FAIL
+
+- Milestone: M8
+- Attempt number: 11
+- Environment: local dedicated branch
+- Command: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 1 before build; catalog, candidate queue, 70-pending ledger,
+  generated docs, and typecheck passed; 34 tests passed and 3 failed
+- Error: tests retained 280/243/36 and 140-pending expectations instead of the
+  verified 314/266/47 and 70-pending state
+- Hypothesis: fixed integration fixtures intentionally track active repository
+  data and must advance with the evidence-backed wave
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: clean M8 S1 gate
+- Next action: update only the verified fixed counts and rerun full S1
+
+### Evidence M8-A11-S1-PASS
+
+- Milestone: M8
+- Attempt number: 11
+- Environment: local dedicated branch
+- Commands: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 0; 70 records dispositioned as 23 reviewed, 11 held, 16
+  duplicates, 5 fixtures, 8 non-plugin packages, 6 source conflicts, and 1
+  unavailable; catalog 314 total with 266 reviewed, 47 held, and 1 excluded;
+  37 tests, formatting, typecheck, generated docs, and 640 static pages pass
+- Known failure: M8-F1 through M8-F5 repaired and retained
+- Blocker class: none
+- Verdict: pass; M8 acceptance satisfied
+- Next action: mark M8 done, mechanically release M9, and rerun checker
+
+### Evidence M9-A12-SELECT
+
+- Milestone: M9
+- Attempt number: 12
+- Environment: local dedicated branch
+- Command: `python3 /Users/coolbat/.codex/skills/long-horizon-task/scripts/check_task_contract.py --project . --json`
+- Result: exit 0; ready true; no errors or warnings; M9 first in runnable order
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; M9 selected before source inspection or decision writes
+- Next action: compare exact historical evidence, reacquire remaining fixed
+  sources, and classify records 141 through 210
+
+### Evidence M9-A13-ACQUIRE-FAIL
+
+- Milestone: M9
+- Attempt number: 13
+- Environment: GitHub codeload and local temporary source directory
+- Observation: 34 of 35 exact archives downloaded and extracted
+- Error: welsione/dsh-mmx-bridge commit 03a878985cd6 returned curl error 18,
+  transferred a partial file
+- Hypothesis: immutable archive transfer was transiently interrupted
+- Repair attempted: none before preserving failure evidence
+- Blocker class: external_transient
+- Affected acceptance: complete fixed-source evidence for M9
+- Next action: retry only the failed immutable archive
+
+### Evidence M9-A13-ACQUIRE-PASS
+
+- Milestone: M9
+- Attempt number: 13
+- Environment: GitHub codeload and local temporary source directory
+- Observation: retried only commit 03a878985cd6 with all-error retries,
+  validated the tar index, and extracted 19 files including package.json
+- Result: pass; all 35 fresh fixed-source commits are locally reproducible
+- Known failure: M9-F1 repaired and retained
+- Blocker class: none
+- Verdict: pass; final-wave static inventory may continue
+- Next action: map manifests, patches, licenses, catalog overlap, and registry
+  identities
+
+### Evidence M9-A14-S1-FAIL
+
+- Milestone: M9
+- Attempt number: 14
+- Environment: local dedicated branch
+- Command: `npm run generate && npm run format && npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 1 before lint and build; catalog validation passed at 345 total,
+  285 reviewed, 59 held, and 1 excluded; completion-mode ledger validation
+  passed at 210 records and 0 pending; 34 tests passed and 3 failed
+- Error: fixed integration expectations retained 314/266/47 and 70 pending
+  instead of the verified post-M9 state 345/285/59 and 0 pending
+- Hypothesis: repository fixtures intentionally track active generated data
+  and must advance with the evidence-backed final wave
+- Repair attempted: none before preserving failure evidence
+- Blocker class: repo_fixable
+- Affected acceptance: clean M9 S1 gate
+- Next action: update only the verified fixed counts and rerun S1
+
+### Evidence M9-A14-S1-PASS
+
+- Milestone: M9
+- Attempt number: 14
+- Environment: local dedicated branch
+- Commands: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 0; 70 final records dispositioned as 19 reviewed, 12 held, 19
+  duplicates, 12 fixtures, 3 non-plugin packages, 4 source conflicts, and 1
+  unavailable; catalog 345 total with 285 reviewed, 59 held, and 1 excluded;
+  completion mode reports 0 pending; 37 tests, formatting, typecheck, generated
+  docs, and 702 static pages pass
+- Known failure: M9-F1 and M9-F2 repaired and retained
+- Blocker class: none
+- Verdict: pass; M9 acceptance satisfied
+- Next action: mark M9 done, mechanically release M10, and rerun checker
+
+### Evidence M10-A15-SELECT
+
+- Milestone: M10
+- Attempt number: 15
+- Environment: local dedicated branch
+- Command: `python3 /Users/coolbat/.codex/skills/long-horizon-task/scripts/check_task_contract.py --project . --json`
+- Result: exit 0; ready true; no errors or warnings; M10 first in runnable order
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; M10 selected before final reconciliation, commit, or delivery
+- Next action: prove complete coverage and uniqueness, inspect the final diff,
+  and run S2
+
+### Evidence M10-A15-RECONCILE-PASS
+
+- Milestone: M10
+- Attempt number: 15
+- Environment: local dedicated branch
+- Commands: completion-mode ledger validation, aggregate Node summary, `git
+  diff --check`, status, diff stat, and implementation diff review
+- Result: exit 0; ledger sequences 1 through 210 and all 210 keys are unique
+  with 0 pending; dispositions total 50 reviewed, 26 held, 75 duplicates, 25
+  fixtures, 21 non-plugin packages, 10 source conflicts, and 3 unavailable;
+  catalog has 345 unique ids and repositories; no whitespace errors
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; final S2 may run before branch delivery
+- Next action: run full S2, then stage and inspect the commit
+
+### Evidence M10-A15-S2-PASS
+
+- Milestone: M10
+- Attempt number: 15
+- Environment: local dedicated branch
+- Commands: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Result: exit 0; catalog validates at 345 total, 285 reviewed, 59 held, and
+  1 excluded; ledger validates at 210 records and 0 pending; generated READMEs,
+  typecheck, 37 tests, formatting, and a 702-static-page build pass
+- Known failure: no M10 failure; M9-F1 and M9-F2 repaired and retained
+- Blocker class: none
+- Verdict: pass; branch is ready for commit and review-PR delivery
+- Next action: stage and inspect the final commit, push the dedicated branch,
+  and open the PR without merge or production deployment

@@ -1,0 +1,277 @@
+{
+  "milestone": "M9",
+  "sourceCommit": "e5fb3f0ab8186d4d25974d1b0e88a2eab16e76f0",
+  "reviewedAt": "2026-08-18",
+  "decisions": [
+    {
+      "sequence": 144,
+      "disposition": "catalog-reviewed",
+      "catalogId": "minivv-dsh-agent-skills",
+      "reason": null
+    },
+    {
+      "sequence": 145,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-deepseek-usage package points to ben7am1n/dsh-deepseek-usage rather than this fixed candidate repository."
+    },
+    {
+      "sequence": 146,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nanshanzhaoji-dsh-download-progress",
+      "reason": null
+    },
+    {
+      "sequence": 147,
+      "disposition": "catalog-held",
+      "catalogId": "nicklin99-dsh-ui-sidebar",
+      "reason": null
+    },
+    {
+      "sequence": 152,
+      "disposition": "catalog-reviewed",
+      "catalogId": "physicolor-harness-ui-enhancer",
+      "reason": null
+    },
+    {
+      "sequence": 153,
+      "disposition": "catalog-held",
+      "catalogId": "picgo-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 155,
+      "disposition": "catalog-held",
+      "catalogId": "realmisakamikoto-dsh-skin-studio",
+      "reason": null
+    },
+    {
+      "sequence": 157,
+      "disposition": "catalog-held",
+      "catalogId": "riesbri-dsh-tui",
+      "reason": null
+    },
+    {
+      "sequence": 158,
+      "disposition": "catalog-reviewed",
+      "catalogId": "rj-jiangyichen-dsh-rules",
+      "reason": null
+    },
+    {
+      "sequence": 159,
+      "disposition": "catalog-held",
+      "catalogId": "ruimin251204-dsh-plugin-surgery",
+      "reason": null
+    },
+    {
+      "sequence": 160,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit fake alpha bundle under test/fixtures for plugin-surgery tests, not a distributable plugin."
+    },
+    {
+      "sequence": 161,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit fake beta bundle under test/fixtures for plugin-surgery tests, not a distributable plugin."
+    },
+    {
+      "sequence": 162,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sakaliolabs-dsh-code-ide",
+      "reason": null
+    },
+    {
+      "sequence": 163,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-subscription-auth package points to Khellendros97/dsh-subscription-auth rather than this fixed candidate repository."
+    },
+    {
+      "sequence": 164,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shengsheng90-dsh-taskboard",
+      "reason": null
+    },
+    {
+      "sequence": 165,
+      "disposition": "catalog-held",
+      "catalogId": "shifan3-dsh-qol",
+      "reason": null
+    },
+    {
+      "sequence": 166,
+      "disposition": "catalog-reviewed",
+      "catalogId": "simon-world-dsh-journal-monitor",
+      "reason": null
+    },
+    {
+      "sequence": 167,
+      "disposition": "catalog-held",
+      "catalogId": "sipengxie2024-dsh-memory-hermes",
+      "reason": null
+    },
+    {
+      "sequence": 168,
+      "disposition": "catalog-reviewed",
+      "catalogId": "songoao25-dsh-plugin-guardian",
+      "reason": null
+    },
+    {
+      "sequence": 169,
+      "disposition": "catalog-reviewed",
+      "catalogId": "soren-abt-dsh-knowledge",
+      "reason": null
+    },
+    {
+      "sequence": 171,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest carries an empty patch while the repository primarily distributes a global coding-agent CLI and preset installer, not an active Cordis plugin bundle."
+    },
+    {
+      "sequence": 172,
+      "disposition": "catalog-held",
+      "catalogId": "studyinglx-dsh-cli",
+      "reason": null
+    },
+    {
+      "sequence": 175,
+      "disposition": "catalog-held",
+      "catalogId": "teaclearinkii-dsh-marketplaces-nexus",
+      "reason": null
+    },
+    {
+      "sequence": 176,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tobewin-dsh-pet-companion",
+      "reason": null
+    },
+    {
+      "sequence": 181,
+      "disposition": "catalog-held",
+      "catalogId": "u1s1-king-dsh-live2d-mygo",
+      "reason": null
+    },
+    {
+      "sequence": 182,
+      "disposition": "catalog-held",
+      "catalogId": "uckkk-dsh-ux-writing",
+      "reason": null
+    },
+    {
+      "sequence": 183,
+      "disposition": "catalog-reviewed",
+      "catalogId": "w117c-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 184,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wanbinyu-dsh-billing",
+      "reason": null
+    },
+    {
+      "sequence": 185,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wanbinyu-dsh-plugin-git-inspect",
+      "reason": null
+    },
+    {
+      "sequence": 186,
+      "disposition": "catalog-reviewed",
+      "catalogId": "welsione-dsh-mmx-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 195,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Events template with an unresolved {{PKG_NAME}} placeholder under create-dsh-plugin, not a concrete distributable plugin."
+    },
+    {
+      "sequence": 196,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Tool template with an unresolved {{PKG_NAME}} placeholder under create-dsh-plugin, not a concrete distributable plugin."
+    },
+    {
+      "sequence": 197,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Web UI template with an unresolved {{PKG_NAME}} placeholder under create-dsh-plugin, not a concrete distributable plugin."
+    },
+    {
+      "sequence": 198,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Suite component is represented by the existing canonical whyihaveyou-dsh-suite-all repository record."
+    },
+    {
+      "sequence": 199,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Suite component is represented by the existing canonical whyihaveyou-dsh-suite-all repository record."
+    },
+    {
+      "sequence": 200,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Suite component is represented by the existing canonical whyihaveyou-dsh-suite-all repository record."
+    },
+    {
+      "sequence": 201,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Suite component is represented by the existing canonical whyihaveyou-dsh-suite-all repository record."
+    },
+    {
+      "sequence": 202,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Suite component is represented by the existing canonical whyihaveyou-dsh-suite-all repository record."
+    },
+    {
+      "sequence": 203,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Suite component is represented by the existing canonical whyihaveyou-dsh-suite-all repository record."
+    },
+    {
+      "sequence": 204,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wycto-dsh-model-balance",
+      "reason": null
+    },
+    {
+      "sequence": 205,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xgone-dsh-remote",
+      "reason": null
+    },
+    {
+      "sequence": 207,
+      "disposition": "catalog-held",
+      "catalogId": "xiajiajun516-dsh-config-manager",
+      "reason": null
+    },
+    {
+      "sequence": 208,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xinyuehtx-dsh-plugin-hooks-ordering",
+      "reason": null
+    },
+    {
+      "sequence": 209,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yu-tao-li-computer-use-win",
+      "reason": null
+    },
+    {
+      "sequence": 210,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zisekongling-deepseek-peak-blocker",
+      "reason": null
+    }
+  ]
+}
