@@ -13,9 +13,9 @@ Needs-decision WIP limit: 3
 
 ## Selected Milestone
 
-- Milestone: M10
-- Approved scope boundary: reconcile the complete 210-record ledger, verify
-  the branch, and deliver a review PR without merge or production deployment
+- Milestone: none; all approved milestones complete
+- Approved scope boundary: retain the review PR for human review without merge
+  or production deployment
 - Required validation gate: npm run check &&
   NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 - Stop conditions: stop before executing third-party code, guessing evidence,
@@ -530,6 +530,24 @@ Needs-decision WIP limit: 3
   checks on the updated PR head
 - Synchronized status: Plan.md=M10 in_progress; Documentation.md=updated;
   agent-loop-state.md=updated; release-evidence.md=M10-A16-PR-OPEN
+
+### Follow-on attempt 16 M10 remote verification and closure
+
+- Selected milestone: M10
+- Changed assumptions: none
+- Action: verify the delivered PR head, merge state, remote checks, branch
+  preview response, remote SHA, and clean local worktree
+- Command or observation: PR JSON and check-run inspection, preview HTTP
+  request, and local/remote SHA comparison
+- Test level and environment: S2 remote; GitHub and Cloudflare Pages
+- Result: pass at `47515f13379dd66a3b344eda297aa2021876f772`;
+  PR #5 is CLEAN, quality and Cloudflare Pages checks pass, preview `/en/`
+  returns HTTP 200, and local and remote SHAs match
+- Known failure: M9-F1 and M9-F2 repaired and retained; no M10 failure
+- Blocker class: none
+- Next action: hand PR #5 to the user for review; do not merge or deploy
+- Synchronized status: Plan.md=M10 done; Documentation.md=updated;
+  agent-loop-state.md=complete; release-evidence.md=M10-A16-CI-PASS
 
 ### Attempt 1
 

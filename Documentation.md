@@ -6,8 +6,8 @@
   `/Users/coolbat/awesome-dsh-plugins`
 - Delivery scope: branch and review PR only
 - Needs-decision queue: 0/3
-- Active milestone: M10
-- Current status: in_progress
+- Active milestone: none
+- Current status: complete
 - Approved decisions in force: freeze PR #2 head `e5fb3f0`; statically process
   all 210 current ready records; do not merge or deploy
 - Changed assumptions: none
@@ -503,6 +503,32 @@
 - Synced surfaces: Plan.md=M10 in_progress;
   agent-loop-state.md=2026-08-18T00:59:29+08:00;
   release-evidence.md=M10-A16-PR-OPEN
+
+### Follow-on attempt 16 M10 remote verification and closure
+
+- Milestone: M10
+- Changed assumptions: none
+- Command or observation: inspected PR #5 head and merge state, both remote
+  checks, the Cloudflare deployment output, preview HTTP response, local and
+  remote branch SHA, and worktree status
+- Result: pass at `47515f13379dd66a3b344eda297aa2021876f772`;
+  PR #5 is CLEAN, GitHub quality and Cloudflare Pages succeed, the immutable
+  preview https://df615700.awesome-dsh-plugins.pages.dev/en/ returns HTTP 200,
+  and the branch is synchronized
+- Known failure: M9-F1 and M9-F2 repaired and retained; none in M10
+- Blocker class: none
+- Next action: human review of PR #5 and an explicit merge decision
+- Synced surfaces: Plan.md=M10 done;
+  agent-loop-state.md=2026-08-18T01:02:21+08:00;
+  release-evidence.md=M10-A16-CI-PASS
+
+## Current Queue Closure
+
+- All 210 frozen ready records have exactly one static disposition.
+- Final catalog: 345 total, 285 reviewed, 59 held, and 1 excluded.
+- Review ledger: 50 catalog-reviewed, 26 catalog-held, 75 duplicates, 25
+  fixtures, 21 non-plugin packages, 10 source conflicts, and 3 unavailable.
+- Production is unchanged; PR #5 remains open for human review.
 
 ### Attempt 1
 
