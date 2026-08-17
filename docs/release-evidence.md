@@ -1155,3 +1155,18 @@
 - Verdict: pass; branch is ready for commit and review-PR delivery
 - Next action: stage and inspect the final commit, push the dedicated branch,
   and open the PR without merge or production deployment
+
+### Evidence M10-A16-PR-OPEN
+
+- Milestone: M10
+- Attempt number: 16
+- Environment: GitHub
+- Commands: Git commit, branch push, and `gh pr create`
+- Result: review commit `fa817986d2e1d1e35deed2377ee0150f6450f235`
+  pushed on `codex/review-new-candidates-20260818`; PR #5 opened at
+  https://github.com/coolbat/awesome-dsh-plugins/pull/5
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; review delivery exists without merge or production deployment
+- Next action: commit and push this synchronized record, then verify PR head,
+  merge state, GitHub quality, and Cloudflare branch preview

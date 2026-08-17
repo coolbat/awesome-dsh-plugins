@@ -513,6 +513,24 @@ Needs-decision WIP limit: 3
 - Synchronized status: Plan.md=M10 in_progress; Documentation.md=updated;
   agent-loop-state.md=updated; release-evidence.md=M10-A15-S2-PASS
 
+### Follow-on attempt 16 M10 branch and PR delivery
+
+- Selected milestone: M10
+- Changed assumptions: none
+- Action: commit the complete review, push the dedicated branch, and open the
+  review pull request
+- Command or observation: Git commit and push followed by `gh pr create`
+- Test level and environment: delivery; GitHub
+- Result: review commit `fa817986d2e1d1e35deed2377ee0150f6450f235`
+  pushed and PR #5 opened at
+  https://github.com/coolbat/awesome-dsh-plugins/pull/5
+- Known failure: none
+- Blocker class: none
+- Next action: commit this delivery evidence, push it, and verify all remote
+  checks on the updated PR head
+- Synchronized status: Plan.md=M10 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M10-A16-PR-OPEN
+
 ### Attempt 1
 
 - Selected milestone: M0
