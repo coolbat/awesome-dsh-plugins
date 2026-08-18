@@ -6,8 +6,8 @@
   `/Users/coolbat/awesome-dsh-plugins`
 - Delivery scope: branch and review PR only
 - Needs-decision queue: 0/3
-- Active milestone: M15
-- Current status: in_progress
+- Active milestone: none
+- Current status: complete
 - Approved decisions in force: freeze PR #2 head `5f4afa34`; reconcile all 355
   ready records, freshly review 165 new or changed records, and do not merge or
   deploy
@@ -20,6 +20,24 @@
   compatibility
 
 ## Per-Attempt Synchronization Record
+
+### Follow-on attempt 10 M15 branch delivery and closure
+
+- Milestone: M15
+- Changed assumptions: none
+- Command or observation: committed and pushed the full review, refreshed PR
+  #5, waited for GitHub quality and Cloudflare Pages, compared local and remote
+  SHAs, inspected check output, and requested both preview `/en/` routes
+- Result: pass; PR #5 head `f3f0a1fd17c35b3122ee8b24f86f2093e00cd631`
+  is CLEAN; both checks pass; immutable and branch previews return HTTP 200;
+  local and remote SHAs match
+- Known failure: none in M15; M13-F1/F2 and M14-F1/F2 remain repaired evidence
+- Blocker class: none
+- Next action: human review of PR #5; do not merge or deploy without explicit
+  authorization
+- Synced surfaces: Plan.md=M15 done;
+  agent-loop-state.md=2026-08-19T00:42:00+08:00;
+  release-evidence.md=M15-A10-CI-PASS
 
 ### Follow-on attempt 9 M15 selection
 

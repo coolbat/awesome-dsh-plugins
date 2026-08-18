@@ -13,9 +13,9 @@ Needs-decision WIP limit: 3
 
 ## Selected Milestone
 
-- Milestone: M15 in_progress
-- Approved scope boundary: review PR #2 head 5f4afa34, refresh PR #5, and stop
-  before merge or production deployment
+- Milestone: none; all approved milestones complete
+- Approved scope boundary: retain PR #5 for human review and stop before merge
+  or production deployment
 - Required validation gate: npm run check &&
   NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 - Stop conditions: stop before executing third-party code, guessing evidence,
@@ -32,6 +32,24 @@ Needs-decision WIP limit: 3
 - Never exceed `branch_pr`; merging and production remain human-owned.
 
 ## Attempt Record
+
+### Follow-on attempt 10 M15 branch delivery and closure
+
+- Selected milestone: M15
+- Changed assumptions: none
+- Action: commit and push the complete review, refresh PR #5, wait for both
+  remote checks, and verify immutable and branch preview responses
+- Command or observation: Git commit/push, `gh pr edit`, `gh pr checks --watch`,
+  PR/remote SHA reads, check-run output, and direct preview HTTP requests
+- Test level and environment: S2 remote; GitHub and Cloudflare Pages preview
+- Result: pass; review commit `f3f0a1fd17c35b3122ee8b24f86f2093e00cd631`
+  is the clean PR #5 head, quality and Cloudflare checks pass, and both preview
+  URLs return HTTP 200
+- Known failure: none in M15; earlier repaired failures remain retained
+- Blocker class: none
+- Next action: human review of PR #5; merge remains explicitly unauthorized
+- Synchronized status: Plan.md=M15 done; Documentation.md=complete;
+  agent-loop-state.md=complete; release-evidence.md=M15-A10-CI-PASS
 
 ### Follow-on attempt 9 M15 selection
 

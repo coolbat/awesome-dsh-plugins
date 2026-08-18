@@ -1528,3 +1528,39 @@
 - Blocker class: none
 - Verdict: pass; branch is ready for commit and PR refresh
 - Next action: stage only the explicit review scope, commit, and push
+
+### Evidence M15-A10-PR-REFRESH
+
+- Milestone: M15
+- Attempt number: 10
+- Environment: local Git and GitHub
+- Commands or observations: explicit staging, commit, push, and PR #5 title and
+  body refresh
+- Result: review commit `f3f0a1fd17c35b3122ee8b24f86f2093e00cd631`
+  pushed to `codex/review-new-candidates-20260818`; PR #5 now documents the
+  355-record review, static-only boundary, counts, and validation
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; branch-PR delivery exists without merge or production deploy
+- Next action: wait for final-head quality and Cloudflare checks
+
+### Evidence M15-A10-CI-PASS
+
+- Milestone: M15
+- Attempt number: 10
+- Environment: GitHub and Cloudflare Pages branch preview
+- Commands or observations: `gh pr checks --watch`, PR JSON, local/remote SHA
+  reads, check-run output, and direct requests to immutable and branch preview
+  `/en/` routes
+- Result: PR #5 head `f3f0a1fd17c35b3122ee8b24f86f2093e00cd631`
+  is CLEAN; GitHub quality and Cloudflare Pages checks conclude success;
+  https://088f827b.awesome-dsh-plugins.pages.dev/en/ and
+  https://codex-review-new-candidates.awesome-dsh-plugins.pages.dev/en/ return
+  HTTP 200; local and remote SHAs match
+- Known failure: none in M15; prior repaired failures remain retained
+- Blocker class: none
+- Verdict: pass; M15 and the approved branch-PR delivery are complete
+- Residual risk: static review does not certify runtime safety, compatibility,
+  or discovery completeness
+- Next action: human review of PR #5; merge and production deployment remain
+  explicitly unauthorized

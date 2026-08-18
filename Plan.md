@@ -158,11 +158,11 @@ Stop conditions: Stop before executing third-party code, guessing evidence, publ
 Evidence: 2026-08-19T00:28:00+08:00; M14-A8-S1-PASS; 115 records complete as 42 reviewed, 21 held, 28 duplicates, 9 fixtures, 3 non-plugin packages, 9 source conflicts, and 3 unavailable; catalog 419 total with 342 reviewed, 76 held, and 1 excluded; completion mode, 37 tests, and 850-page build pass
 
 ## Milestone M15: Reconcile and refresh the review pull request
-Status: in_progress
+Status: done
 Priority: P1
 Dependencies: M14
 Scope: Prove complete 355-record ledger coverage, regenerate catalog and READMEs, run final branch gates, push the dedicated branch, and refresh PR #5.
 Acceptance: All 355 keys are dispositioned exactly once, final tests and build pass, branch CI is green, and PR #5 contains the review without merge or production deployment.
 Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 Stop conditions: Stop before merge, production deployment, deleting evidence, or claiming runtime safety, compatibility, or discovery completeness.
-Evidence: pending
+Evidence: 2026-08-19T00:42:00+08:00; M15-A10-CI-PASS; PR #5 at f3f0a1fd17c35b3122ee8b24f86f2093e00cd631 is CLEAN, GitHub quality and Cloudflare Pages checks pass, both immutable and branch previews return HTTP 200, and merge and production deployment remain untouched

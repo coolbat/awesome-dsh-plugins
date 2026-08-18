@@ -9,34 +9,42 @@
 - Queue limit reached: false
 - Last test level: S2 plus completion and contract verification
 - Delivery environment: local dedicated branch
-- Closure status: reopened for the approved incremental review
+- Closure status: complete
 
 ## Current Selection
 
 - Run ID: review-incremental-355-2026-08-18
-- Selected milestone: M15
-- Attempt number: 9
-- Resume milestone: M15
-- Runnable order: none while M15 is in_progress
+- Selected milestone: none
+- Attempt number: 10
+- Resume milestone: none
+- Runnable order: none; all approved milestones complete
 - Blocked: none
 - Needs decision: none
 - Stop reason: none
-- Next action: stage explicit review files, commit, and push to PR #5
+- Next action: human review of PR #5; merge remains unauthorized
 
 ## Last Synchronized Attempt
 
-- Milestone: M15
+- Milestone: M15 closure
 - Changed assumptions: none
-- Command or observation: full S2, completion mode, whitespace, and contract
-  verification
-- Result: pass; ledger 355/0, catalog 419/342/76/1, 37 tests, formatting,
-  typecheck, generated docs, and 850 static pages pass
+- Command or observation: branch push, PR refresh, remote check watch, SHA
+  comparison, and direct immutable plus branch preview requests
+- Result: pass; PR #5 head f3f0a1fd is CLEAN, both checks pass, previews return
+  HTTP 200, and local and remote SHAs match
 - Known failure: none
 - Blocker class: none
-- Plan.md status: M15 in_progress
-- Documentation.md record: Follow-on attempt 9 M15 S2 pass
-- release-evidence.md record: M15-A9-S2-PASS
-- Synchronized at: 2026-08-19T00:36:00+08:00
+- Plan.md status: M15 done
+- Documentation.md record: Follow-on attempt 10 M15 branch delivery and closure
+- release-evidence.md record: M15-A10-CI-PASS
+- Synchronized at: 2026-08-19T00:42:00+08:00
+
+## Current Closure
+
+- Final required levels: local S2, GitHub quality, and Cloudflare Pages branch
+  preview passed.
+- Final delivery state: dedicated branch and PR #5 only; main and production
+  unchanged.
+- Cleanup candidate: retain the branch until PR #5 is accepted or rejected.
 
 ## Morning Handoff Snapshot
 
