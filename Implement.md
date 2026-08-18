@@ -3,7 +3,7 @@
 ## Execution Policy
 
 Workspace isolation: dedicated-branch
-Workspace isolation reason: the current 210-record review is isolated from main and production on codex/review-new-candidates-20260818
+Workspace isolation reason: the current incremental review is isolated from main and production on codex/review-new-candidates-20260818
 Delivery scope: branch_pr
 S0 command: npm run validate && node scripts/validate-review-ledger.mjs
 S1 command: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
@@ -13,9 +13,9 @@ Needs-decision WIP limit: 3
 
 ## Selected Milestone
 
-- Milestone: none; all approved milestones complete
-- Approved scope boundary: retain the review PR for human review without merge
-  or production deployment
+- Milestone: M15 in_progress
+- Approved scope boundary: review PR #2 head 5f4afa34, refresh PR #5, and stop
+  before merge or production deployment
 - Required validation gate: npm run check &&
   NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 - Stop conditions: stop before executing third-party code, guessing evidence,
@@ -32,6 +32,128 @@ Needs-decision WIP limit: 3
 - Never exceed `branch_pr`; merging and production remain human-owned.
 
 ## Attempt Record
+
+### Follow-on attempt 9 M15 selection
+
+- Selected milestone: M15
+- Changed assumptions: none
+- Action: select final reconciliation and branch-PR delivery after all 355
+  frozen records reached a terminal disposition
+- Command or observation: checker returned M15 first with no errors or warnings
+- Test level and environment: contract gate; local dedicated branch
+- Result: M15 selected and marked in_progress
+- Known failure: none
+- Blocker class: none
+- Next action: inspect the complete diff and run final S2 before commit
+- Synchronized status: Plan.md=M15 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M15-A9-SELECT
+
+### Follow-on attempt 9 M15 reconciliation
+
+- Selected milestone: M15
+- Changed assumptions: none
+- Action: inspect full scope, catalog deltas, disposition coverage, repository
+  uniqueness, generated files, whitespace, authentication, and PR state
+- Command or observation: Git status and diff review, old/current catalog
+  comparison, completion validator, aggregate invariants, and `git diff --check`
+- Test level and environment: S2 diagnostic; local branch and GitHub read-only
+- Result: pass; 355 unique records have 0 pending, catalog has 419 unique ids
+  and repositories, no old catalog record was removed, and PR #5 remains open
+- Known failure: none
+- Blocker class: none
+- Next action: run full final S2 before commit
+- Synchronized status: Plan.md=M15 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M15-A9-RECONCILE-PASS
+
+### Follow-on attempt 9 M15 S2 pass
+
+- Selected milestone: M15
+- Changed assumptions: none
+- Action: run the complete final local verification route before commit
+- Command or observation: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`, completion mode, whitespace, and contract checker
+- Test level and environment: S2; local dedicated branch
+- Result: pass; catalog 419/342/76/1, ledger 355/0, all 37 tests,
+  formatting, typecheck, generated docs, and 850 static pages pass
+- Known failure: M13-F1/F2 and M14-F1/F2 remain repaired evidence; none in M15
+- Blocker class: none
+- Next action: stage explicit review files, commit, and push the branch
+- Synchronized status: Plan.md=M15 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M15-A9-S2-PASS
+
+### Follow-on attempt 8 M14 verification
+
+- Selected milestone: M14
+- Changed assumptions: two fixed repository archives are unavailable and one
+  large archive requires a larger read-only listing buffer
+- Action: statically disposition records 241 through 355, regenerate derived
+  catalogs, run completion mode, full S1, and independent reconciliation
+- Command or observation: 91 explicit and 24 exact historical decisions;
+  `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Test level and environment: S1; local dedicated branch
+- Result: pass; 115 unique records have 0 pending, catalog totals are
+  419/342/76/1, all 37 tests pass, and 850 static pages build
+- Known failure: M14-F1 fail-fast archive acquisition and M14-F2 default tar
+  listing buffer were repaired and retained; two unavailable candidates remain
+  explicit dispositions
+- Blocker class: none
+- Next action: run the contract checker and select M15
+- Synchronized status: Plan.md=M14 done and M15 runnable;
+  Documentation.md=updated; agent-loop-state.md=updated;
+  release-evidence.md=M14-A8-S1-PASS
+
+### Follow-on attempt 7 M14 selection
+
+- Selected milestone: M14
+- Changed assumptions: none
+- Action: select the final frozen review wave and compare it with the prior
+  completed ledger before source inspection
+- Command or observation: checker returned M14 first; wave comparison found 49
+  exact records and 66 fresh records across 43 repositories
+- Test level and environment: contract gate and local diagnostic
+- Result: M14 selected and marked in_progress; 25 exact catalog records require
+  explicit linkage and 24 exact non-catalog decisions can be mechanically reused
+- Known failure: none
+- Blocker class: none
+- Next action: acquire and statically inspect the 43 fixed repository sources
+- Synchronized status: Plan.md=M14 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M14-A7-SELECT
+
+### Follow-on attempt 6 M13 verification
+
+- Selected milestone: M13
+- Changed assumptions: one repository already had a canonical catalog record,
+  so the newer component is retained as a duplicate rather than a second card
+- Action: statically disposition records 121 through 240, regenerate derived
+  catalogs, repair validation findings, and run full S1 plus independent checks
+- Command or observation: 89 explicit and 31 exact historical decisions;
+  `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Test level and environment: S1; local dedicated branch
+- Result: pass; 120 unique records have 0 pending, catalog totals are
+  384/317/66/1, all 37 tests pass, and 780 static pages build
+- Known failure: M13-F1 malformed auxiliary heredoc and M13-F2 duplicate
+  repository catalog entry were repaired and retained
+- Blocker class: none
+- Next action: run the contract checker and select M14
+- Synchronized status: Plan.md=M13 done and M14 runnable;
+  Documentation.md=updated; agent-loop-state.md=updated;
+  release-evidence.md=M13-A6-S1-PASS
+
+### Follow-on attempt 1 M11 selection
+
+- Selected milestone: M11
+- Changed assumptions: none
+- Action: select the first contract-valid runnable milestone before review-data
+  changes
+- Command or observation: checker returned ready with M11 first and no errors
+  or warnings
+- Test level and environment: contract gate; local dedicated branch
+- Result: M11 selected and marked in_progress
+- Known failure: none
+- Blocker class: none
+- Next action: revalidate PR #2 head, import and freeze its queue, then run M11
+  validation
+- Synchronized status: Plan.md=M11 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M11-A1-SELECT
 
 ### Follow-on preflight
 

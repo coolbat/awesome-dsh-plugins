@@ -1224,3 +1224,307 @@
 - Verdict: pass; auxiliary final-head response verification is restored
 - Next action: commit and push this final evidence record, then verify the
   resulting documentation-only head without further repository changes
+
+### Evidence M11-PREFLIGHT
+
+- Milestone: M11 preflight
+- Attempt number: 0
+- Environment: GitHub and local dedicated review branch
+- Commands or observations: fetched remote refs; inspected PR #2 head and
+  discovery run 32145659888; validated candidate counts; compared exact
+  key-and-commit pairs with the completed 210-record ledger
+- Result: discovery succeeded with 60 repositories observed, 65 bundle
+  manifests found, zero errors, and no partial flag; PR #2 head
+  `5f4afa34c293b0c79c16fd6a1d92baf46c11eade` has 598 structural leads with 238
+  already listed, 5 held, and 355 ready; 190 ready rows exactly match prior
+  reviewed source and 165 are new or changed across 96 repositories
+- Known failure: PR #2 quality workflow run 32145849630 is action_required and
+  awaits approval; the discovery artifact and run are successful
+- Blocker class: none for the fixed-source static review
+- Verdict: pass; the new queue may be frozen after contract selection
+- Next action: run the contract checker and select M11 before data changes
+
+### Evidence M11-A1-SELECT
+
+- Milestone: M11
+- Attempt number: 1
+- Environment: local dedicated review branch
+- Command: `python3 /Users/coolbat/.codex/skills/long-horizon-task/scripts/check_task_contract.py --project . --json`
+- Result: exit 0; ready true; no errors or warnings; M11 first in runnable order
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; M11 selected before review-data changes
+- Next action: verify PR #2 remains at 5f4afa34, import and freeze its queue, and
+  run M11 validation
+
+### Evidence M11-A2-S1-FAIL
+
+- Milestone: M11
+- Attempt number: 2
+- Environment: local dedicated review branch
+- Commands: fixed-head comparison, candidate import, `npm run freeze:review`,
+  validation, formatting, and full S1
+- Result: 598-candidate queue and 355-row pending ledger validate; exact
+  reconciliation is 190 historical and 165 fresh across 96 repositories; 36 of
+  37 tests pass
+- Known failure: M11-F1 repository CLI fixture expects 210 records and zero
+  pending while the active frozen queue correctly reports 355 and 355
+- Blocker class: repo_fixable
+- Verdict: fail; M11 remains in_progress
+- Next action: update only the intentional active-queue expectation and rerun S1
+
+### Evidence M11-A2-S1-PASS
+
+- Milestone: M11
+- Attempt number: 2
+- Environment: local dedicated review branch
+- Commands: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`;
+  independent PR-head, schema, ledger, SHA, overlap, and `git diff --check`
+  verification
+- Result: exit 0; PR #2 remains at
+  `5f4afa34c293b0c79c16fd6a1d92baf46c11eade`; 598 structural leads validate;
+  frozen snapshot and ledger each contain 355 unique ready records with full
+  SHAs and 355 pending; reconciliation is 190 exact and 165 fresh across 96
+  repositories; 37 tests, formatting, typecheck, docs, and 702-page build pass
+- Known failure: M11-F1 repaired and retained
+- Blocker class: none
+- Verdict: pass; M11 acceptance satisfied
+- Next action: mark M11 done, release M12, and rerun the checker
+
+### Evidence M12-A3-SELECT
+
+- Milestone: M12
+- Attempt number: 3
+- Environment: local dedicated review branch
+- Commands or observations: contract checker and records 1 through 120 exact
+  key-and-commit comparison against the prior completed ledger
+- Result: M12 selected; 82 exact records, of which 18 require explicit catalog
+  linkage, and 38 fresh records across 22 repositories require fixed-source
+  inspection
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; review may proceed within the static-only boundary
+- Next action: inspect fixed manifests, patches, licenses, identity, lifecycle,
+  and capabilities without executing candidate code
+
+### Evidence M12-A4-S1-PASS
+
+- Milestone: M12
+- Attempt number: 4
+- Environment: local dedicated review branch
+- Commands: apply 56 explicit and 64 exact historical decisions; regenerate and
+  format; `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`;
+  independent catalog, ledger, wave-shape, and `git diff --check` verification
+- Result: exit 0; all 120 wave records are unique and complete as 30 reviewed,
+  7 held, 54 duplicates, 9 fixtures, 16 non-plugin packages, 3 source conflicts,
+  and 1 unavailable; 19 catalog evidence records cover 16 reviewed and 3 held
+  repositories; catalog is 362 total with 299 reviewed, 62 held, and 1 excluded;
+  37 tests, formatting, typecheck, generated docs, and 736-page build pass
+- Known failure: none in M12; M11-F1 repaired and retained
+- Blocker class: none
+- Verdict: pass; M12 acceptance satisfied
+- Next action: mark M12 done, release M13, and rerun the checker
+
+### Evidence M13-A5-SELECT
+
+- Milestone: M13
+- Attempt number: 5
+- Environment: local dedicated review branch
+- Commands or observations: contract checker and records 121 through 240 exact
+  key-and-commit comparison against the prior completed ledger
+- Result: M13 selected; 59 exact records, of which 28 require explicit catalog
+  linkage, and 61 fresh records across 32 repositories require fixed-source
+  inspection
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; static review may proceed
+- Next action: inspect fixed manifests, patches, licenses, identities,
+  lifecycles, and capabilities without executing candidate code
+
+### Evidence M13-A6-ACQUIRE-FAIL
+
+- Milestone: M13
+- Attempt number: 6
+- Environment: temporary static-review directory
+- Commands or observations: auxiliary inline Node archive acquisition script
+  for 32 fixed repository commits
+- Result: the first command stopped at parse time because a literal newline was
+  placed before the heredoc terminator; no candidate code ran and no workspace
+  source data was changed
+- Known failure: M13-F1 malformed auxiliary heredoc
+- Blocker class: repo_fixable
+- Verdict: fail; source acquisition had not begun
+- Next action: rerun the same read-only acquisition with a proper multiline
+  heredoc
+
+### Evidence M13-A6-ACQUIRE-PASS
+
+- Milestone: M13
+- Attempt number: 6
+- Environment: temporary static-review directory
+- Commands or observations: downloaded fixed GitHub source archives, checked
+  tar paths before extraction, and read manifests, patches, licenses, package
+  metadata, and documentation statically
+- Result: all 32 fixed repository archives were acquired and inspected without
+  executing candidate code
+- Known failure: M13-F1 repaired and retained
+- Blocker class: none
+- Verdict: pass
+- Next action: encode wave decisions and catalog representatives
+
+### Evidence M13-A6-S0-FAIL
+
+- Milestone: M13
+- Attempt number: 6
+- Environment: local dedicated branch
+- Commands or observations: applied the first decision set and ran catalog
+  validation
+- Result: validator rejected a second catalog card for
+  `imsai-sh/awesome-deepseek-harness-plugins`, which already has a canonical
+  reviewed record
+- Known failure: M13-F2 duplicate repository catalog entry
+- Blocker class: repo_fixable
+- Verdict: fail; public catalog uniqueness was preserved by the gate
+- Next action: classify the newer component as a duplicate of the canonical
+  repository record and rerun all gates
+
+### Evidence M13-A6-S1-PASS
+
+- Milestone: M13
+- Attempt number: 6
+- Environment: local dedicated branch
+- Commands: apply 89 explicit and 31 exact historical decisions; regenerate
+  and format; `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`;
+  independent wave-shape, source-class, catalog, binding, and whitespace checks
+- Result: exit 0; all 120 wave records are unique and complete as 35 reviewed,
+  15 held, 37 duplicates, 14 fixtures, 8 non-plugin packages, 10 source
+  conflicts, and 1 unavailable; 22 catalog evidence records cover 18 reviewed
+  and 4 held repositories; catalog is 384 total with 317 reviewed, 66 held, and
+  1 excluded; ledger has 115 pending; 37 tests and 780 static pages pass
+- Known failure: M13-F1 and M13-F2 repaired and retained
+- Blocker class: none
+- Verdict: pass; M13 acceptance satisfied
+- Residual risk: review remains static-only and does not certify runtime safety
+  or compatibility
+- Next action: mark M13 done, release M14, and rerun the checker
+
+### Evidence M14-A7-SELECT
+
+- Milestone: M14
+- Attempt number: 7
+- Environment: local dedicated review branch
+- Commands or observations: contract checker and records 241 through 355 exact
+  key-and-commit comparison against the prior completed ledger
+- Result: M14 selected; 49 exact records, of which 25 require explicit catalog
+  linkage, and 66 fresh records across 43 repositories require fixed-source
+  inspection
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; final-wave static review may proceed
+- Next action: inspect fixed manifests, patches, licenses, identities,
+  lifecycles, and capabilities without executing candidate code
+
+### Evidence M14-A8-ACQUIRE-FAIL
+
+- Milestone: M14
+- Attempt number: 8
+- Environment: temporary static-review directory
+- Commands or observations: fixed-commit GitHub archive acquisition for 43
+  fresh repositories with tar path inspection before extraction
+- Result: the first fail-fast pass stopped when
+  `Tvincentao/dsh-token-cost-calculate` returned 404; a failure-tolerant retry
+  identified `xiaheng1/dsh-turn-nav` as a second 404 and hit the default Node
+  buffer limit while listing the 9,041-entry yuchen0x1 archive
+- Known failure: M14-F1 fail-fast batch abort and M14-F2 tar listing ENOBUFS
+- Blocker class: repo_fixable plus candidate_unavailable
+- Verdict: partial; available sources remained static and no candidate code ran
+- Next action: preserve both unavailable candidates as explicit dispositions,
+  increase only the read-only tar listing buffer, and continue inspection
+
+### Evidence M14-A8-ACQUIRE-PASS
+
+- Milestone: M14
+- Attempt number: 8
+- Environment: temporary static-review directory and npm metadata endpoint
+- Commands or observations: retried acquisition per source, checked archive
+  paths, extracted 41 available fixed repositories, listed the large archive
+  with a bounded 256 MiB buffer, read source evidence, and queried registry
+  metadata without installation
+- Result: 41 fixed repositories are reproducible; two 404 sources remain
+  explicitly unavailable; manifest, patch, license, install identity,
+  lifecycle, and capability evidence were inspected without execution
+- Known failure: M14-F1 and M14-F2 repaired and retained
+- Blocker class: none for review completion
+- Verdict: pass
+- Next action: encode final-wave decisions and catalog records
+
+### Evidence M14-A8-S1-PASS
+
+- Milestone: M14
+- Attempt number: 8
+- Environment: local dedicated review branch
+- Commands: apply 91 explicit and 24 exact historical decisions; regenerate
+  and format; completion-mode ledger validation;
+  `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`;
+  independent wave, source, catalog, binding, and whitespace checks
+- Result: exit 0; all 115 wave records are unique and complete as 42 reviewed,
+  21 held, 28 duplicates, 9 fixtures, 3 non-plugin packages, 9 source
+  conflicts, and 3 unavailable; 38 catalog evidence records cover 26 reviewed
+  and 12 held repositories; the complete catalog is 419 total with 342
+  reviewed, 76 held, and 1 excluded; all 355 ledger records are dispositioned;
+  37 tests and 850 static pages pass
+- Known failure: M14-F1 and M14-F2 repaired and retained; two source 404s remain
+  explicit unavailable dispositions
+- Blocker class: none
+- Verdict: pass; M14 acceptance satisfied
+- Residual risk: review remains static-only and does not certify runtime safety
+  or compatibility
+- Next action: mark M14 done, release M15, and rerun the checker
+
+### Evidence M15-A9-SELECT
+
+- Milestone: M15
+- Attempt number: 9
+- Environment: local dedicated review branch
+- Command: contract checker after verified M14 closure
+- Result: exit 0; ready true; M15 first in runnable order; no errors or warnings
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; final reconciliation and branch-PR delivery may proceed
+- Next action: inspect complete disposition and catalog coverage, review the
+  worktree diff, and run final S2 before commit
+
+### Evidence M15-A9-RECONCILE-PASS
+
+- Milestone: M15
+- Attempt number: 9
+- Environment: local dedicated branch and GitHub read-only inspection
+- Commands or observations: Git scope and targeted diff review, prior/current
+  catalog comparison, completion validator, aggregate source and uniqueness
+  checks, `git diff --check`, GitHub authentication, and PR #5 inspection
+- Result: pass; all 355 ledger sequences are unique and terminal; catalog has
+  419 unique IDs and repositories with 74 additions, no removals, and 5
+  evidence updates; candidate and snapshot bind to PR #2 head `5f4afa34`; PR #5
+  remains open and clean at its prior head
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; scope is ready for final S2
+- Next action: run `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+
+### Evidence M15-A9-S2-PASS
+
+- Milestone: M15
+- Attempt number: 9
+- Environment: local dedicated review branch
+- Commands: `npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`;
+  `node scripts/validate-review-ledger.mjs --require-complete`;
+  `git diff --check`; contract checker
+- Result: exit 0; catalog 419/342/76/1 and ledger 355/0 validate; generated
+  docs are current; typecheck, all 37 tests, and formatting pass; Next.js
+  generates 850 static pages; contract checker is ready with no errors or
+  warnings
+- Known failure: M13-F1/F2 and M14-F1/F2 remain repaired and retained; none in
+  M15
+- Blocker class: none
+- Verdict: pass; branch is ready for commit and PR refresh
+- Next action: stage only the explicit review scope, commit, and push

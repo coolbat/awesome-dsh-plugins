@@ -6,18 +6,239 @@
   `/Users/coolbat/awesome-dsh-plugins`
 - Delivery scope: branch and review PR only
 - Needs-decision queue: 0/3
-- Active milestone: none
-- Current status: complete
-- Approved decisions in force: freeze PR #2 head `e5fb3f0`; statically process
-  all 210 current ready records; do not merge or deploy
-- Changed assumptions: none
+- Active milestone: M15
+- Current status: in_progress
+- Approved decisions in force: freeze PR #2 head `5f4afa34`; reconcile all 355
+  ready records, freshly review 165 new or changed records, and do not merge or
+  deploy
+- Changed assumptions: the latest discovery completed without query errors and
+  supersedes the prior partial 210-record input
 - Known failures: all recorded failures are repaired or explicitly
   dispositioned and retained in the evidence history
-- Residual risks: the source discovery run had four external-query errors;
-  candidate repositories or registry metadata may disappear; static review
-  cannot prove discovery completeness, safety, or runtime compatibility
+- Residual risks: candidate repositories or registry metadata may disappear;
+  static review cannot prove discovery completeness, safety, or runtime
+  compatibility
 
 ## Per-Attempt Synchronization Record
+
+### Follow-on attempt 9 M15 selection
+
+- Milestone: M15
+- Changed assumptions: none
+- Command or observation: checker returned M15 first with no errors or warnings
+- Result: selected after all 355 frozen records reached terminal dispositions
+- Known failure: none
+- Blocker class: none
+- Next action: reconcile the complete diff and run final S2 before commit
+- Synced surfaces: Plan.md=M15 in_progress;
+  agent-loop-state.md=2026-08-19T00:30:00+08:00;
+  release-evidence.md=M15-A9-SELECT
+
+### Follow-on attempt 9 M15 reconciliation
+
+- Milestone: M15
+- Changed assumptions: none
+- Command or observation: inspected Git scope and targeted diffs, compared old
+  and current catalog identities, reran completion and aggregate invariants,
+  checked whitespace, authentication, remote branch, and PR #5
+- Result: pass; 355 unique ledger records have 0 pending; catalog has 419
+  unique IDs and repositories, 74 additions, no removals, and 5 evidence
+  updates; PR #5 remains open and clean at its prior head
+- Known failure: none
+- Blocker class: none
+- Next action: run full final S2 before commit
+- Synced surfaces: Plan.md=M15 in_progress;
+  agent-loop-state.md=2026-08-19T00:34:00+08:00;
+  release-evidence.md=M15-A9-RECONCILE-PASS
+
+### Follow-on attempt 9 M15 S2 pass
+
+- Milestone: M15
+- Changed assumptions: none
+- Command or observation: full S2, completion-mode ledger validation,
+  whitespace check, and contract checker
+- Result: pass; catalog 419/342/76/1, ledger 355/0, 37 tests, formatting,
+  typecheck, generated docs, and 850 static pages pass
+- Known failure: no M15 failure; prior repaired failures remain retained
+- Blocker class: none
+- Next action: stage explicit review files, commit, and push to PR #5
+- Synced surfaces: Plan.md=M15 in_progress;
+  agent-loop-state.md=2026-08-19T00:36:00+08:00;
+  release-evidence.md=M15-A9-S2-PASS
+
+### Follow-on attempt 8 M14 verification
+
+- Milestone: M14
+- Changed assumptions: two fixed repository sources now return 404 and one
+  9,041-entry archive exceeds the default listing buffer
+- Command or observation: applied 91 explicit and 24 exact historical
+  decisions, regenerated catalogs, ran completion mode and full S1, then
+  independently verified sequence uniqueness, source classes, catalog
+  uniqueness, source binding, and whitespace
+- Result: pass; all 115 records complete as 42 reviewed, 21 held, 28
+  duplicates, 9 fixtures, 3 non-plugin packages, 9 source conflicts, and 3
+  unavailable; catalog 419/342/76/1; 37 tests and 850 static pages pass
+- Known failure: M14-F1 initial fail-fast acquisition stopped at the first 404
+  and was repaired with per-source disposition; M14-F2 tar listing exceeded the
+  default buffer and was repaired with a bounded larger read-only buffer
+- Blocker class: none
+- Next action: run the checker and select M15
+- Synced surfaces: Plan.md=M14 done and M15 runnable;
+  agent-loop-state.md=2026-08-19T00:28:00+08:00;
+  release-evidence.md=M14-A8-S1-PASS
+
+### Follow-on attempt 7 M14 selection
+
+- Milestone: M14
+- Changed assumptions: none
+- Command or observation: checker returned M14 first; records 241 through 355
+  were compared against the prior completed ledger
+- Result: selected; 49 exact historical records and 66 fresh records across 43
+  repositories, including 25 catalog-backed exact matches
+- Known failure: none
+- Blocker class: none
+- Next action: acquire and statically inspect fixed source for the 66 fresh
+  records and encode explicit catalog decisions
+- Synced surfaces: Plan.md=M14 in_progress;
+  agent-loop-state.md=2026-08-19T00:10:00+08:00;
+  release-evidence.md=M14-A7-SELECT
+
+### Follow-on attempt 6 M13 verification
+
+- Milestone: M13
+- Changed assumptions: the newer `dsh1024` component shares a repository with
+  an existing canonical catalog entry and is therefore a duplicate, not a new
+  directory card
+- Command or observation: applied 89 explicit and 31 exact historical
+  decisions, regenerated catalogs, ran full S1, then independently verified
+  sequence uniqueness, source classes, catalog counts, source binding, and
+  whitespace
+- Result: pass; all 120 records complete as 35 reviewed, 15 held, 37
+  duplicates, 14 fixtures, 8 non-plugin packages, 10 source conflicts, and 1
+  unavailable; catalog 384/317/66/1; 37 tests and 780 static pages pass
+- Known failure: M13-F1 auxiliary acquisition script contained a malformed
+  newline before its heredoc terminator and was rerun with a proper multiline
+  heredoc; M13-F2 initially added a second catalog record for one repository
+  and was repaired by retaining the existing canonical record
+- Blocker class: none
+- Next action: run the checker and select M14
+- Synced surfaces: Plan.md=M13 done and M14 runnable;
+  agent-loop-state.md=2026-08-19T00:08:00+08:00;
+  release-evidence.md=M13-A6-S1-PASS
+
+### Follow-on attempt 5 M13 selection
+
+- Milestone: M13
+- Changed assumptions: none
+- Command or observation: checker returned M13 first; records 121 through 240
+  were compared against the prior completed ledger
+- Result: selected; 59 exact historical records and 61 fresh records across 32
+  repositories, including 28 catalog-backed exact matches
+- Known failure: none
+- Blocker class: none
+- Next action: acquire and statically inspect fixed source for the 61 fresh
+  records and encode explicit catalog decisions
+- Synced surfaces: Plan.md=M13 in_progress;
+  agent-loop-state.md=2026-08-19T00:01:00+08:00;
+  release-evidence.md=M13-A5-SELECT
+
+### Follow-on attempt 4 M12 verification
+
+- Milestone: M12
+- Changed assumptions: none
+- Command or observation: applied 56 explicit and 64 exact historical
+  decisions, regenerated catalogs, ran full S1, then independently verified
+  wave uniqueness, source classes, catalog record counts, and whitespace
+- Result: pass; all 120 records complete as 30 reviewed, 7 held, 54 duplicates,
+  9 fixtures, 16 non-plugin packages, 3 source conflicts, and 1 unavailable;
+  catalog 362/299/62/1; 37 tests and 736 static pages pass
+- Known failure: none in M12; M11-F1 remains repaired and retained
+- Blocker class: none
+- Next action: mechanically release M13 and select it after checker validation
+- Synced surfaces: Plan.md=M12 done and M13 runnable;
+  agent-loop-state.md=2026-08-18T23:58:00+08:00;
+  release-evidence.md=M12-A4-S1-PASS
+
+### Follow-on attempt 3 M12 selection
+
+- Milestone: M12
+- Changed assumptions: none
+- Command or observation: checker returned M12 first after verified M11 closure;
+  wave reconciliation compared records 1 through 120 with the prior ledger
+- Result: M12 selected; 82 exact historical records and 38 fresh records across
+  22 repositories, including 18 catalog-backed exact matches
+- Known failure: none
+- Blocker class: none
+- Next action: statically acquire and inspect fixed source for the 38 fresh
+  records, then encode all explicit catalog decisions
+- Synced surfaces: Plan.md=M12 in_progress;
+  agent-loop-state.md=2026-08-18T23:46:00+08:00;
+  release-evidence.md=M12-A3-SELECT
+
+### Follow-on attempt 2 M11 verification
+
+- Milestone: M11
+- Changed assumptions: none
+- Command or observation: reran full S1 after repairing the active-queue
+  fixture, then independently rechecked PR head, schema, ledger coverage, source
+  SHAs, overlap counts, and whitespace
+- Result: pass; 355 unique ready rows and 355 pending ledger rows bind to
+  `5f4afa34`; 190 exact and 165 fresh records across 96 repositories; 37 tests,
+  formatting, typecheck, and 702-page build pass
+- Known failure: M11-F1 repaired and retained
+- Blocker class: none
+- Next action: mechanically release M12 and select it after checker validation
+- Synced surfaces: Plan.md=M11 done and M12 runnable;
+  agent-loop-state.md=2026-08-18T23:44:00+08:00;
+  release-evidence.md=M11-A2-S1-PASS
+
+### Follow-on attempt 2 M11 S1 fixture failure
+
+- Milestone: M11
+- Changed assumptions: none
+- Command or observation: imported and froze PR #2 head, formatted governed
+  data, and ran the full S1 command
+- Result: queue and ledger validate at 355/355; 36 tests passed and one active
+  repository fixture still expected the prior 210/0 queue
+- Known failure: M11-F1 stale active-queue CLI expectation
+- Blocker class: repo_fixable
+- Next action: update the intentional queue expectation and rerun S1
+- Synced surfaces: Plan.md=M11 in_progress;
+  agent-loop-state.md=2026-08-18T23:41:00+08:00;
+  release-evidence.md=M11-A2-S1-FAIL
+
+### Follow-on attempt 1 M11 selection
+
+- Milestone: M11
+- Changed assumptions: none
+- Command or observation: the contract checker returned ready with M11 first
+  in runnable order and no errors or warnings
+- Result: M11 selected and persisted before review-data changes
+- Known failure: none
+- Blocker class: none
+- Next action: revalidate and freeze the fixed PR #2 candidate payload
+- Synced surfaces: Plan.md=M11 in_progress;
+  agent-loop-state.md=2026-08-18T23:38:00+08:00;
+  release-evidence.md=M11-A1-SELECT
+
+### Follow-on preflight for the 2026-08-18 incremental queue
+
+- Milestone: M11 preflight
+- Changed assumptions: PR #2 now points to a successful, non-partial discovery
+  head with 355 ready records
+- Command or observation: fetched remote refs, inspected PR #2 and discovery
+  run 32145659888, validated queue counts, and compared exact key-and-commit
+  pairs against the completed 210-record ledger
+- Result: head `5f4afa34c293b0c79c16fd6a1d92baf46c11eade` contains 598 valid
+  leads with 355 ready records; 190 are exact historical matches and 165 are new
+  or changed records across 96 repositories
+- Known failure: PR #2's pull-request quality workflow is awaiting approval;
+  the source discovery run itself succeeded with zero errors
+- Blocker class: none for freezing and reviewing the fixed queue
+- Next action: validate the updated task contract and select M11
+- Synced surfaces: Plan.md=M11 runnable;
+  agent-loop-state.md=2026-08-18T23:35:19+08:00;
+  release-evidence.md=M11-PREFLIGHT
 
 ### Follow-on preflight for the current 210-record queue
 

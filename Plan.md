@@ -116,3 +116,53 @@ Acceptance: All 210 keys are dispositioned exactly once, final tests and build p
 Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 Stop conditions: Stop before merge, production deployment, deleting evidence, or claiming runtime safety, compatibility, or discovery completeness.
 Evidence: 2026-08-18T01:02:21+08:00; M10-A16-CI-PASS; PR #5 at 47515f13379dd66a3b344eda297aa2021876f772 is CLEAN, GitHub quality and Cloudflare Pages checks pass, the branch preview returns HTTP 200, and merge and production deployment remain untouched
+
+## Milestone M11: Freeze and reconcile the latest discovery queue
+Status: done
+Priority: P0
+Dependencies: M10
+Scope: Freeze the 355 ready-for-review records from PR #2 head 5f4afa34c293b0c79c16fd6a1d92baf46c11eade, initialize a new one-record-one-disposition ledger, and distinguish 190 exact historical matches from 165 new or changed fixed-source records.
+Acceptance: The snapshot contains exactly 355 unique ready records with full source SHAs, the ledger accounts for every key once, and the 190 exact versus 165 fresh reconciliation is reproducible.
+Validation: npm run validate:candidates && node scripts/validate-review-ledger.mjs
+Stop conditions: Stop if PR #2 head changes before freezing, ready count differs from 355, candidate keys are duplicated, a source commit is unpinned, or prior decisions would be reused across a changed commit.
+Evidence: 2026-08-18T23:44:00+08:00; M11-A2-S1-PASS; PR #2 head 5f4afa34 frozen with 355 unique ready records, 190 exact historical matches and 165 fresh records across 96 repositories; 37 tests, formatting, typecheck, and 702-page build pass
+
+## Milestone M12: Review frozen records 1 through 120
+Status: done
+Priority: P1
+Dependencies: M11
+Scope: Statically review frozen ledger records 1 through 120, reusing only exact fixed-source evidence and freshly reviewing every new or changed record.
+Acceptance: Every record in the wave has one evidence-backed disposition and every catalog addition satisfies source, structure, license, identity, lifecycle, capability, recency, and risk requirements.
+Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
+Stop conditions: Stop before executing third-party code, guessing evidence, publishing unresolved records as reviewed, or changing catalog methodology.
+Evidence: 2026-08-18T23:58:00+08:00; M12-A4-S1-PASS; 120 records complete as 30 reviewed, 7 held, 54 duplicates, 9 fixtures, 16 non-plugin packages, 3 source conflicts, and 1 unavailable; catalog 362 total with 299 reviewed, 62 held, and 1 excluded; 37 tests and 736-page build pass
+
+## Milestone M13: Review frozen records 121 through 240
+Status: done
+Priority: P1
+Dependencies: M12
+Scope: Statically review frozen ledger records 121 through 240 under the same fixed-source evidence and fail-closed publication boundary.
+Acceptance: Every record in the wave has one evidence-backed disposition and every catalog addition satisfies the fixed-source catalog schema.
+Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
+Stop conditions: Stop before executing third-party code, guessing evidence, publishing unresolved records as reviewed, or changing catalog methodology.
+Evidence: 2026-08-19T00:08:00+08:00; M13-A6-S1-PASS; 120 records complete as 35 reviewed, 15 held, 37 duplicates, 14 fixtures, 8 non-plugin packages, 10 source conflicts, and 1 unavailable; catalog 384 total with 317 reviewed, 66 held, and 1 excluded; 37 tests and 780-page build pass
+
+## Milestone M14: Review frozen records 241 through 355
+Status: done
+Priority: P1
+Dependencies: M13
+Scope: Statically review frozen ledger records 241 through 355 under the same fixed-source evidence and fail-closed publication boundary.
+Acceptance: Every record in the wave has one evidence-backed disposition and every catalog addition satisfies the fixed-source catalog schema.
+Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
+Stop conditions: Stop before executing third-party code, guessing evidence, publishing unresolved records as reviewed, or changing catalog methodology.
+Evidence: 2026-08-19T00:28:00+08:00; M14-A8-S1-PASS; 115 records complete as 42 reviewed, 21 held, 28 duplicates, 9 fixtures, 3 non-plugin packages, 9 source conflicts, and 3 unavailable; catalog 419 total with 342 reviewed, 76 held, and 1 excluded; completion mode, 37 tests, and 850-page build pass
+
+## Milestone M15: Reconcile and refresh the review pull request
+Status: in_progress
+Priority: P1
+Dependencies: M14
+Scope: Prove complete 355-record ledger coverage, regenerate catalog and READMEs, run final branch gates, push the dedicated branch, and refresh PR #5.
+Acceptance: All 355 keys are dispositioned exactly once, final tests and build pass, branch CI is green, and PR #5 contains the review without merge or production deployment.
+Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
+Stop conditions: Stop before merge, production deployment, deleting evidence, or claiming runtime safety, compatibility, or discovery completeness.
+Evidence: pending

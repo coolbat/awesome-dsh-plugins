@@ -7,36 +7,36 @@
 - Delivery scope: branch and review PR only
 - Needs-decision WIP: 0/3
 - Queue limit reached: false
-- Last test level: preflight
+- Last test level: S2 plus completion and contract verification
 - Delivery environment: local dedicated branch
-- Closure status: complete
+- Closure status: reopened for the approved incremental review
 
 ## Current Selection
 
-- Run ID: review-current-210-2026-08-18
-- Selected milestone: none
-- Attempt number: 17
-- Resume milestone: none
-- Runnable order: none; all milestones complete
+- Run ID: review-incremental-355-2026-08-18
+- Selected milestone: M15
+- Attempt number: 9
+- Resume milestone: M15
+- Runnable order: none while M15 is in_progress
 - Blocked: none
 - Needs decision: none
 - Stop reason: none
-- Next action: commit and push the final evidence record, then verify its checks
+- Next action: stage explicit review files, commit, and push to PR #5
 
 ## Last Synchronized Attempt
 
-- Milestone: post-closure verification
+- Milestone: M15
 - Changed assumptions: none
-- Command or observation: directly requested the explicit immutable preview
-  URL and reread PR state plus local and remote SHAs
-- Result: pass at 83d2291fc766906d7b3480fcd93088df954cff46;
-  PR CLEAN, both checks successful, preview HTTP 200, and SHAs equal
-- Known failure: M10-F1 and M10-F2 repaired and retained
+- Command or observation: full S2, completion mode, whitespace, and contract
+  verification
+- Result: pass; ledger 355/0, catalog 419/342/76/1, 37 tests, formatting,
+  typecheck, generated docs, and 850 static pages pass
+- Known failure: none
 - Blocker class: none
-- Plan.md status: M10 done
-- Documentation.md record: Follow-on attempt 17 post-closure diagnostic repair
-- release-evidence.md record: M10-A17-PREVIEW-PASS
-- Synchronized at: 2026-08-18T01:06:10+08:00
+- Plan.md status: M15 in_progress
+- Documentation.md record: Follow-on attempt 9 M15 S2 pass
+- release-evidence.md record: M15-A9-S2-PASS
+- Synchronized at: 2026-08-19T00:36:00+08:00
 
 ## Morning Handoff Snapshot
 
@@ -49,9 +49,9 @@
 - Changed assumptions: none
 - Risks: static-only evidence cannot establish discovery completeness, runtime
   safety, or compatibility
-- Next runnable: none; task complete
+- Next runnable: M11
 
-## Closure
+## Prior Closure
 
 - Final required levels: S1 and S2 passed locally; GitHub quality and
   Cloudflare Pages passed remotely on the delivered review head.

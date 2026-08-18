@@ -4,15 +4,19 @@
 
 The public DSH Plugin Index is built from evidence records in this repository.
 Automated discovery maintains a review-only queue in PR #2; the user approved
-reviewing the 210 currently unreviewed `ready-for-review` records from candidate
-head `e5fb3f0ab8186d4d25974d1b0e88a2eab16e76f0`.
+running another static review against candidate head
+`5f4afa34c293b0c79c16fd6a1d92baf46c11eade`. Its 355
+`ready-for-review` rows contain 190 exact key-and-commit matches from the prior
+completed ledger and 165 new or changed fixed-source records across 96
+repositories.
 
 ## Goal
 
-Process every one of the 210 frozen queue records into a reproducible static
-review disposition, publish evidence-complete distinct plugin bundles to the
-catalog branch, and leave duplicates, examples, archives, broken structures,
-or unresolved install identities explicitly accounted for.
+Process every one of the 355 frozen queue records into a reproducible static
+review disposition, reusing prior evidence only for exact key-and-commit
+matches, publish evidence-complete distinct plugin bundles to the catalog
+branch, and leave duplicates, examples, archives, broken structures, or
+unresolved install identities explicitly accounted for.
 
 ## Non-goals
 
@@ -26,7 +30,7 @@ or unresolved install identities explicitly accounted for.
 
 ## Deliverables
 
-- A frozen copy of the 210-record source queue with its PR commit recorded.
+- A frozen copy of the 355-record source queue with its PR commit recorded.
 - A disposition ledger covering every frozen record exactly once.
 - Catalog and review-log updates for evidence-complete distinct bundles.
 - Fixed-source identity, structure, license, lifecycle, compatibility, and
@@ -74,11 +78,11 @@ or unresolved install identities explicitly accounted for.
 
 ## Approved Assumptions
 
-- PR #2 head `e5fb3f0ab8186d4d25974d1b0e88a2eab16e76f0` is the approved frozen discovery
+- PR #2 head `5f4afa34c293b0c79c16fd6a1d92baf46c11eade` is the approved frozen discovery
   input for this run.
-- The source discovery run was partial because four external queries failed;
-  the 450-record queue passed schema validation, but this run does not claim
-  discovery completeness beyond its 210 frozen ready records.
+- The source discovery run completed with zero query errors and produced 598
+  structurally valid leads: 238 already listed, 5 held, and 355 ready. This run
+  still does not claim discovery completeness beyond those frozen records.
 - GitHub and npm registry metadata may be read without executing candidate code.
 - The existing catalog methodology and schema remain authoritative.
 - Pushing a dedicated review branch and opening a pull request are approved;

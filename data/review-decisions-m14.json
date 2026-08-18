@@ -1,0 +1,550 @@
+{
+  "decisions": [
+    {
+      "sequence": 241,
+      "disposition": "catalog-held",
+      "catalogId": "nodata404-dsh-env-probe",
+      "reason": null
+    },
+    {
+      "sequence": 242,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nonewind-dsh-spend",
+      "reason": null
+    },
+    {
+      "sequence": 243,
+      "disposition": "catalog-held",
+      "catalogId": "ns-zzj-dsh-hos-scrcpy",
+      "reason": null
+    },
+    {
+      "sequence": 246,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH base manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 247,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH headless manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 248,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH web-app manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 249,
+      "disposition": "catalog-reviewed",
+      "catalogId": "physicolor-harness-ui-enhancer",
+      "reason": null
+    },
+    {
+      "sequence": 250,
+      "disposition": "catalog-held",
+      "catalogId": "picgo-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 251,
+      "disposition": "catalog-held",
+      "catalogId": "proton1917-dsh-harness-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 252,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qqq85-ux-dsh-cost-glance",
+      "reason": null
+    },
+    {
+      "sequence": 253,
+      "disposition": "catalog-reviewed",
+      "catalogId": "rainow-dsh-simple-wiki-memory",
+      "reason": null
+    },
+    {
+      "sequence": 254,
+      "disposition": "catalog-reviewed",
+      "catalogId": "raullenchai-rapid-mlx-dsh-provider",
+      "reason": null
+    },
+    {
+      "sequence": 256,
+      "disposition": "catalog-held",
+      "catalogId": "realmisakamikoto-dsh-skin-studio",
+      "reason": null
+    },
+    {
+      "sequence": 257,
+      "disposition": "catalog-held",
+      "catalogId": "refyon-restrict-discipline",
+      "reason": null
+    },
+    {
+      "sequence": 259,
+      "disposition": "catalog-reviewed",
+      "catalogId": "riesbri-dsh-tui",
+      "reason": null
+    },
+    {
+      "sequence": 260,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ringclaw-dsh-ringcentral",
+      "reason": null
+    },
+    {
+      "sequence": 261,
+      "disposition": "catalog-reviewed",
+      "catalogId": "rj-jiangyichen-dsh-rules",
+      "reason": null
+    },
+    {
+      "sequence": 262,
+      "disposition": "catalog-held",
+      "catalogId": "ruimin251204-dsh-plugin-surgery",
+      "reason": null
+    },
+    {
+      "sequence": 265,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sakaliolabs-dsh-code-ide",
+      "reason": null
+    },
+    {
+      "sequence": 266,
+      "disposition": "catalog-held",
+      "catalogId": "sakuraaa667-dsh-wallpaper-engine",
+      "reason": null
+    },
+    {
+      "sequence": 267,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sanqi-normal-dsh-webui-market-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 268,
+      "disposition": "catalog-reviewed",
+      "catalogId": "saya-ch-dsh-mobile",
+      "reason": null
+    },
+    {
+      "sequence": 270,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shengsheng90-dsh-taskboard",
+      "reason": null
+    },
+    {
+      "sequence": 271,
+      "disposition": "catalog-held",
+      "catalogId": "shifan3-dsh-qol",
+      "reason": null
+    },
+    {
+      "sequence": 272,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shixiangyu2-dsh-siliconflow-vision",
+      "reason": null
+    },
+    {
+      "sequence": 273,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shuind-dsh-codex-harness",
+      "reason": null
+    },
+    {
+      "sequence": 274,
+      "disposition": "catalog-held",
+      "catalogId": "shuxu-zhao-dsh-image-describer",
+      "reason": null
+    },
+    {
+      "sequence": 275,
+      "disposition": "catalog-reviewed",
+      "catalogId": "simon-world-dsh-journal-monitor",
+      "reason": null
+    },
+    {
+      "sequence": 276,
+      "disposition": "catalog-held",
+      "catalogId": "sipengxie2024-dsh-memory-hermes",
+      "reason": null
+    },
+    {
+      "sequence": 277,
+      "disposition": "catalog-reviewed",
+      "catalogId": "skkjkk-dsh-usage-dashboard",
+      "reason": null
+    },
+    {
+      "sequence": 278,
+      "disposition": "catalog-reviewed",
+      "catalogId": "songoao25-dsh-plugin-guardian",
+      "reason": null
+    },
+    {
+      "sequence": 279,
+      "disposition": "catalog-reviewed",
+      "catalogId": "soren-abt-dsh-knowledge",
+      "reason": null
+    },
+    {
+      "sequence": 280,
+      "disposition": "catalog-held",
+      "catalogId": "staff-os-dsh-ragflow",
+      "reason": null
+    },
+    {
+      "sequence": 283,
+      "disposition": "catalog-held",
+      "catalogId": "studyinglx-dsh-cli",
+      "reason": null
+    },
+    {
+      "sequence": 286,
+      "disposition": "catalog-held",
+      "catalogId": "teaclearinkii-dsh-marketplaces-nexus",
+      "reason": null
+    },
+    {
+      "sequence": 287,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tisitan-dsh-live2d-companion",
+      "reason": null
+    },
+    {
+      "sequence": 288,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tobewin-dsh-pet-companion",
+      "reason": null
+    },
+    {
+      "sequence": 293,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tsja2001-dsh-zhipu-coding-plan",
+      "reason": null
+    },
+    {
+      "sequence": 294,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The fixed GitHub source archive returned 404 on repeated requests, so the candidate source could not be reproduced."
+    },
+    {
+      "sequence": 295,
+      "disposition": "catalog-held",
+      "catalogId": "u1s1-king-dsh-live2d-mygo",
+      "reason": null
+    },
+    {
+      "sequence": 296,
+      "disposition": "catalog-held",
+      "catalogId": "uckkk-dsh-ux-writing",
+      "reason": null
+    },
+    {
+      "sequence": 297,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ullrai-dsh-mqtt",
+      "reason": null
+    },
+    {
+      "sequence": 298,
+      "disposition": "catalog-reviewed",
+      "catalogId": "v1xingyue-dsh-auth-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 299,
+      "disposition": "catalog-reviewed",
+      "catalogId": "w117c-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 300,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wanbinyu-dsh-billing",
+      "reason": null
+    },
+    {
+      "sequence": 301,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wanbinyu-dsh-plugin-git-inspect",
+      "reason": null
+    },
+    {
+      "sequence": 302,
+      "disposition": "catalog-reviewed",
+      "catalogId": "welsione-dsh-mmx-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 304,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wenzetan-dsh-llm-newapi",
+      "reason": null
+    },
+    {
+      "sequence": 312,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Scaffolding template manifest with placeholder package name and description, not a distributable plugin record."
+    },
+    {
+      "sequence": 313,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Scaffolding template manifest with placeholder package name and description, not a distributable plugin record."
+    },
+    {
+      "sequence": 314,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Scaffolding template manifest with placeholder package name and description, not a distributable plugin record."
+    },
+    {
+      "sequence": 315,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 316,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 317,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 318,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 319,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 320,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 321,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 322,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 323,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 324,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 325,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 326,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 327,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wingsky-1-dsh-plugin-hub",
+      "reason": null
+    },
+    {
+      "sequence": 328,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 329,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 330,
+      "disposition": "catalog-reviewed",
+      "catalogId": "winliyou-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 331,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 332,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 333,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 334,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wssfk12138-dsh-damage-pulse",
+      "reason": null
+    },
+    {
+      "sequence": 335,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wycto-dsh-model-balance",
+      "reason": null
+    },
+    {
+      "sequence": 336,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xgone-dsh-remote",
+      "reason": null
+    },
+    {
+      "sequence": 338,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The fixed GitHub source archive returned 404 on repeated requests, so the candidate source could not be reproduced."
+    },
+    {
+      "sequence": 339,
+      "disposition": "catalog-held",
+      "catalogId": "xiajiajun516-dsh-config-manager",
+      "reason": null
+    },
+    {
+      "sequence": 340,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xiajingchun-dsh-nebula",
+      "reason": null
+    },
+    {
+      "sequence": 341,
+      "disposition": "catalog-held",
+      "catalogId": "xing-shuyin-dsh-ui-tools",
+      "reason": null
+    },
+    {
+      "sequence": 342,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xinyuehtx-dsh-plugin-hooks-ordering",
+      "reason": null
+    },
+    {
+      "sequence": 343,
+      "disposition": "catalog-held",
+      "catalogId": "yauntyour-dsh-encrypt",
+      "reason": null
+    },
+    {
+      "sequence": 344,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yu-tao-li-computer-use-win",
+      "reason": null
+    },
+    {
+      "sequence": 345,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yu-tao-li-dsh-read-image",
+      "reason": null
+    },
+    {
+      "sequence": 346,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH base manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 347,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH headless manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 348,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH web-app manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 349,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yzke-dsh-icon-theme",
+      "reason": null
+    },
+    {
+      "sequence": 350,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zalpha263-dsh-file-explorer",
+      "reason": null
+    },
+    {
+      "sequence": 351,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zbsph-dsh-j-space-warm",
+      "reason": null
+    },
+    {
+      "sequence": 352,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zenjibad-dsh-drop-any-file",
+      "reason": null
+    },
+    {
+      "sequence": 353,
+      "disposition": "catalog-held",
+      "catalogId": "zhengzeyong9527-droid-zzy-dsh-prompt-optimizer",
+      "reason": null
+    },
+    {
+      "sequence": 354,
+      "disposition": "catalog-held",
+      "catalogId": "zhou-yihang-dsh-usage-blance",
+      "reason": null
+    },
+    {
+      "sequence": 355,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zisekongling-deepseek-peak-blocker",
+      "reason": null
+    }
+  ]
+}
