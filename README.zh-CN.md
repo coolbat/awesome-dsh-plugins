@@ -61,16 +61,16 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
 
 ## 状态模型
 
-| 状态 | 含义 |
-| --- | --- |
+| 状态       | 含义                                                           |
+| ---------- | -------------------------------------------------------------- |
 | **已核验** | 在链接提交上确认了原生 bundle 结构；运行行为与安全性仍未验证。 |
-| **暂缓** | 面向 DSH，但存在明确的身份、结构或兼容性阻塞。 |
-| **排除** | 固定源码证据显示其目前不符合原生 DSH bundle 的收录条件。 |
+| **暂缓**   | 面向 DSH，但存在明确的身份、结构或兼容性阻塞。                 |
+| **排除**   | 固定源码证据显示其目前不符合原生 DSH bundle 的收录条件。       |
 
 ## 插件目录
 
 <!-- CATALOG:START -->
-快照：**2026-08-19** · **419 个候选** · **342 个已核验** · **76 个暂缓** · **1 个排除**
+快照：**2026-08-19** · **435 个候选** · **353 个已核验** · **81 个暂缓** · **1 个排除**
 
 ### 已核验的原生 bundles
 
@@ -311,6 +311,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `unknown` / package `MIT` · 生命周期 `none` · peer range 混合
   - **能力信号:** `theme` `client-injection` `timer` `github-only` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
+- **DSH Chat Rail** · [Max-Null/dsh-chat-rail@a75058b](https://github.com/Max-Null/dsh-chat-rail/commit/a75058b925d4869065dd879563ab2f07c68ca7db) — 为 DSH 会话加入感知滚动位置的右侧消息导航画卷。
+  - **证据:** [manifest](https://github.com/Max-Null/dsh-chat-rail/blob/a75058b925d4869065dd879563ab2f07c68ca7db/package.json) → [patch](https://github.com/Max-Null/dsh-chat-rail/blob/a75058b925d4869065dd879563ab2f07c68ca7db/cordis.patch.yml) · **身份:** `@max-null/dsh-chat-rail`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
+  - **能力信号:** `conversation-ui` `session-projection` `client-injection` `filesystem-read` · **核验备注:** 已静态核对固定源码、patch、许可证、精确 npm gitHead 与文档安装身份；未运行会话 UI 行为。
+
 - **DSH CoT Summarization** · [MeowLynxSea/dsh-cot-summerization@dd69071](https://github.com/MeowLynxSea/dsh-cot-summerization/commit/dd69071e134a797a574ded3d576a36fa4ce31272) — 隐藏原始推理，并通过可配置的 Chat Completions 接口展示摘要。
   - **证据:** [manifest](https://github.com/MeowLynxSea/dsh-cot-summerization/blob/dd69071e134a797a574ded3d576a36fa4ce31272/package.json) → [patch](https://github.com/MeowLynxSea/dsh-cot-summerization/blob/dd69071e134a797a574ded3d576a36fa4ce31272/cordis.patch.yml) · **身份:** Git 源 / 未知
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
@@ -325,6 +330,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/Nagi-ovo/dsh-visualize/blob/e3254f762cbe4dbf796eca05d73a293f0e8e4a87/package.json) → [patch](https://github.com/Nagi-ovo/dsh-visualize/blob/e3254f762cbe4dbf796eca05d73a293f0e8e4a87/cordis.patch.yml) · **身份:** Git 源 / 未知
   - **许可证:** repo `BSD-3-Clause` / package `BSD-3-Clause` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `github-only` `dynamic-content` `sandbox` · **核验备注:** 包标记为 private；目前只观察到 GitHub 源安装证据。
+
+- **DSH Simplified Chinese UI** · [ngk3pori/dsh-zh-cn-ui@ea388ec](https://github.com/ngk3pori/dsh-zh-cn-ui/commit/ea388ec1ba8a19973ee6f38c6ce309d0d11f6d94) — 通过客户端数据层与 DOM 文本翻译将 DSH 浏览器界面汉化为简体中文。
+  - **证据:** [manifest](https://github.com/ngk3pori/dsh-zh-cn-ui/blob/ea388ec1ba8a19973ee6f38c6ce309d0d11f6d94/package.json) → [patch](https://github.com/ngk3pori/dsh-zh-cn-ui/blob/ea388ec1ba8a19973ee6f38c6ce309d0d11f6d94/cordis.patch.yml) · **身份:** `dsh-zh-cn-ui`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `localization` `dom-mutation` `client-injection` `manual-git-install` · **核验备注:** 已静态核对固定源码、patch、许可证与文档 Git 克隆安装身份；未运行浏览器汉化代码。
 
 - **DSH Pet Whale** · [nzl153/dsh-pet-whale@952551a](https://github.com/nzl153/dsh-pet-whale/commit/952551ac1268617eb8ceffdf4e16751bfd645eb3) — 动画随 Agent 状态变化的 Web 桌面小鲸鱼。
   - **证据:** [manifest](https://github.com/nzl153/dsh-pet-whale/blob/952551ac1268617eb8ceffdf4e16751bfd645eb3/package.json) → [patch](https://github.com/nzl153/dsh-pet-whale/blob/952551ac1268617eb8ceffdf4e16751bfd645eb3/cordis.patch.yml) · **身份:** `pet-whale`
@@ -396,6 +406,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `unknown` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `session-data` `message-navigation` `client-injection` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
+- **Frieren DSH Theme** · [SuperKSP/dsh_theme_Frieren@84276f9](https://github.com/SuperKSP/dsh_theme_Frieren/commit/84276f923478017c599ec680c6856c6c860ac926) — 为 DSH Web 界面应用芙莉莲主题的羊皮纸、金色、魔法阵与花瓣视觉。
+  - **证据:** [manifest](https://github.com/SuperKSP/dsh_theme_Frieren/blob/84276f923478017c599ec680c6856c6c860ac926/package.json) → [patch](https://github.com/SuperKSP/dsh_theme_Frieren/blob/84276f923478017c599ec680c6856c6c860ac926/cordis.patch.yml) · **身份:** `dsh-client-ui-skin-frieren`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `theme` `client-injection` `visual-assets` `git-source-install` · **核验备注:** 已静态核对固定源码、patch、许可证与仓库专属 Git 安装身份；未运行动画、素材或客户端注入。
+
 - **DSH Picture in Picture** · [syncended/deepseek-harness-picture-in-picture@591e7d1](https://github.com/syncended/deepseek-harness-picture-in-picture/commit/591e7d14c5c1ef9ea1cc5ef8b88449ff9a9a6f20) — 面向 DSH Web 的画中画迷你聊天界面。
   - **证据:** [manifest](https://github.com/syncended/deepseek-harness-picture-in-picture/blob/591e7d14c5c1ef9ea1cc5ef8b88449ff9a9a6f20/package.json) → [patch](https://github.com/syncended/deepseek-harness-picture-in-picture/blob/591e7d14c5c1ef9ea1cc5ef8b88449ff9a9a6f20/cordis.patch.yml) · **身份:** `@syncended/dsh-pip`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
@@ -451,6 +466,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `gamification` `client-injection` `browser-storage` `optional-telemetry` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
+- **DSH Dock** · [Wntediluvian/dsh-plugins@7f6fe53](https://github.com/Wntediluvian/dsh-plugins/commit/7f6fe535408e4661621d9086a4509b31f8742eca) — 加入常驻用量面板、提供方余额以及受保护的重启或停止控件。
+  - **证据:** [manifest](https://github.com/Wntediluvian/dsh-plugins/blob/7f6fe535408e4661621d9086a4509b31f8742eca/dsh-dock/package.json) → [patch](https://github.com/Wntediluvian/dsh-plugins/blob/7f6fe535408e4661621d9086a4509b31f8742eca/dsh-dock/cordis.patch.yml) · **身份:** `dsh-dock`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `provider-usage` `credentials` `external-network` `process-control` `subprocess` `filesystem-write` `client-injection` · **核验备注:** 已静态核对固定源码、包许可证文件、bundle 结构与 monorepo Git 路径安装身份；未执行提供方请求或进程控制。
+
 - **DSH Model Balance** · [wycto/dsh-model-balance@79e0903](https://github.com/wycto/dsh-model-balance/commit/79e0903093378f49713f4650fa827cc66690737f) — 在 DSH Web 侧栏面板显示已配置模型 Provider 的账户余额。
   - **证据:** [manifest](https://github.com/wycto/dsh-model-balance/blob/79e0903093378f49713f4650fa827cc66690737f/package.json) → [patch](https://github.com/wycto/dsh-model-balance/blob/79e0903093378f49713f4650fa827cc66690737f/cordis.patch.yml) · **身份:** `@wycto/dsh-balance-panel`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
@@ -460,6 +480,16 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/XiLuovo/dsh-session-timeline/blob/55f32688719aaf918de7e4bfe5099d9282309acb/package.json) → [patch](https://github.com/XiLuovo/dsh-session-timeline/blob/55f32688719aaf918de7e4bfe5099d9282309acb/cordis.patch.yml) · **身份:** `dsh-session-timeline`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
   - **能力信号:** `session-data` `message-navigation` `scroll-spy` `client-injection` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
+
+- **DSH Fold** · [Yancey2023/dsh-fold@f1b5212](https://github.com/Yancey2023/dsh-fold/commit/f1b52127892770aa4cc71284a5ca1805dea2a96c) — 折叠 DSH Web 界面的会话轮次与工具行以减少视觉噪声。
+  - **证据:** [manifest](https://github.com/Yancey2023/dsh-fold/blob/f1b52127892770aa4cc71284a5ca1805dea2a96c/package.json) → [patch](https://github.com/Yancey2023/dsh-fold/blob/f1b52127892770aa4cc71284a5ca1805dea2a96c/cordis.patch.yml) · **身份:** `dsh-fold`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `conversation-ui` `client-injection` `session-data` `custom-install-script` · **核验备注:** 已静态核对固定源码、patch、许可证与 GitHub 源安装身份；未运行自定义安装脚本、测试或浏览器 UI。
+
+- **DSH Wallpaper Share** · [YRN-playmaker/dsh-wallpaper_share@a271e7f](https://github.com/YRN-playmaker/dsh-wallpaper_share/commit/a271e7f3df7b17a1bedd0fe496c386edc8309aa9) — 通过 DSH 宿主与浏览器客户端 bundle 同步和共享壁纸状态。
+  - **证据:** [manifest](https://github.com/YRN-playmaker/dsh-wallpaper_share/blob/a271e7f3df7b17a1bedd0fe496c386edc8309aa9/package.json) → [patch](https://github.com/YRN-playmaker/dsh-wallpaper_share/blob/a271e7f3df7b17a1bedd0fe496c386edc8309aa9/cordis.patch.yml) · **身份:** `dsh-wallpaper_share`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `wallpaper` `external-network` `filesystem-write` `client-injection` · **核验备注:** 已静态核对固定源码、patch、许可证与 GitHub 源安装身份；未执行轮询、路由、存储或客户端行为。
 
 - **DSH Icon Theme** · [yzke/dsh-icon-theme@2e341d8](https://github.com/yzke/dsh-icon-theme/commit/2e341d850745ba29ae688de0eb882ecbabd17888) — 为 DSH 设置与侧栏界面添加自动识别且可自定义的图标。
   - **证据:** [manifest](https://github.com/yzke/dsh-icon-theme/blob/2e341d850745ba29ae688de0eb882ecbabd17888/package.json) → [patch](https://github.com/yzke/dsh-icon-theme/blob/2e341d850745ba29ae688de0eb882ecbabd17888/cordis.patch.yml) · **身份:** `dsh-icon-theme`
@@ -642,6 +672,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/Yan-Zero/dsh-remote-ssh/blob/21d727cbe24fbae283196e5101adb3de2bdd9157/package.json) → [patch](https://github.com/Yan-Zero/dsh-remote-ssh/blob/21d727cbe24fbae283196e5101adb3de2bdd9157/cordis.patch.yml) · **身份:** `dsh-remote-ssh`
   - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `prepublishOnly` · 兼容性未知
   - **能力信号:** `ssh` `remote-execution` `filesystem-write` `credentials` `prepublish-build` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
+
+- **DSH Web UI Launcher** · [YV3507/dsh-webui-launcher@1028c4f](https://github.com/YV3507/dsh-webui-launcher/commit/1028c4f91f31a8fce4823a26d1f09b88b2838fb0) — 提供用于启动、停止和打开 DSH Web 界面的模型工具、命令与设置卡片。
+  - **证据:** [manifest](https://github.com/YV3507/dsh-webui-launcher/blob/1028c4f91f31a8fce4823a26d1f09b88b2838fb0/package.json) → [patch](https://github.com/YV3507/dsh-webui-launcher/blob/1028c4f91f31a8fce4823a26d1f09b88b2838fb0/cordis.patch.yml) · **身份:** `dsh-webui-launcher`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `process-control` `subprocess` `external-network` `filesystem-write` `client-injection` `native-launcher` · **核验备注:** 已静态核对固定源码、patch、许可证、兼容范围与 GitHub 源安装身份；未运行启动器、进程、工具、服务器或浏览器代码。
 
 - **DSH Git Bash Tool** · [zeroa234/dsh-preset-minimal-windows@5e33b0f](https://github.com/zeroa234/dsh-preset-minimal-windows/commit/5e33b0f22c2696a5a66c993dc3a5007397658c81) — 通过宿主子进程接口调用 Windows Git Bash，并支持输出落盘与超时。
   - **证据:** [manifest](https://github.com/zeroa234/dsh-preset-minimal-windows/blob/5e33b0f22c2696a5a66c993dc3a5007397658c81/gitbash-tool/package.json) → [patch](https://github.com/zeroa234/dsh-preset-minimal-windows/blob/5e33b0f22c2696a5a66c993dc3a5007397658c81/gitbash-tool/cordis.patch.yml) · **身份:** Git 源 / 未知
@@ -1044,6 +1079,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `image-rendering` `attachments` `tool-results` `client-injection` `github-only` · **核验备注:** 已静态核对固定源码与作者记录的 GitHub 安装身份；未执行候选代码、安装钩子、网络调用、文件系统变更或 UI 行为。
 
+- **DSH Vision Bridge** · [YUCONG-28/dsh-skills-plugins@92f1316](https://github.com/YUCONG-28/dsh-skills-plugins/commit/92f131620e403c0aabe7252221cea3a2f0dd48b1) — 通过本地 OCR、缓存证据和可配置远程视觉提供方路由图像请求。
+  - **证据:** [manifest](https://github.com/YUCONG-28/dsh-skills-plugins/blob/92f131620e403c0aabe7252221cea3a2f0dd48b1/plugins/dsh-vision-bridge/package.json) → [patch](https://github.com/YUCONG-28/dsh-skills-plugins/blob/92f131620e403c0aabe7252221cea3a2f0dd48b1/plugins/dsh-vision-bridge/cordis.patch.yml) · **身份:** `dsh-vision-bridge`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `postinstall` · 兼容性未知
+  - **能力信号:** `vision-routing` `ocr` `native-helper-build` `postinstall` `external-network` `credentials` `filesystem-write` · **核验备注:** 已静态核对固定 monorepo 源码、嵌套许可证、patch 与文档 file 源身份；未运行 postinstall、原生 OCR helper、提供方、测试或插件。
+
 - **DSH Realtime Voice** · [zfu691531-hash/dsh-realtime-voice@91aae22](https://github.com/zfu691531-hash/dsh-realtime-voice/commit/91aae229357e647964bbf2e50ec7602c4ce55d4a) — 通过 Qwen 或 OpenAI 兼容 Provider 提供实时语音对话。
   - **证据:** [manifest](https://github.com/zfu691531-hash/dsh-realtime-voice/blob/91aae229357e647964bbf2e50ec7602c4ce55d4a/package.json) → [patch](https://github.com/zfu691531-hash/dsh-realtime-voice/blob/91aae229357e647964bbf2e50ec7602c4ce55d4a/cordis.patch.yml) · **身份:** Git 源 / 未知
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · peer range 混合
@@ -1090,6 +1130,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/Mr-remon219/dsh-search-boost/blob/af80be8b5a0da2b74511dbb74f1acce601b11bf3/package.json) → [patch](https://github.com/Mr-remon219/dsh-search-boost/blob/af80be8b5a0da2b74511dbb74f1acce601b11bf3/cordis.patch.yml) · **身份:** `dsh-search-boost`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `external-network` `credentials` `subprocess` `browser` `multi-agent` · **核验备注:** 已在固定源码确认 bundle 行与搜索提供商覆盖；未执行外部引擎、凭据、子进程或研究并发。
+
+- **DSH Paper Daily** · [mrywwww/dsh-paper-daily@780aa46](https://github.com/mrywwww/dsh-paper-daily/commit/780aa4670ec21591b6ac22bb7dc094d9240e436e) — 从 arXiv 与选定 APS 期刊收集每日凝聚态论文，并可生成摘要。
+  - **证据:** [manifest](https://github.com/mrywwww/dsh-paper-daily/blob/780aa4670ec21591b6ac22bb7dc094d9240e436e/package.json) → [patch](https://github.com/mrywwww/dsh-paper-daily/blob/780aa4670ec21591b6ac22bb7dc094d9240e436e/cordis.patch.yml) · **身份:** `dsh-paper-daily`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `research-feed` `external-network` `model-request` `credentials` `filesystem-write` `client-injection` · **核验备注:** 已静态核对固定源码、许可证、原生 bundle 结构与 GitHub 源安装身份；未运行论文源、摘要、凭据或 UI。
 
 - **DSH Journal Monitor** · [SIMON-WORLD/dsh-journal-monitor@a97982e](https://github.com/SIMON-WORLD/dsh-journal-monitor/commit/a97982e3349666afde0a1069a54587c7ab388e0d) — 监控经管期刊与工作论文，筛选新条目、持久化去重状态并定时推送简报。
   - **证据:** [manifest](https://github.com/SIMON-WORLD/dsh-journal-monitor/blob/a97982e3349666afde0a1069a54587c7ab388e0d/package.json) → [patch](https://github.com/SIMON-WORLD/dsh-journal-monitor/blob/a97982e3349666afde0a1069a54587c7ab388e0d/cordis.patch.yml) · **身份:** `dsh-journal-monitor`
@@ -1331,6 +1376,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/ASAKAFENG/dsh-qq-remote/blob/b724335a194d217f51dedbfd799d02ae67559d3b/package.json) → [patch](https://github.com/ASAKAFENG/dsh-qq-remote/blob/b724335a194d217f51dedbfd799d02ae67559d3b/cordis.patch.yml) · **身份:** `@dsh-external/dsh-qq-remote`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `remote-command-execution` `external-network` `credentials` `screenshot` `session-data` `subprocess` · **核验备注:** 固定源码通过 QQ 暴露远程命令、截图、会话、文件、凭据和子进程能力；独立安装脚本及所有运行路径均未执行。
+
+- **DSH Weave** · [baixianger/dsh-weave@2e71605](https://github.com/baixianger/dsh-weave/commit/2e716052adb063a60cbd2cd11cdd071fabb35d08) — 通过私有点对点 weave 协议连接多个 DeepSeek Harness 节点。
+  - **证据:** [manifest](https://github.com/baixianger/dsh-weave/blob/2e716052adb063a60cbd2cd11cdd071fabb35d08/package.json) → [patch](https://github.com/baixianger/dsh-weave/blob/2e716052adb063a60cbd2cd11cdd071fabb35d08/cordis.patch.yml) · **身份:** `dsh-weave`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
+  - **能力信号:** `peer-to-peer` `external-network` `filesystem-write` `client-injection` · **核验备注:** 已静态核对固定源码、patch、许可证、匹配的 npm gitHead 与安装身份；未执行网络或存储行为。
 
 - **DSH WeChat Pro** · [bwhite55/dsh-wechat-pro@c726696](https://github.com/bwhite55/dsh-wechat-pro/commit/c7266964a1ce159a6c3d14c1bb3cbfc1f563c357) — 把微信联系人接入真实 DSH 工作区、会话、提示、审批、事件流和媒体传输。
   - **证据:** [manifest](https://github.com/bwhite55/dsh-wechat-pro/blob/c7266964a1ce159a6c3d14c1bb3cbfc1f563c357/package.json) → [patch](https://github.com/bwhite55/dsh-wechat-pro/blob/c7266964a1ce159a6c3d14c1bb3cbfc1f563c357/cordis.patch.yml) · **身份:** `dsh-wechat-pro`
@@ -1661,6 +1711,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · 声明 rc.6 peer
   - **能力信号:** `billing-data` `token-meter` `external-network` `credentials` `filesystem-write` `client-injection` · **核验备注:** 固定源码记录了 GitHub 安装方式，npm 无同名包；未执行价格同步、凭据解析、余额请求、账本写入或发布前检查。
 
+- **DSH Monitor** · [Coco-king/dsh-monitor@9d318dc](https://github.com/Coco-king/dsh-monitor/commit/9d318dcc9f2e700b88b1ef9d7e1eab2aa61c9760) — 在 DSH Web 界面展示会话费用及可配置的提供方用量或配额数据。
+  - **证据:** [manifest](https://github.com/Coco-king/dsh-monitor/blob/9d318dcc9f2e700b88b1ef9d7e1eab2aa61c9760/package.json) → [patch](https://github.com/Coco-king/dsh-monitor/blob/9d318dcc9f2e700b88b1ef9d7e1eab2aa61c9760/cordis.patch.yml) · **身份:** `dsh-monitor`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `billing-data` `provider-usage` `external-network` `credentials` `filesystem-write` `client-injection` · **核验备注:** 文档中的 Git 安装标签指向固定提交，许可证与 bundle 结构完整；未执行提供方请求、凭据访问或 UI 代码。
+
 - **DSH Hub Search** · [coderPerseus/dsh-hub@4dc755a](https://github.com/coderPerseus/dsh-hub/commit/4dc755a4e300d0994158405e86e6e0d9a9b7df09) — 增加用于搜索和检查远程 DSH Hub 目录中插件记录的工具。
   - **证据:** [manifest](https://github.com/coderPerseus/dsh-hub/blob/4dc755a4e300d0994158405e86e6e0d9a9b7df09/packages/dsh-plugin/package.json) → [patch](https://github.com/coderPerseus/dsh-hub/blob/4dc755a4e300d0994158405e86e6e0d9a9b7df09/packages/dsh-plugin/cordis.patch.yml) · **身份:** `@dshhubs/plugin-search`
   - **许可证:** repo `unknown` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
@@ -1705,11 +1760,6 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/huntersxy/dsh-plugin-toggle/blob/e11d57cedaf2dfd2a126106f8df86dec9fecf0ea/package.json) → [patch](https://github.com/huntersxy/dsh-plugin-toggle/blob/e11d57cedaf2dfd2a126106f8df86dec9fecf0ea/cordis.patch.yml) · **身份:** `dsh-plugin-toggle`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `plugin-management` `filesystem-write` `configuration-edit` `hot-reload` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
-
-- **DSH 1024 Store** · [imsai-sh/awesome-deepseek-harness-plugins@7b58110](https://github.com/imsai-sh/awesome-deepseek-harness-plugins/commit/7b58110d9faa35c31c49c634b3d69236c1331b28) — 在产品内浏览和安装 1024 Store 插件目录。
-  - **证据:** [manifest](https://github.com/imsai-sh/awesome-deepseek-harness-plugins/blob/7b58110d9faa35c31c49c634b3d69236c1331b28/packages/dsh-1024store/package.json) → [patch](https://github.com/imsai-sh/awesome-deepseek-harness-plugins/blob/7b58110d9faa35c31c49c634b3d69236c1331b28/packages/dsh-1024store/cordis.patch.yml) · **身份:** `dsh-1024store`
-  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · 兼容性未知
-  - **能力信号:** `plugin-marketplace` `package-install` `external-network` `filesystem-write` `prepack-build` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
 - **Workspace Token Record** · [jasonyoungguang/DSH_plugins_calculate_token_fee@bb37cb3](https://github.com/jasonyoungguang/DSH_plugins_calculate_token_fee/commit/bb37cb38326a2a6cbed911711401413572f94c0a) — 将每个 Workspace 与 Session 的 Token 用量和成本投影到侧栏悬浮卡片。
   - **证据:** [manifest](https://github.com/jasonyoungguang/DSH_plugins_calculate_token_fee/blob/bb37cb38326a2a6cbed911711401413572f94c0a/package.json) → [patch](https://github.com/jasonyoungguang/DSH_plugins_calculate_token_fee/blob/bb37cb38326a2a6cbed911711401413572f94c0a/cordis.patch.yml) · **身份:** `workspace_token_record`
@@ -1806,6 +1856,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · 声明 rc.6 peer
   - **能力信号:** `plugin-marketplace` `package-install` `approval-gate` `external-network` `identity-collision` · **核验备注:** npm 身份映射到其他仓库，因此本记录固定到文档中的 Git 子目录源码，不主张该包。
 
+- **DSH Plugin Toggle** · [Zenjibad/dsh-plugin-toggle@60cfa68](https://github.com/Zenjibad/dsh-plugin-toggle/commit/60cfa68063968893b3b1f238d0789675c16c28e3) — 在设置页为已安装 DSH 插件加入可持久化的启用与停用控件。
+  - **证据:** [manifest](https://github.com/Zenjibad/dsh-plugin-toggle/blob/60cfa68063968893b3b1f238d0789675c16c28e3/package.json) → [patch](https://github.com/Zenjibad/dsh-plugin-toggle/blob/60cfa68063968893b3b1f238d0789675c16c28e3/cordis.patch.yml) · **身份:** `dsh-plugin-toggle`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `plugin-management` `dynamic-loading` `filesystem-write` `client-injection` · **核验备注:** 已静态核对固定源码、patch、许可证与仓库专属 Git 安装身份；未执行插件启停、持久化或 UI。
+
 ### 暂缓队列
 
 这些候选与 DSH 有关，但在记录的阻塞修复前不会获得安装推荐。
@@ -1879,6 +1934,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/heidi-dang/flowdeck-dsh/blob/225f0806d92a818f71d8b2c618cf41ea6eed3c7d/package.json) → [patch](https://github.com/heidi-dang/flowdeck-dsh/blob/225f0806d92a818f71d8b2c618cf41ea6eed3c7d/cordis.patch.yml) · **身份:** `@heidi-dang/flowdeck-dsh`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · 兼容性未知
   - **能力信号:** `workflow-runtime` `subprocess` `filesystem-write` `prepublish-build` · **核验备注:** 因声明的 npm 身份无法解析，且固定版本文档未提供可复现的公开 Git 源 DSH 安装方式而暂缓。
+
+- **DSH 1024 Store** · [imsai-sh/awesome-deepseek-harness-plugins@dcdbcde](https://github.com/imsai-sh/awesome-deepseek-harness-plugins/commit/dcdbcde3599b63406ddb77eadccc3a191110ce42) — 将产品内插件目录与官方 DSH 插件命令的安装统计包装器结合。
+  - **证据:** [manifest](https://github.com/imsai-sh/awesome-deepseek-harness-plugins/blob/dcdbcde3599b63406ddb77eadccc3a191110ce42/packages/dsh1024/package.json) → [patch](https://github.com/imsai-sh/awesome-deepseek-harness-plugins/blob/dcdbcde3599b63406ddb77eadccc3a191110ce42/packages/dsh1024/cordis.patch.yml) · **身份:** `dsh1024`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · 兼容性未知
+  - **能力信号:** `plugin-marketplace` `package-install` `telemetry` `external-network` `filesystem-write` `subprocess` `identity-unresolved` · **核验备注:** 暂缓：文档要求从 npm 安装 dsh1024，但注册表中无 0.4.0；未运行安装器、遥测、prepack 或插件操作。
 
 - **DSH Desktop** · [IriskaDev/dsh-desktop@9ad9be1](https://github.com/IriskaDev/dsh-desktop/commit/9ad9be1dfa866115990933abdf94ee67e8f0d542) — 内嵌 DSH bundle 与 patch 的桌面应用封装。
   - **证据:** [manifest](https://github.com/IriskaDev/dsh-desktop/blob/9ad9be1dfa866115990933abdf94ee67e8f0d542/package.json) → [patch](https://github.com/IriskaDev/dsh-desktop/blob/9ad9be1dfa866115990933abdf94ee67e8f0d542/cordis.patch.yml) · **身份:** `dsh-desktop`
@@ -2189,6 +2249,26 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/zhou-yihang/dsh-usage-blance/blob/9547283c3be906bbd63b95280bd9bdce16289da7/package.json) → [patch](https://github.com/zhou-yihang/dsh-usage-blance/blob/9547283c3be906bbd63b95280bd9bdce16289da7/cordis.patch.yml) · **身份:** `dsh-usage-blance`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `billing-data` `account-balance` `external-network` `credentials` `client-injection` `identity-unresolved` · **核验备注:** 暂缓：包未发布且文档仅说明安装当前本地目录；未执行账单请求、凭据访问或 UI 行为。
+
+- **DSH Bridge** · [baixianger/dsh-bridge@3644483](https://github.com/baixianger/dsh-bridge/commit/36444838928df000b1f11fa0e20828ab71975c06) — 为 DeepSeek Harness 节点提供本地会话消息与事件桥接。
+  - **证据:** [manifest](https://github.com/baixianger/dsh-bridge/blob/36444838928df000b1f11fa0e20828ab71975c06/package.json) → [patch](https://github.com/baixianger/dsh-bridge/blob/36444838928df000b1f11fa0e20828ab71975c06/cordis.patch.yml) · **身份:** `dsh-bridge`
+  - **许可证:** repo `unknown` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
+  - **能力信号:** `session-messaging` `event-bridge` `local-network` `license-incomplete` · **核验备注:** 暂缓：npm 发布物与包清单声明 MIT，但固定源码仓库缺少许可证文件；未运行桥接行为。
+
+- **DSH System Restart** · [kdeightx/dsh-dock@a0da26e](https://github.com/kdeightx/dsh-dock/commit/a0da26e3e316a980f010d09c7353358ea6dd0130) — 在侧边栏加入请求重启 DeepSeek Harness Web 进程的控件。
+  - **证据:** [manifest](https://github.com/kdeightx/dsh-dock/blob/a0da26e3e316a980f010d09c7353358ea6dd0130/dsh-system-restart/package.json) → [patch](https://github.com/kdeightx/dsh-dock/blob/a0da26e3e316a980f010d09c7353358ea6dd0130/dsh-system-restart/cordis.patch.yml) · **身份:** `dsh-system-restart`
+  - **许可证:** repo `unknown` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `process-control` `subprocess` `filesystem-write` `client-injection` `license-incomplete` · **核验备注:** 暂缓：固定源码仓库缺少许可证文件；未执行未发布的本地源码安装或进程控制实现。
+
+- **DSH Studio** · [lai-133/dsh-integration@f5598fb](https://github.com/lai-133/dsh-integration/commit/f5598fbc64c3dad5d6a51267b95dfbc21993a2dc) — 为集成式 DSH 桌面工作区加入壁纸控制与智能体协作看板。
+  - **证据:** [manifest](https://github.com/lai-133/dsh-integration/blob/f5598fbc64c3dad5d6a51267b95dfbc21993a2dc/plugins/dsh-studio/package.json) → [patch](https://github.com/lai-133/dsh-integration/blob/f5598fbc64c3dad5d6a51267b95dfbc21993a2dc/plugins/dsh-studio/cordis.patch.yml) · **身份:** `dsh-studio`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `desktop-integration` `wallpaper` `agent-collaboration` `filesystem-write` `subprocess` `identity-unresolved` · **核验备注:** 暂缓：嵌套 bundle 仅由外层桌面安装流程装入，缺少独立 npm 或 Git 源安装身份；未运行 setup 或桌面代码。
+
+- **DSH LAN Access** · [nonmean/dsh-lan-access@fe6a4de](https://github.com/nonmean/dsh-lan-access/commit/fe6a4de294b490d0982676fdc9e0b23adcbc296f) — 在仅回环与局域网监听之间切换 DSH Web 服务器绑定地址。
+  - **证据:** [manifest](https://github.com/nonmean/dsh-lan-access/blob/fe6a4de294b490d0982676fdc9e0b23adcbc296f/package.json) → [patch](https://github.com/nonmean/dsh-lan-access/blob/fe6a4de294b490d0982676fdc9e0b23adcbc296f/cordis.patch.yml) · **身份:** `dsh-lan-access`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `network-exposure` `bind-all-interfaces` `credentials` `dynamic-patch` `client-injection` `identity-unresolved` · **核验备注:** 暂缓：包未发布且文档 Git 安装示例仍保留 owner 与 repository 占位符；未执行网络暴露、凭据或动态 patch 行为。
 
 ### 核验后排除
 

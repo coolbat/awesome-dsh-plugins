@@ -6,13 +6,14 @@
   `/Users/coolbat/awesome-dsh-plugins`
 - Delivery scope: branch and review PR only
 - Needs-decision queue: 0/3
-- Active milestone: none
-- Current status: complete
-- Approved decisions in force: freeze PR #2 head `5f4afa34`; reconcile all 355
-  ready records, freshly review 165 new or changed records, and do not merge or
+- Active milestone: M18
+- Current status: in_progress
+- Approved decisions in force: freeze PR #2 head `19a696b8`; reconcile all 388
+  ready records, freshly review 43 new or changed records, and do not merge or
   deploy
-- Changed assumptions: the latest discovery completed without query errors and
-  supersedes the prior partial 210-record input
+- Changed assumptions: the latest discovery is partial after one oversized
+  GitHub response; valid queue results are preserved without advancing the
+  success watermark
 - Known failures: all recorded failures are repaired or explicitly
   dispositioned and retained in the evidence history
 - Residual risks: candidate repositories or registry metadata may disappear;
@@ -20,6 +21,226 @@
   compatibility
 
 ## Per-Attempt Synchronization Record
+
+### Daily attempt 14 M18 S2
+
+- Milestone: M18
+- Changed assumptions: none
+- Command or observation: fresh full S2 after diff reconciliation
+- Result: pass; validators, generated docs, typecheck, 37 tests, formatting and
+  882-page production build all passed
+- Known failure: none; earlier repaired failures retained
+- Blocker class: none
+- Next action: commit, push and refresh PR #5
+- Synced surfaces: Plan.md=M18 in_progress;
+  agent-loop-state.md=2026-08-19T09:50:00+08:00;
+  release-evidence.md=M18-A14-S2-PASS
+
+### Daily attempt 13 M18 diff reconciliation
+
+- Milestone: M18
+- Changed assumptions: plugin catalog had avoidable whole-file formatting churn
+- Command or observation: reviewed status, file list, stats and representative
+  diffs; deterministically reapplied the review data and regenerated READMEs
+- Result: pass; catalog diff now reflects semantic records without unrelated
+  array reformatting, and whitespace check passes
+- Known failure: none
+- Blocker class: none
+- Next action: run fresh S2
+- Synced surfaces: Plan.md=M18 in_progress;
+  agent-loop-state.md=2026-08-19T09:48:00+08:00;
+  release-evidence.md=M18-A13-DIFF
+
+### Daily attempt 12 M18 selection
+
+- Milestone: M18
+- Changed assumptions: none
+- Command or observation: task-contract checker reports M18 solely runnable and
+  no errors or warnings
+- Result: pass; final reconciliation and branch delivery selected
+- Known failure: partial discovery limitation remains unchanged
+- Blocker class: none
+- Next action: inspect diff and run fresh S2 before delivery
+- Synced surfaces: Plan.md=M18 in_progress;
+  agent-loop-state.md=2026-08-19T09:45:00+08:00;
+  release-evidence.md=M18-A12-SELECT
+
+### Daily attempt 11 M17 corrected verification
+
+- Milestone: M17
+- Changed assumptions: none
+- Command or observation: full S1 after expected-count repair, followed by
+  fail-fast completion, docs, count, distribution, SHA, catalog mapping and
+  whitespace assertions
+- Result: pass; 37 tests, formatting, typecheck, 882 static pages and every M17
+  acceptance assertion passed; ledger 388/0; catalog 435/353/81/1
+- Known failure: prior generated-doc, count-test and verifier failures are
+  repaired and retained
+- Blocker class: none
+- Next action: select M18 and perform final branch delivery verification
+- Synced surfaces: Plan.md=M17 done/M18 runnable;
+  agent-loop-state.md=2026-08-19T09:44:00+08:00;
+  release-evidence.md=M17-A11-VERIFY
+
+### Daily attempt 10 M17 verification-script failure
+
+- Milestone: M17
+- Changed assumptions: none
+- Command or observation: independent M17 requirements script after clean S1
+- Result: validators and counts passed visibly, but property-order comparison
+  misclassified the correct fresh distribution and the shell did not fail-fast
+- Known failure: ad hoc verifier defect; no review data changed
+- Blocker class: verification-harness defect
+- Next action: rerun with per-key comparison and `set -e`
+- Synced surfaces: Plan.md=M17 in_progress;
+  agent-loop-state.md=2026-08-19T09:42:00+08:00;
+  release-evidence.md=M17-A10-VERIFY-FAIL
+
+### Daily attempt 9 M17 stale count assertions
+
+- Milestone: M17
+- Changed assumptions: none
+- Command or observation: README regeneration and fresh S1 rerun
+- Result: generated docs repaired and all earlier gates passed; 35 tests passed
+  and 2 catalog count assertions failed on the previous snapshot totals
+- Known failure: tests expect 419/342/76/1 instead of 435/353/81/1
+- Blocker class: repairable expected-data update
+- Next action: update catalog count assertions and rerun S1
+- Synced surfaces: Plan.md=M17 in_progress;
+  agent-loop-state.md=2026-08-19T09:39:00+08:00;
+  release-evidence.md=M17-A9-S1-FAIL
+
+### Daily attempt 8 M17 generated-doc drift
+
+- Milestone: M17
+- Changed assumptions: none
+- Command or observation: full S1 command
+- Result: catalog 435/353/81/1, candidate queue 631, and ledger 388/0
+  validated; docs:check rejected both README files before later gates ran
+- Known failure: README formatting occurred after generation and changed exact
+  generated output
+- Blocker class: repairable generated-artifact ordering
+- Next action: regenerate both READMEs and rerun S1
+- Synced surfaces: Plan.md=M17 in_progress;
+  agent-loop-state.md=2026-08-19T09:37:00+08:00;
+  release-evidence.md=M17-A8-S1-FAIL
+
+### Daily attempt 7 M17 static review and apply
+
+- Milestone: M17
+- Changed assumptions: registry inspection found 14 source-identity conflicts;
+  the renamed dsh1024 package is not published at the frozen version
+- Command or observation: downloaded 28 fixed GitHub archives, read manifests,
+  same-commit patches, repository/package licenses, install documentation,
+  lifecycle scripts, peer ranges, source risk signals, tags and npm metadata;
+  no candidate code ran
+- Result: fresh distribution 12 reviewed, 5 held, 14 source-conflict, 9
+  duplicate-or-superseded, and 3 example-fixture-or-archive; completed ledger
+  distribution is 119/48/121/32/27/36/5 across its seven active dispositions;
+  catalog is 435/353/81/1 and pending is zero
+- Known failure: initial npm metadata shell wrapper omitted a local variable and
+  exited before requests; corrected wrapper completed all metadata reads
+- Blocker class: none
+- Next action: run M17 S1 and independent acceptance verification
+- Synced surfaces: Plan.md=M17 in_progress;
+  agent-loop-state.md=2026-08-19T09:35:00+08:00;
+  release-evidence.md=M17-A7-APPLY
+
+### Daily attempt 6 M17 selection
+
+- Milestone: M17
+- Changed assumptions: none
+- Command or observation: task-contract checker reports M17 as the sole runnable
+  milestone with no errors or warnings
+- Result: pass; M17 selected before decision-data changes
+- Known failure: partial discovery limitation remains unchanged
+- Blocker class: none
+- Next action: gather static evidence for 43 fresh records
+- Synced surfaces: Plan.md=M17 in_progress;
+  agent-loop-state.md=2026-08-19T09:14:00+08:00;
+  release-evidence.md=M17-A6-SELECT
+
+### Daily attempt 5 M16 verification
+
+- Milestone: M16
+- Changed assumptions: none
+- Command or observation: formatted the two affected data files, reran S1 from
+  scratch, then independently asserted the source head, counts, unique keys,
+  SHAs, pending state, and 345/43/28 reconciliation plus whitespace validity
+- Result: pass; all 37 tests, formatting, typecheck, 850-page build, ten
+  acceptance assertions, and `git diff --check` passed
+- Known failure: M16-A4 is repaired and retained
+- Blocker class: none
+- Next action: select M17 and perform static review of 43 fresh rows
+- Synced surfaces: Plan.md=M16 done/M17 runnable;
+  agent-loop-state.md=2026-08-19T09:13:00+08:00;
+  release-evidence.md=M16-A5-VERIFY
+
+### Daily attempt 4 M16 S1 formatting failure
+
+- Milestone: M16
+- Changed assumptions: none
+- Command or observation: full S1 check and production build command
+- Result: catalog/candidate/ledger/docs/typecheck and 37 tests passed; Prettier
+  rejected `data/candidates.json` and `data/review-snapshot.json`, so build did
+  not run
+- Known failure: canonical formatting drift on newly frozen files
+- Blocker class: repairable mechanical formatting
+- Next action: format the affected data files and rerun S1
+- Synced surfaces: Plan.md=M16 in_progress;
+  agent-loop-state.md=2026-08-19T09:11:00+08:00;
+  release-evidence.md=M16-A4-S1-FAIL
+
+### Daily attempt 3 M16 freeze
+
+- Milestone: M16
+- Changed assumptions: none
+- Command or observation: imported the verified PR #2 queue, froze it at full
+  source SHA, checked unique keys and SHAs, and compared exact key-plus-commit
+  identity with the prior ledger
+- Result: 388 snapshot and ledger rows, 388 pending, 388 unique keys, zero bad
+  SHAs, 345 exact historical matches, and 43 fresh rows across 28 repositories
+- Known failure: initial ad hoc field-path check failed and was corrected without
+  modifying review data
+- Blocker class: none
+- Next action: run validation and completion verification for M16
+- Synced surfaces: Plan.md=M16 in_progress;
+  agent-loop-state.md=2026-08-19T09:09:00+08:00;
+  release-evidence.md=M16-A3-FREEZE
+
+### Daily attempt 2 M16 selection
+
+- Milestone: M16
+- Changed assumptions: none
+- Command or observation: task-contract checker validated the execution policy,
+  all milestone dependencies, and M16 as the sole runnable selection
+- Result: pass; M16 selected and marked in progress before queue-data changes
+- Known failure: partial discovery limitation remains unchanged
+- Blocker class: none
+- Next action: import and freeze PR #2 head `19a696b8`
+- Synced surfaces: Plan.md=M16 in_progress;
+  agent-loop-state.md=2026-08-19T09:07:00+08:00;
+  release-evidence.md=M16-A2-SELECT
+
+### Daily attempt 1 M16 preflight
+
+- Milestone: M16 preflight
+- Changed assumptions: PR #2 advanced from `5f4afa34` to `19a696b8` through a
+  partial discovery run
+- Command or observation: verified clean worktree, origin/main, PR #2, PR #5,
+  recent Actions, queue counts, current ledger, catalog, and exact source
+  overlap
+- Result: 631 structural leads contain 388 ready, 238 already listed, and 5
+  held; the completed 355-record ledger exactly covers 345 ready records and 43
+  new or changed records remain across 28 repositories
+- Known failure: run 32178240806 observed 60 repositories and 55 manifests but
+  failed closed after `steveseguin/b70-optimization-lab` exceeded the 5 MB
+  GitHub response limit; success watermark remains 2026-08-18T14:00:22.174Z
+- Blocker class: none for the preserved valid queue
+- Next action: validate the updated contract and select M16
+- Synced surfaces: Plan.md=M16 runnable;
+  agent-loop-state.md=2026-08-19T09:10:00+08:00;
+  release-evidence.md=M16-PREFLIGHT
 
 ### Follow-on attempt 10 M15 branch delivery and closure
 

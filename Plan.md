@@ -166,3 +166,33 @@ Acceptance: All 355 keys are dispositioned exactly once, final tests and build p
 Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 Stop conditions: Stop before merge, production deployment, deleting evidence, or claiming runtime safety, compatibility, or discovery completeness.
 Evidence: 2026-08-19T00:42:00+08:00; M15-A10-CI-PASS; PR #5 at f3f0a1fd17c35b3122ee8b24f86f2093e00cd631 is CLEAN, GitHub quality and Cloudflare Pages checks pass, both immutable and branch previews return HTTP 200, and merge and production deployment remain untouched
+
+## Milestone M16: Freeze the 2026-08-19 daily queue
+Status: done
+Priority: P0
+Dependencies: M15
+Scope: Freeze the 388 ready records from PR #2 head 19a696b8a0e70c68873a7200a015901916e7220b, retain the partial-discovery limitation, and reconcile 345 exact historical matches against 43 new or changed records.
+Acceptance: The snapshot contains 388 unique ready records with full source SHAs, the ledger accounts for every key once, and the exact-versus-fresh reconciliation is reproducible.
+Validation: npm run validate:candidates && node scripts/validate-review-ledger.mjs
+Stop conditions: Stop if PR #2 head changes before freezing, counts differ, keys are duplicated, a source commit is unpinned, or changed commits would inherit old evidence.
+Evidence: 2026-08-19T09:13:00+08:00; M16-A5-VERIFY; PR #2 head 19a696b8 frozen with 388 unique full-SHA ready records and matching pending ledger rows, reproducing 345 exact plus 43 fresh records across 28 repositories; 37 tests, formatting, typecheck, 850-page build, acceptance assertions, and git diff check pass
+
+## Milestone M17: Review the 43 daily additions
+Status: done
+Priority: P1
+Dependencies: M16
+Scope: Statically review all new or changed fixed-source records while mechanically reusing only exact key-and-commit decisions.
+Acceptance: Every one of the 388 frozen records has an evidence-backed disposition and every catalog addition satisfies the fixed-source catalog schema.
+Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
+Stop conditions: Stop before executing third-party code, guessing evidence, publishing unresolved records as reviewed, or claiming discovery completeness.
+Evidence: 2026-08-19T09:44:00+08:00; M17-A11-VERIFY; all 43 fresh records complete as 12 reviewed, 5 held, 14 source conflicts, 9 duplicates, and 3 templates; full ledger 388/0 and catalog 435/353/81/1; 37 tests, formatting, typecheck, 882-page build, completion mode, generated-doc check, ten acceptance assertions, catalog mappings, and git diff check pass
+
+## Milestone M18: Reconcile and refresh the daily review PR
+Status: in_progress
+Priority: P1
+Dependencies: M17
+Scope: Prove complete 388-record ledger coverage, regenerate derived catalogs, run final branch gates, push the existing dedicated review branch, and refresh PR #5.
+Acceptance: All 388 keys are dispositioned exactly once, final tests and build pass, branch CI is green, and PR #5 contains the daily review without merge or production deployment.
+Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
+Stop conditions: Stop before merge, production deployment, deleting evidence, or claiming runtime safety, compatibility, or discovery completeness.
+Evidence: pending

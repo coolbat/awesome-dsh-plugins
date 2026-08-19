@@ -13,9 +13,9 @@ Needs-decision WIP limit: 3
 
 ## Selected Milestone
 
-- Milestone: none; all approved milestones complete
-- Approved scope boundary: retain PR #5 for human review and stop before merge
-  or production deployment
+- Milestone: M18 in_progress
+- Approved scope boundary: review PR #2 head 19a696b8, refresh PR #5, and stop
+  before merge or production deployment
 - Required validation gate: npm run check &&
   NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 - Stop conditions: stop before executing third-party code, guessing evidence,
@@ -32,6 +32,254 @@ Needs-decision WIP limit: 3
 - Never exceed `branch_pr`; merging and production remain human-owned.
 
 ## Attempt Record
+
+### Daily attempt 14 M18 S2
+
+- Selected milestone: M18
+- Changed assumptions: none after diff reconciliation
+- Action: run the full final local delivery gate on the exact reconciled tree
+- Command or observation: `npm run check &&
+  NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Test level and environment: S2 local
+- Result: pass; catalog 435/353/81/1, queue 631, ledger 388/0, generated
+  docs, typecheck, all 37 tests, formatting, and 882-page build passed
+- Known failure: none; prior repaired failures remain retained
+- Blocker class: none
+- Next action: confirm GitHub auth, commit the scoped diff, push, and refresh PR #5
+- Synchronized status: Plan.md=M18 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M18-A14-S2-PASS
+
+### Daily attempt 13 M18 diff reconciliation
+
+- Selected milestone: M18
+- Changed assumptions: final diff contained avoidable catalog formatting churn
+- Action: inspect all changed paths, remove formatting-only plugin-catalog noise,
+  regenerate derived READMEs, and verify whitespace
+- Command or observation: status, diff stats/names/content, full-wave deterministic
+  reserialization, README generation, and `git diff --check`
+- Test level and environment: pre-S2 reconciliation; local dedicated branch
+- Result: pass; unrelated catalog formatting churn reduced, generated docs refreshed,
+  and whitespace check passes
+- Known failure: none; this was preventive diff cleanup
+- Blocker class: none
+- Next action: run fresh M18 S2 on the reconciled tree
+- Synchronized status: Plan.md=M18 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M18-A13-DIFF
+
+### Daily attempt 12 M18 selection
+
+- Selected milestone: M18
+- Changed assumptions: none
+- Action: select final branch reconciliation and delivery milestone
+- Command or observation: task-contract checker reports M16 and M17 done, M18
+  solely runnable, and no errors or warnings
+- Test level and environment: control-plane validation; local dedicated branch
+- Result: pass; M18 is in progress
+- Known failure: repaired M16/M17 failures and partial discovery remain retained
+- Blocker class: none
+- Next action: inspect final diff and run a fresh S2 before commit and push
+- Synchronized status: Plan.md=M18 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M18-A12-SELECT
+
+### Daily attempt 11 M17 corrected verification
+
+- Selected milestone: M17
+- Changed assumptions: none
+- Action: rerun full S1 after count repairs, then independently verify every
+  acceptance predicate with fail-fast and per-key comparisons
+- Command or observation: full S1, completion validator, docs check, explicit
+  source/count/distribution/catalog/mapping/SHA assertions, and whitespace check
+- Test level and environment: S1 plus independent acceptance verification; local
+- Result: pass; 37 tests, formatting, typecheck, 882-page build, all acceptance
+  assertions, exact docs, complete ledger and whitespace checks passed
+- Known failure: M17-A8 through A10 are repaired and retained
+- Blocker class: none
+- Next action: select M18, inspect final diff, rerun S2, and refresh PR #5
+- Synchronized status: Plan.md=M17 done/M18 runnable;
+  Documentation.md=updated; agent-loop-state.md=updated;
+  release-evidence.md=M17-A11-VERIFY
+
+### Daily attempt 10 M17 verification-script failure
+
+- Selected milestone: M17
+- Changed assumptions: none
+- Action: independently verify M17 acceptance after a clean S1 pass
+- Command or observation: validators, completion mode, docs check, explicit
+  count and mapping assertions, and whitespace check
+- Test level and environment: independent acceptance verification; local
+- Result: the product gates and printed counts were correct, but the ad hoc
+  assertion compared JSON object property order and reported freshDistribution
+  false; missing shell fail-fast then let the final whitespace command mask the
+  intermediate exit
+- Known failure: verification harness needs unordered per-key comparison and
+  `set -e`
+- Blocker class: verification-harness defect; no product data changed
+- Next action: rerun corrected fail-fast independent verification
+- Synchronized status: Plan.md=M17 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M17-A10-VERIFY-FAIL
+
+### Daily attempt 9 M17 stale count assertions
+
+- Selected milestone: M17
+- Changed assumptions: none
+- Action: regenerate exact README artifacts and rerun S1 from scratch
+- Command or observation: `npm run generate` followed by full S1
+- Test level and environment: S1 local
+- Result: generated-doc drift repaired; validators, docs and typecheck passed;
+  tests then failed 2 of 37 because catalog count assertions still expected the
+  previous 419/342/76/1 snapshot
+- Known failure: `tests/catalog.test.ts` requires the reviewed 435/353/81/1
+  snapshot counts
+- Blocker class: repairable expected-data update
+- Next action: update count assertions and rerun S1 from scratch
+- Synchronized status: Plan.md=M17 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M17-A9-S1-FAIL
+
+### Daily attempt 8 M17 generated-doc drift
+
+- Selected milestone: M17
+- Changed assumptions: none
+- Action: run the full M17 S1 gate
+- Command or observation: `npm run check &&
+  NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Test level and environment: S1 local
+- Result: failed at docs:check after catalog, candidate and complete-ledger
+  validators passed
+- Known failure: formatting README files after generation changed the generator's
+  exact output, so both generated catalogs drifted
+- Blocker class: repairable generated-artifact ordering
+- Next action: regenerate README files and rerun S1 from scratch
+- Synchronized status: Plan.md=M17 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M17-A8-S1-FAIL
+
+### Daily attempt 7 M17 static review and apply
+
+- Selected milestone: M17
+- Changed assumptions: the renamed `dsh1024` package is not present in npm,
+  while 14 fresh registry identities map to a different source commit or repo
+- Action: inspect 28 fixed-source archives and registry metadata without
+  execution, encode all 43 fresh decisions, explicitly carry forward 150 exact
+  catalog decisions, apply 195 exact non-catalog decisions, and regenerate docs
+- Command or observation: GitHub fixed archives and tag reads, static manifest,
+  patch, license, README, lifecycle, peer, source-signal and npm metadata reads;
+  review decision validation; apply and README generation
+- Test level and environment: static evidence review; local and remote metadata
+- Result: 43 fresh rows dispositioned as 12 reviewed, 5 held, 14 source
+  conflicts, 9 duplicates, and 3 templates; full ledger is 388/0 and catalog is
+  435 total with 353 reviewed, 81 held, and 1 excluded
+- Known failure: first npm metadata command omitted its shell audit-directory
+  variable and stopped before network reads; corrected command completed all 43
+- Blocker class: none
+- Next action: run full M17 validation and independent completion verification
+- Synchronized status: Plan.md=M17 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M17-A7-APPLY
+
+### Daily attempt 6 M17 selection
+
+- Selected milestone: M17
+- Changed assumptions: none
+- Action: select the sole runnable review milestone before modifying decisions
+  or catalog data
+- Command or observation: task-contract checker reports M16 done, M17 solely
+  runnable, M18 blocked, and no errors or warnings
+- Test level and environment: control-plane validation; local dedicated branch
+- Result: pass; M17 is in progress
+- Known failure: partial discovery and repaired M16 failure remain retained
+- Blocker class: none
+- Next action: gather fixed-source static evidence and disposition 43 fresh rows
+- Synchronized status: Plan.md=M17 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M17-A6-SELECT
+
+### Daily attempt 5 M16 verification
+
+- Selected milestone: M16
+- Changed assumptions: none
+- Action: repair the two formatting drifts, rerun S1, and independently verify
+  every M16 acceptance assertion before changing milestone status
+- Command or observation: targeted Prettier write, full S1 command, candidate and
+  ledger validators, exact reconciliation assertion script, and `git diff --check`
+- Test level and environment: S1 plus independent acceptance verification; local
+- Result: pass; 37 tests, formatting, typecheck, 850-page production build, all
+  ten acceptance assertions, and whitespace validation pass
+- Known failure: M16-A4 formatting failure is repaired and retained
+- Blocker class: none
+- Next action: select M17 and statically review all 43 fresh records
+- Synchronized status: Plan.md=M16 done/M17 runnable;
+  Documentation.md=updated; agent-loop-state.md=updated;
+  release-evidence.md=M16-A5-VERIFY
+
+### Daily attempt 4 M16 S1 formatting failure
+
+- Selected milestone: M16
+- Changed assumptions: none
+- Action: run the full local check and production build gate
+- Command or observation: `npm run check &&
+  NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+- Test level and environment: S1 local
+- Result: failed at Prettier after catalog, candidate, ledger, docs, typecheck,
+  and all 37 tests passed
+- Known failure: imported candidates and generated snapshot need canonical
+  formatting
+- Blocker class: repairable mechanical formatting
+- Next action: format the affected review data and rerun S1 from scratch
+- Synchronized status: Plan.md=M16 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M16-A4-S1-FAIL
+
+### Daily attempt 3 M16 freeze
+
+- Selected milestone: M16
+- Changed assumptions: none; PR #2 remained fixed at `19a696b8`
+- Action: import the fixed queue, freeze the ready subset, and reconcile it
+  against the prior committed ledger by exact candidate key and commit
+- Command or observation: single-file Git restore from the verified PR head,
+  `npm run freeze:review`, structural Node checks, and prior-ledger comparison
+- Test level and environment: local inventory validation
+- Result: 631 leads split into 388 ready, 238 already listed, and 5 held; the
+  snapshot and ledger contain 388 unique keys, all commits are full SHAs, and
+  the comparison reproduces 345 exact plus 43 fresh records across 28 repos
+- Known failure: the first ad hoc self-check referenced `source.commit` instead
+  of the candidate's top-level `commit`; no files were changed by that failed
+  check and the corrected check passed
+- Blocker class: none
+- Next action: run M16 validation gates and independent completion verification
+- Synchronized status: Plan.md=M16 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M16-A3-FREEZE
+
+### Daily attempt 2 M16 selection
+
+- Selected milestone: M16
+- Changed assumptions: none after the verified preflight
+- Action: select the single runnable milestone before modifying queue or review
+  data
+- Command or observation: task-contract checker returned ready=true with M16
+  as the sole runnable milestone and no warnings
+- Test level and environment: control-plane validation; local dedicated branch
+- Result: pass; M16 is now in progress
+- Known failure: the discovery run remains partial as recorded in preflight
+- Blocker class: none
+- Next action: freeze PR #2 head 19a696b8 and prove the 388-record inventory
+- Synchronized status: Plan.md=M16 in_progress; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M16-A2-SELECT
+
+### Daily attempt 1 M16 preflight
+
+- Selected milestone: none; M16 awaits checker selection
+- Changed assumptions: PR #2 advanced to a partial discovery head with 388
+  ready records, of which 43 are new or changed against the latest ledger
+- Action: verify worktree, origin/main, PR #2, open review PRs, discovery run,
+  queue counts, latest ledger, and catalog totals
+- Command or observation: Git fetch and status, GitHub PR/Actions reads, queue
+  parsing, exact key-and-commit reconciliation, and failed-run log inspection
+- Test level and environment: preflight; local branch and GitHub read-only
+- Result: clean dedicated branch; PR #2 head 19a696b8 has 631 leads and 388
+  ready; 345 exact and 43 fresh records across 28 repositories; discovery is
+  partial after one oversized response
+- Known failure: discovery run 32178240806 is intentionally failed closed and
+  did not advance the success watermark
+- Blocker class: none for reviewing the preserved valid queue
+- Next action: run the contract checker and select M16
+- Synchronized status: Plan.md=M16 runnable; Documentation.md=updated;
+  agent-loop-state.md=updated; release-evidence.md=M16-PREFLIGHT
 
 ### Follow-on attempt 10 M15 branch delivery and closure
 

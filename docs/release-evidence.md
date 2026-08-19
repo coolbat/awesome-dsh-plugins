@@ -1564,3 +1564,229 @@
   or discovery completeness
 - Next action: human review of PR #5; merge and production deployment remain
   explicitly unauthorized
+
+### Evidence M16-PREFLIGHT
+
+- Milestone: M16 preflight
+- Attempt number: 1
+- Environment: local dedicated branch and GitHub read-only inspection
+- Commands or observations: Git status/fetch and SHAs; PR #2 and PR #5 JSON;
+  recent workflow runs; PR #2 queue parsing; ledger, snapshot, catalog, and exact
+  key-and-commit reconciliation; discovery failure log
+- Result: worktree is clean before control updates; origin/main remains
+  `dca4a154`; PR #2 head `19a696b8` contains 631 valid leads with 388 ready,
+  238 already listed, and 5 held; 345 ready rows exactly match the completed
+  ledger and 43 are new or changed across 28 repositories; catalog is
+  419/342/76/1 and current ledger is 355/0
+- Known failure: discovery run 32178240806 is partial with one oversized GitHub
+  response for `steveseguin/b70-optimization-lab`; 60 repositories and 55
+  manifests were preserved, but the success watermark did not advance
+- Blocker class: none for reviewing the preserved valid queue
+- Verdict: pass; daily freeze may proceed after contract selection
+- Residual risk: discovery completeness cannot be claimed
+- Next action: run the contract checker and select M16
+
+### Evidence M16-A2-SELECT
+
+- Milestone: M16
+- Attempt number: 2
+- Environment: local dedicated branch
+- Commands or observations: long-horizon task-contract checker
+- Result: ready=true, no errors or warnings, M16 is the sole runnable milestone,
+  and the workspace policy remains dedicated branch plus review PR
+- Known failure: partial discovery limitation remains retained from preflight
+- Blocker class: none
+- Verdict: pass; M16 selected before queue-data modification
+- Residual risk: static inventory validation cannot prove discovery completeness
+- Next action: freeze and validate the 388-record queue
+
+### Evidence M16-A3-FREEZE
+
+- Milestone: M16
+- Attempt number: 3
+- Environment: local dedicated branch
+- Commands or observations: verified PR-head fetch, exact candidate-file import,
+  freeze script, structural queue/snapshot/ledger checks, and prior-ledger exact
+  identity comparison
+- Result: 631 leads split into 388 ready, 238 already listed, and 5 held; the
+  snapshot and ledger contain 388 unique ready rows with zero non-full SHAs;
+  345 rows exactly match old key and commit, while 43 are fresh across 28 repos
+- Known failure: first ad hoc check used the wrong snapshot field path and
+  raised a TypeError; the freeze had already succeeded, no write followed from
+  the failed check, and the corrected check passed
+- Blocker class: none
+- Verdict: pass; frozen inventory satisfies the structural acceptance criteria
+- Residual risk: discovery remains partial, and static inventory cannot prove
+  package safety or compatibility
+- Next action: run M16 validation and independent completion verification
+
+### Evidence M16-A4-S1-FAIL
+
+- Milestone: M16
+- Attempt number: 4
+- Environment: local dedicated branch
+- Commands or observations: full S1 check and production build command
+- Result: candidate/catalog/ledger validation, generated-doc check, typecheck,
+  and all 37 tests passed; Prettier rejected two newly frozen data files and
+  the chained build did not run
+- Known failure: `data/candidates.json` and `data/review-snapshot.json` are not
+  in canonical Prettier form
+- Blocker class: repairable mechanical formatting
+- Verdict: fail; M16 remains in progress
+- Residual risk: no completion claim may be made until a clean rerun succeeds
+- Next action: format only the affected review-data files and rerun S1
+
+### Evidence M16-A5-VERIFY
+
+- Milestone: M16
+- Attempt number: 5
+- Environment: local dedicated branch
+- Commands or observations: targeted Prettier repair; full S1 command; fresh
+  candidate and ledger validation; explicit source/count/key/SHA/pending and
+  345/43/28 assertions; `git diff --check`
+- Result: pass; 37 tests, format, typecheck, 850 static pages, all ten inventory
+  assertions, and whitespace validation passed with zero failures
+- Known failure: M16-A4 formatting drift is repaired and retained
+- Blocker class: none
+- Verdict: pass; M16 is complete and M17 may be selected
+- Residual risk: static review cannot prove discovery completeness, runtime
+  safety, or compatibility
+- Next action: select M17 and review all 43 fresh records
+
+### Evidence M17-A6-SELECT
+
+- Milestone: M17
+- Attempt number: 6
+- Environment: local dedicated branch
+- Commands or observations: task-contract checker after M16 completion
+- Result: ready=true, no errors or warnings, M17 solely runnable and M18
+  correctly blocked
+- Known failure: partial discovery limitation remains retained
+- Blocker class: none
+- Verdict: pass; M17 selected before review-data modification
+- Residual risk: fixed-source static evidence may require held dispositions
+- Next action: gather static evidence for all 43 fresh records
+
+### Evidence M17-A7-APPLY
+
+- Milestone: M17
+- Attempt number: 7
+- Environment: local dedicated branch plus read-only GitHub and npm metadata
+- Commands or observations: 28 fixed-commit source archives; static manifest,
+  same-commit patch, license, README, lifecycle, compatibility and source-signal
+  reads; npm version metadata and Git tag reads; decision-to-candidate assertion;
+  full-wave apply, README generation, and completion-mode ledger validator
+- Result: fresh 43 = 12 catalog-reviewed, 5 catalog-held, 14 source-conflict,
+  9 duplicate-or-superseded, and 3 example-fixture-or-archive; exact historical
+  rows reuse only the same key and commit; ledger 388/0; catalog 435/353/81/1
+- Known failure: first npm query wrapper lacked its local audit path variable
+  and exited before querying; corrected invocation completed all 43 reads
+- Blocker class: none
+- Verdict: pass at static evidence and ledger-application level
+- Residual risk: no package, hook, plugin, candidate test, installer, binary,
+  browser, server, Python environment, MCP server or native helper was run
+- Next action: run M17 S1 and independent acceptance verification
+
+### Evidence M17-A8-S1-FAIL
+
+- Milestone: M17
+- Attempt number: 8
+- Environment: local dedicated branch
+- Commands or observations: full S1 check and build command
+- Result: catalog, candidate and complete-ledger validation passed; docs:check
+  rejected README.md and README.zh-CN.md, so later checks and build did not run
+- Known failure: post-generation formatting changed exact generated catalog text
+- Blocker class: repairable generated-artifact ordering
+- Verdict: fail; M17 remains in progress
+- Residual risk: no completion claim until a clean S1 rerun succeeds
+- Next action: regenerate READMEs and rerun S1 from scratch
+
+### Evidence M17-A9-S1-FAIL
+
+- Milestone: M17
+- Attempt number: 9
+- Environment: local dedicated branch
+- Commands or observations: exact README regeneration and full S1 rerun
+- Result: catalog/candidate/ledger validation, docs and typecheck passed; 35 of
+  37 tests passed; two count assertions retained the prior 419/342/76/1 totals
+- Known failure: catalog tests need the reviewed 435/353/81/1 data snapshot
+- Blocker class: repairable expected-data update
+- Verdict: fail; M17 remains in progress
+- Residual risk: later formatting and build gates have not yet passed this rerun
+- Next action: update count assertions and rerun S1 from scratch
+
+### Evidence M17-A10-VERIFY-FAIL
+
+- Milestone: M17
+- Attempt number: 10
+- Environment: local dedicated branch
+- Commands or observations: fresh validators, completion mode, docs check,
+  count/mapping assertion script, and whitespace check
+- Result: product validators and printed 43-record distribution passed, but the
+  ad hoc assertion used property-order JSON comparison and reported false; the
+  shell then returned the later whitespace result instead of the intermediate
+  assertion exit
+- Known failure: verifier lacked per-key comparison and fail-fast shell mode
+- Blocker class: verification-harness defect; no product data changed
+- Verdict: fail as completion evidence; M17 remains in progress
+- Residual risk: success cannot be claimed from a masked intermediate failure
+- Next action: rerun corrected verification with `set -e`
+
+### Evidence M17-A11-VERIFY
+
+- Milestone: M17
+- Attempt number: 11
+- Environment: local dedicated branch
+- Commands or observations: fresh full S1; completion-mode ledger validator;
+  generated-doc check; fail-fast source, count, distribution, SHA and catalog
+  mapping assertions; `git diff --check`
+- Result: pass; 37 tests, formatting, typecheck, 882 static pages, 388/0 ledger,
+  435/353/81/1 catalog, all acceptance assertions and whitespace check passed
+- Known failure: M17-A8, A9 and A10 are repaired and retained
+- Blocker class: none
+- Verdict: pass; M17 is complete and M18 may be selected
+- Residual risk: static review is not runtime safety, compatibility, or complete
+  discovery certification
+- Next action: select M18 and deliver the branch to PR #5 without merge or deploy
+
+### Evidence M18-A12-SELECT
+
+- Milestone: M18
+- Attempt number: 12
+- Environment: local dedicated branch
+- Commands or observations: task-contract checker after M17 completion
+- Result: ready=true, no errors or warnings, M18 solely runnable
+- Known failure: partial discovery and repaired local failures remain retained
+- Blocker class: none
+- Verdict: pass; M18 selected before branch delivery work
+- Residual risk: remote CI and branch preview remain unverified for this update
+- Next action: inspect final diff and run fresh S2
+
+### Evidence M18-A13-DIFF
+
+- Milestone: M18
+- Attempt number: 13
+- Environment: local dedicated branch
+- Commands or observations: worktree status, diff names/stats/content, full-wave
+  deterministic catalog serialization, README generation, whitespace check
+- Result: pass; all changed files are in daily-review scope, unnecessary catalog
+  formatting churn was removed, generated docs are refreshed, and whitespace is clean
+- Known failure: none
+- Blocker class: none
+- Verdict: pass; reconciled tree is ready for fresh S2
+- Residual risk: remote CI and branch preview remain unverified for this update
+- Next action: run fresh M18 S2
+
+### Evidence M18-A14-S2-PASS
+
+- Milestone: M18
+- Attempt number: 14
+- Environment: local dedicated branch
+- Commands or observations: fresh full S2 check and production build command
+- Result: pass; catalog 435/353/81/1, candidate queue 631, complete ledger 388/0,
+  generated docs, typecheck, all 37 tests, formatting, and 882 static pages passed
+- Known failure: none; prior repaired failures remain retained
+- Blocker class: none
+- Verdict: pass; exact scoped tree is ready to commit and push
+- Residual risk: remote CI and Cloudflare branch preview remain unverified
+- Next action: commit, push, refresh PR #5, and wait for remote checks

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "5f4afa34c293b0c79c16fd6a1d92baf46c11eade",
+  "sourceCommit": "19a696b8a0e70c68873a7200a015901916e7220b",
   "records": [
     {
       "sequence": 1,
@@ -11,7 +11,7 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Private evaluation support package under eval/v0.4, not the independently distributed plugin at the repository root.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 2,
@@ -22,7 +22,7 @@
       "disposition": "catalog-reviewed",
       "catalogId": "1052326311-dsh-plan-lattice",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 3,
@@ -33,7 +33,7 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DeepSeek Harness base bundle inside a VS Code product, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 4,
@@ -44,7 +44,7 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DeepSeek Harness headless bundle inside a VS Code product, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 5,
@@ -55,7 +55,7 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DeepSeek Harness web-app bundle inside a VS Code product, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 6,
@@ -66,7 +66,7 @@
       "disposition": "catalog-reviewed",
       "catalogId": "1710782766-dsh-llm-vision",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 7,
@@ -77,7 +77,7 @@
       "disposition": "catalog-reviewed",
       "catalogId": "2008924-dsh-progress-viz",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 8,
@@ -88,7 +88,7 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Historical v0.1.0 archive; the repository's current root bundle is already cataloged.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 9,
@@ -99,7 +99,7 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Historical v0.2.0 archive; the repository's current root bundle is already cataloged.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 10,
@@ -110,7 +110,7 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Historical v0.2.1 archive; the repository's current root bundle is already cataloged.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 11,
@@ -121,7 +121,7 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Historical v0.2.2 archive; the repository's current root bundle is already cataloged.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 12,
@@ -132,7 +132,7 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Historical v0.2.3 archive; the repository's current root bundle is already cataloged.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 13,
@@ -143,7 +143,7 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Historical v0.3.0 archive; the repository's current root bundle is already cataloged.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 14,
@@ -154,7 +154,7 @@
       "disposition": "catalog-reviewed",
       "catalogId": "534119219-dsh-custom-provider-reasoning",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 15,
@@ -165,7 +165,7 @@
       "disposition": "catalog-held",
       "catalogId": "6-debug-6-dsh-thinking-notifier",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 16,
@@ -176,7 +176,7 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Explicit demo capability under examples; the repository's root bundle is already cataloged.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 17,
@@ -187,7 +187,7 @@
       "disposition": "catalog-reviewed",
       "catalogId": "863683348-dsh-plugin-audit",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 18,
@@ -198,7 +198,7 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Private downstream desktop profile bundle inside a full Harness GUI fork; the repository has also been renamed and no independent package installation identity was confirmed.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 19,
@@ -209,7 +209,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 20,
@@ -220,7 +220,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 21,
@@ -231,7 +231,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 22,
@@ -242,7 +242,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 23,
@@ -253,7 +253,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 24,
@@ -264,7 +264,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 25,
@@ -275,7 +275,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 26,
@@ -286,7 +286,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 27,
@@ -297,7 +297,7 @@
       "disposition": "catalog-reviewed",
       "catalogId": "afrel1024-dsh-client-ui-aqua-unofficial",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 28,
@@ -308,7 +308,7 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Private root source manifest is superseded by the same repository's already-cataloged distributable nested bundle.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 29,
@@ -319,7 +319,7 @@
       "disposition": "catalog-reviewed",
       "catalogId": "anywhere-labs-dsh-plugin-desktop",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 30,
@@ -330,7 +330,7 @@
       "disposition": "unavailable",
       "catalogId": null,
       "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 31,
@@ -341,7 +341,7 @@
       "disposition": "catalog-held",
       "catalogId": "as1350-dsh-manager",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 32,
@@ -352,10 +352,32 @@
       "disposition": "catalog-reviewed",
       "catalogId": "asher-2000-dsh-expert-mode",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
       "sequence": 33,
+      "key": "1335781534:package.json",
+      "repository": "baixianger/dsh-bridge",
+      "manifest": "package.json",
+      "commit": "36444838928df000b1f11fa0e20828ab71975c06",
+      "disposition": "catalog-held",
+      "catalogId": "baixianger-dsh-bridge",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 34,
+      "key": "1337503267:package.json",
+      "repository": "baixianger/dsh-weave",
+      "manifest": "package.json",
+      "commit": "2e716052adb063a60cbd2cd11cdd071fabb35d08",
+      "disposition": "catalog-reviewed",
+      "catalogId": "baixianger-dsh-weave",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 35,
       "key": "1335118903:packages/cc-hooks/package.json",
       "repository": "Bcy2020/dsh-cc-ecosystem",
       "manifest": "packages/cc-hooks/package.json",
@@ -363,10 +385,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 34,
+      "sequence": 36,
       "key": "1335118903:packages/cc-mcp/package.json",
       "repository": "Bcy2020/dsh-cc-ecosystem",
       "manifest": "packages/cc-mcp/package.json",
@@ -374,10 +396,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 35,
+      "sequence": 37,
       "key": "1335118903:packages/cc-permissions/package.json",
       "repository": "Bcy2020/dsh-cc-ecosystem",
       "manifest": "packages/cc-permissions/package.json",
@@ -385,10 +407,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 36,
+      "sequence": 38,
       "key": "1335118903:packages/cc-skills/package.json",
       "repository": "Bcy2020/dsh-cc-ecosystem",
       "manifest": "packages/cc-skills/package.json",
@@ -396,10 +418,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 37,
+      "sequence": 39,
       "key": "1333717572:package.json",
       "repository": "bpc-oss/dsh-web-billing",
       "manifest": "package.json",
@@ -407,10 +429,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "bpc-oss-dsh-web-billing",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 38,
+      "sequence": 40,
       "key": "1335122498:package.json",
       "repository": "br1nosense/dsh-wxauto-plugin",
       "manifest": "package.json",
@@ -418,10 +440,10 @@
       "disposition": "catalog-held",
       "catalogId": "br1nosense-dsh-wxauto",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 39,
+      "sequence": 41,
       "key": "1335816329:npm-package/package.json",
       "repository": "Breeze136/dsh-kb-rag",
       "manifest": "npm-package/package.json",
@@ -429,10 +451,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "breeze136-dsh-kb-rag",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 40,
+      "sequence": 42,
       "key": "1333843766:packages/bundle/base/package.json",
       "repository": "BuyMyCheatPlz/Deepseek_Harness_Updated",
       "manifest": "packages/bundle/base/package.json",
@@ -440,10 +462,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Forked DeepSeek Harness base core bundle, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 41,
+      "sequence": 43,
       "key": "1333843766:packages/bundle/headless/package.json",
       "repository": "BuyMyCheatPlz/Deepseek_Harness_Updated",
       "manifest": "packages/bundle/headless/package.json",
@@ -451,10 +473,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Forked DeepSeek Harness headless core bundle, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 42,
+      "sequence": 44,
       "key": "1333843766:packages/bundle/web-app/package.json",
       "repository": "BuyMyCheatPlz/Deepseek_Harness_Updated",
       "manifest": "packages/bundle/web-app/package.json",
@@ -462,10 +484,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Forked DeepSeek Harness web-app core bundle, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 43,
+      "sequence": 45,
       "key": "1336776277:packages/bundle/base/package.json",
       "repository": "bxlh009/deepseek-harness-workbench",
       "manifest": "packages/bundle/base/package.json",
@@ -473,10 +495,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DSH base bundle inside a complete Harness workbench fork, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 44,
+      "sequence": 46,
       "key": "1336776277:packages/bundle/headless/package.json",
       "repository": "bxlh009/deepseek-harness-workbench",
       "manifest": "packages/bundle/headless/package.json",
@@ -484,10 +506,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DSH headless bundle inside a complete Harness workbench fork, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 45,
+      "sequence": 47,
       "key": "1336776277:packages/bundle/web-app/package.json",
       "repository": "bxlh009/deepseek-harness-workbench",
       "manifest": "packages/bundle/web-app/package.json",
@@ -495,10 +517,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DSH web-app bundle inside a complete Harness workbench fork, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 46,
+      "sequence": 48,
       "key": "1336317752:package.json",
       "repository": "cainiao1992/dsh-codebuddy-auth",
       "manifest": "package.json",
@@ -506,10 +528,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "cainiao1992-dsh-codebuddy-auth",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 47,
+      "sequence": 49,
       "key": "1337736426:package.json",
       "repository": "CanGeng/yolo-mode",
       "manifest": "package.json",
@@ -517,10 +539,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "cangeng-yolo-mode",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 48,
+      "sequence": 50,
       "key": "1334724502:package.json",
       "repository": "caoyiwei850/dsh-client-ui-skins",
       "manifest": "package.json",
@@ -528,10 +550,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "caoyiwei850-dsh-client-ui-skins",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 49,
+      "sequence": 51,
       "key": "1334309081:packages/dsh-aionui-panel/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-aionui-panel/package.json",
@@ -539,10 +561,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 50,
+      "sequence": 52,
       "key": "1334309081:packages/dsh-full-stats/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-full-stats/package.json",
@@ -550,10 +572,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 51,
+      "sequence": 53,
       "key": "1334309081:packages/dsh-git-graph/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-git-graph/package.json",
@@ -561,10 +583,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 52,
+      "sequence": 54,
       "key": "1334309081:packages/dsh-live-stats/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-live-stats/package.json",
@@ -572,10 +594,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 53,
+      "sequence": 55,
       "key": "1334309081:packages/dsh-pet/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-pet/package.json",
@@ -583,10 +605,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 54,
+      "sequence": 56,
       "key": "1334309081:packages/dsh-remote-web-ui/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-remote-web-ui/package.json",
@@ -594,10 +616,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 55,
+      "sequence": 57,
       "key": "1334309081:packages/dsh-skins/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/package.json",
@@ -605,10 +627,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 56,
+      "sequence": 58,
       "key": "1334309081:packages/dsh-skins/skins/aurora/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/aurora/package.json",
@@ -616,10 +638,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 57,
+      "sequence": 59,
       "key": "1334309081:packages/dsh-skins/skins/blue-fantasy/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/blue-fantasy/package.json",
@@ -627,10 +649,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 58,
+      "sequence": 60,
       "key": "1334309081:packages/dsh-skins/skins/dragon-heir/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/dragon-heir/package.json",
@@ -638,10 +660,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 59,
+      "sequence": 61,
       "key": "1334309081:packages/dsh-skins/skins/miku/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/miku/package.json",
@@ -649,10 +671,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 60,
+      "sequence": 62,
       "key": "1334309081:packages/dsh-skins/skins/minecraft/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/minecraft/package.json",
@@ -660,10 +682,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 61,
+      "sequence": 63,
       "key": "1334309081:packages/dsh-skins/skins/ths/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/ths/package.json",
@@ -671,10 +693,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 62,
+      "sequence": 64,
       "key": "1334309081:packages/dsh-skins/skins/trading/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/trading/package.json",
@@ -682,10 +704,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 63,
+      "sequence": 65,
       "key": "1334309081:packages/dsh-skins/skins/whale-song/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/whale-song/package.json",
@@ -693,10 +715,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 64,
+      "sequence": 66,
       "key": "1334309081:packages/dsh-skins/skins/xp/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-skins/skins/xp/package.json",
@@ -704,10 +726,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 65,
+      "sequence": 67,
       "key": "1334309081:packages/dsh-ssh/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-ssh/package.json",
@@ -715,10 +737,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 66,
+      "sequence": 68,
       "key": "1334309081:packages/dsh-task-board/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-task-board/package.json",
@@ -726,10 +748,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 67,
+      "sequence": 69,
       "key": "1334309081:packages/dsh-usage-dashboard/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-usage-dashboard/package.json",
@@ -737,10 +759,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 68,
+      "sequence": 70,
       "key": "1334309081:packages/dsh-web-ui-settings/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/dsh-web-ui-settings/package.json",
@@ -748,10 +770,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 69,
+      "sequence": 71,
       "key": "1334309081:packages/skins/aurora/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/skins/aurora/package.json",
@@ -759,10 +781,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 70,
+      "sequence": 72,
       "key": "1334309081:packages/skins/blue-fantasy/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/skins/blue-fantasy/package.json",
@@ -770,10 +792,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 71,
+      "sequence": 73,
       "key": "1334309081:packages/skins/dragon-heir/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/skins/dragon-heir/package.json",
@@ -781,10 +803,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 72,
+      "sequence": 74,
       "key": "1334309081:packages/skins/miku/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/skins/miku/package.json",
@@ -792,10 +814,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 73,
+      "sequence": 75,
       "key": "1334309081:packages/skins/minecraft/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/skins/minecraft/package.json",
@@ -803,10 +825,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 74,
+      "sequence": 76,
       "key": "1334309081:packages/skins/skin-center/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/skins/skin-center/package.json",
@@ -814,10 +836,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Canonical skin-center component is included in the repository's dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 75,
+      "sequence": 77,
       "key": "1334309081:packages/skins/ths/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/skins/ths/package.json",
@@ -825,10 +847,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 76,
+      "sequence": 78,
       "key": "1334309081:packages/skins/trading/package.json",
       "repository": "CAPTAIN1275/dsh-ui-web",
       "manifest": "packages/skins/trading/package.json",
@@ -836,10 +858,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 77,
+      "sequence": 79,
       "key": "1333515140:package.json",
       "repository": "causebefore/dsh-pomodoro",
       "manifest": "package.json",
@@ -847,10 +869,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "causebefore-dsh-pomodoro",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 78,
+      "sequence": 80,
       "key": "1336767699:packages/bundle/package.json",
       "repository": "CC19990113/dsh-plugin-codegraph",
       "manifest": "packages/bundle/package.json",
@@ -858,10 +880,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "cc19990113-dsh-plugin-codegraph",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 79,
+      "sequence": 81,
       "key": "1335219235:package.json",
       "repository": "cdxDNRF/dsh-vision",
       "manifest": "package.json",
@@ -869,10 +891,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "cdxdnrf-dsh-vision",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 80,
+      "sequence": 82,
       "key": "1337201598:package.json",
       "repository": "Cerrda/dsh-cerrda-theme",
       "manifest": "package.json",
@@ -880,10 +902,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "cerrda-dsh-cerrda-theme",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 81,
+      "sequence": 83,
       "key": "1337305098:fixtures/public/healthy-plugin/package.json",
       "repository": "ChaoYuZhang001/dsh-gate",
       "manifest": "fixtures/public/healthy-plugin/package.json",
@@ -891,10 +913,10 @@
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
       "reason": "Explicit healthy-plugin fixture under fixtures/public for dsh-gate tests, not an independently distributed plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 82,
+      "sequence": 84,
       "key": "1335729209:package.json",
       "repository": "chengzhi43/dsh-file",
       "manifest": "package.json",
@@ -902,10 +924,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "chengzhi43-dsh-file",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 83,
+      "sequence": 85,
       "key": "1336794469:package.json",
       "repository": "chenhw7/dsh-memory",
       "manifest": "package.json",
@@ -913,10 +935,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "chenhw7-dsh-memory",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 84,
+      "sequence": 86,
       "key": "1333786261:packages/dsh-aionui-panel/package.json",
       "repository": "chenw2759-wq/dsh-IDE",
       "manifest": "packages/dsh-aionui-panel/package.json",
@@ -924,10 +946,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "IDE monorepo component represented by the canonical EasySSH workspace record under the catalog's one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 85,
+      "sequence": 87,
       "key": "1333786261:packages/dsh-ssh/package.json",
       "repository": "chenw2759-wq/dsh-IDE",
       "manifest": "packages/dsh-ssh/package.json",
@@ -935,10 +957,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "SSH engine component is reused by the repository's canonical EasySSH workspace record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 86,
+      "sequence": 88,
       "key": "1334012655:package.json",
       "repository": "Choi-Peng/dsh-deepseek-balance",
       "manifest": "package.json",
@@ -946,10 +968,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "choi-peng-dsh-deepseek-balance",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 87,
+      "sequence": 89,
       "key": "1337585840:packages/bundle/base/package.json",
       "repository": "ChrisWBurt-2020/dsh-private",
       "manifest": "packages/bundle/base/package.json",
@@ -957,10 +979,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Forked DeepSeek Harness base core bundle whose manifest points to the upstream core repository, not an independent external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 88,
+      "sequence": 90,
       "key": "1337585840:packages/bundle/headless/package.json",
       "repository": "ChrisWBurt-2020/dsh-private",
       "manifest": "packages/bundle/headless/package.json",
@@ -968,10 +990,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Forked DeepSeek Harness headless core bundle whose manifest points to the upstream core repository, not an independent external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 89,
+      "sequence": 91,
       "key": "1337585840:packages/bundle/web-app/package.json",
       "repository": "ChrisWBurt-2020/dsh-private",
       "manifest": "packages/bundle/web-app/package.json",
@@ -979,10 +1001,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Forked DeepSeek Harness web-app core bundle whose manifest points to the upstream core repository, not an independent external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 90,
+      "sequence": 92,
       "key": "1336277903:package.json",
       "repository": "CikeSeven/dsh-code-memory",
       "manifest": "package.json",
@@ -990,10 +1012,10 @@
       "disposition": "source-conflict",
       "catalogId": null,
       "reason": "The public dsh-code-memory package points to dsh-tui-ecosystem/dsh-code-memory rather than this fixed candidate repository, which also lacks a repository license file.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 91,
+      "sequence": 93,
       "key": "1336732097:package.json",
       "repository": "cipher2026/dsh-idle-deepcompute",
       "manifest": "package.json",
@@ -1001,10 +1023,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "cipher2026-dsh-deepcompute",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 92,
+      "sequence": 94,
       "key": "1337885451:package.json",
       "repository": "clarknu/dsh-gateway",
       "manifest": "package.json",
@@ -1012,10 +1034,21 @@
       "disposition": "catalog-reviewed",
       "catalogId": "clarknu-dsh-gateway",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 93,
+      "sequence": 95,
+      "key": "1338683128:package.json",
+      "repository": "Coco-king/dsh-monitor",
+      "manifest": "package.json",
+      "commit": "9d318dcc9f2e700b88b1ef9d7e1eab2aa61c9760",
+      "disposition": "catalog-reviewed",
+      "catalogId": "coco-king-dsh-monitor",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 96,
       "key": "1336955799:package.json",
       "repository": "codeMonkey-Pine/dsh-wallpaper",
       "manifest": "package.json",
@@ -1023,10 +1056,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "codemonkey-pine-dsh-wallpaper",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 94,
+      "sequence": 97,
       "key": "1337444564:package.json",
       "repository": "couldbeme/dsh-write-gate",
       "manifest": "package.json",
@@ -1034,10 +1067,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "couldbeme-dsh-write-gate",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 95,
+      "sequence": 98,
       "key": "1335030350:package.json",
       "repository": "crack-time/dsh-web-ui-skin",
       "manifest": "package.json",
@@ -1045,10 +1078,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "crack-time-dsh-web-ui-skin",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 96,
+      "sequence": 99,
       "key": "1336838349:package.json",
       "repository": "cyanxi69-jpg/dsh-self-memory",
       "manifest": "package.json",
@@ -1056,10 +1089,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "cyanxi69-dsh-self-memory",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 97,
+      "sequence": 100,
       "key": "1259110872:vendor/deepseek-harness/packages/bundle/base/package.json",
       "repository": "dabaicai001/star-deepseek-harness-desktop",
       "manifest": "vendor/deepseek-harness/packages/bundle/base/package.json",
@@ -1067,10 +1100,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DeepSeek Harness base core bundle inside a desktop fork, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 98,
+      "sequence": 101,
       "key": "1259110872:vendor/deepseek-harness/packages/bundle/headless/package.json",
       "repository": "dabaicai001/star-deepseek-harness-desktop",
       "manifest": "vendor/deepseek-harness/packages/bundle/headless/package.json",
@@ -1078,10 +1111,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DeepSeek Harness headless core bundle inside a desktop fork, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 99,
+      "sequence": 102,
       "key": "1259110872:vendor/deepseek-harness/packages/bundle/web-app/package.json",
       "repository": "dabaicai001/star-deepseek-harness-desktop",
       "manifest": "vendor/deepseek-harness/packages/bundle/web-app/package.json",
@@ -1089,10 +1122,10 @@
       "disposition": "non-plugin-package",
       "catalogId": null,
       "reason": "Vendored DeepSeek Harness web-app core bundle inside a desktop fork, not an independently distributed external plugin.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 100,
+      "sequence": 103,
       "key": "1336576582:package/package.json",
       "repository": "daoxiang0520/dsh-plugin-whu",
       "manifest": "package/package.json",
@@ -1100,10 +1133,10 @@
       "disposition": "catalog-held",
       "catalogId": "daoxiang0520-dsh-plugin-whu",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 101,
+      "sequence": 104,
       "key": "1335978110:dsh-plugin-desktop/package.json",
       "repository": "darven-cs/deepseek-harness-desktop-linux",
       "manifest": "dsh-plugin-desktop/package.json",
@@ -1111,10 +1144,10 @@
       "disposition": "source-conflict",
       "catalogId": null,
       "reason": "The public dsh-plugin-desktop package points to anywhere-labs/deepseek-harness-desktop rather than this frozen candidate repository.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 102,
+      "sequence": 105,
       "key": "1337084168:package.json",
       "repository": "ddrwin/dsh-channel",
       "manifest": "package.json",
@@ -1122,10 +1155,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "ddrwin-dsh-channel",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 103,
+      "sequence": 106,
       "key": "1335023417:packages/dsh-channel-router/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-channel-router/package.json",
@@ -1133,10 +1166,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 104,
+      "sequence": 107,
       "key": "1335023417:packages/dsh-doctor/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-doctor/package.json",
@@ -1144,10 +1177,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 105,
+      "sequence": 108,
       "key": "1335023417:packages/dsh-evolve-attention/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-evolve-attention/package.json",
@@ -1155,10 +1188,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 106,
+      "sequence": 109,
       "key": "1335023417:packages/dsh-evolve-web/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-evolve-web/package.json",
@@ -1166,10 +1199,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 107,
+      "sequence": 110,
       "key": "1335023417:packages/dsh-evolve/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-evolve/package.json",
@@ -1177,10 +1210,10 @@
       "disposition": "catalog-held",
       "catalogId": "deepseek-harness-evoforge-dsh-evoforge",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 108,
+      "sequence": 111,
       "key": "1335023417:packages/dsh-feishu/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-feishu/package.json",
@@ -1188,10 +1221,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 109,
+      "sequence": 112,
       "key": "1335023417:packages/dsh-github-review/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-github-review/package.json",
@@ -1199,10 +1232,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 110,
+      "sequence": 113,
       "key": "1335023417:packages/dsh-goal-continuity/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-goal-continuity/package.json",
@@ -1210,10 +1243,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 111,
+      "sequence": 114,
       "key": "1335023417:packages/dsh-resident/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-resident/package.json",
@@ -1221,10 +1254,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 112,
+      "sequence": 115,
       "key": "1335023417:packages/dsh-software-delivery/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-software-delivery/package.json",
@@ -1232,10 +1265,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 113,
+      "sequence": 116,
       "key": "1335023417:packages/dsh-telegram/package.json",
       "repository": "deepseek-harness-evoforge/dsh-evoforge",
       "manifest": "packages/dsh-telegram/package.json",
@@ -1243,10 +1276,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 114,
+      "sequence": 117,
       "key": "1336093377:package.json",
       "repository": "deronghe/dsh-plugin-desktop-installer",
       "manifest": "package.json",
@@ -1254,10 +1287,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "deronghe-dsh-plugin-desktop-installer",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 115,
+      "sequence": 118,
       "key": "1338381270:package.json",
       "repository": "DianranQian/handcraft-mode",
       "manifest": "package.json",
@@ -1265,10 +1298,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "dianranqian-handcraft-mode",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 116,
+      "sequence": 119,
       "key": "1335173069:package.json",
       "repository": "dickpy/dsh-cloud-sync",
       "manifest": "package.json",
@@ -1276,10 +1309,10 @@
       "disposition": "catalog-reviewed",
       "catalogId": "dickpy-dsh-cloud-sync",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 117,
+      "sequence": 120,
       "key": "1335637250:plugin/package.json",
       "repository": "dingminhua/dsh-subagent-default-model",
       "manifest": "plugin/package.json",
@@ -1287,10 +1320,10 @@
       "disposition": "catalog-held",
       "catalogId": "dingminhua-dsh-subagent-default-model",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 118,
+      "sequence": 121,
       "key": "1335637250:vendor/dsh-subagent-max/package.json",
       "repository": "dingminhua/dsh-subagent-default-model",
       "manifest": "vendor/dsh-subagent-max/package.json",
@@ -1298,10 +1331,10 @@
       "disposition": "source-conflict",
       "catalogId": null,
       "reason": "The vendored @aaravarr/dsh-subagent-max package is not owned by this candidate repository, and npm metadata does not map that package identity to the frozen source.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 119,
+      "sequence": 122,
       "key": "1338131962:plugins/manual/dsh-external-agents/package.json",
       "repository": "DjangoAILab/dsh-plugins",
       "manifest": "plugins/manual/dsh-external-agents/package.json",
@@ -1309,10 +1342,10 @@
       "disposition": "catalog-held",
       "catalogId": "djangoailab-dsh-plugins",
       "reason": null,
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 120,
+      "sequence": 123,
       "key": "1338131962:plugins/manual/dsh-file-upload/package.json",
       "repository": "DjangoAILab/dsh-plugins",
       "manifest": "plugins/manual/dsh-file-upload/package.json",
@@ -1320,10 +1353,10 @@
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "Second manual bundle in the DjangoAILab plugin monorepo, represented by the canonical repository-level held record.",
-      "reviewedAt": "2026-08-18"
+      "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 121,
+      "sequence": 124,
       "key": "1338131962:plugins/manual/dsh-notifier/package.json",
       "repository": "DjangoAILab/dsh-plugins",
       "manifest": "plugins/manual/dsh-notifier/package.json",
@@ -1334,7 +1367,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 122,
+      "sequence": 125,
       "key": "1338131962:plugins/manual/dsh-web-mobile/package.json",
       "repository": "DjangoAILab/dsh-plugins",
       "manifest": "plugins/manual/dsh-web-mobile/package.json",
@@ -1345,7 +1378,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 123,
+      "sequence": 126,
       "key": "1333807290:tests/web/fixtures/fixture-a/package.json",
       "repository": "dsh-market/dsh-market",
       "manifest": "tests/web/fixtures/fixture-a/package.json",
@@ -1356,7 +1389,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 124,
+      "sequence": 127,
       "key": "1333807290:tests/web/fixtures/fixture-b/package.json",
       "repository": "dsh-market/dsh-market",
       "manifest": "tests/web/fixtures/fixture-b/package.json",
@@ -1367,7 +1400,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 125,
+      "sequence": 128,
       "key": "1333807290:tests/web/fixtures/fixture-carrier/package.json",
       "repository": "dsh-market/dsh-market",
       "manifest": "tests/web/fixtures/fixture-carrier/package.json",
@@ -1378,7 +1411,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 126,
+      "sequence": 129,
       "key": "1333807290:tests/web/fixtures/fixture-clash/package.json",
       "repository": "dsh-market/dsh-market",
       "manifest": "tests/web/fixtures/fixture-clash/package.json",
@@ -1389,7 +1422,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 127,
+      "sequence": 130,
       "key": "1333807290:tests/web/fixtures/fixture-cross/package.json",
       "repository": "dsh-market/dsh-market",
       "manifest": "tests/web/fixtures/fixture-cross/package.json",
@@ -1400,7 +1433,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 128,
+      "sequence": 131,
       "key": "1335379429:test/fixtures/lint-pass/package.json",
       "repository": "dshapps/dsh-app-check",
       "manifest": "test/fixtures/lint-pass/package.json",
@@ -1411,7 +1444,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 129,
+      "sequence": 132,
       "key": "1335064650:package.json",
       "repository": "e2mcc/dsh-popout-sidebar",
       "manifest": "package.json",
@@ -1422,7 +1455,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 130,
+      "sequence": 133,
       "key": "1336279191:packages/turn-nav/package.json",
       "repository": "edtechools/dsh-plugins",
       "manifest": "packages/turn-nav/package.json",
@@ -1433,7 +1466,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 131,
+      "sequence": 134,
       "key": "1336279191:packages/web-search/package.json",
       "repository": "edtechools/dsh-plugins",
       "manifest": "packages/web-search/package.json",
@@ -1444,7 +1477,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 132,
+      "sequence": 135,
       "key": "1337522939:package.json",
       "repository": "edusrez/dsh-tool-web-enhanced",
       "manifest": "package.json",
@@ -1455,7 +1488,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 133,
+      "sequence": 136,
       "key": "1333914823:package.json",
       "repository": "elementor-i/dsh-agentmemory",
       "manifest": "package.json",
@@ -1466,7 +1499,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 134,
+      "sequence": 137,
       "key": "1335985927:package.json",
       "repository": "ErrorLst/dsh-notes",
       "manifest": "package.json",
@@ -1477,7 +1510,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 135,
+      "sequence": 138,
+      "key": "1337985516:package.json",
+      "repository": "EternalNight996/dsh-ui-three-body",
+      "manifest": "package.json",
+      "commit": "c495a64c77597b3cdeb3a4d286fa1127dd79ab45",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-ui-three-body 0.2.0 package was built from ca11d449, not this frozen c495a64 source commit, so the registry install cannot be mapped to the candidate.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 139,
       "key": "1334075920:package.json",
       "repository": "feibi-mochi/deepseek-harness-control-center",
       "manifest": "package.json",
@@ -1488,7 +1532,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 136,
+      "sequence": 140,
       "key": "1337138853:tsplugins/dsh-desktop-demo/package.json",
       "repository": "feifeigd/dsh-desktop-qt",
       "manifest": "tsplugins/dsh-desktop-demo/package.json",
@@ -1499,7 +1543,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 137,
+      "sequence": 141,
       "key": "1333673564:package.json",
       "repository": "Fishquito7/dsh-skill-mcp-panel",
       "manifest": "package.json",
@@ -1510,7 +1554,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 138,
+      "sequence": 142,
       "key": "1336520724:plugins/dsh-cdi-plugin/package.json",
       "repository": "fmlin0429712024/linkhealth-dsh-platform",
       "manifest": "plugins/dsh-cdi-plugin/package.json",
@@ -1521,7 +1565,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 139,
+      "sequence": 143,
       "key": "1336520724:plugins/dsh-triage-plugin/package.json",
       "repository": "fmlin0429712024/linkhealth-dsh-platform",
       "manifest": "plugins/dsh-triage-plugin/package.json",
@@ -1532,7 +1576,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 140,
+      "sequence": 144,
       "key": "1335265137:triage-dsh-plugin/package.json",
       "repository": "fmlin0429712024/linkhealth-triage",
       "manifest": "triage-dsh-plugin/package.json",
@@ -1543,7 +1587,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 141,
+      "sequence": 145,
       "key": "1330609336:adapters/dsh/sgme-bridge/package.json",
       "repository": "freehul/sgme",
       "manifest": "adapters/dsh/sgme-bridge/package.json",
@@ -1554,7 +1598,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 142,
+      "sequence": 146,
       "key": "1330609336:package.json",
       "repository": "freehul/sgme",
       "manifest": "package.json",
@@ -1565,7 +1609,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 143,
+      "sequence": 147,
       "key": "1336248166:package.json",
       "repository": "gameswu/dsh-cross-collaboration",
       "manifest": "package.json",
@@ -1576,7 +1620,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 144,
+      "sequence": 148,
       "key": "1272251780:integrations/dsh-plugin/package.json",
       "repository": "geml-spec/geml",
       "manifest": "integrations/dsh-plugin/package.json",
@@ -1587,7 +1631,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 145,
+      "sequence": 149,
       "key": "1335481459:packages/cli-session/package.json",
       "repository": "ghbhiee/dsh-plugins",
       "manifest": "packages/cli-session/package.json",
@@ -1598,7 +1642,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 146,
+      "sequence": 150,
       "key": "1335481459:packages/mobile-shell/package.json",
       "repository": "ghbhiee/dsh-plugins",
       "manifest": "packages/mobile-shell/package.json",
@@ -1609,7 +1653,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 147,
+      "sequence": 151,
       "key": "1336118912:package.json",
       "repository": "GHJIVHIDD/dsh-plugin-usage",
       "manifest": "package.json",
@@ -1620,7 +1664,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 148,
+      "sequence": 152,
       "key": "1335817289:package.json",
       "repository": "gityanglijun/dsh-ui-crystal",
       "manifest": "package.json",
@@ -1631,7 +1675,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 149,
+      "sequence": 153,
       "key": "1336747156:package.json",
       "repository": "GMH13552/dsh-timer-scheduler",
       "manifest": "package.json",
@@ -1642,7 +1686,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 150,
+      "sequence": 154,
       "key": "1335591870:package.json",
       "repository": "gongshiyun/dsh-usage-dashboard",
       "manifest": "package.json",
@@ -1653,7 +1697,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 151,
+      "sequence": 155,
       "key": "1334503705:package.json",
       "repository": "Graffiti-yH/dsh-notion-manager",
       "manifest": "package.json",
@@ -1664,7 +1708,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 152,
+      "sequence": 156,
       "key": "1338460580:package.json",
       "repository": "haochi72/dsh-auto-continue-429",
       "manifest": "package.json",
@@ -1675,7 +1719,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 153,
+      "sequence": 157,
       "key": "1335814717:fixtures/hello-bundle/package.json",
       "repository": "Harzva/harness-flow-hub",
       "manifest": "fixtures/hello-bundle/package.json",
@@ -1686,7 +1730,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 154,
+      "sequence": 158,
       "key": "1336854970:package.json",
       "repository": "hhj2714/dsh-whale-btn",
       "manifest": "package.json",
@@ -1697,7 +1741,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 155,
+      "sequence": 159,
       "key": "1336446401:scripts/fixtures/w3-local-bundle/package.json",
       "repository": "hili986/dshpack",
       "manifest": "scripts/fixtures/w3-local-bundle/package.json",
@@ -1708,7 +1752,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 156,
+      "sequence": 160,
       "key": "1337317714:package.json",
       "repository": "HiNEM66/dsh-fact-gate",
       "manifest": "package.json",
@@ -1719,7 +1763,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 157,
+      "sequence": 161,
       "key": "1334951789:plugins-local/dsh-ux-polish/package.json",
       "repository": "hisonWarren/deepseekharness-alter",
       "manifest": "plugins-local/dsh-ux-polish/package.json",
@@ -1730,7 +1774,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 158,
+      "sequence": 162,
       "key": "1333943977:package.json",
       "repository": "honghudavy-star/DSH_plugins_4U",
       "manifest": "package.json",
@@ -1741,7 +1785,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 159,
+      "sequence": 163,
       "key": "1333943977:packages/vision/package.json",
       "repository": "honghudavy-star/DSH_plugins_4U",
       "manifest": "packages/vision/package.json",
@@ -1752,7 +1796,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 160,
+      "sequence": 164,
       "key": "1333943977:packages/wallpaper/package.json",
       "repository": "honghudavy-star/DSH_plugins_4U",
       "manifest": "packages/wallpaper/package.json",
@@ -1763,7 +1807,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 161,
+      "sequence": 165,
       "key": "1333943977:packages/wechat/package.json",
       "repository": "honghudavy-star/DSH_plugins_4U",
       "manifest": "packages/wechat/package.json",
@@ -1774,7 +1818,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 162,
+      "sequence": 166,
       "key": "1336508458:package.json",
       "repository": "hoobooyoo/deepseek-harness-tui",
       "manifest": "package.json",
@@ -1785,7 +1829,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 163,
+      "sequence": 167,
       "key": "1334209925:tools/dsh-deepseek-favicon/package.json",
       "repository": "huangmouren2023/deepseek-harness-toolkit",
       "manifest": "tools/dsh-deepseek-favicon/package.json",
@@ -1796,7 +1840,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 164,
+      "sequence": 168,
       "key": "1334209925:tools/dsh-liang-watch/package.json",
       "repository": "huangmouren2023/deepseek-harness-toolkit",
       "manifest": "tools/dsh-liang-watch/package.json",
@@ -1807,7 +1851,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 165,
+      "sequence": 169,
       "key": "1336313647:dsh-layout/package.json",
       "repository": "huangrx6/dsh-plugin",
       "manifest": "dsh-layout/package.json",
@@ -1818,7 +1862,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 166,
+      "sequence": 170,
       "key": "1336313647:dsh-mcp-manager/package.json",
       "repository": "huangrx6/dsh-plugin",
       "manifest": "dsh-mcp-manager/package.json",
@@ -1829,7 +1873,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 167,
+      "sequence": 171,
       "key": "1336313647:dsh-remote-access/package.json",
       "repository": "huangrx6/dsh-plugin",
       "manifest": "dsh-remote-access/package.json",
@@ -1840,7 +1884,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 168,
+      "sequence": 172,
       "key": "1336313647:dsh-skill-manager/package.json",
       "repository": "huangrx6/dsh-plugin",
       "manifest": "dsh-skill-manager/package.json",
@@ -1851,7 +1895,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 169,
+      "sequence": 173,
       "key": "1336313647:dsh-third-party/package.json",
       "repository": "huangrx6/dsh-plugin",
       "manifest": "dsh-third-party/package.json",
@@ -1862,18 +1906,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 170,
+      "sequence": 174,
       "key": "1333844474:packages/dsh1024/package.json",
       "repository": "imsai-sh/awesome-deepseek-harness-plugins",
       "manifest": "packages/dsh1024/package.json",
-      "commit": "c19c4c2bf28a542fb9c04789bb0c21018081e4a0",
-      "disposition": "duplicate-or-superseded",
+      "commit": "dcdbcde3599b63406ddb77eadccc3a191110ce42",
+      "disposition": "catalog-held",
       "catalogId": "imsai-sh-dsh-1024store",
-      "reason": "Newer component in a repository already represented by the canonical DSH 1024 Store catalog record under the one-record-per-repository policy.",
+      "reason": null,
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 171,
+      "sequence": 175,
       "key": "1334987598:package.json",
       "repository": "ipromise2021/dsh-omc-tui",
       "manifest": "package.json",
@@ -1884,7 +1928,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 172,
+      "sequence": 176,
       "key": "1334987598:test/mock-bundle/package.json",
       "repository": "ipromise2021/dsh-omc-tui",
       "manifest": "test/mock-bundle/package.json",
@@ -1895,7 +1939,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 173,
+      "sequence": 177,
       "key": "1338446374:package.json",
       "repository": "JacksonZ8/dsh-monitor",
       "manifest": "package.json",
@@ -1906,7 +1950,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 174,
+      "sequence": 178,
       "key": "1335050373:packages/bundle/base/package.json",
       "repository": "jame100101/deepseek-harness-tui",
       "manifest": "packages/bundle/base/package.json",
@@ -1917,7 +1961,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 175,
+      "sequence": 179,
       "key": "1335050373:packages/bundle/headless/package.json",
       "repository": "jame100101/deepseek-harness-tui",
       "manifest": "packages/bundle/headless/package.json",
@@ -1928,7 +1972,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 176,
+      "sequence": 180,
       "key": "1335050373:packages/bundle/tui-app/package.json",
       "repository": "jame100101/deepseek-harness-tui",
       "manifest": "packages/bundle/tui-app/package.json",
@@ -1939,7 +1983,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 177,
+      "sequence": 181,
       "key": "1335050373:packages/bundle/web-app/package.json",
       "repository": "jame100101/deepseek-harness-tui",
       "manifest": "packages/bundle/web-app/package.json",
@@ -1950,7 +1994,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 178,
+      "sequence": 182,
       "key": "1337885391:package.json",
       "repository": "jasonyoungguang/DSH_plugins_calculate_token_fee",
       "manifest": "package.json",
@@ -1961,7 +2005,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 179,
+      "sequence": 183,
       "key": "1336815944:package.json",
       "repository": "Jay-R-J/dsh-rpg-workstation",
       "manifest": "package.json",
@@ -1972,7 +2016,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 180,
+      "sequence": 184,
       "key": "1337232110:package.json",
       "repository": "jeffcwj/dsh-preset-switcher",
       "manifest": "package.json",
@@ -1983,7 +2027,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 181,
+      "sequence": 185,
       "key": "1336387806:package.json",
       "repository": "Jemius/dsh-session-manager",
       "manifest": "package.json",
@@ -1994,7 +2038,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 182,
+      "sequence": 186,
       "key": "1334923917:packages/bundle/cc-permissions/package.json",
       "repository": "jianxx/dsh-cc-plugins",
       "manifest": "packages/bundle/cc-permissions/package.json",
@@ -2005,7 +2049,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 183,
+      "sequence": 187,
       "key": "1334923917:packages/bundle/cc-shell/package.json",
       "repository": "jianxx/dsh-cc-plugins",
       "manifest": "packages/bundle/cc-shell/package.json",
@@ -2016,7 +2060,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 184,
+      "sequence": 188,
       "key": "1336035716:packages/bundle/base/package.json",
       "repository": "jiuge2467/dsh-studio",
       "manifest": "packages/bundle/base/package.json",
@@ -2027,7 +2071,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 185,
+      "sequence": 189,
       "key": "1336035716:packages/bundle/headless/package.json",
       "repository": "jiuge2467/dsh-studio",
       "manifest": "packages/bundle/headless/package.json",
@@ -2038,7 +2082,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 186,
+      "sequence": 190,
       "key": "1336035716:packages/bundle/web-app/package.json",
       "repository": "jiuge2467/dsh-studio",
       "manifest": "packages/bundle/web-app/package.json",
@@ -2049,7 +2093,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 187,
+      "sequence": 191,
       "key": "1333377134:plugins/dsh-codex/package.json",
       "repository": "JustGenius-s/DSH-Plugs",
       "manifest": "plugins/dsh-codex/package.json",
@@ -2060,7 +2104,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 188,
+      "sequence": 192,
       "key": "1333377134:plugins/dsh-desktop-update/package.json",
       "repository": "JustGenius-s/DSH-Plugs",
       "manifest": "plugins/dsh-desktop-update/package.json",
@@ -2071,7 +2115,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 189,
+      "sequence": 193,
       "key": "1333377134:plugins/dsh-model-custom-ex/package.json",
       "repository": "JustGenius-s/DSH-Plugs",
       "manifest": "plugins/dsh-model-custom-ex/package.json",
@@ -2082,7 +2126,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 190,
+      "sequence": 194,
       "key": "1333377134:plugins/dsh-plugin-config/package.json",
       "repository": "JustGenius-s/DSH-Plugs",
       "manifest": "plugins/dsh-plugin-config/package.json",
@@ -2093,7 +2137,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 191,
+      "sequence": 195,
       "key": "1333377134:plugins/dsh-plugin-marketplace/package.json",
       "repository": "JustGenius-s/DSH-Plugs",
       "manifest": "plugins/dsh-plugin-marketplace/package.json",
@@ -2104,7 +2148,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 192,
+      "sequence": 196,
       "key": "1333377134:plugins/dsh-wechat-chat/package.json",
       "repository": "JustGenius-s/DSH-Plugs",
       "manifest": "plugins/dsh-wechat-chat/package.json",
@@ -2115,7 +2159,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 193,
+      "sequence": 197,
       "key": "1336253279:package.json",
       "repository": "JxaMe/dsh-telegram-bridge",
       "manifest": "package.json",
@@ -2126,7 +2170,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 194,
+      "sequence": 198,
       "key": "1336663161:package.json",
       "repository": "kagura-agent/dsh-memes",
       "manifest": "package.json",
@@ -2137,7 +2181,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 195,
+      "sequence": 199,
       "key": "1335141851:package.json",
       "repository": "Kaiji-Z/dsh-plugin-lookatstudy",
       "manifest": "package.json",
@@ -2148,7 +2192,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 196,
+      "sequence": 200,
       "key": "1334639248:plugins/preinstalled/dsh-model-reasoning/package.json",
       "repository": "karoc/dsh-desktop",
       "manifest": "plugins/preinstalled/dsh-model-reasoning/package.json",
@@ -2159,7 +2203,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 197,
+      "sequence": 201,
       "key": "1334639248:src-tauri/resources/preinstalled/dsh-model-reasoning/package.json",
       "repository": "karoc/dsh-desktop",
       "manifest": "src-tauri/resources/preinstalled/dsh-model-reasoning/package.json",
@@ -2170,7 +2214,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 198,
+      "sequence": 202,
       "key": "1240554500:examples/dsh/plugin/package.json",
       "repository": "KCNyu/clawock",
       "manifest": "examples/dsh/plugin/package.json",
@@ -2181,7 +2225,51 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 199,
+      "sequence": 203,
+      "key": "1338705837:dsh-plugin-manager/package.json",
+      "repository": "kdeightx/dsh-dock",
+      "manifest": "dsh-plugin-manager/package.json",
+      "commit": "a0da26e3e316a980f010d09c7353358ea6dd0130",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-manager 0.1.0 package points to hrhgit/deepseek-harness-plugin-manager and gitHead 22f0ad1, not this kdeightx fixed source.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 204,
+      "key": "1338705837:dsh-session-delete/package.json",
+      "repository": "kdeightx/dsh-dock",
+      "manifest": "dsh-session-delete/package.json",
+      "commit": "a0da26e3e316a980f010d09c7353358ea6dd0130",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-session-delete 0.1.0 package points to vtxf/dsh-session-delete and gitHead 2565641, not this kdeightx fixed source.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 205,
+      "key": "1338705837:dsh-system-restart/package.json",
+      "repository": "kdeightx/dsh-dock",
+      "manifest": "dsh-system-restart/package.json",
+      "commit": "a0da26e3e316a980f010d09c7353358ea6dd0130",
+      "disposition": "catalog-held",
+      "catalogId": "kdeightx-dsh-system-restart",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 206,
+      "key": "1338705837:dsh-system-shutdown/package.json",
+      "repository": "kdeightx/dsh-dock",
+      "manifest": "dsh-system-shutdown/package.json",
+      "commit": "a0da26e3e316a980f010d09c7353358ea6dd0130",
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "A second component from kdeightx/dsh-dock; the repository is represented by its held dsh-system-restart record and cannot publish duplicate repository rows.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 207,
       "key": "1336566566:package.json",
       "repository": "kiefeng/dsh-lan-memory",
       "manifest": "package.json",
@@ -2192,7 +2280,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 200,
+      "sequence": 208,
       "key": "1337393357:package.json",
       "repository": "KinomotoMio/dsh-context-lens",
       "manifest": "package.json",
@@ -2203,7 +2291,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 201,
+      "sequence": 209,
       "key": "1337522379:package.json",
       "repository": "kongjianguan/dsh-tokstat",
       "manifest": "package.json",
@@ -2214,7 +2302,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 202,
+      "sequence": 210,
       "key": "1337887481:packages/dsh-bundle-balance/package.json",
       "repository": "kongshan-zhuyu/dsh-balance-plugin",
       "manifest": "packages/dsh-bundle-balance/package.json",
@@ -2225,7 +2313,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 203,
+      "sequence": 211,
       "key": "1336857296:package.json",
       "repository": "KUNTING0701/dsh-aurora-bg",
       "manifest": "package.json",
@@ -2236,7 +2324,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 204,
+      "sequence": 212,
+      "key": "1337978180:plugins/dsh-studio/package.json",
+      "repository": "lai-133/dsh-integration",
+      "manifest": "plugins/dsh-studio/package.json",
+      "commit": "f5598fbc64c3dad5d6a51267b95dfbc21993a2dc",
+      "disposition": "catalog-held",
+      "catalogId": "lai-133-dsh-studio",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 213,
       "key": "1336296167:package.json",
       "repository": "leliln52/dsh-qqbot",
       "manifest": "package.json",
@@ -2247,7 +2346,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 205,
+      "sequence": 214,
       "key": "1337233769:package.json",
       "repository": "LeMonXi-i/dsh-client-ui-android",
       "manifest": "package.json",
@@ -2258,7 +2357,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 206,
+      "sequence": 215,
       "key": "1333898110:packages/dsh-orcana-linux-bundle/package.json",
       "repository": "Leo-Ayh-Oday/dsh-orcana",
       "manifest": "packages/dsh-orcana-linux-bundle/package.json",
@@ -2269,7 +2368,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 207,
+      "sequence": 216,
       "key": "1338381452:package.json",
       "repository": "Leshm0321/dsh-plugin-local-agent-bridge",
       "manifest": "package.json",
@@ -2280,7 +2379,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 208,
+      "sequence": 217,
       "key": "1336851015:package.json",
       "repository": "liceses/dsh-freebuff",
       "manifest": "package.json",
@@ -2291,7 +2390,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 209,
+      "sequence": 218,
       "key": "1335561436:package.json",
       "repository": "lin293387-del/dsh-termux-sandbox",
       "manifest": "package.json",
@@ -2302,7 +2401,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 210,
+      "sequence": 219,
       "key": "1337312395:package.json",
       "repository": "Little-Star888/dsh-pelican",
       "manifest": "package.json",
@@ -2313,7 +2412,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 211,
+      "sequence": 220,
       "key": "1336271160:package.json",
       "repository": "Liu-ZA-81/dsh-theme-firefly",
       "manifest": "package.json",
@@ -2324,7 +2423,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 212,
+      "sequence": 221,
       "key": "1338104349:package.json",
       "repository": "Lstalu/dsh-bundle-dedup-guard",
       "manifest": "package.json",
@@ -2335,7 +2434,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 213,
+      "sequence": 222,
       "key": "1336932674:package.json",
       "repository": "lusblead/dsh-Kingdom",
       "manifest": "package.json",
@@ -2346,7 +2445,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 214,
+      "sequence": 223,
       "key": "1338126155:package.json",
       "repository": "MangShe3-0/dsh-plugin-guard",
       "manifest": "package.json",
@@ -2357,7 +2456,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 215,
+      "sequence": 224,
       "key": "1337930506:package.json",
       "repository": "maoruoyu/dsh-plugin-store",
       "manifest": "package.json",
@@ -2368,7 +2467,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 216,
+      "sequence": 225,
+      "key": "1338780563:package.json",
+      "repository": "Max-Null/dsh-chat-rail",
+      "manifest": "package.json",
+      "commit": "a75058b925d4869065dd879563ab2f07c68ca7db",
+      "disposition": "catalog-reviewed",
+      "catalogId": "max-null-dsh-chat-rail",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 226,
       "key": "1334732288:package.json",
       "repository": "mengyun233/dsh-codex-pet",
       "manifest": "package.json",
@@ -2379,7 +2489,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 217,
+      "sequence": 227,
       "key": "1335697783:package.json",
       "repository": "MeowTnT3r/catalog-capabilities-zh",
       "manifest": "package.json",
@@ -2390,7 +2500,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 218,
+      "sequence": 228,
       "key": "1334939514:package.json",
       "repository": "MichengAI/dsh-agency-agents",
       "manifest": "package.json",
@@ -2401,7 +2511,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 219,
+      "sequence": 229,
       "key": "1333939452:examples/fixtures/clean-dsh-plugin/package.json",
       "repository": "MicroMilo/upstream-radar",
       "manifest": "examples/fixtures/clean-dsh-plugin/package.json",
@@ -2412,7 +2522,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 220,
+      "sequence": 230,
       "key": "1333939452:examples/fixtures/probe-compatible-dsh-plugin/package.json",
       "repository": "MicroMilo/upstream-radar",
       "manifest": "examples/fixtures/probe-compatible-dsh-plugin/package.json",
@@ -2423,7 +2533,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 221,
+      "sequence": 231,
       "key": "1333939452:examples/fixtures/probe-incompatible-dsh-plugin/package.json",
       "repository": "MicroMilo/upstream-radar",
       "manifest": "examples/fixtures/probe-incompatible-dsh-plugin/package.json",
@@ -2434,7 +2544,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 222,
+      "sequence": 232,
       "key": "1333939452:examples/fixtures/probe-unknown-dsh-plugin/package.json",
       "repository": "MicroMilo/upstream-radar",
       "manifest": "examples/fixtures/probe-unknown-dsh-plugin/package.json",
@@ -2445,7 +2555,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 223,
+      "sequence": 233,
       "key": "1336593927:package.json",
       "repository": "minivv/dsh-agent-skills",
       "manifest": "package.json",
@@ -2456,7 +2566,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 224,
+      "sequence": 234,
       "key": "1336738269:package.json",
       "repository": "mmzm0808/dsh-deepseek-usage",
       "manifest": "package.json",
@@ -2467,7 +2577,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 225,
+      "sequence": 235,
       "key": "1338130882:package.json",
       "repository": "mr-mihu/dsh-dbhub-live",
       "manifest": "package.json",
@@ -2478,7 +2588,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 226,
+      "sequence": 236,
+      "key": "1338762943:package.json",
+      "repository": "mrywwww/dsh-paper-daily",
+      "manifest": "package.json",
+      "commit": "780aa4670ec21591b6ac22bb7dc094d9240e436e",
+      "disposition": "catalog-reviewed",
+      "catalogId": "mrywwww-dsh-paper-daily",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 237,
       "key": "1336714083:package.json",
       "repository": "nanshanzhaoji/dsh-download-progress",
       "manifest": "package.json",
@@ -2489,7 +2610,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 227,
+      "sequence": 238,
       "key": "1333648892:packages/agent/dsh-agent-presetdev/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/agent/dsh-agent-presetdev/package.json",
@@ -2500,7 +2621,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 228,
+      "sequence": 239,
       "key": "1333648892:packages/feature/dsh-agent-imagevault/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-agent-imagevault/package.json",
@@ -2511,7 +2632,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 229,
+      "sequence": 240,
       "key": "1333648892:packages/feature/dsh-agent-webuse/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-agent-webuse/package.json",
@@ -2522,7 +2643,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 230,
+      "sequence": 241,
       "key": "1333648892:packages/feature/dsh-chat-annotations/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-chat-annotations/package.json",
@@ -2533,7 +2654,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 231,
+      "sequence": 242,
       "key": "1333648892:packages/feature/dsh-chat-autofold/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-chat-autofold/package.json",
@@ -2544,7 +2665,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 232,
+      "sequence": 243,
       "key": "1333648892:packages/feature/dsh-chat-filemention/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-chat-filemention/package.json",
@@ -2555,7 +2676,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 233,
+      "sequence": 244,
       "key": "1333648892:packages/feature/dsh-chat-mermaid/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-chat-mermaid/package.json",
@@ -2566,7 +2687,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 234,
+      "sequence": 245,
       "key": "1333648892:packages/feature/dsh-config-instructions/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-config-instructions/package.json",
@@ -2577,7 +2698,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 235,
+      "sequence": 246,
       "key": "1333648892:packages/feature/dsh-config-mcp/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-config-mcp/package.json",
@@ -2588,7 +2709,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 236,
+      "sequence": 247,
       "key": "1333648892:packages/feature/dsh-config-skills/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-config-skills/package.json",
@@ -2599,7 +2720,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 237,
+      "sequence": 248,
       "key": "1333648892:packages/feature/dsh-web-workpanel/package.json",
       "repository": "Neplich/dsh_plugin",
       "manifest": "packages/feature/dsh-web-workpanel/package.json",
@@ -2610,7 +2731,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 238,
+      "sequence": 249,
+      "key": "1338738833:package.json",
+      "repository": "ngk3pori/dsh-zh-cn-ui",
+      "manifest": "package.json",
+      "commit": "ea388ec1ba8a19973ee6f38c6ce309d0d11f6d94",
+      "disposition": "catalog-reviewed",
+      "catalogId": "ngk3pori-dsh-zh-cn-ui",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 250,
       "key": "1336085793:package.json",
       "repository": "nicklin99/dsh-ui-sidebar",
       "manifest": "package.json",
@@ -2621,7 +2753,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 239,
+      "sequence": 251,
       "key": "1335338217:dsh-plugins/dsh-client-ui-explorer/package.json",
       "repository": "No-PRM/dsh-explorer",
       "manifest": "dsh-plugins/dsh-client-ui-explorer/package.json",
@@ -2632,7 +2764,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 240,
+      "sequence": 252,
       "key": "1335338217:dsh-plugins/dsh-explorer/package.json",
       "repository": "No-PRM/dsh-explorer",
       "manifest": "dsh-plugins/dsh-explorer/package.json",
@@ -2643,7 +2775,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 241,
+      "sequence": 253,
       "key": "1338470409:package.json",
       "repository": "nodata404/dsh-env-probe",
       "manifest": "package.json",
@@ -2654,7 +2786,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 242,
+      "sequence": 254,
       "key": "1333767819:package.json",
       "repository": "nonewind/dsh-spend",
       "manifest": "package.json",
@@ -2665,7 +2797,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 243,
+      "sequence": 255,
+      "key": "1336119514:package.json",
+      "repository": "nonmean/dsh-lan-access",
+      "manifest": "package.json",
+      "commit": "fe6a4de294b490d0982676fdc9e0b23adcbc296f",
+      "disposition": "catalog-held",
+      "catalogId": "nonmean-dsh-lan-access",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 256,
       "key": "1337875927:PluginMain-Static/package.json",
       "repository": "ns-zzj/dsh-hos-scrcpy",
       "manifest": "PluginMain-Static/package.json",
@@ -2676,7 +2819,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 244,
+      "sequence": 257,
       "key": "1334768289:plugins/folio-events/package.json",
       "repository": "nyantused-cpun/folio",
       "manifest": "plugins/folio-events/package.json",
@@ -2687,7 +2830,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 245,
+      "sequence": 258,
       "key": "1335601886:packages/tui-app/package.json",
       "repository": "omdsh-plugins/omdsh-tui",
       "manifest": "packages/tui-app/package.json",
@@ -2698,7 +2841,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 246,
+      "sequence": 259,
       "key": "1336793734:packages/bundle/base/package.json",
       "repository": "op7418/pilot-harness",
       "manifest": "packages/bundle/base/package.json",
@@ -2709,7 +2852,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 247,
+      "sequence": 260,
       "key": "1336793734:packages/bundle/headless/package.json",
       "repository": "op7418/pilot-harness",
       "manifest": "packages/bundle/headless/package.json",
@@ -2720,7 +2863,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 248,
+      "sequence": 261,
       "key": "1336793734:packages/bundle/web-app/package.json",
       "repository": "op7418/pilot-harness",
       "manifest": "packages/bundle/web-app/package.json",
@@ -2731,7 +2874,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 249,
+      "sequence": 262,
       "key": "1335011656:package.json",
       "repository": "Physicolor/harness-ui-enhancer",
       "manifest": "package.json",
@@ -2742,7 +2885,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 250,
+      "sequence": 263,
       "key": "1333675522:package.json",
       "repository": "PicGo/dsh-plugin",
       "manifest": "package.json",
@@ -2753,7 +2896,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 251,
+      "sequence": 264,
       "key": "1337274371:package.json",
       "repository": "Proton1917/dsh-harness-plugin",
       "manifest": "package.json",
@@ -2764,7 +2907,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 252,
+      "sequence": 265,
       "key": "1337340407:package.json",
       "repository": "qqq85-ux/dsh-cost-glance",
       "manifest": "package.json",
@@ -2775,7 +2918,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 253,
+      "sequence": 266,
       "key": "1338040538:package.json",
       "repository": "rainow/dsh-simple-wiki-memory",
       "manifest": "package.json",
@@ -2786,7 +2929,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 254,
+      "sequence": 267,
       "key": "1337511446:package.json",
       "repository": "raullenchai/rapid-mlx-dsh-provider",
       "manifest": "package.json",
@@ -2797,7 +2940,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 255,
+      "sequence": 268,
       "key": "1333741340:bundle/package.json",
       "repository": "rbelem/dsh-tui",
       "manifest": "bundle/package.json",
@@ -2808,7 +2951,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 256,
+      "sequence": 269,
       "key": "1336576671:package.json",
       "repository": "realMisakaMikoto/dsh-skin-studio",
       "manifest": "package.json",
@@ -2819,7 +2962,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 257,
+      "sequence": 270,
       "key": "1337919514:package.json",
       "repository": "refyon/restrict-discipline",
       "manifest": "package.json",
@@ -2830,7 +2973,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 258,
+      "sequence": 271,
       "key": "1334526655:packages/dsh-myrules/package.json",
       "repository": "Relistencode/dsh-extension-hub",
       "manifest": "packages/dsh-myrules/package.json",
@@ -2841,7 +2984,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 259,
+      "sequence": 272,
       "key": "1337055793:packages/tui/package.json",
       "repository": "riesbri/dsh-tui",
       "manifest": "packages/tui/package.json",
@@ -2852,7 +2995,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 260,
+      "sequence": 273,
       "key": "1337878226:package.json",
       "repository": "ringclaw/dsh-ringcentral",
       "manifest": "package.json",
@@ -2863,7 +3006,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 261,
+      "sequence": 274,
       "key": "1335558013:package.json",
       "repository": "rj-jiangyichen/dsh-rules",
       "manifest": "package.json",
@@ -2874,7 +3017,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 262,
+      "sequence": 275,
       "key": "1336019458:package.json",
       "repository": "ruimin251204/dsh-plugin-surgery",
       "manifest": "package.json",
@@ -2885,7 +3028,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 263,
+      "sequence": 276,
       "key": "1336019458:test/fixtures/fake-bundle-alpha/package.json",
       "repository": "ruimin251204/dsh-plugin-surgery",
       "manifest": "test/fixtures/fake-bundle-alpha/package.json",
@@ -2896,7 +3039,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 264,
+      "sequence": 277,
       "key": "1336019458:test/fixtures/fake-bundle-beta/package.json",
       "repository": "ruimin251204/dsh-plugin-surgery",
       "manifest": "test/fixtures/fake-bundle-beta/package.json",
@@ -2907,7 +3050,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 265,
+      "sequence": 278,
       "key": "1333296107:package.json",
       "repository": "SakalioLabs/dsh-code-ide",
       "manifest": "package.json",
@@ -2918,7 +3061,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 266,
+      "sequence": 279,
       "key": "1335842004:package.json",
       "repository": "sakuraaa667/dsh-wallpaper-engine",
       "manifest": "package.json",
@@ -2929,7 +3072,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 267,
+      "sequence": 280,
       "key": "1333447648:package.json",
       "repository": "Sanqi-normal/dsh-webui-market-plugin",
       "manifest": "package.json",
@@ -2940,7 +3083,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 268,
+      "sequence": 281,
       "key": "1334817483:package.json",
       "repository": "saya-ch/dsh-mobile",
       "manifest": "package.json",
@@ -2951,7 +3094,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 269,
+      "sequence": 282,
       "key": "1336269800:package.json",
       "repository": "sean233/dsh-subscription-auth",
       "manifest": "package.json",
@@ -2962,7 +3105,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 270,
+      "sequence": 283,
       "key": "1333732838:package.json",
       "repository": "shengsheng90/DSH-taskboard",
       "manifest": "package.json",
@@ -2973,7 +3116,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 271,
+      "sequence": 284,
       "key": "1336808687:package.json",
       "repository": "shifan3/dsh-QoL",
       "manifest": "package.json",
@@ -2984,7 +3127,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 272,
+      "sequence": 285,
       "key": "1335792802:package.json",
       "repository": "ShiXiangYu2/dsh-siliconflow-vision",
       "manifest": "package.json",
@@ -2995,7 +3138,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 273,
+      "sequence": 286,
       "key": "1337799513:package.json",
       "repository": "shuind/dsh-codex-harness",
       "manifest": "package.json",
@@ -3006,7 +3149,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 274,
+      "sequence": 287,
       "key": "1338121858:package.json",
       "repository": "shuxu-zhao/dsh-image-dscriber",
       "manifest": "package.json",
@@ -3017,7 +3160,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 275,
+      "sequence": 288,
       "key": "1337215247:package.json",
       "repository": "SIMON-WORLD/dsh-journal-monitor",
       "manifest": "package.json",
@@ -3028,7 +3171,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 276,
+      "sequence": 289,
       "key": "1334832512:package.json",
       "repository": "SipengXie2024/dsh-memory-hermes",
       "manifest": "package.json",
@@ -3039,7 +3182,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 277,
+      "sequence": 290,
       "key": "1335108391:package.json",
       "repository": "skkjkk/dsh-usage-dashboard",
       "manifest": "package.json",
@@ -3050,7 +3193,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 278,
+      "sequence": 291,
       "key": "1336772722:package.json",
       "repository": "songoao25/dsh-plugin-guardian",
       "manifest": "package.json",
@@ -3061,7 +3204,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 279,
+      "sequence": 292,
       "key": "1335253559:package.json",
       "repository": "Soren-ABT/dsh-knowledge",
       "manifest": "package.json",
@@ -3072,7 +3215,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 280,
+      "sequence": 293,
       "key": "1338044518:package.json",
       "repository": "staff-os/dsh-ragflow",
       "manifest": "package.json",
@@ -3083,7 +3226,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 281,
+      "sequence": 294,
       "key": "1334581157:package.json",
       "repository": "StarChen-Cycler/octie-dsh-plugin",
       "manifest": "package.json",
@@ -3094,7 +3237,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 282,
+      "sequence": 295,
       "key": "1335997040:package.json",
       "repository": "still0123/dsh-coding-agent",
       "manifest": "package.json",
@@ -3105,7 +3248,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 283,
+      "sequence": 296,
       "key": "1336853011:package.json",
       "repository": "studyinglx/dsh-cli",
       "manifest": "package.json",
@@ -3116,7 +3259,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 284,
+      "sequence": 297,
+      "key": "1337245726:package.json",
+      "repository": "SuperKSP/dsh_theme_Frieren",
+      "manifest": "package.json",
+      "commit": "84276f923478017c599ec680c6856c6c860ac926",
+      "disposition": "catalog-reviewed",
+      "catalogId": "superksp-dsh-theme-frieren",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 298,
       "key": "1335250883:plugins/evidence-dashboard/package.json",
       "repository": "SuTang-vain/dsh-self-harness-tools",
       "manifest": "plugins/evidence-dashboard/package.json",
@@ -3127,7 +3281,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 285,
+      "sequence": 299,
       "key": "1335390712:package.json",
       "repository": "T-Rex05/better-sidebar-ssh_tool",
       "manifest": "package.json",
@@ -3138,7 +3292,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 286,
+      "sequence": 300,
       "key": "1335892061:plugin/package.json",
       "repository": "TeaClearInkII/DSH-Marketplaces-Nexus",
       "manifest": "plugin/package.json",
@@ -3149,7 +3303,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 287,
+      "sequence": 301,
       "key": "1335344214:package.json",
       "repository": "Tisitan/dsh-live2d-companion",
       "manifest": "package.json",
@@ -3160,7 +3314,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 288,
+      "sequence": 302,
       "key": "1337177680:package.json",
       "repository": "ToBeWin/DSH-Pet-Companion",
       "manifest": "package.json",
@@ -3171,7 +3325,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 289,
+      "sequence": 303,
       "key": "1335340589:test/fixtures/invalid-patch-schema/package.json",
       "repository": "TonyWang-hub/dsh-plugin-trust-center",
       "manifest": "test/fixtures/invalid-patch-schema/package.json",
@@ -3182,7 +3336,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 290,
+      "sequence": 304,
       "key": "1335340589:test/fixtures/registry/example-bundle/package.json",
       "repository": "TonyWang-hub/dsh-plugin-trust-center",
       "manifest": "test/fixtures/registry/example-bundle/package.json",
@@ -3193,7 +3347,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 291,
+      "sequence": 305,
       "key": "1335340589:test/fixtures/risky-bundle/package.json",
       "repository": "TonyWang-hub/dsh-plugin-trust-center",
       "manifest": "test/fixtures/risky-bundle/package.json",
@@ -3204,7 +3358,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 292,
+      "sequence": 306,
       "key": "1335340589:test/fixtures/safe-bundle/package.json",
       "repository": "TonyWang-hub/dsh-plugin-trust-center",
       "manifest": "test/fixtures/safe-bundle/package.json",
@@ -3215,7 +3369,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 293,
+      "sequence": 307,
       "key": "1338130276:package.json",
       "repository": "tsja2001/dsh-zhipu-coding-plan",
       "manifest": "package.json",
@@ -3226,7 +3380,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 294,
+      "sequence": 308,
       "key": "1338466821:package.json",
       "repository": "Tvincentao/dsh-token-cost-calculate",
       "manifest": "package.json",
@@ -3237,7 +3391,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 295,
+      "sequence": 309,
       "key": "1335649943:package.json",
       "repository": "U1s1-king/dsh-live2d-mygo",
       "manifest": "package.json",
@@ -3248,7 +3402,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 296,
+      "sequence": 310,
       "key": "1336124838:package.json",
       "repository": "uckkk/dsh-ux-writing",
       "manifest": "package.json",
@@ -3259,7 +3413,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 297,
+      "sequence": 311,
       "key": "1337117366:package.json",
       "repository": "UllrAI/dsh-mqtt",
       "manifest": "package.json",
@@ -3270,7 +3424,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 298,
+      "sequence": 312,
       "key": "1338123455:package.json",
       "repository": "v1xingyue/dsh-auth-plugin",
       "manifest": "package.json",
@@ -3281,7 +3435,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 299,
+      "sequence": 313,
       "key": "1336276693:package.json",
       "repository": "W117C/dsh-memory",
       "manifest": "package.json",
@@ -3292,7 +3446,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 300,
+      "sequence": 314,
       "key": "1333710046:package.json",
       "repository": "Wanbinyu/dsh-billing",
       "manifest": "package.json",
@@ -3303,7 +3457,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 301,
+      "sequence": 315,
       "key": "1333708513:package.json",
       "repository": "Wanbinyu/dsh-plugin-git-inspect",
       "manifest": "package.json",
@@ -3314,7 +3468,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 302,
+      "sequence": 316,
       "key": "1333985263:package.json",
       "repository": "welsione/dsh-mmx-bridge",
       "manifest": "package.json",
@@ -3325,7 +3479,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 303,
+      "sequence": 317,
       "key": "1335514804:package.json",
       "repository": "wendayuan/dsh-weixin",
       "manifest": "package.json",
@@ -3336,7 +3490,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 304,
+      "sequence": 318,
       "key": "1334345042:package.json",
       "repository": "wenzetan/dsh-llm-newapi",
       "manifest": "package.json",
@@ -3347,7 +3501,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 305,
+      "sequence": 319,
       "key": "1333966887:plugins/whale-brand-check/package.json",
       "repository": "WhaleHarness/WhaleHarness",
       "manifest": "plugins/whale-brand-check/package.json",
@@ -3358,7 +3512,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 306,
+      "sequence": 320,
       "key": "1333966887:plugins/whale-breathe/package.json",
       "repository": "WhaleHarness/WhaleHarness",
       "manifest": "plugins/whale-breathe/package.json",
@@ -3369,7 +3523,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 307,
+      "sequence": 321,
       "key": "1333966887:plugins/whale-digest/package.json",
       "repository": "WhaleHarness/WhaleHarness",
       "manifest": "plugins/whale-digest/package.json",
@@ -3380,7 +3534,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 308,
+      "sequence": 322,
       "key": "1333966887:plugins/whale-fortune/package.json",
       "repository": "WhaleHarness/WhaleHarness",
       "manifest": "plugins/whale-fortune/package.json",
@@ -3391,7 +3545,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 309,
+      "sequence": 323,
       "key": "1333966887:plugins/whale-memory/package.json",
       "repository": "WhaleHarness/WhaleHarness",
       "manifest": "plugins/whale-memory/package.json",
@@ -3402,7 +3556,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 310,
+      "sequence": 324,
       "key": "1333966887:plugins/whale-praise/package.json",
       "repository": "WhaleHarness/WhaleHarness",
       "manifest": "plugins/whale-praise/package.json",
@@ -3413,7 +3567,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 311,
+      "sequence": 325,
       "key": "1333966887:plugins/whale-submit/package.json",
       "repository": "WhaleHarness/WhaleHarness",
       "manifest": "plugins/whale-submit/package.json",
@@ -3424,106 +3578,106 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 312,
+      "sequence": 326,
       "key": "1333152408:packages/create-dsh-plugin/templates/events/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/create-dsh-plugin/templates/events/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
-      "reason": "Scaffolding template manifest with placeholder package name and description, not a distributable plugin record.",
+      "reason": "Scaffolding events template with placeholder package, plugin, and peer-version tokens; not a distributable plugin record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 313,
+      "sequence": 327,
       "key": "1333152408:packages/create-dsh-plugin/templates/tool/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/create-dsh-plugin/templates/tool/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
-      "reason": "Scaffolding template manifest with placeholder package name and description, not a distributable plugin record.",
+      "reason": "Scaffolding tool template with placeholder package, plugin, and peer-version tokens; not a distributable plugin record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 314,
+      "sequence": 328,
       "key": "1333152408:packages/create-dsh-plugin/templates/webui/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/create-dsh-plugin/templates/webui/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "example-fixture-or-archive",
       "catalogId": null,
-      "reason": "Scaffolding template manifest with placeholder package name and description, not a distributable plugin record.",
+      "reason": "Scaffolding web UI template with placeholder package, plugin, and peer-version tokens; not a distributable plugin record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 315,
+      "sequence": 329,
       "key": "1333152408:packages/plugin-deus/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/plugin-deus/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 316,
+      "sequence": 330,
       "key": "1333152408:packages/plugins/plugin-manager/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/plugins/plugin-manager/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 317,
+      "sequence": 331,
       "key": "1333152408:packages/plugins/plugin-notify/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/plugins/plugin-notify/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 318,
+      "sequence": 332,
       "key": "1333152408:packages/plugins/plugin-session-export/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/plugins/plugin-session-export/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 319,
+      "sequence": 333,
       "key": "1333152408:packages/plugins/plugin-team-board/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/plugins/plugin-team-board/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 320,
+      "sequence": 334,
       "key": "1333152408:packages/preset-center/package.json",
       "repository": "whyihaveyou/dsh-suite",
       "manifest": "packages/preset-center/package.json",
-      "commit": "b68a6fa8c618ec67a04b44d3a394f6b47a901ad8",
+      "commit": "d37d10bc2afb463a47f25f4d850183d1076f986b",
       "disposition": "duplicate-or-superseded",
       "catalogId": null,
       "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record.",
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 321,
+      "sequence": 335,
       "key": "1336044501:packages/dsh-gzip/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-gzip/package.json",
@@ -3534,7 +3688,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 322,
+      "sequence": 336,
       "key": "1336044501:packages/dsh-idle-archive/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-idle-archive/package.json",
@@ -3545,7 +3699,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 323,
+      "sequence": 337,
       "key": "1336044501:packages/dsh-lan-proxy/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-lan-proxy/package.json",
@@ -3556,7 +3710,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 324,
+      "sequence": 338,
       "key": "1336044501:packages/dsh-mcp-manager/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-mcp-manager/package.json",
@@ -3567,7 +3721,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 325,
+      "sequence": 339,
       "key": "1336044501:packages/dsh-notifier/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-notifier/package.json",
@@ -3578,7 +3732,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 326,
+      "sequence": 340,
       "key": "1336044501:packages/dsh-opencode-usage/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-opencode-usage/package.json",
@@ -3589,7 +3743,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 327,
+      "sequence": 341,
       "key": "1336044501:packages/dsh-plugins-all/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-plugins-all/package.json",
@@ -3600,7 +3754,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 328,
+      "sequence": 342,
       "key": "1336044501:packages/dsh-skill-explorer/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-skill-explorer/package.json",
@@ -3611,7 +3765,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 329,
+      "sequence": 343,
       "key": "1336044501:packages/dsh-web-file-preview/package.json",
       "repository": "wingsky-1/dsh-plugin-hub",
       "manifest": "packages/dsh-web-file-preview/package.json",
@@ -3622,7 +3776,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 330,
+      "sequence": 344,
       "key": "1335008389:packages/adaptive-perf/package.json",
       "repository": "winliyou/dsh-plugins",
       "manifest": "packages/adaptive-perf/package.json",
@@ -3633,7 +3787,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 331,
+      "sequence": 345,
       "key": "1335008389:packages/sandbox-extra-roots/package.json",
       "repository": "winliyou/dsh-plugins",
       "manifest": "packages/sandbox-extra-roots/package.json",
@@ -3644,7 +3798,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 332,
+      "sequence": 346,
       "key": "1335008389:packages/session-archive/package.json",
       "repository": "winliyou/dsh-plugins",
       "manifest": "packages/session-archive/package.json",
@@ -3655,7 +3809,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 333,
+      "sequence": 347,
       "key": "1335008389:packages/vision-router/package.json",
       "repository": "winliyou/dsh-plugins",
       "manifest": "packages/vision-router/package.json",
@@ -3666,7 +3820,29 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 334,
+      "sequence": 348,
+      "key": "1337541587:dsh-backup/package.json",
+      "repository": "Wntediluvian/dsh-plugins",
+      "manifest": "dsh-backup/package.json",
+      "commit": "7f6fe535408e4661621d9086a4509b31f8742eca",
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component omitted under the one-record-per-repository catalog boundary; the package also lacks a package license declaration, while dsh-dock is the evidence-complete representative.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 349,
+      "key": "1337541587:dsh-dock/package.json",
+      "repository": "Wntediluvian/dsh-plugins",
+      "manifest": "dsh-dock/package.json",
+      "commit": "7f6fe535408e4661621d9086a4509b31f8742eca",
+      "disposition": "catalog-reviewed",
+      "catalogId": "wntediluvian-dsh-dock",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 350,
       "key": "1336614837:package.json",
       "repository": "wssfk12138/dsh-damage-pulse",
       "manifest": "package.json",
@@ -3677,7 +3853,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 335,
+      "sequence": 351,
       "key": "1336025931:package.json",
       "repository": "wycto/dsh-model-balance",
       "manifest": "package.json",
@@ -3688,7 +3864,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 336,
+      "sequence": 352,
       "key": "1335750234:package.json",
       "repository": "xgone/dsh-remote",
       "manifest": "package.json",
@@ -3699,7 +3875,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 337,
+      "sequence": 353,
       "key": "1335047005:package.json",
       "repository": "xgone/dsh-web-auth",
       "manifest": "package.json",
@@ -3710,7 +3886,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 338,
+      "sequence": 354,
       "key": "1337859535:package.json",
       "repository": "xiaheng1/dsh-turn-nav",
       "manifest": "package.json",
@@ -3721,7 +3897,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 339,
+      "sequence": 355,
       "key": "1334434081:package.json",
       "repository": "xiajiajun516/dsh-config-manager",
       "manifest": "package.json",
@@ -3732,7 +3908,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 340,
+      "sequence": 356,
       "key": "1334066448:package.json",
       "repository": "xiajingchun/dsh-nebulagraph-v5",
       "manifest": "package.json",
@@ -3743,7 +3919,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 341,
+      "sequence": 357,
       "key": "1338401706:package.json",
       "repository": "xing-shuyin/dsh-ui-tools",
       "manifest": "package.json",
@@ -3754,7 +3930,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 342,
+      "sequence": 358,
       "key": "1336693781:package.json",
       "repository": "xinyuehtx/dsh-plugin-hooks-ordering",
       "manifest": "package.json",
@@ -3765,7 +3941,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 343,
+      "sequence": 359,
+      "key": "1338669749:package.json",
+      "repository": "Yancey2023/dsh-fold",
+      "manifest": "package.json",
+      "commit": "f1b52127892770aa4cc71284a5ca1805dea2a96c",
+      "disposition": "catalog-reviewed",
+      "catalogId": "yancey2023-dsh-fold",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 360,
       "key": "1335271014:package.json",
       "repository": "yauntyour/DSH-Encrypt",
       "manifest": "package.json",
@@ -3776,7 +3963,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 344,
+      "sequence": 361,
+      "key": "1335689065:package.json",
+      "repository": "YRN-playmaker/dsh-wallpaper_share",
+      "manifest": "package.json",
+      "commit": "a271e7f3df7b17a1bedd0fe496c386edc8309aa9",
+      "disposition": "catalog-reviewed",
+      "catalogId": "yrn-playmaker-dsh-wallpaper-share",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 362,
       "key": "1336280167:package.json",
       "repository": "Yu-tao-Li/computer-use-win",
       "manifest": "package.json",
@@ -3787,7 +3985,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 345,
+      "sequence": 363,
       "key": "1337578367:package.json",
       "repository": "Yu-tao-Li/dsh-read-image",
       "manifest": "package.json",
@@ -3798,7 +3996,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 346,
+      "sequence": 364,
       "key": "1335758230:packages/bundle/base/package.json",
       "repository": "yuchen0x1/deepseek-harness-public",
       "manifest": "packages/bundle/base/package.json",
@@ -3809,7 +4007,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 347,
+      "sequence": 365,
       "key": "1335758230:packages/bundle/headless/package.json",
       "repository": "yuchen0x1/deepseek-harness-public",
       "manifest": "packages/bundle/headless/package.json",
@@ -3820,7 +4018,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 348,
+      "sequence": 366,
       "key": "1335758230:packages/bundle/web-app/package.json",
       "repository": "yuchen0x1/deepseek-harness-public",
       "manifest": "packages/bundle/web-app/package.json",
@@ -3831,7 +4029,62 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 349,
+      "sequence": 367,
+      "key": "1335990862:plugins/dsh-computer-use/package.json",
+      "repository": "YUCONG-28/dsh-skills-plugins",
+      "manifest": "plugins/dsh-computer-use/package.json",
+      "commit": "92f131620e403c0aabe7252221cea3a2f0dd48b1",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-computer-use 0.1.0 package was built from gitHead 5bc9cdb, not this frozen monorepo commit, so its registry install cannot be mapped to the candidate.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 368,
+      "key": "1335990862:plugins/dsh-vision-bridge/package.json",
+      "repository": "YUCONG-28/dsh-skills-plugins",
+      "manifest": "plugins/dsh-vision-bridge/package.json",
+      "commit": "92f131620e403c0aabe7252221cea3a2f0dd48b1",
+      "disposition": "catalog-reviewed",
+      "catalogId": "yucong-28-dsh-vision-bridge",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 369,
+      "key": "1335990862:plugins/dsh-web-pets/package.json",
+      "repository": "YUCONG-28/dsh-skills-plugins",
+      "manifest": "plugins/dsh-web-pets/package.json",
+      "commit": "92f131620e403c0aabe7252221cea3a2f0dd48b1",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-web-pets 0.2.2 package was built from gitHead 5c1f8ed, not this frozen monorepo commit, so its registry install cannot be mapped to the candidate.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 370,
+      "key": "1335990862:projects/desktop-pets/integration/dsh-plugin/package.json",
+      "repository": "YUCONG-28/dsh-skills-plugins",
+      "manifest": "projects/desktop-pets/integration/dsh-plugin/package.json",
+      "commit": "92f131620e403c0aabe7252221cea3a2f0dd48b1",
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Nested desktop-pets integration is represented by the same repository's canonical vision-bridge catalog record under the one-record-per-repository boundary.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 371,
+      "key": "1334872659:package.json",
+      "repository": "YV3507/dsh-webui-launcher",
+      "manifest": "package.json",
+      "commit": "1028c4f91f31a8fce4823a26d1f09b88b2838fb0",
+      "disposition": "catalog-reviewed",
+      "catalogId": "yv3507-dsh-webui-launcher",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 372,
       "key": "1336328387:package.json",
       "repository": "yzke/dsh-icon-theme",
       "manifest": "package.json",
@@ -3842,7 +4095,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 350,
+      "sequence": 373,
       "key": "1334040222:package.json",
       "repository": "Zalpha263/dsh-file-explorer",
       "manifest": "package.json",
@@ -3853,7 +4106,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 351,
+      "sequence": 374,
       "key": "1338083213:package.json",
       "repository": "zbsph/dsh-j-space-warm",
       "manifest": "package.json",
@@ -3864,7 +4117,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 352,
+      "sequence": 375,
       "key": "1338415473:package.json",
       "repository": "Zenjibad/dsh-drop-any-file",
       "manifest": "package.json",
@@ -3875,7 +4128,18 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 353,
+      "sequence": 376,
+      "key": "1338773001:package.json",
+      "repository": "Zenjibad/dsh-plugin-toggle",
+      "manifest": "package.json",
+      "commit": "60cfa68063968893b3b1f238d0789675c16c28e3",
+      "disposition": "catalog-reviewed",
+      "catalogId": "zenjibad-dsh-plugin-toggle",
+      "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 377,
       "key": "1337162251:package.json",
       "repository": "zhengzeyong9527-droid/zzy-dsh-prompt-optimizer",
       "manifest": "package.json",
@@ -3886,7 +4150,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 354,
+      "sequence": 378,
       "key": "1337966626:package.json",
       "repository": "zhou-yihang/dsh-usage-blance",
       "manifest": "package.json",
@@ -3897,7 +4161,7 @@
       "reviewedAt": "2026-08-19"
     },
     {
-      "sequence": 355,
+      "sequence": 379,
       "key": "1337232982:package.json",
       "repository": "zisekongling/deepseek-peak-blocker",
       "manifest": "package.json",
@@ -3905,6 +4169,105 @@
       "disposition": "catalog-reviewed",
       "catalogId": "zisekongling-deepseek-peak-blocker",
       "reason": null,
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 380,
+      "key": "1338291072:package.json",
+      "repository": "zoahdev/dsh-cn-boot",
+      "manifest": "package.json",
+      "commit": "5439d6fcdfc68f7d96bbb8d564f9c3a49006268f",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-cn-boot 0.1.0 package was built from c14203e, not frozen commit 5439d6f, and exposes no registry repository mapping.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 381,
+      "key": "1338271445:package.json",
+      "repository": "zoahdev/dsh-dep-audit",
+      "manifest": "package.json",
+      "commit": "27f6492ac727ee31336aa87e1c29266ccde0caaa",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-dep-audit 0.1.1 package was built from 69a4714, not frozen commit 27f6492, and exposes no registry repository mapping.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 382,
+      "key": "1338475503:package.json",
+      "repository": "zoahdev/dsh-discussions-radar",
+      "manifest": "package.json",
+      "commit": "d1574487e0e554be70a24207df72cf9cfc25b001",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-discussions-radar 0.1.0 package was built from be484f0, not frozen commit d157448, and exposes no registry repository mapping.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 383,
+      "key": "1338535168:package.json",
+      "repository": "zoahdev/dsh-disk-audit",
+      "manifest": "package.json",
+      "commit": "4be0589da1d2be79a9f69f2d21e40e9c63833201",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-disk-audit 0.1.0 package was built from 43521d4, not frozen commit 4be0589, and exposes no registry repository mapping.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 384,
+      "key": "1338506427:package.json",
+      "repository": "zoahdev/dsh-firstrun",
+      "manifest": "package.json",
+      "commit": "c6e711fb3c9cce057bd15e31afcd28b47d6900c4",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-firstrun 0.1.0 package was built from 3e89c7f, not frozen commit c6e711f, and exposes no registry repository mapping.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 385,
+      "key": "1338287454:package.json",
+      "repository": "zoahdev/dsh-llms-forge",
+      "manifest": "package.json",
+      "commit": "83ef2a141c535346f22a4d998c2914b3b03ae1d7",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-llms-forge 0.1.0 package was built from 1a58b21, not frozen commit 83ef2a1, and exposes no registry repository mapping.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 386,
+      "key": "1338745342:package.json",
+      "repository": "zoahdev/dsh-quality-score",
+      "manifest": "package.json",
+      "commit": "fdf6542b32d876919a1f8dcf0c88aec1e9d84da1",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-quality-score 0.1.2 package was built from d6cdae7, not frozen commit fdf6542, and exposes no registry repository mapping.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 387,
+      "key": "1338495100:package.json",
+      "repository": "zoahdev/dsh-readme-forge",
+      "manifest": "package.json",
+      "commit": "c932b673491f50a4f0ca6dbd6c5712adaef5cfcc",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-readme-forge 0.1.0 package was built from c53b76f, not frozen commit c932b67, and exposes no registry repository mapping.",
+      "reviewedAt": "2026-08-19"
+    },
+    {
+      "sequence": 388,
+      "key": "1338378430:package.json",
+      "repository": "zoahdev/dsh-timesheet",
+      "manifest": "package.json",
+      "commit": "910f6776871392cfe9253f18880ade9bb17a380f",
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-timesheet 0.1.0 package was built from cbe98c3, not frozen commit 910f677, and exposes no registry repository mapping.",
       "reviewedAt": "2026-08-19"
     }
   ]
