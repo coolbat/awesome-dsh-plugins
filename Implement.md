@@ -13,7 +13,7 @@ Needs-decision WIP limit: 3
 
 ## Selected Milestone
 
-- Milestone: M18 in_progress
+- Milestone: none; M18 done
 - Approved scope boundary: review PR #2 head 19a696b8, refresh PR #5, and stop
   before merge or production deployment
 - Required validation gate: npm run check &&
@@ -32,6 +32,27 @@ Needs-decision WIP limit: 3
 - Never exceed `branch_pr`; merging and production remain human-owned.
 
 ## Attempt Record
+
+### Daily attempt 15 M18 remote delivery and closure
+
+- Selected milestone: M18
+- Changed assumptions: Cloudflare reported through a refreshed PR comment before
+  its check run appeared in the first GitHub query
+- Action: commit and push the scoped review, refresh PR #5, wait for GitHub and
+  Cloudflare, inspect exact head/check evidence, and probe immutable and branch
+  preview routes
+- Command or observation: explicit staging and commit, Git push, PR edit/view,
+  check watch and check-run API reads, Cloudflare bot comment, and HTTP probes
+- Test level and environment: remote GitHub and Cloudflare Pages preview
+- Result: pass; review commit `7d2378bdf1feb9b17fd0f1d5193da65b256af0e2`
+  is the CLEAN PR #5 head, both remote checks pass, and both preview routes
+  return HTTP 200
+- Known failure: none; Cloudflare check visibility was briefly delayed
+- Blocker class: none
+- Next action: commit this closure evidence, push, and verify the final docs-only
+  head without merging or deploying production
+- Synchronized status: Plan.md=M18 done; Documentation.md=done;
+  agent-loop-state.md=done; release-evidence.md=M18-A15-REMOTE-PASS
 
 ### Daily attempt 14 M18 S2
 

@@ -1790,3 +1790,22 @@
 - Verdict: pass; exact scoped tree is ready to commit and push
 - Residual risk: remote CI and Cloudflare branch preview remain unverified
 - Next action: commit, push, refresh PR #5, and wait for remote checks
+
+### Evidence M18-A15-REMOTE-PASS
+
+- Milestone: M18
+- Attempt number: 15
+- Environment: GitHub PR #5 and Cloudflare Pages preview
+- Commands or observations: scoped Git commit/push; PR body refresh; GitHub
+  checks and merge-state reads; Cloudflare updated deployment comment and check
+  run; immutable and branch preview HTTP requests
+- Result: pass; PR #5 head is `7d2378bdf1feb9b17fd0f1d5193da65b256af0e2`,
+  merge state is CLEAN, quality and Cloudflare Pages pass, and both preview
+  `/en/` routes return HTTP 200
+- Known failure: none; initial check query preceded Cloudflare check visibility
+- Blocker class: none
+- Verdict: pass; M18 and branch-PR delivery are complete
+- Residual risk: static review is not runtime safety, compatibility, or complete
+  discovery certification; final docs-only head still requires remote verification
+- Next action: commit and push closure evidence, verify the final head, and stop
+  before merge or production deployment

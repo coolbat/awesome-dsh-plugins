@@ -6,8 +6,8 @@
   `/Users/coolbat/awesome-dsh-plugins`
 - Delivery scope: branch and review PR only
 - Needs-decision queue: 0/3
-- Active milestone: M18
-- Current status: in_progress
+- Active milestone: none
+- Current status: done
 - Approved decisions in force: freeze PR #2 head `19a696b8`; reconcile all 388
   ready records, freshly review 43 new or changed records, and do not merge or
   deploy
@@ -21,6 +21,23 @@
   compatibility
 
 ## Per-Attempt Synchronization Record
+
+### Daily attempt 15 M18 remote delivery and closure
+
+- Milestone: M18
+- Changed assumptions: Cloudflare check-run visibility lagged behind its updated
+  PR deployment comment
+- Command or observation: committed and pushed the scoped review, refreshed PR
+  #5, waited for checks, verified exact head and merge state, and requested both
+  immutable and branch preview routes
+- Result: pass; PR #5 at `7d2378b` is CLEAN, quality and Cloudflare Pages pass,
+  and both preview `/en/` routes return HTTP 200
+- Known failure: none
+- Blocker class: none
+- Next action: push this closure evidence and verify the final docs-only head
+- Synced surfaces: Plan.md=M18 done;
+  agent-loop-state.md=2026-08-19T09:54:00+08:00;
+  release-evidence.md=M18-A15-REMOTE-PASS
 
 ### Daily attempt 14 M18 S2
 

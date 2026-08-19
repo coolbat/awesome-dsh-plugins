@@ -188,11 +188,11 @@ Stop conditions: Stop before executing third-party code, guessing evidence, publ
 Evidence: 2026-08-19T09:44:00+08:00; M17-A11-VERIFY; all 43 fresh records complete as 12 reviewed, 5 held, 14 source conflicts, 9 duplicates, and 3 templates; full ledger 388/0 and catalog 435/353/81/1; 37 tests, formatting, typecheck, 882-page build, completion mode, generated-doc check, ten acceptance assertions, catalog mappings, and git diff check pass
 
 ## Milestone M18: Reconcile and refresh the daily review PR
-Status: in_progress
+Status: done
 Priority: P1
 Dependencies: M17
 Scope: Prove complete 388-record ledger coverage, regenerate derived catalogs, run final branch gates, push the existing dedicated review branch, and refresh PR #5.
 Acceptance: All 388 keys are dispositioned exactly once, final tests and build pass, branch CI is green, and PR #5 contains the daily review without merge or production deployment.
 Validation: npm run check && NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build
 Stop conditions: Stop before merge, production deployment, deleting evidence, or claiming runtime safety, compatibility, or discovery completeness.
-Evidence: pending
+Evidence: 2026-08-19T09:54:00+08:00; M18-A15-REMOTE-PASS; PR #5 at 7d2378bdf1feb9b17fd0f1d5193da65b256af0e2 is CLEAN, GitHub quality and Cloudflare Pages checks pass, immutable and branch preview routes return HTTP 200, and merge and production deployment remain untouched
