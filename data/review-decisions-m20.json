@@ -1,0 +1,3340 @@
+{
+  "decisions": [
+    {
+      "sequence": 1,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to deepseek-ai/deepseek-harness rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 2,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to deepseek-ai/deepseek-harness rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 3,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to deepseek-ai/deepseek-harness rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 4,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private evaluation support package under eval/v0.4, not the independently distributed plugin at the repository root."
+    },
+    {
+      "sequence": 5,
+      "disposition": "catalog-reviewed",
+      "catalogId": "1052326311-dsh-plan-lattice",
+      "reason": null
+    },
+    {
+      "sequence": 6,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness base bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 7,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness headless bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 8,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness web-app bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 9,
+      "disposition": "catalog-reviewed",
+      "catalogId": "1710782766-dsh-llm-vision",
+      "reason": null
+    },
+    {
+      "sequence": 10,
+      "disposition": "catalog-reviewed",
+      "catalogId": "2008924-dsh-progress-viz",
+      "reason": null
+    },
+    {
+      "sequence": 11,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.1.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 12,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 13,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.1 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 14,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.2 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 15,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.3 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 16,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.3.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 17,
+      "disposition": "catalog-reviewed",
+      "catalogId": "3dot141-nocode-evolve",
+      "reason": null
+    },
+    {
+      "sequence": 18,
+      "disposition": "catalog-reviewed",
+      "catalogId": "534119219-dsh-custom-provider-reasoning",
+      "reason": null
+    },
+    {
+      "sequence": 19,
+      "disposition": "catalog-held",
+      "catalogId": "6-debug-6-dsh-thinking-notifier",
+      "reason": null
+    },
+    {
+      "sequence": 20,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit demo capability under examples; the repository's root bundle is already cataloged."
+    },
+    {
+      "sequence": 21,
+      "disposition": "catalog-reviewed",
+      "catalogId": "863683348-dsh-plugin-audit",
+      "reason": null
+    },
+    {
+      "sequence": 22,
+      "disposition": "catalog-held",
+      "catalogId": "a903067276-rgb-dsh-hud",
+      "reason": null
+    },
+    {
+      "sequence": 23,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Private downstream desktop profile bundle inside a full Harness GUI fork; the repository has also been renamed and no independent package installation identity was confirmed."
+    },
+    {
+      "sequence": 24,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 25,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 26,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 27,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 28,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 29,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 30,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 31,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 32,
+      "disposition": "catalog-reviewed",
+      "catalogId": "afrel1024-dsh-client-ui-aqua-unofficial",
+      "reason": null
+    },
+    {
+      "sequence": 33,
+      "disposition": "catalog-reviewed",
+      "catalogId": "airmetro-dsh-update-checker",
+      "reason": null
+    },
+    {
+      "sequence": 34,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Private root source manifest is superseded by the same repository's already-cataloged distributable nested bundle."
+    },
+    {
+      "sequence": 35,
+      "disposition": "catalog-reviewed",
+      "catalogId": "alexyin-tongji-dsh-plugin-console",
+      "reason": null
+    },
+    {
+      "sequence": 36,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest was unavailable at the frozen 40-character source commit, so the required static evidence could not be reproduced."
+    },
+    {
+      "sequence": 37,
+      "disposition": "catalog-reviewed",
+      "catalogId": "anywhere-labs-dsh-plugin-desktop",
+      "reason": null
+    },
+    {
+      "sequence": 38,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 39,
+      "disposition": "catalog-reviewed",
+      "catalogId": "armywas-dsh-failure-lens",
+      "reason": null
+    },
+    {
+      "sequence": 40,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 41,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 42,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 43,
+      "disposition": "catalog-held",
+      "catalogId": "as1350-dsh-manager",
+      "reason": null
+    },
+    {
+      "sequence": 44,
+      "disposition": "catalog-reviewed",
+      "catalogId": "asher-2000-dsh-expert-mode",
+      "reason": null
+    },
+    {
+      "sequence": 45,
+      "disposition": "catalog-held",
+      "catalogId": "baixianger-dsh-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 46,
+      "disposition": "catalog-reviewed",
+      "catalogId": "baixianger-dsh-weave",
+      "reason": null
+    },
+    {
+      "sequence": 47,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 48,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 49,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 50,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 51,
+      "disposition": "catalog-held",
+      "catalogId": "beiyege-01-dsh-voice-ai-girlfriend-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 52,
+      "disposition": "catalog-reviewed",
+      "catalogId": "blackman99-codsh",
+      "reason": null
+    },
+    {
+      "sequence": 53,
+      "disposition": "catalog-reviewed",
+      "catalogId": "bpc-oss-dsh-web-billing",
+      "reason": null
+    },
+    {
+      "sequence": 54,
+      "disposition": "catalog-held",
+      "catalogId": "br1nosense-dsh-wxauto",
+      "reason": null
+    },
+    {
+      "sequence": 55,
+      "disposition": "catalog-reviewed",
+      "catalogId": "breeze136-dsh-kb-rag",
+      "reason": null
+    },
+    {
+      "sequence": 56,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 57,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 58,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web-app core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 59,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DSH base bundle inside a complete Harness workbench fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 60,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DSH headless bundle inside a complete Harness workbench fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 61,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DSH web-app bundle inside a complete Harness workbench fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 62,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cainiao1992-dsh-codebuddy-auth",
+      "reason": null
+    },
+    {
+      "sequence": 63,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cangeng-yolo-mode",
+      "reason": null
+    },
+    {
+      "sequence": 64,
+      "disposition": "catalog-reviewed",
+      "catalogId": "caoyiwei850-dsh-client-ui-skins",
+      "reason": null
+    },
+    {
+      "sequence": 65,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 66,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 67,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 68,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 69,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 70,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 71,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 72,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 73,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 74,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 75,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 76,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 77,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 78,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 79,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 80,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 81,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 82,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 83,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 84,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 85,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 86,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 87,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 88,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 89,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 90,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin-center component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 91,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 92,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 93,
+      "disposition": "catalog-reviewed",
+      "catalogId": "casually-deepseek-harness-plugs-manage",
+      "reason": null
+    },
+    {
+      "sequence": 94,
+      "disposition": "catalog-reviewed",
+      "catalogId": "catmaou-dsh-zh-kit",
+      "reason": null
+    },
+    {
+      "sequence": 95,
+      "disposition": "catalog-reviewed",
+      "catalogId": "causebefore-dsh-pomodoro",
+      "reason": null
+    },
+    {
+      "sequence": 96,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cc19990113-dsh-plugin-codegraph",
+      "reason": null
+    },
+    {
+      "sequence": 97,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cdxdnrf-dsh-vision",
+      "reason": null
+    },
+    {
+      "sequence": 98,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cerrda-dsh-cerrda-theme",
+      "reason": null
+    },
+    {
+      "sequence": 99,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-reference-anything 0.2.4 package was built from gitHead 0f95904, not frozen commit 2387593, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 100,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit healthy-plugin fixture under fixtures/public for dsh-gate tests, not an independently distributed plugin."
+    },
+    {
+      "sequence": 101,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-tavern 1.7.1 package was built from gitHead 23314f4, not frozen commit cfc51fe, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 102,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chenchen913-dsh-security-doctor",
+      "reason": null
+    },
+    {
+      "sequence": 103,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chengzhi43-dsh-file",
+      "reason": null
+    },
+    {
+      "sequence": 104,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chenhw7-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 105,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "IDE monorepo component represented by the canonical EasySSH workspace record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 106,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "SSH engine component is reused by the repository's canonical EasySSH workspace record."
+    },
+    {
+      "sequence": 107,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 108,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 109,
+      "disposition": "catalog-held",
+      "catalogId": "chillizu-mop-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 110,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 111,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 112,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 113,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 114,
+      "disposition": "catalog-reviewed",
+      "catalogId": "choi-peng-dsh-deepseek-balance",
+      "reason": null
+    },
+    {
+      "sequence": 115,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chongcyrus-vibe-mathematics",
+      "reason": null
+    },
+    {
+      "sequence": 116,
+      "disposition": "catalog-held",
+      "catalogId": "chouxiaohuai-dsh-uiskin-theme",
+      "reason": null
+    },
+    {
+      "sequence": 117,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 118,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 119,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web-app core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 120,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-code-memory package points to dsh-tui-ecosystem/dsh-code-memory rather than this fixed candidate repository, which also lacks a repository license file."
+    },
+    {
+      "sequence": 121,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cipher2026-dsh-deepcompute",
+      "reason": null
+    },
+    {
+      "sequence": 122,
+      "disposition": "catalog-reviewed",
+      "catalogId": "clarknu-dsh-gateway",
+      "reason": null
+    },
+    {
+      "sequence": 123,
+      "disposition": "catalog-reviewed",
+      "catalogId": "coco-king-dsh-monitor",
+      "reason": null
+    },
+    {
+      "sequence": 124,
+      "disposition": "catalog-reviewed",
+      "catalogId": "codemonkey-pine-dsh-wallpaper",
+      "reason": null
+    },
+    {
+      "sequence": 125,
+      "disposition": "catalog-reviewed",
+      "catalogId": "couldbeme-dsh-write-gate",
+      "reason": null
+    },
+    {
+      "sequence": 126,
+      "disposition": "catalog-reviewed",
+      "catalogId": "crack-time-dsh-web-ui-skin",
+      "reason": null
+    },
+    {
+      "sequence": 127,
+      "disposition": "catalog-held",
+      "catalogId": "cxczy-dsh-texas-holdem",
+      "reason": null
+    },
+    {
+      "sequence": 128,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cyanxi69-dsh-self-memory",
+      "reason": null
+    },
+    {
+      "sequence": 129,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness base core bundle inside a desktop fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 130,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness headless core bundle inside a desktop fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 131,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness web-app core bundle inside a desktop fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 132,
+      "disposition": "catalog-held",
+      "catalogId": "daoxiang0520-dsh-plugin-whu",
+      "reason": null
+    },
+    {
+      "sequence": 133,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-desktop package points to anywhere-labs/deepseek-harness-desktop rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 134,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ddrwin-dsh-channel",
+      "reason": null
+    },
+    {
+      "sequence": 135,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 136,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 137,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 138,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 139,
+      "disposition": "catalog-held",
+      "catalogId": "deepseek-harness-evoforge-dsh-evoforge",
+      "reason": null
+    },
+    {
+      "sequence": 140,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 141,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 142,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 143,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 144,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 145,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 146,
+      "disposition": "catalog-reviewed",
+      "catalogId": "deronghe-dsh-plugin-desktop-installer",
+      "reason": null
+    },
+    {
+      "sequence": 147,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dianranqian-handcraft-mode",
+      "reason": null
+    },
+    {
+      "sequence": 148,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dickpy-dsh-cloud-sync",
+      "reason": null
+    },
+    {
+      "sequence": 149,
+      "disposition": "catalog-held",
+      "catalogId": "dingminhua-dsh-subagent-default-model",
+      "reason": null
+    },
+    {
+      "sequence": 150,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored @aaravarr/dsh-subagent-max package is not owned by this candidate repository, and npm metadata does not map that package identity to the frozen source."
+    },
+    {
+      "sequence": 151,
+      "disposition": "catalog-held",
+      "catalogId": "djangoailab-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 152,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second manual bundle in the DjangoAILab plugin monorepo, represented by the canonical repository-level held record."
+    },
+    {
+      "sequence": 153,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-notifier manifest maps to THEWOLFWALKER/dsh-notifier rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 154,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Additional manual bundle represented by the existing canonical DjangoAILab repository-level held record."
+    },
+    {
+      "sequence": 155,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-univer-office 0.2.6 package was built from gitHead 0339e31, not frozen commit 8f987d5, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 156,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-input-traffic 0.2.6 package was built from gitHead 2c02ee9, not frozen commit 5cd288d, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 157,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-a bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 158,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-b bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 159,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-carrier bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 160,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-clash bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 161,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-cross bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 162,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit lint-pass fixture under test/fixtures in the DSH App checker, not a distributable plugin."
+    },
+    {
+      "sequence": 163,
+      "disposition": "catalog-reviewed",
+      "catalogId": "e2mcc-dsh-popout-sidebar",
+      "reason": null
+    },
+    {
+      "sequence": 164,
+      "disposition": "catalog-held",
+      "catalogId": "edtechools-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 165,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second bundle in the edtechools plugin monorepo, represented by the canonical repository-level held record."
+    },
+    {
+      "sequence": 166,
+      "disposition": "catalog-reviewed",
+      "catalogId": "edusrez-dsh-tool-web-enhanced",
+      "reason": null
+    },
+    {
+      "sequence": 167,
+      "disposition": "catalog-reviewed",
+      "catalogId": "eka3os-dsh-balance",
+      "reason": null
+    },
+    {
+      "sequence": 168,
+      "disposition": "catalog-reviewed",
+      "catalogId": "elementor-i-dsh-agentmemory",
+      "reason": null
+    },
+    {
+      "sequence": 169,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public deepseek-harness-sentinel 0.2.0 package was built from gitHead b0380b9, not frozen commit 7d90ed8, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 170,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 171,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 172,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 173,
+      "disposition": "catalog-held",
+      "catalogId": "errorlst-dsh-livefeed",
+      "reason": null
+    },
+    {
+      "sequence": 174,
+      "disposition": "catalog-reviewed",
+      "catalogId": "errorlst-dsh-notes",
+      "reason": null
+    },
+    {
+      "sequence": 175,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-ui-three-body 0.2.0 package was built from ca11d449, not this frozen c495a64 source commit, so the registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 176,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fantasality-dsh-origin-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 177,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fb0sh-dsh-pentester",
+      "reason": null
+    },
+    {
+      "sequence": 178,
+      "disposition": "catalog-reviewed",
+      "catalogId": "feibi-mochi-deepseek-harness-wallet",
+      "reason": null
+    },
+    {
+      "sequence": 179,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Nested desktop_hello demonstration bundle inside a Qt desktop wrapper repository, not its independently distributed product identity."
+    },
+    {
+      "sequence": 180,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fishquito7-dsh-skill-mcp-panel",
+      "reason": null
+    },
+    {
+      "sequence": 181,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-cdi-plugin package points to the dedicated fmlin0429712024/dsh-cdi-plugin repository rather than this platform copy."
+    },
+    {
+      "sequence": 182,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Copied intake-triage bundle in the platform repository is represented by its canonical upstream linkhealth-triage repository."
+    },
+    {
+      "sequence": 183,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fmlin-linkhealth-intake-triage",
+      "reason": null
+    },
+    {
+      "sequence": 184,
+      "disposition": "catalog-held",
+      "catalogId": "fore-vip-dsh-live",
+      "reason": null
+    },
+    {
+      "sequence": 185,
+      "disposition": "catalog-reviewed",
+      "catalogId": "freehul-dsh-sgme",
+      "reason": null
+    },
+    {
+      "sequence": 186,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository-root Git wrapper is represented by the canonical nested dsh-sgme distribution record."
+    },
+    {
+      "sequence": 187,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 188,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 189,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 190,
+      "disposition": "catalog-held",
+      "catalogId": "fyfhcgch-dsh-ctf-collaborate",
+      "reason": null
+    },
+    {
+      "sequence": 191,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 192,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 193,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 194,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 195,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 196,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 197,
+      "disposition": "catalog-held",
+      "catalogId": "gameswu-dsh-cross-collaboration",
+      "reason": null
+    },
+    {
+      "sequence": 198,
+      "disposition": "catalog-reviewed",
+      "catalogId": "geml-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 199,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository is represented by the canonical workbench bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 200,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository is represented by the canonical workbench bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 201,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ghjivhidd-dsh-plugin-usage",
+      "reason": null
+    },
+    {
+      "sequence": 202,
+      "disposition": "catalog-reviewed",
+      "catalogId": "gityanglijun-dsh-ui-crystal",
+      "reason": null
+    },
+    {
+      "sequence": 203,
+      "disposition": "catalog-reviewed",
+      "catalogId": "gmh13552-dsh-timer-scheduler",
+      "reason": null
+    },
+    {
+      "sequence": 204,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-usage-dashboard package points to 1690834643/dsh-usage-dashboard rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 205,
+      "disposition": "catalog-reviewed",
+      "catalogId": "graffiti-yh-dsh-notion-manager",
+      "reason": null
+    },
+    {
+      "sequence": 206,
+      "disposition": "catalog-held",
+      "catalogId": "greatcolin-dsh-permission-engine",
+      "reason": null
+    },
+    {
+      "sequence": 207,
+      "disposition": "catalog-reviewed",
+      "catalogId": "haochi72-dsh-auto-continue-429",
+      "reason": null
+    },
+    {
+      "sequence": 208,
+      "disposition": "catalog-held",
+      "catalogId": "haoyueqin-deepseek-harness-background",
+      "reason": null
+    },
+    {
+      "sequence": 209,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit installation fixture used by the repository test suite, not a distributable catalog plugin."
+    },
+    {
+      "sequence": 210,
+      "disposition": "catalog-held",
+      "catalogId": "hhj2714-dsh-whale-btn",
+      "reason": null
+    },
+    {
+      "sequence": 211,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private w3-local-bundle fixture under scripts/fixtures for dshpack tests."
+    },
+    {
+      "sequence": 212,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hinem66-dsh-fact-gate",
+      "reason": null
+    },
+    {
+      "sequence": 213,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository is represented by the canonical DashScope media bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 214,
+      "disposition": "catalog-held",
+      "catalogId": "honghudavy-dsh-plugins-4u",
+      "reason": null
+    },
+    {
+      "sequence": 215,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Vision component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 216,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Wallpaper component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 217,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WeChat component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 218,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public deepcode package points to fanlila/dcode rather than this frozen TUI repository."
+    },
+    {
+      "sequence": 219,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Toolkit component is represented by the canonical nudge bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 220,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Toolkit repository is already represented by the canonical DSH Nudge catalog record."
+    },
+    {
+      "sequence": 221,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 222,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 223,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 224,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 225,
+      "disposition": "catalog-held",
+      "catalogId": "huangrx6-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 226,
+      "disposition": "catalog-held",
+      "catalogId": "imsai-sh-dsh-1024store",
+      "reason": null
+    },
+    {
+      "sequence": 227,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ipromise2021-dsh-omc-tui",
+      "reason": null
+    },
+    {
+      "sequence": 228,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private mock provider under test/mock-bundle for credential-free TUI testing, not a distributable plugin."
+    },
+    {
+      "sequence": 229,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-monitor package points to AbnerAI/dsh-monitor rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 230,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 231,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 232,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness TUI application core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 233,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web application core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 234,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jasonyoungguang-workspace-token-record",
+      "reason": null
+    },
+    {
+      "sequence": 235,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jay-r-j-dsh-rpg-workstation",
+      "reason": null
+    },
+    {
+      "sequence": 236,
+      "disposition": "catalog-held",
+      "catalogId": "jeffcwj-dsh-preset-switcher",
+      "reason": null
+    },
+    {
+      "sequence": 237,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jemius-dsh-session-admin",
+      "reason": null
+    },
+    {
+      "sequence": 238,
+      "disposition": "catalog-held",
+      "catalogId": "jiamingzang-dsh-llm-qodersdk",
+      "reason": null
+    },
+    {
+      "sequence": 239,
+      "disposition": "catalog-held",
+      "catalogId": "jianxx-dsh-cc-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 240,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second profile bundle in the same Claude Code parity monorepo, represented by the repository-level held record."
+    },
+    {
+      "sequence": 241,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness base core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 242,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness headless core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 243,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness web-app core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 244,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jsdvjx-dsh-strata",
+      "reason": null
+    },
+    {
+      "sequence": 245,
+      "disposition": "catalog-held",
+      "catalogId": "justgenius-s-dsh-plugs",
+      "reason": null
+    },
+    {
+      "sequence": 246,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 247,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 248,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 249,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 250,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 251,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-telegram-bridge package points to Joycate/dsh-telegram-bridge rather than this fixed JxaMe source."
+    },
+    {
+      "sequence": 252,
+      "disposition": "catalog-held",
+      "catalogId": "kael-odin-dsh-control-center",
+      "reason": null
+    },
+    {
+      "sequence": 253,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kagura-agent-dsh-memes",
+      "reason": null
+    },
+    {
+      "sequence": 254,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kaiji-z-dsh-plugin-lookatstudy",
+      "reason": null
+    },
+    {
+      "sequence": 255,
+      "disposition": "catalog-reviewed",
+      "catalogId": "karbo123-dsh-evoresearch",
+      "reason": null
+    },
+    {
+      "sequence": 256,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 257,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored dsh-model-reasoning manifest points to the dedicated karoc/dsh-model-reasoning repository rather than this desktop repository."
+    },
+    {
+      "sequence": 258,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second vendored copy of the same source-conflicting dsh-model-reasoning package in this desktop repository."
+    },
+    {
+      "sequence": 259,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-kanban 0.1.2 package was built from gitHead 81cb0d2, not frozen commit b2d293d, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 260,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kcnyu-clawock-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 261,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-manager 0.1.0 package points to hrhgit/deepseek-harness-plugin-manager and gitHead 22f0ad1, not this kdeightx fixed source."
+    },
+    {
+      "sequence": 262,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-session-delete 0.1.0 package points to vtxf/dsh-session-delete and gitHead 2565641, not this kdeightx fixed source."
+    },
+    {
+      "sequence": 263,
+      "disposition": "catalog-held",
+      "catalogId": "kdeightx-dsh-system-restart",
+      "reason": null
+    },
+    {
+      "sequence": 264,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "A second component from kdeightx/dsh-dock; the repository is represented by its held dsh-system-restart record and cannot publish duplicate repository rows."
+    },
+    {
+      "sequence": 265,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-tidewatch 1.0.0 package was built from gitHead bac58de, not frozen commit 1e88c16, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 266,
+      "disposition": "catalog-held",
+      "catalogId": "kiefeng-dsh-lan-memory",
+      "reason": null
+    },
+    {
+      "sequence": 267,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kinomotomio-dsh-context-lens",
+      "reason": null
+    },
+    {
+      "sequence": 268,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kongjianguan-dsh-tokstat",
+      "reason": null
+    },
+    {
+      "sequence": 269,
+      "disposition": "catalog-held",
+      "catalogId": "kongshan-zhuyu-dsh-balance-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 270,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kuaiyukuaikuai-dsh-agent-sync",
+      "reason": null
+    },
+    {
+      "sequence": 271,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kuangre123-dsh-clipboard-history",
+      "reason": null
+    },
+    {
+      "sequence": 272,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kui123456789-dsh-codex-workflow",
+      "reason": null
+    },
+    {
+      "sequence": 273,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The fixed archive declares lib/index.js and lib/client.js but contains neither implementation file, so the bundle is structurally incomplete."
+    },
+    {
+      "sequence": 274,
+      "disposition": "catalog-held",
+      "catalogId": "lai-133-dsh-studio",
+      "reason": null
+    },
+    {
+      "sequence": 275,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lauytgary-dsh-hud-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 276,
+      "disposition": "catalog-reviewed",
+      "catalogId": "leaveimagination-dsh-qwen-voice",
+      "reason": null
+    },
+    {
+      "sequence": 277,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 278,
+      "disposition": "catalog-held",
+      "catalogId": "leliln52-dsh-qqbot",
+      "reason": null
+    },
+    {
+      "sequence": 279,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lemonxi-dsh-client-ui-android",
+      "reason": null
+    },
+    {
+      "sequence": 280,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Linux-specific Orcana profile is represented by the repository's canonical general runtime-pack record."
+    },
+    {
+      "sequence": 281,
+      "disposition": "catalog-reviewed",
+      "catalogId": "leshm0321-dsh-plugin-local-agent-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 282,
+      "disposition": "catalog-held",
+      "catalogId": "liceses-dsh-freebuff",
+      "reason": null
+    },
+    {
+      "sequence": 283,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 284,
+      "disposition": "catalog-held",
+      "catalogId": "linzr-lly-dsh-whale-lap",
+      "reason": null
+    },
+    {
+      "sequence": 285,
+      "disposition": "catalog-reviewed",
+      "catalogId": "little-star888-dsh-pelican",
+      "reason": null
+    },
+    {
+      "sequence": 286,
+      "disposition": "catalog-held",
+      "catalogId": "liu-za-81-dsh-theme-firefly",
+      "reason": null
+    },
+    {
+      "sequence": 287,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 288,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 289,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 290,
+      "disposition": "catalog-reviewed",
+      "catalogId": "liujunheng-deepseekharnessgreen",
+      "reason": null
+    },
+    {
+      "sequence": 291,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 292,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 293,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-ui-tools 0.1.0 package was built from gitHead a60dfc5, not frozen commit 3c0d67d, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 294,
+      "disposition": "catalog-held",
+      "catalogId": "lizhicai-geh-term-explainer",
+      "reason": null
+    },
+    {
+      "sequence": 295,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @wanghailong0419/dsh-mcp-manager 0.1.0 package was built from gitHead 8f0ffba, not frozen commit 766623c, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 296,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lstalu-dsh-bundle-dedup-guard",
+      "reason": null
+    },
+    {
+      "sequence": 297,
+      "disposition": "catalog-reviewed",
+      "catalogId": "luck9star-dsh-dag-orchestrator",
+      "reason": null
+    },
+    {
+      "sequence": 298,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 299,
+      "disposition": "catalog-held",
+      "catalogId": "lusblead-dsh-kingdom",
+      "reason": null
+    },
+    {
+      "sequence": 300,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mangshe3-0-dsh-plugin-guard",
+      "reason": null
+    },
+    {
+      "sequence": 301,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-store package points to yunhuantian/dsh-plugin-store rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 302,
+      "disposition": "catalog-reviewed",
+      "catalogId": "max-null-dsh-chat-rail",
+      "reason": null
+    },
+    {
+      "sequence": 303,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-codex-pet package belongs to skr311/dsh-codex-pet; this repository documents a GitHub-only package with the same install name."
+    },
+    {
+      "sequence": 304,
+      "disposition": "catalog-reviewed",
+      "catalogId": "meowtnter-catalog-capabilities-zh",
+      "reason": null
+    },
+    {
+      "sequence": 305,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 306,
+      "disposition": "catalog-held",
+      "catalogId": "mfwtw-dsh-ui-web",
+      "reason": null
+    },
+    {
+      "sequence": 307,
+      "disposition": "catalog-reviewed",
+      "catalogId": "miaooon-dsh-plugin-manager",
+      "reason": null
+    },
+    {
+      "sequence": 308,
+      "disposition": "catalog-reviewed",
+      "catalogId": "michengai-dsh-agency-agents",
+      "reason": null
+    },
+    {
+      "sequence": 309,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit clean DSH plugin fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 310,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-compatible fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 311,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-incompatible fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 312,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-unknown fixture with a postinstall hook under examples/fixtures for upstream-radar; it was not executed."
+    },
+    {
+      "sequence": 313,
+      "disposition": "catalog-reviewed",
+      "catalogId": "minivv-dsh-agent-skills",
+      "reason": null
+    },
+    {
+      "sequence": 314,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @mkaliezz/dsh-action-ledger 0.2.0 package was built from gitHead 71d6d99, not frozen commit 82e024e, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 315,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-deepseek-usage package points to ben7am1n/dsh-deepseek-usage rather than this fixed candidate repository."
+    },
+    {
+      "sequence": 316,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-remote 0.1.0 package was built from gitHead 47be44f, not frozen commit 4c03d96, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 317,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mouliangyu-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 318,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mr-mihu-dsh-dbhub-live",
+      "reason": null
+    },
+    {
+      "sequence": 319,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mrywwww-dsh-paper-daily",
+      "reason": null
+    },
+    {
+      "sequence": 320,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mrzhangkris-dsh-session-lifecycle",
+      "reason": null
+    },
+    {
+      "sequence": 321,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nanshanzhaoji-dsh-download-progress",
+      "reason": null
+    },
+    {
+      "sequence": 322,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 323,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 324,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 325,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 326,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 327,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 328,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 329,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 330,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 331,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 332,
+      "disposition": "catalog-held",
+      "catalogId": "neplich-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 333,
+      "disposition": "catalog-held",
+      "catalogId": "newbieyi-dsh-plugin-market",
+      "reason": null
+    },
+    {
+      "sequence": 334,
+      "disposition": "catalog-held",
+      "catalogId": "nexsjournal-dsh-tryboard-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 335,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ngk3pori-dsh-zh-cn-ui",
+      "reason": null
+    },
+    {
+      "sequence": 336,
+      "disposition": "catalog-held",
+      "catalogId": "nicklin99-dsh-ui-sidebar",
+      "reason": null
+    },
+    {
+      "sequence": 337,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Browser half is represented by the repository's canonical explorer aggregate record."
+    },
+    {
+      "sequence": 338,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Host half is represented by the repository's canonical explorer aggregate record."
+    },
+    {
+      "sequence": 339,
+      "disposition": "catalog-held",
+      "catalogId": "nodata404-dsh-env-probe",
+      "reason": null
+    },
+    {
+      "sequence": 340,
+      "disposition": "catalog-held",
+      "catalogId": "noirbright-dsh-codex-sidebar",
+      "reason": null
+    },
+    {
+      "sequence": 341,
+      "disposition": "catalog-held",
+      "catalogId": "noirbright-dsh-llm-assistant",
+      "reason": null
+    },
+    {
+      "sequence": 342,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nonewind-dsh-spend",
+      "reason": null
+    },
+    {
+      "sequence": 343,
+      "disposition": "catalog-held",
+      "catalogId": "nonmean-dsh-lan-access",
+      "reason": null
+    },
+    {
+      "sequence": 344,
+      "disposition": "catalog-held",
+      "catalogId": "ns-zzj-dsh-hos-scrcpy",
+      "reason": null
+    },
+    {
+      "sequence": 345,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Folio event component is represented by the repository's canonical tools record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 346,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Terminal application bundle derived from DSH core, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 347,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH base manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 348,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH headless manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 349,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH web-app manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 350,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ostar999-ostar-dsh-left-sidebar",
+      "reason": null
+    },
+    {
+      "sequence": 351,
+      "disposition": "catalog-reviewed",
+      "catalogId": "pai535huang-dsh-superpower",
+      "reason": null
+    },
+    {
+      "sequence": 352,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-quant 0.53.0 package was built from gitHead 7c67c5e, not frozen commit b06672c, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 353,
+      "disposition": "catalog-reviewed",
+      "catalogId": "physicolor-harness-ui-enhancer",
+      "reason": null
+    },
+    {
+      "sequence": 354,
+      "disposition": "catalog-held",
+      "catalogId": "picgo-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 355,
+      "disposition": "catalog-held",
+      "catalogId": "proton1917-dsh-harness-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 356,
+      "disposition": "catalog-reviewed",
+      "catalogId": "pypcfx-glitch-risk-rule-design",
+      "reason": null
+    },
+    {
+      "sequence": 357,
+      "disposition": "catalog-held",
+      "catalogId": "qkycir-123-dsh-run2skill",
+      "reason": null
+    },
+    {
+      "sequence": 358,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 359,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 360,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qqq85-ux-dsh-cost-glance",
+      "reason": null
+    },
+    {
+      "sequence": 361,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qubyyang-awesome-ios-sim",
+      "reason": null
+    },
+    {
+      "sequence": 362,
+      "disposition": "catalog-reviewed",
+      "catalogId": "r-lei2536-dsh-more-agent-presets",
+      "reason": null
+    },
+    {
+      "sequence": 363,
+      "disposition": "catalog-reviewed",
+      "catalogId": "rainow-dsh-simple-wiki-memory",
+      "reason": null
+    },
+    {
+      "sequence": 364,
+      "disposition": "catalog-held",
+      "catalogId": "ratevoid-dsh-aseprite",
+      "reason": null
+    },
+    {
+      "sequence": 365,
+      "disposition": "catalog-reviewed",
+      "catalogId": "raullenchai-rapid-mlx-dsh-provider",
+      "reason": null
+    },
+    {
+      "sequence": 366,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Terminal application gateway bundle derived from DSH core, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 367,
+      "disposition": "catalog-held",
+      "catalogId": "realmisakamikoto-dsh-skin-studio",
+      "reason": null
+    },
+    {
+      "sequence": 368,
+      "disposition": "catalog-held",
+      "catalogId": "refyon-restrict-discipline",
+      "reason": null
+    },
+    {
+      "sequence": 369,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "My Rules component is represented by the repository's canonical Extension Hub record."
+    },
+    {
+      "sequence": 370,
+      "disposition": "catalog-reviewed",
+      "catalogId": "riesbri-dsh-tui",
+      "reason": null
+    },
+    {
+      "sequence": 371,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ringclaw-dsh-ringcentral",
+      "reason": null
+    },
+    {
+      "sequence": 372,
+      "disposition": "catalog-reviewed",
+      "catalogId": "rj-jiangyichen-dsh-rules",
+      "reason": null
+    },
+    {
+      "sequence": 373,
+      "disposition": "catalog-held",
+      "catalogId": "ruimin251204-dsh-plugin-surgery",
+      "reason": null
+    },
+    {
+      "sequence": 374,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit fake alpha bundle under test/fixtures for plugin-surgery tests, not a distributable plugin."
+    },
+    {
+      "sequence": 375,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit fake beta bundle under test/fixtures for plugin-surgery tests, not a distributable plugin."
+    },
+    {
+      "sequence": 376,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sakaliolabs-dsh-code-ide",
+      "reason": null
+    },
+    {
+      "sequence": 377,
+      "disposition": "catalog-held",
+      "catalogId": "sakuraaa667-dsh-wallpaper-engine",
+      "reason": null
+    },
+    {
+      "sequence": 378,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sanqi-normal-dsh-webui-market-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 379,
+      "disposition": "catalog-reviewed",
+      "catalogId": "satan9394-dsh-bash-scripting",
+      "reason": null
+    },
+    {
+      "sequence": 380,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-data-quality 0.1.0 package was built from gitHead d9201d2, not frozen commit 2bb3100, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 381,
+      "disposition": "catalog-reviewed",
+      "catalogId": "satan9394-dsh-llm-eval",
+      "reason": null
+    },
+    {
+      "sequence": 382,
+      "disposition": "catalog-reviewed",
+      "catalogId": "satan9394-dsh-rag",
+      "reason": null
+    },
+    {
+      "sequence": 383,
+      "disposition": "catalog-reviewed",
+      "catalogId": "saya-ch-dsh-mobile",
+      "reason": null
+    },
+    {
+      "sequence": 384,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-subscription-auth package points to Khellendros97/dsh-subscription-auth rather than this fixed candidate repository."
+    },
+    {
+      "sequence": 385,
+      "disposition": "catalog-reviewed",
+      "catalogId": "seektureworld-dsh-network-mode",
+      "reason": null
+    },
+    {
+      "sequence": 386,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shadowbrucemeaninglau-dsh-course-logic-extractor",
+      "reason": null
+    },
+    {
+      "sequence": 387,
+      "disposition": "catalog-held",
+      "catalogId": "shaoxia20240902-dsh-plugin-leaderboard",
+      "reason": null
+    },
+    {
+      "sequence": 388,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shengsheng90-dsh-taskboard",
+      "reason": null
+    },
+    {
+      "sequence": 389,
+      "disposition": "catalog-held",
+      "catalogId": "shifan3-dsh-qol",
+      "reason": null
+    },
+    {
+      "sequence": 390,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shixiangyu2-dsh-siliconflow-vision",
+      "reason": null
+    },
+    {
+      "sequence": 391,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shuind-dsh-codex-harness",
+      "reason": null
+    },
+    {
+      "sequence": 392,
+      "disposition": "catalog-held",
+      "catalogId": "shuxu-zhao-dsh-image-describer",
+      "reason": null
+    },
+    {
+      "sequence": 393,
+      "disposition": "catalog-reviewed",
+      "catalogId": "simon-world-dsh-journal-monitor",
+      "reason": null
+    },
+    {
+      "sequence": 394,
+      "disposition": "catalog-held",
+      "catalogId": "sipengxie2024-dsh-memory-hermes",
+      "reason": null
+    },
+    {
+      "sequence": 395,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sirilee-dsh-edit-approval",
+      "reason": null
+    },
+    {
+      "sequence": 396,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @skkjkk/dsh-usage-dashboard 0.3.7 package was built from gitHead f20286c, not frozen commit 6a7daaa, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 397,
+      "disposition": "catalog-reviewed",
+      "catalogId": "songoao25-dsh-plugin-guardian",
+      "reason": null
+    },
+    {
+      "sequence": 398,
+      "disposition": "catalog-reviewed",
+      "catalogId": "songoao25-dsh-song-memory",
+      "reason": null
+    },
+    {
+      "sequence": 399,
+      "disposition": "catalog-held",
+      "catalogId": "sonnpyker-dsh-gdash-parkour",
+      "reason": null
+    },
+    {
+      "sequence": 400,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-knowledge 0.2.2 package was built from gitHead 20fe84a, not frozen commit c6602f6, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 401,
+      "disposition": "catalog-held",
+      "catalogId": "staff-os-dsh-ragflow",
+      "reason": null
+    },
+    {
+      "sequence": 402,
+      "disposition": "catalog-held",
+      "catalogId": "stanleyxu512-dsh-feishu-todo",
+      "reason": null
+    },
+    {
+      "sequence": 403,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Root manifest duplicates the nested Octie distributable and has no referenced patch."
+    },
+    {
+      "sequence": 404,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-builtin-toggles 0.3.2 package was built from gitHead d1d7205, not frozen commit bc86c77, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 405,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest carries an empty patch while the repository primarily distributes a global coding-agent CLI and preset installer, not an active Cordis plugin bundle."
+    },
+    {
+      "sequence": 406,
+      "disposition": "catalog-held",
+      "catalogId": "studyinglx-dsh-cli",
+      "reason": null
+    },
+    {
+      "sequence": 407,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @studyzy/dsh-web-remote-access 1.0.0 package was built from gitHead 7514108, not frozen commit 19655cc, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 408,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sunqingyuan0-kabutack",
+      "reason": null
+    },
+    {
+      "sequence": 409,
+      "disposition": "catalog-reviewed",
+      "catalogId": "superksp-dsh-theme-frieren",
+      "reason": null
+    },
+    {
+      "sequence": 410,
+      "disposition": "catalog-reviewed",
+      "catalogId": "superls-x-dsh-minecraft-theme",
+      "reason": null
+    },
+    {
+      "sequence": 411,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Evidence Dashboard component is represented by the repository's canonical Prior Probe record."
+    },
+    {
+      "sequence": 412,
+      "disposition": "catalog-reviewed",
+      "catalogId": "syncended-deepseek-harness-openai-codex",
+      "reason": null
+    },
+    {
+      "sequence": 413,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-better-sidebar package and manifest repository point to the already-cataloged omdsh-dev/DSH-better-sidebar source, not this fork."
+    },
+    {
+      "sequence": 414,
+      "disposition": "catalog-held",
+      "catalogId": "tafcear-kimi-tide",
+      "reason": null
+    },
+    {
+      "sequence": 415,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to pandashere/dsh-kimi-bridge rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 416,
+      "disposition": "catalog-held",
+      "catalogId": "takahisai-dsh-codex-sub",
+      "reason": null
+    },
+    {
+      "sequence": 417,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 418,
+      "disposition": "catalog-held",
+      "catalogId": "taoxxx7-dsh-plugin-manager",
+      "reason": null
+    },
+    {
+      "sequence": 419,
+      "disposition": "catalog-held",
+      "catalogId": "teaclearinkii-dsh-marketplaces-nexus",
+      "reason": null
+    },
+    {
+      "sequence": 420,
+      "disposition": "catalog-reviewed",
+      "catalogId": "temotee2103-dsh-overdrive",
+      "reason": null
+    },
+    {
+      "sequence": 421,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest was unavailable at the frozen 40-character source commit, so the required static evidence could not be reproduced."
+    },
+    {
+      "sequence": 422,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to deepseek-ai/deepseek-harness rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 423,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tisitan-dsh-live2d-companion",
+      "reason": null
+    },
+    {
+      "sequence": 424,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tobewin-dsh-pet-companion",
+      "reason": null
+    },
+    {
+      "sequence": 425,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit invalid-patch-schema test fixture for the Trust Center."
+    },
+    {
+      "sequence": 426,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit example registry bundle fixture for the Trust Center."
+    },
+    {
+      "sequence": 427,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit risky-bundle test fixture for the Trust Center."
+    },
+    {
+      "sequence": 428,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit safe-bundle test fixture for the Trust Center."
+    },
+    {
+      "sequence": 429,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tsja2001-dsh-zhipu-coding-plan",
+      "reason": null
+    },
+    {
+      "sequence": 430,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The fixed GitHub source archive returned 404 on repeated requests, so the candidate source could not be reproduced."
+    },
+    {
+      "sequence": 431,
+      "disposition": "catalog-held",
+      "catalogId": "u1s1-king-dsh-live2d-mygo",
+      "reason": null
+    },
+    {
+      "sequence": 432,
+      "disposition": "catalog-held",
+      "catalogId": "uckkk-dsh-ux-writing",
+      "reason": null
+    },
+    {
+      "sequence": 433,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ullrai-dsh-mqtt",
+      "reason": null
+    },
+    {
+      "sequence": 434,
+      "disposition": "catalog-reviewed",
+      "catalogId": "v1xingyue-dsh-auth-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 435,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-ocgo-usage 0.1.1 package was built from gitHead 7c0be8c, not frozen commit 7369957, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 436,
+      "disposition": "catalog-reviewed",
+      "catalogId": "void2anything-dsh-qingagent",
+      "reason": null
+    },
+    {
+      "sequence": 437,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 438,
+      "disposition": "catalog-reviewed",
+      "catalogId": "w117c-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 439,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wanbinyu-dsh-billing",
+      "reason": null
+    },
+    {
+      "sequence": 440,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wanbinyu-dsh-plugin-git-inspect",
+      "reason": null
+    },
+    {
+      "sequence": 441,
+      "disposition": "catalog-held",
+      "catalogId": "wangxilhy23-dsh-wx-desktop",
+      "reason": null
+    },
+    {
+      "sequence": 442,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @kubor/dsh-bloom-theme 0.3.5 package was built from gitHead 507bedd, not frozen commit ced8fe2, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 443,
+      "disposition": "catalog-reviewed",
+      "catalogId": "welsione-dsh-mmx-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 444,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-weixin package points to caoyilearnai/dsh-weixin, while this candidate documents only a placeholder Git owner."
+    },
+    {
+      "sequence": 445,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wenzetan-dsh-llm-newapi",
+      "reason": null
+    },
+    {
+      "sequence": 446,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 447,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 448,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 449,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 450,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 451,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 452,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 453,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 454,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 455,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 456,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @dsh-suite/plugin-deus 0.4.0 package was built from gitHead 4f3a618, not frozen commit 053906b, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 457,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @dsh-suite/plugin-manager 0.8.2 package was built from gitHead c4f1f55, not frozen commit 053906b, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 458,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @dsh-suite/plugin-notify 0.2.0 package was built from gitHead 27d4dfe, not frozen commit 053906b, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 459,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @dsh-suite/plugin-session-export 0.2.0 package was built from gitHead f0c1a42, not frozen commit 053906b, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 460,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @dsh-suite/plugin-team-board 0.1.1 package was built from gitHead 1d748ca, not frozen commit 053906b, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 461,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @dsh-suite/preset-center 0.2.0 package was built from gitHead c3fc785, not frozen commit 053906b, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 462,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 463,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 464,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 465,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 466,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 467,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 468,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wingsky-1-dsh-plugin-hub",
+      "reason": null
+    },
+    {
+      "sequence": 469,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 470,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 471,
+      "disposition": "catalog-reviewed",
+      "catalogId": "winliyou-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 472,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 473,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 474,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 475,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component omitted under the one-record-per-repository catalog boundary; the package also lacks a package license declaration, while dsh-dock is the evidence-complete representative."
+    },
+    {
+      "sequence": 476,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wntediluvian-dsh-dock",
+      "reason": null
+    },
+    {
+      "sequence": 477,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 478,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wssfk12138-dsh-damage-pulse",
+      "reason": null
+    },
+    {
+      "sequence": 479,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wycto-dsh-model-balance",
+      "reason": null
+    },
+    {
+      "sequence": 480,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xgone-dsh-remote",
+      "reason": null
+    },
+    {
+      "sequence": 481,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 482,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The fixed GitHub source archive returned 404 on repeated requests, so the candidate source could not be reproduced."
+    },
+    {
+      "sequence": 483,
+      "disposition": "catalog-held",
+      "catalogId": "xiajiajun516-dsh-config-manager",
+      "reason": null
+    },
+    {
+      "sequence": 484,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xiajingchun-dsh-nebula",
+      "reason": null
+    },
+    {
+      "sequence": 485,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 486,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 487,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 488,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 489,
+      "disposition": "catalog-held",
+      "catalogId": "xiaoxiao44443-deepseek-harness-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 490,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 491,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xiaoyuink-dsh-image-create",
+      "reason": null
+    },
+    {
+      "sequence": 492,
+      "disposition": "catalog-held",
+      "catalogId": "xing-shuyin-dsh-ui-tools",
+      "reason": null
+    },
+    {
+      "sequence": 493,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xinyuehtx-dsh-plugin-hooks-ordering",
+      "reason": null
+    },
+    {
+      "sequence": 494,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @xmanrui/dsh-im 0.11.0 package was built from gitHead ffdf92e, not frozen commit 443d3b4, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 495,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 496,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 497,
+      "disposition": "catalog-reviewed",
+      "catalogId": "y-wi-dsh-deepseek-web",
+      "reason": null
+    },
+    {
+      "sequence": 498,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yancey2023-dsh-fold",
+      "reason": null
+    },
+    {
+      "sequence": 499,
+      "disposition": "catalog-held",
+      "catalogId": "yanglaofish-dsh-skill-manager",
+      "reason": null
+    },
+    {
+      "sequence": 500,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yangshen830-eng-dsh-enhance-workspace",
+      "reason": null
+    },
+    {
+      "sequence": 501,
+      "disposition": "catalog-held",
+      "catalogId": "yauntyour-dsh-encrypt",
+      "reason": null
+    },
+    {
+      "sequence": 502,
+      "disposition": "catalog-held",
+      "catalogId": "ycet-dsh-account-usage",
+      "reason": null
+    },
+    {
+      "sequence": 503,
+      "disposition": "catalog-held",
+      "catalogId": "ycet-dsh-archive-manager",
+      "reason": null
+    },
+    {
+      "sequence": 504,
+      "disposition": "catalog-held",
+      "catalogId": "ycet-dsh-my-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 505,
+      "disposition": "catalog-held",
+      "catalogId": "ycet-dsh-notifications",
+      "reason": null
+    },
+    {
+      "sequence": 506,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ychris12138-dsh-usage-stats",
+      "reason": null
+    },
+    {
+      "sequence": 507,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yiran-ye-dsh-omp-tui",
+      "reason": null
+    },
+    {
+      "sequence": 508,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yrn-playmaker-dsh-wallpaper-share",
+      "reason": null
+    },
+    {
+      "sequence": 509,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yu-tao-li-computer-use-win",
+      "reason": null
+    },
+    {
+      "sequence": 510,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yu-tao-li-dsh-read-image",
+      "reason": null
+    },
+    {
+      "sequence": 511,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH base manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 512,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH headless manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 513,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH web-app manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 514,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-computer-use 0.1.0 package was built from gitHead 5bc9cdb, not this frozen monorepo commit, so its registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 515,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yucong-28-dsh-vision-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 516,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-web-pets 0.2.2 package was built from gitHead 5c1f8ed, not this frozen monorepo commit, so its registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 517,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Nested desktop-pets integration is represented by the same repository's canonical vision-bridge catalog record under the one-record-per-repository boundary."
+    },
+    {
+      "sequence": 518,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yv3507-dsh-webui-launcher",
+      "reason": null
+    },
+    {
+      "sequence": 519,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yzke-dsh-icon-theme",
+      "reason": null
+    },
+    {
+      "sequence": 520,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zalpha263-dsh-file-explorer",
+      "reason": null
+    },
+    {
+      "sequence": 521,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 522,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zbsph-dsh-j-space-warm",
+      "reason": null
+    },
+    {
+      "sequence": 523,
+      "disposition": "catalog-held",
+      "catalogId": "zenglihunter-dsh-petdex-pet",
+      "reason": null
+    },
+    {
+      "sequence": 524,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zenjibad-dsh-drop-any-file",
+      "reason": null
+    },
+    {
+      "sequence": 525,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zenjibad-dsh-plugin-toggle",
+      "reason": null
+    },
+    {
+      "sequence": 526,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-stylotrace 0.1.12 package was built from gitHead 10abbfe, not frozen commit 1d9177f, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 527,
+      "disposition": "catalog-held",
+      "catalogId": "zhengzeyong9527-droid-zzy-dsh-prompt-optimizer",
+      "reason": null
+    },
+    {
+      "sequence": 528,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zhou-yihang-dsh-usage-blance",
+      "reason": null
+    },
+    {
+      "sequence": 529,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 530,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 531,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 532,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 533,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 534,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 535,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 536,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 537,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 538,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 539,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 540,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 541,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 542,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 543,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 544,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 545,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zisekongling-deepseek-peak-blocker",
+      "reason": null
+    },
+    {
+      "sequence": 546,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zmh2000829-dsh-web-search-multi",
+      "reason": null
+    },
+    {
+      "sequence": 547,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-cn-boot 0.1.0 package was built from c14203e, not frozen commit 5439d6f, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 548,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-dep-audit 0.1.1 package was built from 69a4714, not frozen commit 27f6492, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 549,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-discussions-radar 0.1.0 package was built from be484f0, not frozen commit d157448, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 550,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-disk-audit 0.1.0 package was built from 43521d4, not frozen commit 4be0589, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 551,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-firstrun 0.1.0 package was built from 3e89c7f, not frozen commit c6e711f, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 552,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-llms-forge 0.1.0 package was built from 1a58b21, not frozen commit 83ef2a1, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 553,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-quality-score 0.1.2 package was built from d6cdae7, not frozen commit fdf6542, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 554,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-readme-forge 0.1.0 package was built from c53b76f, not frozen commit c932b67, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 555,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-timesheet 0.1.0 package was built from cbe98c3, not frozen commit 910f677, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 556,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zp-home-dsh-recommend",
+      "reason": null
+    }
+  ]
+}

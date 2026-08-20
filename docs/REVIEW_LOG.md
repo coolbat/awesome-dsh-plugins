@@ -77,3 +77,31 @@ volatile and do not establish trust, compatibility, or installability.
   lifecycle hook, plugin, installer, remote binary, browser, server,
   subprocess, native helper, file operation, model request, or test suite was
   executed.
+
+## 2026-08-20 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `cd1778b0fd84f911c35990c57b35134306f73848`, generated at
+  `2026-08-19T19:43:44.594Z`.
+- Queue: 800 structural leads: 239 already listed, 5 discovery-held, and 556
+  ready for review. Every ready record used a full 40-character commit.
+- Increment: 189 records required new evidence: 168 new keys and 21 keys whose
+  fixed commit changed. The other 367 records reused only exact key-and-commit
+  history.
+- Decisions for the 189-record increment: 51 catalog-reviewed, 37
+  catalog-held, 50 duplicate or superseded, 17 example/fixture/template, 32
+  source conflicts, and 2 unavailable. No records remain pending.
+- Catalog after review: 518 repository-unique records: 401 reviewed, 116 held,
+  and 1 excluded.
+- Evidence boundary: fixed manifests, same-commit patches, license and README
+  files, repository metadata, npm version metadata, lifecycle declarations,
+  DSH peer ranges, and capability/risk signals were read statically. No
+  candidate package, hook, plugin, candidate test, installer, binary, browser,
+  server, Python environment, MCP server, native helper, or candidate process
+  was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 37 tests
+  and 1,048 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
