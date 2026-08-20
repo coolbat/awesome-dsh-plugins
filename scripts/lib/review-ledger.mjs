@@ -11,6 +11,110 @@ const dispositions = new Set([
   "source-conflict",
 ]);
 
+export function buildFrozenReview({ queue, sourceCommit, capturedAt }) {
+  const candidates = queue.candidates.filter(
+    (candidate) => candidate.status === "ready-for-review",
+  );
+
+  return {
+    snapshot: {
+      schemaVersion: 1,
+      source: {
+        repository: "coolbat/awesome-dsh-plugins",
+        pullRequest: 2,
+        commit: sourceCommit,
+        readyCount: candidates.length,
+        capturedAt,
+      },
+      candidates,
+    },
+    ledger: {
+      schemaVersion: 1,
+      sourceCommit,
+      records: candidates.map((candidate, index) => ({
+        sequence: index + 1,
+        key: candidate.key,
+        repository: candidate.repository,
+        manifest: candidate.manifest,
+        commit: candidate.commit,
+        disposition: "pending",
+        catalogId: null,
+        reason: null,
+        reviewedAt: null,
+      })),
+    },
+  };
+}
+
+export function applyReviewWave({
+  ledger,
+  catalog,
+  priorLedger,
+  decisions,
+  catalogRecords,
+  start,
+  end,
+  reviewedAt,
+}) {
+  const explicitBySequence = new Map();
+  for (const decision of decisions) {
+    if (
+      decision.sequence < start ||
+      decision.sequence > end ||
+      explicitBySequence.has(decision.sequence)
+    ) {
+      throw new Error(
+        `invalid explicit decision sequence ${decision.sequence}`,
+      );
+    }
+    explicitBySequence.set(decision.sequence, decision);
+  }
+
+  const records = ledger.records.map((record) => {
+    if (record.sequence < start || record.sequence > end) return record;
+
+    const historical = priorLedger.records.find(
+      (prior) =>
+        prior.key === record.key &&
+        prior.commit === record.commit &&
+        prior.disposition !== "pending" &&
+        !prior.disposition.startsWith("catalog-"),
+    );
+    const decision = explicitBySequence.get(record.sequence) ?? historical;
+    if (!decision) {
+      throw new Error(
+        `record ${record.sequence} is missing an explicit or exact historical decision`,
+      );
+    }
+
+    return {
+      ...record,
+      disposition: decision.disposition,
+      catalogId: decision.catalogId ?? null,
+      reason: decision.reason ?? null,
+      reviewedAt,
+    };
+  });
+
+  const plugins = [...catalog.plugins];
+  for (const catalogRecord of catalogRecords) {
+    const existing = plugins.findIndex(
+      (plugin) => plugin.id === catalogRecord.id,
+    );
+    if (existing === -1) plugins.push(catalogRecord);
+    else plugins[existing] = catalogRecord;
+  }
+
+  return {
+    ledger: { ...ledger, records },
+    catalog: {
+      ...catalog,
+      snapshot: { ...catalog.snapshot, reviewedAt },
+      plugins,
+    },
+  };
+}
+
 export function validateReviewLedger({
   snapshot,
   ledger,

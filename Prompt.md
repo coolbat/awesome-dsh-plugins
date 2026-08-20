@@ -4,15 +4,19 @@
 
 The public DSH Plugin Index is built from evidence records in this repository.
 Automated discovery maintains a review-only queue in PR #2; the user approved
-continuing the remaining 292 `ready-for-review` records from candidate head
-`24654ed5260cfef3ca11568487d69c5bf9f1c42a`.
+running the 2026-08-19 daily static review against candidate head
+`19a696b8a0e70c68873a7200a015901916e7220b`. Its 388
+`ready-for-review` rows contain 345 exact key-and-commit matches from the prior
+completed ledger and 43 new or changed fixed-source records across 28
+repositories.
 
 ## Goal
 
-Process every one of the 292 frozen queue records into a reproducible static
-review disposition, publish evidence-complete distinct plugin bundles to the
-catalog branch, and leave duplicates, examples, archives, broken structures,
-or unresolved install identities explicitly accounted for.
+Process every one of the 388 frozen queue records into a reproducible static
+review disposition, reusing prior evidence only for exact key-and-commit
+matches, publish evidence-complete distinct plugin bundles to the catalog
+branch, and leave duplicates, examples, archives, broken structures, or
+unresolved install identities explicitly accounted for.
 
 ## Non-goals
 
@@ -26,7 +30,7 @@ or unresolved install identities explicitly accounted for.
 
 ## Deliverables
 
-- A frozen copy of the 292-record source queue with its PR commit recorded.
+- A frozen copy of the 388-record source queue with its PR commit recorded.
 - A disposition ledger covering every frozen record exactly once.
 - Catalog and review-log updates for evidence-complete distinct bundles.
 - Fixed-source identity, structure, license, lifecycle, compatibility, and
@@ -74,8 +78,12 @@ or unresolved install identities explicitly accounted for.
 
 ## Approved Assumptions
 
-- PR #2 head `24654ed5260cfef3ca11568487d69c5bf9f1c42a` is the approved frozen discovery
+- PR #2 head `19a696b8a0e70c68873a7200a015901916e7220b` is the approved frozen discovery
   input for this run.
+- The source discovery run was partial after one oversized GitHub response and
+  produced 631 structurally valid leads: 238 already listed, 5 held, and 388
+  ready. Valid results may be reviewed, but discovery completeness is not
+  claimed and the success watermark remains at 2026-08-18T14:00:22.174Z.
 - GitHub and npm registry metadata may be read without executing candidate code.
 - The existing catalog methodology and schema remain authoritative.
 - Pushing a dedicated review branch and opening a pull request are approved;

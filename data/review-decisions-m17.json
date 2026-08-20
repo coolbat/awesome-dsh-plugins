@@ -1,0 +1,1162 @@
+{
+  "decisions": [
+    {
+      "sequence": 2,
+      "disposition": "catalog-reviewed",
+      "catalogId": "1052326311-dsh-plan-lattice",
+      "reason": null
+    },
+    {
+      "sequence": 6,
+      "disposition": "catalog-reviewed",
+      "catalogId": "1710782766-dsh-llm-vision",
+      "reason": null
+    },
+    {
+      "sequence": 7,
+      "disposition": "catalog-reviewed",
+      "catalogId": "2008924-dsh-progress-viz",
+      "reason": null
+    },
+    {
+      "sequence": 14,
+      "disposition": "catalog-reviewed",
+      "catalogId": "534119219-dsh-custom-provider-reasoning",
+      "reason": null
+    },
+    {
+      "sequence": 15,
+      "disposition": "catalog-held",
+      "catalogId": "6-debug-6-dsh-thinking-notifier",
+      "reason": null
+    },
+    {
+      "sequence": 17,
+      "disposition": "catalog-reviewed",
+      "catalogId": "863683348-dsh-plugin-audit",
+      "reason": null
+    },
+    {
+      "sequence": 27,
+      "disposition": "catalog-reviewed",
+      "catalogId": "afrel1024-dsh-client-ui-aqua-unofficial",
+      "reason": null
+    },
+    {
+      "sequence": 29,
+      "disposition": "catalog-reviewed",
+      "catalogId": "anywhere-labs-dsh-plugin-desktop",
+      "reason": null
+    },
+    {
+      "sequence": 31,
+      "disposition": "catalog-held",
+      "catalogId": "as1350-dsh-manager",
+      "reason": null
+    },
+    {
+      "sequence": 32,
+      "disposition": "catalog-reviewed",
+      "catalogId": "asher-2000-dsh-expert-mode",
+      "reason": null
+    },
+    {
+      "sequence": 33,
+      "disposition": "catalog-held",
+      "catalogId": "baixianger-dsh-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 34,
+      "disposition": "catalog-reviewed",
+      "catalogId": "baixianger-dsh-weave",
+      "reason": null
+    },
+    {
+      "sequence": 39,
+      "disposition": "catalog-reviewed",
+      "catalogId": "bpc-oss-dsh-web-billing",
+      "reason": null
+    },
+    {
+      "sequence": 40,
+      "disposition": "catalog-held",
+      "catalogId": "br1nosense-dsh-wxauto",
+      "reason": null
+    },
+    {
+      "sequence": 41,
+      "disposition": "catalog-reviewed",
+      "catalogId": "breeze136-dsh-kb-rag",
+      "reason": null
+    },
+    {
+      "sequence": 48,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cainiao1992-dsh-codebuddy-auth",
+      "reason": null
+    },
+    {
+      "sequence": 49,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cangeng-yolo-mode",
+      "reason": null
+    },
+    {
+      "sequence": 50,
+      "disposition": "catalog-reviewed",
+      "catalogId": "caoyiwei850-dsh-client-ui-skins",
+      "reason": null
+    },
+    {
+      "sequence": 79,
+      "disposition": "catalog-reviewed",
+      "catalogId": "causebefore-dsh-pomodoro",
+      "reason": null
+    },
+    {
+      "sequence": 80,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cc19990113-dsh-plugin-codegraph",
+      "reason": null
+    },
+    {
+      "sequence": 81,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cdxdnrf-dsh-vision",
+      "reason": null
+    },
+    {
+      "sequence": 82,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cerrda-dsh-cerrda-theme",
+      "reason": null
+    },
+    {
+      "sequence": 84,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chengzhi43-dsh-file",
+      "reason": null
+    },
+    {
+      "sequence": 85,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chenhw7-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 88,
+      "disposition": "catalog-reviewed",
+      "catalogId": "choi-peng-dsh-deepseek-balance",
+      "reason": null
+    },
+    {
+      "sequence": 93,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cipher2026-dsh-deepcompute",
+      "reason": null
+    },
+    {
+      "sequence": 94,
+      "disposition": "catalog-reviewed",
+      "catalogId": "clarknu-dsh-gateway",
+      "reason": null
+    },
+    {
+      "sequence": 95,
+      "disposition": "catalog-reviewed",
+      "catalogId": "coco-king-dsh-monitor",
+      "reason": null
+    },
+    {
+      "sequence": 96,
+      "disposition": "catalog-reviewed",
+      "catalogId": "codemonkey-pine-dsh-wallpaper",
+      "reason": null
+    },
+    {
+      "sequence": 97,
+      "disposition": "catalog-reviewed",
+      "catalogId": "couldbeme-dsh-write-gate",
+      "reason": null
+    },
+    {
+      "sequence": 98,
+      "disposition": "catalog-reviewed",
+      "catalogId": "crack-time-dsh-web-ui-skin",
+      "reason": null
+    },
+    {
+      "sequence": 99,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cyanxi69-dsh-self-memory",
+      "reason": null
+    },
+    {
+      "sequence": 103,
+      "disposition": "catalog-held",
+      "catalogId": "daoxiang0520-dsh-plugin-whu",
+      "reason": null
+    },
+    {
+      "sequence": 105,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ddrwin-dsh-channel",
+      "reason": null
+    },
+    {
+      "sequence": 110,
+      "disposition": "catalog-held",
+      "catalogId": "deepseek-harness-evoforge-dsh-evoforge",
+      "reason": null
+    },
+    {
+      "sequence": 117,
+      "disposition": "catalog-reviewed",
+      "catalogId": "deronghe-dsh-plugin-desktop-installer",
+      "reason": null
+    },
+    {
+      "sequence": 118,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dianranqian-handcraft-mode",
+      "reason": null
+    },
+    {
+      "sequence": 119,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dickpy-dsh-cloud-sync",
+      "reason": null
+    },
+    {
+      "sequence": 120,
+      "disposition": "catalog-held",
+      "catalogId": "dingminhua-dsh-subagent-default-model",
+      "reason": null
+    },
+    {
+      "sequence": 122,
+      "disposition": "catalog-held",
+      "catalogId": "djangoailab-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 132,
+      "disposition": "catalog-reviewed",
+      "catalogId": "e2mcc-dsh-popout-sidebar",
+      "reason": null
+    },
+    {
+      "sequence": 133,
+      "disposition": "catalog-held",
+      "catalogId": "edtechools-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 135,
+      "disposition": "catalog-reviewed",
+      "catalogId": "edusrez-dsh-tool-web-enhanced",
+      "reason": null
+    },
+    {
+      "sequence": 136,
+      "disposition": "catalog-reviewed",
+      "catalogId": "elementor-i-dsh-agentmemory",
+      "reason": null
+    },
+    {
+      "sequence": 137,
+      "disposition": "catalog-reviewed",
+      "catalogId": "errorlst-dsh-notes",
+      "reason": null
+    },
+    {
+      "sequence": 138,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-ui-three-body 0.2.0 package was built from ca11d449, not this frozen c495a64 source commit, so the registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 139,
+      "disposition": "catalog-reviewed",
+      "catalogId": "feibi-mochi-deepseek-harness-wallet",
+      "reason": null
+    },
+    {
+      "sequence": 141,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fishquito7-dsh-skill-mcp-panel",
+      "reason": null
+    },
+    {
+      "sequence": 144,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fmlin-linkhealth-intake-triage",
+      "reason": null
+    },
+    {
+      "sequence": 145,
+      "disposition": "catalog-reviewed",
+      "catalogId": "freehul-dsh-sgme",
+      "reason": null
+    },
+    {
+      "sequence": 147,
+      "disposition": "catalog-held",
+      "catalogId": "gameswu-dsh-cross-collaboration",
+      "reason": null
+    },
+    {
+      "sequence": 148,
+      "disposition": "catalog-reviewed",
+      "catalogId": "geml-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 151,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ghjivhidd-dsh-plugin-usage",
+      "reason": null
+    },
+    {
+      "sequence": 152,
+      "disposition": "catalog-reviewed",
+      "catalogId": "gityanglijun-dsh-ui-crystal",
+      "reason": null
+    },
+    {
+      "sequence": 153,
+      "disposition": "catalog-reviewed",
+      "catalogId": "gmh13552-dsh-timer-scheduler",
+      "reason": null
+    },
+    {
+      "sequence": 155,
+      "disposition": "catalog-reviewed",
+      "catalogId": "graffiti-yh-dsh-notion-manager",
+      "reason": null
+    },
+    {
+      "sequence": 156,
+      "disposition": "catalog-reviewed",
+      "catalogId": "haochi72-dsh-auto-continue-429",
+      "reason": null
+    },
+    {
+      "sequence": 158,
+      "disposition": "catalog-held",
+      "catalogId": "hhj2714-dsh-whale-btn",
+      "reason": null
+    },
+    {
+      "sequence": 160,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hinem66-dsh-fact-gate",
+      "reason": null
+    },
+    {
+      "sequence": 162,
+      "disposition": "catalog-held",
+      "catalogId": "honghudavy-dsh-plugins-4u",
+      "reason": null
+    },
+    {
+      "sequence": 173,
+      "disposition": "catalog-held",
+      "catalogId": "huangrx6-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 174,
+      "disposition": "catalog-held",
+      "catalogId": "imsai-sh-dsh-1024store",
+      "reason": null
+    },
+    {
+      "sequence": 175,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ipromise2021-dsh-omc-tui",
+      "reason": null
+    },
+    {
+      "sequence": 182,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jasonyoungguang-workspace-token-record",
+      "reason": null
+    },
+    {
+      "sequence": 183,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jay-r-j-dsh-rpg-workstation",
+      "reason": null
+    },
+    {
+      "sequence": 184,
+      "disposition": "catalog-held",
+      "catalogId": "jeffcwj-dsh-preset-switcher",
+      "reason": null
+    },
+    {
+      "sequence": 185,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jemius-dsh-session-admin",
+      "reason": null
+    },
+    {
+      "sequence": 186,
+      "disposition": "catalog-held",
+      "catalogId": "jianxx-dsh-cc-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 191,
+      "disposition": "catalog-held",
+      "catalogId": "justgenius-s-dsh-plugs",
+      "reason": null
+    },
+    {
+      "sequence": 198,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kagura-agent-dsh-memes",
+      "reason": null
+    },
+    {
+      "sequence": 199,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kaiji-z-dsh-plugin-lookatstudy",
+      "reason": null
+    },
+    {
+      "sequence": 202,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kcnyu-clawock-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 203,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-manager 0.1.0 package points to hrhgit/deepseek-harness-plugin-manager and gitHead 22f0ad1, not this kdeightx fixed source."
+    },
+    {
+      "sequence": 204,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-session-delete 0.1.0 package points to vtxf/dsh-session-delete and gitHead 2565641, not this kdeightx fixed source."
+    },
+    {
+      "sequence": 205,
+      "disposition": "catalog-held",
+      "catalogId": "kdeightx-dsh-system-restart",
+      "reason": null
+    },
+    {
+      "sequence": 206,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "A second component from kdeightx/dsh-dock; the repository is represented by its held dsh-system-restart record and cannot publish duplicate repository rows."
+    },
+    {
+      "sequence": 207,
+      "disposition": "catalog-held",
+      "catalogId": "kiefeng-dsh-lan-memory",
+      "reason": null
+    },
+    {
+      "sequence": 208,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kinomotomio-dsh-context-lens",
+      "reason": null
+    },
+    {
+      "sequence": 209,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kongjianguan-dsh-tokstat",
+      "reason": null
+    },
+    {
+      "sequence": 210,
+      "disposition": "catalog-held",
+      "catalogId": "kongshan-zhuyu-dsh-balance-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 212,
+      "disposition": "catalog-held",
+      "catalogId": "lai-133-dsh-studio",
+      "reason": null
+    },
+    {
+      "sequence": 213,
+      "disposition": "catalog-held",
+      "catalogId": "leliln52-dsh-qqbot",
+      "reason": null
+    },
+    {
+      "sequence": 214,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lemonxi-dsh-client-ui-android",
+      "reason": null
+    },
+    {
+      "sequence": 216,
+      "disposition": "catalog-reviewed",
+      "catalogId": "leshm0321-dsh-plugin-local-agent-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 217,
+      "disposition": "catalog-held",
+      "catalogId": "liceses-dsh-freebuff",
+      "reason": null
+    },
+    {
+      "sequence": 219,
+      "disposition": "catalog-reviewed",
+      "catalogId": "little-star888-dsh-pelican",
+      "reason": null
+    },
+    {
+      "sequence": 220,
+      "disposition": "catalog-held",
+      "catalogId": "liu-za-81-dsh-theme-firefly",
+      "reason": null
+    },
+    {
+      "sequence": 221,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lstalu-dsh-bundle-dedup-guard",
+      "reason": null
+    },
+    {
+      "sequence": 222,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lusblead-dsh-kingdom",
+      "reason": null
+    },
+    {
+      "sequence": 223,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mangshe3-0-dsh-plugin-guard",
+      "reason": null
+    },
+    {
+      "sequence": 225,
+      "disposition": "catalog-reviewed",
+      "catalogId": "max-null-dsh-chat-rail",
+      "reason": null
+    },
+    {
+      "sequence": 227,
+      "disposition": "catalog-reviewed",
+      "catalogId": "meowtnter-catalog-capabilities-zh",
+      "reason": null
+    },
+    {
+      "sequence": 228,
+      "disposition": "catalog-reviewed",
+      "catalogId": "michengai-dsh-agency-agents",
+      "reason": null
+    },
+    {
+      "sequence": 233,
+      "disposition": "catalog-reviewed",
+      "catalogId": "minivv-dsh-agent-skills",
+      "reason": null
+    },
+    {
+      "sequence": 235,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mr-mihu-dsh-dbhub-live",
+      "reason": null
+    },
+    {
+      "sequence": 236,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mrywwww-dsh-paper-daily",
+      "reason": null
+    },
+    {
+      "sequence": 237,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nanshanzhaoji-dsh-download-progress",
+      "reason": null
+    },
+    {
+      "sequence": 248,
+      "disposition": "catalog-held",
+      "catalogId": "neplich-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 249,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ngk3pori-dsh-zh-cn-ui",
+      "reason": null
+    },
+    {
+      "sequence": 250,
+      "disposition": "catalog-held",
+      "catalogId": "nicklin99-dsh-ui-sidebar",
+      "reason": null
+    },
+    {
+      "sequence": 253,
+      "disposition": "catalog-held",
+      "catalogId": "nodata404-dsh-env-probe",
+      "reason": null
+    },
+    {
+      "sequence": 254,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nonewind-dsh-spend",
+      "reason": null
+    },
+    {
+      "sequence": 255,
+      "disposition": "catalog-held",
+      "catalogId": "nonmean-dsh-lan-access",
+      "reason": null
+    },
+    {
+      "sequence": 256,
+      "disposition": "catalog-held",
+      "catalogId": "ns-zzj-dsh-hos-scrcpy",
+      "reason": null
+    },
+    {
+      "sequence": 262,
+      "disposition": "catalog-reviewed",
+      "catalogId": "physicolor-harness-ui-enhancer",
+      "reason": null
+    },
+    {
+      "sequence": 263,
+      "disposition": "catalog-held",
+      "catalogId": "picgo-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 264,
+      "disposition": "catalog-held",
+      "catalogId": "proton1917-dsh-harness-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 265,
+      "disposition": "catalog-reviewed",
+      "catalogId": "qqq85-ux-dsh-cost-glance",
+      "reason": null
+    },
+    {
+      "sequence": 266,
+      "disposition": "catalog-reviewed",
+      "catalogId": "rainow-dsh-simple-wiki-memory",
+      "reason": null
+    },
+    {
+      "sequence": 267,
+      "disposition": "catalog-reviewed",
+      "catalogId": "raullenchai-rapid-mlx-dsh-provider",
+      "reason": null
+    },
+    {
+      "sequence": 269,
+      "disposition": "catalog-held",
+      "catalogId": "realmisakamikoto-dsh-skin-studio",
+      "reason": null
+    },
+    {
+      "sequence": 270,
+      "disposition": "catalog-held",
+      "catalogId": "refyon-restrict-discipline",
+      "reason": null
+    },
+    {
+      "sequence": 272,
+      "disposition": "catalog-reviewed",
+      "catalogId": "riesbri-dsh-tui",
+      "reason": null
+    },
+    {
+      "sequence": 273,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ringclaw-dsh-ringcentral",
+      "reason": null
+    },
+    {
+      "sequence": 274,
+      "disposition": "catalog-reviewed",
+      "catalogId": "rj-jiangyichen-dsh-rules",
+      "reason": null
+    },
+    {
+      "sequence": 275,
+      "disposition": "catalog-held",
+      "catalogId": "ruimin251204-dsh-plugin-surgery",
+      "reason": null
+    },
+    {
+      "sequence": 278,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sakaliolabs-dsh-code-ide",
+      "reason": null
+    },
+    {
+      "sequence": 279,
+      "disposition": "catalog-held",
+      "catalogId": "sakuraaa667-dsh-wallpaper-engine",
+      "reason": null
+    },
+    {
+      "sequence": 280,
+      "disposition": "catalog-reviewed",
+      "catalogId": "sanqi-normal-dsh-webui-market-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 281,
+      "disposition": "catalog-reviewed",
+      "catalogId": "saya-ch-dsh-mobile",
+      "reason": null
+    },
+    {
+      "sequence": 283,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shengsheng90-dsh-taskboard",
+      "reason": null
+    },
+    {
+      "sequence": 284,
+      "disposition": "catalog-held",
+      "catalogId": "shifan3-dsh-qol",
+      "reason": null
+    },
+    {
+      "sequence": 285,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shixiangyu2-dsh-siliconflow-vision",
+      "reason": null
+    },
+    {
+      "sequence": 286,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shuind-dsh-codex-harness",
+      "reason": null
+    },
+    {
+      "sequence": 287,
+      "disposition": "catalog-held",
+      "catalogId": "shuxu-zhao-dsh-image-describer",
+      "reason": null
+    },
+    {
+      "sequence": 288,
+      "disposition": "catalog-reviewed",
+      "catalogId": "simon-world-dsh-journal-monitor",
+      "reason": null
+    },
+    {
+      "sequence": 289,
+      "disposition": "catalog-held",
+      "catalogId": "sipengxie2024-dsh-memory-hermes",
+      "reason": null
+    },
+    {
+      "sequence": 290,
+      "disposition": "catalog-reviewed",
+      "catalogId": "skkjkk-dsh-usage-dashboard",
+      "reason": null
+    },
+    {
+      "sequence": 291,
+      "disposition": "catalog-reviewed",
+      "catalogId": "songoao25-dsh-plugin-guardian",
+      "reason": null
+    },
+    {
+      "sequence": 292,
+      "disposition": "catalog-reviewed",
+      "catalogId": "soren-abt-dsh-knowledge",
+      "reason": null
+    },
+    {
+      "sequence": 293,
+      "disposition": "catalog-held",
+      "catalogId": "staff-os-dsh-ragflow",
+      "reason": null
+    },
+    {
+      "sequence": 296,
+      "disposition": "catalog-held",
+      "catalogId": "studyinglx-dsh-cli",
+      "reason": null
+    },
+    {
+      "sequence": 297,
+      "disposition": "catalog-reviewed",
+      "catalogId": "superksp-dsh-theme-frieren",
+      "reason": null
+    },
+    {
+      "sequence": 300,
+      "disposition": "catalog-held",
+      "catalogId": "teaclearinkii-dsh-marketplaces-nexus",
+      "reason": null
+    },
+    {
+      "sequence": 301,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tisitan-dsh-live2d-companion",
+      "reason": null
+    },
+    {
+      "sequence": 302,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tobewin-dsh-pet-companion",
+      "reason": null
+    },
+    {
+      "sequence": 307,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tsja2001-dsh-zhipu-coding-plan",
+      "reason": null
+    },
+    {
+      "sequence": 309,
+      "disposition": "catalog-held",
+      "catalogId": "u1s1-king-dsh-live2d-mygo",
+      "reason": null
+    },
+    {
+      "sequence": 310,
+      "disposition": "catalog-held",
+      "catalogId": "uckkk-dsh-ux-writing",
+      "reason": null
+    },
+    {
+      "sequence": 311,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ullrai-dsh-mqtt",
+      "reason": null
+    },
+    {
+      "sequence": 312,
+      "disposition": "catalog-reviewed",
+      "catalogId": "v1xingyue-dsh-auth-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 313,
+      "disposition": "catalog-reviewed",
+      "catalogId": "w117c-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 314,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wanbinyu-dsh-billing",
+      "reason": null
+    },
+    {
+      "sequence": 315,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wanbinyu-dsh-plugin-git-inspect",
+      "reason": null
+    },
+    {
+      "sequence": 316,
+      "disposition": "catalog-reviewed",
+      "catalogId": "welsione-dsh-mmx-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 318,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wenzetan-dsh-llm-newapi",
+      "reason": null
+    },
+    {
+      "sequence": 326,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Scaffolding events template with placeholder package, plugin, and peer-version tokens; not a distributable plugin record."
+    },
+    {
+      "sequence": 327,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Scaffolding tool template with placeholder package, plugin, and peer-version tokens; not a distributable plugin record."
+    },
+    {
+      "sequence": 328,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Scaffolding web UI template with placeholder package, plugin, and peer-version tokens; not a distributable plugin record."
+    },
+    {
+      "sequence": 329,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 330,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 331,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 332,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 333,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 334,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH Suite component represented by the repository's canonical all-in-one catalog record."
+    },
+    {
+      "sequence": 341,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wingsky-1-dsh-plugin-hub",
+      "reason": null
+    },
+    {
+      "sequence": 344,
+      "disposition": "catalog-reviewed",
+      "catalogId": "winliyou-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 348,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component omitted under the one-record-per-repository catalog boundary; the package also lacks a package license declaration, while dsh-dock is the evidence-complete representative."
+    },
+    {
+      "sequence": 349,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wntediluvian-dsh-dock",
+      "reason": null
+    },
+    {
+      "sequence": 350,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wssfk12138-dsh-damage-pulse",
+      "reason": null
+    },
+    {
+      "sequence": 351,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wycto-dsh-model-balance",
+      "reason": null
+    },
+    {
+      "sequence": 352,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xgone-dsh-remote",
+      "reason": null
+    },
+    {
+      "sequence": 355,
+      "disposition": "catalog-held",
+      "catalogId": "xiajiajun516-dsh-config-manager",
+      "reason": null
+    },
+    {
+      "sequence": 356,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xiajingchun-dsh-nebula",
+      "reason": null
+    },
+    {
+      "sequence": 357,
+      "disposition": "catalog-held",
+      "catalogId": "xing-shuyin-dsh-ui-tools",
+      "reason": null
+    },
+    {
+      "sequence": 358,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xinyuehtx-dsh-plugin-hooks-ordering",
+      "reason": null
+    },
+    {
+      "sequence": 359,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yancey2023-dsh-fold",
+      "reason": null
+    },
+    {
+      "sequence": 360,
+      "disposition": "catalog-held",
+      "catalogId": "yauntyour-dsh-encrypt",
+      "reason": null
+    },
+    {
+      "sequence": 361,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yrn-playmaker-dsh-wallpaper-share",
+      "reason": null
+    },
+    {
+      "sequence": 362,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yu-tao-li-computer-use-win",
+      "reason": null
+    },
+    {
+      "sequence": 363,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yu-tao-li-dsh-read-image",
+      "reason": null
+    },
+    {
+      "sequence": 367,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-computer-use 0.1.0 package was built from gitHead 5bc9cdb, not this frozen monorepo commit, so its registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 368,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yucong-28-dsh-vision-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 369,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-web-pets 0.2.2 package was built from gitHead 5c1f8ed, not this frozen monorepo commit, so its registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 370,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Nested desktop-pets integration is represented by the same repository's canonical vision-bridge catalog record under the one-record-per-repository boundary."
+    },
+    {
+      "sequence": 371,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yv3507-dsh-webui-launcher",
+      "reason": null
+    },
+    {
+      "sequence": 372,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yzke-dsh-icon-theme",
+      "reason": null
+    },
+    {
+      "sequence": 373,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zalpha263-dsh-file-explorer",
+      "reason": null
+    },
+    {
+      "sequence": 374,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zbsph-dsh-j-space-warm",
+      "reason": null
+    },
+    {
+      "sequence": 375,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zenjibad-dsh-drop-any-file",
+      "reason": null
+    },
+    {
+      "sequence": 376,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zenjibad-dsh-plugin-toggle",
+      "reason": null
+    },
+    {
+      "sequence": 377,
+      "disposition": "catalog-held",
+      "catalogId": "zhengzeyong9527-droid-zzy-dsh-prompt-optimizer",
+      "reason": null
+    },
+    {
+      "sequence": 378,
+      "disposition": "catalog-held",
+      "catalogId": "zhou-yihang-dsh-usage-blance",
+      "reason": null
+    },
+    {
+      "sequence": 379,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zisekongling-deepseek-peak-blocker",
+      "reason": null
+    },
+    {
+      "sequence": 380,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-cn-boot 0.1.0 package was built from c14203e, not frozen commit 5439d6f, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 381,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-dep-audit 0.1.1 package was built from 69a4714, not frozen commit 27f6492, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 382,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-discussions-radar 0.1.0 package was built from be484f0, not frozen commit d157448, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 383,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-disk-audit 0.1.0 package was built from 43521d4, not frozen commit 4be0589, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 384,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-firstrun 0.1.0 package was built from 3e89c7f, not frozen commit c6e711f, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 385,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-llms-forge 0.1.0 package was built from 1a58b21, not frozen commit 83ef2a1, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 386,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-quality-score 0.1.2 package was built from d6cdae7, not frozen commit fdf6542, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 387,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-readme-forge 0.1.0 package was built from c53b76f, not frozen commit c932b67, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 388,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-timesheet 0.1.0 package was built from cbe98c3, not frozen commit 910f677, and exposes no registry repository mapping."
+    }
+  ]
+}

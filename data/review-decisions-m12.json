@@ -1,0 +1,343 @@
+{
+  "milestone": "M12",
+  "sourceCommit": "5f4afa34c293b0c79c16fd6a1d92baf46c11eade",
+  "reviewedAt": "2026-08-18",
+  "decisions": [
+    {
+      "sequence": 2,
+      "disposition": "catalog-reviewed",
+      "catalogId": "1052326311-dsh-plan-lattice",
+      "reason": null
+    },
+    {
+      "sequence": 6,
+      "disposition": "catalog-reviewed",
+      "catalogId": "1710782766-dsh-llm-vision",
+      "reason": null
+    },
+    {
+      "sequence": 7,
+      "disposition": "catalog-reviewed",
+      "catalogId": "2008924-dsh-progress-viz",
+      "reason": null
+    },
+    {
+      "sequence": 14,
+      "disposition": "catalog-reviewed",
+      "catalogId": "534119219-dsh-custom-provider-reasoning",
+      "reason": null
+    },
+    {
+      "sequence": 15,
+      "disposition": "catalog-held",
+      "catalogId": "6-debug-6-dsh-thinking-notifier",
+      "reason": null
+    },
+    {
+      "sequence": 17,
+      "disposition": "catalog-reviewed",
+      "catalogId": "863683348-dsh-plugin-audit",
+      "reason": null
+    },
+    {
+      "sequence": 27,
+      "disposition": "catalog-reviewed",
+      "catalogId": "afrel1024-dsh-client-ui-aqua-unofficial",
+      "reason": null
+    },
+    {
+      "sequence": 29,
+      "disposition": "catalog-reviewed",
+      "catalogId": "anywhere-labs-dsh-plugin-desktop",
+      "reason": null
+    },
+    {
+      "sequence": 31,
+      "disposition": "catalog-held",
+      "catalogId": "as1350-dsh-manager",
+      "reason": null
+    },
+    {
+      "sequence": 32,
+      "disposition": "catalog-reviewed",
+      "catalogId": "asher-2000-dsh-expert-mode",
+      "reason": null
+    },
+    {
+      "sequence": 37,
+      "disposition": "catalog-reviewed",
+      "catalogId": "bpc-oss-dsh-web-billing",
+      "reason": null
+    },
+    {
+      "sequence": 38,
+      "disposition": "catalog-held",
+      "catalogId": "br1nosense-dsh-wxauto",
+      "reason": null
+    },
+    {
+      "sequence": 39,
+      "disposition": "catalog-reviewed",
+      "catalogId": "breeze136-dsh-kb-rag",
+      "reason": null
+    },
+    {
+      "sequence": 46,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cainiao1992-dsh-codebuddy-auth",
+      "reason": null
+    },
+    {
+      "sequence": 47,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cangeng-yolo-mode",
+      "reason": null
+    },
+    {
+      "sequence": 48,
+      "disposition": "catalog-reviewed",
+      "catalogId": "caoyiwei850-dsh-client-ui-skins",
+      "reason": null
+    },
+    {
+      "sequence": 77,
+      "disposition": "catalog-reviewed",
+      "catalogId": "causebefore-dsh-pomodoro",
+      "reason": null
+    },
+    {
+      "sequence": 78,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cc19990113-dsh-plugin-codegraph",
+      "reason": null
+    },
+    {
+      "sequence": 79,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cdxdnrf-dsh-vision",
+      "reason": null
+    },
+    {
+      "sequence": 80,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cerrda-dsh-cerrda-theme",
+      "reason": null
+    },
+    {
+      "sequence": 81,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit healthy-plugin fixture under fixtures/public for dsh-gate tests, not an independently distributed plugin."
+    },
+    {
+      "sequence": 82,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chengzhi43-dsh-file",
+      "reason": null
+    },
+    {
+      "sequence": 83,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chenhw7-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 86,
+      "disposition": "catalog-reviewed",
+      "catalogId": "choi-peng-dsh-deepseek-balance",
+      "reason": null
+    },
+    {
+      "sequence": 87,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 88,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 89,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web-app core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 91,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cipher2026-dsh-deepcompute",
+      "reason": null
+    },
+    {
+      "sequence": 92,
+      "disposition": "catalog-reviewed",
+      "catalogId": "clarknu-dsh-gateway",
+      "reason": null
+    },
+    {
+      "sequence": 93,
+      "disposition": "catalog-reviewed",
+      "catalogId": "codemonkey-pine-dsh-wallpaper",
+      "reason": null
+    },
+    {
+      "sequence": 94,
+      "disposition": "catalog-reviewed",
+      "catalogId": "couldbeme-dsh-write-gate",
+      "reason": null
+    },
+    {
+      "sequence": 95,
+      "disposition": "catalog-reviewed",
+      "catalogId": "crack-time-dsh-web-ui-skin",
+      "reason": null
+    },
+    {
+      "sequence": 96,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cyanxi69-dsh-self-memory",
+      "reason": null
+    },
+    {
+      "sequence": 97,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness base core bundle inside a desktop fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 98,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness headless core bundle inside a desktop fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 99,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness web-app core bundle inside a desktop fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 100,
+      "disposition": "catalog-held",
+      "catalogId": "daoxiang0520-dsh-plugin-whu",
+      "reason": null
+    },
+    {
+      "sequence": 102,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ddrwin-dsh-channel",
+      "reason": null
+    },
+    {
+      "sequence": 103,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 104,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 105,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 106,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 107,
+      "disposition": "catalog-held",
+      "catalogId": "deepseek-harness-evoforge-dsh-evoforge",
+      "reason": null
+    },
+    {
+      "sequence": 108,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 109,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 110,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 111,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 112,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 113,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 114,
+      "disposition": "catalog-reviewed",
+      "catalogId": "deronghe-dsh-plugin-desktop-installer",
+      "reason": null
+    },
+    {
+      "sequence": 115,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dianranqian-handcraft-mode",
+      "reason": null
+    },
+    {
+      "sequence": 116,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dickpy-dsh-cloud-sync",
+      "reason": null
+    },
+    {
+      "sequence": 117,
+      "disposition": "catalog-held",
+      "catalogId": "dingminhua-dsh-subagent-default-model",
+      "reason": null
+    },
+    {
+      "sequence": 118,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored @aaravarr/dsh-subagent-max package is not owned by this candidate repository, and npm metadata does not map that package identity to the frozen source."
+    },
+    {
+      "sequence": 119,
+      "disposition": "catalog-held",
+      "catalogId": "djangoailab-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 120,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second manual bundle in the DjangoAILab plugin monorepo, represented by the canonical repository-level held record."
+    }
+  ]
+}

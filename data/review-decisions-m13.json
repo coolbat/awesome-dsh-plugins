@@ -1,0 +1,541 @@
+{
+  "milestone": "M13",
+  "sourceCommit": "5f4afa34c293b0c79c16fd6a1d92baf46c11eade",
+  "reviewedAt": "2026-08-19",
+  "decisions": [
+    {
+      "sequence": 121,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-notifier manifest maps to THEWOLFWALKER/dsh-notifier rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 122,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Additional manual bundle represented by the existing canonical DjangoAILab repository-level held record."
+    },
+    {
+      "sequence": 123,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-a bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 124,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-b bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 125,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-carrier bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 126,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-clash bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 127,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private fixture-cross bundle under tests/web/fixtures for dsh-market end-to-end tests."
+    },
+    {
+      "sequence": 129,
+      "disposition": "catalog-reviewed",
+      "catalogId": "e2mcc-dsh-popout-sidebar",
+      "reason": null
+    },
+    {
+      "sequence": 130,
+      "disposition": "catalog-held",
+      "catalogId": "edtechools-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 132,
+      "disposition": "catalog-reviewed",
+      "catalogId": "edusrez-dsh-tool-web-enhanced",
+      "reason": null
+    },
+    {
+      "sequence": 133,
+      "disposition": "catalog-reviewed",
+      "catalogId": "elementor-i-dsh-agentmemory",
+      "reason": null
+    },
+    {
+      "sequence": 134,
+      "disposition": "catalog-reviewed",
+      "catalogId": "errorlst-dsh-notes",
+      "reason": null
+    },
+    {
+      "sequence": 135,
+      "disposition": "catalog-reviewed",
+      "catalogId": "feibi-mochi-deepseek-harness-wallet",
+      "reason": null
+    },
+    {
+      "sequence": 137,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fishquito7-dsh-skill-mcp-panel",
+      "reason": null
+    },
+    {
+      "sequence": 140,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fmlin-linkhealth-intake-triage",
+      "reason": null
+    },
+    {
+      "sequence": 141,
+      "disposition": "catalog-reviewed",
+      "catalogId": "freehul-dsh-sgme",
+      "reason": null
+    },
+    {
+      "sequence": 142,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository-root Git wrapper is represented by the canonical nested dsh-sgme distribution record."
+    },
+    {
+      "sequence": 143,
+      "disposition": "catalog-held",
+      "catalogId": "gameswu-dsh-cross-collaboration",
+      "reason": null
+    },
+    {
+      "sequence": 144,
+      "disposition": "catalog-reviewed",
+      "catalogId": "geml-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 147,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ghjivhidd-dsh-plugin-usage",
+      "reason": null
+    },
+    {
+      "sequence": 148,
+      "disposition": "catalog-reviewed",
+      "catalogId": "gityanglijun-dsh-ui-crystal",
+      "reason": null
+    },
+    {
+      "sequence": 149,
+      "disposition": "catalog-reviewed",
+      "catalogId": "gmh13552-dsh-timer-scheduler",
+      "reason": null
+    },
+    {
+      "sequence": 150,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-usage-dashboard package points to 1690834643/dsh-usage-dashboard rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 151,
+      "disposition": "catalog-reviewed",
+      "catalogId": "graffiti-yh-dsh-notion-manager",
+      "reason": null
+    },
+    {
+      "sequence": 152,
+      "disposition": "catalog-reviewed",
+      "catalogId": "haochi72-dsh-auto-continue-429",
+      "reason": null
+    },
+    {
+      "sequence": 154,
+      "disposition": "catalog-held",
+      "catalogId": "hhj2714-dsh-whale-btn",
+      "reason": null
+    },
+    {
+      "sequence": 155,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private w3-local-bundle fixture under scripts/fixtures for dshpack tests."
+    },
+    {
+      "sequence": 156,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hinem66-dsh-fact-gate",
+      "reason": null
+    },
+    {
+      "sequence": 158,
+      "disposition": "catalog-held",
+      "catalogId": "honghudavy-dsh-plugins-4u",
+      "reason": null
+    },
+    {
+      "sequence": 162,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public deepcode package points to fanlila/dcode rather than this frozen TUI repository."
+    },
+    {
+      "sequence": 165,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 166,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 167,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 168,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 169,
+      "disposition": "catalog-held",
+      "catalogId": "huangrx6-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 170,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": "imsai-sh-dsh-1024store",
+      "reason": "Newer component in a repository already represented by the canonical DSH 1024 Store catalog record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 171,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ipromise2021-dsh-omc-tui",
+      "reason": null
+    },
+    {
+      "sequence": 173,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-monitor package points to AbnerAI/dsh-monitor rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 178,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jasonyoungguang-workspace-token-record",
+      "reason": null
+    },
+    {
+      "sequence": 179,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jay-r-j-dsh-rpg-workstation",
+      "reason": null
+    },
+    {
+      "sequence": 180,
+      "disposition": "catalog-held",
+      "catalogId": "jeffcwj-dsh-preset-switcher",
+      "reason": null
+    },
+    {
+      "sequence": 181,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jemius-dsh-session-admin",
+      "reason": null
+    },
+    {
+      "sequence": 182,
+      "disposition": "catalog-held",
+      "catalogId": "jianxx-dsh-cc-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 187,
+      "disposition": "catalog-held",
+      "catalogId": "justgenius-s-dsh-plugs",
+      "reason": null
+    },
+    {
+      "sequence": 188,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH-Plugs suite component represented by the canonical dsh-codex repository record."
+    },
+    {
+      "sequence": 189,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH-Plugs suite component represented by the canonical dsh-codex repository record."
+    },
+    {
+      "sequence": 190,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH-Plugs suite component represented by the canonical dsh-codex repository record."
+    },
+    {
+      "sequence": 191,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH-Plugs suite component represented by the canonical dsh-codex repository record."
+    },
+    {
+      "sequence": 192,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "DSH-Plugs suite component represented by the canonical dsh-codex repository record."
+    },
+    {
+      "sequence": 194,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kagura-agent-dsh-memes",
+      "reason": null
+    },
+    {
+      "sequence": 195,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kaiji-z-dsh-plugin-lookatstudy",
+      "reason": null
+    },
+    {
+      "sequence": 196,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored dsh-model-reasoning manifest points to the dedicated karoc/dsh-model-reasoning repository rather than this desktop repository."
+    },
+    {
+      "sequence": 197,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second vendored copy of the same source-conflicting dsh-model-reasoning package in this desktop repository."
+    },
+    {
+      "sequence": 198,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kcnyu-clawock-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 199,
+      "disposition": "catalog-held",
+      "catalogId": "kiefeng-dsh-lan-memory",
+      "reason": null
+    },
+    {
+      "sequence": 200,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kinomotomio-dsh-context-lens",
+      "reason": null
+    },
+    {
+      "sequence": 201,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kongjianguan-dsh-tokstat",
+      "reason": null
+    },
+    {
+      "sequence": 202,
+      "disposition": "catalog-held",
+      "catalogId": "kongshan-zhuyu-dsh-balance-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 204,
+      "disposition": "catalog-held",
+      "catalogId": "leliln52-dsh-qqbot",
+      "reason": null
+    },
+    {
+      "sequence": 205,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lemonxi-dsh-client-ui-android",
+      "reason": null
+    },
+    {
+      "sequence": 207,
+      "disposition": "catalog-reviewed",
+      "catalogId": "leshm0321-dsh-plugin-local-agent-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 208,
+      "disposition": "catalog-held",
+      "catalogId": "liceses-dsh-freebuff",
+      "reason": null
+    },
+    {
+      "sequence": 210,
+      "disposition": "catalog-reviewed",
+      "catalogId": "little-star888-dsh-pelican",
+      "reason": null
+    },
+    {
+      "sequence": 211,
+      "disposition": "catalog-held",
+      "catalogId": "liu-za-81-dsh-theme-firefly",
+      "reason": null
+    },
+    {
+      "sequence": 212,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lstalu-dsh-bundle-dedup-guard",
+      "reason": null
+    },
+    {
+      "sequence": 213,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lusblead-dsh-kingdom",
+      "reason": null
+    },
+    {
+      "sequence": 214,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mangshe3-0-dsh-plugin-guard",
+      "reason": null
+    },
+    {
+      "sequence": 215,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-store package points to yunhuantian/dsh-plugin-store rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 217,
+      "disposition": "catalog-reviewed",
+      "catalogId": "meowtnter-catalog-capabilities-zh",
+      "reason": null
+    },
+    {
+      "sequence": 218,
+      "disposition": "catalog-reviewed",
+      "catalogId": "michengai-dsh-agency-agents",
+      "reason": null
+    },
+    {
+      "sequence": 219,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit clean DSH plugin fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 220,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-compatible fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 221,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-incompatible fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 222,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-unknown fixture with a postinstall hook under examples/fixtures for upstream-radar; it was not executed."
+    },
+    {
+      "sequence": 223,
+      "disposition": "catalog-reviewed",
+      "catalogId": "minivv-dsh-agent-skills",
+      "reason": null
+    },
+    {
+      "sequence": 225,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mr-mihu-dsh-dbhub-live",
+      "reason": null
+    },
+    {
+      "sequence": 226,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nanshanzhaoji-dsh-download-progress",
+      "reason": null
+    },
+    {
+      "sequence": 227,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 228,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 229,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 230,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 231,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 232,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 233,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 234,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 235,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 236,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 237,
+      "disposition": "catalog-held",
+      "catalogId": "neplich-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 238,
+      "disposition": "catalog-held",
+      "catalogId": "nicklin99-dsh-ui-sidebar",
+      "reason": null
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "milestone": "M8",
+  "sourceCommit": "e5fb3f0ab8186d4d25974d1b0e88a2eab16e76f0",
+  "reviewedAt": "2026-08-18",
+  "decisions": [
+    {
+      "sequence": 72,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cerrda-dsh-cerrda-theme",
+      "reason": null
+    },
+    {
+      "sequence": 73,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chengzhi43-dsh-file",
+      "reason": null
+    },
+    {
+      "sequence": 74,
+      "disposition": "catalog-reviewed",
+      "catalogId": "chenhw7-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 77,
+      "disposition": "catalog-reviewed",
+      "catalogId": "choi-peng-dsh-deepseek-balance",
+      "reason": null
+    },
+    {
+      "sequence": 78,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-code-memory package points to dsh-tui-ecosystem/dsh-code-memory rather than this fixed candidate repository, which also lacks a repository license file."
+    },
+    {
+      "sequence": 79,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cipher2026-dsh-deepcompute",
+      "reason": null
+    },
+    {
+      "sequence": 80,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cyanxi69-dsh-self-memory",
+      "reason": null
+    },
+    {
+      "sequence": 81,
+      "disposition": "catalog-held",
+      "catalogId": "daoxiang0520-dsh-plugin-whu",
+      "reason": null
+    },
+    {
+      "sequence": 83,
+      "disposition": "catalog-reviewed",
+      "catalogId": "deronghe-dsh-plugin-desktop-installer",
+      "reason": null
+    },
+    {
+      "sequence": 84,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dickpy-dsh-cloud-sync",
+      "reason": null
+    },
+    {
+      "sequence": 85,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit lint-pass fixture under test/fixtures in the DSH App checker, not a distributable plugin."
+    },
+    {
+      "sequence": 86,
+      "disposition": "catalog-held",
+      "catalogId": "edtechools-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 87,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second bundle in the edtechools plugin monorepo, represented by the canonical repository-level held record."
+    },
+    {
+      "sequence": 88,
+      "disposition": "catalog-reviewed",
+      "catalogId": "elementor-i-dsh-agentmemory",
+      "reason": null
+    },
+    {
+      "sequence": 89,
+      "disposition": "catalog-reviewed",
+      "catalogId": "feibi-mochi-deepseek-harness-wallet",
+      "reason": null
+    },
+    {
+      "sequence": 90,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Nested desktop_hello demonstration bundle inside a Qt desktop wrapper repository, not its independently distributed product identity."
+    },
+    {
+      "sequence": 91,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-cdi-plugin package points to the dedicated fmlin0429712024/dsh-cdi-plugin repository rather than this platform copy."
+    },
+    {
+      "sequence": 92,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Copied intake-triage bundle in the platform repository is represented by its canonical upstream linkhealth-triage repository."
+    },
+    {
+      "sequence": 93,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fmlin-linkhealth-intake-triage",
+      "reason": null
+    },
+    {
+      "sequence": 94,
+      "disposition": "catalog-held",
+      "catalogId": "gameswu-dsh-cross-collaboration",
+      "reason": null
+    },
+    {
+      "sequence": 95,
+      "disposition": "catalog-reviewed",
+      "catalogId": "geml-dsh-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 98,
+      "disposition": "catalog-reviewed",
+      "catalogId": "gmh13552-dsh-timer-scheduler",
+      "reason": null
+    },
+    {
+      "sequence": 99,
+      "disposition": "catalog-reviewed",
+      "catalogId": "graffiti-yh-dsh-notion-manager",
+      "reason": null
+    },
+    {
+      "sequence": 101,
+      "disposition": "catalog-held",
+      "catalogId": "hhj2714-dsh-whale-btn",
+      "reason": null
+    },
+    {
+      "sequence": 103,
+      "disposition": "catalog-held",
+      "catalogId": "honghudavy-dsh-plugins-4u",
+      "reason": null
+    },
+    {
+      "sequence": 104,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Vision component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 105,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Wallpaper component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 106,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WeChat component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 108,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Toolkit repository is already represented by the canonical DSH Nudge catalog record."
+    },
+    {
+      "sequence": 109,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ipromise2021-dsh-omc-tui",
+      "reason": null
+    },
+    {
+      "sequence": 110,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private mock provider under test/mock-bundle for credential-free TUI testing, not a distributable plugin."
+    },
+    {
+      "sequence": 115,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jay-r-j-dsh-rpg-workstation",
+      "reason": null
+    },
+    {
+      "sequence": 116,
+      "disposition": "catalog-held",
+      "catalogId": "jeffcwj-dsh-preset-switcher",
+      "reason": null
+    },
+    {
+      "sequence": 117,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jemius-dsh-session-admin",
+      "reason": null
+    },
+    {
+      "sequence": 118,
+      "disposition": "catalog-held",
+      "catalogId": "jianxx-dsh-cc-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 119,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second profile bundle in the same Claude Code parity monorepo, represented by the repository-level held record."
+    },
+    {
+      "sequence": 120,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness base core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 121,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness headless core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 122,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness web-app core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 123,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-telegram-bridge package points to Joycate/dsh-telegram-bridge rather than this fixed JxaMe source."
+    },
+    {
+      "sequence": 124,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kagura-agent-dsh-memes",
+      "reason": null
+    },
+    {
+      "sequence": 125,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kaiji-z-dsh-plugin-lookatstudy",
+      "reason": null
+    },
+    {
+      "sequence": 128,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kcnyu-clawock-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 129,
+      "disposition": "catalog-held",
+      "catalogId": "kiefeng-dsh-lan-memory",
+      "reason": null
+    },
+    {
+      "sequence": 130,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The fixed archive declares lib/index.js and lib/client.js but contains neither implementation file, so the bundle is structurally incomplete."
+    },
+    {
+      "sequence": 131,
+      "disposition": "catalog-held",
+      "catalogId": "leliln52-dsh-qqbot",
+      "reason": null
+    },
+    {
+      "sequence": 132,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lemonxi-dsh-client-ui-android",
+      "reason": null
+    },
+    {
+      "sequence": 134,
+      "disposition": "catalog-held",
+      "catalogId": "liceses-dsh-freebuff",
+      "reason": null
+    },
+    {
+      "sequence": 136,
+      "disposition": "catalog-held",
+      "catalogId": "liu-za-81-dsh-theme-firefly",
+      "reason": null
+    },
+    {
+      "sequence": 137,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-codex-pet package belongs to skr311/dsh-codex-pet; this repository documents a GitHub-only package with the same install name."
+    },
+    {
+      "sequence": 138,
+      "disposition": "catalog-reviewed",
+      "catalogId": "meowtnter-catalog-capabilities-zh",
+      "reason": null
+    },
+    {
+      "sequence": 139,
+      "disposition": "catalog-reviewed",
+      "catalogId": "michengai-dsh-agency-agents",
+      "reason": null
+    }
+  ]
+}
