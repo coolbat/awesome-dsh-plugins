@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 401);
+  assert.equal(plugins.length, 451);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 518,
-    reviewed: 401,
-    held: 116,
+    total: 606,
+    reviewed: 451,
+    held: 154,
     excluded: 1,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 518);
+  assert.equal(getEvidenceRecords().length, 606);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {

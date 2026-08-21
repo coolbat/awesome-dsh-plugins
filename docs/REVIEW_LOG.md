@@ -105,3 +105,36 @@ volatile and do not establish trust, compatibility, or installability.
   and 1,048 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-08-21 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `84c847ffc43128a269ea6b51c4ef6a55bb41e253`, generated at
+  `2026-08-20T19:49:11.941Z`.
+- Queue: 928 structural leads: 489 already listed, 5 discovery-held, and 434
+  ready for review. Every ready record used a full 40-character commit.
+- Increment: 164 records required new evidence: 128 new keys and 36 keys whose
+  fixed commit changed. The other 270 records reused only exact key-and-commit
+  history.
+- Decisions for the 164-record increment: 50 catalog-reviewed, 38
+  catalog-held, 39 duplicate or superseded, 9 example/fixture/template, 4
+  non-plugin packages, 22 source conflicts, and 2 unavailable. No records
+  remain pending.
+- Catalog after review: 606 repository-unique records: 451 reviewed, 154 held,
+  and 1 excluded.
+- Discovery health: the latest run was partial with 60 repositories observed,
+  33 bundle manifests found, and two oversized GitHub responses; valid results
+  were retained, but discovery completeness is not claimed and the success
+  watermark remains `2026-08-20T14:03:04.378Z`.
+- Evidence boundary: fixed manifests, same-commit patches, license and README
+  files, repository metadata, npm version metadata, lifecycle declarations,
+  DSH peer ranges, and capability/risk signals were read statically. No
+  candidate package, hook, plugin, candidate test, installer, binary, browser,
+  server, Python environment, MCP server, native helper, or candidate process
+  was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 37 tests
+  and 1,224 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
