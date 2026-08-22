@@ -1,13 +1,25 @@
 {
   "schemaVersion": 1,
-  "mode": null,
-  "observedAt": null,
-  "partial": false,
-  "queries": [],
+  "mode": "incremental",
+  "observedAt": "2026-08-22T19:40:08.508Z",
+  "partial": true,
+  "queries": [
+    "topic:dsh-plugin pushed:>=2026-08-20",
+    "topic:dsh-external pushed:>=2026-08-20",
+    "\"DeepSeek Harness\" plugin in:name,description,readme pushed:>=2026-08-20",
+    "\"dsh.bundle.patch\" in:readme pushed:>=2026-08-20",
+    "deepseek-harness in:name,description,readme pushed:>=2026-08-20"
+  ],
   "summary": {
-    "repositoriesObserved": 0,
-    "bundleManifestsFound": 0,
-    "errors": 0
+    "repositoriesObserved": 60,
+    "bundleManifestsFound": 51,
+    "errors": 1
   },
-  "errors": []
+  "errors": [
+    {
+      "query": null,
+      "repository": "steveseguin/b70-optimization-lab",
+      "message": "GithubRequestError: GitHub response exceeded 5000000 bytes."
+    }
+  ]
 }
