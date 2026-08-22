@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "snapshot": {
-    "reviewedAt": "2026-08-21",
+    "reviewedAt": "2026-08-22",
     "dshContract": {
       "repository": "deepseek-ai/deepseek-harness",
       "commit": "47f943859bef60e4160492346772ded9b24f765a",
@@ -39,7 +39,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["nested-bundle", "filesystem-skill", "dynamic-yaml"],
+      "signals": [
+        "nested-bundle",
+        "filesystem-skill",
+        "dynamic-yaml"
+      ],
       "noteEn": "Native structure confirmed in a nested package; runtime compatibility was not tested.",
       "noteZh": "已确认嵌套包中的原生结构；未做运行兼容性测试。"
     },
@@ -60,7 +64,13 @@
       "packageLicense": "Apache-2.0",
       "compatibility": "unknown",
       "lifecycle": "prepare",
-      "signals": ["aggregate-scope", "terminal", "ssh", "git", "native-build"],
+      "signals": [
+        "aggregate-scope",
+        "terminal",
+        "ssh",
+        "git",
+        "native-build"
+      ],
       "noteEn": "Broad aggregate scope and a prepare build require elevated review before use.",
       "noteZh": "聚合范围很广且包含 prepare 构建，使用前需要更高强度的审查。"
     },
@@ -81,7 +91,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "prepublishOnly",
-      "signals": ["external-network", "credentials", "external-installer"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "external-installer"
+      ],
       "noteEn": "External vision engines and credentials are capability facts, not a safety judgment.",
       "noteZh": "外部视觉引擎与凭据属于能力事实，不代表安全性判断。"
     },
@@ -102,7 +116,10 @@
       "packageLicense": "unknown",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["filesystem-skill", "missing-package-license"],
+      "signals": [
+        "filesystem-skill",
+        "missing-package-license"
+      ],
       "noteEn": "Repository license is MIT; the fixed package manifest has no license field.",
       "noteZh": "仓库许可证为 MIT；固定提交的包 manifest 未声明 license 字段。"
     },
@@ -149,7 +166,12 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "prepack",
-      "signals": ["browser", "subprocess", "credentials", "python-environment"],
+      "signals": [
+        "browser",
+        "subprocess",
+        "credentials",
+        "python-environment"
+      ],
       "noteEn": "High-privilege runtime preparation is visible; compatibility requires a separate check.",
       "noteZh": "源码显示高权限运行准备；兼容性仍需单独核验。"
     },
@@ -224,7 +246,11 @@
       "packageLicense": "MIT",
       "compatibility": "behind-baseline",
       "lifecycle": "prepublishOnly",
-      "signals": ["subprocess", "filesystem-write", "stale-peer-range"],
+      "signals": [
+        "subprocess",
+        "filesystem-write",
+        "stale-peer-range"
+      ],
       "noteEn": "Held because most declared DSH peer ranges target rc.1 rather than the rc.6 review baseline.",
       "noteZh": "大多数 DSH peer range 仍指向 rc.1，落后于 rc.6 核验基线，因此暂缓。"
     },
@@ -245,7 +271,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["workspace-read", "data-disclosure"],
+      "signals": [
+        "workspace-read",
+        "data-disclosure"
+      ],
       "noteEn": "Workspace contents can be attached to prompts; users should review disclosure boundaries.",
       "noteZh": "工作区内容可能被附加到提示词，需审查数据披露边界。"
     },
@@ -291,7 +320,11 @@
       "packageLicense": "BSD-3-Clause",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["github-only", "dynamic-content", "sandbox"],
+      "signals": [
+        "github-only",
+        "dynamic-content",
+        "sandbox"
+      ],
       "noteEn": "The package is private; only GitHub-source evidence was observed.",
       "noteZh": "包标记为 private；目前只观察到 GitHub 源安装证据。"
     },
@@ -338,7 +371,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["missing-bundle", "private-package", "external-ai"],
+      "signals": [
+        "missing-bundle",
+        "private-package",
+        "external-ai"
+      ],
       "noteEn": "Held because dsh.client is present but dsh.bundle and a referenced patch are absent.",
       "noteZh": "存在 dsh.client，但缺少 dsh.bundle 与引用 patch，因此暂缓。"
     },
@@ -359,7 +396,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["persistent-memory"],
+      "signals": [
+        "persistent-memory"
+      ],
       "noteEn": "Manifest declares DSH tools rc.6 peers; runtime compatibility was not tested.",
       "noteZh": "manifest 声明 DSH tools rc.6 peer；未做运行兼容性测试。"
     },
@@ -380,7 +419,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials"],
+      "signals": [
+        "external-network",
+        "credentials"
+      ],
       "noteEn": "DSH peers declare rc.6 while the Cordis range remains rc.1; runtime was not tested.",
       "noteZh": "DSH peer 声明 rc.6，但 Cordis range 仍为 rc.1；未做运行测试。"
     },
@@ -401,7 +443,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["interactive-content"],
+      "signals": [
+        "interactive-content"
+      ],
       "noteEn": "Exact rc.6 DSH peers were declared; runtime compatibility was not tested.",
       "noteZh": "声明了精确的 DSH rc.6 peer；未做运行兼容性测试。"
     },
@@ -422,7 +466,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "prepublishOnly",
-      "signals": ["file-upload", "filesystem-write", "document-parsing"],
+      "signals": [
+        "file-upload",
+        "filesystem-write",
+        "document-parsing"
+      ],
       "noteEn": "DSH peers declare rc.6 while Cordis is broad; repository license detection was unavailable.",
       "noteZh": "DSH peer 声明 rc.6，Cordis range 较宽；仓库许可证检测结果未知。"
     },
@@ -443,7 +491,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "prepublishOnly",
-      "signals": ["file-upload", "filesystem-write", "document-parsing"],
+      "signals": [
+        "file-upload",
+        "filesystem-write",
+        "document-parsing"
+      ],
       "noteEn": "DSH peers declare rc.6 while Cordis is broad; runtime compatibility was not tested.",
       "noteZh": "DSH peer 声明 rc.6，Cordis range 较宽；未做运行兼容性测试。"
     },
@@ -464,7 +516,9 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["permission-control"],
+      "signals": [
+        "permission-control"
+      ],
       "noteEn": "Only a Cordis peer is declared, so DSH compatibility remains unknown.",
       "noteZh": "仅声明 Cordis peer，因此 DSH 兼容性仍未知。"
     },
@@ -485,7 +539,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["permission-control", "llm-call"],
+      "signals": [
+        "permission-control",
+        "llm-call"
+      ],
       "noteEn": "Broad peer ranges leave compatibility unknown; repository license detection was unavailable.",
       "noteZh": "peer range 较宽，兼容性未知；仓库许可证检测结果不可用。"
     },
@@ -506,7 +563,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["filesystem", "cross-platform-paths"],
+      "signals": [
+        "filesystem",
+        "cross-platform-paths"
+      ],
       "noteEn": "Broad DSH peer ranges leave runtime compatibility unknown.",
       "noteZh": "DSH peer range 较宽，运行兼容性仍未知。"
     },
@@ -527,7 +587,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "prepack",
-      "signals": ["git", "workspace-read"],
+      "signals": [
+        "git",
+        "workspace-read"
+      ],
       "noteEn": "Exact rc.6 DSH peers were declared; runtime compatibility was not tested.",
       "noteZh": "声明了精确的 DSH rc.6 peer；未做运行兼容性测试。"
     },
@@ -548,7 +611,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "prepublishOnly",
-      "signals": ["tools", "skills"],
+      "signals": [
+        "tools",
+        "skills"
+      ],
       "noteEn": "DSH skill and tools peers declare rc.6; runtime compatibility was not tested.",
       "noteZh": "DSH skill 与 tools peer 声明 rc.6；未做运行兼容性测试。"
     },
@@ -569,7 +635,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "prepack",
-      "signals": ["headless", "evaluation"],
+      "signals": [
+        "headless",
+        "evaluation"
+      ],
       "noteEn": "A README owner spelling defect was observed; only a broad Cordis peer is declared.",
       "noteZh": "README 中存在 owner 拼写缺陷，且仅声明宽泛的 Cordis peer。"
     },
@@ -590,7 +659,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "prepare",
-      "signals": ["external-network", "messaging", "source-build"],
+      "signals": [
+        "external-network",
+        "messaging",
+        "source-build"
+      ],
       "noteEn": "A prepare build can execute on source install; rc.6 support is documented but not declared as peers.",
       "noteZh": "源码安装可能执行 prepare 构建；README 声称支持 rc.6，但 manifest 未声明相关 peer。"
     },
@@ -611,7 +684,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["identity-mismatch", "authentication", "private-package"],
+      "signals": [
+        "identity-mismatch",
+        "authentication",
+        "private-package"
+      ],
       "noteEn": "Held until dsh-github-login and @deepseek-ai/dsh-github-login are aligned and rechecked.",
       "noteZh": "需先统一 dsh-github-login 与 @deepseek-ai/dsh-github-login 的身份并复核，故暂缓。"
     },
@@ -632,7 +709,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["mcp", "subprocess", "external-tools"],
+      "signals": [
+        "mcp",
+        "subprocess",
+        "external-tools"
+      ],
       "noteEn": "Web bundle structure was confirmed; the README records a separate headless dependency limitation.",
       "noteZh": "已确认 Web bundle 结构；README 另有 headless 依赖限制记录。"
     },
@@ -653,7 +734,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "prepack",
-      "signals": ["computer-use", "browser", "native-artifacts"],
+      "signals": [
+        "computer-use",
+        "browser",
+        "native-artifacts"
+      ],
       "noteEn": "Exact rc.6 DSH peers were declared; broad computer control remains a high-trust capability.",
       "noteZh": "声明了精确的 DSH rc.6 peer；广泛电脑控制仍属于高信任能力。"
     },
@@ -674,7 +759,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["session-data", "filesystem-write"],
+      "signals": [
+        "session-data",
+        "filesystem-write"
+      ],
       "noteEn": "Command, session, and tools peers declare rc.6; exported data may contain sensitive context.",
       "noteZh": "command、session 与 tools peer 声明 rc.6；导出数据可能包含敏感上下文。"
     },
@@ -695,7 +783,10 @@
       "packageLicense": "MIT",
       "compatibility": "behind-baseline",
       "lifecycle": "prepack",
-      "signals": ["external-network", "stale-peer-range"],
+      "signals": [
+        "external-network",
+        "stale-peer-range"
+      ],
       "noteEn": "Held because @deepseek-ai/dsh-tools still targets rc.1 rather than the rc.6 review baseline.",
       "noteZh": "@deepseek-ai/dsh-tools 仍指向 rc.1，落后于 rc.6 核验基线，因此暂缓。"
     },
@@ -716,7 +807,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["skills", "git-source"],
+      "signals": [
+        "skills",
+        "git-source"
+      ],
       "noteEn": "No DSH peers are declared, so compatibility remains unknown.",
       "noteZh": "未声明 DSH peer，因此兼容性仍未知。"
     },
@@ -737,7 +831,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "prepack",
-      "signals": ["external-application", "subprocess", "setup-command"],
+      "signals": [
+        "external-application",
+        "subprocess",
+        "setup-command"
+      ],
       "noteEn": "DSH tools rc.6 is declared; Blender execution and setup were not tested.",
       "noteZh": "声明了 DSH tools rc.6；未执行 Blender 或其安装设置。"
     },
@@ -758,7 +856,10 @@
       "packageLicense": "MIT",
       "compatibility": "unsupported",
       "lifecycle": "prepack",
-      "signals": ["deprecated-package", "author-retracted-support"],
+      "signals": [
+        "deprecated-package",
+        "author-retracted-support"
+      ],
       "noteEn": "Excluded because the author says DSH installation is not recommended and npm versions are deprecated.",
       "noteZh": "作者明确不建议安装到 DSH，且 npm 版本已弃用，因此排除。"
     },
@@ -806,7 +907,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "prepack",
-      "signals": ["client-injection", "conversation-data"],
+      "signals": [
+        "client-injection",
+        "conversation-data"
+      ],
       "noteEn": "The Web client injection and native bundle row are fixed-source confirmed; no DSH package peer range establishes runtime compatibility.",
       "noteZh": "已在固定源码确认 Web 客户端注入与原生 bundle 行；没有 DSH 包 peer 范围可用于确认运行兼容性。"
     },
@@ -827,7 +931,11 @@
       "packageLicense": "Apache-2.0",
       "compatibility": "unknown",
       "lifecycle": "prepare",
-      "signals": ["session-data", "client-injection", "browser"],
+      "signals": [
+        "session-data",
+        "client-injection",
+        "browser"
+      ],
       "noteEn": "The host/client bundle structure is confirmed; the prepare hook invokes Husky and the package declares no DSH peer range.",
       "noteZh": "已确认 host/client bundle 结构；prepare hook 会调用 Husky，且包未声明 DSH peer 范围。"
     },
@@ -901,7 +1009,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["filesystem-write", "persistent-data", "client-injection"],
+      "signals": [
+        "filesystem-write",
+        "persistent-data",
+        "client-injection"
+      ],
       "noteEn": "The host and Web client faces are structurally confirmed; wildcard DSH peers and persistent note writes were not runtime-tested.",
       "noteZh": "已确认 host 与 Web client 双端结构；未运行测试通配 DSH peer 与持久化便签写入。"
     },
@@ -1001,7 +1113,11 @@
       "packageLicense": "unknown",
       "compatibility": "declared-rc6",
       "lifecycle": "prepare",
-      "signals": ["llm-routing", "client-injection", "prepare-build"],
+      "signals": [
+        "llm-routing",
+        "client-injection",
+        "prepare-build"
+      ],
       "noteEn": "The DSH peers declare rc.6 and the fallback row is fixed-source confirmed; prepare builds code and provider switching was not runtime-tested.",
       "noteZh": "DSH peer 声明 rc.6 且已在固定源码确认回退行；prepare 会构建代码，未运行测试提供商切换。"
     },
@@ -1049,7 +1165,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["web-search", "external-network", "git-source"],
+      "signals": [
+        "web-search",
+        "external-network",
+        "git-source"
+      ],
       "noteEn": "The fixed monorepo subdirectory and patch are confirmed; the author documents clone-plus-local-path installation, and the repository has no detected license file.",
       "noteZh": "已确认固定提交中的单仓库子目录与 patch；作者记录的是克隆后本地路径安装，仓库未检测到许可证文件。"
     },
@@ -1124,7 +1244,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["runtime-context", "prompt-injection", "plugin-inventory"],
+      "signals": [
+        "runtime-context",
+        "prompt-injection",
+        "plugin-inventory"
+      ],
       "noteEn": "The root bundle is distinct from the repository's demo fixture; no DSH peer range establishes runtime compatibility.",
       "noteZh": "根 bundle 已与仓库中的演示夹具区分；没有 DSH peer 范围可用于确认运行兼容性。"
     },
@@ -1493,7 +1617,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["process-exit", "web-route", "client-injection"],
+      "signals": [
+        "process-exit",
+        "web-route",
+        "client-injection"
+      ],
       "noteEn": "The fixed host source registers a shutdown route with appExit, process.exit, and SIGTERM fallbacks; the repository has no detected license file and shutdown was not executed.",
       "noteZh": "固定宿主源码注册了带 appExit、process.exit 与 SIGTERM 回退的关闭路由；仓库未检测到许可证文件，且未执行关闭。"
     },
@@ -1597,7 +1725,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection", "theme", "browser-storage"],
+      "signals": [
+        "client-injection",
+        "theme",
+        "browser-storage"
+      ],
       "noteEn": "GitHub-source installation is documented and the client code injects theme styles and browser preferences; it was not loaded in a browser.",
       "noteZh": "文档记录了 GitHub 源安装，客户端代码会注入主题样式并保存浏览器偏好；未在浏览器中加载。"
     },
@@ -1673,7 +1805,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["browser-notification", "session-events", "client-injection"],
+      "signals": [
+        "browser-notification",
+        "session-events",
+        "client-injection"
+      ],
       "noteEn": "The public package identity matches this repository and the client listens for session completion before calling the browser Notification API; no notification was triggered.",
       "noteZh": "公开包身份与本仓库一致，客户端监听会话完成事件后调用浏览器 Notification API；未触发通知。"
     },
@@ -1802,7 +1938,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection", "theme", "browser-storage"],
+      "signals": [
+        "client-injection",
+        "theme",
+        "browser-storage"
+      ],
       "noteEn": "A local-file installation path is documented and the client stores visual preferences in the browser; no style bundle was loaded.",
       "noteZh": "文档记录了本地文件安装路径，客户端会在浏览器保存视觉偏好；未加载样式 bundle。"
     },
@@ -2016,7 +2156,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["session-data", "archive-registry", "workspace-state"],
+      "signals": [
+        "session-data",
+        "archive-registry",
+        "workspace-state"
+      ],
       "noteEn": "Git-source installation is documented and the bundle removes session identifiers from the global archive set; no registry or session state was changed.",
       "noteZh": "文档记录了 Git 源安装，该 bundle 会从全局归档集合移除会话标识；未改变注册表或会话状态。"
     },
@@ -2037,7 +2181,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection", "theme", "browser-storage"],
+      "signals": [
+        "client-injection",
+        "theme",
+        "browser-storage"
+      ],
       "noteEn": "The fixed source version is older than the observed registry release but maps to the same public identity; theme injection and persistent browser settings were not executed.",
       "noteZh": "固定源码版本早于观察到的 registry 发布版本，但对应同一公开身份；未执行主题注入或浏览器持久设置。"
     },
@@ -2517,7 +2665,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["filesystem-skill", "plugin-development", "github-only"],
+      "signals": [
+        "filesystem-skill",
+        "plugin-development",
+        "github-only"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -2591,7 +2743,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["microphone", "browser-speech", "client-injection"],
+      "signals": [
+        "microphone",
+        "browser-speech",
+        "client-injection"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -3228,7 +3384,12 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["command-line", "ssh", "subprocess", "service-management"],
+      "signals": [
+        "command-line",
+        "ssh",
+        "subprocess",
+        "service-management"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -3621,7 +3782,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["filesystem-read", "file-preview", "client-injection"],
+      "signals": [
+        "filesystem-read",
+        "file-preview",
+        "client-injection"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -3642,7 +3807,12 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "prepare",
-      "signals": ["audio", "agent-events", "client-injection", "prepare-build"],
+      "signals": [
+        "audio",
+        "agent-events",
+        "client-injection",
+        "prepare-build"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -3690,7 +3860,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["profile-bundle", "workflow-runtime", "package-bundle"],
+      "signals": [
+        "profile-bundle",
+        "workflow-runtime",
+        "package-bundle"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -3790,7 +3964,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["theme", "client-injection"],
+      "signals": [
+        "theme",
+        "client-injection"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -3811,7 +3988,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["input-history", "client-injection", "browser-storage"],
+      "signals": [
+        "input-history",
+        "client-injection",
+        "browser-storage"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -4018,7 +4199,12 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["theme", "client-injection", "timer", "github-only"],
+      "signals": [
+        "theme",
+        "client-injection",
+        "timer",
+        "github-only"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -4093,7 +4279,12 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["subprocess", "shell", "windows", "configuration-write"],
+      "signals": [
+        "subprocess",
+        "shell",
+        "windows",
+        "configuration-write"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -4301,7 +4492,12 @@
       "packageLicense": "MIT",
       "compatibility": "behind-baseline",
       "lifecycle": "prepack",
-      "signals": ["mcp", "model-tools", "context-reduction", "prepack-build"],
+      "signals": [
+        "mcp",
+        "model-tools",
+        "context-reduction",
+        "prepack-build"
+      ],
       "noteEn": "Held because its DSH command and tool peers target rc.1 rather than the rc.6 review baseline.",
       "noteZh": "因其 DSH command 与 tool peer 面向 rc.1 而非 rc.6 审核基线而暂缓。"
     },
@@ -4428,7 +4624,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["desktop-pet", "agent-events", "client-injection"],
+      "signals": [
+        "desktop-pet",
+        "agent-events",
+        "client-injection"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -4609,7 +4809,12 @@
       "packageLicense": "SEE LICENSE IN ASSET_LICENSE.md",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["desktop-app", "session-data", "audio", "subprocess"],
+      "signals": [
+        "desktop-app",
+        "session-data",
+        "audio",
+        "subprocess"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -4871,7 +5076,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "prepare",
-      "signals": ["theme", "client-injection", "prepare-build"],
+      "signals": [
+        "theme",
+        "client-injection",
+        "prepare-build"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -4892,7 +5101,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["mcp", "configuration-write", "local-installer"],
+      "signals": [
+        "mcp",
+        "configuration-write",
+        "local-installer"
+      ],
       "noteEn": "Held because its native dsh-mcp-client peer targets rc.5 while the surrounding settings peer targets rc.6, and the public package identity is unresolved.",
       "noteZh": "因原生 dsh-mcp-client peer 面向 rc.5、周边设置 peer 面向 rc.6，且公开包身份未解析而暂缓。"
     },
@@ -5099,7 +5312,11 @@
       "packageLicense": "unknown",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["filesystem-skill", "documentation", "package-bundle"],
+      "signals": [
+        "filesystem-skill",
+        "documentation",
+        "package-bundle"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -5200,7 +5417,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["governance", "filesystem-skill", "workflow"],
+      "signals": [
+        "governance",
+        "filesystem-skill",
+        "workflow"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -5327,7 +5548,11 @@
       "packageLicense": "unknown",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["session-data", "message-navigation", "client-injection"],
+      "signals": [
+        "session-data",
+        "message-navigation",
+        "client-injection"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -5401,7 +5626,12 @@
       "packageLicense": "BSD-3-Clause",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["desktop-app", "session-data", "local-web-server", "macos"],
+      "signals": [
+        "desktop-app",
+        "session-data",
+        "local-web-server",
+        "macos"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -5476,7 +5706,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["picture-in-picture", "session-data", "client-injection"],
+      "signals": [
+        "picture-in-picture",
+        "session-data",
+        "client-injection"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -5763,7 +5997,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["html-parsing", "model-tools", "content-extraction"],
+      "signals": [
+        "html-parsing",
+        "model-tools",
+        "content-extraction"
+      ],
       "noteEn": "Held because the only documented install command uses an unpublished npm identity and no reproducible Git-source alternative is provided.",
       "noteZh": "因唯一安装命令使用未发布的 npm 身份，且未提供可复现的 Git 源替代方案而暂缓。"
     },
@@ -5784,7 +6022,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["session-data", "message-navigation", "client-injection"],
+      "signals": [
+        "session-data",
+        "message-navigation",
+        "client-injection"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -6606,7 +6848,12 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["git-bash", "subprocess", "windows", "filesystem-write"],
+      "signals": [
+        "git-bash",
+        "subprocess",
+        "windows",
+        "filesystem-write"
+      ],
       "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
@@ -7169,7 +7416,12 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["web-theme", "client-injection", "webgl", "npm-package"],
+      "signals": [
+        "web-theme",
+        "client-injection",
+        "webgl",
+        "npm-package"
+      ],
       "noteEn": "The fixed source is 0.1.0 while npm exposes 0.1.1 from the same repository; no CSS, fonts, animation, or WebGL behavior was loaded.",
       "noteZh": "固定源码为 0.1.0，同仓库 npm 已发布 0.1.1；未加载 CSS、字体、动画或 WebGL 行为。"
     },
@@ -7272,7 +7524,12 @@
       "packageLicense": "Apache-2.0",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["web-ui", "idle-game", "client-injection", "github-only"],
+      "signals": [
+        "web-ui",
+        "idle-game",
+        "client-injection",
+        "github-only"
+      ],
       "noteEn": "The repository documents a commit-pinnable GitHub install; no client module, game state, or browser storage behavior was loaded.",
       "noteZh": "仓库记录了可固定提交的 GitHub 安装方式；未加载客户端模块、游戏状态或浏览器存储行为。"
     },
@@ -9298,7 +9555,12 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection", "theme", "browser-ui", "github-only"],
+      "signals": [
+        "client-injection",
+        "theme",
+        "browser-ui",
+        "github-only"
+      ],
       "noteEn": "A pinned root Git source identity exists while npm has no matching scoped package; no build, asset load, DOM injection, or browser rendering was executed.",
       "noteZh": "存在可固定的根目录 Git 源码身份，但 npm 无匹配 scoped 包；未执行构建、资源加载、DOM 注入或浏览器渲染。"
     },
@@ -10168,7 +10430,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -11439,7 +11705,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["mcp", "process-control", "system-prompt"],
+      "signals": [
+        "mcp",
+        "process-control",
+        "system-prompt"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -11514,7 +11784,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "prepack",
-      "signals": ["external-network", "client-injection", "prepack"],
+      "signals": [
+        "external-network",
+        "client-injection",
+        "prepack"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -11620,7 +11894,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection", "process-control"],
+      "signals": [
+        "external-network",
+        "client-injection",
+        "process-control"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -11667,7 +11945,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -11715,7 +11997,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -11815,7 +12100,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection", "browser", "license-incomplete"],
+      "signals": [
+        "client-injection",
+        "browser",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -11862,7 +12151,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "prepare",
-      "signals": ["external-network", "prepare"],
+      "signals": [
+        "external-network",
+        "prepare"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -11883,7 +12175,11 @@
       "packageLicense": "UNLICENSED",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection", "license-incomplete"],
+      "signals": [
+        "external-network",
+        "client-injection",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license, package license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license、package license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -12040,7 +12336,11 @@
       "packageLicense": "AGPL-3.0-only",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["credentials", "mcp", "identity-unresolved"],
+      "signals": [
+        "credentials",
+        "mcp",
+        "identity-unresolved"
+      ],
       "noteEn": "Held because installation identity is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：installation identity不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -12114,7 +12414,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["external-network", "process-control"],
+      "signals": [
+        "external-network",
+        "process-control"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12188,7 +12491,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12209,7 +12516,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection", "license-incomplete"],
+      "signals": [
+        "external-network",
+        "client-injection",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -12230,7 +12541,9 @@
       "packageLicense": "Apache-2.0",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network"],
+      "signals": [
+        "external-network"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12330,7 +12643,10 @@
       "packageLicense": "Apache-2.0",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["client-injection", "system-prompt"],
+      "signals": [
+        "client-injection",
+        "system-prompt"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12351,7 +12667,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["client-injection", "process-control"],
+      "signals": [
+        "client-injection",
+        "process-control"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12372,7 +12691,10 @@
       "packageLicense": "Apache-2.0",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials"],
+      "signals": [
+        "external-network",
+        "credentials"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12446,7 +12768,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["client-injection", "browser", "license-incomplete"],
+      "signals": [
+        "client-injection",
+        "browser",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -12467,7 +12793,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["client-injection", "license-incomplete"],
+      "signals": [
+        "client-injection",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -12488,7 +12817,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12509,7 +12842,9 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network"],
+      "signals": [
+        "external-network"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12530,7 +12865,9 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network"],
+      "signals": [
+        "external-network"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12551,7 +12888,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "process-control", "identity-unresolved"],
+      "signals": [
+        "external-network",
+        "process-control",
+        "identity-unresolved"
+      ],
       "noteEn": "Held because installation identity is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：installation identity不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -12599,7 +12940,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection", "process-control"],
+      "signals": [
+        "client-injection",
+        "process-control"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12646,7 +12990,9 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network"],
+      "signals": [
+        "external-network"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12667,7 +13013,9 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network"],
+      "signals": [
+        "external-network"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12688,7 +13036,9 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network"],
+      "signals": [
+        "external-network"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12709,7 +13059,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12730,7 +13083,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials"],
+      "signals": [
+        "external-network",
+        "credentials"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12912,7 +13268,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -12985,7 +13344,11 @@
       "packageLicense": "UNLICENSED",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["credentials", "mcp", "license-incomplete"],
+      "signals": [
+        "credentials",
+        "mcp",
+        "license-incomplete"
+      ],
       "noteEn": "Held because package license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：package license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -13032,7 +13395,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "docker"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "docker"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13184,7 +13551,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection", "process-control", "license-incomplete"],
+      "signals": [
+        "client-injection",
+        "process-control",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -13205,7 +13576,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13278,7 +13652,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection", "identity-unresolved"],
+      "signals": [
+        "client-injection",
+        "identity-unresolved"
+      ],
       "noteEn": "Held because installation identity is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：installation identity不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -13299,7 +13676,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["client-injection", "identity-unresolved"],
+      "signals": [
+        "client-injection",
+        "identity-unresolved"
+      ],
       "noteEn": "Held because installation identity is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：installation identity不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -13428,7 +13808,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13449,7 +13833,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13496,7 +13883,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13517,7 +13907,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection", "process-control"],
+      "signals": [
+        "external-network",
+        "client-injection",
+        "process-control"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13538,7 +13932,11 @@
       "packageLicense": "BSD-3-Clause",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["filesystem", "license-incomplete", "identity-unresolved"],
+      "signals": [
+        "filesystem",
+        "license-incomplete",
+        "identity-unresolved"
+      ],
       "noteEn": "Held because repository license, installation identity is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license、installation identity不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -13611,7 +14009,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13632,7 +14033,10 @@
       "packageLicense": "unknown",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["license-incomplete", "identity-unresolved"],
+      "signals": [
+        "license-incomplete",
+        "identity-unresolved"
+      ],
       "noteEn": "Held because package license, installation identity is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：package license、installation identity不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -13822,7 +14226,10 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13843,7 +14250,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13891,7 +14302,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection"],
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13912,7 +14326,10 @@
       "packageLicense": "MIT",
       "compatibility": "behind-baseline",
       "lifecycle": "none",
-      "signals": ["external-network", "stale-peer-range"],
+      "signals": [
+        "external-network",
+        "stale-peer-range"
+      ],
       "noteEn": "Held because current DSH compatibility is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：current DSH compatibility不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -13960,7 +14377,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -13981,7 +14402,9 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network"],
+      "signals": [
+        "external-network"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -14248,7 +14671,9 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["client-injection"],
+      "signals": [
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -14269,7 +14694,10 @@
       "packageLicense": "BSD-3-Clause",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["client-injection", "license-incomplete"],
+      "signals": [
+        "client-injection",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -14290,7 +14718,11 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection", "process-control"],
+      "signals": [
+        "external-network",
+        "client-injection",
+        "process-control"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -14476,7 +14908,10 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "prepack",
-      "signals": ["external-network", "prepack"],
+      "signals": [
+        "external-network",
+        "prepack"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -14524,7 +14959,11 @@
       "packageLicense": "MIT",
       "compatibility": "behind-baseline",
       "lifecycle": "prepack",
-      "signals": ["external-network", "prepack", "stale-peer-range"],
+      "signals": [
+        "external-network",
+        "prepack",
+        "stale-peer-range"
+      ],
       "noteEn": "Held because current DSH compatibility is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：current DSH compatibility不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -14545,7 +14984,11 @@
       "packageLicense": "MIT",
       "compatibility": "behind-baseline",
       "lifecycle": "prepack",
-      "signals": ["external-network", "prepack", "stale-peer-range"],
+      "signals": [
+        "external-network",
+        "prepack",
+        "stale-peer-range"
+      ],
       "noteEn": "Held because current DSH compatibility is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：current DSH compatibility不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -14619,7 +15062,11 @@
       "packageLicense": "MIT",
       "compatibility": "behind-baseline",
       "lifecycle": "prepack",
-      "signals": ["external-network", "prepack", "stale-peer-range"],
+      "signals": [
+        "external-network",
+        "prepack",
+        "stale-peer-range"
+      ],
       "noteEn": "Held because current DSH compatibility is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：current DSH compatibility不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -14692,7 +15139,11 @@
       "packageLicense": "MIT",
       "compatibility": "behind-baseline",
       "lifecycle": "prepack",
-      "signals": ["external-network", "prepack", "stale-peer-range"],
+      "signals": [
+        "external-network",
+        "prepack",
+        "stale-peer-range"
+      ],
       "noteEn": "Held because current DSH compatibility is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：current DSH compatibility不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -14713,7 +15164,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["client-injection", "system-prompt", "identity-unresolved"],
+      "signals": [
+        "client-injection",
+        "system-prompt",
+        "identity-unresolved"
+      ],
       "noteEn": "Held because installation identity is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：installation identity不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -14817,7 +15272,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection", "process-control"],
+      "signals": [
+        "external-network",
+        "client-injection",
+        "process-control"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -14838,7 +15297,12 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection", "mcp"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "mcp"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -14859,7 +15323,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["credentials", "client-injection", "identity-unresolved"],
+      "signals": [
+        "credentials",
+        "client-injection",
+        "identity-unresolved"
+      ],
       "noteEn": "Held because installation identity is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：installation identity不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -14908,7 +15376,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "client-injection", "process-control"],
+      "signals": [
+        "external-network",
+        "client-injection",
+        "process-control"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -14955,7 +15427,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["credentials", "client-injection"],
+      "signals": [
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15054,7 +15529,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": ["external-network", "process-control", "system-prompt"],
+      "signals": [
+        "external-network",
+        "process-control",
+        "system-prompt"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15075,7 +15554,11 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["external-network", "credentials", "client-injection"],
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15152,7 +15635,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15173,7 +15658,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15194,7 +15681,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15215,7 +15704,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15236,7 +15727,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15257,7 +15750,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15278,7 +15773,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15299,7 +15796,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15320,7 +15819,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15341,7 +15842,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15362,7 +15865,9 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "none",
-      "signals": ["native-bundle"],
+      "signals": [
+        "native-bundle"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15408,7 +15913,11 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "prepublishOnly",
-      "signals": ["client-injection", "prepublish-only", "license-incomplete"],
+      "signals": [
+        "client-injection",
+        "prepublish-only",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -15454,7 +15963,12 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": ["external-network", "mcp", "docker", "license-incomplete"],
+      "signals": [
+        "external-network",
+        "mcp",
+        "docker",
+        "license-incomplete"
+      ],
       "noteEn": "Held because repository license is incomplete; no lifecycle hook, plugin or capability was executed.",
       "noteZh": "暂缓：repository license不完整；未执行生命周期 hook、插件或相关能力。"
     },
@@ -15475,7 +15989,10 @@
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
       "lifecycle": "prepublishOnly",
-      "signals": ["client-injection", "prepublish-only"],
+      "signals": [
+        "client-injection",
+        "prepublish-only"
+      ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
     },
@@ -15559,6 +16076,2609 @@
         "process-control",
         "prepare",
         "prepublish-only"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "01virex-dsh-status-rotator",
+      "name": "Status Rotator",
+      "repository": "01Virex/dsh-status-rotator",
+      "package": "dsh-status-rotator",
+      "category": "UI & Workspace",
+      "status": "reviewed",
+      "summaryEn": "Rotates the DSH chat turn-status label (\"Deep diving...\") through user-defined phrases every few seconds, editable from DSH's settings panel.",
+      "summaryZh": "Status Rotator 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "88ba67b897fb1842859f3f25dd1408f70f866721",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "a554878526-dsh-debug-mode",
+      "name": "Debug Mode",
+      "repository": "a554878526/dsh-debug-mode",
+      "package": "dsh-debug-mode",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Runtime-first Debug Mode plugin for DeepSeek Harness",
+      "summaryZh": "Debug Mode 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "4ff706e0e3d8a7f4eb7fc4a2f7384125be47f6dc",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "abidhmuhsin-dsh-visualizer",
+      "name": "Visualizer Bundle",
+      "repository": "abidhmuhsin/dsh-visualizer",
+      "package": "dsh-visualizer-bundle",
+      "category": "UI & Workspace",
+      "status": "reviewed",
+      "summaryEn": "Installable dsh profile bundle: mounts the visualizer streaming-HTML tool and its inline Web GUI preview card",
+      "summaryZh": "Visualizer Bundle 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "feature/inline-html-presentation",
+      "commit": "07fd8c1f3ed543f5df7dda97175f0ea45d8937d1",
+      "manifest": "packages/bundle/package.json",
+      "patch": "packages/bundle/cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "browser",
+        "session-data",
+        "package-install",
+        "nested-bundle"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "agentbuff-dsh-whale-galaxy",
+      "name": "Whale Galaxy",
+      "repository": "AgentBuff/dsh-whale-galaxy",
+      "package": "dsh-whale-galaxy",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "DSH web background plugin 「鲸落星河」: a DeepSeek whale swimming through a particle galaxy — canvas starfield, drifting nebula, stardust whale wake, dark/light adaptive.",
+      "summaryZh": "DSH web background plugin 「鲸落星河」: a DeepSeek whale swimming through a particle galaxy — canvas starfield, drifting nebula, stardust whale wake, dark/light adaptive.",
+      "branch": "main",
+      "commit": "ffcf540277ec5dc35bdb6810c8542817ee083819",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "subprocess",
+        "package-install",
+        "vision",
+        "theme",
+        "license-incomplete",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license、npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "alain-prot0s5-dsh-screenshot",
+      "name": "Screenshot",
+      "repository": "Alain-Prot0s5/dsh-screenshot",
+      "package": "@alain-prot0s5/dsh-screenshot",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Screenshot-to-input for DeepSeek Harness: composer camera button + global hotkey (Alt+A) + listener bound to the app lifecycle, configurable in settings. 截图自动粘贴到 DSH 输入框：相机按钮 + 全局快捷键 + 生命周期绑定 + 设置页配置。",
+      "summaryZh": "Screenshot-to-input for DeepSeek Harness: composer camera button + global hotkey (Alt+A) + listener bound to the app lifecycle, configurable in settings. 截图自动粘贴到 DSH 输入框：相机按钮 + 全局快捷键 + 生命周期绑定 + 设置页配置。",
+      "branch": "main",
+      "commit": "c3aaf184a41e77ae4017ec6f1b4a0c34ba147521",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "session-data",
+        "web-search",
+        "vision",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "amakurai-dsh-liketavern",
+      "name": "Liketavern",
+      "repository": "Amakurai/dsh-liketavern",
+      "package": "dsh-liketavern",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Tavern mode for dsh web — SillyTavern character cards, prompt presets, lorebooks, personas and regex on the dsh agent runtime.",
+      "summaryZh": "Liketavern 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "a58ca44b37c0d42bcd0818e9b4bb17b9e5b082f3",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "audio",
+        "multi-agent",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "az790871109-dsh-summary-sidebar",
+      "name": "Summary Sidebar",
+      "repository": "az790871109/dsh-summary-sidebar",
+      "package": "dsh-summary-sidebar",
+      "category": "UI & Workspace",
+      "status": "reviewed",
+      "summaryEn": "独立的「摘要 + 侧边栏」插件：摘要只列每个对话输出的文档/网页/图片与来源，侧边栏提供文件夹、终端、浏览器、文档阅读器、图片阅读器，可点击文件进行预览与编辑。",
+      "summaryZh": "独立的「摘要 + 侧边栏」插件：摘要只列每个对话输出的文档/网页/图片与来源，侧边栏提供文件夹、终端、浏览器、文档阅读器、图片阅读器，可点击文件进行预览与编辑。",
+      "branch": "main",
+      "commit": "5588f551a86b59b2976a238464d292177917bae0",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "credentials",
+        "client-injection",
+        "subprocess",
+        "browser",
+        "package-install"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "callmesoul-deepseek-kanban-plugin",
+      "name": "Plugin",
+      "repository": "callmesoul/deepseek-kanban-plugin",
+      "package": "@deepseek-kanban/plugin",
+      "category": "UI & Workspace",
+      "status": "held",
+      "summaryEn": "DeepSeek Harness 任务看板插件（主机状态机 + git 调度 + 浏览器看板 UI）",
+      "summaryZh": "DeepSeek Harness 任务看板插件（主机状态机 + git 调度 + 浏览器看板 UI）",
+      "branch": "main",
+      "commit": "57a30bc4aa9680e6395cd3daacec85f12ac98132",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "model-tools",
+        "package-install",
+        "license-incomplete"
+      ],
+      "noteEn": "Held because repository license evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "cnseniorious000-dsh-generative-ui",
+      "name": "Generative UI",
+      "repository": "CNSeniorious000/dsh-generative-ui",
+      "package": "dsh-generative-ui",
+      "category": "UI & Workspace",
+      "status": "held",
+      "summaryEn": "Generative UI for DeepSeek Harness — the agent writes TSX, dsh web renders it live, inline in chat and in a canvas panel",
+      "summaryZh": "Generative UI 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "bf97359af1a6c74b105c44a7c908d61c6cf1a4a6",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepare",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "theme",
+        "prepare",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "cxdyun-dsh-skills-marketplace",
+      "name": "Skills Marketplace",
+      "repository": "cxdyun/dsh-skills-marketplace",
+      "package": "dsh-skills-marketplace",
+      "category": "Discovery & Management",
+      "status": "reviewed",
+      "summaryEn": "DSH 仓库技能市场管理器:按 仓库地址+分支+稀疏路径 拉取插件/技能,安装进 ~/.dsh/skills,在设置页以插件维度管理",
+      "summaryZh": "DSH 仓库技能市场管理器:按 仓库地址+分支+稀疏路径 拉取插件/技能,安装进 ~/.dsh/skills,在设置页以插件维度管理",
+      "branch": "main",
+      "commit": "3e26404afdcbe993f6abc07a221c7e3deb25f34b",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "mcp",
+        "model-tools",
+        "package-install",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "cyijun-dsh-compaction-optical",
+      "name": "Compaction Optical",
+      "repository": "cyijun/dsh-compaction-optical",
+      "package": "dsh-compaction-optical",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Experimental optical-memory compaction provider for DeepSeek Harness",
+      "summaryZh": "Compaction Optical 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "cf7814bf0c8d2651db87475a3b6a519fb62d6504",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepare",
+      "signals": [
+        "external-network",
+        "credentials",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "prepare"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "damonbao-dsh-codex-suite",
+      "name": "Suite",
+      "repository": "DamonBao/dsh-codex-suite",
+      "package": "@jcy2387/dsh-suite",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "A pure bundle package that installs the Codex provider and Conversation UI plugins together for DeepSeek Harness.",
+      "summaryZh": "Suite 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "492c5f6d437e22ff630ceafca19d6c22535d432b",
+      "manifest": "packages/all/package.json",
+      "patch": "packages/all/cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "session-data",
+        "package-install",
+        "vision",
+        "nested-bundle",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "demoj-proactive-notify",
+      "name": "Proactive Notify",
+      "repository": "DemoJ/proactive-notify",
+      "package": "proactive-notify",
+      "category": "Agent & Workflow",
+      "status": "reviewed",
+      "summaryEn": "DSH 主动通知插件：遇到权限问题和任务完成时弹出系统级通知",
+      "summaryZh": "DSH 主动通知插件：遇到权限问题和任务完成时弹出系统级通知",
+      "branch": "main",
+      "commit": "b9032beae455e5edc2863fe9c4beb77b0217b1dd",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "devrico003-dsh-verifier-gate",
+      "name": "Verifier Gate",
+      "repository": "DevRico003/dsh-verifier-gate",
+      "package": "dsh-verifier-gate",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "LLM-as-a-Verifier plugin for DeepSeek Harness: fine-grained logprob-based scoring, pairwise pivot tournaments (best-of-N) and an automatic end-of-turn quality gate.",
+      "summaryZh": "Verifier Gate 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "11a51b720fb1d9473e778941bcf15cedd8af1d7c",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "mixed",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "multi-agent",
+        "theme",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "dsh-blue-blue",
+      "name": "Blue",
+      "repository": "dsh-blue/blue",
+      "package": "@dsh-blue/blue",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "The dsh Blue bundle: the interactive terminal UI profile over dsh-base",
+      "summaryZh": "Blue 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "master",
+      "commit": "789ca9a20e65c4006d4e8ce1ef8308162a735c61",
+      "manifest": "packages/bundle/blue/package.json",
+      "patch": "packages/bundle/blue/cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "mcp",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "multi-agent",
+        "theme",
+        "nested-bundle",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "elysia395-dsh-wallpaper-engine",
+      "name": "Wallpaper Engine",
+      "repository": "elysia395/dsh-wallpaper-engine",
+      "package": "dsh-plugin-wallpaper-engine",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "Wallpaper Engine backgrounds for the DSH web GUI: render your local Wallpaper Engine Video/Web wallpapers behind the chat, Scene wallpapers as extracted static frames, with iOS-style liquid glass, adjustable scrim/border/blur, and a customizable accent color + glass transparency for the whole settings window.",
+      "summaryZh": "Wallpaper Engine 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "053770de24ff0e0810fcdc6f136d7f41b533f64f",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepare",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "subprocess",
+        "browser",
+        "package-install",
+        "vision",
+        "theme",
+        "prepare",
+        "license-incomplete"
+      ],
+      "noteEn": "Held because repository license evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "ericwong5021-deepseek-plugin-store",
+      "name": "Plugin Store",
+      "repository": "Ericwong5021/deepseek-plugin-store",
+      "package": "deepseek-plugin-store",
+      "category": "Discovery & Management",
+      "status": "reviewed",
+      "summaryEn": "DeepSeek 插件商店开源数据源 · Open source data source for the DeepSeek Plugin Store",
+      "summaryZh": "DeepSeek 插件商店开源数据源 · Open source data source for the DeepSeek Plugin Store",
+      "branch": "main",
+      "commit": "4c814abcecf5a15629fa75e8bcab15859dffe941",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "CC0-1.0",
+      "packageLicense": "CC0-1.0",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "browser",
+        "database",
+        "session-data",
+        "system-prompt",
+        "model-tools",
+        "plugin-management",
+        "web-search",
+        "vision",
+        "audio",
+        "email",
+        "financial",
+        "multi-agent",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "eyalm321-dsh-telegram-inbox",
+      "name": "Telegram Inbox",
+      "repository": "Eyalm321/dsh-telegram-inbox",
+      "package": "dsh-telegram-inbox",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "Telegram inbox for the DeepSeek Harness: one chat is one durable agent session, with a fail-closed allow-list and a poll loop that never blocks on I/O.",
+      "summaryZh": "Telegram Inbox 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "2637193902fbd6c8b2d80b2a0e59360932dc8b12",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "session-data",
+        "model-tools",
+        "audio",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "foxyiy-dsh-tui",
+      "name": "TUI",
+      "repository": "foxyiy/dsh-tui",
+      "package": "@deepseek-ai/dsh-tui",
+      "category": "UI & Workspace",
+      "status": "held",
+      "summaryEn": "The interactive terminal GUI for DeepSeek Harness agents: markdown, tool cards, todo plans, questions, /model, /resume, and more, rendered with Ink + assistant-ui.",
+      "summaryZh": "TUI 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "091b43503817d7d5f3fe1c53545fe852f6439051",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "database",
+        "session-data",
+        "system-prompt",
+        "model-tools",
+        "theme",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "haoranwang0921-dsh-session-cleaner",
+      "name": "Session Cleaner",
+      "repository": "haoranwang0921/dsh-session-cleaner",
+      "package": "@haoranwang0921/dsh-session-cleaner",
+      "category": "Safety & Approvals",
+      "status": "held",
+      "summaryEn": "dsh web GUI plugin: manage and delete conversation records (whole sessions or individual messages, cascade delete) from the settings page. Dual-face: node half serves /api/session-cleaner routes, browser half registers the settings-page view.",
+      "summaryZh": "Session Cleaner 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "31defe9b95b2cae0f084729a41812fde6f81e6d5",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Apache-2.0",
+      "packageLicense": "Apache-2.0",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "browser",
+        "session-data",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "hero-goblins-dsh-macos-skin",
+      "name": "Macos Skin",
+      "repository": "hero-goblins/dsh-macos-skin",
+      "package": "dsh-macos-skin",
+      "category": "UI & Workspace",
+      "status": "reviewed",
+      "summaryEn": "macOS desktop skin for the DeepSeek Harness web GUI + real-time plugin install/runtime error log panel (host route serves ~/.dsh/logs)",
+      "summaryZh": "Macos Skin 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "da6eebb494f53eec2dc6e1f335c6a1866ac023a4",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "browser",
+        "package-install",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "hilbert-beinghappy-dsh-plugin-clarify",
+      "name": "Clarify",
+      "repository": "Hilbert-beinghappy/dsh-plugin-clarify",
+      "package": "dsh-plugin-clarify",
+      "category": "Files & Data",
+      "status": "held",
+      "summaryEn": "Off-transcript clarification Host plugin for DeepSeek Harness",
+      "summaryZh": "Clarify 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "1640f7e5fa04cf9531e558884210968e012dc927",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "prepack",
+      "signals": [
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "prepack",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "hilbert-beinghappy-seektty",
+      "name": "Seektty",
+      "repository": "Hilbert-beinghappy/seektty",
+      "package": "seektty",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "SeekTTY, a pluggable DeepSeek-colored terminal surface for DeepSeek Harness",
+      "summaryZh": "Seektty 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "5fcef8c85dab0e58338d8174fd2e7922e1dd3efc",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "multi-agent",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "hokkaidocola-dsh-highschool-tutor",
+      "name": "Highschool Tutor",
+      "repository": "HokkaidoCOLA/dsh-highschool-tutor",
+      "package": "@dsh-external/dsh-highschool-tutor",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "高中三年学习与巩固助手（语数英物化地）：错题本 + 艾宾浩斯间隔复习、知识卡片库、讲题时自动生成 2D/3D 动态演示、AI 出题与批改工具、每日计划与进度统计、高考倒计时与模考趋势",
+      "summaryZh": "高中三年学习与巩固助手（语数英物化地）：错题本 + 艾宾浩斯间隔复习、知识卡片库、讲题时自动生成 2D/3D 动态演示、AI 出题与批改工具、每日计划与进度统计、高考倒计时与模考趋势",
+      "branch": "main",
+      "commit": "c65153b40950903c378e18bebdd12dde144c0b09",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "GPL-3.0",
+      "packageLicense": "GPL-3.0-or-later",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-write",
+        "subprocess",
+        "browser",
+        "session-data",
+        "vision",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "homoland-dshp-balance-hp",
+      "name": "Dshp Balance HP",
+      "repository": "HomoLand/dshp-balance-hp",
+      "package": "dshp-balance-hp",
+      "category": "UI & Workspace",
+      "status": "held",
+      "summaryEn": "DeepSeek 余额 HP 血量条插件（DSH Web GUI）：勾玉(三国杀)/红心(Minecraft)/血球(暗黑)/守望条等皮肤，HP=当前余额，上限=余额+今日消耗。",
+      "summaryZh": "DeepSeek 余额 HP 血量条插件（DSH Web GUI）：勾玉(三国杀)/红心(Minecraft)/血球(暗黑)/守望条等皮肤，HP=当前余额，上限=余额+今日消耗。",
+      "branch": "main",
+      "commit": "7242f30f3b0d43956e1673ef931cbc233d803b1c",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-write",
+        "process-control",
+        "browser",
+        "financial",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "hsiangnianian-dsh-auto-continue",
+      "name": "Client Auto Continue",
+      "repository": "HsiangNianian/dsh-auto-continue",
+      "package": "dsh-client-auto-continue",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "DSH Web UI plugin: automatically sends \"继续\" (continue) when a request is interrupted by network errors or other non-human causes",
+      "summaryZh": "DSH Web UI plugin: automatically sends \"继续\" (continue) when a request is interrupted by network errors or other non-human causes",
+      "branch": "main",
+      "commit": "2c27c77d1cb3bde0bca47e3fe0239b6d4ec991d7",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "financial",
+        "multi-agent",
+        "theme",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "ideasir-dsh-looklook",
+      "name": "Looklook",
+      "repository": "ideasir/dsh-looklook",
+      "package": "dsh-looklook",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "Look at anything for DeepSeek Harness (dsh-looklook): unified looklook_see tool for images, videos (frames + audio understanding) and archives; OpenAI-compatible vision/audio model config with capability probing, plus a one-click local ASR install.",
+      "summaryZh": "Looklook 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "7a114661e0602c7899d297d865b9a4f9443e2c6b",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "audio",
+        "email",
+        "license-incomplete",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license、npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "ivwumupy-dsh-plugins",
+      "name": "Tianjiao Apply Patch",
+      "repository": "ivwumupy/dsh-plugins",
+      "package": "dsh-tianjiao-apply-patch",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "apply-patch tool plugin (port of codex-rs/apply-patch)",
+      "summaryZh": "Tianjiao Apply Patch 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "619f72bd3550b09d003c90e1c0389723400b0ef9",
+      "manifest": "apply-patch/package.json",
+      "patch": "apply-patch/cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "Unresolved",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "browser",
+        "package-install",
+        "vision",
+        "nested-bundle",
+        "license-incomplete",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because repository license, package license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license、package license、npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "jacobinwwey-dsh-notemd",
+      "name": "Notemd",
+      "repository": "Jacobinwwey/dsh-NotEMD",
+      "package": "dsh-notemd",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "Portable NoteMD workflow bundle for DeepSeek Harness",
+      "summaryZh": "Notemd 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "586a31f9004e214feb6c305af76da22470179b7a",
+      "manifest": "packages/notemd-bundle/package.json",
+      "patch": "packages/notemd-bundle/cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "Unresolved",
+      "compatibility": "behind-baseline",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "browser",
+        "model-tools",
+        "package-install",
+        "vision",
+        "nested-bundle",
+        "license-incomplete",
+        "stale-peer-range"
+      ],
+      "noteEn": "Held because repository license, package license, baseline compatibility evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license、package license、baseline compatibility证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "jiesou-dsh-opencode-zen-free-provider",
+      "name": "Opencode ZEN Free Provider",
+      "repository": "jiesou/dsh-opencode-zen-free-provider",
+      "package": "@jiesou/dsh-opencode-zen-free-provider",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "OpenCode Zen free models provider for dsh",
+      "summaryZh": "Opencode ZEN Free Provider 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "de05003153a8192fc350d6e41baba0ad305ff044",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "model-tools",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "jing-hy-dsh-unified-market",
+      "name": "Unified Market",
+      "repository": "jing-hy/dsh-unified-market",
+      "package": "dsh-unified-market",
+      "category": "Discovery & Management",
+      "status": "reviewed",
+      "summaryEn": "统一插件市场（Unified Plugin Market for DeepSeek Harness）：聚合精选目录（awesome-dsh-plugin.com）+ GitHub dsh-plugin 生态 + npm registry 三源；对 DSH Desktop（EAC）特化（web-desktop profile）；来源白名单 + 冲突预检 + 试装验证；后台自动检测 + 可配置自动升级 + 市场自更新；一键检查/全部更新/逐个更新，更新进度窗口",
+      "summaryZh": "统一插件市场（Unified Plugin Market for DeepSeek Harness）：聚合精选目录（awesome-dsh-plugin.com）+ GitHub dsh-plugin 生态 + npm registry 三源；对 DSH Desktop（EAC）特化（web-desktop profile）；来源白名单 + 冲突预检 + 试装验证；后台自动检测 + 可配置自动升级 + 市场自更新；一键检查/全部更新/逐个更新，更新进度窗口",
+      "branch": "main",
+      "commit": "f67a1bccb3e24841564e144ec492f0846419e2cc",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "kee0012-dsh-sidebar-panel",
+      "name": "Sidebar Panel",
+      "repository": "kee0012/dsh-sidebar-panel",
+      "package": "dsh-sidebar-panel",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "DSH (DeepSeek Harness) right-side panel plugin: overview (context/cost/usage), files (workspace tree + right-click reference/copy/reveal), changes (files written this session), tools (tool-call details).",
+      "summaryZh": "Sidebar Panel 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "0e26f3ddc1e764568d52852a06aaa7ae226f5d04",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "browser",
+        "session-data",
+        "package-install",
+        "vision",
+        "financial"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "kiligzzz-dsh-capability-manager",
+      "name": "Capability Manager",
+      "repository": "kiligzzz/dsh-capability-manager",
+      "package": "@kiligzzz/dsh-capability-manager",
+      "category": "Skills & Methods",
+      "status": "held",
+      "summaryEn": "Capability Manager for DeepSeek Harness Desktop: manage MCP servers (~/.dsh/mcp.json, live mount/unmount) and Skills (~/.dsh/skills, toggle/delete/import/folder-sync) from a Settings-page UI, plus a per-session capability-directory prompt section. Dual-face dsh plugin (host + browser half), no DSH source changes.",
+      "summaryZh": "Capability Manager 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "master",
+      "commit": "be872eaf8c29b7ab0d248b97bea13588b075ad92",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "browser",
+        "session-data",
+        "system-prompt",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "kiligzzz-dsh-session-nav",
+      "name": "Session NAV",
+      "repository": "kiligzzz/dsh-session-nav",
+      "package": "@kiligzzz/dsh-session-nav",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Piano-key style in-conversation navigation bar for the DeepSeek Harness web GUI: one key per user message, hover ladder animation, turn-preview tooltip, active-message highlight, click-to-jump. Official dual-face dsh plugin (host + client), no dsh source changes.",
+      "summaryZh": "Session NAV 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "50890218632b2c4c18d8840762a1b55d257644d7",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "package-install",
+        "vision",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "lbunc-dsh-local-llm-controller",
+      "name": "Local LLM Controller",
+      "repository": "Lbunc/dsh-local-llm-controller",
+      "package": "dsh-local-llm-controller",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "DSH plugin: start/stop a local llama.cpp llama-server (Qwen3.6-35B / Qwen3.5-9B, vision/text × fast/long-context) from the settings → plugins page, and keep the DSH provider contextWindow in sync.",
+      "summaryZh": "Local LLM Controller 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "4719b073957553cde70d2e26b226a34a853ae533",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "model-tools",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "lemon49-dsh-token-day",
+      "name": "Token DAY",
+      "repository": "lemon49/dsh-token-day",
+      "package": "dsh-token-day",
+      "category": "UI & Workspace",
+      "status": "reviewed",
+      "summaryEn": "Token usage/billing dashboard and conversation manager for DeepSeek Harness",
+      "summaryZh": "Token DAY 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "b84bc726a6636095dd27a24d9d6ebeb7488bd4ff",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "financial"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "lemonmmice-dsh-hang-inspector",
+      "name": "Hang Inspector",
+      "repository": "lemonmmice/dsh-hang-inspector",
+      "package": "@linxin666/dsh-hang-inspector",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "Hang-evidence viewer for the DSH Web GUI: browse hang-monitor evidence packs (frozen screenshot, summary timeline, process info, net-trace tail, probe and procdump logs, dump file info) inside the harness.",
+      "summaryZh": "Hang Inspector 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "e4697698f50347ac7c83bfd1cc19496787e35144",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Apache-2.0",
+      "packageLicense": "Apache-2.0",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "browser",
+        "vision",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "linxuhao-deepseek-continuity",
+      "name": "Continuity",
+      "repository": "linxuhao/Deepseek-Continuity",
+      "package": "dsh-plugin-continuity",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Local image/voice/music/SFX for DeepSeek Harness with asset consistency: the same character stays the same character across calls, degenerate output is refused, and the GPU is untouched when idle.",
+      "summaryZh": "Continuity 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "50c90e490c84b4c63653648e73642d910cce3864",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "model-tools",
+        "web-search",
+        "vision",
+        "audio",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "littlebeaverstudio-agnes-media",
+      "name": "Agnes Media",
+      "repository": "LittleBeaverStudio/agnes-media",
+      "package": "agnes-media",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Registers generate_image and generate_video tools for Agnes AI media models (agnes-image-2.1-flash, agnes-video-v2.0) in DeepSeek Harness.",
+      "summaryZh": "Agnes Media 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "8873cc64db8df5a4c683f04665ae32c2bbfabc90",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "liu-bot24-dsh-trace-insight",
+      "name": "Trace Insight",
+      "repository": "Liu-Bot24/dsh-trace-insight",
+      "package": "dsh-plugin-trace-insight",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "A continuous, model-assisted semantic debugger for DeepSeek Harness trajectories.",
+      "summaryZh": "Trace Insight 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "e1e9a8fdf54a6faa1df5514a15495f6209d0183d",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "subprocess",
+        "session-data",
+        "model-tools",
+        "web-search",
+        "vision",
+        "prepack",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "ly028716-dsh-memory-plugin",
+      "name": "Memory Plugin",
+      "repository": "ly028716/dsh-memory-plugin",
+      "package": "dsh-memory-plugin",
+      "category": "Memory",
+      "status": "held",
+      "summaryEn": "DSH Memory Plugin - Intelligent memory system for tracking user preferences and habits",
+      "summaryZh": "Memory Plugin 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "a0b73e360b5b986babdb93eb42d16daec92b04f8",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "web-search",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "mrdevlorx-dsh-model-garden",
+      "name": "Model Garden",
+      "repository": "mrdevlorx/dsh-model-garden",
+      "package": "dsh-model-garden",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "A searchable, sortable model picker for the DeepSeek Harness Web UI — provider groups, favorites, live per-task cost, prices and context windows.",
+      "summaryZh": "Model Garden 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "5b1133cb508e67975d2fbb69d6f80eb46e6785a1",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "vision",
+        "financial",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "mrwolfox-ctrlcv-copilot-one-monokai-theme-for-deepseek-harness",
+      "name": "Copilot ONE Monokai Office",
+      "repository": "MrWolfox-ctrlcv/copilot-one-monokai-theme-for-deepseek-harness",
+      "package": "copilot-one-monokai-office",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "One Monokai (office mode) theme for DeepSeek Harness Web UI — a cozy, low-glare CSS overlay aligned with VS Code's One Monokai. · DeepSeek Harness 办公主题：One Monokai 质感，护眼舒适。",
+      "summaryZh": "One Monokai (office mode) theme for DeepSeek Harness Web UI — a cozy, low-glare CSS overlay aligned with VS Code's One Monokai. · DeepSeek Harness 办公主题：One Monokai 质感，护眼舒适。",
+      "branch": "master",
+      "commit": "a0bf01d2c4bc8371ac887bf4e7011f0bc0c5a65d",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "vision",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "nlqh7-dsh-beautify",
+      "name": "Beautify",
+      "repository": "nlqh7/dsh-beautify",
+      "package": "@nlqh/dsh-beautify",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "Dream Skin themes + whale cursor + settings performance + balance whale pet for DeepSeek Harness",
+      "summaryZh": "Beautify 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "master",
+      "commit": "ed029c69dc21f87390d716078081be03e3dded60",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "mixed",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "package-install",
+        "vision",
+        "financial",
+        "theme",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "no1xsyzy-dsh-webview-wrapper",
+      "name": "Webview Wrapper",
+      "repository": "no1xsyzy/dsh-webview-wrapper",
+      "package": "dsh-webview-wrapper",
+      "category": "UI & Workspace",
+      "status": "reviewed",
+      "summaryEn": "A naive native desktop shell for the DeepSeek Harness web surface: hosts the dsh Web app in an OS window via WebviewJS, as a pure everything-is-a-plugin composition.",
+      "summaryZh": "Webview Wrapper 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "master",
+      "commit": "93c78a37cdcbfec98cb9794b0be321d7449e8d89",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "prepublishOnly",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "browser",
+        "model-tools",
+        "package-install",
+        "plugin-management",
+        "prepublish-only"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "openma-ai-deepseek-harness-acp",
+      "name": "Harness ACP",
+      "repository": "openma-ai/deepseek-harness-acp",
+      "package": "@openma/deepseek-harness-acp",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Agent Client Protocol (ACP) adapter for DeepSeek Harness — use DeepSeek Harness from ACP clients such as Zed.",
+      "summaryZh": "Harness ACP 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "89995bcecfdbd9846ccaf0a65c7a477793dc2c1a",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Apache-2.0",
+      "packageLicense": "Apache-2.0",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepublishOnly",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "multi-agent",
+        "theme",
+        "prepublish-only"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "paomoxml-dsh-paste-names",
+      "name": "Paste Names",
+      "repository": "PaoMoXML/dsh-paste-names",
+      "package": "dsh-paste-names",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Paste non-image files or folders into the DSH chat composer as native @path references (with plain-name fallback) instead of the images-only error.",
+      "summaryZh": "Paste Names 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "03d5ee1902123b900f6ff35550bade7da4b6a2d5",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "package-install",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "particlelight-dsh-browser-plus",
+      "name": "Browser Plus",
+      "repository": "ParticleLight/dsh-browser-plus",
+      "package": "dsh-browser-plus",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "Enhanced shared browser for DeepSeek Harness: visible browser both human and AI operate, with ego-style toolbar, operation trail, user-control detection, and stable single-view compositing (Electron 42.x). Fork of dsh-browser-plus (MIT).",
+      "summaryZh": "Browser Plus 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "2f05b1d96e5159df3ffd718a97e94fdd44116975",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "behind-baseline",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "subprocess",
+        "browser",
+        "session-data",
+        "model-tools",
+        "vision",
+        "prepack",
+        "identity-unresolved",
+        "unresolved-install-identity",
+        "stale-peer-range"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity, baseline compatibility evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity、baseline compatibility证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "peterwangze-dsh-reasoning-level",
+      "name": "Reasoning Level",
+      "repository": "peterwangze/dsh-reasoning-level",
+      "package": "dsh-reasoning-level",
+      "category": "UI & Workspace",
+      "status": "held",
+      "summaryEn": "DeepSeek Harness 统一推理等级插件：一个 llm-reasoning 设置项动态配置 DSH 所有模型的默认推理等级（思考等级）——自动为手写声明的模型补齐推理能力、按路由设置默认等级（仅当全部模型支持）、同步 DeepSeek 官方路由，改设置即生效。",
+      "summaryZh": "DeepSeek Harness 统一推理等级插件：一个 llm-reasoning 设置项动态配置 DSH 所有模型的默认推理等级（思考等级）——自动为手写声明的模型补齐推理能力、按路由设置默认等级（仅当全部模型支持）、同步 DeepSeek 官方路由，改设置即生效。",
+      "branch": "main",
+      "commit": "71169c6d00f2fdb47162f416a8bf72d6fc4067f5",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "subprocess",
+        "session-data",
+        "model-tools",
+        "license-incomplete"
+      ],
+      "noteEn": "Held because repository license evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "ph03n1xrt-dsh-codeaudit",
+      "name": "Codeaudit",
+      "repository": "Ph03n1xRt/dsh-codeaudit",
+      "package": "dsh-codeaudit",
+      "category": "Search & Research",
+      "status": "reviewed",
+      "summaryEn": "DSH 代码审计模式：测绘代码资产、追踪数据流证据、记录漏洞链路与代码片段，并在 Web 中可视化展示。",
+      "summaryZh": "DSH 代码审计模式：测绘代码资产、追踪数据流证据、记录漏洞链路与代码片段，并在 Web 中可视化展示。",
+      "branch": "main",
+      "commit": "90d9f057b69dec8ba69c8b42f1e2197b7320db6f",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "subprocess",
+        "database",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "email"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "pk7j7sqryy-ops-dsh-dynamic-island",
+      "name": "Dynamic Island",
+      "repository": "pk7j7sqryy-ops/dsh-Dynamic-Island",
+      "package": "dsh-dynamic-island",
+      "category": "Files & Data",
+      "status": "reviewed",
+      "summaryEn": "灵动岛 Dynamic Island：基于 DeepSeek Harness 的顶部居中 Agent 状态活窗——折叠胶囊显示状态与预设，悬停/点击展开 token 指标、上下文占用率、折线图与工具调用开销，跟随主题色。Top-center agent status island for DeepSeek Harness (DSH).",
+      "summaryZh": "灵动岛 Dynamic Island：基于 DeepSeek Harness 的顶部居中 Agent 状态活窗——折叠胶囊显示状态与预设，悬停/点击展开 token 指标、上下文占用率、折线图与工具调用开销，跟随主题色。Top-center agent status island for DeepSeek Harness (DSH).",
+      "branch": "main",
+      "commit": "b4edd18a51cd452e44848f38ee0ac87c942cc40b",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "session-data",
+        "model-tools",
+        "package-install"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "rotifer-protocol-rotifer-playground",
+      "name": "Rotifer",
+      "repository": "rotifer-protocol/rotifer-playground",
+      "package": "rotifer",
+      "category": "Skills & Methods",
+      "status": "reviewed",
+      "summaryEn": "The Rotifer Protocol plugin for OpenClaw — three Skills plus the Rotifer MCP server. Create your first Agent from a template (hello), route yourself to the right capability (assistant), and rank an Agent's Genes against live Arena data to swap in stronger ones (evolve). Ranking is the automatic part; every replacement waits for your approval and can be rolled back.",
+      "summaryZh": "Rotifer 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "43eda46b16fe5d915d4e1ddb6b5dcd1c5a489a83",
+      "manifest": "plugins/rotifer/package.json",
+      "patch": "plugins/rotifer/cordis.patch.yml",
+      "repoLicense": "Apache-2.0",
+      "packageLicense": "Apache-2.0",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "browser",
+        "database",
+        "session-data",
+        "package-install",
+        "web-search",
+        "financial",
+        "nested-bundle"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "runcross-dsh-simple-background",
+      "name": "Simple Background",
+      "repository": "RunCross/dsh-simple-background",
+      "package": "@runcross/dsh-simple-background",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Dynamically change DSH Web CSS from Settings: raw CSS, background image, and a user JS file.",
+      "summaryZh": "Simple Background 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "3af4670f6e40eaf1a38c45d2025c9a567961cb92",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Apache-2.0",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "browser",
+        "session-data",
+        "package-install",
+        "vision",
+        "theme"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "shang-han-dsh-vs-game",
+      "name": "VS Game",
+      "repository": "shang-han/dsh-vs-game",
+      "package": "dsh-vs-game",
+      "category": "Developer Tools",
+      "status": "reviewed",
+      "summaryEn": "工作中的大肥鱼：工作驱动的解压小游戏。文件是敌人，token 是经验，DSH 干活就是你变强的方式。",
+      "summaryZh": "工作中的大肥鱼：工作驱动的解压小游戏。文件是敌人，token 是经验，DSH 干活就是你变强的方式。",
+      "branch": "main",
+      "commit": "ebf49946dff41ca0b38cd59d6468a4577bfc89e9",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "subprocess"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "sivan757-dsh-agent-plugins-market",
+      "name": "Agent Plugins Market",
+      "repository": "Sivan757/dsh-agent-plugins-market",
+      "package": "dsh-agent-plugins-market",
+      "category": "Discovery & Management",
+      "status": "reviewed",
+      "summaryEn": "The standard way to install Claude Code / Codex / Cursor / Kimi plugin marketplace suites in DeepSeek Harness (DSH) — zero conversion, zero file copying. Skills, MCP servers, hooks and slash commands are injected into your dsh sessions at runtime.",
+      "summaryZh": "Agent Plugins Market 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "cec8a95b087920b16b99e9c66123767fc1794799",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "plugin-management",
+        "web-search",
+        "vision",
+        "multi-agent",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "slicenferqin-dsh-whale-tui",
+      "name": "Whale TUI",
+      "repository": "slicenferqin/dsh-whale-tui",
+      "package": "dsh-whale-tui",
+      "category": "UI & Workspace",
+      "status": "reviewed",
+      "summaryEn": "grok-style terminal UI for DeepSeek Harness — whale edition",
+      "summaryZh": "Whale TUI 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "1ab3c39bda298d22f3489d88543a388b67fdc407",
+      "manifest": "npm/package.json",
+      "patch": "npm/cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "subprocess",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "multi-agent",
+        "theme",
+        "nested-bundle"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "slohmaier-dsh-a11y-focus",
+      "name": "A11y Focus",
+      "repository": "slohmaier/dsh-a11y-focus",
+      "package": "@deepseek-ai/dsh-a11y-focus",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "Accessibility plugin for the DeepSeek Harness web UI: announces tool calls as they appear and finished assistant messages through an aria-live region so screen readers read them aloud.",
+      "summaryZh": "A11y Focus 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "f5ecfcb93538bb091db2f0b11562afe0dfa5859b",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "credentials",
+        "client-injection",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "audio",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "small-tailqwq-dsh-deep-whale",
+      "name": "Client UI Skin Deep Whale Manager",
+      "repository": "Small-tailqwq/dsh-deep-whale",
+      "package": "@dsh-external/dsh-client-ui-skin-deep-whale-manager",
+      "category": "UI & Workspace",
+      "status": "held",
+      "summaryEn": "Settings-integrated discovery, activation, and skin-owned customization for DSH Web skins",
+      "summaryZh": "Client UI Skin Deep Whale Manager 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "fb0c771b5748760a91aec88c085f5b23ca90fad1",
+      "manifest": "skin-manager/package.json",
+      "patch": "skin-manager/cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "theme",
+        "nested-bundle",
+        "license-incomplete",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license、npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "smelt-ai-dsh-acp-rich",
+      "name": "ACP Rich",
+      "repository": "smelt-ai/dsh-acp-rich",
+      "package": "@smelt-ai/dsh-acp-rich",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Presentation-complete Agent Client Protocol server for deepseek-harness: streaming text, reasoning, tool cards, inline diffs, plans, usage, commands, permission prompts, and resumable sessions",
+      "summaryZh": "ACP Rich 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "61d5af06145e04728c7e358bf7aec07e5456afe5",
+      "manifest": "package.json",
+      "patch": "profile/cordis.patch.yml",
+      "repoLicense": "Apache-2.0",
+      "packageLicense": "Apache-2.0",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepublishOnly",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "database",
+        "session-data",
+        "model-tools",
+        "vision",
+        "theme",
+        "prepublish-only"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "striveh-dsh-llm-call-inspector",
+      "name": "LLM Call Inspector",
+      "repository": "striveh/dsh-llm-call-inspector",
+      "package": "dsh-llm-call-inspector",
+      "category": "Agent & Workflow",
+      "status": "reviewed",
+      "summaryEn": "Session-scoped LLM request and response inspector for DeepSeek Harness Web",
+      "summaryZh": "LLM Call Inspector 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "1ceb6aedce81a7839e3e759e6a4aeff3c1cf25ef",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "superpaigu-dsh-desktop",
+      "name": "Desktop",
+      "repository": "SuperPaiGu/dsh-desktop",
+      "package": "dsh-desktop",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "DSH desktop-window bundle: registers the /desktop command that opens DeepSeek Harness in a native desktop window (identical to the web UI)",
+      "summaryZh": "Desktop 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "174d034b8d9bec6860fcc6595109a20442400187",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "credentials",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "package-install",
+        "vision",
+        "license-incomplete"
+      ],
+      "noteEn": "Held because repository license evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "tobycai-dsh-sessions-manager",
+      "name": "Sessions Manager",
+      "repository": "TOBYCAI/dsh-sessions-manager",
+      "package": "dsh-sessions-manager",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "DSH 设置面板会话管理器：归档 / 恢复 / 彻底删除 / 移动到其他工作区，带工作区标签与会话日期；统一「会话管理」面板。Session manager for the DeepSeek Harness settings panel — archive / restore / permanently delete / move sessions across workspaces, with workspace tags & session dates in one unified panel.",
+      "summaryZh": "DSH 设置面板会话管理器：归档 / 恢复 / 彻底删除 / 移动到其他工作区，带工作区标签与会话日期；统一「会话管理」面板。Session manager for the DeepSeek Harness settings panel — archive / restore / permanently delete / move sessions across workspaces, with workspace tags & session dates in one unified panel.",
+      "branch": "main",
+      "commit": "0812e37e1417c0cf6f89202b118a2fc37366b8d8",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "browser",
+        "session-data",
+        "vision",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "tomorrow285-my-dsh-plugins",
+      "name": "Simple Password",
+      "repository": "tomorrow285/my-dsh-plugins",
+      "package": "dsh-simple-password",
+      "category": "Safety & Approvals",
+      "status": "held",
+      "summaryEn": "Password gate for the DSH web GUI: first-run setup plus unlock wall, with a scrypt-hashed record under the DSH home and localStorage-remembered credentials in the browser.",
+      "summaryZh": "Simple Password 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "master",
+      "commit": "304e0b7ef80ede22d9ae7753bb5ce6ea8ec5e39c",
+      "manifest": "packages/dsh-simple-password/package.json",
+      "patch": "packages/dsh-simple-password/cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "package-install",
+        "financial",
+        "nested-bundle",
+        "license-incomplete",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license、npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "tuogusa-dsh-mindmap",
+      "name": "Mindmap",
+      "repository": "tuogusa/dsh-mindmap",
+      "package": "dsh-mindmap",
+      "category": "Agent & Workflow",
+      "status": "held",
+      "summaryEn": "DeepSeek Harness 思维导图插件：AI 回答自动整理为可编辑 Markdown，支持导出文件和生成图片；核心逻辑已内置，单包发布。",
+      "summaryZh": "DeepSeek Harness 思维导图插件：AI 回答自动整理为可编辑 Markdown，支持导出文件和生成图片；核心逻辑已内置，单包发布。",
+      "branch": "master",
+      "commit": "2c980670db44dd1dbae48bbf5b90ae1be691baa0",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "client-injection",
+        "session-data",
+        "package-install",
+        "license-incomplete"
+      ],
+      "noteEn": "Held because repository license evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "uuedtech-dsh-plugins-pub",
+      "name": "Desktop",
+      "repository": "uuedTech/dsh-plugins-pub",
+      "package": "@uued/dsh-desktop",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "dsh desktop wrapper: spawns the prebuilt platform shell over stdio JSON-RPC, points it at the local dsh Web loopback URL, and switches the SAME native window between local and remote (SSH-tunnel) dsh instances in place. Ships as an npm BUNDLE (dsh.bundle.patch) so `dsh plugin --profile web add @uued/dsh-desktop` installs and activates it with zero manual wiring.",
+      "summaryZh": "Desktop 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "607af5df1365c39344e58c20a7fd1cd402db4de9",
+      "manifest": "dsh-desktop/package.json",
+      "patch": "dsh-desktop/cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "nested-bundle"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "wanbinyu-dsh-concurrency-meter",
+      "name": "Concurrency Meter",
+      "repository": "Wanbinyu/dsh-concurrency-meter",
+      "package": "dsh-concurrency-meter",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Read-only model request concurrency monitoring for DeepSeek Harness",
+      "summaryZh": "Concurrency Meter 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "44ff0241003861780807c6d270f8bcf18e3c2b00",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "model-tools",
+        "package-install",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "wanbinyu-dsh-error-lens",
+      "name": "Error Lens",
+      "repository": "Wanbinyu/dsh-error-lens",
+      "package": "dsh-error-lens",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Read-only, redacted provider error diagnostics for DeepSeek Harness",
+      "summaryZh": "Error Lens 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "75c0a3282d90d342c73cc2b301f1ff9f05a9de75",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "wanbinyu-dsh-provider-probe",
+      "name": "Provider Probe",
+      "repository": "Wanbinyu/dsh-provider-probe",
+      "package": "dsh-provider-probe",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Safe, explicit provider connectivity and latency checks for DeepSeek Harness",
+      "summaryZh": "Provider Probe 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "681896c8390480aa1309c2f16dbaa3eb9a97e1d4",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "wenzetan-dsh-quota-panel",
+      "name": "Quota Panel",
+      "repository": "wenzetan/dsh-quota-panel",
+      "package": "dsh-quota-panel",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Provider quota/balance widget for the dsh web surface: collapsed glanceable capsule expanding into a Harness-native card with a settings panel (provider visibility / refresh interval / warn thresholds), fed by a loopback Connection RPC channel whose host half proxies each provider with credentials that never reach the browser.",
+      "summaryZh": "Quota Panel 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "7e06c9df76478200d6bc897a5f1a9181167aa5ff",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "mcp",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "financial",
+        "theme",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "wjinxuan-dsh-ai-ui-studio",
+      "name": "AI UI Studio",
+      "repository": "wjinxuan/dsh-ai-ui-studio",
+      "package": "dsh-ai-ui-studio",
+      "category": "UI & Workspace",
+      "status": "held",
+      "summaryEn": "AI UI Studio — 在 DSH 里预览你的 Web 应用，用拖拽/点选/AI 流式有效调整前端样式并写回源码",
+      "summaryZh": "AI UI Studio — 在 DSH 里预览你的 Web 应用，用拖拽/点选/AI 流式有效调整前端样式并写回源码",
+      "branch": "master",
+      "commit": "ea8eaf9c6ee81c95e54230c496b9cfd13da97260",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "client-injection",
+        "filesystem-read",
+        "subprocess",
+        "model-tools",
+        "license-incomplete",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license、npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "wmengxiang-dsh-any-skills",
+      "name": "ANY Skills",
+      "repository": "wmengxiang/dsh-any-skills",
+      "package": "dsh-any-skills",
+      "category": "Skills & Methods",
+      "status": "reviewed",
+      "summaryEn": "Import, install and invoke Agent Skills in DeepSeek Harness from Codex, Claude Code, OpenCode, GitHub or npm — with a composer-side skill picker. · 从 Codex / Claude Code / OpenCode / GitHub / npm 导入并安装技能到 ~/.dsh/skills，支持 composer 旁一键插入 /skill-name 调用。",
+      "summaryZh": "Import, install and invoke Agent Skills in DeepSeek Harness from Codex, Claude Code, OpenCode, GitHub or npm — with a composer-side skill picker. · 从 Codex / Claude Code / OpenCode / GitHub / npm 导入并安装技能到 ~/.dsh/skills，支持 composer 旁一键插入 /skill-name 调用。",
+      "branch": "main",
+      "commit": "280e94518118cbb74cd0ee29dc24b8cc4d24d7a1",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "prepare",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "browser",
+        "package-install",
+        "prepare"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "wowayou-mydsh",
+      "name": "UI Notify",
+      "repository": "wowayou/mydsh",
+      "package": "@wowayou/ui-notify",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "mydsh: browser completion notification — Notification API + sound when an agent turn finishes while the tab is hidden",
+      "summaryZh": "UI Notify 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "25024b581cf99972d9df3c2eabb5fd645b48790a",
+      "manifest": "client/ui-notify/package.json",
+      "patch": "client/ui-notify/cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "process-control",
+        "browser",
+        "session-data",
+        "vision",
+        "audio",
+        "theme",
+        "nested-bundle"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "x2it-dsh-memory-panel",
+      "name": "Memory Panel",
+      "repository": "x2it/dsh-memory-panel",
+      "package": "dsh-memory-panel",
+      "category": "Memory",
+      "status": "reviewed",
+      "summaryEn": "Long-term memory for DeepSeek Harness: memory_save/recall/list tools plus a sidebar panel visualizing what the agent remembers about you",
+      "summaryZh": "Memory Panel 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "7305b625239e08d52a9588b7b5e0a6837564a878",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "process-control",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "plugin-management",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "xiaoguohaha-dsh-lan-ip-auth",
+      "name": "LAN IP Auth",
+      "repository": "xiaoguohaha/dsh-lan-ip-auth",
+      "package": "dsh-lan-ip-auth",
+      "category": "Safety & Approvals",
+      "status": "held",
+      "summaryEn": "DSH remote-aware web-startup replacement + auth plugin (fork of dsh-web-startup-auth): allows --host 0.0.0.0, username/password login, plus a trustedLanIps whitelist for password-less LAN device access",
+      "summaryZh": "LAN IP Auth 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "master",
+      "commit": "575f59ae5d31ecbbd527527df7d6aa8940d8cabc",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "subprocess",
+        "browser",
+        "session-data",
+        "package-install",
+        "financial",
+        "prepack",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "xiaoliang2-enterprise-compliance",
+      "name": "Enterprise Compliance",
+      "repository": "xiaoliang2/enterprise-compliance",
+      "package": "@xiaobanli/dsh-enterprise-compliance",
+      "category": "Safety & Approvals",
+      "status": "reviewed",
+      "summaryEn": "Enterprise compliance for DeepSeek Harness — SOC2/GDPR automated checks, sensitive-info redaction, and a redacted tool audit trail. · DSH 企业级合规插件：SOC2/GDPR 自动化合规自检、敏感信息拦截与脱敏、操作日志审计追溯。",
+      "summaryZh": "Enterprise compliance for DeepSeek Harness — SOC2/GDPR automated checks, sensitive-info redaction, and a redacted tool audit trail. · DSH 企业级合规插件：SOC2/GDPR 自动化合规自检、敏感信息拦截与脱敏、操作日志审计追溯。",
+      "branch": "main",
+      "commit": "78545cbdbcadd80adcfa9d6c06c8f57c9edf127d",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "session-data"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "xiaomao49-dsh-wiki-bridge",
+      "name": "Wiki Bridge",
+      "repository": "xiaomao49/dsh-wiki-bridge",
+      "package": "dsh-wiki-bridge",
+      "category": "Memory",
+      "status": "held",
+      "summaryEn": "WikiBridge：DSH 与 Obsidian vault 的知识库桥接 —— 约束工具（wiki_search/read/write）+ 自动词典检索 + 持久化配置",
+      "summaryZh": "WikiBridge：DSH 与 Obsidian vault 的知识库桥接 —— 约束工具（wiki_search/read/write）+ 自动词典检索 + 持久化配置",
+      "branch": "main",
+      "commit": "524c741b4ba364b354c6c49e5f98dde963eb0c40",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "credentials",
+        "client-injection",
+        "process-control",
+        "session-data",
+        "package-install",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "xiaowind-dsh-plugin-loop",
+      "name": "Loop",
+      "repository": "XiaoWind/dsh-plugin-loop",
+      "package": "dsh-plugin-loop",
+      "category": "Agent & Workflow",
+      "status": "reviewed",
+      "summaryEn": "DeepSeek Harness plugin: a /loop slash command for timed recurring agent loops",
+      "summaryZh": "Loop 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "d46cb6138682eb17381102bfbb228ff90a91cc32",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "subprocess",
+        "process-control",
+        "session-data",
+        "model-tools"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "xiaoyuink-dsh-image-vision",
+      "name": "Image Vision",
+      "repository": "xiaoyuink/dsh-image-vision",
+      "package": "@xiaoyuink/dsh-image-vision",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "图片识别插件：自动判断当前模型是否具备视觉能力，有则用当前模型并按插件预设提示词分析，无则调用插件配置的视觉模型。文本模型可直接在对话框粘贴/上传/拖拽图片，发送时自动写入 DSH 附件存储（永久），消息区渲染缩略图，模型自动调用 image_vision / ocr / ground / crop 系列工具识别与精读；模型选择器保持简洁。",
+      "summaryZh": "图片识别插件：自动判断当前模型是否具备视觉能力，有则用当前模型并按插件预设提示词分析，无则调用插件配置的视觉模型。文本模型可直接在对话框粘贴/上传/拖拽图片，发送时自动写入 DSH 附件存储（永久），消息区渲染缩略图，模型自动调用 image_vision / ocr / ground / crop 系列工具识别与精读；模型选择器保持简洁。",
+      "branch": "main",
+      "commit": "e915a222e2eed50378d4afd8ca2deff90ac87704",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "Unresolved",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "model-tools",
+        "package-install",
+        "vision",
+        "financial",
+        "license-incomplete",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因repository license、npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "xie-tj-dsh-plugin-usage-ledger",
+      "name": "Usage Ledger",
+      "repository": "xie-tj/dsh-plugin-usage-ledger",
+      "package": "dsh-plugin-usage-ledger",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Persistent model usage ledger and Web Usage dashboard for DeepSeek Harness",
+      "summaryZh": "Usage Ledger 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "e8ef0f653ce66ecd74cb82015c7b91baf9ffba42",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "none",
+      "signals": [
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "database",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "xmoon-dsh-pi-tui",
+      "name": "PI TUI",
+      "repository": "XMoon/dsh-pi-tui",
+      "package": "@xmoon76/dsh-pi-tui",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "The dsh-pi-tui bundle: a TUI surface for DeepSeek Harness profiles (dsh --profile pi-tui)",
+      "summaryZh": "PI TUI 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "3a3bd1f8904bdbac4140b71924a25feede6301d7",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "declared-rc6",
+      "lifecycle": "prepack",
+      "signals": [
+        "external-network",
+        "credentials",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "subprocess",
+        "browser",
+        "session-data",
+        "model-tools",
+        "package-install",
+        "vision",
+        "financial",
+        "multi-agent",
+        "theme",
+        "prepack"
+      ],
+      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+    },
+    {
+      "id": "zhang-guangjie-dsh-video-bg",
+      "name": "Video BG",
+      "repository": "zhang-guangjie/dsh-video-bg",
+      "package": "@local/dsh-video-bg",
+      "category": "Vision & Media",
+      "status": "held",
+      "summaryEn": "DSH GUI 视频背景插件：把本地视频作为对话背景循环播放，带暂停/播放与透明度/遮罩控制。默认解析包内 media/background.mp4（缺失时优雅降级），支持 videoPath 配置与环境变量覆盖。",
+      "summaryZh": "DSH GUI 视频背景插件：把本地视频作为对话背景循环播放，带暂停/播放与透明度/遮罩控制。默认解析包内 media/background.mp4（缺失时优雅降级），支持 videoPath 配置与环境变量覆盖。",
+      "branch": "main",
+      "commit": "88bcd7e69bc0521c7ce86b09a39e60c8a4b08c79",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "credentials",
+        "client-injection",
+        "browser",
+        "vision",
+        "theme",
+        "identity-unresolved",
+        "unresolved-install-identity"
+      ],
+      "noteEn": "Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.",
+      "noteZh": "因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "zhouzhencheng07-dsh-memory",
+      "name": "Memory",
+      "repository": "zhouzhencheng07/dsh-memory",
+      "package": "dsh-memory",
+      "category": "Vision & Media",
+      "status": "reviewed",
+      "summaryEn": "Cross-session memory for DeepSeek Harness (dsh): background Auto-Memory, per-workspace daily notes, memory search, and optional vector search",
+      "summaryZh": "Memory 是一个面向 DeepSeek Harness 的插件。",
+      "branch": "main",
+      "commit": "674372f1aeedd5ae3952615676ca4d35ffa3db68",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "external-network",
+        "client-injection",
+        "filesystem-read",
+        "filesystem-write",
+        "session-data",
+        "system-prompt",
+        "model-tools",
+        "vision",
+        "theme"
       ],
       "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
       "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
