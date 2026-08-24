@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { getPublishedPlugins, locales } from "@/lib/catalog";
-import { siteConfig } from "@/lib/site";
+import { absoluteLocalizedPath } from "@/lib/urls";
 
 export const dynamic = "force-static";
 
@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const sharedRoutes = ["", "plugins/", "review/", "methodology/"];
   const pages = locales.flatMap((locale) =>
     sharedRoutes.map((route) => ({
-      url: `${siteConfig.url}/${locale}/${route}`,
+      url: absoluteLocalizedPath(locale, route),
       lastModified,
       changeFrequency:
         route === "plugins/" ? ("weekly" as const) : ("monthly" as const),
@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
   const pluginPages = locales.flatMap((locale) =>
     getPublishedPlugins().map((plugin) => ({
-      url: `${siteConfig.url}/${locale}/plugins/${plugin.id}/`,
+      url: absoluteLocalizedPath(locale, `plugins/${plugin.id}`),
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.7,

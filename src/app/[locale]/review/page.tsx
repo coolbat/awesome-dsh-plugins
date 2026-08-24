@@ -10,6 +10,7 @@ import {
 } from "@/lib/catalog";
 import { getMessages } from "@/lib/i18n";
 import { statusLabel } from "@/lib/labels";
+import { languageAlternates, localizedPath } from "@/lib/urls";
 
 export async function generateMetadata({
   params,
@@ -25,12 +26,8 @@ export async function generateMetadata({
         : "Inspect held and excluded DSH plugin candidates and their fixed-source blockers.",
     robots: { index: true, follow: true },
     alternates: {
-      canonical: `/${locale}/review/`,
-      languages: {
-        en: "/en/review/",
-        zh: "/zh/review/",
-        "x-default": "/en/review/",
-      },
+      canonical: localizedPath(locale === "zh" ? "zh" : "en", "review"),
+      languages: languageAlternates("review"),
     },
   };
 }
@@ -104,7 +101,7 @@ function ReviewGroup({
                   {statusLabel(plugin.status, locale)}
                 </span>
                 <h3>
-                  <Link href={`/${locale}/plugins/${plugin.id}/`}>
+                  <Link href={localizedPath(locale, `plugins/${plugin.id}`)}>
                     {plugin.name}
                   </Link>
                 </h3>

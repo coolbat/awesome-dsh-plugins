@@ -12,6 +12,11 @@ import {
 } from "@/lib/catalog";
 import { getMessages } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site";
+import {
+  absoluteLocalizedPath,
+  languageAlternates,
+  localizedPath,
+} from "@/lib/urls";
 
 export async function generateMetadata({
   params,
@@ -33,7 +38,7 @@ export async function generateMetadata({
   const description = zh
     ? "发现经过审核的 DeepSeek Harness 插件，查看固定源码、包结构、许可证、兼容性证据与透明审核备注。"
     : "Discover reviewed DeepSeek Harness plugins with pinned source commits, package structure, licenses, compatibility evidence, and transparent review notes.";
-  const canonical = `${siteConfig.url}/${locale}/`;
+  const canonical = absoluteLocalizedPath(locale);
 
   return {
     title: { absolute: title },
@@ -51,8 +56,8 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `/${locale}/`,
-      languages: { en: "/en/", zh: "/zh/", "x-default": "/en/" },
+      canonical: localizedPath(locale),
+      languages: languageAlternates(),
     },
     openGraph: {
       type: "website",
@@ -82,7 +87,7 @@ export default async function LocaleHome({
   const t = getMessages(locale).home;
   const stats = getCatalogStats();
   const featured = getPublishedPlugins().slice(0, 6);
-  const canonicalUrl = `${siteConfig.url}/${locale}/`;
+  const canonicalUrl = absoluteLocalizedPath(locale);
   const pageTitle =
     locale === "zh"
       ? "DeepSeek Harness 插件目录"
@@ -121,7 +126,7 @@ export default async function LocaleHome({
                 "@type": "ListItem",
                 position: index + 1,
                 name: plugin.name,
-                url: `${siteConfig.url}/${locale}/plugins/${plugin.id}/`,
+                url: absoluteLocalizedPath(locale, `plugins/${plugin.id}`),
               })),
             },
             {
@@ -158,7 +163,7 @@ export default async function LocaleHome({
             <h1>{t.title}</h1>
             <p className="hero-description">{t.description}</p>
             <form
-              action={`/${locale}/plugins/`}
+              action={localizedPath(locale, "plugins")}
               className="hero-search"
               role="search"
             >
@@ -179,10 +184,16 @@ export default async function LocaleHome({
               </div>
             </form>
             <div className="hero-actions">
-              <Link className="text-link" href={`/${locale}/plugins/`}>
+              <Link
+                className="text-link"
+                href={localizedPath(locale, "plugins")}
+              >
                 {t.primaryAction}
               </Link>
-              <Link className="text-link" href={`/${locale}/methodology/`}>
+              <Link
+                className="text-link"
+                href={localizedPath(locale, "methodology")}
+              >
                 {t.secondaryAction}
               </Link>
             </div>
@@ -233,7 +244,10 @@ export default async function LocaleHome({
             </div>
             <div>
               <p>{t.latestDescription}</p>
-              <Link className="text-link" href={`/${locale}/plugins/`}>
+              <Link
+                className="text-link"
+                href={localizedPath(locale, "plugins")}
+              >
                 {t.primaryAction} <span aria-hidden="true">→</span>
               </Link>
             </div>
@@ -262,7 +276,10 @@ export default async function LocaleHome({
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <Link className="text-link" href={`/${locale}/methodology/`}>
+            <Link
+              className="text-link"
+              href={localizedPath(locale, "methodology")}
+            >
               {t.checklistAction} <span aria-hidden="true">→</span>
             </Link>
           </aside>

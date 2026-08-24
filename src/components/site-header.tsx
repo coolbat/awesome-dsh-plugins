@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Locale } from "@/lib/catalog";
 import { getMessages } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site";
+import { localizedPath } from "@/lib/urls";
 
 export function SiteHeader({ locale }: { locale: Locale }) {
   const t = getMessages(locale);
@@ -15,7 +16,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
       </a>
       <header className="site-header">
         <div className="shell header-inner">
-          <Link className="brand" href={`/${locale}/`}>
+          <Link className="brand" href={localizedPath(locale)}>
             <span className="brand-mark" aria-hidden="true">
               DSH
             </span>
@@ -24,13 +25,17 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           <nav aria-label={locale === "zh" ? "主导航" : "Primary navigation"}>
             <ul className="nav-list">
               <li>
-                <Link href={`/${locale}/plugins/`}>{t.nav.plugins}</Link>
+                <Link href={localizedPath(locale, "plugins")}>
+                  {t.nav.plugins}
+                </Link>
               </li>
               <li>
-                <Link href={`/${locale}/review/`}>{t.nav.review}</Link>
+                <Link href={localizedPath(locale, "review")}>
+                  {t.nav.review}
+                </Link>
               </li>
               <li>
-                <Link href={`/${locale}/methodology/`}>
+                <Link href={localizedPath(locale, "methodology")}>
                   {t.nav.methodology}
                 </Link>
               </li>
@@ -38,7 +43,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
                 <a href={siteConfig.repository}>{t.nav.github}</a>
               </li>
               <li>
-                <Link href={`/${otherLocale}/`} lang={otherLocale}>
+                <Link href={localizedPath(otherLocale)} lang={otherLocale}>
                   {t.switchLanguage}
                 </Link>
               </li>

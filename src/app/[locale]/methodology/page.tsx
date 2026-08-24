@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { catalogSnapshot, isLocale } from "@/lib/catalog";
 import { getMessages } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site";
+import { languageAlternates, localizedPath } from "@/lib/urls";
 
 export async function generateMetadata({
   params,
@@ -18,12 +19,8 @@ export async function generateMetadata({
         ? "了解 DSH Plugin Index 如何发现、固定源码、静态检查并审核候选插件。"
         : "Learn how DSH Plugin Index discovers, pins, statically inspects, and reviews plugin candidates.",
     alternates: {
-      canonical: `/${locale}/methodology/`,
-      languages: {
-        en: "/en/methodology/",
-        zh: "/zh/methodology/",
-        "x-default": "/en/methodology/",
-      },
+      canonical: localizedPath(locale === "zh" ? "zh" : "en", "methodology"),
+      languages: languageAlternates("methodology"),
     },
   };
 }
