@@ -10,7 +10,11 @@ import {
   isLocale,
 } from "@/lib/catalog";
 import { getMessages } from "@/lib/i18n";
-import { siteConfig } from "@/lib/site";
+import {
+  absoluteLocalizedPath,
+  languageAlternates,
+  localizedPath,
+} from "@/lib/urls";
 
 export async function generateMetadata({
   params,
@@ -18,6 +22,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  if (!isLocale(locale)) return {};
   const zh = locale === "zh";
   return {
     title: zh ? "插件目录" : "Plugin directory",
@@ -25,12 +30,8 @@ export async function generateMetadata({
       ? "浏览经过固定源码结构核验的 DeepSeek Harness 插件。"
       : "Browse DeepSeek Harness plugins reviewed against immutable source evidence.",
     alternates: {
-      canonical: `/${locale}/plugins/`,
-      languages: {
-        en: "/en/plugins/",
-        zh: "/zh/plugins/",
-        "x-default": "/en/plugins/",
-      },
+      canonical: localizedPath(locale, "plugins"),
+      languages: languageAlternates("plugins"),
     },
   };
 }
@@ -55,7 +56,7 @@ export default async function PluginsPage({
           "@type": "CollectionPage",
           name: t.title,
           description: t.description,
-          url: `${siteConfig.url}/${locale}/plugins/`,
+          url: absoluteLocalizedPath(locale, "plugins"),
           inLanguage: locale === "zh" ? "zh-CN" : "en",
           mainEntity: {
             "@type": "ItemList",
@@ -64,7 +65,7 @@ export default async function PluginsPage({
               "@type": "ListItem",
               position: index + 1,
               name: plugin.name,
-              url: `${siteConfig.url}/${locale}/plugins/${plugin.id}/`,
+              url: absoluteLocalizedPath(locale, `plugins/${plugin.id}`),
             })),
           },
         }}

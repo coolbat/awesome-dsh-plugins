@@ -10,16 +10,20 @@ import {
   isLocale,
   localizedNote,
   localizedSummary,
-  locales,
 } from "@/lib/catalog";
 import { getMessages } from "@/lib/i18n";
 import { compatibilityLabel, statusLabel } from "@/lib/labels";
-import { siteConfig } from "@/lib/site";
+import {
+  absoluteLocalizedPath,
+  languageAlternates,
+  localizedPath,
+} from "@/lib/urls";
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) =>
-    getEvidenceRecords().map((plugin) => ({ locale, slug: plugin.id })),
-  );
+  return getEvidenceRecords().map((plugin) => ({
+    locale: "zh",
+    slug: plugin.id,
+  }));
 }
 
 export async function generateMetadata({
@@ -40,12 +44,8 @@ export async function generateMetadata({
         ? { index: true, follow: true }
         : { index: false, follow: true },
     alternates: {
-      canonical: `/${locale}/plugins/${plugin.id}/`,
-      languages: {
-        en: `/en/plugins/${plugin.id}/`,
-        zh: `/zh/plugins/${plugin.id}/`,
-        "x-default": `/en/plugins/${plugin.id}/`,
-      },
+      canonical: localizedPath(locale, `plugins/${plugin.id}`),
+      languages: languageAlternates(`plugins/${plugin.id}`),
     },
   };
 }
@@ -74,12 +74,12 @@ export default async function PluginDetailPage({
           codeRepository: plugin.sourceUrl,
           author: { "@type": "Person", name: plugin.author },
           license: plugin.repoLicense,
-          url: `${siteConfig.url}/${locale}/plugins/${plugin.id}/`,
+          url: absoluteLocalizedPath(locale, `plugins/${plugin.id}`),
         }}
       />
       <section className="detail-hero">
         <div className="shell">
-          <Link className="back-link" href={`/${locale}/plugins/`}>
+          <Link className="back-link" href={localizedPath(locale, "plugins")}>
             <span aria-hidden="true">←</span> {t.back}
           </Link>
           <div className="detail-heading-grid">

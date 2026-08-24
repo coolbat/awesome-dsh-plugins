@@ -3,10 +3,10 @@ import type { ReactNode } from "react";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { isLocale, locales } from "@/lib/catalog";
+import { isLocale } from "@/lib/catalog";
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return [{ locale: "zh" }];
 }
 
 export default async function LocaleLayout({

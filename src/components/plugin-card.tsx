@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { CatalogPlugin, Locale } from "@/lib/catalog";
 import { localizedSummary } from "@/lib/catalog";
 import { getMessages } from "@/lib/i18n";
+import { localizedPath } from "@/lib/urls";
 import { compatibilityLabel } from "@/lib/labels";
 
 export function PluginCard({
@@ -25,7 +26,9 @@ export function PluginCard({
       <div>
         <p className="card-category">{plugin.category}</p>
         <h2 className="plugin-card-title">
-          <Link href={`/${locale}/plugins/${plugin.id}/`}>{plugin.name}</Link>
+          <Link href={localizedPath(locale, `plugins/${plugin.id}`)}>
+            {plugin.name}
+          </Link>
         </h2>
         <p className="plugin-summary">{localizedSummary(plugin, locale)}</p>
       </div>
@@ -44,7 +47,10 @@ export function PluginCard({
         <span>{plugin.package ?? "Git source"}</span>
       </div>
       <div className="card-actions">
-        <Link className="text-link" href={`/${locale}/plugins/${plugin.id}/`}>
+        <Link
+          className="text-link"
+          href={localizedPath(locale, `plugins/${plugin.id}`)}
+        >
           {t.viewEvidence} <span aria-hidden="true">→</span>
         </Link>
         <a className="source-link" href={plugin.sourceUrl}>
