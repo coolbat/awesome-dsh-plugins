@@ -1,8 +1,13 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 import { siteConfig } from "../src/lib/site";
-import { absoluteLocalizedPath, localizedPath } from "../src/lib/urls";
+import {
+  absoluteLocalizedPath,
+  languageAlternates,
+  localizedPath,
+} from "../src/lib/urls";
 
 test("English uses the unprefixed canonical URL space", () => {
   assert.equal(localizedPath("en"), "/");
@@ -32,4 +37,21 @@ test("absolute localized paths use the configured site origin", () => {
     absoluteLocalizedPath("zh", "plugins"),
     `${siteConfig.url}/zh/plugins/`,
   );
+});
+
+test("language alternates make unprefixed English the canonical fallback", () => {
+  assert.deepEqual(languageAlternates("plugins/example-plugin"), {
+    en: "/plugins/example-plugin/",
+    zh: "/zh/plugins/example-plugin/",
+    "x-default": "/plugins/example-plugin/",
+  });
+});
+
+test("legacy English URLs permanently redirect one-to-one", async () => {
+  const redirects = await readFile(
+    new URL("../public/_redirects", import.meta.url),
+    "utf8",
+  );
+
+  assert.equal(redirects, "/en / 301\n/en/ / 301\n/en/* /:splat 301\n");
 });
