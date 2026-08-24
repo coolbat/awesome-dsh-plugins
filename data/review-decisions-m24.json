@@ -1,0 +1,3868 @@
+{
+  "decisions": [
+    {
+      "sequence": 1,
+      "disposition": "catalog-held",
+      "catalogId": "00080000-dsh-project-memory",
+      "reason": null
+    },
+    {
+      "sequence": 2,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to deepseek-ai/deepseek-harness rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 3,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to deepseek-ai/deepseek-harness rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 4,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to deepseek-ai/deepseek-harness rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 5,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private evaluation support package under eval/v0.4, not the independently distributed plugin at the repository root."
+    },
+    {
+      "sequence": 6,
+      "disposition": "catalog-held",
+      "catalogId": "1072636071-dsh-web-ui-jx",
+      "reason": null
+    },
+    {
+      "sequence": 7,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness base bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 8,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness headless bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 9,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness web-app bundle inside a VS Code product, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 10,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to luoyuejun9/dsh-project-memory rather than 199084/dsh-project-memory."
+    },
+    {
+      "sequence": 11,
+      "disposition": "catalog-reviewed",
+      "catalogId": "1e0zj-dsh-plugin-mall",
+      "reason": null
+    },
+    {
+      "sequence": 12,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.1.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 13,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 14,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.1 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 15,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.2 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 16,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.2.3 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 17,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Historical v0.3.0 archive; the repository's current root bundle is already cataloged."
+    },
+    {
+      "sequence": 18,
+      "disposition": "catalog-held",
+      "catalogId": "240xu-dsh-websearch",
+      "reason": null
+    },
+    {
+      "sequence": 19,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit demo capability under examples; the repository's root bundle is already cataloged."
+    },
+    {
+      "sequence": 20,
+      "disposition": "catalog-held",
+      "catalogId": "937862061-dsh-project-workbench",
+      "reason": null
+    },
+    {
+      "sequence": 21,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id abidhmuhsin-dsh-visualizer; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 22,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Private downstream desktop profile bundle inside a full Harness GUI fork; the repository has also been renamed and no independent package installation identity was confirmed."
+    },
+    {
+      "sequence": 23,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 24,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 25,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 26,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 27,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 28,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 29,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 30,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Helm-D suite component represented by the canonical router record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 31,
+      "disposition": "catalog-held",
+      "catalogId": "ahmed-farahat-pro-magna-verse",
+      "reason": null
+    },
+    {
+      "sequence": 32,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 33,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 34,
+      "disposition": "catalog-reviewed",
+      "catalogId": "aks1st-dock",
+      "reason": null
+    },
+    {
+      "sequence": 35,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 36,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 37,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 38,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 39,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 40,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 41,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Private root source manifest is superseded by the same repository's already-cataloged distributable nested bundle."
+    },
+    {
+      "sequence": 42,
+      "disposition": "catalog-reviewed",
+      "catalogId": "alexkaiqi-dsh-multi-model-provider",
+      "reason": null
+    },
+    {
+      "sequence": 43,
+      "disposition": "catalog-held",
+      "catalogId": "alexkaiqi-dsh-pet-assistant",
+      "reason": null
+    },
+    {
+      "sequence": 44,
+      "disposition": "catalog-held",
+      "catalogId": "alexkaiqi-dsh-realtime-voice",
+      "reason": null
+    },
+    {
+      "sequence": 45,
+      "disposition": "catalog-held",
+      "catalogId": "alexkaiqi-dsh-session-assistant",
+      "reason": null
+    },
+    {
+      "sequence": 46,
+      "disposition": "catalog-reviewed",
+      "catalogId": "alexpeng07-dsh-custom-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 47,
+      "disposition": "catalog-held",
+      "catalogId": "alexyin-tongji-dsh-ui-enhancer",
+      "reason": null
+    },
+    {
+      "sequence": 48,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest was unavailable at the frozen 40-character source commit, so the required static evidence could not be reproduced."
+    },
+    {
+      "sequence": 49,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest was unavailable at the frozen 40-character source commit, so the required static evidence could not be reproduced."
+    },
+    {
+      "sequence": 50,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 51,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 52,
+      "disposition": "catalog-reviewed",
+      "catalogId": "animal2404-dsh-verifier-pro",
+      "reason": null
+    },
+    {
+      "sequence": 53,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 54,
+      "disposition": "catalog-held",
+      "catalogId": "arfcon-dsh-hotplug-hub",
+      "reason": null
+    },
+    {
+      "sequence": 55,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored manifest does not map its package or installation identity to the candidate repository, so its canonical source is unresolved."
+    },
+    {
+      "sequence": 56,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 57,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 58,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 59,
+      "disposition": "catalog-held",
+      "catalogId": "baisbt-dsh-greaterclarity-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 60,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 61,
+      "disposition": "catalog-reviewed",
+      "catalogId": "baobaolaodie-cc-dsh-notifier",
+      "reason": null
+    },
+    {
+      "sequence": 62,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 63,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 64,
+      "disposition": "catalog-held",
+      "catalogId": "baosfeng-my-dsh-plugins",
+      "reason": null
+    },
+    {
+      "sequence": 65,
+      "disposition": "catalog-held",
+      "catalogId": "baroncyrus-dsh-harness-ally",
+      "reason": null
+    },
+    {
+      "sequence": 66,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 67,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 68,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 69,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Claude Code ecosystem component represented by the canonical cc-agents record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 70,
+      "disposition": "catalog-held",
+      "catalogId": "beijingwahw-dsh-conv-export",
+      "reason": null
+    },
+    {
+      "sequence": 71,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-dir-tree 0.1.0 package was built from gitHead 7fb06da, not frozen commit db37cee, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 72,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-dir-tree 0.1.0 package points to bentong-chain/dsh-dir-tree rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 73,
+      "disposition": "catalog-reviewed",
+      "catalogId": "birat-chapagain-dsh-codex-oauth",
+      "reason": null
+    },
+    {
+      "sequence": 74,
+      "disposition": "catalog-reviewed",
+      "catalogId": "birat-chapagain-dsh-coding-plans",
+      "reason": null
+    },
+    {
+      "sequence": 75,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to wlj521/dsh-ui-tweaks rather than bitterSmilezzz/dsh-ui-tweaks."
+    },
+    {
+      "sequence": 76,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to Blank-not-black/dsh-Remote rather than Blank-not-black/dsh-remote-plugin."
+    },
+    {
+      "sequence": 77,
+      "disposition": "catalog-reviewed",
+      "catalogId": "bowang-lab-dsh-medomni",
+      "reason": null
+    },
+    {
+      "sequence": 78,
+      "disposition": "catalog-reviewed",
+      "catalogId": "brianhio-x-dsh-think-expand",
+      "reason": null
+    },
+    {
+      "sequence": 79,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 80,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 81,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web-app core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 82,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DSH base bundle inside a complete Harness workbench fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 83,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DSH headless bundle inside a complete Harness workbench fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 84,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DSH web-app bundle inside a complete Harness workbench fork, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 85,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 86,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 87,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 88,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 89,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 90,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 91,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 92,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 93,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 94,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 95,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 96,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 97,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 98,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 99,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 100,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 101,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Generated bundled skin copy; canonical source is under packages/skins and the aggregate record includes it."
+    },
+    {
+      "sequence": 102,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 103,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 104,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 105,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component included in the repository's canonical dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 106,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 107,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 108,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 109,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 110,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 111,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin-center component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 112,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 113,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Canonical skin component is included in the repository's dsh-web-ui-all aggregate record."
+    },
+    {
+      "sequence": 114,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is an example, template, reference copy, benchmark, acceptance fixture, or test fixture rather than an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 115,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-reference-anything 0.2.4 package was built from gitHead 0f95904, not frozen commit 2387593, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 116,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest maps its package source to Chammoon/web-enterprise rather than Chammoon/dsh-web-enterprise."
+    },
+    {
+      "sequence": 117,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit healthy-plugin fixture under fixtures/public for dsh-gate tests, not an independently distributed plugin."
+    },
+    {
+      "sequence": 118,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 119,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "IDE monorepo component represented by the canonical EasySSH workspace record under the catalog's one-record-per-repository policy."
+    },
+    {
+      "sequence": 120,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "SSH engine component is reused by the repository's canonical EasySSH workspace record."
+    },
+    {
+      "sequence": 121,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 122,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 123,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 124,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 125,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 126,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 127,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 128,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 129,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 130,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 131,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web-app core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 132,
+      "disposition": "catalog-held",
+      "catalogId": "chunbosama-dsh-breakdown",
+      "reason": null
+    },
+    {
+      "sequence": 133,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-code-memory package points to dsh-tui-ecosystem/dsh-code-memory rather than this fixed candidate repository, which also lacks a repository license file."
+    },
+    {
+      "sequence": 134,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cjdem-dsh-add-reasoning-effort",
+      "reason": null
+    },
+    {
+      "sequence": 135,
+      "disposition": "catalog-reviewed",
+      "catalogId": "cokiscarazo-rgb-dsh-plugin-message-timeline-navigation",
+      "reason": null
+    },
+    {
+      "sequence": 136,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 137,
+      "disposition": "catalog-held",
+      "catalogId": "coprexist-aischat",
+      "reason": null
+    },
+    {
+      "sequence": 138,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest maps its package source to Han-1413141/dsh-cost-meter rather than CyBerKitTen0009/dsh-quota-dashboard."
+    },
+    {
+      "sequence": 139,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "This is a vendored DSH core or embedded desktop host bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 140,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "This is a vendored DSH core or embedded desktop host bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 141,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "This is a vendored DSH core or embedded desktop host bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 142,
+      "disposition": "catalog-reviewed",
+      "catalogId": "daizihan233-dsh-my-go",
+      "reason": null
+    },
+    {
+      "sequence": 143,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 144,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 145,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-desktop package points to anywhere-labs/deepseek-harness-desktop rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 146,
+      "disposition": "catalog-held",
+      "catalogId": "dat-lequoc-dsh-supervisor",
+      "reason": null
+    },
+    {
+      "sequence": 147,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 148,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 149,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 150,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ddtcorex-maestro-skills",
+      "reason": null
+    },
+    {
+      "sequence": 151,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 152,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 153,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 154,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 155,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 156,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 157,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 158,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 159,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 160,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "EvoForge suite component represented by the canonical dsh-evolve repository record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 161,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 162,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 163,
+      "disposition": "catalog-held",
+      "catalogId": "devin-axis-ipollowork",
+      "reason": null
+    },
+    {
+      "sequence": 164,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 165,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 166,
+      "disposition": "catalog-reviewed",
+      "catalogId": "dhr-p-dsh-safe-launch",
+      "reason": null
+    },
+    {
+      "sequence": 167,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored manifest does not map its package or installation identity to the candidate repository, so its canonical source is unresolved."
+    },
+    {
+      "sequence": 168,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second manual bundle in the DjangoAILab plugin monorepo, represented by the canonical repository-level held record."
+    },
+    {
+      "sequence": 169,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-notifier manifest maps to THEWOLFWALKER/dsh-notifier rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 170,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Additional manual bundle represented by the existing canonical DjangoAILab repository-level held record."
+    },
+    {
+      "sequence": 171,
+      "disposition": "catalog-reviewed",
+      "catalogId": "domparent-oledcare",
+      "reason": null
+    },
+    {
+      "sequence": 172,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-univer-office 0.2.6 package was built from gitHead 0339e31, not frozen commit 8f987d5, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 173,
+      "disposition": "catalog-reviewed",
+      "catalogId": "drflyingpig-dsh-window-memory",
+      "reason": null
+    },
+    {
+      "sequence": 174,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-input-traffic 0.2.6 package was built from gitHead 2c02ee9, not frozen commit 5cd288d, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 175,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 176,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 177,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 178,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 179,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 180,
+      "disposition": "catalog-held",
+      "catalogId": "dsh-pub-dsh-pub",
+      "reason": null
+    },
+    {
+      "sequence": 181,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 182,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit lint-pass fixture under test/fixtures in the DSH App checker, not a distributable plugin."
+    },
+    {
+      "sequence": 183,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest was unavailable at the frozen 40-character source commit, so the required static evidence could not be reproduced."
+    },
+    {
+      "sequence": 184,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is an example, template, reference copy, benchmark, acceptance fixture, or test fixture rather than an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 185,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is an example, template, reference copy, benchmark, acceptance fixture, or test fixture rather than an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 186,
+      "disposition": "catalog-held",
+      "catalogId": "dunnpei-dsh-key-rotator",
+      "reason": null
+    },
+    {
+      "sequence": 187,
+      "disposition": "catalog-held",
+      "catalogId": "eachsheep-dsh-valley-pixel-skin",
+      "reason": null
+    },
+    {
+      "sequence": 188,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second bundle in the edtechools plugin monorepo, represented by the canonical repository-level held record."
+    },
+    {
+      "sequence": 189,
+      "disposition": "catalog-held",
+      "catalogId": "eightfs-dsh-git-rescue",
+      "reason": null
+    },
+    {
+      "sequence": 190,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public deepseek-harness-sentinel 0.2.0 package was built from gitHead b0380b9, not frozen commit 7d90ed8, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 191,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 192,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 193,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 194,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to oil-oil/dsh-vision rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 195,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to Ceelog/dsh-plugins rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 196,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to CocoSgt/dsh-skills rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 197,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-ui-three-body 0.2.0 package was built from ca11d449, not this frozen c495a64 source commit, so the registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 198,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ethanyoq-ai-novel-writer",
+      "reason": null
+    },
+    {
+      "sequence": 199,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 200,
+      "disposition": "catalog-reviewed",
+      "catalogId": "evegoodevening-dsh-llmwiki",
+      "reason": null
+    },
+    {
+      "sequence": 201,
+      "disposition": "catalog-reviewed",
+      "catalogId": "exoticknight-dsh-labnana",
+      "reason": null
+    },
+    {
+      "sequence": 202,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Nested desktop_hello demonstration bundle inside a Qt desktop wrapper repository, not its independently distributed product identity."
+    },
+    {
+      "sequence": 203,
+      "disposition": "catalog-reviewed",
+      "catalogId": "feiji-9527-dsh-oc",
+      "reason": null
+    },
+    {
+      "sequence": 204,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 205,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fenglin-ai-dsh-funasr-voice",
+      "reason": null
+    },
+    {
+      "sequence": 206,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest maps its package source to clarkchan/dsh-ds4-service rather than flyingtimes/dsh-ds4-service."
+    },
+    {
+      "sequence": 207,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-cdi-plugin package points to the dedicated fmlin0429712024/dsh-cdi-plugin repository rather than this platform copy."
+    },
+    {
+      "sequence": 208,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Copied intake-triage bundle in the platform repository is represented by its canonical upstream linkhealth-triage repository."
+    },
+    {
+      "sequence": 209,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 210,
+      "disposition": "catalog-held",
+      "catalogId": "frederico-kluser-deepseek-harness-mobile",
+      "reason": null
+    },
+    {
+      "sequence": 211,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id freehul-dsh-sgme; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 212,
+      "disposition": "catalog-reviewed",
+      "catalogId": "frog755-dsh-prompt-vault",
+      "reason": null
+    },
+    {
+      "sequence": 213,
+      "disposition": "catalog-held",
+      "catalogId": "fujuntao-dsh-next-app",
+      "reason": null
+    },
+    {
+      "sequence": 214,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest maps its package source to FuRongJun-1999/dsh-memory rather than FuRongJun-1999/CommonTrustProtocol."
+    },
+    {
+      "sequence": 215,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fxylabs-superself",
+      "reason": null
+    },
+    {
+      "sequence": 216,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 217,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 218,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 219,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 220,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 221,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 222,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 223,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 224,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 225,
+      "disposition": "catalog-reviewed",
+      "catalogId": "fyhc1-dsh-web-manager",
+      "reason": null
+    },
+    {
+      "sequence": 226,
+      "disposition": "catalog-held",
+      "catalogId": "fyhc1-dsh-webui-installer",
+      "reason": null
+    },
+    {
+      "sequence": 227,
+      "disposition": "catalog-held",
+      "catalogId": "gaogx96-trajectory-clean",
+      "reason": null
+    },
+    {
+      "sequence": 228,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 229,
+      "disposition": "catalog-reviewed",
+      "catalogId": "ggttol-dsh-stock-watch",
+      "reason": null
+    },
+    {
+      "sequence": 230,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository is represented by the canonical workbench bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 231,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Repository is represented by the canonical workbench bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 232,
+      "disposition": "catalog-held",
+      "catalogId": "glaz-j-dsh-chronofence",
+      "reason": null
+    },
+    {
+      "sequence": 233,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-usage-dashboard package points to 1690834643/dsh-usage-dashboard rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 234,
+      "disposition": "catalog-held",
+      "catalogId": "gpnudirichlet-dsh-kanban",
+      "reason": null
+    },
+    {
+      "sequence": 235,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id guoxinshan-dsh-yzj; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 236,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 237,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 238,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-advisor 0.1.0 package was built from gitHead 56aa668, not frozen commit 6aa612e, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 239,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 240,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 241,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 242,
+      "disposition": "catalog-reviewed",
+      "catalogId": "harris-logic-dsh-billing-widget",
+      "reason": null
+    },
+    {
+      "sequence": 243,
+      "disposition": "catalog-reviewed",
+      "catalogId": "harris-logic-dsh-skill-publish-github",
+      "reason": null
+    },
+    {
+      "sequence": 244,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit installation fixture used by the repository test suite, not a distributable catalog plugin."
+    },
+    {
+      "sequence": 245,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hashgraph-online-hol-guard-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 246,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 247,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 248,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 249,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 250,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 251,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 252,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 253,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 254,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hdylanyueh-dsh-greet",
+      "reason": null
+    },
+    {
+      "sequence": 255,
+      "disposition": "catalog-reviewed",
+      "catalogId": "heekei-dsh-usage",
+      "reason": null
+    },
+    {
+      "sequence": 256,
+      "disposition": "catalog-held",
+      "catalogId": "helibeiqi-dsh-excel-kit",
+      "reason": null
+    },
+    {
+      "sequence": 257,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private w3-local-bundle fixture under scripts/fixtures for dshpack tests."
+    },
+    {
+      "sequence": 258,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id hisonwarren-dsh-dashscope-media; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 259,
+      "disposition": "catalog-held",
+      "catalogId": "hjay1101-dsh-ios-control",
+      "reason": null
+    },
+    {
+      "sequence": 260,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hokkaidocola-dsh-audio-dagou",
+      "reason": null
+    },
+    {
+      "sequence": 261,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 262,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archived package rather than a catalog entry."
+    },
+    {
+      "sequence": 263,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archived package rather than a catalog entry."
+    },
+    {
+      "sequence": 264,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Vision component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 265,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Wallpaper component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 266,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WeChat component is included in the repository's canonical aggregate held record."
+    },
+    {
+      "sequence": 267,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public deepcode package points to fanlila/dcode rather than this frozen TUI repository."
+    },
+    {
+      "sequence": 268,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 269,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @hqzhao95/dscode 0.0.10 package was built from gitHead ee74ac2, not frozen commit 47f1e56, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 270,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Toolkit component is represented by the canonical nudge bundle under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 271,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Toolkit repository is already represented by the canonical DSH Nudge catalog record."
+    },
+    {
+      "sequence": 272,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 273,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 274,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 275,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the canonical dsh-third-party suite record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 276,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 277,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 278,
+      "disposition": "catalog-reviewed",
+      "catalogId": "hyyhf-mindgarden",
+      "reason": null
+    },
+    {
+      "sequence": 279,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Private mock provider under test/mock-bundle for credential-free TUI testing, not a distributable plugin."
+    },
+    {
+      "sequence": 280,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 281,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 282,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 283,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 284,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 285,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-monitor package points to AbnerAI/dsh-monitor rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 286,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness base core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 287,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness headless core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 288,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness TUI application core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 289,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Forked DeepSeek Harness web application core bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 290,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second profile bundle in the same Claude Code parity monorepo, represented by the repository-level held record."
+    },
+    {
+      "sequence": 291,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jiezeng2004-design-dsh-chatgpt-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 292,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a vendored DSH core/profile/host package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 293,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a vendored DSH core/profile/host package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 294,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a vendored DSH core/profile/host package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 295,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a vendored DSH core/profile/host package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 296,
+      "disposition": "catalog-reviewed",
+      "catalogId": "jinsight-gif-dsh-plugin-gitbash",
+      "reason": null
+    },
+    {
+      "sequence": 297,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness base core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 298,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness headless core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 299,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Vendored DeepSeek Harness web-app core bundle whose manifest points to the upstream core repository, not an independent external plugin."
+    },
+    {
+      "sequence": 300,
+      "disposition": "catalog-held",
+      "catalogId": "jokasa7-dsh-product-subagent-console",
+      "reason": null
+    },
+    {
+      "sequence": 301,
+      "disposition": "catalog-held",
+      "catalogId": "jrafina-dsh-expense-records",
+      "reason": null
+    },
+    {
+      "sequence": 302,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 303,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is an example, template, reference copy, benchmark, acceptance fixture, or test fixture rather than an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 304,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 305,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 306,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 307,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 308,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 309,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 310,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 311,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-telegram-bridge package points to Joycate/dsh-telegram-bridge rather than this fixed JxaMe source."
+    },
+    {
+      "sequence": 312,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored manifest does not map its package or installation identity to the candidate repository, so its canonical source is unresolved."
+    },
+    {
+      "sequence": 313,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored manifest does not map its package or installation identity to the candidate repository, so its canonical source is unresolved."
+    },
+    {
+      "sequence": 314,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 315,
+      "disposition": "catalog-held",
+      "catalogId": "kaixxrua-dsh-aigc-radar",
+      "reason": null
+    },
+    {
+      "sequence": 316,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kakadeka-baton",
+      "reason": null
+    },
+    {
+      "sequence": 317,
+      "disposition": "catalog-reviewed",
+      "catalogId": "kannakuron-dsh-gitbash-shell",
+      "reason": null
+    },
+    {
+      "sequence": 318,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 319,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored dsh-model-reasoning manifest points to the dedicated karoc/dsh-model-reasoning repository rather than this desktop repository."
+    },
+    {
+      "sequence": 320,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Second vendored copy of the same source-conflicting dsh-model-reasoning package in this desktop repository."
+    },
+    {
+      "sequence": 321,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-kanban 0.1.2 package was built from gitHead 81cb0d2, not frozen commit b2d293d, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 322,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 323,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archived package rather than a catalog entry."
+    },
+    {
+      "sequence": 324,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to hrhgit/deepseek-harness-plugin-manager rather than kdeightx/dsh-dock."
+    },
+    {
+      "sequence": 325,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id kdeightx-dsh-system-restart; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 326,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to vtxf/dsh-session-delete rather than kdeightx/dsh-dock."
+    },
+    {
+      "sequence": 327,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id kdeightx-dsh-system-restart; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 328,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id kdeightx-dsh-system-restart; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 329,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id kdeightx-dsh-system-restart; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 330,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to ambar/deepseek-pet rather than keleus/deepseek-pet."
+    },
+    {
+      "sequence": 331,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 332,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-tidewatch 1.0.0 package was built from gitHead bac58de, not frozen commit 1e88c16, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 333,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "This is a vendored DSH core or embedded desktop host bundle, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 334,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The fixed archive declares lib/index.js and lib/client.js but contains neither implementation file, so the bundle is structurally incomplete."
+    },
+    {
+      "sequence": 335,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 336,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 337,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 338,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 339,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 340,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 341,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Linux-specific Orcana profile is represented by the repository's canonical general runtime-pack record."
+    },
+    {
+      "sequence": 342,
+      "disposition": "catalog-held",
+      "catalogId": "li3nga-dhs-multi-agent-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 343,
+      "disposition": "catalog-reviewed",
+      "catalogId": "liangbai250-dsh-whale-balance-widget",
+      "reason": null
+    },
+    {
+      "sequence": 344,
+      "disposition": "catalog-held",
+      "catalogId": "lightmaze-dsh-tick-loop",
+      "reason": null
+    },
+    {
+      "sequence": 345,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-garmin-connect 0.1.4 package was built from gitHead 3417a16, not frozen commit 8915e80, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 346,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 347,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lingxi-ai-cn-dsh-tui-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 348,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lingyuyue1-dsh-workbench",
+      "reason": null
+    },
+    {
+      "sequence": 349,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to QCYTSN/dsh-dafeiyu rather than Liora2050348900/dsh-dafeiyu."
+    },
+    {
+      "sequence": 350,
+      "disposition": "catalog-reviewed",
+      "catalogId": "litianshuo110-dsh-ds-vision-auto-route",
+      "reason": null
+    },
+    {
+      "sequence": 351,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archived package rather than a catalog entry."
+    },
+    {
+      "sequence": 352,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 353,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 354,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 355,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 356,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 357,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-ui-tools 0.1.0 package was built from gitHead a60dfc5, not frozen commit 3c0d67d, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 358,
+      "disposition": "catalog-held",
+      "catalogId": "log-li-dsh-auto-mode",
+      "reason": null
+    },
+    {
+      "sequence": 359,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @wanghailong0419/dsh-mcp-manager 0.1.0 package was built from gitHead 8f0ffba, not frozen commit 766623c, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 360,
+      "disposition": "catalog-held",
+      "catalogId": "lostpaidaxing-dsh-file-picker",
+      "reason": null
+    },
+    {
+      "sequence": 361,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 362,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 363,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 364,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lum1104-dsh-browser",
+      "reason": null
+    },
+    {
+      "sequence": 365,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 366,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 367,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 368,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lyaxz-dsh-quick-toc",
+      "reason": null
+    },
+    {
+      "sequence": 369,
+      "disposition": "catalog-reviewed",
+      "catalogId": "lynsucceed-dsh-openclaw-persona",
+      "reason": null
+    },
+    {
+      "sequence": 370,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 371,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-store package points to yunhuantian/dsh-plugin-store rather than this frozen candidate repository."
+    },
+    {
+      "sequence": 372,
+      "disposition": "catalog-reviewed",
+      "catalogId": "maoyuching-dsh-voice-chat",
+      "reason": null
+    },
+    {
+      "sequence": 373,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 374,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-codex-pet package belongs to skr311/dsh-codex-pet; this repository documents a GitHub-only package with the same install name."
+    },
+    {
+      "sequence": 375,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 376,
+      "disposition": "catalog-reviewed",
+      "catalogId": "michengai-dsh-automation",
+      "reason": null
+    },
+    {
+      "sequence": 377,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit clean DSH plugin fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 378,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-compatible fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 379,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-incompatible fixture under examples/fixtures for upstream-radar."
+    },
+    {
+      "sequence": 380,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit probe-unknown fixture with a postinstall hook under examples/fixtures for upstream-radar; it was not executed."
+    },
+    {
+      "sequence": 381,
+      "disposition": "catalog-reviewed",
+      "catalogId": "miku00039-01-dsh-whale-pet",
+      "reason": null
+    },
+    {
+      "sequence": 382,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-agent-bus 0.1.0 package was built from gitHead 105b9df, not frozen commit 06473c7, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 383,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @mkaliezz/dsh-action-ledger 0.2.0 package was built from gitHead 71d6d99, not frozen commit 82e024e, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 384,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-deepseek-usage package points to ben7am1n/dsh-deepseek-usage rather than this fixed candidate repository."
+    },
+    {
+      "sequence": 385,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mochinek0-dsh-web-search-free",
+      "reason": null
+    },
+    {
+      "sequence": 386,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-remote 0.1.0 package was built from gitHead 47be44f, not frozen commit 4c03d96, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 387,
+      "disposition": "catalog-held",
+      "catalogId": "mouyongli-dsh-scrum",
+      "reason": null
+    },
+    {
+      "sequence": 388,
+      "disposition": "catalog-reviewed",
+      "catalogId": "moyu-good-dsh-lark-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 389,
+      "disposition": "catalog-reviewed",
+      "catalogId": "mrwinchester-dsh-version-control",
+      "reason": null
+    },
+    {
+      "sequence": 390,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 391,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 392,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a DSH core/profile/host client package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 393,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to nan1010082085/dsh-plugins rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 394,
+      "disposition": "catalog-reviewed",
+      "catalogId": "nattocb-dsh-plugin-wechat-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 395,
+      "disposition": "catalog-reviewed",
+      "catalogId": "necokeine-dsh-calendar",
+      "reason": null
+    },
+    {
+      "sequence": 396,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 397,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 398,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 399,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 400,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 401,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 402,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 403,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 404,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 405,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Neplich suite component represented by the canonical dsh-web-workpanel repository record."
+    },
+    {
+      "sequence": 406,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Browser half is represented by the repository's canonical explorer aggregate record."
+    },
+    {
+      "sequence": 407,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Host half is represented by the repository's canonical explorer aggregate record."
+    },
+    {
+      "sequence": 408,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Folio event component is represented by the repository's canonical tools record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 409,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 410,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 411,
+      "disposition": "catalog-held",
+      "catalogId": "omdsh-dev-sandbox-mxc",
+      "reason": null
+    },
+    {
+      "sequence": 412,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Terminal application bundle derived from DSH core, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 413,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH base manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 414,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH headless manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 415,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH web-app manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 416,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 417,
+      "disposition": "catalog-held",
+      "catalogId": "openma-ai-martty",
+      "reason": null
+    },
+    {
+      "sequence": 418,
+      "disposition": "catalog-held",
+      "catalogId": "ornn8-dsh-agent-automation",
+      "reason": null
+    },
+    {
+      "sequence": 419,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 420,
+      "disposition": "catalog-held",
+      "catalogId": "pax-beehive-dsh-plugin-hub",
+      "reason": null
+    },
+    {
+      "sequence": 421,
+      "disposition": "catalog-held",
+      "catalogId": "pensivefei-deep-read-summarize",
+      "reason": null
+    },
+    {
+      "sequence": 422,
+      "disposition": "catalog-held",
+      "catalogId": "phelpsyacht-dshmath-manim",
+      "reason": null
+    },
+    {
+      "sequence": 423,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 424,
+      "disposition": "catalog-held",
+      "catalogId": "pidan-q-dsh-knowledge",
+      "reason": null
+    },
+    {
+      "sequence": 425,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 426,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 427,
+      "disposition": "catalog-held",
+      "catalogId": "pm25000-dsh-ths-holdings",
+      "reason": null
+    },
+    {
+      "sequence": 428,
+      "disposition": "catalog-held",
+      "catalogId": "pointer-a-dsh-server-login",
+      "reason": null
+    },
+    {
+      "sequence": 429,
+      "disposition": "catalog-held",
+      "catalogId": "ptonlix-dsh-forge",
+      "reason": null
+    },
+    {
+      "sequence": 430,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 431,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 432,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 433,
+      "disposition": "catalog-held",
+      "catalogId": "purezhi-dsh-plugin-confirmo",
+      "reason": null
+    },
+    {
+      "sequence": 434,
+      "disposition": "catalog-held",
+      "catalogId": "qiboda-dsh-mineru",
+      "reason": null
+    },
+    {
+      "sequence": 435,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 436,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 437,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 438,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 439,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 440,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 441,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 442,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 443,
+      "disposition": "catalog-held",
+      "catalogId": "qwert702-dsh-memory",
+      "reason": null
+    },
+    {
+      "sequence": 444,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "Terminal application gateway bundle derived from DSH core, not an independently distributed external plugin."
+    },
+    {
+      "sequence": 445,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 446,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 447,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 448,
+      "disposition": "catalog-held",
+      "catalogId": "reachforstar-dsh-client-ui-polish",
+      "reason": null
+    },
+    {
+      "sequence": 449,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "My Rules component is represented by the repository's canonical Extension Hub record."
+    },
+    {
+      "sequence": 450,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 451,
+      "disposition": "catalog-held",
+      "catalogId": "rison114514-dsh-endfield-ui",
+      "reason": null
+    },
+    {
+      "sequence": 452,
+      "disposition": "catalog-reviewed",
+      "catalogId": "roarpeng-graphflow",
+      "reason": null
+    },
+    {
+      "sequence": 453,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit fake alpha bundle under test/fixtures for plugin-surgery tests, not a distributable plugin."
+    },
+    {
+      "sequence": 454,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit fake beta bundle under test/fixtures for plugin-surgery tests, not a distributable plugin."
+    },
+    {
+      "sequence": 455,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-data-quality 0.1.0 package was built from gitHead d9201d2, not frozen commit 2bb3100, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 456,
+      "disposition": "catalog-held",
+      "catalogId": "scspotato-dsh-remote",
+      "reason": null
+    },
+    {
+      "sequence": 457,
+      "disposition": "catalog-held",
+      "catalogId": "sean233-dsh-subscription-auth",
+      "reason": null
+    },
+    {
+      "sequence": 458,
+      "disposition": "catalog-reviewed",
+      "catalogId": "severin-ye-uagent-sync",
+      "reason": null
+    },
+    {
+      "sequence": 459,
+      "disposition": "catalog-reviewed",
+      "catalogId": "shaobeichen-dsh-pocket",
+      "reason": null
+    },
+    {
+      "sequence": 460,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 461,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-im-channel 0.2.1 package was built from gitHead ed6ea94, not frozen commit fb64263, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 462,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 463,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to sjh9714/dsh-movein rather than sjh9714/claude-to-opencode."
+    },
+    {
+      "sequence": 464,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version maps to sjh9714/dsh-movein rather than sjh9714/claude-to-opencode."
+    },
+    {
+      "sequence": 465,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id small-tailqwq-dsh-deep-whale; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 466,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id small-tailqwq-dsh-deep-whale; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 467,
+      "disposition": "catalog-reviewed",
+      "catalogId": "smith-yue-harness-plugin",
+      "reason": null
+    },
+    {
+      "sequence": 468,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 469,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 470,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 471,
+      "disposition": "catalog-held",
+      "catalogId": "spider615-comic-studio",
+      "reason": null
+    },
+    {
+      "sequence": 472,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 473,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 474,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 475,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 476,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 477,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 478,
+      "disposition": "catalog-reviewed",
+      "catalogId": "spookysandwich-dsh-plugin-rollout-scout",
+      "reason": null
+    },
+    {
+      "sequence": 479,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Root manifest duplicates the nested Octie distributable and has no referenced patch."
+    },
+    {
+      "sequence": 480,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-builtin-toggles 0.3.2 package was built from gitHead d1d7205, not frozen commit bc86c77, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 481,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest carries an empty patch while the repository primarily distributes a global coding-agent CLI and preset installer, not an active Cordis plugin bundle."
+    },
+    {
+      "sequence": 482,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archived package rather than a catalog entry."
+    },
+    {
+      "sequence": 483,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 484,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @studyzy/dsh-web-remote-access 1.0.0 package was built from gitHead 7514108, not frozen commit 19655cc, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 485,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 486,
+      "disposition": "catalog-held",
+      "catalogId": "sunyuhuirong-shl-session-history",
+      "reason": null
+    },
+    {
+      "sequence": 487,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Evidence Dashboard component is represented by the repository's canonical Prior Probe record."
+    },
+    {
+      "sequence": 488,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 489,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-better-sidebar package and manifest repository point to the already-cataloged omdsh-dev/DSH-better-sidebar source, not this fork."
+    },
+    {
+      "sequence": 490,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The vendored manifest does not map its package or installation identity to the candidate repository, so its canonical source is unresolved."
+    },
+    {
+      "sequence": 491,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 492,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 493,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest was unavailable at the frozen 40-character source commit, so the required static evidence could not be reproduced."
+    },
+    {
+      "sequence": 494,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest points to deepseek-ai/deepseek-harness rather than this candidate repository, so the installation identity conflicts with the frozen source."
+    },
+    {
+      "sequence": 495,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tencent-browserskill",
+      "reason": null
+    },
+    {
+      "sequence": 496,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 497,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 498,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tinywan-dsh-wechat-format",
+      "reason": null
+    },
+    {
+      "sequence": 499,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 500,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 501,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tong-io-tongflow",
+      "reason": null
+    },
+    {
+      "sequence": 502,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit invalid-patch-schema test fixture for the Trust Center."
+    },
+    {
+      "sequence": 503,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit example registry bundle fixture for the Trust Center."
+    },
+    {
+      "sequence": 504,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit risky-bundle test fixture for the Trust Center."
+    },
+    {
+      "sequence": 505,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "Explicit safe-bundle test fixture for the Trust Center."
+    },
+    {
+      "sequence": 506,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 507,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 508,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 509,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 510,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The manifest returned 404 at the frozen 40-character source commit in both raw and GitHub Contents API reads."
+    },
+    {
+      "sequence": 511,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The fixed GitHub source archive returned 404 on repeated requests, so the candidate source could not be reproduced."
+    },
+    {
+      "sequence": 512,
+      "disposition": "catalog-reviewed",
+      "catalogId": "tyfforu-dsh-flashcard",
+      "reason": null
+    },
+    {
+      "sequence": 513,
+      "disposition": "catalog-reviewed",
+      "catalogId": "u9521-dsh-advanced-model-editor",
+      "reason": null
+    },
+    {
+      "sequence": 514,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 515,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-ocgo-usage 0.1.1 package was built from gitHead 7c0be8c, not frozen commit 7369957, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 516,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 517,
+      "disposition": "catalog-reviewed",
+      "catalogId": "vshulcz-deja-vu",
+      "reason": null
+    },
+    {
+      "sequence": 518,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @waterwx/dsh-novel-forge 1.3.3 package was built from gitHead e3a3ee6, not frozen commit ab3138a, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 519,
+      "disposition": "catalog-held",
+      "catalogId": "wdf-666-nmd-dsh-auto-restart",
+      "reason": null
+    },
+    {
+      "sequence": 520,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @kubor/dsh-bloom-theme 0.3.5 package was built from gitHead 507bedd, not frozen commit ced8fe2, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 521,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 522,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wenbin-wb-dsh-bridge",
+      "reason": null
+    },
+    {
+      "sequence": 523,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The dsh-weixin package points to caoyilearnai/dsh-weixin, while this candidate documents only a placeholder Git owner."
+    },
+    {
+      "sequence": 524,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public weshop-dsh-plugin 1.0.2 package was built from gitHead 6030e0d, not frozen commit c90f80e, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 525,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 526,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 527,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 528,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 529,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 530,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 531,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "WhaleHarness suite component represented by the canonical whale-status record under the one-record-per-repository policy."
+    },
+    {
+      "sequence": 532,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 533,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 534,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 535,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 536,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 537,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 538,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 539,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 540,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 541,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 542,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id wingsky-1-dsh-plugin-hub; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 543,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id wingsky-1-dsh-plugin-hub; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 544,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id wingsky-1-dsh-plugin-hub; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 545,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id wingsky-1-dsh-plugin-hub; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 546,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 547,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id wingsky-1-dsh-plugin-hub; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 548,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical dsh-plugins-all aggregate record."
+    },
+    {
+      "sequence": 549,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id wingsky-1-dsh-plugin-hub; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 550,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 551,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 552,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component represented by the repository's canonical adaptive performance catalog record."
+    },
+    {
+      "sequence": 553,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Component omitted under the one-record-per-repository catalog boundary; the package also lacks a package license declaration, while dsh-dock is the evidence-complete representative."
+    },
+    {
+      "sequence": 554,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wolfsonliu-dsh-file-explorer",
+      "reason": null
+    },
+    {
+      "sequence": 555,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 556,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 557,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Another manifest from the same repository is the selected repository-level catalog representative."
+    },
+    {
+      "sequence": 558,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 559,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wsl043-dsh-codex-subscription",
+      "reason": null
+    },
+    {
+      "sequence": 560,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wsl043-dsh-native-reasoning-slider",
+      "reason": null
+    },
+    {
+      "sequence": 561,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wsl043-dsh-native-session-delete",
+      "reason": null
+    },
+    {
+      "sequence": 562,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 563,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wyidong-dsh-tts-reader",
+      "reason": null
+    },
+    {
+      "sequence": 564,
+      "disposition": "catalog-reviewed",
+      "catalogId": "wyzh0117-dsh-skill-select",
+      "reason": null
+    },
+    {
+      "sequence": 565,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The repository was unavailable at the frozen source identity, so its fixed commit and review evidence could not be reproduced."
+    },
+    {
+      "sequence": 566,
+      "disposition": "catalog-held",
+      "catalogId": "xia-sc-dsh-cc-studio",
+      "reason": null
+    },
+    {
+      "sequence": 567,
+      "disposition": "unavailable",
+      "catalogId": null,
+      "reason": "The fixed GitHub source archive returned 404 on repeated requests, so the candidate source could not be reproduced."
+    },
+    {
+      "sequence": 568,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 569,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 570,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 571,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 572,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 573,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 574,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xiaxi626-dsh-skills-nexus",
+      "reason": null
+    },
+    {
+      "sequence": 575,
+      "disposition": "catalog-held",
+      "catalogId": "xieshuaix-dsh-chrom-notification",
+      "reason": null
+    },
+    {
+      "sequence": 576,
+      "disposition": "catalog-held",
+      "catalogId": "xieshuaix-dsh-hot-restart",
+      "reason": null
+    },
+    {
+      "sequence": 577,
+      "disposition": "catalog-held",
+      "catalogId": "xiuyuan18-dsh-engram-session",
+      "reason": null
+    },
+    {
+      "sequence": 578,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public @xmanrui/dsh-im 0.11.0 package was built from gitHead ffdf92e, not frozen commit 443d3b4, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 579,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xmoon-dsh-profile-settings",
+      "reason": null
+    },
+    {
+      "sequence": 580,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 581,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The bundle manifest is located in an example, template, probe, or test-fixture path and is not an independently distributed catalog plugin."
+    },
+    {
+      "sequence": 582,
+      "disposition": "catalog-reviewed",
+      "catalogId": "xswt442-cmd-dsh-easy-port-manager",
+      "reason": null
+    },
+    {
+      "sequence": 583,
+      "disposition": "catalog-held",
+      "catalogId": "xuqingsakura-dsh-subagent-team",
+      "reason": null
+    },
+    {
+      "sequence": 584,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yhfgyyf-dsh-auto-preset-router",
+      "reason": null
+    },
+    {
+      "sequence": 585,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 586,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a vendored DSH core/profile/host package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 587,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest maps its package source to dsh-market/dsh-market rather than yuanqiyibiansheng/DeepSeek-Harness-GUI."
+    },
+    {
+      "sequence": 588,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 589,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The fixed manifest maps its package source to Liu-ZA-81/dsh-theme-firefly rather than yuanqiyibiansheng/DeepSeek-Harness-GUI."
+    },
+    {
+      "sequence": 590,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a vendored DSH core/profile/host package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 591,
+      "disposition": "non-plugin-package",
+      "catalogId": null,
+      "reason": "The manifest is a vendored DSH core/profile/host package rather than an independently installable third-party plugin."
+    },
+    {
+      "sequence": 592,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH base manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 593,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH headless manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 594,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "Forked DSH web-app manifest declares the official deepseek-ai/deepseek-harness repository and package identity rather than this repository."
+    },
+    {
+      "sequence": 595,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-computer-use 0.1.0 package was built from gitHead 5bc9cdb, not this frozen monorepo commit, so its registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 596,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-web-pets 0.2.2 package was built from gitHead 5c1f8ed, not this frozen monorepo commit, so its registry install cannot be mapped to the candidate."
+    },
+    {
+      "sequence": 597,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "Nested desktop-pets integration is represented by the same repository's canonical vision-bridge catalog record under the one-record-per-repository boundary."
+    },
+    {
+      "sequence": 598,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 599,
+      "disposition": "catalog-reviewed",
+      "catalogId": "yuer6327-noletme",
+      "reason": null
+    },
+    {
+      "sequence": 600,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 601,
+      "disposition": "catalog-held",
+      "catalogId": "yxqfg-phone-lens",
+      "reason": null
+    },
+    {
+      "sequence": 602,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 603,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zasenjc-dsh-plugin-store; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 604,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 605,
+      "disposition": "catalog-held",
+      "catalogId": "zgblkylin-dsh-gui",
+      "reason": null
+    },
+    {
+      "sequence": 606,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The exact npm version gitHead does not equal the candidate's frozen source commit, so package-to-source identity is not reproducible."
+    },
+    {
+      "sequence": 607,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-plugin-stylotrace 0.1.12 package was built from gitHead 10abbfe, not frozen commit 1d9177f, so the registry installation cannot be mapped to this source identity."
+    },
+    {
+      "sequence": 608,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zhengjy01-dsh-settings-nav-organizer",
+      "reason": null
+    },
+    {
+      "sequence": 609,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zhouzhencheng07-dsh-kit",
+      "reason": null
+    },
+    {
+      "sequence": 610,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 611,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 612,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 613,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 614,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 615,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 616,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 617,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 618,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 619,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 620,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 621,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 622,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "This repository is represented by another reviewed manifest in the catalog; this additional bundle does not receive a duplicate repository card."
+    },
+    {
+      "sequence": 623,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 624,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 625,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 626,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 627,
+      "disposition": "duplicate-or-superseded",
+      "catalogId": null,
+      "reason": "The repository is already represented by catalog id zhu1090093659-dsh-web-ui-all; this additional manifest is not a separate repository-level catalog entry."
+    },
+    {
+      "sequence": 628,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 629,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zhuosir-dsh-cron",
+      "reason": null
+    },
+    {
+      "sequence": 630,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-cn-boot 0.1.0 package was built from c14203e, not frozen commit 5439d6f, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 631,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-dep-audit 0.1.1 package was built from 69a4714, not frozen commit 27f6492, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 632,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-discussions-radar 0.1.0 package was built from be484f0, not frozen commit d157448, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 633,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-disk-audit 0.1.0 package was built from 43521d4, not frozen commit 4be0589, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 634,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-firstrun 0.1.0 package was built from 3e89c7f, not frozen commit c6e711f, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 635,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-llms-forge 0.1.0 package was built from 1a58b21, not frozen commit 83ef2a1, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 636,
+      "disposition": "catalog-held",
+      "catalogId": "zoahdev-dsh-plugin-doctor",
+      "reason": null
+    },
+    {
+      "sequence": 637,
+      "disposition": "example-fixture-or-archive",
+      "catalogId": null,
+      "reason": "The frozen manifest is an example, fixture, template, evaluation support package, rollback copy, or archive rather than a catalog entry."
+    },
+    {
+      "sequence": 638,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-quality-score 0.1.2 package was built from d6cdae7, not frozen commit fdf6542, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 639,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-readme-forge 0.1.0 package was built from c53b76f, not frozen commit c932b67, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 640,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public dsh-timesheet 0.1.0 package was built from cbe98c3, not frozen commit 910f677, and exposes no registry repository mapping."
+    },
+    {
+      "sequence": 641,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zp-home-dsh-weixin-clawbot",
+      "reason": null
+    },
+    {
+      "sequence": 642,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zuoguyoupan2023-adhdgofly-dsh-ext",
+      "reason": null
+    },
+    {
+      "sequence": 643,
+      "disposition": "catalog-reviewed",
+      "catalogId": "zuoyunlai-lunheng-article-pipeline-dsh",
+      "reason": null
+    },
+    {
+      "sequence": 644,
+      "disposition": "source-conflict",
+      "catalogId": null,
+      "reason": "The public toto-the-cat 1.0.1 package was built from gitHead 09faf93, not frozen commit cb8e705, so the registry installation cannot be mapped to this source identity."
+    }
+  ]
+}

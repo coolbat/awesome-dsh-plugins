@@ -170,3 +170,61 @@ volatile and do not establish trust, compatibility, or installability.
   and 1,388 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-08-24 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `256b86dbd50c892ce5c26c3216fb80d36ededfb8`, generated at
+  `2026-08-23T19:40:13.388Z`.
+- Queue: 1,307 structural leads: 657 already listed, 6 discovery-held, and 644
+  ready for review. Every ready record used a full 40-character commit.
+- Increment: 301 records required new evidence: 249 new keys and 52 keys whose
+  fixed commit changed. The other 343 records matched exact key-and-commit
+  history.
+- Decisions for the 301-record increment: 81 catalog-reviewed, 66
+  catalog-held, 51 duplicate or superseded, 20 example/fixture/reference or
+  archive records, 13 non-plugin packages, 59 source conflicts, and 11
+  unavailable records. No records remain pending.
+- Catalog after review: 835 repository-unique records: 581 reviewed, 253 held,
+  and 1 excluded.
+- Discovery health: the latest scheduled run succeeded with 60 repositories
+  observed, 55 bundle manifests found, 0 query errors, and `partial=false`.
+  The queue contains 1,307 retained structural leads; neither the run result
+  nor the watermark proves complete GitHub discovery coverage.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. Eleven missing manifests were confirmed with a
+  second GitHub Contents API read at the frozen commit. No candidate package,
+  hook, plugin, candidate test, installer, binary, browser, server, Python
+  environment, MCP server, native helper, or candidate process was installed
+  or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 37 tests
+  and 1,682 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
+
+### Weekly reconciliation
+
+- Candidate state reconciles to 1,307 records: 644 ready for review, 657
+  already listed, and 6 discovery-held. The frozen review snapshot and ledger
+  both contain the same 644 keys from PR #2 head `256b86d`.
+- Ledger dispositions reconcile to 644 records: 81 catalog-reviewed, 66
+  catalog-held, 214 duplicate or superseded, 66 example/fixture/reference or
+  archive, 48 non-plugin packages, 149 source conflicts, and 20 unavailable.
+- Catalog state reconciles to 835 unique IDs and repositories: 581 reviewed,
+  253 held, and 1 excluded. No duplicate candidate keys, duplicate catalog
+  IDs or repositories, missing ledger rows, catalog mappings, or non-40-byte
+  source commits remain.
+- `README.md` and `README.zh-CN.md` were regenerated from the catalog and have
+  no generation drift. At reconciliation start, the only open remote PR was
+  candidate queue PR #2; its head matched the frozen source commit and its
+  Cloudflare branch preview was successful.
+- Discovery's latest scheduled run succeeded, but earlier scheduled attempts
+  included intermittent failures followed by successful refreshes. Valid
+  retained results were preserved; discovery completeness is not claimed.
+- The incomplete local Sunday evidence draft was superseded by Monday's newer
+  PR #2 snapshot before any commit or PR was published. No repository repair
+  or manual method decision remained after the static dispositions above.
