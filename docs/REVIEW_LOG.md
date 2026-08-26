@@ -263,3 +263,37 @@ volatile and do not establish trust, compatibility, or installability.
   and 1,844 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-08-26 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `bc4b0b7ff350ca60ce8febad2bfd1da87829b277`, generated at
+  `2026-08-25T19:48:52.578Z`.
+- Queue: 1,583 structural leads: 883 already listed, 8 discovery-held, and 692
+  ready for review. Every ready record used a full 40-character commit.
+- Increment: 156 records required new evidence: 127 new keys and 29 keys whose
+  fixed commit changed. The other 536 records matched exact key-and-commit
+  history.
+- Decisions for the 156-record increment: 30 catalog-reviewed, 36
+  catalog-held, 22 duplicate or superseded, 16 example/fixture/template or
+  experimental records, 50 source conflicts, and 2 unavailable records. No
+  records remain pending.
+- Catalog after review: 982 repository-unique records: 660 reviewed, 321 held,
+  and 1 excluded.
+- Discovery health: the latest scheduled run completed with 60 repositories
+  observed, 65 bundle manifests found, no query errors, and no partial-result
+  watermark. Discovery coverage still is not claimed to be exhaustive.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. Both unavailable manifests were independently
+  confirmed absent through the GitHub Contents API. No candidate package,
+  hook, plugin, candidate test, installer, binary, browser, server, Python
+  environment, MCP server, native helper, or candidate process was installed
+  or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 1,976 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
