@@ -333,3 +333,35 @@ volatile and do not establish trust, compatibility, or installability.
   and 2,110 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-08-28 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `e06e29cbeae6d1a5f5ba2944256f5a2a65180e6e`, generated at
+  `2026-08-27T22:59:06.605Z`.
+- Queue: 1,807 structural leads: 1,017 already listed, 8 discovery-held, and
+  782 ready for review. Every ready record used a full 40-character commit.
+- Increment: 92 records required new evidence: 72 new keys and 20 keys whose
+  fixed commit changed. The other 690 records matched exact key-and-commit
+  history.
+- Decisions for the 92-record increment: 14 catalog-reviewed, 16
+  catalog-held, 38 duplicate or superseded, 2 example/fixture records, 1
+  non-plugin package, and 21 source conflicts. No records remain pending.
+- Catalog after review: 1,079 repository-unique records: 709 reviewed, 369
+  held, and 1 excluded.
+- Discovery health: the latest scheduled run was partial with 60 repositories
+  observed, 28 bundle manifests found, and one oversized GitHub repository
+  response. Valid queue updates were retained, but the success watermark
+  remains `2026-08-26T22:17:49.667Z` and discovery completeness is not claimed.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 2,170 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
