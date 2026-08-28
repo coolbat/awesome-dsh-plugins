@@ -70,7 +70,7 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
 ## 插件目录
 
 <!-- CATALOG:START -->
-快照：**2026-08-27** · **1049 个候选** · **695 个已核验** · **353 个暂缓** · **1 个排除**
+快照：**2026-08-28** · **1079 个候选** · **709 个已核验** · **369 个暂缓** · **1 个排除**
 
 ### 已核验的原生 bundles
 
@@ -1165,6 +1165,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `external-network` `client-injection` `session-data` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
+- **Enterprise** · [Como44/dsh-enterprise@e4e6893](https://github.com/Como44/dsh-enterprise/commit/e4e68935392e57337eff199fed2385fc8a74abc3) — Enterprise 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/Como44/dsh-enterprise/blob/e4e68935392e57337eff199fed2385fc8a74abc3/package.json) → [patch](https://github.com/Como44/dsh-enterprise/blob/e4e68935392e57337eff199fed2385fc8a74abc3/cordis.patch.yml) · **身份:** `dsh-enterprise`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `credentials` `client-injection` `session-data` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
 - **DSH Captain Call** · [Daisy2048/dsh-captain-call@d2b7406](https://github.com/Daisy2048/dsh-captain-call/commit/d2b740660b97b1189a5cadc769955e90b0b00706) — 面向 AgentTeams 完成事件的桌面来电式通知器，支持本地语音合成、可选麦克风回复与对话归档。
   - **证据:** [manifest](https://github.com/Daisy2048/dsh-captain-call/blob/d2b740660b97b1189a5cadc769955e90b0b00706/package.json) → [patch](https://github.com/Daisy2048/dsh-captain-call/blob/d2b740660b97b1189a5cadc769955e90b0b00706/cordis.patch.yml) · **身份:** Git 源 / 未知
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
@@ -1184,6 +1189,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/DemoJ/proactive-notify/blob/b9032beae455e5edc2863fe9c4beb77b0217b1dd/package.json) → [patch](https://github.com/DemoJ/proactive-notify/blob/b9032beae455e5edc2863fe9c4beb77b0217b1dd/cordis.patch.yml) · **身份:** `proactive-notify`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `external-network` `client-injection` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
+- **LLM Mimo** · [dfhxxc666/dsh-llm-mimo@c9e1dd6](https://github.com/dfhxxc666/dsh-llm-mimo/commit/c9e1dd6eed6935be51b1befcec20ff58195637fb) — LLM Mimo 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/dfhxxc666/dsh-llm-mimo/blob/c9e1dd6eed6935be51b1befcec20ff58195637fb/package.json) → [patch](https://github.com/dfhxxc666/dsh-llm-mimo/blob/c9e1dd6eed6935be51b1befcec20ff58195637fb/cordis.patch.yml) · **身份:** `dsh-llm-mimo`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `credentials` `process-control` `session-data` `model-tools` `package-install` `prepublish-only` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
 - **DSH AUX** · [DoloresCaritasAngelus/DSH-AUX@8c1ef2c](https://github.com/DoloresCaritasAngelus/DSH-AUX/commit/8c1ef2c3117c8cdaf380a6feea3669d5753b3374) — 为视觉、网页提取和文本压缩路由辅助 LLM 任务，并提供回退、并发和会话状态控制。
   - **证据:** [manifest](https://github.com/DoloresCaritasAngelus/DSH-AUX/blob/8c1ef2c3117c8cdaf380a6feea3669d5753b3374/dsh-aux/package.json) → [patch](https://github.com/DoloresCaritasAngelus/DSH-AUX/blob/8c1ef2c3117c8cdaf380a6feea3669d5753b3374/dsh-aux/cordis.patch.yml) · **身份:** Git 源 / 未知
@@ -1209,6 +1219,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/fmlin0429712024/linkhealth-triage/blob/fa89c595c17f4a3504cf6d711f0590ee3548ff38/triage-dsh-plugin/package.json) → [patch](https://github.com/fmlin0429712024/linkhealth-triage/blob/fa89c595c17f4a3504cf6d711f0590ee3548ff38/triage-dsh-plugin/cordis.patch.yml) · **身份:** `linkhealth-intake-triage-dsh`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `healthcare-workflow` `skills` `filesystem-write` `human-review` `sensitive-data` `github-only` · **核验备注:** 规范嵌套源码包含 PHI 转人工复核约束并写入本地分诊日志；未处理医疗数据、角色提示、门禁或日志写入。
+
+- **Speckit Plugin** · [fusunyu/speckit-plugin@ebef0fb](https://github.com/fusunyu/speckit-plugin/commit/ebef0fbc83ab99186d4a5f0dd429135b937fbffe) — Speckit Plugin 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/fusunyu/speckit-plugin/blob/ebef0fbc83ab99186d4a5f0dd429135b937fbffe/package.json) → [patch](https://github.com/fusunyu/speckit-plugin/blob/ebef0fbc83ab99186d4a5f0dd429135b937fbffe/cordis.patch.yml) · **身份:** `speckit-plugin`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `process-control` `session-data` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
 - **DSH Timer Scheduler** · [GMH13552/dsh-timer-scheduler@5b9c563](https://github.com/GMH13552/dsh-timer-scheduler/commit/5b9c563832ac4fabf136acfb503bde0e442dd2cf) — 允许 Agent 安排未来唤醒，并在 DSH Web 面板显示提醒。
   - **证据:** [manifest](https://github.com/GMH13552/dsh-timer-scheduler/blob/5b9c563832ac4fabf136acfb503bde0e442dd2cf/package.json) → [patch](https://github.com/GMH13552/dsh-timer-scheduler/blob/5b9c563832ac4fabf136acfb503bde0e442dd2cf/cordis.patch.yml) · **身份:** `dsh-timer-scheduler-ui`
@@ -1435,6 +1450,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepare` · 兼容性未知
   - **能力信号:** `external-network` `client-injection` `session-data` `model-tools` `package-install` `prepare` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
+- **Subagent Model Picker** · [Zim9729/dsh-subagent-model-picker@5fa4ea7](https://github.com/Zim9729/dsh-subagent-model-picker/commit/5fa4ea7b48df652c5808664e72abf6c771243675) — Subagent Model Picker 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/Zim9729/dsh-subagent-model-picker/blob/5fa4ea7b48df652c5808664e72abf6c771243675/package.json) → [patch](https://github.com/Zim9729/dsh-subagent-model-picker/blob/5fa4ea7b48df652c5808664e72abf6c771243675/cordis.patch.yml) · **身份:** `@zim9729/dsh-subagent-model-picker`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `credentials` `client-injection` `process-control` `session-data` `model-tools` `package-install` `plugin-management` `multi-agent` `prepack` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
 #### 文件与数据
 
 - **DSH Usage Billing** · [940842546/dsh-usage-billing@96ff9fc](https://github.com/940842546/dsh-usage-billing/commit/96ff9fccd2f6ece426a40cdbcf8f3826ab7c387c) — 聚合模型 Token 用量与 DeepSeek 费用估算，并提供持久化的会话和时间范围面板。
@@ -1466,6 +1486,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/chengzhi43/dsh-file/blob/ae933f70273397c925410da42e302a7968e7c2a1/package.json) → [patch](https://github.com/chengzhi43/dsh-file/blob/ae933f70273397c925410da42e302a7968e7c2a1/cordis.patch.yml) · **身份:** `dsh-file`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
   - **能力信号:** `filesystem-read` `filesystem-write` `web-ui` `markdown` `source-ahead-registry` · **核验备注:** 固定源码为 0.1.0，而 npm 为 0.0.1 且缺少仓库元数据；未执行文件读写、Markdown 渲染或浏览器加载。
+
+- **Codex Reasoning Router** · [chenmzh/dsh-codex-reasoning-router@6cc4f6c](https://github.com/chenmzh/dsh-codex-reasoning-router/commit/6cc4f6cf87896f031caf1d5813e3abf74e19cde2) — Codex Reasoning Router 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/chenmzh/dsh-codex-reasoning-router/blob/6cc4f6cf87896f031caf1d5813e3abf74e19cde2/package.json) → [patch](https://github.com/chenmzh/dsh-codex-reasoning-router/blob/6cc4f6cf87896f031caf1d5813e3abf74e19cde2/cordis.patch.yml) · **身份:** `dsh-codex-reasoning-router`
+  - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `client-injection` `filesystem-write` `process-control` `session-data` `system-prompt` `model-tools` `package-install` `multi-agent` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
 - **DSH Cloud Sync** · [dickpy/dsh-cloud-sync@fa3dfa5](https://github.com/dickpy/dsh-cloud-sync/commit/fa3dfa57955d5c54344c21012c6e3d71f09fe920) — 通过 WebDAV 或对象存储同步可迁移的 DSH Profile 与本地插件源码。
   - **证据:** [manifest](https://github.com/dickpy/dsh-cloud-sync/blob/fa3dfa57955d5c54344c21012c6e3d71f09fe920/package.json) → [patch](https://github.com/dickpy/dsh-cloud-sync/blob/fa3dfa57955d5c54344c21012c6e3d71f09fe920/cordis.patch.yml) · **身份:** `@dickpy/dsh-cloud-sync`
@@ -1614,6 +1639,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
 
 #### 视觉与媒体
 
+- **TUI MCP Manager** · [0N3-0/dsh-tui-mcp-manager@223664b](https://github.com/0N3-0/dsh-tui-mcp-manager/commit/223664b481bad5a311fd232a09503ab18b842c74) — TUI MCP Manager 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/0N3-0/dsh-tui-mcp-manager/blob/223664b481bad5a311fd232a09503ab18b842c74/package.json) → [patch](https://github.com/0N3-0/dsh-tui-mcp-manager/blob/223664b481bad5a311fd232a09503ab18b842c74/cordis.patch.yml) · **身份:** `dsh-tui-mcp-manager`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `credentials` `filesystem-read` `filesystem-write` `mcp` `session-data` `model-tools` `package-install` `vision` `prepack` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
 - **TTS** · [1624318455/dsh-plugin-tts@b4e7a0a](https://github.com/1624318455/dsh-plugin-tts/commit/b4e7a0a4b19e76a34372e40cdcbc1952ff55e916) — Edge TTS 语音大集成插件：消息朗读按钮、自动朗读开关、语音设置面板（Edge TTS）
   - **证据:** [manifest](https://github.com/1624318455/dsh-plugin-tts/blob/b4e7a0a4b19e76a34372e40cdcbc1952ff55e916/package.json) → [patch](https://github.com/1624318455/dsh-plugin-tts/blob/b4e7a0a4b19e76a34372e40cdcbc1952ff55e916/cordis.patch.yml) · **身份:** `@dsh-external/dsh-plugin-tts`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
@@ -1623,6 +1653,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/1710782766/dsh-llm-vision/blob/8ff56db2e40cb7053dbe8602522ea1d6734c1e9c/package.json) → [patch](https://github.com/1710782766/dsh-llm-vision/blob/8ff56db2e40cb7053dbe8602522ea1d6734c1e9c/cordis.patch.yml) · **身份:** `dsh-llm-vision`
   - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `vision` `ocr` `external-network` `credentials` `filesystem-cache` `client-injection` · **核验备注:** 固定源码与 npm 0.1.0 一致；未执行端点调用、图像处理、凭据访问、缓存写入或客户端注入。
+
+- **HDC Bridge** · [1na-ko/dsh-hdc-bridge@d98fc94](https://github.com/1na-ko/dsh-hdc-bridge/commit/d98fc945db7e7a0032cfbc27392fc8931b43986a) — HDC Bridge 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/1na-ko/dsh-hdc-bridge/blob/d98fc945db7e7a0032cfbc27392fc8931b43986a/package.json) → [patch](https://github.com/1na-ko/dsh-hdc-bridge/blob/d98fc945db7e7a0032cfbc27392fc8931b43986a/cordis.patch.yml) · **身份:** `dsh-hdc-bridge`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `credentials` `client-injection` `mcp` `vision` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
 - **Permissions** · [940842546/dsh-permissions@5bf89db](https://github.com/940842546/dsh-permissions/commit/5bf89db965ace7721a2f9cb8868438b3fc6b6b59) — DeepSeek Harness 权限规则引擎：hard/deny/ask/allow 四级规则（hard 高于全访问）、全局与 workspace 作用域、通配符路径保护、可视化草稿式编辑器，规则持久化于 settings.yaml
   - **证据:** [manifest](https://github.com/940842546/dsh-permissions/blob/5bf89db965ace7721a2f9cb8868438b3fc6b6b59/package.json) → [patch](https://github.com/940842546/dsh-permissions/blob/5bf89db965ace7721a2f9cb8868438b3fc6b6b59/cordis.patch.yml) · **身份:** `dsh-permissions`
@@ -1839,6 +1874,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `unknown` · 生命周期 `none` · 声明 rc.6 peer
   - **能力信号:** `image-generation` `video-generation` `text-to-speech` `credentials` `external-network` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
+- **Crypto Analyst** · [hnlisf/dsh-crypto-analyst@ea9a491](https://github.com/hnlisf/dsh-crypto-analyst/commit/ea9a491b601e58b6f070d3f39e36cc4215223928) — 加密货币深度调研智能体插件：输入币种/符号/合约地址，按 5 步思维链调取真实链上/行情/融资/新闻数据，产出结构化中文研报；报告工作台 + 数据可视化 + 自动配图 + MD/PDF 导出。
+  - **证据:** [manifest](https://github.com/hnlisf/dsh-crypto-analyst/blob/ea9a491b601e58b6f070d3f39e36cc4215223928/packages/dsh-crypto-analyst/package.json) → [patch](https://github.com/hnlisf/dsh-crypto-analyst/blob/ea9a491b601e58b6f070d3f39e36cc4215223928/packages/dsh-crypto-analyst/cordis.patch.yml) · **身份:** `dsh-crypto-analyst`
+  - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `credentials` `client-injection` `subprocess` `model-tools` `package-install` `web-search` `vision` `financial` `nested-bundle` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
 - **Audio Dagou** · [HokkaidoCOLA/dsh-audio-dagou@fb51976](https://github.com/HokkaidoCOLA/dsh-audio-dagou/commit/fb51976657eda9b7a321903b81262451518a14d4) — 一个给 DeepSeek Harness（DSH）web 会话配音效的插件「大狗」：执行命令后播「大狗」，模型向你提问时播「叮咚鸡」，每轮任务结束按命令次数成正比地播「叫」（上限 10 声）。
   - **证据:** [manifest](https://github.com/HokkaidoCOLA/dsh-audio-dagou/blob/fb51976657eda9b7a321903b81262451518a14d4/package.json) → [patch](https://github.com/HokkaidoCOLA/dsh-audio-dagou/blob/fb51976657eda9b7a321903b81262451518a14d4/cordis.patch.yml) · **身份:** `@dsh-external/dsh-audio-dagou`
   - **许可证:** repo `BSD-3-Clause` / package `BSD-3-Clause` · 生命周期 `none` · 声明 rc.6 peer
@@ -1858,6 +1898,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/hyyhf/mindgarden/blob/0b19c13b1b97e4cec52f05e70021aa1cdec4266a/package.json) → [patch](https://github.com/hyyhf/mindgarden/blob/0b19c13b1b97e4cec52f05e70021aa1cdec4266a/cordis.patch.yml) · **身份:** `@deepseek-ai/dsh-mind-garden`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `external-network` `credentials` `client-injection` `filesystem-read` `database` `session-data` `model-tools` `vision` `theme` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
+- **With Pencil** · [IWAIBAOLI/dsh-with-pencil@2086755](https://github.com/IWAIBAOLI/dsh-with-pencil/commit/2086755ec26f2a2caa457f9187ea44539c171598) — With Pencil 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/IWAIBAOLI/dsh-with-pencil/blob/2086755ec26f2a2caa457f9187ea44539c171598/package.json) → [patch](https://github.com/IWAIBAOLI/dsh-with-pencil/blob/2086755ec26f2a2caa457f9187ea44539c171598/cordis.patch.yml) · **身份:** `dsh-with-pencil`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `client-injection` `process-control` `mcp` `session-data` `system-prompt` `model-tools` `vision` `theme` `prepublish-only` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
 - **Projectless Session** · [jarvisluk/dsh-projectless-session@8d1798d](https://github.com/jarvisluk/dsh-projectless-session/commit/8d1798dd213ce5aec193b76a316a2d3c08df2a73) — Projectless Session 是一个面向 DeepSeek Harness 的插件。
   - **证据:** [manifest](https://github.com/jarvisluk/dsh-projectless-session/blob/8d1798dd213ce5aec193b76a316a2d3c08df2a73/package.json) → [patch](https://github.com/jarvisluk/dsh-projectless-session/blob/8d1798dd213ce5aec193b76a316a2d3c08df2a73/cordis.patch.yml) · **身份:** `dsh-projectless-session`
@@ -1898,6 +1943,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/kongdexu/dsh-nav-pointer/blob/9fb8fd5648827452bceb9a6b2213173da7c7ee37/package.json) → [patch](https://github.com/kongdexu/dsh-nav-pointer/blob/9fb8fd5648827452bceb9a6b2213173da7c7ee37/cordis.patch.yml) · **身份:** `dsh-nav-pointer`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · 声明 rc.6 peer
   - **能力信号:** `external-network` `client-injection` `session-data` `vision` `prepack` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
+- **Vibegap** · [ktao732084-arch/vibegap@c8b5423](https://github.com/ktao732084-arch/vibegap/commit/c8b54235103e59ffb26b6f6762715170bc6ad347) — Vibegap 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/ktao732084-arch/vibegap/blob/c8b54235103e59ffb26b6f6762715170bc6ad347/vibegap/adapters/dsh/plugin/package.json) → [patch](https://github.com/ktao732084-arch/vibegap/blob/c8b54235103e59ffb26b6f6762715170bc6ad347/vibegap/adapters/dsh/plugin/cordis.patch.yml) · **身份:** `dsh-vibegap`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `client-injection` `process-control` `database` `session-data` `audio` `nested-bundle` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
 - **DirectorX** · [LaplaceYoung/dsh-directorx@5553398](https://github.com/LaplaceYoung/dsh-directorx/commit/5553398fafcdb8e263f54e19203c1c56fbd43e43) — 集 AI 视频生成、剪辑、质检、分镜画布和导演知识库于一体。
   - **证据:** [manifest](https://github.com/LaplaceYoung/dsh-directorx/blob/5553398fafcdb8e263f54e19203c1c56fbd43e43/package.json) → [patch](https://github.com/LaplaceYoung/dsh-directorx/blob/5553398fafcdb8e263f54e19203c1c56fbd43e43/cordis.patch.yml) · **身份:** Git 源 / 未知
@@ -2229,6 +2279,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `unknown` · 生命周期 `none` · 声明 rc.6 peer
   - **能力信号:** `vision` `subprocess` `credentials` `external-network` `model-tools` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
+- **IM** · [xmanrui/dsh-im@71ca552](https://github.com/xmanrui/dsh-im/commit/71ca5521134c14addc6a1f277ee8c51f09f942b7) — 把九种 IM 机器人和公网 AI Office 接入本机 DeepSeek Harness。 Connect nine IM channels and a public AI Office to a local DeepSeek Harness.
+  - **证据:** [manifest](https://github.com/xmanrui/dsh-im/blob/71ca5521134c14addc6a1f277ee8c51f09f942b7/package.json) → [patch](https://github.com/xmanrui/dsh-im/blob/71ca5521134c14addc6a1f277ee8c51f09f942b7/cordis.patch.yml) · **身份:** `@xmanrui/dsh-im`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `credentials` `client-injection` `session-data` `package-install` `vision` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
 - **PI TUI** · [XMoon/dsh-pi-tui@3a3bd1f](https://github.com/XMoon/dsh-pi-tui/commit/3a3bd1f8904bdbac4140b71924a25feede6301d7) — PI TUI 是一个面向 DeepSeek Harness 的插件。
   - **证据:** [manifest](https://github.com/XMoon/dsh-pi-tui/blob/3a3bd1f8904bdbac4140b71924a25feede6301d7/package.json) → [patch](https://github.com/XMoon/dsh-pi-tui/blob/3a3bd1f8904bdbac4140b71924a25feede6301d7/cordis.patch.yml) · **身份:** `@xmoon76/dsh-pi-tui`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · 声明 rc.6 peer
@@ -2278,6 +2333,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/Yu-tao-Li/dsh-read-image/blob/f6ab53b527afd23e5464a5cf585bd6453fcb9fad/package.json) → [patch](https://github.com/Yu-tao-Li/dsh-read-image/blob/f6ab53b527afd23e5464a5cf585bd6453fcb9fad/cordis.patch.yml) · **身份:** `dsh-read-image`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `image-rendering` `attachments` `tool-results` `client-injection` `github-only` · **核验备注:** 已静态核对固定源码与作者记录的 GitHub 安装身份；未执行候选代码、安装钩子、网络调用、文件系统变更或 UI 行为。
+
+- **Github Manager** · [yuan-source-666/dsh-github-manager@f293cfc](https://github.com/yuan-source-666/dsh-github-manager/commit/f293cfc4d6d8660c40b6dfe0546a54d8bc371dbd) — Github Manager 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/yuan-source-666/dsh-github-manager/blob/f293cfc4d6d8660c40b6dfe0546a54d8bc371dbd/package.json) → [patch](https://github.com/yuan-source-666/dsh-github-manager/blob/f293cfc4d6d8660c40b6dfe0546a54d8bc371dbd/cordis.patch.yml) · **身份:** `dsh-github-manager`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepare` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `credentials` `process-control` `package-install` `vision` `prepare` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
 - **Opencode GO SUB** · [Yuanloss/dsh-opencode-go-sub@bb537e0](https://github.com/Yuanloss/dsh-opencode-go-sub/commit/bb537e0b734d5e83df927d030a1357b5c1affb83) — OpenCode Go 订阅 + OpenCode Zen 免费档 for DeepSeek Harness: 像 opencode 官方客户端一样展示完整模型目录（订阅 30 模型 + 免费 5 模型），零配置密钥自动发现，luna/grok 自动走 Responses API。
   - **证据:** [manifest](https://github.com/Yuanloss/dsh-opencode-go-sub/blob/bb537e0b734d5e83df927d030a1357b5c1affb83/package.json) → [patch](https://github.com/Yuanloss/dsh-opencode-go-sub/blob/bb537e0b734d5e83df927d030a1357b5c1affb83/cordis.patch.yml) · **身份:** `dsh-opencode-go-sub`
@@ -2967,10 +3027,20 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
   - **能力信号:** `external-network` `credentials` `client-injection` `financial` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
+- **Iflow DSH Plugin** · [Neo-Pz/dsh@74ce6fc](https://github.com/Neo-Pz/dsh/commit/74ce6fc0b2ccea129b81acdd14c7a4b29d3f60b0) — Iflow DSH Plugin 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/Neo-Pz/dsh/blob/74ce6fc0b2ccea129b81acdd14c7a4b29d3f60b0/package.json) → [patch](https://github.com/Neo-Pz/dsh/blob/74ce6fc0b2ccea129b81acdd14c7a4b29d3f60b0/cordis.patch.yml) · **身份:** `iflow-dsh-plugin`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `external-network` `client-injection` `subprocess` `process-control` `session-data` `model-tools` `package-install` `financial` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
 - **Open Design DSH Runtime** · [nexu-io/open-design@62483a1](https://github.com/nexu-io/open-design/commit/62483a1947b5c5e7b3fffe24b52b685d93ad9209) — 通过 JSONL stdio 把 Open Design 连接到用户自有 DSH 的完整性固定 profile 运行时。
   - **证据:** [manifest](https://github.com/nexu-io/open-design/blob/62483a1947b5c5e7b3fffe24b52b685d93ad9209/packages/dsh-runtime/package.json) → [patch](https://github.com/nexu-io/open-design/blob/62483a1947b5c5e7b3fffe24b52b685d93ad9209/packages/dsh-runtime/cordis.patch.yml) · **身份:** Git 源 / 未知
   - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `none` · 声明 rc.6 peer
   - **能力信号:** `stdio` `subprocess` `profile-bundle` `session-data` `integrity-check` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
+
+- **Hhxg Market** · [Niceck/dsh-hhxg-market@cde2c3c](https://github.com/Niceck/dsh-hhxg-market/commit/cde2c3c3caf55c5dc4448d8b8c402fb82ef9387b) — 恢恢量化 (hhxg.top) A股量化数据插件 for DeepSeek Harness：免费提供日报快照/财经快讯/融资融券/A股日历/市场情绪/题材热度 6 个工具；填入 VIP MCP Token 后解锁个股诊断/量化策略信号/连板晋级预测等 5 个进阶工具。A-share quant data plugin for DeepSeek Harness (dsh): 6 free tools + 5 VIP tools bridged to the hhxg MCP server.
+  - **证据:** [manifest](https://github.com/Niceck/dsh-hhxg-market/blob/cde2c3c3caf55c5dc4448d8b8c402fb82ef9387b/package.json) → [patch](https://github.com/Niceck/dsh-hhxg-market/blob/cde2c3c3caf55c5dc4448d8b8c402fb82ef9387b/cordis.patch.yml) · **身份:** `@hhxg/dsh-hhxg-market`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `mcp` `system-prompt` `theme` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
 - **DSH Gauge** · [noone89A/dsh-gauge@ca176d7](https://github.com/noone89A/dsh-gauge/commit/ca176d7658661c91bdea666102a51692fc3d88d6) — 面向 DSH Web 的缓存命中、Token、峰谷价格和会话费用统计。
   - **证据:** [manifest](https://github.com/noone89A/dsh-gauge/blob/ca176d7658661c91bdea666102a51692fc3d88d6/package.json) → [patch](https://github.com/noone89A/dsh-gauge/blob/ca176d7658661c91bdea666102a51692fc3d88d6/cordis.patch.yml) · **身份:** `dsh-gauge`
@@ -5339,6 +5409,86 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/zsmx233/dsh-plugin-ssh-remotes/blob/f7adf229370f760e9e0a264c7891e304f6b4ef41/package.json) → [patch](https://github.com/zsmx233/dsh-plugin-ssh-remotes/blob/f7adf229370f760e9e0a264c7891e304f6b4ef41/cordis.patch.yml) · **身份:** `@dsh-external/dsh-remote-ssh`
   - **许可证:** repo `Unresolved` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
   - **能力信号:** `client-injection` `session-data` `model-tools` `theme` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因repository license、npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **Enterprise OPS** · [01men/ybkk-AIOS@7976dfd](https://github.com/01men/ybkk-AIOS/commit/7976dfd63cecb504c2e1bbc28fcc1f15413b5385) — 企业 AI 资源统一管理平台 —— 基于 DeepSeek Harness「一切皆插件」架构
+  - **证据:** [manifest](https://github.com/01men/ybkk-AIOS/blob/7976dfd63cecb504c2e1bbc28fcc1f15413b5385/package.json) → [patch](https://github.com/01men/ybkk-AIOS/blob/7976dfd63cecb504c2e1bbc28fcc1f15413b5385/cordis.patch.yml) · **身份:** `dsh-enterprise-ops`
+  - **许可证:** repo `Unresolved` / package `Unresolved` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `credentials` `filesystem-write` `mcp` `database` `session-data` `package-install` `email` `financial` `license-incomplete` · **核验备注:** 因repository license、package license证据不足或冲突而暂缓；未执行候选代码。
+
+- **Creator** · [Backctrl/orios-content-workbench@f11058d](https://github.com/Backctrl/orios-content-workbench/commit/f11058db4439369b2b349727ee0b7ddf5639e12c) — OriOS 面向 DeepSeek Harness 的内容生产工作台插件：情报先行 + 四级审批闸门（选题→长文→变体→发布）+ 平台打法（融合 creator-buddy）+ dsh-worktable 多窗口界面
+  - **证据:** [manifest](https://github.com/Backctrl/orios-content-workbench/blob/f11058db4439369b2b349727ee0b7ddf5639e12c/package.json) → [patch](https://github.com/Backctrl/orios-content-workbench/blob/f11058db4439369b2b349727ee0b7ddf5639e12c/cordis.patch.yml) · **身份:** `@orios/dsh-creator`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `client-injection` `package-install` `vision` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **GOV Portal** · [ExElectron/dsh-gov-portal@04a69c1](https://github.com/ExElectron/dsh-gov-portal/commit/04a69c142d6f308306f0797fb4bf2abac4cc691c) — Deepseek Harness 综合智能办事平台 — 独立政务风 WebUI（默认端口 3081），通过宿主 apiProxy 1:1 对接 dsh 的会话/模型/权限/统计等全部 Agent 能力
+  - **证据:** [manifest](https://github.com/ExElectron/dsh-gov-portal/blob/04a69c142d6f308306f0797fb4bf2abac4cc691c/package.json) → [patch](https://github.com/ExElectron/dsh-gov-portal/blob/04a69c142d6f308306f0797fb4bf2abac4cc691c/cordis.patch.yml) · **身份:** `dsh-gov-portal`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `client-injection` `session-data` `model-tools` `vision` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **Voice Announcer** · [flashyiyi/dsh-voice-announcer@499ec24](https://github.com/flashyiyi/dsh-voice-announcer/commit/499ec2419c0c22d45084b1b5581b17370fdd7fff) — 对话结束语音播报：会话名+轮数+结果（edge-tts 流式 / SAPI）
+  - **证据:** [manifest](https://github.com/flashyiyi/dsh-voice-announcer/blob/499ec2419c0c22d45084b1b5581b17370fdd7fff/package.json) → [patch](https://github.com/flashyiyi/dsh-voice-announcer/blob/499ec2419c0c22d45084b1b5581b17370fdd7fff/cordis.patch.yml) · **身份:** `dsh-voice-announcer`
+  - **许可证:** repo `Unresolved` / package `BSD-3-Clause` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `external-network` `client-injection` `session-data` `model-tools` `audio` `multi-agent` `license-incomplete` · **核验备注:** 因repository license证据不足或冲突而暂缓；未执行候选代码。
+
+- **Runtime** · [Gavin-Gibson/GlasswareTracker@790d659](https://github.com/Gavin-Gibson/GlasswareTracker/commit/790d659249453e86b842bc085ae7d7a0d2b3d957) — Runtime 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/Gavin-Gibson/GlasswareTracker/blob/790d659249453e86b842bc085ae7d7a0d2b3d957/packages/dsh-runtime/package.json) → [patch](https://github.com/Gavin-Gibson/GlasswareTracker/blob/790d659249453e86b842bc085ae7d7a0d2b3d957/packages/dsh-runtime/cordis.patch.yml) · **身份:** `@open-design/dsh-runtime`
+  - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `none` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `credentials` `client-injection` `filesystem-read` `subprocess` `process-control` `mcp` `database` `session-data` `model-tools` `package-install` `plugin-management` `vision` `audio` `email` `financial` `theme` `nested-bundle` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **Knowledge** · [lemoncat7/dsh-knowledge@114901a](https://github.com/lemoncat7/dsh-knowledge/commit/114901aed2fbf91f1b40f8708f262aa882f4cae0) — Knowledge 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/lemoncat7/dsh-knowledge/blob/114901aed2fbf91f1b40f8708f262aa882f4cae0/package.json) → [patch](https://github.com/lemoncat7/dsh-knowledge/blob/114901aed2fbf91f1b40f8708f262aa882f4cae0/cordis.patch.yml) · **身份:** `@lemoncat7/dsh-knowledge`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepare` · 兼容性未知
+  - **能力信号:** `external-network` `client-injection` `database` `session-data` `package-install` `vision` `theme` `prepare` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **Subagent View** · [MrSsSprite/subagent-view@9f5b9b6](https://github.com/MrSsSprite/subagent-view/commit/9f5b9b6d5a54fa138b2f9f8fcba446ca9c68984b) — Subagent View 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/MrSsSprite/subagent-view/blob/9f5b9b6d5a54fa138b2f9f8fcba446ca9c68984b/package.json) → [patch](https://github.com/MrSsSprite/subagent-view/blob/9f5b9b6d5a54fa138b2f9f8fcba446ca9c68984b/cordis.patch.yml) · **身份:** `subagent-view`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 落后于 rc.6 基线
+  - **能力信号:** `external-network` `client-injection` `subprocess` `process-control` `session-data` `package-install` `multi-agent` `identity-unresolved` `unresolved-install-identity` `stale-peer-range` · **核验备注:** 因npm or Git-source installation identity、baseline compatibility证据不足或冲突而暂缓；未执行候选代码。
+
+- **Geometry Knowledge** · [sdoygb/geometry-knowledge@1fdf33c](https://github.com/sdoygb/geometry-knowledge/commit/1fdf33cdf1b0fe9d4be2f7d921a8f754d13ec9a8) — 几何论（共扼谱几何 CSG）知识库插件：纯离线 BM25 检索 208 篇文章全文 + 3833 分块 + 871 条主库真理层，零运行时依赖。Conjugate Spectral Geometry knowledge base for DeepSeek Harness: fully offline BM25 retrieval over 208 articles, 3833 chunks and 871 verified truths.
+  - **证据:** [manifest](https://github.com/sdoygb/geometry-knowledge/blob/1fdf33cdf1b0fe9d4be2f7d921a8f754d13ec9a8/package.json) → [patch](https://github.com/sdoygb/geometry-knowledge/blob/1fdf33cdf1b0fe9d4be2f7d921a8f754d13ec9a8/cordis.patch.yml) · **身份:** `geometry-knowledge`
+  - **许可证:** repo `Unresolved` / package `MIT` · 生命周期 `prepare` · 兼容性未知
+  - **能力信号:** `external-network` `prepare` `license-incomplete` · **核验备注:** 因repository license证据不足或冲突而暂缓；未执行候选代码。
+
+- **Dialogue Context Bridge** · [ShadowQuill/DialogueContextBridge@83e0aae](https://github.com/ShadowQuill/DialogueContextBridge/commit/83e0aae96be7a2d39e559dd5739835f3074ccdca) — 对话上下文桥接：为大语言模型(LLM)/AI 智能体的对话做跨会话上下文桥接的 DSH 插件，把一次对话的共识编译为可移植三层快照，一键引入新对话。
+  - **证据:** [manifest](https://github.com/ShadowQuill/DialogueContextBridge/blob/83e0aae96be7a2d39e559dd5739835f3074ccdca/package.json) → [patch](https://github.com/ShadowQuill/DialogueContextBridge/blob/83e0aae96be7a2d39e559dd5739835f3074ccdca/cordis.patch.yml) · **身份:** `dsh-plugin-dialogue-context-bridge`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `database` `session-data` `model-tools` `package-install` `financial` `prepublish-only` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **Enhanced Plugins** · [sky-unicorn/dsh-enhanced-plugins@a565607](https://github.com/sky-unicorn/dsh-enhanced-plugins/commit/a56560726b1292d2e1fa3dc2f21c08c38023b14f) — Enhanced Plugins 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/sky-unicorn/dsh-enhanced-plugins/blob/a56560726b1292d2e1fa3dc2f21c08c38023b14f/package.json) → [patch](https://github.com/sky-unicorn/dsh-enhanced-plugins/blob/a56560726b1292d2e1fa3dc2f21c08c38023b14f/cordis.patch.yml) · **身份:** `dsh-enhanced-plugins`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepare` · peer range 混合
+  - **能力信号:** `external-network` `credentials` `client-injection` `subprocess` `process-control` `mcp` `session-data` `model-tools` `package-install` `vision` `multi-agent` `theme` `prepare` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **APP Wework** · [wecode-ai/Wegent@54d7585](https://github.com/wecode-ai/Wegent/commit/54d758594fead72e8566b8ec0a5ade2b80bfbfe4) — APP Wework 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/wecode-ai/Wegent/blob/54d758594fead72e8566b8ec0a5ade2b80bfbfe4/wework/dsh/app-wework/package.json) → [patch](https://github.com/wecode-ai/Wegent/blob/54d758594fead72e8566b8ec0a5ade2b80bfbfe4/wework/dsh/app-wework/cordis.patch.yml) · **身份:** `@wegent/dsh-app-wework`
+  - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `none` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `credentials` `client-injection` `subprocess` `session-data` `package-install` `nested-bundle` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **Hermes Prompt** · [weibaohui/dsh-plugins@279be6f](https://github.com/weibaohui/dsh-plugins/commit/279be6fc12e1f4379f9ddbe2d4a8d1e5f06afba8) — Hermes Prompt 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/weibaohui/dsh-plugins/blob/279be6fc12e1f4379f9ddbe2d4a8d1e5f06afba8/hermes-prompt/package.json) → [patch](https://github.com/weibaohui/dsh-plugins/blob/279be6fc12e1f4379f9ddbe2d4a8d1e5f06afba8/hermes-prompt/cordis.patch.yml) · **身份:** `dsh-plugin-hermes-prompt`
+  - **许可证:** repo `Unresolved` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `session-data` `system-prompt` `nested-bundle` `license-incomplete` · **核验备注:** 因repository license证据不足或冲突而暂缓；未执行候选代码。
+
+- **BG Plugin** · [xiaoxingyuemiao/dsh-bg-plugin@2e818d7](https://github.com/xiaoxingyuemiao/dsh-bg-plugin/commit/2e818d7c38615a92d8e622557fa0d3c10f34d8bf) — DSH 自定义背景插件：为 DSH Web GUI 应用远程 URL 图片或本地图片作为背景，支持清晰度/压暗/模糊调节，设置面板保持默认外观。
+  - **证据:** [manifest](https://github.com/xiaoxingyuemiao/dsh-bg-plugin/blob/2e818d7c38615a92d8e622557fa0d3c10f34d8bf/package.json) → [patch](https://github.com/xiaoxingyuemiao/dsh-bg-plugin/blob/2e818d7c38615a92d8e622557fa0d3c10f34d8bf/cordis.patch.yml) · **身份:** `dsh-bg-plugin`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `client-injection` `theme` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **KES Bicqa** · [xuji755/bicqa-plugin@ddc09f0](https://github.com/xuji755/bicqa-plugin/commit/ddc09f0c14219a95b479d98d3cb31e4b474d1b00) — KES 性能分析 + BIC-QA 工具集一键安装包（DSH profile bundle）：MCP 只读接入 + KWR 报告生成/深度分析（异步取回官方 HTML 分析报告）+ BIC-QA 知识问答/报告分析 + 设置界面卡片。
+  - **证据:** [manifest](https://github.com/xuji755/bicqa-plugin/blob/ddc09f0c14219a95b479d98d3cb31e4b474d1b00/dsh-kes-bicqa/package.json) → [patch](https://github.com/xuji755/bicqa-plugin/blob/ddc09f0c14219a95b479d98d3cb31e4b474d1b00/dsh-kes-bicqa/cordis.patch.yml) · **身份:** `@dbaiops/dsh-kes-bicqa`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `external-network` `credentials` `mcp` `database` `model-tools` `nested-bundle` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **Research Autoresearch** · [yuan-source-666/dsh-research-autoresearch@9dcd897](https://github.com/yuan-source-666/dsh-research-autoresearch/commit/9dcd8970f2aefdb115b3a03307e78965169350fb) — Research Autoresearch 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/yuan-source-666/dsh-research-autoresearch/blob/9dcd8970f2aefdb115b3a03307e78965169350fb/package.json) → [patch](https://github.com/yuan-source-666/dsh-research-autoresearch/blob/9dcd8970f2aefdb115b3a03307e78965169350fb/cordis.patch.yml) · **身份:** `dsh-research-autoresearch`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepare` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `client-injection` `process-control` `model-tools` `prepare` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
+
+- **Compact** · [zouyuxuan122/Deepseek-Harness-EAC@6553ebc](https://github.com/zouyuxuan122/Deepseek-Harness-EAC/commit/6553ebcd88845f0f2d371f5b1c7f6c1ca2e91084) — Compact 是一个面向 DeepSeek Harness 的插件。
+  - **证据:** [manifest](https://github.com/zouyuxuan122/Deepseek-Harness-EAC/blob/6553ebcd88845f0f2d371f5b1c7f6c1ca2e91084/dsh-desktop/assets/plugins/dsh-compact/package.json) → [patch](https://github.com/zouyuxuan122/Deepseek-Harness-EAC/blob/6553ebcd88845f0f2d371f5b1c7f6c1ca2e91084/dsh-desktop/assets/plugins/dsh-compact/cordis.patch.yml) · **身份:** `dsh-compact`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
+  - **能力信号:** `external-network` `credentials` `client-injection` `subprocess` `mcp` `session-data` `model-tools` `package-install` `vision` `financial` `theme` `nested-bundle` `identity-unresolved` `unresolved-install-identity` · **核验备注:** 因npm or Git-source installation identity证据不足或冲突而暂缓；未执行候选代码。
 
 ### 核验后排除
 
