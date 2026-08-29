@@ -365,3 +365,34 @@ volatile and do not establish trust, compatibility, or installability.
   and 2,170 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-08-29 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `4179a3569b270bcc84f85a0016bc278cc0b4bcd4`, generated at
+  `2026-08-28T23:04:43.462Z`.
+- Queue: 1,884 structural leads: 1,047 already listed, 8 discovery-held, and
+  829 ready for review. Every ready record used a full 40-character commit.
+- Increment: 78 records required new evidence: 77 new keys and 1 key whose
+  fixed commit changed. The other 751 records matched exact key-and-commit
+  history.
+- Decisions for the 78-record increment: 16 catalog-reviewed, 14
+  catalog-held, 28 duplicate or superseded, 5 example/fixture/template
+  records, and 15 source conflicts. No records remain pending.
+- Catalog after review: 1,109 repository-unique records: 725 reviewed, 383
+  held, and 1 excluded.
+- Discovery health: the latest scheduled run completed with 60 repositories
+  observed, 59 bundle manifests found, no query errors, and no partial-result
+  watermark. Discovery coverage still is not claimed to be exhaustive.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 2,230 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
