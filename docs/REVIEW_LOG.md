@@ -396,3 +396,35 @@ volatile and do not establish trust, compatibility, or installability.
   and 2,230 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-08-30 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `740696c53d95899910240917c7b58514392cb429`, generated at
+  `2026-08-29T21:47:58.267Z`.
+- Queue: 1,976 structural leads: 1,078 already listed, 8 discovery-held, and
+  890 ready for review. Every ready record used a full 40-character commit.
+- Increment: 113 records required new evidence: 91 new keys and 22 keys whose
+  fixed commit changed. The other 777 records matched exact key-and-commit
+  history.
+- Decisions for the 113-record increment: 20 catalog-reviewed, 30
+  catalog-held, 19 duplicate or superseded, 8 example/fixture/template
+  records, 6 non-plugin packages, and 30 source conflicts. No records remain
+  pending.
+- Catalog after review: 1,159 repository-unique records: 745 reviewed, 413
+  held, and 1 excluded.
+- Discovery health: the latest scheduled run completed with 60 repositories
+  observed, 55 bundle manifests found, no query errors, and no partial-result
+  watermark. Discovery coverage still is not claimed to be exhaustive.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 2,330 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
