@@ -3,9 +3,9 @@
   "source": {
     "repository": "coolbat/awesome-dsh-plugins",
     "pullRequest": 2,
-    "commit": "4179a3569b270bcc84f85a0016bc278cc0b4bcd4",
-    "readyCount": 829,
-    "capturedAt": "2026-08-29T01:00:55.995Z"
+    "commit": "740696c53d95899910240917c7b58514392cb429",
+    "readyCount": 890,
+    "capturedAt": "2026-08-30T01:01:53.873Z"
   },
   "candidates": [
     {
@@ -140,31 +140,6 @@
           "task-planning",
           "workflow-orchestration"
         ]
-      }
-    },
-    {
-      "key": "1345862542:plugins/dsh-casdoor-auth/package.json",
-      "repositoryId": 1345862542,
-      "repository": "1123786563/dsh-plugin",
-      "repositoryUrl": "https://github.com/1123786563/dsh-plugin",
-      "repositoryNodeId": "R_kgDOUDg7jg",
-      "manifest": "plugins/dsh-casdoor-auth/package.json",
-      "patch": "plugins/dsh-casdoor-auth/cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-casdoor-auth",
-      "version": "0.1.0",
-      "commit": "4d2f04ee816069bc780a0ed8b64faa185bdfd87b",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": ["\"dsh.bundle.patch\" in:readme"],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T19:53:24Z",
-        "stars": 0,
-        "topics": []
       }
     },
     {
@@ -427,18 +402,18 @@
       }
     },
     {
-      "key": "1340749561:packages/mimir/package.json",
-      "repositoryId": 1340749561,
-      "repository": "1692775560/dsh-Mimir-Academic-research",
-      "repositoryUrl": "https://github.com/1692775560/dsh-Mimir-Academic-research",
-      "repositoryNodeId": "R_kgDOT-o2-Q",
-      "manifest": "packages/mimir/package.json",
-      "patch": "packages/mimir/cordis.patch.yml",
+      "key": "1350379388:package.json",
+      "repositoryId": 1350379388,
+      "repository": "173787247/dsh-wsl-browser",
+      "repositoryUrl": "https://github.com/173787247/dsh-wsl-browser",
+      "repositoryNodeId": "R_kgDOUH0nfA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
       "patchExists": true,
-      "package": "dsh-mimir",
-      "version": "0.15.1",
-      "commit": "bcbcf6a38b98fbdcbeed6439e5c56c96758fd7fe",
-      "defaultBranch": "main",
+      "package": "dsh-wsl-browser",
+      "version": "0.1.0",
+      "commit": "134ab34cc24eb968c5a9d74a7ece9fcdd496be8f",
+      "defaultBranch": "master",
       "status": "ready-for-review",
       "blocker": null,
       "discoveredBy": [
@@ -446,26 +421,71 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
+      "observedAt": "2026-08-29T07:54:32.184Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-28T12:51:25Z",
-        "stars": 106,
-        "topics": [
-          "arxiv",
-          "bibtex",
-          "deepseek",
-          "deepseek-harness",
-          "dsh-plugin",
-          "experiment-tracking",
-          "gpu-cluster",
-          "latex",
-          "paper-writing",
-          "research",
-          "research-tools",
-          "ssh"
-        ]
+        "pushedAt": "2026-08-29T07:50:50Z",
+        "stars": 0,
+        "topics": ["deepseek-harness", "dsh-plugin", "wsl"]
+      }
+    },
+    {
+      "key": "1350379113:package.json",
+      "repositoryId": 1350379113,
+      "repository": "173787247/dsh-wsl-cred",
+      "repositoryUrl": "https://github.com/173787247/dsh-wsl-cred",
+      "repositoryNodeId": "R_kgDOUH0maQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-wsl-cred",
+      "version": "0.1.0",
+      "commit": "2ee93441cffd5468b4d8cda59306a63a9256abb5",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:50:44Z",
+        "stars": 0,
+        "topics": ["deepseek-harness", "dsh-plugin", "wsl"]
+      }
+    },
+    {
+      "key": "1350379268:package.json",
+      "repositoryId": 1350379268,
+      "repository": "173787247/dsh-wsl-notify",
+      "repositoryUrl": "https://github.com/173787247/dsh-wsl-notify",
+      "repositoryNodeId": "R_kgDOUH0nBA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-wsl-notify",
+      "version": "0.1.0",
+      "commit": "26986f2801997cf9c76f56596d881591eca7ec10",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:50:48Z",
+        "stars": 0,
+        "topics": ["deepseek-harness", "dsh-plugin", "wsl"]
       }
     },
     {
@@ -995,6 +1015,52 @@
           "dsh-plugins",
           "github-search",
           "plugin-market"
+        ]
+      }
+    },
+    {
+      "key": "1333317835:plugin/ui/package.json",
+      "repositoryId": 1333317835,
+      "repository": "2BingLing/dsh-market",
+      "repositoryUrl": "https://github.com/2BingLing/dsh-market",
+      "repositoryNodeId": "R_kgDOT3jQyw",
+      "manifest": "plugin/ui/package.json",
+      "patch": "plugin/ui/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@dsh-market/plugin",
+      "version": "0.4.0",
+      "commit": "2c2ebd54219d7d67b7ca78005b3d2ba9a7d9c1da",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:44:12Z",
+        "stars": 87,
+        "topics": [
+          "deepseek-harness",
+          "deepseek-harness-plugin",
+          "deepseek-harness-plugins",
+          "dsh",
+          "dsh-bundle",
+          "dsh-market",
+          "dsh-plugin",
+          "dsh-plugins",
+          "dsh-skill",
+          "dsh-web",
+          "marketplace",
+          "plugin-market",
+          "plugin-marketplace",
+          "plugin-registry",
+          "plugin-search",
+          "web"
         ]
       }
     },
@@ -1812,6 +1878,31 @@
       }
     },
     {
+      "key": "1350853463:package.json",
+      "repositoryId": 1350853463,
+      "repository": "Alonsdfn/dsh-tool-mermaid-render",
+      "repositoryUrl": "https://github.com/Alonsdfn/dsh-tool-mermaid-render",
+      "repositoryNodeId": "R_kgDOUIRjVw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@alonsdfn/dsh-tool-mermaid-render",
+      "version": "0.1.0",
+      "commit": "8741e552fe75cc5b49c3f6a113cc0da886397702",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["\"dsh.bundle.patch\" in:readme"],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T19:51:00Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
       "key": "1339276523:package.json",
       "repositoryId": 1339276523,
       "repository": "Alvinpro/DSH-Rust-Launcher",
@@ -1841,45 +1932,6 @@
       }
     },
     {
-      "key": "1229298801:packages/dsh/package.json",
-      "repositoryId": 1229298801,
-      "repository": "alxshelepenok/grove",
-      "repositoryUrl": "https://github.com/alxshelepenok/grove",
-      "repositoryNodeId": "R_kgDOSUWccQ",
-      "manifest": "packages/dsh/package.json",
-      "patch": "packages/dsh/cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-grove",
-      "version": "0.1.6",
-      "commit": "4c2febee3975143ae3b462216e12bb2134555557",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": ["topic:dsh-plugin"],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T22:57:50Z",
-        "stars": 22,
-        "topics": [
-          "agent-tooling",
-          "agentic-workflow",
-          "ai",
-          "cynefin",
-          "definition-of-ready",
-          "dsh",
-          "dsh-plugin",
-          "dual-track-agile",
-          "julia",
-          "mikado-method",
-          "sdd",
-          "state-machine",
-          "tdd"
-        ]
-      }
-    },
-    {
       "key": "1340204935:package.json",
       "repositoryId": 1340204935,
       "repository": "amazing-tree-keeper/dsh-easy-mcp",
@@ -1905,6 +1957,35 @@
         "pushedAt": "2026-08-20T02:30:41Z",
         "stars": 0,
         "topics": []
+      }
+    },
+    {
+      "key": "1347749203:package.json",
+      "repositoryId": 1347749203,
+      "repository": "Amengclass/dsh-settings-hub",
+      "repositoryUrl": "https://github.com/Amengclass/dsh-settings-hub",
+      "repositoryNodeId": "R_kgDOUFUFUw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-settings-hub",
+      "version": "0.1.1",
+      "commit": "50f59856998033059ba70de9dec43e4e3dfe2729",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:53:06Z",
+        "stars": 0,
+        "topics": ["deepseek-harness", "dsh-plugin"]
       }
     },
     {
@@ -1994,6 +2075,35 @@
       }
     },
     {
+      "key": "1349452207:package.json",
+      "repositoryId": 1349452207,
+      "repository": "antlordGit/dsh-plugin-question-index",
+      "repositoryUrl": "https://github.com/antlordGit/dsh-plugin-question-index",
+      "repositoryNodeId": "R_kgDOUG8Brw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-plugin-question-index",
+      "version": "0.1.0",
+      "commit": "7f7737258eea0cf8741590c6c92c0f8b1e691d76",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:43:26Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
       "key": "1335239594:package.json",
       "repositoryId": 1335239594,
       "repository": "apbigking-cell/dsh-plugin-square",
@@ -2021,6 +2131,34 @@
         "pushedAt": "2026-08-16T02:25:07Z",
         "stars": 0,
         "topics": ["deepseek-harness", "dsh-plugin", "plugin-marketplace"]
+      }
+    },
+    {
+      "key": "1349527763:package.json",
+      "repositoryId": 1349527763,
+      "repository": "apodemakeles/dsh-gui",
+      "repositoryUrl": "https://github.com/apodemakeles/dsh-gui",
+      "repositoryNodeId": "R_kgDOUHAo0w",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@apodemakeles/dsh-gui",
+      "version": "0.1.0",
+      "commit": "213e9717d2cd50b4d57de94c2b2e59fcc0436a6d",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:34:41Z",
+        "stars": 0,
+        "topics": []
       }
     },
     {
@@ -2063,6 +2201,34 @@
           "macos",
           "windows"
         ]
+      }
+    },
+    {
+      "key": "1345108147:package.json",
+      "repositoryId": 1345108147,
+      "repository": "ArmourPiercer1/dsh-research-control",
+      "repositoryUrl": "https://github.com/ArmourPiercer1/dsh-research-control",
+      "repositoryNodeId": "R_kgDOUCy4sw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-research-control",
+      "version": "0.1.0",
+      "commit": "5afe1384056268daa91dd07703614bf5702130b3",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T20:09:44Z",
+        "stars": 0,
+        "topics": []
       }
     },
     {
@@ -2168,6 +2334,34 @@
           "dsh-tooling",
           "plugin-debugging"
         ]
+      }
+    },
+    {
+      "key": "1350627535:package.json",
+      "repositoryId": 1350627535,
+      "repository": "auggie246/dsh-mcp-adapter",
+      "repositoryUrl": "https://github.com/auggie246/dsh-mcp-adapter",
+      "repositoryNodeId": "R_kgDOUIDwzw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-mcp-adapter",
+      "version": "0.1.0",
+      "commit": "203f3e59b63cfefc26364a88010fec77c5969786",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:10:06Z",
+        "stars": 0,
+        "topics": []
       }
     },
     {
@@ -2540,6 +2734,38 @@
         "pushedAt": "2026-08-21T19:37:05Z",
         "stars": 1,
         "topics": ["deepseek-harness", "dsh-plugin", "remote-control"]
+      }
+    },
+    {
+      "key": "1350839789:package.json",
+      "repositoryId": 1350839789,
+      "repository": "bosinHU/dsh-skill-editor",
+      "repositoryUrl": "https://github.com/bosinHU/dsh-skill-editor",
+      "repositoryNodeId": "R_kgDOUIQt7Q",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-skill-editor",
+      "version": "0.1.0",
+      "commit": "7e69c6159c46638917534a4c84a4adfcc43d1cf3",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["\"dsh.bundle.patch\" in:readme", "topic:dsh-plugin"],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T20:56:40Z",
+        "stars": 0,
+        "topics": [
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "dsh-plugin-web",
+          "dsh-web",
+          "skill-editor"
+        ]
       }
     },
     {
@@ -3541,6 +3767,86 @@
       }
     },
     {
+      "key": "1349566530:package.json",
+      "repositoryId": 1349566530,
+      "repository": "CARVIN94/dsh-router",
+      "repositoryUrl": "https://github.com/CARVIN94/dsh-router",
+      "repositoryNodeId": "R_kgDOUHDAQg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-router-core",
+      "version": "0.2.0",
+      "commit": "e96e11d0aa453d89b584c3f1841196b39892cb9b",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:06:02Z",
+        "stars": 0,
+        "topics": ["deepseek", "deepseek-harness", "dsh", "dsh-plugin"]
+      }
+    },
+    {
+      "key": "1349560606:package.json",
+      "repositoryId": 1349560606,
+      "repository": "CARVIN94/dsh-router-codebuddy",
+      "repositoryUrl": "https://github.com/CARVIN94/dsh-router-codebuddy",
+      "repositoryNodeId": "R_kgDOUHCpHg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-router-codebuddy",
+      "version": "0.2.0",
+      "commit": "282bab7aca417d01d72a5bae8ee9975dc8c4c121",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["\"dsh.bundle.patch\" in:readme", "topic:dsh-plugin"],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:06:12Z",
+        "stars": 0,
+        "topics": ["deepseek", "deepseek-harness", "dsh", "dsh-plugin"]
+      }
+    },
+    {
+      "key": "1349518559:package.json",
+      "repositoryId": 1349518559,
+      "repository": "CARVIN94/dsh-router-traework",
+      "repositoryUrl": "https://github.com/CARVIN94/dsh-router-traework",
+      "repositoryNodeId": "R_kgDOUHAE3w",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-router-traework",
+      "version": "0.2.0",
+      "commit": "74f08fc3721786423cb5f1678c36ec2c83ebfb56",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["\"dsh.bundle.patch\" in:readme", "topic:dsh-plugin"],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:06:20Z",
+        "stars": 0,
+        "topics": ["deepseek", "deepseek-harness", "dsh", "dsh-plugin"]
+      }
+    },
+    {
       "key": "1340378444:reference/dsh-vision-mcp/package.json",
       "repositoryId": 1340378444,
       "repository": "CeasarSmj/dsh-vision-triage",
@@ -3721,35 +4027,6 @@
         "pushedAt": "2026-08-22T19:37:20Z",
         "stars": 20,
         "topics": ["dsh-plugin"]
-      }
-    },
-    {
-      "key": "1348078250:package.json",
-      "repositoryId": 1348078250,
-      "repository": "chendefine/dsh-sidebar-vscode",
-      "repositoryUrl": "https://github.com/chendefine/dsh-sidebar-vscode",
-      "repositoryNodeId": "R_kgDOUFoKqg",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-sidebar-vscode",
-      "version": "0.1.6",
-      "commit": "2e3d4b392d28c1506dd32c60bd0ac35025f288b7",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "topic:dsh-plugin"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:23:22Z",
-        "stars": 0,
-        "topics": ["deepseek-harness", "dsh", "dsh-plugin", "vscode"]
       }
     },
     {
@@ -4360,6 +4637,35 @@
       }
     },
     {
+      "key": "1350669689:package.json",
+      "repositoryId": 1350669689,
+      "repository": "chocobo77/dsh-infinite-context",
+      "repositoryUrl": "https://github.com/chocobo77/dsh-infinite-context",
+      "repositoryNodeId": "R_kgDOUIGVeQ",
+      "manifest": "package.json",
+      "patch": "bundle.patch.yml",
+      "patchExists": true,
+      "package": "dsh-infinite-context",
+      "version": "0.1.0",
+      "commit": "e7a9fdf1b82d10d2708f8064c83450766ad96e9e",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:33:47Z",
+        "stars": 0,
+        "topics": ["deepseek-harness", "dsh-plugin", "memory", "rag"]
+      }
+    },
+    {
       "key": "1341848341:package.json",
       "repositoryId": 1341848341,
       "repository": "chowhang/dsh-computer-use-windows",
@@ -4613,31 +4919,6 @@
       }
     },
     {
-      "key": "1348537042:package.json",
-      "repositoryId": 1348537042,
-      "repository": "coreyleung-art/dsh-plugin-agent-way",
-      "repositoryUrl": "https://github.com/coreyleung-art/dsh-plugin-agent-way",
-      "repositoryNodeId": "R_kgDOUGEK0g",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-plugin-agent-way",
-      "version": "1.3.1",
-      "commit": "2624e304e830cf2ca1df68d5e5a36f3e9a48fb8b",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": ["\"dsh.bundle.patch\" in:readme"],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T19:56:22Z",
-        "stars": 0,
-        "topics": []
-      }
-    },
-    {
       "key": "1348360641:package.json",
       "repositoryId": 1348360641,
       "repository": "cowwo/dsh-model-fit",
@@ -4660,6 +4941,51 @@
         "pushedAt": "2026-08-27T10:56:44Z",
         "stars": 0,
         "topics": []
+      }
+    },
+    {
+      "key": "1227102698:packages/petdex-desktop-native/integrations/dsh/package.json",
+      "repositoryId": 1227102698,
+      "repository": "crafter-station/petdex",
+      "repositoryUrl": "https://github.com/crafter-station/petdex",
+      "repositoryNodeId": "R_kgDOSSQZ6g",
+      "manifest": "packages/petdex-desktop-native/integrations/dsh/package.json",
+      "patch": "packages/petdex-desktop-native/integrations/dsh/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@petdex/dsh-plugin",
+      "version": "0.1.0",
+      "commit": "e0997f794f9e6a5c07d23191ab37b12f91c6e47a",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:45:51Z",
+        "stars": 3994,
+        "topics": [
+          "claude-code",
+          "clerk",
+          "cli",
+          "codex",
+          "developer-tools",
+          "drizzle-orm",
+          "dsh-plugin",
+          "mascot",
+          "neon",
+          "nextjs",
+          "pixel-art",
+          "postgres",
+          "react",
+          "sprites",
+          "tailwindcss",
+          "vercel"
+        ]
       }
     },
     {
@@ -4972,6 +5298,53 @@
       }
     },
     {
+      "key": "1288783244:plugins/dsh-agent-looper/package.json",
+      "repositoryId": 1288783244,
+      "repository": "dancingteeth/agent-looper",
+      "repositoryUrl": "https://github.com/dancingteeth/agent-looper",
+      "repositoryNodeId": "R_kgDOTNFFjA",
+      "manifest": "plugins/dsh-agent-looper/package.json",
+      "patch": "plugins/dsh-agent-looper/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@dancingteeth/dsh-agent-looper",
+      "version": "0.1.0",
+      "commit": "645db6caf7c252e7cab2f0ca7d15801bf90dc06d",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:41:59Z",
+        "stars": 1,
+        "topics": [
+          "agent-loop",
+          "ai-coding",
+          "automated-testing",
+          "ci-cd",
+          "cli",
+          "cline",
+          "coding-agent",
+          "cursor",
+          "deepseek",
+          "deepseek-harness",
+          "developer-tools",
+          "dsh",
+          "fix-until-green",
+          "headless",
+          "multi-runtime",
+          "opencode",
+          "shell-verify",
+          "typescript"
+        ]
+      }
+    },
+    {
       "key": "1335978110:dsh-plugin-desktop/package.json",
       "repositoryId": 1335978110,
       "repository": "darven-cs/deepseek-harness-desktop-linux",
@@ -5195,6 +5568,37 @@
         "pushedAt": "2026-08-23T19:38:12Z",
         "stars": 0,
         "topics": []
+      }
+    },
+    {
+      "key": "1349195922:package.json",
+      "repositoryId": 1349195922,
+      "repository": "ddtcorex/dsh-maestro-dashboard",
+      "repositoryUrl": "https://github.com/ddtcorex/dsh-maestro-dashboard",
+      "repositoryNodeId": "R_kgDOUGsYkg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@ddtcorex/dsh-maestro-dashboard",
+      "version": "0.1.0",
+      "commit": "d171a09c86110c525aaf8353c3f1bddae033b676",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["topic:dsh-plugin"],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:51:55Z",
+        "stars": 0,
+        "topics": [
+          "cordis",
+          "dashboard",
+          "deepseek-harness",
+          "dsh-plugin",
+          "maestro"
+        ]
       }
     },
     {
@@ -5478,38 +5882,31 @@
       }
     },
     {
-      "key": "1347427621:package.json",
-      "repositoryId": 1347427621,
-      "repository": "delock/dsh-pr-board",
-      "repositoryUrl": "https://github.com/delock/dsh-pr-board",
-      "repositoryNodeId": "R_kgDOUFAdJQ",
+      "key": "1346939617:package.json",
+      "repositoryId": 1346939617,
+      "repository": "definitely-stable/dsh-toolchain1",
+      "repositoryUrl": "https://github.com/definitely-stable/dsh-toolchain1",
+      "repositoryNodeId": "R_kgDOUEiq4Q",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "patchExists": true,
-      "package": "dsh-pr-board",
-      "version": "0.9.0",
-      "commit": "ece3e4cb96b77abdc63400bcf3e33620f21159cf",
+      "package": "dsh-toolchain",
+      "version": "0.0.0",
+      "commit": "cb88429e352511bd7397b9f4e603e597bcee57c0",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
       "discoveredBy": [
         "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme",
-        "topic:dsh-plugin"
+        "deepseek-harness in:name,description,readme"
       ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-28T12:52:04Z",
-        "stars": 1,
-        "topics": [
-          "code-review",
-          "deepseek-harness",
-          "dsh-plugin",
-          "github",
-          "pull-request"
-        ]
+        "pushedAt": "2026-08-29T21:46:05Z",
+        "stars": 0,
+        "topics": []
       }
     },
     {
@@ -5537,34 +5934,6 @@
         "archived": false,
         "fork": false,
         "pushedAt": "2026-08-22T07:39:55Z",
-        "stars": 0,
-        "topics": []
-      }
-    },
-    {
-      "key": "1344659933:package.json",
-      "repositoryId": 1344659933,
-      "repository": "dengshilei2000/leigeqaq",
-      "repositoryUrl": "https://github.com/dengshilei2000/leigeqaq",
-      "repositoryNodeId": "R_kgDOUCXh3Q",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-daily-report",
-      "version": "0.1.0",
-      "commit": "f7c4b78177fe1931c01f4789fc353b0aca9f7e64",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:55:33Z",
         "stars": 0,
         "topics": []
       }
@@ -5620,7 +5989,7 @@
       "patchExists": true,
       "package": "deepseek-ippt",
       "version": "0.1.2",
-      "commit": "0b8ce50556a0f1b4418ff92c20d70cc530c91c95",
+      "commit": "87469f5b8de8e20deac6c2a90a94646625cfd05d",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -5629,12 +5998,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-23T02:38:26.335Z",
+      "observedAt": "2026-08-29T07:54:32.184Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-23T02:36:14Z",
-        "stars": 4539,
+        "pushedAt": "2026-08-29T07:51:38Z",
+        "stars": 5067,
         "topics": [
           "agent-collaboration",
           "agent-skills",
@@ -5667,8 +6036,8 @@
       "patch": "external-plugins/deepseek-harness/video-studio/cordis.patch.yml",
       "patchExists": true,
       "package": "deepseek-ivideo",
-      "version": "0.1.1",
-      "commit": "0b8ce50556a0f1b4418ff92c20d70cc530c91c95",
+      "version": "0.5.0",
+      "commit": "87469f5b8de8e20deac6c2a90a94646625cfd05d",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -5677,12 +6046,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-23T02:38:26.335Z",
+      "observedAt": "2026-08-29T07:54:32.184Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-23T02:36:14Z",
-        "stars": 4539,
+        "pushedAt": "2026-08-29T07:51:38Z",
+        "stars": 5067,
         "topics": [
           "agent-collaboration",
           "agent-skills",
@@ -5816,6 +6185,35 @@
         "pushedAt": "2026-08-18T07:57:22Z",
         "stars": 0,
         "topics": []
+      }
+    },
+    {
+      "key": "1349440175:package.json",
+      "repositoryId": 1349440175,
+      "repository": "dleaf6211-hash/dsh-whale-pet",
+      "repositoryUrl": "https://github.com/dleaf6211-hash/dsh-whale-pet",
+      "repositoryNodeId": "R_kgDOUG7Srw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-whale-pet-plugin",
+      "version": "1.0.1",
+      "commit": "9271be94b121a80aedd0533dbd10f1b07b0940d5",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:52:48Z",
+        "stars": 0,
+        "topics": ["dsh-plugin"]
       }
     },
     {
@@ -6638,6 +7036,103 @@
       }
     },
     {
+      "key": "1350731358:package.json",
+      "repositoryId": 1350731358,
+      "repository": "dusbin/dsh-multi-tenant",
+      "repositoryUrl": "https://github.com/dusbin/dsh-multi-tenant",
+      "repositoryNodeId": "R_kgDOUIKGXg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-multi-tenant",
+      "version": "0.1.0",
+      "commit": "5cfff232d4f871efb3e605c38d6edd0f4b755bc1",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:09:31Z",
+        "stars": 0,
+        "topics": ["dsh", "dsh-plugin", "dsh-plugins", "multi-tenant", "tenant"]
+      }
+    },
+    {
+      "key": "1350230165:package.json",
+      "repositoryId": 1350230165,
+      "repository": "dy395769511-star/dsh-pdf-to-word",
+      "repositoryUrl": "https://github.com/dy395769511-star/dsh-pdf-to-word",
+      "repositoryNodeId": "R_kgDOUHrglQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-pdf-to-word",
+      "version": "1.0.0",
+      "commit": "04989c92f84f956bd5b32e056145656e26b05207",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:36:17Z",
+        "stars": 0,
+        "topics": ["dsh-plugin"]
+      }
+    },
+    {
+      "key": "1348953486:package.json",
+      "repositoryId": 1348953486,
+      "repository": "EastMG/dsh-gacha-calendar",
+      "repositoryUrl": "https://github.com/EastMG/dsh-gacha-calendar",
+      "repositoryNodeId": "R_kgDOUGdljg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-gacha-calendar",
+      "version": "0.8.6",
+      "commit": "fa27efe5214dbdb2160fb9963f3bc1227248538a",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:32:50Z",
+        "stars": 1,
+        "topics": [
+          "arknights",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "gacha",
+          "genshin-impact",
+          "honkai-star-rail",
+          "wuthering-waves"
+        ]
+      }
+    },
+    {
       "key": "1336279191:packages/web-search/package.json",
       "repositoryId": 1336279191,
       "repository": "edtechools/dsh-plugins",
@@ -7090,6 +7585,35 @@
       }
     },
     {
+      "key": "1340918386:package.json",
+      "repositoryId": 1340918386,
+      "repository": "fandc520/dsh-comfyui",
+      "repositoryUrl": "https://github.com/fandc520/dsh-comfyui",
+      "repositoryNodeId": "R_kgDOT-zKcg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-comfyui",
+      "version": "0.3.0-beta.4",
+      "commit": "9a085cfdfb045a50d0ff08dd1c56e0c8ddd034d6",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T19:54:04Z",
+        "stars": 33,
+        "topics": ["dsh-plugin"]
+      }
+    },
+    {
       "key": "1350079726:package.json",
       "repositoryId": 1350079726,
       "repository": "Fast-Editor/lynkr-dsh-plugin",
@@ -7157,8 +7681,8 @@
       "patch": "package/cordis.patch.yml",
       "patchExists": true,
       "package": "dsh-mattpocock-skills-deck",
-      "version": "1.7.2",
-      "commit": "e62fd610803fc0bba1d20880091463126955d5cd",
+      "version": "1.7.4",
+      "commit": "5179e55d31bdd1effd1b000b7f9c0d3088a0bb00",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -7167,12 +7691,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-27T11:13:51.777Z",
+      "observedAt": "2026-08-29T07:54:32.184Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-27T11:06:31Z",
-        "stars": 19,
+        "pushedAt": "2026-08-29T07:52:33Z",
+        "stars": 28,
         "topics": [
           "agent",
           "ai",
@@ -7184,6 +7708,42 @@
           "github-issues",
           "skills",
           "wayfinder"
+        ]
+      }
+    },
+    {
+      "key": "1337034331:package.json",
+      "repositoryId": 1337034331,
+      "repository": "FeatureAgents/AgentsGitFlowController",
+      "repositoryUrl": "https://github.com/FeatureAgents/AgentsGitFlowController",
+      "repositoryNodeId": "R_kgDOT7GGWw",
+      "manifest": "package.json",
+      "patch": "patch.yml",
+      "patchExists": true,
+      "package": "agents-gitflow-guard",
+      "version": "0.0.24",
+      "commit": "119585908715ce70fc6790041c440c405f149d7f",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:26:36Z",
+        "stars": 0,
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "codex",
+          "deepseek-harness",
+          "dsh-plugin",
+          "gitflow"
         ]
       }
     },
@@ -7252,40 +7812,181 @@
       }
     },
     {
-      "key": "1344768730:package.json",
-      "repositoryId": 1344768730,
-      "repository": "fengb3/dsh-theme-aurum",
-      "repositoryUrl": "https://github.com/fengb3/dsh-theme-aurum",
-      "repositoryNodeId": "R_kgDOUCeK2g",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
+      "key": "1350488250:packages/execution/package.json",
+      "repositoryId": 1350488250,
+      "repository": "firestige/wsr-dsh",
+      "repositoryUrl": "https://github.com/firestige/wsr-dsh",
+      "repositoryNodeId": "R_kgDOUH7Qug",
+      "manifest": "packages/execution/package.json",
+      "patch": "packages/execution/cordis.patch.yml",
       "patchExists": true,
-      "package": "dsh-theme-aurum",
-      "version": "1.2.0",
-      "commit": "7921baa8fd5658a077d6ad21ff7de4107ed15965",
+      "package": "dsh-wsr-execution",
+      "version": "0.0.0-development",
+      "commit": "49585df13acc659e2ac5e88d933d41e1c5425c1f",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:07:50Z",
+        "stars": 0,
+        "topics": [
+          "agent",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "workflow",
+          "wsr"
+        ]
+      }
+    },
+    {
+      "key": "1350488250:packages/studio/package.json",
+      "repositoryId": 1350488250,
+      "repository": "firestige/wsr-dsh",
+      "repositoryUrl": "https://github.com/firestige/wsr-dsh",
+      "repositoryNodeId": "R_kgDOUH7Qug",
+      "manifest": "packages/studio/package.json",
+      "patch": "packages/studio/cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-wsr-studio",
+      "version": "0.0.0-development",
+      "commit": "49585df13acc659e2ac5e88d933d41e1c5425c1f",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:07:50Z",
+        "stars": 0,
+        "topics": [
+          "agent",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "workflow",
+          "wsr"
+        ]
+      }
+    },
+    {
+      "key": "1350488250:packages/suite/package.json",
+      "repositoryId": 1350488250,
+      "repository": "firestige/wsr-dsh",
+      "repositoryUrl": "https://github.com/firestige/wsr-dsh",
+      "repositoryNodeId": "R_kgDOUH7Qug",
+      "manifest": "packages/suite/package.json",
+      "patch": "packages/suite/cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-wsr",
+      "version": "0.0.0-development",
+      "commit": "49585df13acc659e2ac5e88d933d41e1c5425c1f",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:07:50Z",
+        "stars": 0,
+        "topics": [
+          "agent",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "workflow",
+          "wsr"
+        ]
+      }
+    },
+    {
+      "key": "1336515356:packages/dsh-intake/package.json",
+      "repositoryId": 1336515356,
+      "repository": "firestige/wsr-execution",
+      "repositoryUrl": "https://github.com/firestige/wsr-execution",
+      "repositoryNodeId": "R_kgDOT6mbHA",
+      "manifest": "packages/dsh-intake/package.json",
+      "patch": "packages/dsh-intake/cordis.patch.yml",
+      "patchExists": true,
+      "package": "wsr-dsh-intake",
+      "version": "0.1.4",
+      "commit": "244a9b18f7d3166f7ac60e7b9d5c6fd6ef90b7bc",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
       "discoveredBy": [
         "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-28T12:50:14Z",
-        "stars": 1,
+        "pushedAt": "2026-08-29T21:43:45Z",
+        "stars": 0,
         "topics": [
+          "agent",
           "deepseek-harness",
           "dsh",
           "dsh-plugin",
-          "dsh-skin",
-          "dsh-theme",
-          "skin",
-          "theme"
+          "langgraph",
+          "workflow",
+          "workflow-engine"
+        ]
+      }
+    },
+    {
+      "key": "1336515356:test/fixtures/dsh-intake-feasibility/package.json",
+      "repositoryId": 1336515356,
+      "repository": "firestige/wsr-execution",
+      "repositoryUrl": "https://github.com/firestige/wsr-execution",
+      "repositoryNodeId": "R_kgDOT6mbHA",
+      "manifest": "test/fixtures/dsh-intake-feasibility/package.json",
+      "patch": "test/fixtures/dsh-intake-feasibility/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@workflow-self-recursive/dsh-intake-feasibility",
+      "version": "0.0.0-feasibility",
+      "commit": "244a9b18f7d3166f7ac60e7b9d5c6fd6ef90b7bc",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:45Z",
+        "stars": 0,
+        "topics": [
+          "agent",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "langgraph",
+          "workflow",
+          "workflow-engine"
         ]
       }
     },
@@ -7428,6 +8129,35 @@
         "pushedAt": "2026-08-17T02:22:12Z",
         "stars": 0,
         "topics": []
+      }
+    },
+    {
+      "key": "1337213109:package.json",
+      "repositoryId": 1337213109,
+      "repository": "fno2010/dsh-web-search-ext",
+      "repositoryUrl": "https://github.com/fno2010/dsh-web-search-ext",
+      "repositoryNodeId": "R_kgDOT7RAtQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@fno2010/dsh-web-search-ext",
+      "version": "0.3.1",
+      "commit": "58da16b497f83ca321de8c384d5c6b50f58003ce",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:32:11Z",
+        "stars": 3,
+        "topics": ["dsh-plugin"]
       }
     },
     {
@@ -7676,35 +8406,6 @@
           "rag",
           "spatiotemporal-graph-neural-network"
         ]
-      }
-    },
-    {
-      "key": "1344900054:package.json",
-      "repositoryId": 1344900054,
-      "repository": "fusunyu/dsh-slash-commands",
-      "repositoryUrl": "https://github.com/fusunyu/dsh-slash-commands",
-      "repositoryNodeId": "R_kgDOUCmL1g",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-slash-commands",
-      "version": "1.2.0",
-      "commit": "9d3187373b7316b53efa7920f84257c747c8f870",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T22:47:06Z",
-        "stars": 0,
-        "topics": []
       }
     },
     {
@@ -7998,6 +8699,36 @@
       }
     },
     {
+      "key": "1338367781:package.json",
+      "repositoryId": 1338367781,
+      "repository": "GDWhisper/dsh-web-startup-auth",
+      "repositoryUrl": "https://github.com/GDWhisper/dsh-web-startup-auth",
+      "repositoryNodeId": "R_kgDOT8XfJQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-web-startup-auth",
+      "version": "0.1.3",
+      "commit": "231380bf1ba8380bf9aaf2513e6756a721a930b3",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:47:15Z",
+        "stars": 14,
+        "topics": ["dsh-plugin"]
+      }
+    },
+    {
       "key": "1335481459:packages/cli-session/package.json",
       "repositoryId": 1335481459,
       "repository": "ghbhiee/dsh-plugins",
@@ -8124,6 +8855,46 @@
           "ocr",
           "vision",
           "vision-mcp"
+        ]
+      }
+    },
+    {
+      "key": "1333657529:package.json",
+      "repositoryId": 1333657529,
+      "repository": "grunmin/dsh-acp-enhanced",
+      "repositoryUrl": "https://github.com/grunmin/dsh-acp-enhanced",
+      "repositoryNodeId": "R_kgDOT33_uQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-acp-enhanced",
+      "version": "0.5.0",
+      "commit": "2d58ccf1861a2b291b97533cef3ad61471b0f90f",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:54:00Z",
+        "stars": 3,
+        "topics": [
+          "acp",
+          "agent-client-protocol",
+          "ai-agent",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "llm",
+          "zed",
+          "zed-editor"
         ]
       }
     },
@@ -8717,6 +9488,43 @@
         "pushedAt": "2026-08-20T13:31:45Z",
         "stars": 0,
         "topics": []
+      }
+    },
+    {
+      "key": "1337313810:packages/bundle/package.json",
+      "repositoryId": 1337313810,
+      "repository": "hejielijob-commits/dsh-data-agent",
+      "repositoryUrl": "https://github.com/hejielijob-commits/dsh-data-agent",
+      "repositoryNodeId": "R_kgDOT7XKEg",
+      "manifest": "packages/bundle/package.json",
+      "patch": "packages/bundle/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@hejielijob/dsh-wren-data-agent",
+      "version": "0.1.0",
+      "commit": "b0f0e6f2d3dc5081661226a34a02e554fd9ca18a",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:09:27Z",
+        "stars": 1,
+        "topics": [
+          "business-intelligence",
+          "data-agent",
+          "dsh-plugin",
+          "mysql",
+          "postgresql",
+          "semantic-layer",
+          "wrenai"
+        ]
       }
     },
     {
@@ -9321,6 +10129,31 @@
       }
     },
     {
+      "key": "1348753367:package.json",
+      "repositoryId": 1348753367,
+      "repository": "ideasir/dsh-veryIM",
+      "repositoryUrl": "https://github.com/ideasir/dsh-veryIM",
+      "repositoryNodeId": "R_kgDOUGRX1w",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-veryim",
+      "version": "0829-0.2.1",
+      "commit": "ae8373c5756e75bb8f762684f4805c87a15699d6",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["deepseek-harness in:name,description,readme"],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:54:16Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
       "key": "1334987598:test/mock-bundle/package.json",
       "repositoryId": 1334987598,
       "repository": "ipromise2021/dsh-omc-tui",
@@ -9491,6 +10324,111 @@
         "pushedAt": "2026-08-21T13:58:18Z",
         "stars": 0,
         "topics": ["dsh-plugin"]
+      }
+    },
+    {
+      "key": "1334330745:dynamic-toolbox/package.json",
+      "repositoryId": 1334330745,
+      "repository": "Iwctwbh/dsh-flowglass",
+      "repositoryUrl": "https://github.com/Iwctwbh/dsh-flowglass",
+      "repositoryNodeId": "R_kgDOT4hFeQ",
+      "manifest": "dynamic-toolbox/package.json",
+      "patch": "dynamic-toolbox/cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-dynamic-toolbox",
+      "version": "0.4.2",
+      "commit": "bc666bfefa0b4c07f94e37fa17877159e854479d",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:10:51Z",
+        "stars": 15,
+        "topics": [
+          "ai-agents",
+          "cordis",
+          "dsh",
+          "dsh-better-sidebar",
+          "dsh-plugin"
+        ]
+      }
+    },
+    {
+      "key": "1334330745:flowglass/package.json",
+      "repositoryId": 1334330745,
+      "repository": "Iwctwbh/dsh-flowglass",
+      "repositoryUrl": "https://github.com/Iwctwbh/dsh-flowglass",
+      "repositoryNodeId": "R_kgDOT4hFeQ",
+      "manifest": "flowglass/package.json",
+      "patch": "flowglass/cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-flowglass",
+      "version": "0.4.2",
+      "commit": "bc666bfefa0b4c07f94e37fa17877159e854479d",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:10:51Z",
+        "stars": 15,
+        "topics": [
+          "ai-agents",
+          "cordis",
+          "dsh",
+          "dsh-better-sidebar",
+          "dsh-plugin"
+        ]
+      }
+    },
+    {
+      "key": "1334330745:package.json",
+      "repositoryId": 1334330745,
+      "repository": "Iwctwbh/dsh-flowglass",
+      "repositoryUrl": "https://github.com/Iwctwbh/dsh-flowglass",
+      "repositoryNodeId": "R_kgDOT4hFeQ",
+      "manifest": "package.json",
+      "patch": "flowglass/cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-flowglass",
+      "version": "0.4.2",
+      "commit": "bc666bfefa0b4c07f94e37fa17877159e854479d",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:10:51Z",
+        "stars": 15,
+        "topics": [
+          "ai-agents",
+          "cordis",
+          "dsh",
+          "dsh-better-sidebar",
+          "dsh-plugin"
+        ]
       }
     },
     {
@@ -9673,34 +10611,6 @@
       }
     },
     {
-      "key": "1349570161:package.json",
-      "repositoryId": 1349570161,
-      "repository": "Jiangdl0220/dsh-memory",
-      "repositoryUrl": "https://github.com/Jiangdl0220/dsh-memory",
-      "repositoryNodeId": "R_kgDOUHDOcQ",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "@jiangdaoli/dsh-memory",
-      "version": "0.1.0",
-      "commit": "2409d67ad3fce40b923f5fb11fc4f1762e1f8d6a",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:56:48Z",
-        "stars": 0,
-        "topics": []
-      }
-    },
-    {
       "key": "1334923917:packages/bundle/cc-shell/package.json",
       "repositoryId": 1334923917,
       "repository": "jianxx/dsh-cc-plugins",
@@ -9864,6 +10774,34 @@
         "archived": false,
         "fork": false,
         "pushedAt": "2026-08-21T02:37:09Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1350868954:plugins/dsh-cost-balance/package.json",
+      "repositoryId": 1350868954,
+      "repository": "jitsmaster/dsh-plugins-and-skills",
+      "repositoryUrl": "https://github.com/jitsmaster/dsh-plugins-and-skills",
+      "repositoryNodeId": "R_kgDOUISf2g",
+      "manifest": "plugins/dsh-cost-balance/package.json",
+      "patch": "plugins/dsh-cost-balance/cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-cost-balance",
+      "version": "0.1.0",
+      "commit": "4d8bd34f3d7d065c98709e5967ee1e595cce441c",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:23Z",
         "stars": 0,
         "topics": []
       }
@@ -10064,6 +11002,56 @@
         "pushedAt": "2026-08-26T22:09:09Z",
         "stars": 0,
         "topics": []
+      }
+    },
+    {
+      "key": "1335840221:package.json",
+      "repositoryId": 1335840221,
+      "repository": "JohnXu22786/browser-automation",
+      "repositoryUrl": "https://github.com/JohnXu22786/browser-automation",
+      "repositoryNodeId": "R_kgDOT59N3Q",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "web-bridge-mcp",
+      "version": "0.1.0",
+      "commit": "c3216ed8a9e2af2cb38009e661d759c6ceac491e",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["\"dsh.bundle.patch\" in:readme", "topic:dsh-plugin"],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T16:53:26Z",
+        "stars": 1,
+        "topics": ["deepseek-harness", "dsh", "dsh-plugin"]
+      }
+    },
+    {
+      "key": "1335841179:package.json",
+      "repositoryId": 1335841179,
+      "repository": "JohnXu22786/computer-control",
+      "repositoryUrl": "https://github.com/JohnXu22786/computer-control",
+      "repositoryNodeId": "R_kgDOT59Rmw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-computer-control",
+      "version": "0.1.0",
+      "commit": "aeedb67348db55e8402e987463e4766629adac80",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["\"dsh.bundle.patch\" in:readme", "topic:dsh-plugin"],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T16:52:18Z",
+        "stars": 2,
+        "topics": ["deepseek-harness", "dsh", "dsh-plugin"]
       }
     },
     {
@@ -10427,6 +11415,36 @@
       }
     },
     {
+      "key": "1350921077:package.json",
+      "repositoryId": 1350921077,
+      "repository": "jwilson411/dsh-arxiv",
+      "repositoryUrl": "https://github.com/jwilson411/dsh-arxiv",
+      "repositoryNodeId": "R_kgDOUIVrdQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-arxiv",
+      "version": "0.1.0",
+      "commit": "e1ab34646a0350a4f2eb618816dd08b15dcf2b95",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:40:10Z",
+        "stars": 0,
+        "topics": ["arxiv", "deepseek-harness", "dsh-plugin"]
+      }
+    },
+    {
       "key": "1336253279:package.json",
       "repositoryId": 1336253279,
       "repository": "JxaMe/dsh-telegram-bridge",
@@ -10557,6 +11575,43 @@
         "pushedAt": "2026-08-20T02:31:30Z",
         "stars": 0,
         "topics": []
+      }
+    },
+    {
+      "key": "1346042726:package.json",
+      "repositoryId": 1346042726,
+      "repository": "kanchengw/dsh-assembly.resume",
+      "repositoryUrl": "https://github.com/kanchengw/dsh-assembly.resume",
+      "repositoryNodeId": "R_kgDOUDr7Zg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-assembly.resume",
+      "version": "0.1.5",
+      "commit": "ebb82dd8f334114227388a31a5e0323a9dfcf604",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:52:12Z",
+        "stars": 2,
+        "topics": [
+          "ai-agent",
+          "claude-code",
+          "codex",
+          "coding-agent",
+          "deepseek",
+          "dsh",
+          "dsh-plugin"
+        ]
       }
     },
     {
@@ -11297,34 +12352,6 @@
       }
     },
     {
-      "key": "1340620830:package.json",
-      "repositoryId": 1340620830,
-      "repository": "lcy-star-star/deepseek-harness-education",
-      "repositoryUrl": "https://github.com/lcy-star-star/deepseek-harness-education",
-      "repositoryNodeId": "R_kgDOT-hAHg",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "@lcy-star-star/dsh-education-tutor-slice",
-      "version": "0.0.32",
-      "commit": "0791644dec1b0ba22f2e329d443a321b5a844542",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T23:00:31Z",
-        "stars": 0,
-        "topics": []
-      }
-    },
-    {
       "key": "1340620830:packages/foundation/package.json",
       "repositoryId": 1340620830,
       "repository": "lcy-star-star/deepseek-harness-education",
@@ -11499,6 +12526,34 @@
       }
     },
     {
+      "key": "1347927204:package.json",
+      "repositoryId": 1347927204,
+      "repository": "lemoncat7/dsh-partner",
+      "repositoryUrl": "https://github.com/lemoncat7/dsh-partner",
+      "repositoryNodeId": "R_kgDOUFe8pA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@lemoncat7/dsh-partner",
+      "version": "1.4.0",
+      "commit": "c1379fce3edd6448663114a7a27202c0ae7f6ecd",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:13Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
       "key": "1333898110:packages/dsh-orcana-linux-bundle/package.json",
       "repositoryId": 1333898110,
       "repository": "Leo-Ayh-Oday/dsh-orcana",
@@ -11605,22 +12660,23 @@
       "patch": "cordis.patch.yml",
       "patchExists": true,
       "package": "dsh-plugin-garmin-connect",
-      "version": "0.1.4",
-      "commit": "8915e80aa57f99b19c27187357ef81cf49b97434",
+      "version": "0.1.6-rc.1",
+      "commit": "e0ab970b0e01d00c4e5d84aad222e57d6d1c1196",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
       "discoveredBy": [
         "\"DeepSeek Harness\" plugin in:name,description,readme",
         "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-20T08:00:07.704Z",
+      "observedAt": "2026-08-29T07:54:32.184Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-20T07:38:55Z",
-        "stars": 5,
+        "pushedAt": "2026-08-29T07:45:18Z",
+        "stars": 10,
         "topics": ["deepseek-harness", "deepseek-harness-plugin", "dsh-plugin"]
       }
     },
@@ -12188,35 +13244,6 @@
       }
     },
     {
-      "key": "1346987399:package.json",
-      "repositoryId": 1346987399,
-      "repository": "ljjluke/luke-jarvis",
-      "repositoryUrl": "https://github.com/ljjluke/luke-jarvis",
-      "repositoryNodeId": "R_kgDOUEllhw",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "luke-jarvis",
-      "version": "0.1.0",
-      "commit": "4c4159bdb2e88affbfa02b55fb56c0745635f5b0",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:48:47Z",
-        "stars": 0,
-        "topics": []
-      }
-    },
-    {
       "key": "1339441406:package.json",
       "repositoryId": 1339441406,
       "repository": "lninghaha/dsh-coding-remote-kit",
@@ -12250,41 +13277,6 @@
           "mobile",
           "pairing",
           "remote"
-        ]
-      }
-    },
-    {
-      "key": "1335737224:package.json",
-      "repositoryId": 1335737224,
-      "repository": "lninghaha/dsh-coding-subscription-oauth",
-      "repositoryUrl": "https://github.com/lninghaha/dsh-coding-subscription-oauth",
-      "repositoryNodeId": "R_kgDOT527iA",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-coding-subscription-oauth",
-      "version": "0.6.3",
-      "commit": "e9d8a1fdb839830ba566c70763f2243278cdb1a5",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme",
-        "topic:dsh-plugin"
-      ],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T22:59:21Z",
-        "stars": 15,
-        "topics": [
-          "deepseek-harness",
-          "dsh",
-          "dsh-plugin",
-          "grok-build",
-          "oauth"
         ]
       }
     },
@@ -12335,7 +13327,7 @@
       "patchExists": true,
       "package": "dsh-vibeweaver-baseline",
       "version": "0.1.0",
-      "commit": "01396ea6261e9cdf9c7d0a222369c148385f18e9",
+      "commit": "6faa702ca854296c169c532e5087ff38848acda4",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -12344,11 +13336,11 @@
         "\"dsh.bundle.patch\" in:readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-25T14:08:12.539Z",
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-25T13:47:00Z",
+        "pushedAt": "2026-08-29T16:42:06Z",
         "stars": 2,
         "topics": [
           "agent-memory",
@@ -12394,41 +13386,33 @@
       }
     },
     {
-      "key": "1345591046:package.json",
-      "repositoryId": 1345591046,
-      "repository": "louke6572/dsh-whale-widget-plus",
-      "repositoryUrl": "https://github.com/louke6572/dsh-whale-widget-plus",
-      "repositoryNodeId": "R_kgDOUDQXBg",
+      "key": "1350616690:package.json",
+      "repositoryId": 1350616690,
+      "repository": "Lorvaste/DSH-Project-Initialization",
+      "repositoryUrl": "https://github.com/Lorvaste/DSH-Project-Initialization",
+      "repositoryNodeId": "R_kgDOUIDGcg",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "patchExists": true,
-      "package": "dsh-whale-widget-plus",
-      "version": "0.3.0",
-      "commit": "39dadd18d2303ebe7f0a64174e86f3b6e0c833e5",
+      "package": "dsh-project-initialization",
+      "version": "0.1.0",
+      "commit": "9e338e1745237e7b9432d61f6cb4d17f9d37afca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme",
-        "topic:dsh-plugin"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
+      "discoveredBy": ["topic:dsh-plugin"],
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-28T12:51:21Z",
-        "stars": 4,
+        "pushedAt": "2026-08-29T17:10:57Z",
+        "stars": 0,
         "topics": [
-          "balance",
-          "deepseek",
-          "deepseek-harness",
-          "dsh",
-          "dsh-bundle",
+          "agent-preset",
           "dsh-plugin",
-          "dsh-plugins",
-          "whale",
-          "widget"
+          "dsh-preset",
+          "product-creation",
+          "spec-driven"
         ]
       }
     },
@@ -12660,6 +13644,35 @@
       }
     },
     {
+      "key": "1350742492:package.json",
+      "repositoryId": 1350742492,
+      "repository": "LWLAymh/dsh-tool-emoji",
+      "repositoryUrl": "https://github.com/LWLAymh/dsh-tool-emoji",
+      "repositoryNodeId": "R_kgDOUIKx3A",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-tool-emoji",
+      "version": "0.2.3",
+      "commit": "822424d3091b82451f6108f7eb71cf068ef03f0b",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:09:24Z",
+        "stars": 0,
+        "topics": ["dsh-plugin", "dsh-plugins"]
+      }
+    },
+    {
       "key": "1340523518:package.json",
       "repositoryId": 1340523518,
       "repository": "magian1127/deepseek-harness-zhipu_plan_tools",
@@ -12686,6 +13699,35 @@
         "pushedAt": "2026-08-21T13:59:41Z",
         "stars": 0,
         "topics": ["deepseek-harness", "dsh-plugin"]
+      }
+    },
+    {
+      "key": "1350914417:package.json",
+      "repositoryId": 1350914417,
+      "repository": "makajo/dsh-gemini-m3e-theme",
+      "repositoryUrl": "https://github.com/makajo/dsh-gemini-m3e-theme",
+      "repositoryNodeId": "R_kgDOUIVRcQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-gemini-m3e-theme",
+      "version": "0.1.0",
+      "commit": "8ebca2b82bf3807b316693bf869b8b0409e3c72c",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:16:13Z",
+        "stars": 0,
+        "topics": []
       }
     },
     {
@@ -13226,61 +14268,74 @@
       }
     },
     {
-      "key": "1336226574:package.json",
-      "repositoryId": 1336226574,
-      "repository": "Mooling0602/dsh-web-file-uploader",
-      "repositoryUrl": "https://github.com/Mooling0602/dsh-web-file-uploader",
-      "repositoryNodeId": "R_kgDOT6UzDg",
+      "key": "1350764445:package.json",
+      "repositoryId": 1350764445,
+      "repository": "mogudesu/dsh-file-intake",
+      "repositoryUrl": "https://github.com/mogudesu/dsh-file-intake",
+      "repositoryNodeId": "R_kgDOUIMHnQ",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "patchExists": true,
-      "package": "dsh-web-file-uploader",
-      "version": "0.3.1",
-      "commit": "bd7934fb52a0f0797a5cb80bec59f19757cb012c",
+      "package": "dsh-file-intake",
+      "version": "0.3.0",
+      "commit": "9c7f0fdef9b6335578a07f71e54291316444cbb0",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
       "discoveredBy": [
         "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "topic:dsh-plugin"
+        "deepseek-harness in:name,description,readme"
       ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-28T12:22:00Z",
-        "stars": 11,
-        "topics": ["dsh-plugin"]
+        "pushedAt": "2026-08-29T17:10:01Z",
+        "stars": 0,
+        "topics": [
+          "attachments",
+          "deepseek-harness",
+          "dsh",
+          "file-upload",
+          "plugin"
+        ]
       }
     },
     {
-      "key": "1340961887:package.json",
-      "repositoryId": 1340961887,
-      "repository": "moon16u/dsh-pouch",
-      "repositoryUrl": "https://github.com/moon16u/dsh-pouch",
-      "repositoryNodeId": "R_kgDOT-10Xw",
+      "key": "1350764416:package.json",
+      "repositoryId": 1350764416,
+      "repository": "mogudesu/dsh-multimodal-runtime",
+      "repositoryUrl": "https://github.com/mogudesu/dsh-multimodal-runtime",
+      "repositoryNodeId": "R_kgDOUIMHgA",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "patchExists": true,
-      "package": "@moon16u/dsh-pouch",
-      "version": "0.3.0",
-      "commit": "3d054a64a4d1e90252f39253bbaff73860f570bf",
+      "package": "dsh-multimodal-runtime",
+      "version": "0.1.0",
+      "commit": "4bf56c34e8ebbaff799e8e907d9ca36ef557eb82",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
       "discoveredBy": [
         "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme",
-        "topic:dsh-plugin"
+        "deepseek-harness in:name,description,readme"
       ],
-      "observedAt": "2026-08-28T23:04:43.462Z",
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-28T23:01:15Z",
-        "stars": 1,
-        "topics": ["cordis", "deepseek-harness", "dsh", "dsh-plugin", "plugins"]
+        "pushedAt": "2026-08-29T17:09:53Z",
+        "stars": 0,
+        "topics": [
+          "comfy-mcp",
+          "comfyui",
+          "deepseek-harness",
+          "dsh",
+          "multimodal",
+          "plugin",
+          "txt2img",
+          "txt2video"
+        ]
       }
     },
     {
@@ -13487,6 +14542,153 @@
       }
     },
     {
+      "key": "1350559948:package.json",
+      "repositoryId": 1350559948,
+      "repository": "mtdx2001/dsh-think-translate",
+      "repositoryUrl": "https://github.com/mtdx2001/dsh-think-translate",
+      "repositoryNodeId": "R_kgDOUH_ozA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-think-translate",
+      "version": "1.0.10",
+      "commit": "3da16d22986b47310dde857bb634b6b29bd12fef",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:09:24Z",
+        "stars": 0,
+        "topics": [
+          "chinese",
+          "deepseek",
+          "display-layer",
+          "dsh-plugin",
+          "llm",
+          "localization",
+          "ollama",
+          "thinking",
+          "translation"
+        ]
+      }
+    },
+    {
+      "key": "1349524280:package.json",
+      "repositoryId": 1349524280,
+      "repository": "myd74108520/cadence-skill",
+      "repositoryUrl": "https://github.com/myd74108520/cadence-skill",
+      "repositoryNodeId": "R_kgDOUHAbOA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "cadence-skill",
+      "version": "1.9.0",
+      "commit": "3b4d61de1cdd48168052aedcc607923bb672fa16",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:53:42Z",
+        "stars": 1,
+        "topics": []
+      }
+    },
+    {
+      "key": "1347585380:plugins/dsh-vibeify-experience/package.json",
+      "repositoryId": 1347585380,
+      "repository": "N9-Developer-Empowerment/DSH-Vibeify",
+      "repositoryUrl": "https://github.com/N9-Developer-Empowerment/DSH-Vibeify",
+      "repositoryNodeId": "R_kgDOUFKFZA",
+      "manifest": "plugins/dsh-vibeify-experience/package.json",
+      "patch": "plugins/dsh-vibeify-experience/cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-vibeify-experience",
+      "version": "0.15.2",
+      "commit": "2cd12c424cef754e999d457b7ee04e42b0c78cf4",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:41:45Z",
+        "stars": 0,
+        "topics": [
+          "ai-agents",
+          "ai-magazine",
+          "codex",
+          "deepseek",
+          "deepseek-harness",
+          "deepseek-harness-plugin",
+          "developer-tools",
+          "dsh-plugin",
+          "generative-ai",
+          "local-first"
+        ]
+      }
+    },
+    {
+      "key": "1347585380:plugins/dsh-vibeify/package.json",
+      "repositoryId": 1347585380,
+      "repository": "N9-Developer-Empowerment/DSH-Vibeify",
+      "repositoryUrl": "https://github.com/N9-Developer-Empowerment/DSH-Vibeify",
+      "repositoryNodeId": "R_kgDOUFKFZA",
+      "manifest": "plugins/dsh-vibeify/package.json",
+      "patch": "plugins/dsh-vibeify/cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-vibeify",
+      "version": "0.15.2",
+      "commit": "2cd12c424cef754e999d457b7ee04e42b0c78cf4",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:41:45Z",
+        "stars": 0,
+        "topics": [
+          "ai-agents",
+          "ai-magazine",
+          "codex",
+          "deepseek",
+          "deepseek-harness",
+          "deepseek-harness-plugin",
+          "developer-tools",
+          "dsh-plugin",
+          "generative-ai",
+          "local-first"
+        ]
+      }
+    },
+    {
       "key": "1342590253:packages/bundle/base/package.json",
       "repositoryId": 1342590253,
       "repository": "Nagacash/naga-codex-nc-agent",
@@ -13609,30 +14811,77 @@
       }
     },
     {
-      "key": "1349563976:package.json",
-      "repositoryId": 1349563976,
-      "repository": "nanami-0713/dsh-usage",
-      "repositoryUrl": "https://github.com/nanami-0713/dsh-usage",
-      "repositoryNodeId": "R_kgDOUHC2SA",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
+      "key": "1336880930:packages/bundle/base/package.json",
+      "repositoryId": 1336880930,
+      "repository": "NanGePlus/my-deepseek-harness",
+      "repositoryUrl": "https://github.com/NanGePlus/my-deepseek-harness",
+      "repositoryNodeId": "R_kgDOT68vIg",
+      "manifest": "packages/bundle/base/package.json",
+      "patch": "packages/bundle/base/cordis.patch.yml",
       "patchExists": true,
-      "package": "@hsinsekai-nanami/dsh-usage",
-      "version": "1.0.1",
-      "commit": "8815ef1997e625f4c3b54a81fbab5cc77798a191",
-      "defaultBranch": "main",
+      "package": "@deepseek-ai/dsh-base",
+      "version": "0.1.0-rc.5",
+      "commit": "e4716cc6276428c3eddc14d6a40fabd229c3d5ee",
+      "defaultBranch": "custom/main",
       "status": "ready-for-review",
       "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
+      "discoveredBy": ["deepseek-harness in:name,description,readme"],
+      "observedAt": "2026-08-29T07:54:32.184Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-28T12:53:44Z",
-        "stars": 0,
+        "pushedAt": "2026-08-29T07:53:28Z",
+        "stars": 2,
+        "topics": []
+      }
+    },
+    {
+      "key": "1336880930:packages/bundle/headless/package.json",
+      "repositoryId": 1336880930,
+      "repository": "NanGePlus/my-deepseek-harness",
+      "repositoryUrl": "https://github.com/NanGePlus/my-deepseek-harness",
+      "repositoryNodeId": "R_kgDOT68vIg",
+      "manifest": "packages/bundle/headless/package.json",
+      "patch": "packages/bundle/headless/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@deepseek-ai/dsh-headless",
+      "version": "0.1.0-rc.5",
+      "commit": "e4716cc6276428c3eddc14d6a40fabd229c3d5ee",
+      "defaultBranch": "custom/main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["deepseek-harness in:name,description,readme"],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:53:28Z",
+        "stars": 2,
+        "topics": []
+      }
+    },
+    {
+      "key": "1336880930:packages/bundle/web-app/package.json",
+      "repositoryId": 1336880930,
+      "repository": "NanGePlus/my-deepseek-harness",
+      "repositoryUrl": "https://github.com/NanGePlus/my-deepseek-harness",
+      "repositoryNodeId": "R_kgDOT68vIg",
+      "manifest": "packages/bundle/web-app/package.json",
+      "patch": "packages/bundle/web-app/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@deepseek-ai/dsh-web-app",
+      "version": "0.1.0-rc.5",
+      "commit": "e4716cc6276428c3eddc14d6a40fabd229c3d5ee",
+      "defaultBranch": "custom/main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["deepseek-harness in:name,description,readme"],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:53:28Z",
+        "stars": 2,
         "topics": []
       }
     },
@@ -13937,6 +15186,41 @@
       }
     },
     {
+      "key": "1335862537:package.json",
+      "repositoryId": 1335862537,
+      "repository": "niiang/dsh-kimino-theme",
+      "repositoryUrl": "https://github.com/niiang/dsh-kimino-theme",
+      "repositoryNodeId": "R_kgDOT5-lCQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-kimino-theme",
+      "version": "66.2.0",
+      "commit": "5ec46e38e36738b655b733638947295300591fdb",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:53:44Z",
+        "stars": 27,
+        "topics": [
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "kimi-no-na-wa",
+          "your-name"
+        ]
+      }
+    },
+    {
       "key": "1333760255:dsh-context-compass/package.json",
       "repositoryId": 1333760255,
       "repository": "NinjaSln-labs/dsh-plugins",
@@ -13947,7 +15231,7 @@
       "patchExists": true,
       "package": "dsh-context-compass",
       "version": "0.11.0",
-      "commit": "c92ce53267ac6c7e97e09c3b0aafa8f3683967fa",
+      "commit": "f4bba4615668ec6dade62419723d5f073f7e5019",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -13956,11 +15240,11 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-27T11:13:51.777Z",
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-27T11:08:30Z",
+        "pushedAt": "2026-08-29T17:10:10Z",
         "stars": 1,
         "topics": [
           "ai-agents",
@@ -13983,7 +15267,7 @@
       "patchExists": true,
       "package": "dsh-knowledge-sqlite",
       "version": "0.1.6",
-      "commit": "c92ce53267ac6c7e97e09c3b0aafa8f3683967fa",
+      "commit": "f4bba4615668ec6dade62419723d5f073f7e5019",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -13992,11 +15276,11 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-27T11:13:51.777Z",
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-27T11:08:30Z",
+        "pushedAt": "2026-08-29T17:10:10Z",
         "stars": 1,
         "topics": [
           "ai-agents",
@@ -14018,8 +15302,8 @@
       "patch": "dsh-subagent-router/cordis.patch.yml",
       "patchExists": true,
       "package": "dsh-subagent-router",
-      "version": "0.2.0",
-      "commit": "c92ce53267ac6c7e97e09c3b0aafa8f3683967fa",
+      "version": "0.3.0",
+      "commit": "f4bba4615668ec6dade62419723d5f073f7e5019",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -14028,11 +15312,11 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-27T11:13:51.777Z",
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-27T11:08:30Z",
+        "pushedAt": "2026-08-29T17:10:10Z",
         "stars": 1,
         "topics": [
           "ai-agents",
@@ -14146,6 +15430,46 @@
       }
     },
     {
+      "key": "1334368080:package.json",
+      "repositoryId": 1334368080,
+      "repository": "Noelune/dsh-agent-relay",
+      "repositoryUrl": "https://github.com/Noelune/dsh-agent-relay",
+      "repositoryNodeId": "R_kgDOT4jXUA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-agent-relay",
+      "version": "0.5.0",
+      "commit": "25ea97092a676d45249244775618e50db33e4462",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:09:00Z",
+        "stars": 4,
+        "topics": [
+          "agent-collaboration",
+          "claude-code",
+          "codex",
+          "deepseek-harness",
+          "dsh-plugin",
+          "hermes",
+          "hmac-auth",
+          "message-broker",
+          "multi-agent",
+          "wire-protocol"
+        ]
+      }
+    },
+    {
       "key": "1334768289:plugins/folio-events/package.json",
       "repositoryId": 1334768289,
       "repository": "nyantused-cpun/folio",
@@ -14172,6 +15496,31 @@
         "pushedAt": "2026-08-16T02:34:52Z",
         "stars": 2,
         "topics": ["dsh-plugin"]
+      }
+    },
+    {
+      "key": "1346959995:integrations/dsh/plugins/powercontext/package.json",
+      "repositoryId": 1346959995,
+      "repository": "ob-labs/powercontext-go",
+      "repositoryUrl": "https://github.com/ob-labs/powercontext-go",
+      "repositoryNodeId": "R_kgDOUEj6ew",
+      "manifest": "integrations/dsh/plugins/powercontext/package.json",
+      "patch": "integrations/dsh/plugins/powercontext/cordis.patch.yml",
+      "patchExists": true,
+      "package": "powercontext-dsh",
+      "version": "0.0.2",
+      "commit": "d69e1133dc2f961e3f6e5c9823df5124401dc10f",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["deepseek-harness in:name,description,readme"],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:46:38Z",
+        "stars": 16,
+        "topics": []
       }
     },
     {
@@ -14463,6 +15812,46 @@
       }
     },
     {
+      "key": "1342286746:package.json",
+      "repositoryId": 1342286746,
+      "repository": "peterwangze/dsh-novel-writing",
+      "repositoryUrl": "https://github.com/peterwangze/dsh-novel-writing",
+      "repositoryNodeId": "R_kgDOUAGrmg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-novel-writing",
+      "version": "0.2.2",
+      "commit": "2ec120365d7569c5a70a7e30cfd8410679fa189b",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:52:43Z",
+        "stars": 4,
+        "topics": [
+          "agent-preset",
+          "ai-writing",
+          "cordis-plugin",
+          "deepseek-harness",
+          "dsh-plugin",
+          "novel-writing",
+          "publishing-automation",
+          "visualization",
+          "web-novel",
+          "writing-workflow"
+        ]
+      }
+    },
+    {
       "key": "1342508515:packages/client-ui-errata/package.json",
       "repositoryId": 1342508515,
       "repository": "Pidan-Q/dsh-knowledge",
@@ -14675,6 +16064,35 @@
         "pushedAt": "2026-08-27T22:54:52Z",
         "stars": 1,
         "topics": []
+      }
+    },
+    {
+      "key": "1342876787:package.json",
+      "repositoryId": 1342876787,
+      "repository": "qianxiao1213/zcode-usage-stats",
+      "repositoryUrl": "https://github.com/qianxiao1213/zcode-usage-stats",
+      "repositoryNodeId": "R_kgDOUAqscw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "zcode-usage-stats",
+      "version": "0.1.0",
+      "commit": "cfe802d17e3fd562c3c70563e16e8a0dae362b9f",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:06:46Z",
+        "stars": 0,
+        "topics": ["dsh-plugin"]
       }
     },
     {
@@ -14985,6 +16403,44 @@
       }
     },
     {
+      "key": "1349090911:package.json",
+      "repositoryId": 1349090911,
+      "repository": "Raiyan007-gb/dsh-remote-tunnel-easy",
+      "repositoryUrl": "https://github.com/Raiyan007-gb/dsh-remote-tunnel-easy",
+      "repositoryNodeId": "R_kgDOUGl-Xw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-remote-tunnel-easy",
+      "version": "1.4.2",
+      "commit": "1c10350b3dc21f9d028c5843349a0783ea246651",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:07:30Z",
+        "stars": 1,
+        "topics": [
+          "cloudflared",
+          "deepseek",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "dsh-plugin-market",
+          "dsh-plugins",
+          "qrcode"
+        ]
+      }
+    },
+    {
       "key": "1334849499:package.json",
       "repositoryId": 1334849499,
       "repository": "rayafriandion/dsh-oclike",
@@ -15164,35 +16620,6 @@
           "plugin",
           "rules"
         ]
-      }
-    },
-    {
-      "key": "1349371382:package.json",
-      "repositoryId": 1349371382,
-      "repository": "rsdgnchen/dsh-terminal",
-      "repositoryUrl": "https://github.com/rsdgnchen/dsh-terminal",
-      "repositoryNodeId": "R_kgDOUG3F9g",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "@yaha/dsh-terminal",
-      "version": "0.1.0",
-      "commit": "06fd8e89b7bcf95410adb46258eef29a5610d490",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:46:19Z",
-        "stars": 0,
-        "topics": []
       }
     },
     {
@@ -16823,116 +18250,21 @@
       "patchExists": true,
       "package": "@ha-na-bi/dsh-client-ui-custom",
       "version": "0.1.0-rc.5",
-      "commit": "03256aad4a3f75ed3efffb4ae92f302e0444ba73",
+      "commit": "fe7d54cc737361b7cf8a372acb54af07148c6feb",
       "defaultBranch": "master",
       "status": "ready-for-review",
       "blocker": null,
-      "discoveredBy": ["deepseek-harness in:name,description,readme"],
-      "observedAt": "2026-08-24T02:38:57.342Z",
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-24T02:38:37Z",
+        "pushedAt": "2026-08-29T07:53:58Z",
         "stars": 7,
         "topics": []
-      }
-    },
-    {
-      "key": "1346006158:package.json",
-      "repositoryId": 1346006158,
-      "repository": "secyborg/dsh-compact-chat-ui",
-      "repositoryUrl": "https://github.com/secyborg/dsh-compact-chat-ui",
-      "repositoryNodeId": "R_kgDOUDpsjg",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-compact-chat-ui",
-      "version": "0.9.0",
-      "commit": "f9489f4e6ed0acca46be12b6cc3a38674b19e3bc",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": ["topic:dsh-plugin"],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:52:35Z",
-        "stars": 0,
-        "topics": ["deepseek", "dsh", "dsh-plugin"]
-      }
-    },
-    {
-      "key": "1349409573:package.json",
-      "repositoryId": 1349409573,
-      "repository": "SeverusZh/dsh-skills-mcp-group-manager",
-      "repositoryUrl": "https://github.com/SeverusZh/dsh-skills-mcp-group-manager",
-      "repositoryNodeId": "R_kgDOUG5bJQ",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-skills-mcp-group-manager",
-      "version": "0.2.5",
-      "commit": "c8afb15fb545a479e4abb9a39180573ad9841bb9",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme",
-        "topic:dsh-plugin"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:54:53Z",
-        "stars": 1,
-        "topics": [
-          "dsh",
-          "dsh-bundle",
-          "dsh-plugin",
-          "dsh-plugins",
-          "mcp",
-          "skill",
-          "skills"
-        ]
-      }
-    },
-    {
-      "key": "1339275814:package.json",
-      "repositoryId": 1339275814,
-      "repository": "Shaky77/weiwen-law-dsh",
-      "repositoryUrl": "https://github.com/Shaky77/weiwen-law-dsh",
-      "repositoryNodeId": "R_kgDOT9O6Jg",
-      "manifest": "package.json",
-      "patch": "weiwen-law.patch.yml",
-      "patchExists": true,
-      "package": "dsh-weiwen-law",
-      "version": "0.1.0",
-      "commit": "434205bfbeb4e083ba07c96273e341461bb11d96",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "topic:dsh-plugin"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:28:53Z",
-        "stars": 2,
-        "topics": [
-          "ai",
-          "causality",
-          "dsh-plugin",
-          "harness",
-          "risk-control",
-          "white-box"
-        ]
       }
     },
     {
@@ -17012,6 +18344,90 @@
         "archived": false,
         "fork": false,
         "pushedAt": "2026-08-23T02:37:39Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1349341482:packages/bundle/base/package.json",
+      "repositoryId": 1349341482,
+      "repository": "Shravani130806/sovra",
+      "repositoryUrl": "https://github.com/Shravani130806/sovra",
+      "repositoryNodeId": "R_kgDOUG1RKg",
+      "manifest": "packages/bundle/base/package.json",
+      "patch": "packages/bundle/base/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@deepseek-ai/dsh-base",
+      "version": "0.1.1-rc.2",
+      "commit": "ba9c41fb9eacfd2b1e81f67b55bb5048d4d8e84e",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:54:14Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1349341482:packages/bundle/headless/package.json",
+      "repositoryId": 1349341482,
+      "repository": "Shravani130806/sovra",
+      "repositoryUrl": "https://github.com/Shravani130806/sovra",
+      "repositoryNodeId": "R_kgDOUG1RKg",
+      "manifest": "packages/bundle/headless/package.json",
+      "patch": "packages/bundle/headless/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@deepseek-ai/dsh-headless",
+      "version": "0.1.1-rc.2",
+      "commit": "ba9c41fb9eacfd2b1e81f67b55bb5048d4d8e84e",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:54:14Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1349341482:packages/bundle/web-app/package.json",
+      "repositoryId": 1349341482,
+      "repository": "Shravani130806/sovra",
+      "repositoryUrl": "https://github.com/Shravani130806/sovra",
+      "repositoryNodeId": "R_kgDOUG1RKg",
+      "manifest": "packages/bundle/web-app/package.json",
+      "patch": "packages/bundle/web-app/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@deepseek-ai/dsh-web-app",
+      "version": "0.1.1-rc.2",
+      "commit": "ba9c41fb9eacfd2b1e81f67b55bb5048d4d8e84e",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:54:14Z",
         "stars": 0,
         "topics": []
       }
@@ -17422,6 +18838,34 @@
       }
     },
     {
+      "key": "1350579705:package.json",
+      "repositoryId": 1350579705,
+      "repository": "sleetdrop/dsh-plugin-topology",
+      "repositoryUrl": "https://github.com/sleetdrop/dsh-plugin-topology",
+      "repositoryNodeId": "R_kgDOUIA1-Q",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@sleetdrop/dsh-plugin-topology",
+      "version": "0.1.0",
+      "commit": "0a33ae2749d44a9920a85eb8e4657b5be10b077f",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:11:39Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
       "key": "1333123776:maid-atelier/package.json",
       "repositoryId": 1333123776,
       "repository": "Small-tailqwq/dsh-deep-whale",
@@ -17503,35 +18947,6 @@
         "archived": false,
         "fork": false,
         "pushedAt": "2026-08-25T07:59:48Z",
-        "stars": 0,
-        "topics": []
-      }
-    },
-    {
-      "key": "1349934082:packages/catppuccin-theme/package.json",
-      "repositoryId": 1349934082,
-      "repository": "sophia7320/dsh-plugin",
-      "repositoryUrl": "https://github.com/sophia7320/dsh-plugin",
-      "repositoryNodeId": "R_kgDOUHZcAg",
-      "manifest": "packages/catppuccin-theme/package.json",
-      "patch": "packages/catppuccin-theme/cordis.patch.yml",
-      "patchExists": true,
-      "package": "@sophia7320/dsh-catppuccin-theme",
-      "version": "0.1.0",
-      "commit": "cafca3cf4b838f075140226d01cec8a445c8573c",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T22:35:00Z",
         "stars": 0,
         "topics": []
       }
@@ -18352,6 +19767,31 @@
       }
     },
     {
+      "key": "1350446089:package.json",
+      "repositoryId": 1350446089,
+      "repository": "sunzhyang1616-ui/dsh-ssh-terminal",
+      "repositoryUrl": "https://github.com/sunzhyang1616-ui/dsh-ssh-terminal",
+      "repositoryNodeId": "R_kgDOUH4sCQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-ssh-terminal",
+      "version": "0.1.0",
+      "commit": "80e05f21ab7264964a23eedbf2571832cb9ec2f0",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["\"dsh.bundle.patch\" in:readme", "topic:dsh-plugin"],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T16:50:37Z",
+        "stars": 0,
+        "topics": ["dsh-better-sidebar", "dsh-plugin"]
+      }
+    },
+    {
       "key": "1335250883:plugins/evidence-dashboard/package.json",
       "repositoryId": 1335250883,
       "repository": "SuTang-vain/dsh-self-harness-tools",
@@ -18547,6 +19987,34 @@
       }
     },
     {
+      "key": "1350363187:package.json",
+      "repositoryId": 1350363187,
+      "repository": "taoser258/dsh-client-ui-skin-qingxiao",
+      "repositoryUrl": "https://github.com/taoser258/dsh-client-ui-skin-qingxiao",
+      "repositoryNodeId": "R_kgDOUHzoMw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@dsh-external/dsh-client-ui-skin-qingxiao",
+      "version": "0.1.1",
+      "commit": "1214f99b982eabc4c621a751686343d28ae99b3e",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:35:39Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
       "key": "1346564235:package.json",
       "repositoryId": 1346564235,
       "repository": "TARS-snail/dsh-notify",
@@ -18574,6 +20042,35 @@
         "pushedAt": "2026-08-25T19:48:31Z",
         "stars": 0,
         "topics": ["deepseek-harness", "dsh", "dsh-plugin"]
+      }
+    },
+    {
+      "key": "1349533296:package.json",
+      "repositoryId": 1349533296,
+      "repository": "TelosmaYLX/dsh-session-notify",
+      "repositoryUrl": "https://github.com/TelosmaYLX/dsh-session-notify",
+      "repositoryNodeId": "R_kgDOUHA-cA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@telosmaylx/dsh-session-notify",
+      "version": "0.1.13",
+      "commit": "a996243809c7b0e4a627258fc731033817aa0984",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T16:34:31Z",
+        "stars": 0,
+        "topics": ["dedeepseek", "dedeepseek-harness", "dsh", "dsh-plugin"]
       }
     },
     {
@@ -19181,34 +20678,6 @@
       }
     },
     {
-      "key": "1341656729:package.json",
-      "repositoryId": 1341656729,
-      "repository": "tsuuanmi/internet",
-      "repositoryUrl": "https://github.com/tsuuanmi/internet",
-      "repositoryNodeId": "R_kgDOT_gOmQ",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "@tsuuanmi/internet",
-      "version": "0.0.1",
-      "commit": "7116909d3293b8a739cdc5ad23b548d83b5f41ab",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:54:27Z",
-        "stars": 0,
-        "topics": []
-      }
-    },
-    {
       "key": "1339905004:plugins/dsh-oil-sticky-prompt/package.json",
       "repositoryId": 1339905004,
       "repository": "tttnny/my-dsh",
@@ -19354,6 +20823,75 @@
       }
     },
     {
+      "key": "1336328863:package.json",
+      "repositoryId": 1336328863,
+      "repository": "tzzs/dsh-git-workspace",
+      "repositoryUrl": "https://github.com/tzzs/dsh-git-workspace",
+      "repositoryNodeId": "R_kgDOT6bCnw",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@tzzs/dsh-git-workspace",
+      "version": "0.1.0",
+      "commit": "4d478c0d969bf059867bf3d5d5bb01d709733b00",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["\"dsh.bundle.patch\" in:readme"],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T19:39:19Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1339750604:package.json",
+      "repositoryId": 1339750604,
+      "repository": "usersx/dsh-automation-center",
+      "repositoryUrl": "https://github.com/usersx/dsh-automation-center",
+      "repositoryNodeId": "R_kgDOT9r4zA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-automation-center",
+      "version": "0.1.0-alpha.7",
+      "commit": "e9971853cede4e8c91eb2dffde9e0f6a7ef03ed3",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:38:50Z",
+        "stars": 1,
+        "topics": [
+          "agentic-ai",
+          "ai-agent",
+          "automation",
+          "coding-agent",
+          "deepseek",
+          "deepseek-harness",
+          "desktop",
+          "dsh",
+          "dsh-plugin",
+          "react",
+          "scheduled-tasks",
+          "task-scheduler",
+          "typescript",
+          "workflow-automation"
+        ]
+      }
+    },
+    {
       "key": "1342058573:dsh-desktop/package.json",
       "repositoryId": 1342058573,
       "repository": "uuedxz/dsh-plugins-pub",
@@ -19413,56 +20951,6 @@
           "dsh-plugin",
           "opencode-go-usage",
           "zero-api-key"
-        ]
-      }
-    },
-    {
-      "key": "1313032827:dsh/package.json",
-      "repositoryId": 1313032827,
-      "repository": "Vladimir-Human/ru-marketplace-mcp",
-      "repositoryUrl": "https://github.com/Vladimir-Human/ru-marketplace-mcp",
-      "repositoryNodeId": "R_kgDOTkNKew",
-      "manifest": "dsh/package.json",
-      "patch": "dsh/cordis.patch.yml",
-      "patchExists": true,
-      "package": "ru-marketplace-mcp-dsh",
-      "version": "1.6.0",
-      "commit": "5b9d085a691ceafbb3a38c8748e58bd06c26ebe6",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme",
-        "topic:dsh-plugin"
-      ],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T23:03:43Z",
-        "stars": 77,
-        "topics": [
-          "aliexpress",
-          "avito",
-          "citilink",
-          "claude",
-          "detsky-mir",
-          "dns",
-          "dsh-plugin",
-          "lamoda",
-          "marketplace",
-          "mcp",
-          "mcp-server",
-          "megamarket",
-          "ozon",
-          "price-comparison",
-          "python",
-          "russia",
-          "scraping",
-          "taobao",
-          "wildberries",
-          "yandex-market"
         ]
       }
     },
@@ -20392,7 +21880,7 @@
       "patchExists": true,
       "package": "{{PKG_NAME}}",
       "version": "0.1.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20401,12 +21889,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20432,7 +21920,7 @@
       "patchExists": true,
       "package": "{{PKG_NAME}}",
       "version": "0.1.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20441,12 +21929,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20472,7 +21960,7 @@
       "patchExists": true,
       "package": "{{PKG_NAME}}",
       "version": "0.1.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20481,12 +21969,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20512,7 +22000,7 @@
       "patchExists": true,
       "package": "{{PKG_NAME}}",
       "version": "0.1.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20521,12 +22009,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20552,7 +22040,7 @@
       "patchExists": true,
       "package": "{{PKG_NAME}}",
       "version": "0.1.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20561,12 +22049,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20592,7 +22080,7 @@
       "patchExists": true,
       "package": "@dsh-suite/plugin-deus",
       "version": "0.4.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20601,12 +22089,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20632,7 +22120,7 @@
       "patchExists": true,
       "package": "@dsh-suite/plugin-manager",
       "version": "0.8.6",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20641,12 +22129,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20672,7 +22160,7 @@
       "patchExists": true,
       "package": "@dsh-suite/plugin-notify",
       "version": "0.2.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20681,12 +22169,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20712,7 +22200,7 @@
       "patchExists": true,
       "package": "@dsh-suite/plugin-session-export",
       "version": "0.2.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20721,12 +22209,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20752,7 +22240,7 @@
       "patchExists": true,
       "package": "@dsh-suite/plugin-team-board",
       "version": "0.2.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20761,12 +22249,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -20792,7 +22280,7 @@
       "patchExists": true,
       "package": "@dsh-suite/preset-center",
       "version": "0.2.0",
-      "commit": "3e8e74f3a65e097a2e370951bd8581cb3e7b3bee",
+      "commit": "45528672c7c62da3470db72e0a25f6373f7c23ca",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -20801,12 +22289,12 @@
         "deepseek-harness in:name,description,readme",
         "topic:dsh-plugin"
       ],
-      "observedAt": "2026-08-26T08:03:30.518Z",
+      "observedAt": "2026-08-29T21:47:58.267Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-26T08:02:57Z",
-        "stars": 48,
+        "pushedAt": "2026-08-29T21:47:07Z",
+        "stars": 49,
         "topics": [
           "agent-framework",
           "awesome-list",
@@ -21576,6 +23064,50 @@
       }
     },
     {
+      "key": "1333591877:app/vendor/dsh-portable-plugin-market/package.json",
+      "repositoryId": 1333591877,
+      "repository": "WSL043/DSH-Portable",
+      "repositoryUrl": "https://github.com/WSL043/DSH-Portable",
+      "repositoryNodeId": "R_kgDOT3z_RQ",
+      "manifest": "app/vendor/dsh-portable-plugin-market/package.json",
+      "patch": "app/vendor/dsh-portable-plugin-market/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@wsl043/dsh-portable-plugin-market",
+      "version": "0.1.0-beta.6",
+      "commit": "8d51f642937baa41ae88e6ed7fc439c97891b562",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:10:07Z",
+        "stars": 23,
+        "topics": [
+          "agent-harness",
+          "ai-agent",
+          "appimage",
+          "cross-platform",
+          "deepseek",
+          "deepseek-harness",
+          "desktop",
+          "desktop-app",
+          "dsh",
+          "linux",
+          "macos",
+          "portable",
+          "portable-app",
+          "usb-drive",
+          "windows"
+        ]
+      }
+    },
+    {
       "key": "1333591877:tests/fixtures/dsh-portable-smoke-plugin/package.json",
       "repositoryId": 1333591877,
       "repository": "WSL043/DSH-Portable",
@@ -21586,7 +23118,7 @@
       "patchExists": true,
       "package": "dsh-portable-smoke-plugin",
       "version": "1.0.0",
-      "commit": "dc49e51100ad80e62841bd707cc99fd22263b156",
+      "commit": "8d51f642937baa41ae88e6ed7fc439c97891b562",
       "defaultBranch": "main",
       "status": "ready-for-review",
       "blocker": null,
@@ -21594,12 +23126,12 @@
         "\"DeepSeek Harness\" plugin in:name,description,readme",
         "deepseek-harness in:name,description,readme"
       ],
-      "observedAt": "2026-08-19T19:43:44.594Z",
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-19T19:41:54Z",
-        "stars": 8,
+        "pushedAt": "2026-08-29T17:10:07Z",
+        "stars": 23,
         "topics": [
           "agent-harness",
           "ai-agent",
@@ -21762,6 +23294,42 @@
         "pushedAt": "2026-08-24T02:38:27Z",
         "stars": 8,
         "topics": ["dsh-plugin"]
+      }
+    },
+    {
+      "key": "1349237873:package.json",
+      "repositoryId": 1349237873,
+      "repository": "wszhoho/dsh-file-attachment",
+      "repositoryUrl": "https://github.com/wszhoho/dsh-file-attachment",
+      "repositoryNodeId": "R_kgDOUGu8cQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "@wszhoho/dsh-file-attachment",
+      "version": "0.3.3",
+      "commit": "47148e7dff2642d9c8e16a227a63d9b1d37f0446",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:06:55Z",
+        "stars": 0,
+        "topics": [
+          "deepseek-harness",
+          "dsh",
+          "dsh-file-attachment",
+          "dsh-plugin",
+          "dsh-web-ui"
+        ]
       }
     },
     {
@@ -21939,59 +23507,6 @@
       }
     },
     {
-      "key": "1341340109:package.json",
-      "repositoryId": 1341340109,
-      "repository": "XianmingLF/xmlf-plugin-manager",
-      "repositoryUrl": "https://github.com/XianmingLF/xmlf-plugin-manager",
-      "repositoryNodeId": "R_kgDOT_M5zQ",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "@xianminglf/plugin-manager",
-      "version": "0.3.0",
-      "commit": "684217823d9b984aebe6db59af240ab4f88cc308",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": ["topic:dsh-plugin"],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:50:55Z",
-        "stars": 0,
-        "topics": ["dsh-plugin"]
-      }
-    },
-    {
-      "key": "1334609757:package.json",
-      "repositoryId": 1334609757,
-      "repository": "xiao-xiao-bai-ya/dsh-deepseek-billing",
-      "repositoryUrl": "https://github.com/xiao-xiao-bai-ya/dsh-deepseek-billing",
-      "repositoryNodeId": "R_kgDOT4yHXQ",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "@dsh-external/dsh-deepseek-billing",
-      "version": "1.2.0",
-      "commit": "2f9645c6ac02d2740d694fdebde4c9b0df14060a",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme"
-      ],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T21:07:08Z",
-        "stars": 1,
-        "topics": []
-      }
-    },
-    {
       "key": "1346523596:package.json",
       "repositoryId": 1346523596,
       "repository": "xiaochaZ/dsh-session-title-summary",
@@ -22089,36 +23604,6 @@
       }
     },
     {
-      "key": "1341866128:package.json",
-      "repositoryId": 1341866128,
-      "repository": "XiaoWind/dsh-loop",
-      "repositoryUrl": "https://github.com/XiaoWind/dsh-loop",
-      "repositoryNodeId": "R_kgDOT_tAkA",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-loop",
-      "version": "0.1.0",
-      "commit": "54d343c7f1d311b9044be2f957b4db9fc68baa38",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "deepseek-harness in:name,description,readme",
-        "topic:dsh-plugin"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:54:09Z",
-        "stars": 1,
-        "topics": ["dsh-plugin"]
-      }
-    },
-    {
       "key": "1347267825:package.json",
       "repositoryId": 1347267825,
       "repository": "XiaoWind/dsh-vault",
@@ -22144,36 +23629,6 @@
         "archived": false,
         "fork": false,
         "pushedAt": "2026-08-28T12:54:15Z",
-        "stars": 0,
-        "topics": ["dsh-plugin"]
-      }
-    },
-    {
-      "key": "1342025020:package.json",
-      "repositoryId": 1342025020,
-      "repository": "XiaoWind/dsh-weneedfirst",
-      "repositoryUrl": "https://github.com/XiaoWind/dsh-weneedfirst",
-      "repositoryNodeId": "R_kgDOT_2tPA",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-weneedfirst",
-      "version": "0.1.0",
-      "commit": "4f03e17322e521e0c8ce223e2504cfd6795dcd30",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "deepseek-harness in:name,description,readme",
-        "topic:dsh-plugin"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:54:12Z",
         "stars": 0,
         "topics": ["dsh-plugin"]
       }
@@ -22314,6 +23769,34 @@
         "archived": false,
         "fork": false,
         "pushedAt": "2026-08-19T19:40:44Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1350378445:package.json",
+      "repositoryId": 1350378445,
+      "repository": "xnightsky/dsh-pi-bridge",
+      "repositoryUrl": "https://github.com/xnightsky/dsh-pi-bridge",
+      "repositoryNodeId": "R_kgDOUH0jzQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-pi-bridge",
+      "version": "0.1.0",
+      "commit": "c7d9cc53a6c943b75c410bc0b1bdd2367f68a224",
+      "defaultBranch": "master",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"dsh.bundle.patch\" in:readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:47:18Z",
         "stars": 0,
         "topics": []
       }
@@ -22565,6 +24048,162 @@
         "pushedAt": "2026-08-24T02:37:08Z",
         "stars": 0,
         "topics": ["deepseek-harness", "dsh-memory", "dsh-plugin", "plugins"]
+      }
+    },
+    {
+      "key": "1350312164:packages/chat/kernel/package.json",
+      "repositoryId": 1350312164,
+      "repository": "xyingsoft/dsh-chat",
+      "repositoryUrl": "https://github.com/xyingsoft/dsh-chat",
+      "repositoryNodeId": "R_kgDOUHwg5A",
+      "manifest": "packages/chat/kernel/package.json",
+      "patch": "packages/chat/kernel/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@dsh-chat/kernel",
+      "version": "0.0.0",
+      "commit": "b64ffdc37984bf08b8b9272a0e912cced388c54e",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:37:39Z",
+        "stars": 0,
+        "topics": [
+          "chat",
+          "collaboration",
+          "cordis",
+          "cordis-plugin",
+          "deepseek",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "dsh-plugin-web",
+          "typescript"
+        ]
+      }
+    },
+    {
+      "key": "1321881098:package.json",
+      "repositoryId": 1321881098,
+      "repository": "yailPeralta/ast-mcp-server",
+      "repositoryUrl": "https://github.com/yailPeralta/ast-mcp-server",
+      "repositoryNodeId": "R_kgDOTspOCg",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "ast-mcp-server",
+      "version": "0.13.0",
+      "commit": "bad1b981dbe35067575cc37401d568d721357b64",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "\"dsh.bundle.patch\" in:readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T20:33:57Z",
+        "stars": 4,
+        "topics": [
+          "ast",
+          "codebase-indexing",
+          "codebase-intelligence",
+          "context-engineering",
+          "data-indexing",
+          "dsh-plugin",
+          "harness-engineering",
+          "harness-plugin",
+          "indexing",
+          "mcp",
+          "mcp-server"
+        ]
+      }
+    },
+    {
+      "key": "1349138440:package.json",
+      "repositoryId": 1349138440,
+      "repository": "yakoylp/dsh-md-convert",
+      "repositoryUrl": "https://github.com/yakoylp/dsh-md-convert",
+      "repositoryNodeId": "R_kgDOUGo4CA",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-md-convert",
+      "version": "0.5.0",
+      "commit": "a5c09f39aadced0979e3df055661376d5becc301",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": ["topic:dsh-plugin"],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:53:54Z",
+        "stars": 0,
+        "topics": [
+          "cli",
+          "cordis",
+          "deepseek-harness",
+          "document-conversion",
+          "dsh",
+          "dsh-plugin",
+          "markdown",
+          "markitdown",
+          "ocr",
+          "office",
+          "paddleocr",
+          "pdf"
+        ]
+      }
+    },
+    {
+      "key": "1343529215:package.json",
+      "repositoryId": 1343529215,
+      "repository": "yangbobo2021/relay-dsh-plugin-codex",
+      "repositoryUrl": "https://github.com/yangbobo2021/relay-dsh-plugin-codex",
+      "repositoryNodeId": "R_kgDOUBSg_w",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "relay-dsh-plugin-codex",
+      "version": "0.1.2",
+      "commit": "af65a2ec8509f94fb3a7bb445449288abacc97f8",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme",
+        "topic:dsh-plugin"
+      ],
+      "observedAt": "2026-08-29T17:11:58.733Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T17:11:24Z",
+        "stars": 2,
+        "topics": [
+          "ai-agent",
+          "codex",
+          "deepseek-harness",
+          "dsh",
+          "dsh-plugin",
+          "openai",
+          "plugin",
+          "typescript"
+        ]
       }
     },
     {
@@ -23096,6 +24735,34 @@
       }
     },
     {
+      "key": "1350380053:package.json",
+      "repositoryId": 1350380053,
+      "repository": "yejianming88888-ctrl/dsh-samrt-subagents",
+      "repositoryUrl": "https://github.com/yejianming88888-ctrl/dsh-samrt-subagents",
+      "repositoryNodeId": "R_kgDOUH0qFQ",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "patchExists": true,
+      "package": "dsh-smart-subagent-orchestrator",
+      "version": "0.1.0",
+      "commit": "c47b6787d420088f59ccca61177c5930f6275433",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T07:54:32.184Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T07:54:00Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
       "key": "1345565899:package.json",
       "repositoryId": 1345565899,
       "repository": "yezack/dsh-ssh-panel",
@@ -23239,34 +24906,6 @@
       }
     },
     {
-      "key": "1341448218:package.json",
-      "repositoryId": 1341448218,
-      "repository": "yuanbaoerer/dsh-custom-theme",
-      "repositoryUrl": "https://github.com/yuanbaoerer/dsh-custom-theme",
-      "repositoryNodeId": "R_kgDOT_TgGg",
-      "manifest": "package.json",
-      "patch": "cordis.patch.yml",
-      "patchExists": true,
-      "package": "dsh-custom-theme",
-      "version": "0.1.0",
-      "commit": "a1d37134ab59863f3fc8f437312b7c38bbf33529",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "deepseek-harness in:name,description,readme"
-      ],
-      "observedAt": "2026-08-28T12:57:26.634Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T12:57:22Z",
-        "stars": 0,
-        "topics": []
-      }
-    },
-    {
       "key": "1340370351:package.json",
       "repositoryId": 1340370351,
       "repository": "yuanbaoerer/dsh-decision-split",
@@ -23293,34 +24932,6 @@
         "pushedAt": "2026-08-28T12:55:43Z",
         "stars": 4,
         "topics": ["dsh-plugin"]
-      }
-    },
-    {
-      "key": "1341483056:page-memory/package.json",
-      "repositoryId": 1341483056,
-      "repository": "yuanjun5681/camind-dsh",
-      "repositoryUrl": "https://github.com/yuanjun5681/camind-dsh",
-      "repositoryNodeId": "R_kgDOT_VoMA",
-      "manifest": "page-memory/package.json",
-      "patch": "page-memory/cordis.patch.yml",
-      "patchExists": true,
-      "package": "camind-page-memory",
-      "version": "0.1.0",
-      "commit": "dd53dc847bd1ca9a81663e2eeee80b24b37bc3c7",
-      "defaultBranch": "main",
-      "status": "ready-for-review",
-      "blocker": null,
-      "discoveredBy": [
-        "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme"
-      ],
-      "observedAt": "2026-08-28T23:04:43.462Z",
-      "metadata": {
-        "archived": false,
-        "fork": false,
-        "pushedAt": "2026-08-28T22:07:36Z",
-        "stars": 0,
-        "topics": []
       }
     },
     {
@@ -24267,20 +25878,19 @@
       "patchExists": true,
       "package": "dsh-remote",
       "version": "0.1.0",
-      "commit": "5b7468de5fa436e83976edf09e2536a967770d23",
+      "commit": "e6ab704b36f30ad66fc01c6d27a4205bd29b1432",
       "defaultBranch": "master",
       "status": "ready-for-review",
       "blocker": null,
       "discoveredBy": [
         "\"DeepSeek Harness\" plugin in:name,description,readme",
-        "\"dsh.bundle.patch\" in:readme",
-        "deepseek-harness in:name,description,readme"
+        "\"dsh.bundle.patch\" in:readme"
       ],
-      "observedAt": "2026-08-22T19:40:08.508Z",
+      "observedAt": "2026-08-29T17:11:58.733Z",
       "metadata": {
         "archived": false,
         "fork": false,
-        "pushedAt": "2026-08-22T19:25:24Z",
+        "pushedAt": "2026-08-29T16:36:24Z",
         "stars": 1,
         "topics": ["dsh", "dsh-bundle"]
       }
@@ -26954,6 +28564,342 @@
           "feishu",
           "lark"
         ]
+      }
+    },
+    {
+      "key": "1340163129:desktop/e-mate-desktop/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "desktop/e-mate-desktop/package.json",
+      "patch": "desktop/e-mate-desktop/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/desktop",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-better-sidebar/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-better-sidebar/package.json",
+      "patch": "packages/dsh-plugin-better-sidebar/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-better-sidebar",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-cdp/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-cdp/package.json",
+      "patch": "packages/dsh-plugin-cdp/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-cdp",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-computer-use/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-computer-use/package.json",
+      "patch": "packages/dsh-plugin-computer-use/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-computer-use",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-file-import/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-file-import/package.json",
+      "patch": "packages/dsh-plugin-file-import/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-file-import",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-find-skill/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-find-skill/package.json",
+      "patch": "packages/dsh-plugin-find-skill/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-find-skill",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-genui/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-genui/package.json",
+      "patch": "packages/dsh-plugin-genui/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-genui",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-glass-composer/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-glass-composer/package.json",
+      "patch": "packages/dsh-plugin-glass-composer/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-glass-composer",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-mcp-manage/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-mcp-manage/package.json",
+      "patch": "packages/dsh-plugin-mcp-manage/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-mcp-manage",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-memory-evolve/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-memory-evolve/package.json",
+      "patch": "packages/dsh-plugin-memory-evolve/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-memory-evolve",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-office-skills/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-office-skills/package.json",
+      "patch": "packages/dsh-plugin-office-skills/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-office-skills",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
+      }
+    },
+    {
+      "key": "1340163129:packages/dsh-plugin-schedules/package.json",
+      "repositoryId": 1340163129,
+      "repository": "zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryUrl": "https://github.com/zyfjacksonchen-source/e-Mate-2.0.11",
+      "repositoryNodeId": "R_kgDOT-FEOQ",
+      "manifest": "packages/dsh-plugin-schedules/package.json",
+      "patch": "packages/dsh-plugin-schedules/cordis.patch.yml",
+      "patchExists": true,
+      "package": "@e-mate/dsh-plugin-schedules",
+      "version": "2.0.15",
+      "commit": "236aaa4f80598f07bf8f59848c217b9a60155d82",
+      "defaultBranch": "main",
+      "status": "ready-for-review",
+      "blocker": null,
+      "discoveredBy": [
+        "\"DeepSeek Harness\" plugin in:name,description,readme",
+        "deepseek-harness in:name,description,readme"
+      ],
+      "observedAt": "2026-08-29T21:47:58.267Z",
+      "metadata": {
+        "archived": false,
+        "fork": false,
+        "pushedAt": "2026-08-29T21:43:17Z",
+        "stars": 0,
+        "topics": []
       }
     }
   ]
