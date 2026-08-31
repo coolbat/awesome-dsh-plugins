@@ -428,3 +428,41 @@ volatile and do not establish trust, compatibility, or installability.
   and 2,330 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-08-31 — Daily fixed-source review and weekly reconciliation
+
+- Input: PR #2 candidate head
+  `256bbff0079bbee1acb1ac0c1d35ad8c63646255`, generated at
+  `2026-08-30T21:55:06.289Z`.
+- Queue: 2,145 structural leads: 1,126 already listed, 8 discovery-held, and
+  1,011 ready for review. Every ready record used a full 40-character commit.
+- Increment: 243 records required new evidence: 121 new keys and 122 keys whose
+  fixed commit changed. The other 768 records matched exact key-and-commit
+  history.
+- Decisions for the 243-record increment: 40 catalog-reviewed, 48
+  catalog-held, 73 duplicate or superseded, 41 example/fixture/template
+  records, 10 non-plugin packages, and 31 source conflicts. No records remain
+  pending.
+- Catalog after review: 1,247 repository-unique records: 785 reviewed, 461
+  held, and 1 excluded.
+- Discovery health: the latest scheduled run observed 60 repositories and 32
+  bundle manifests but retained a partial-result watermark after one GitHub
+  response exceeded the 5 MB limit. Valid results were retained; discovery is
+  not claimed to be complete.
+- Weekly reconciliation: PR #2, the frozen snapshot, ledger, catalog, generated
+  bilingual READMEs, and the sole open pull request were compared. Candidate,
+  disposition, and catalog totals reconcile; duplicate keys, duplicate catalog
+  ids or repositories, missing ledger records, catalog mapping failures,
+  non-40-character commits, and generated README drift were all absent.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 2,506 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
