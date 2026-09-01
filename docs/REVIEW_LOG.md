@@ -466,3 +466,36 @@ volatile and do not establish trust, compatibility, or installability.
   and 2,506 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-01 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `8b3ab26daab0cb37e37661cd07c1fe5ae85306ba`, generated at
+  `2026-08-31T23:14:18.101Z`.
+- Queue: 2,233 structural leads: 1,214 already listed, 8 discovery-held, and
+  1,011 ready for review. Every ready record used a full 40-character commit.
+- Increment: 136 records required new evidence: 88 new keys and 48 keys whose
+  fixed commit changed. The other 875 records matched exact key-and-commit
+  history.
+- Decisions for the 136-record increment: 24 catalog-reviewed, 19
+  catalog-held, 41 duplicate or superseded, 3 example/fixture/template
+  records, 3 non-plugin packages, and 46 source conflicts. No records remain
+  pending.
+- Catalog after review: 1,290 repository-unique records: 809 reviewed, 480
+  held, and 1 excluded.
+- Discovery health: the latest scheduled run observed 60 repositories and 46
+  bundle manifests but retained a partial-result watermark after one GitHub
+  response exceeded the 5 MB limit. Valid results were retained; discovery is
+  not claimed to be complete.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 2,592 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
