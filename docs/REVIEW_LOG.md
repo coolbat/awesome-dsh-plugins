@@ -499,3 +499,35 @@ volatile and do not establish trust, compatibility, or installability.
   and 2,592 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-03 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `ae0a166ea5612af3b74fac46c3f244dfaa00c093`, generated at
+  `2026-09-02T21:52:26.512Z`.
+- Queue: 2,517 structural leads: 1,256 already listed, 13 discovery-held, and
+  1,248 ready for review. Every ready record used a full 40-character commit.
+- Increment: 341 records required new evidence: 280 new keys and 61 keys whose
+  fixed commit changed. The other 907 records matched exact key-and-commit
+  history.
+- Decisions for the 341-record increment: 56 catalog-reviewed, 50
+  catalog-held, 72 duplicate or superseded, 43 example/fixture/template or
+  benchmark records, 15 non-plugin packages, 104 source conflicts, and 1
+  unavailable record. No records remain pending.
+- Catalog after review: 1,396 repository-unique records: 865 reviewed, 530
+  held, and 1 excluded.
+- Discovery health: the latest scheduled run observed 60 repositories and 40
+  bundle manifests but retained a partial-result watermark after one fetch
+  failed. Valid results were retained; discovery is not claimed to be complete.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 2,804 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
