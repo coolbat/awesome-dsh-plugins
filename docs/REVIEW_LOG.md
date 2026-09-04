@@ -531,3 +531,34 @@ volatile and do not establish trust, compatibility, or installability.
   and 2,804 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-04 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `166ad7bedfe662ee94c5e1769eabd8cd54ef86ae`, generated at
+  `2026-09-03T21:44:40.372Z`.
+- Queue: 2,633 structural leads: 1,362 already listed, 13 discovery-held, and
+  1,258 ready for review. Every ready record used a full 40-character commit.
+- Increment: 167 records required new evidence: 116 new keys and 51 keys whose
+  fixed commit changed. The other 1,091 records matched exact key-and-commit
+  history.
+- Decisions for the 167-record increment: 34 catalog-reviewed, 24
+  catalog-held, 51 duplicate or superseded, 11 example/fixture/template,
+  experiment, or rollback records, 10 non-plugin packages, and 37 source
+  conflicts. No records remain pending.
+- Catalog after review: 1,454 repository-unique records: 899 reviewed, 554
+  held, and 1 excluded.
+- Discovery health: the latest incremental run observed 60 repositories and 56
+  bundle manifests with zero query errors and no partial-result watermark.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 2,920 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
