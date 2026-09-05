@@ -425,6 +425,6 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 1258 records (0 pending).",
+    "Review ledger valid: 1341 records (0 pending).",
   );
 });
