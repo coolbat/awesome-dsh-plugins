@@ -1,13 +1,25 @@
 {
   "schemaVersion": 1,
-  "mode": null,
-  "observedAt": null,
-  "partial": false,
-  "queries": [],
+  "mode": "incremental",
+  "observedAt": "2026-09-05T16:07:10.519Z",
+  "partial": true,
+  "queries": [
+    "topic:dsh-plugin pushed:>=2026-09-03",
+    "topic:dsh-external pushed:>=2026-09-03",
+    "\"DeepSeek Harness\" plugin in:name,description,readme pushed:>=2026-09-03",
+    "\"dsh.bundle.patch\" in:readme pushed:>=2026-09-03",
+    "deepseek-harness in:name,description,readme pushed:>=2026-09-03"
+  ],
   "summary": {
-    "repositoriesObserved": 0,
-    "bundleManifestsFound": 0,
-    "errors": 0
+    "repositoriesObserved": 60,
+    "bundleManifestsFound": 66,
+    "errors": 1
   },
-  "errors": []
+  "errors": [
+    {
+      "query": null,
+      "repository": "ChisaAlter/Deepseek-Harness-Desktop",
+      "message": "GithubRequestError: GitHub response exceeded 5000000 bytes."
+    }
+  ]
 }
