@@ -593,3 +593,34 @@ volatile and do not establish trust, compatibility, or installability.
   and 3,042 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-06 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `8a282835c20d452a1b755a78381346539f667c60`, generated at
+  `2026-09-05T21:19:41.102Z`.
+- Queue: 2,882 structural leads: 1,477 already listed, 16 discovery-held, and
+  1,389 ready for review. Every ready record used a full 40-character commit.
+- Increment: 146 records required new evidence: 109 new keys and 37 keys whose
+  fixed commit changed. The other 1,243 records matched exact key-and-commit
+  history.
+- Decisions for the 146-record increment: 25 catalog-reviewed, 25
+  catalog-held, 30 duplicate or superseded, 20 example/fixture/template,
+  scaffold, experiment, or benchmark records, and 46 source conflicts. No
+  records remain pending.
+- Catalog after review: 1,565 repository-unique records: 955 reviewed, 609
+  held, and 1 excluded.
+- Discovery health: the latest incremental run observed 60 repositories and 51
+  bundle manifests with zero query errors and no partial-result watermark.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 3,142 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
