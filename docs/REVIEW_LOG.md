@@ -624,3 +624,44 @@ volatile and do not establish trust, compatibility, or installability.
   and 3,142 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-07 — Daily fixed-source review and weekly reconciliation
+
+- Input: PR #2 candidate head
+  `b4a95883b333b8a83f6d8f0824a025d5c66acf44`, generated at
+  `2026-09-06T21:25:40.063Z`.
+- Queue: 3,007 structural leads: 1,525 already listed, 16 discovery-held, and
+  1,466 ready for review. Every ready record used a full 40-character commit.
+- Increment: 243 records required new evidence: 126 new keys and 117 keys whose
+  fixed commit changed. The other 1,223 records matched exact key-and-commit
+  history.
+- Decisions for the 243-record increment: 25 catalog-reviewed, 31
+  catalog-held, 76 duplicate or superseded, 22 example/fixture/template,
+  test-plugin, or benchmark records, 17 non-plugin packages, 71 source
+  conflicts, and 1 unavailable record. No records remain pending.
+- Catalog after review: 1,621 repository-unique records: 980 reviewed, 640
+  held, and 1 excluded.
+- Discovery health: the latest incremental attempt observed 60 repositories
+  and 64 bundle manifests but retained a partial-result watermark after one
+  oversized response from `gmh5225/awesome-game-security`. The last complete
+  success was `2026-09-06T16:19:51.866Z`; valid queue results were retained,
+  but discovery is not claimed to be complete.
+- Weekly reconciliation: `origin/main`, PR #2, the frozen snapshot, ledger,
+  catalog, generated bilingual READMEs, and all open pull requests were
+  compared. Candidate, disposition, and catalog totals reconcile; duplicate
+  keys, duplicate catalog ids or repositories, missing ledger records, catalog
+  mapping failures, non-40-character commits, and generated README drift were
+  absent after classifying a `deploy/testplugin` package as a test fixture. PR
+  #20 is an unrelated dirty external proposal and was left untouched.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 3,254 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
