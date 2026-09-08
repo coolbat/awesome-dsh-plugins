@@ -78,7 +78,7 @@ The query set and request budgets live in
 ## Catalog
 
 <!-- CATALOG:START -->
-Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 held** · **1 excluded**
+Snapshot: **2026-09-08** · **1661 candidates** · **1000 reviewed** · **660 held** · **1 excluded**
 
 ### Reviewed native bundles
 
@@ -1221,6 +1221,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `package-install` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Linalg** · [TYEclipse/dsh-linalg@c6cdfad](https://github.com/TYEclipse/dsh-linalg/commit/c6cdfadf4345c64df2fcb63b0194ed8ed12f5b1f) — Linear algebra toolbox for DeepSeek Harness (dsh): matrix multiply, determinant, inverse, trace, transpose, RREF, linear system solver with unique/infinite/none classification, and vector ops (dot/cross/norm/projection/angle) — zero runtime dependencies
+  - **Evidence:** [manifest](https://github.com/TYEclipse/dsh-linalg/blob/c6cdfadf4345c64df2fcb63b0194ed8ed12f5b1f/package.json) → [patch](https://github.com/TYEclipse/dsh-linalg/blob/c6cdfadf4345c64df2fcb63b0194ed8ed12f5b1f/cordis.patch.yml) · **Identity:** `dsh-linalg`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `package-install` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **DSH Air Plant** · [uckkk/dsh-air-plant@d018d28](https://github.com/uckkk/dsh-air-plant/commit/d018d28b598caa461ad9bd0ed5365d87ba3bd72e) — 室内绿植
   - **Evidence:** [manifest](https://github.com/uckkk/dsh-air-plant/blob/d018d28b598caa461ad9bd0ed5365d87ba3bd72e/package.json) → [patch](https://github.com/uckkk/dsh-air-plant/blob/d018d28b598caa461ad9bd0ed5365d87ba3bd72e/cordis.patch.yml) · **Identity:** `dsh-air-plant`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
@@ -1388,6 +1393,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `session-data` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **PR Watcher** · [Chinesezjc/dsh-pr-watcher@3557f5a](https://github.com/Chinesezjc/dsh-pr-watcher/commit/3557f5ac2c37e92e79ac3bb222c6250d58e503c4) — GitHub pull-request watcher for DeepSeek Harness (DSH): a host service that polls PR status through the gh CLI and notifies agent sessions when configured conditions are met, plus model-facing tools to query and register watches.
+  - **Evidence:** [manifest](https://github.com/Chinesezjc/dsh-pr-watcher/blob/3557f5ac2c37e92e79ac3bb222c6250d58e503c4/package.json) → [patch](https://github.com/Chinesezjc/dsh-pr-watcher/blob/3557f5ac2c37e92e79ac3bb222c6250d58e503c4/cordis.patch.yml) · **Identity:** `dsh-pr-watcher`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `external-network` `client-injection` `subprocess` `process-control` `session-data` `model-tools` `package-install` `plugin-management` `multi-agent` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **Message Timeline Navigation** · [cokiscarazo-rgb/dsh-plugin-message-timeline-navigation@2ef241a](https://github.com/cokiscarazo-rgb/dsh-plugin-message-timeline-navigation/commit/2ef241a4f3aee88bdedd7c48a2c3e0ecde743c1f) — Codex-style message timeline navigation for DSH web clients: a vertical rail of ticks on the conversation edge — hover to preview, click to jump, and the current reading progress stays highlighted.
   - **Evidence:** [manifest](https://github.com/cokiscarazo-rgb/dsh-plugin-message-timeline-navigation/blob/2ef241a4f3aee88bdedd7c48a2c3e0ecde743c1f/package.json) → [patch](https://github.com/cokiscarazo-rgb/dsh-plugin-message-timeline-navigation/blob/2ef241a4f3aee88bdedd7c48a2c3e0ecde743c1f/cordis.patch.yml) · **Identity:** `dsh-plugin-message-timeline-navigation`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -1547,6 +1557,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/mantonlove/dsh-conversation-landmarks/blob/1d2e0956ed263a92b16370d50dd7d4603dec731e/package.json) → [patch](https://github.com/mantonlove/dsh-conversation-landmarks/blob/1d2e0956ed263a92b16370d50dd7d4603dec731e/cordis.patch.yml) · **Identity:** `dsh-conversation-landmarks`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `external-network` `client-injection` `subprocess` `process-control` `session-data` `package-install` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Winnotify** · [Maple-Bamboo-Team/dsh-plugin-winnotify@3c3516b](https://github.com/Maple-Bamboo-Team/dsh-plugin-winnotify/commit/3c3516b87234f058ccd3c6de791fb81707f3889f) — Windows native notifications for DeepSeek Harness
+  - **Evidence:** [manifest](https://github.com/Maple-Bamboo-Team/dsh-plugin-winnotify/blob/3c3516b87234f058ccd3c6de791fb81707f3889f/package.json) → [patch](https://github.com/Maple-Bamboo-Team/dsh-plugin-winnotify/blob/3c3516b87234f058ccd3c6de791fb81707f3889f/cordis.patch.yml) · **Identity:** `dsh-plugin-winnotify`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `browser` `session-data` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **DSH Voice** · [meomeo-dev/dsh-voice@b4b989c](https://github.com/meomeo-dev/dsh-voice/commit/b4b989c0bc8b942752086d910933e43b53cfbf54) — Session, workspace, and user-level conversation-tone switching with bundled voice skills.
   - **Evidence:** [manifest](https://github.com/meomeo-dev/dsh-voice/blob/b4b989c0bc8b942752086d910933e43b53cfbf54/package.json) → [patch](https://github.com/meomeo-dev/dsh-voice/blob/b4b989c0bc8b942752086d910933e43b53cfbf54/cordis.patch.yml) · **Identity:** `@meomeo-dev/dsh-voice`
@@ -1840,6 +1855,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · mixed peer ranges
   - **Signals:** `client-injection` `filesystem-write` `process-control` `session-data` `system-prompt` `model-tools` `package-install` `multi-agent` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Doctor** · [d86e/dsh-doctor@dd309db](https://github.com/d86e/dsh-doctor/commit/dd309db5ea91bd0c4a1243d59b6f321c1a98fd54) — dsh-doctor: self-healing watchdog for the DeepSeek Harness web profile. Recovers from plugin-induced boot failures within 60s, captures every tool error, and watches all live sessions for stuck turns.
+  - **Evidence:** [manifest](https://github.com/d86e/dsh-doctor/blob/dd309db5ea91bd0c4a1243d59b6f321c1a98fd54/package.json) → [patch](https://github.com/d86e/dsh-doctor/blob/dd309db5ea91bd0c4a1243d59b6f321c1a98fd54/cordis.patch.yml) · **Identity:** `@d86e/dsh-doctor`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · declares rc.6 peers
+  - **Signals:** `external-network` `subprocess` `process-control` `session-data` `model-tools` `package-install` `financial` `prepublish-only` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **DSH Cloud Sync** · [dickpy/dsh-cloud-sync@fa3dfa5](https://github.com/dickpy/dsh-cloud-sync/commit/fa3dfa57955d5c54344c21012c6e3d71f09fe920) — Synchronizes portable DSH profiles and local plugin sources through WebDAV or object storage.
   - **Evidence:** [manifest](https://github.com/dickpy/dsh-cloud-sync/blob/fa3dfa57955d5c54344c21012c6e3d71f09fe920/package.json) → [patch](https://github.com/dickpy/dsh-cloud-sync/blob/fa3dfa57955d5c54344c21012c6e3d71f09fe920/cordis.patch.yml) · **Identity:** `@dickpy/dsh-cloud-sync`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -1989,6 +2009,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/whitefirer/dsh-browser-fs/blob/d144aaf8960442558897e5600be00366f40d812d/package.json) → [patch](https://github.com/whitefirer/dsh-browser-fs/blob/d144aaf8960442558897e5600be00366f40d812d/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `unknown` / package `unknown` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `browser-filesystem` `filesystem-read` `filesystem-write` `websocket` `model-tools` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
+
+- **Agent Team** · [wowyuarm/dsh-agent-team@e99d376](https://github.com/wowyuarm/dsh-agent-team/commit/e99d376e1ac5f2b6b3b69d8a0de2ceca812d6aa9) — A persistent agent team for long-running collaboration in DeepSeek Harness
+  - **Evidence:** [manifest](https://github.com/wowyuarm/dsh-agent-team/blob/e99d376e1ac5f2b6b3b69d8a0de2ceca812d6aa9/package.json) → [patch](https://github.com/wowyuarm/dsh-agent-team/blob/e99d376e1ac5f2b6b3b69d8a0de2ceca812d6aa9/cordis.patch.yml) · **Identity:** `@wowyuarm/dsh-agent-team`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `client-injection` `filesystem-read` `database` `session-data` `model-tools` `package-install` `multi-agent` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **DSH DeepSeek Attach** · [wqx-txdsyl/dsh-ds-attach@9cc7bab](https://github.com/wqx-txdsyl/dsh-ds-attach/commit/9cc7babf8ce8996daf011299ac2b805525dfb96f) — DeepSeek-style file cards, drag-and-drop, document text extraction, and message injection for DSH attachments.
   - **Evidence:** [manifest](https://github.com/wqx-txdsyl/dsh-ds-attach/blob/9cc7babf8ce8996daf011299ac2b805525dfb96f/package.json) → [patch](https://github.com/wqx-txdsyl/dsh-ds-attach/blob/9cc7babf8ce8996daf011299ac2b805525dfb96f/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -2217,6 +2242,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `credentials` `client-injection` `filesystem-read` `filesystem-write` `subprocess` `process-control` `mcp` `database` `session-data` `vision` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Composer Markdown** · [chendefine/dsh-composer-markdown@5d52453](https://github.com/chendefine/dsh-composer-markdown/commit/5d52453619cce566d42afb0a660d11d77ea3f3d3) — DSH web 插件：对话输入框 Markdown 编辑增强 —— 无序/有序列表自动续行、行内代码样式（保留字面反引号）、代码块围栏自动闭合与围栏内 Enter 保护。仅增强编辑态视觉与按键行为，发送文本保持字面 Markdown 逐字节保真。/ DSH web plugin: markdown editing aids for the composer — list continuation, inline-code styling (literal backticks kept), code-fence auto-closing with in-fence Enter protection. Edit-state visuals only; the submitted text stays literal markdown.
+  - **Evidence:** [manifest](https://github.com/chendefine/dsh-composer-markdown/blob/5d52453619cce566d42afb0a660d11d77ea3f3d3/package.json) → [patch](https://github.com/chendefine/dsh-composer-markdown/blob/5d52453619cce566d42afb0a660d11d77ea3f3d3/cordis.patch.yml) · **Identity:** `dsh-composer-markdown`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · compatibility unknown
+  - **Signals:** `external-network` `client-injection` `process-control` `browser` `session-data` `plugin-management` `vision` `theme` `prepublish-only` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **Sidebar Vscode** · [chendefine/dsh-sidebar-vscode@2e3d4b3](https://github.com/chendefine/dsh-sidebar-vscode/commit/2e3d4b392d28c1506dd32c60bd0ac35025f288b7) — DSH web plugin: a better-sidebar tab that embeds the VS Code web workbench opened at the current session workspace, behind the gateway's /vscode subpath or any configured editor base URL. Editor selections land as atomic reference chips whose canonical mentions the host half expands into text-selection context at agent/pre-step; explorer files/folders land as path-only resource chips expanded into content-less file-selection/folder-selection markers.
   - **Evidence:** [manifest](https://github.com/chendefine/dsh-sidebar-vscode/blob/2e3d4b392d28c1506dd32c60bd0ac35025f288b7/package.json) → [patch](https://github.com/chendefine/dsh-sidebar-vscode/blob/2e3d4b392d28c1506dd32c60bd0ac35025f288b7/cordis.patch.yml) · **Identity:** `dsh-sidebar-vscode`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
@@ -2277,6 +2307,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `credentials` `client-injection` `filesystem-read` `filesystem-write` `subprocess` `process-control` `database` `session-data` `system-prompt` `model-tools` `package-install` `web-search` `vision` `multi-agent` `theme` `nested-bundle` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Wakatime** · [dingyi222666/dsh-wakatime@3fbb265](https://github.com/dingyi222666/dsh-wakatime/commit/3fbb265cd1581ae3bd3edcc4a71e913786065bc6) — WakaTime plugin for DeepSeek Harness (dsh) — track AI coding activity, lines of code, and time spent
+  - **Evidence:** [manifest](https://github.com/dingyi222666/dsh-wakatime/blob/3fbb265cd1581ae3bd3edcc4a71e913786065bc6/package.json) → [patch](https://github.com/dingyi222666/dsh-wakatime/blob/3fbb265cd1581ae3bd3edcc4a71e913786065bc6/cordis.patch.yml) · **Identity:** `@dingyi222666/dsh-wakatime`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `filesystem-read` `process-control` `session-data` `model-tools` `package-install` `vision` `prepare` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **V4flash Tiler** · [doublehappy123/dsh-v4flash-tiler@df4d5aa](https://github.com/doublehappy123/dsh-v4flash-tiler/commit/df4d5aad549846d7bf1e6aea23bb895d2692105e) — DSH plugin: auto-tiles oversized chat images into labelled grid pieces (row/col metadata, overlap-aware, multi-image group isolation) so the DeepSeek vision model keeps fine detail instead of the ~800px downsample.
   - **Evidence:** [manifest](https://github.com/doublehappy123/dsh-v4flash-tiler/blob/df4d5aad549846d7bf1e6aea23bb895d2692105e/package.json) → [patch](https://github.com/doublehappy123/dsh-v4flash-tiler/blob/df4d5aad549846d7bf1e6aea23bb895d2692105e/cordis.patch.yml) · **Identity:** `dsh-v4flash-tiler`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -2286,6 +2321,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/dsh-so/dsh-plugin-advisor/blob/80ce078e08aac9cd952b24d5a43f83581cb57b1d/package.json) → [patch](https://github.com/dsh-so/dsh-plugin-advisor/blob/80ce078e08aac9cd952b24d5a43f83581cb57b1d/cordis.patch.yml) · **Identity:** `@dsh-so/dsh-plugin-advisor`
   - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `prepublishOnly` · declares rc.6 peers
   - **Signals:** `external-network` `subprocess` `process-control` `database` `session-data` `model-tools` `package-install` `vision` `financial` `prepublish-only` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Codex Harness Control** · [edisontaisite/codex-harness-control@2804eab](https://github.com/edisontaisite/codex-harness-control/commit/2804eabf40095efb56f1af9557f5d1962a7df9e1) — Codex coordinator skill and Harness worker skills for explicit session routing, task leases, receipts and review.
+  - **Evidence:** [manifest](https://github.com/edisontaisite/codex-harness-control/blob/2804eabf40095efb56f1af9557f5d1962a7df9e1/package.json) → [patch](https://github.com/edisontaisite/codex-harness-control/blob/2804eabf40095efb56f1af9557f5d1962a7df9e1/cordis.patch.yml) · **Identity:** `codex-harness-control`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `database` `session-data` `vision` `multi-agent` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **GIT Graph** · [enoughpower/dsh-git-graph@7074c51](https://github.com/enoughpower/dsh-git-graph/commit/7074c518f89385c86dc4d99021674382d9c05e6f) — DeepSeek Harness 集成 Git 视图插件（当前为 Git 专用：文件浏览/编辑暂时停用）：宿主半提供 /git JSON API（status/branch/diff/stage/commit/log/blame/cat 等），浏览器半提供 Git 页签 UI。Git plugin for DeepSeek Harness (currently Git-only; the file browser is temporarily disabled): host /git JSON API + browser Git tab UI.
   - **Evidence:** [manifest](https://github.com/enoughpower/dsh-git-graph/blob/7074c518f89385c86dc4d99021674382d9c05e6f/package.json) → [patch](https://github.com/enoughpower/dsh-git-graph/blob/7074c518f89385c86dc4d99021674382d9c05e6f/cordis.patch.yml) · **Identity:** `dsh-git-graph`
@@ -2376,6 +2416,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/FYHC1/dsh-web-manager/blob/4f610da5e3a9efb409d0666e9a4ac735448d44fe/package.json) → [patch](https://github.com/FYHC1/dsh-web-manager/blob/4f610da5e3a9efb409d0666e9a4ac735448d44fe/cordis.patch.yml) · **Identity:** `dsh-web-manager`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `client-injection` `process-control` `browser` `package-install` `web-search` `vision` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Sidenote** · [g-yixuan/dsh-sidenote@856d60a](https://github.com/g-yixuan/dsh-sidenote/commit/856d60a795ae09e84d579db6f1addcafad960541) — DSH web plugin: Codex-style side chat (fork the current session into a persistent side panel) + selection annotations with numbered badges and a composer chip. A thin consumer of dsh-better-sidebar. / Codex 风格侧边聊天 + 划选注释的 DSH 插件。
+  - **Evidence:** [manifest](https://github.com/g-yixuan/dsh-sidenote/blob/856d60a795ae09e84d579db6f1addcafad960541/package.json) → [patch](https://github.com/g-yixuan/dsh-sidenote/blob/856d60a795ae09e84d579db6f1addcafad960541/cordis.patch.yml) · **Identity:** `dsh-sidenote`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
+  - **Signals:** `external-network` `client-injection` `browser` `session-data` `vision` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **Stock Watch** · [ggttol/dsh-stock-watch@13a3f07](https://github.com/ggttol/dsh-stock-watch/commit/13a3f07a2f2cd057a960bdaa754c3e2de5ef2cfc) — A股自选股实时盯盘插件 - DeepSeek Harness Web 右上角可折叠弹窗；v1.2.0 新增 AI 持仓建议引擎：技术指标量化评分/止损止盈线推导/市场环境/新闻聚合/一键会话深度研判
   - **Evidence:** [manifest](https://github.com/ggttol/dsh-stock-watch/blob/13a3f07a2f2cd057a960bdaa754c3e2de5ef2cfc/package.json) → [patch](https://github.com/ggttol/dsh-stock-watch/blob/13a3f07a2f2cd057a960bdaa754c3e2de5ef2cfc/cordis.patch.yml) · **Identity:** `dsh-stock-watch`
@@ -2487,6 +2532,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `credentials` `client-injection` `filesystem-read` `database` `session-data` `model-tools` `vision` `theme` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Workspace KIT** · [ice5kysl/dsh-workspace-kit@ff79593](https://github.com/ice5kysl/dsh-workspace-kit/commit/ff79593525f098073c04dd5f1a19f5f0487c9560) — dsh (DeepSeek Harness) workspace kit: soft workspace archive/restore, ⌘K Spotlight search, per-workspace icons/colors, and an enhanced sidebar browser with drag reorder — a standard Cordis bundle plugin (host tools/commands + bilingual browser client).
+  - **Evidence:** [manifest](https://github.com/ice5kysl/dsh-workspace-kit/blob/ff79593525f098073c04dd5f1a19f5f0487c9560/package.json) → [patch](https://github.com/ice5kysl/dsh-workspace-kit/blob/ff79593525f098073c04dd5f1a19f5f0487c9560/cordis.patch.yml) · **Identity:** `dsh-workspace-kit`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · compatibility unknown
+  - **Signals:** `external-network` `client-injection` `filesystem-write` `process-control` `session-data` `package-install` `vision` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **Client Background** · [imcp-pro/dsh-client-background@414d3a7](https://github.com/imcp-pro/dsh-client-background/commit/414d3a72a8613e61f92060bc9d3d9b6931fdcf0f) — Replaces the dsh Web client base background with a randomly switching public Unsplash image, revealed through translucent base surfaces.
   - **Evidence:** [manifest](https://github.com/imcp-pro/dsh-client-background/blob/414d3a72a8613e61f92060bc9d3d9b6931fdcf0f/package.json) → [patch](https://github.com/imcp-pro/dsh-client-background/blob/414d3a72a8613e61f92060bc9d3d9b6931fdcf0f/cordis.patch.yml) · **Identity:** `@imcp-pro/dsh-client-background`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · compatibility unknown
@@ -2506,6 +2556,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/irislys/dsh-deepseek-relay-config/blob/b28f369c8c99984fc7a2dac4a14b73bcc9a928d3/package.json) → [patch](https://github.com/irislys/dsh-deepseek-relay-config/blob/b28f369c8c99984fc7a2dac4a14b73bcc9a928d3/cordis.patch.yml) · **Identity:** `dsh-llm-deepseek-relay`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `credentials` `model-tools` `vision` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Harbor Evolution** · [istarwyh/harbor-self-evolving@ec4e780](https://github.com/istarwyh/harbor-self-evolving/commit/ec4e78070066d7f90c9a8887484d54e57f7ecc63) — DeepSeek Harness plugin and Skill for Harbor Candidate and Historical Session evaluation workflows.
+  - **Evidence:** [manifest](https://github.com/istarwyh/harbor-self-evolving/blob/ec4e78070066d7f90c9a8887484d54e57f7ecc63/packages/dsh-plugin/package.json) → [patch](https://github.com/istarwyh/harbor-self-evolving/blob/ec4e78070066d7f90c9a8887484d54e57f7ecc63/packages/dsh-plugin/cordis.patch.yml) · **Identity:** `dsh-harbor-evolution`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `client-injection` `process-control` `session-data` `model-tools` `vision` `theme` `nested-bundle` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **Context Doctor** · [istarwyh/xiaohui-harness@6c50008](https://github.com/istarwyh/xiaohui-harness/commit/6c500084ba508989e021492c8c50d3cadc6851e1) — DSH 上下文注入审计插件：统计 AGENTS.md 指令链 / 技能目录 / 工具 schema / MCP 工具的 token 成本，检测重复与冲突；原生 Context Doctor 面板 + context_audit 工具。
   - **Evidence:** [manifest](https://github.com/istarwyh/xiaohui-harness/blob/6c500084ba508989e021492c8c50d3cadc6851e1/apps/desktop-tauri/product/context-doctor/package.json) → [patch](https://github.com/istarwyh/xiaohui-harness/blob/6c500084ba508989e021492c8c50d3cadc6851e1/apps/desktop-tauri/product/context-doctor/cordis.patch.yml) · **Identity:** `dsh-context-doctor`
@@ -2967,6 +3022,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `external-network` `client-injection` `browser` `package-install` `vision` `theme` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Media Viewer** · [rffanlab/dsh-media-viewer@1c14d2a](https://github.com/rffanlab/dsh-media-viewer/commit/1c14d2a6ed748565c84193f2d5020de890522556) — DeepSeek Harness unified media/document viewer: video/audio playback, Markdown/text/PDF/DOCX, XLSX/PPTX structured preview, subtitles, copy-full-text and download.
+  - **Evidence:** [manifest](https://github.com/rffanlab/dsh-media-viewer/blob/1c14d2a6ed748565c84193f2d5020de890522556/package.json) → [patch](https://github.com/rffanlab/dsh-media-viewer/blob/1c14d2a6ed748565c84193f2d5020de890522556/cordis.patch.yml) · **Identity:** `dsh-media-viewer`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `session-data` `package-install` `vision` `audio` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **Subagent MGR** · [rffanlab/dsh-subagent-mgr@faa5068](https://github.com/rffanlab/dsh-subagent-mgr/commit/faa5068167906bd43ef22eed37ab37fa5d267712) — Zero-YAML subagent control plane and Web UI for DeepSeek Harness
   - **Evidence:** [manifest](https://github.com/rffanlab/dsh-subagent-mgr/blob/faa5068167906bd43ef22eed37ab37fa5d267712/package.json) → [patch](https://github.com/rffanlab/dsh-subagent-mgr/blob/faa5068167906bd43ef22eed37ab37fa5d267712/cordis.patch.yml) · **Identity:** `dsh-subagent-mgr`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
@@ -3402,6 +3462,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
   - **Signals:** `microphone` `audio` `credentials` `external-network` `prepack-build` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
 
+- **Drop IN** · [zhanghuqqqq/dsh-drop-in@cb1d76b](https://github.com/zhanghuqqqq/dsh-drop-in/commit/cb1d76b7639fb5b7889286fca66c5537d7ff173d) — Drag & drop anything into the DSH composer: local files upload to workspace/.dropped/sessionId/ and insert absolute-path references; web images / URLs download host-side then reference; plain text inserts into the composer (oversized text becomes a file).
+  - **Evidence:** [manifest](https://github.com/zhanghuqqqq/dsh-drop-in/blob/cb1d76b7639fb5b7889286fca66c5537d7ff173d/package.json) → [patch](https://github.com/zhanghuqqqq/dsh-drop-in/blob/cb1d76b7639fb5b7889286fca66c5537d7ff173d/cordis.patch.yml) · **Identity:** `dsh-drop-in`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `client-injection` `session-data` `system-prompt` `model-tools` `package-install` `vision` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **AI Plugin Toolkit** · [zhangliang0115/ai-plugin@26afe6c](https://github.com/zhangliang0115/ai-plugin/commit/26afe6c37404131f0749c393b0963b6505aac0c3) — DeepSeek Harness bundle that registers the aipx toolkit skills: cross-agent skill authoring, dsh plugin development, Claude Code plugin development, and DeepSeek model cost routing
   - **Evidence:** [manifest](https://github.com/zhangliang0115/ai-plugin/blob/26afe6c37404131f0749c393b0963b6505aac0c3/dsh-plugin/package.json) → [patch](https://github.com/zhangliang0115/ai-plugin/blob/26afe6c37404131f0749c393b0963b6505aac0c3/dsh-plugin/cordis.patch.yml) · **Identity:** `ai-plugin-toolkit-dsh`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -3421,6 +3486,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/ZhuoSir/dsh-cron/blob/8427295db65600691fae0ad90ebb018a62f31c5d/package.json) → [patch](https://github.com/ZhuoSir/dsh-cron/blob/8427295db65600691fae0ad90ebb018a62f31c5d/cordis.patch.yml) · **Identity:** `dsh-cron`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `external-network` `client-injection` `filesystem-write` `session-data` `model-tools` `package-install` `vision` `audio` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Approval Voice** · [ZIye1208/dsh-approval-voice@e4b13ca](https://github.com/ZIye1208/dsh-approval-voice/commit/e4b13ca8d4464f3de9fec46566da7df80e391623) — DSH Web GUI 审批语音提示：需要审批/回答的弹窗出现时，播放提示音并用语音播报，避免漏看
+  - **Evidence:** [manifest](https://github.com/ZIye1208/dsh-approval-voice/blob/e4b13ca8d4464f3de9fec46566da7df80e391623/package.json) → [patch](https://github.com/ZIye1208/dsh-approval-voice/blob/e4b13ca8d4464f3de9fec46566da7df80e391623/cordis.patch.yml) · **Identity:** `dsh-approval-voice`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `client-injection` `audio` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **Openpencil** · [ZSeven-W/dsh-openpencil@ab148ac](https://github.com/ZSeven-W/dsh-openpencil/commit/ab148ac82d690a3ddc58465299ba651298c28f43) — Preview, inspect, and edit real .op OpenPencil design documents inside DSH conversations — headless rendering, a read-only canvas, and a managed editor.
   - **Evidence:** [manifest](https://github.com/ZSeven-W/dsh-openpencil/blob/ab148ac82d690a3ddc58465299ba651298c28f43/package.json) → [patch](https://github.com/ZSeven-W/dsh-openpencil/blob/ab148ac82d690a3ddc58465299ba651298c28f43/cordis.patch.yml) · **Identity:** `@zseven-w/dsh-openpencil`
@@ -3463,6 +3533,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/Breeze136/dsh-kb-rag/blob/2ba96b785b154dec2fe76e64eb4a17516def92e1/npm-package/package.json) → [patch](https://github.com/Breeze136/dsh-kb-rag/blob/2ba96b785b154dec2fe76e64eb4a17516def92e1/npm-package/cordis.patch.yml) · **Identity:** `dsh-kb-rag`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `literature-search` `filesystem-read` `filesystem-write` `python-subprocess` `model-download` `source-behind-registry` · **Review:** The fixed source is 1.0.7 while npm now exposes 1.1.0 from the same repository; no Python daemon, file ingestion, model download, index mutation, or search was executed.
+
+- **WEB Search** · [CBalaa/dsh-web-search@e413ebb](https://github.com/CBalaa/dsh-web-search/commit/e413ebb075a5f1957404fcb90c7354c06226a5ba) — DSH web plugin: multi-vendor web_search / web_fetch providers for the ctx.web seam (Tavily, Firecrawl, extensible) — works with any LLM provider.
+  - **Evidence:** [manifest](https://github.com/CBalaa/dsh-web-search/blob/e413ebb075a5f1957404fcb90c7354c06226a5ba/package.json) → [patch](https://github.com/CBalaa/dsh-web-search/blob/e413ebb075a5f1957404fcb90c7354c06226a5ba/cordis.patch.yml) · **Identity:** `@balababa/dsh-web-search`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `client-injection` `process-control` `browser` `session-data` `model-tools` `package-install` `web-search` `prepublish-only` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **Openanalyst** · [Chenmo0414/openanalyst@eb2df0d](https://github.com/Chenmo0414/openanalyst/commit/eb2df0d86879797120400b5851fdb91e40e84b90) — Turn DeepSeek Harness into a data analyst: attach CSV/Parquet/JSON, auto-profile, query, and render real charts inside the conversation.
   - **Evidence:** [manifest](https://github.com/Chenmo0414/openanalyst/blob/eb2df0d86879797120400b5851fdb91e40e84b90/packages/dsh/package.json) → [patch](https://github.com/Chenmo0414/openanalyst/blob/eb2df0d86879797120400b5851fdb91e40e84b90/packages/dsh/cordis.patch.yml) · **Identity:** `openanalyst`
@@ -3771,6 +3846,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
   - **Signals:** `external-network` `client-injection` `database` `session-data` `system-prompt` `model-tools` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Mneme** · [modusensus/dsh-mneme@3d48786](https://github.com/modusensus/dsh-mneme/commit/3d487869b976557157ec0a9186da0a6eb4879409) — Cross-session memory plugin for DeepSeek Harness with autoDream consolidation: SQLite store, Markdown mirrors, 7 model tools, automatic injection, session summarization, user profile/rules, custom slash commands, vector (semantic) search, and a Web GUI panel
+  - **Evidence:** [manifest](https://github.com/modusensus/dsh-mneme/blob/3d487869b976557157ec0a9186da0a6eb4879409/dsh-mneme/package.json) → [patch](https://github.com/modusensus/dsh-mneme/blob/3d487869b976557157ec0a9186da0a6eb4879409/dsh-mneme/cordis.patch.yml) · **Identity:** `@modusensus/dsh-mneme`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `client-injection` `database` `session-data` `system-prompt` `model-tools` `package-install` `theme` `nested-bundle` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **Unified Agent Memory** · [Noelune/unified-agent-memory@b6a879c](https://github.com/Noelune/unified-agent-memory/commit/b6a879cc73364f24c08160dda2f53140c82ebec7) — A unified memory layer for retaining and retrieving agent knowledge across work.
   - **Evidence:** [manifest](https://github.com/Noelune/unified-agent-memory/blob/b6a879cc73364f24c08160dda2f53140c82ebec7/package.json) → [patch](https://github.com/Noelune/unified-agent-memory/blob/b6a879cc73364f24c08160dda2f53140c82ebec7/cordis.patch.yml) · **Identity:** `dsh-unified-agent-memory`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
@@ -3833,6 +3913,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
 
 #### Safety & Approvals
 
+- **Codex Approval** · [040822/dsh-codex-approval@8817a40](https://github.com/040822/dsh-codex-approval/commit/8817a4016064ad98f88a73cd1261d423267716a8) — Codex-style approval autopilot for DeepSeek Harness: ordered glob rules (allow/ask/deny) plus an AI risk judge (low/medium/high) mapped through a risk tolerance, as an approval answerer.
+  - **Evidence:** [manifest](https://github.com/040822/dsh-codex-approval/blob/8817a4016064ad98f88a73cd1261d423267716a8/package.json) → [patch](https://github.com/040822/dsh-codex-approval/blob/8817a4016064ad98f88a73cd1261d423267716a8/cordis.patch.yml) · **Identity:** `dsh-codex-approval`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `credentials` `process-control` `model-tools` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **DSH Popper** · [1473382/dsh-popper@d6130c0](https://github.com/1473382/dsh-popper/commit/d6130c052068147af9b9ac87b9f8c3729bb02f5b) — A falsification-driven session loop with claim gates, competing hypotheses, and an append-only evidence ledger.
   - **Evidence:** [manifest](https://github.com/1473382/dsh-popper/blob/d6130c052068147af9b9ac87b9f8c3729bb02f5b/package.json) → [patch](https://github.com/1473382/dsh-popper/blob/d6130c052068147af9b9ac87b9f8c3729bb02f5b/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `unknown` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -3843,6 +3928,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `process-control` `session-data` `model-tools` `financial` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **TAB Watchdog** · [andreagosto/dsh-tab-watchdog@30741e4](https://github.com/andreagosto/dsh-tab-watchdog/commit/30741e4361934e536d90d09e93739bd18d1ec0e8) — Tab Watchdog for DeepSeek Harness Web: when a workspace finishes a work round (green) or needs attention (error, question, approval) the tab title blinks with a badge. Persistent two-half plugin (host + browser).
+  - **Evidence:** [manifest](https://github.com/andreagosto/dsh-tab-watchdog/blob/30741e4361934e536d90d09e93739bd18d1ec0e8/package.json) → [patch](https://github.com/andreagosto/dsh-tab-watchdog/blob/30741e4361934e536d90d09e93739bd18d1ec0e8/cordis.patch.yml) · **Identity:** `dsh-tab-watchdog`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `process-control` `session-data` `theme` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
 - **DSH Multi Folder** · [AngelosZou/dsh-multi-folder@420416b](https://github.com/AngelosZou/dsh-multi-folder/commit/420416bb1e295d7c99dae301ca12cfb01049e37f) — DeepSeek Harness plugin: secondary working directories for a project. The agent keeps the primary workspace as cwd, gains equal write/exec permissions on configured secondary directories under workspace-write mode, and is notified of configuration changes at the next message boundary. Configurable from the session header AND from the session-creation page (before the first message) through a sessionless multiFolder remote API.
   - **Evidence:** [manifest](https://github.com/AngelosZou/dsh-multi-folder/blob/420416bb1e295d7c99dae301ca12cfb01049e37f/package.json) → [patch](https://github.com/AngelosZou/dsh-multi-folder/blob/420416bb1e295d7c99dae301ca12cfb01049e37f/cordis.patch.yml) · **Identity:** `dsh-multi-folder`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
@@ -3852,6 +3942,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/arrow949/dsh-turn-approval/blob/5b4cbfd425885ed3f3ed93c796d5113847cc93b8/package.json) → [patch](https://github.com/arrow949/dsh-turn-approval/blob/5b4cbfd425885ed3f3ed93c796d5113847cc93b8/cordis.patch.yml) · **Identity:** `dsh-turn-approval`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `permission-control` · **Review:** Only a Cordis peer is declared, so DSH compatibility remains unknown.
+
+- **Codex Subscription Oauth Plugin** · [askdkc/dsh-codex@18a2ad3](https://github.com/askdkc/dsh-codex/commit/18a2ad3aa0bfcb94d15dac9fd31d094cfa95d947) — Out-of-tree DSH bundle for ChatGPT Codex OAuth and live models
+  - **Evidence:** [manifest](https://github.com/askdkc/dsh-codex/blob/18a2ad3aa0bfcb94d15dac9fd31d094cfa95d947/package.json) → [patch](https://github.com/askdkc/dsh-codex/blob/18a2ad3aa0bfcb94d15dac9fd31d094cfa95d947/cordis.patch.yml) · **Identity:** `codex-subscription-oauth-plugin`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `process-control` `session-data` `model-tools` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **Huahua DSH Chatroom** · [azure5100/huahua-dsh-chatroom@30bea81](https://github.com/azure5100/huahua-dsh-chatroom/commit/30bea815b5cacf491307f56b4552d886b71effa7) — dsh-chatroom kit plugin: dsh-weave Fix1-Fix4 patch guard + chatroom_* agent tools + /dsh-chatroom host RPC.
   - **Evidence:** [manifest](https://github.com/azure5100/huahua-dsh-chatroom/blob/30bea815b5cacf491307f56b4552d886b71effa7/package.json) → [patch](https://github.com/azure5100/huahua-dsh-chatroom/blob/30bea815b5cacf491307f56b4552d886b71effa7/cordis.patch.yml) · **Identity:** `huahua-dsh-chatroom`
@@ -4943,6 +5038,11 @@ Snapshot: **2026-09-07** · **1621 candidates** · **980 reviewed** · **640 hel
   - **Evidence:** [manifest](https://github.com/songoao25/dsh-plugin-guardian/blob/bb491797ab4a1b78dfbcab87821d6f8f59f24caf/package.json) → [patch](https://github.com/songoao25/dsh-plugin-guardian/blob/bb491797ab4a1b78dfbcab87821d6f8f59f24caf/cordis.patch.yml) · **Identity:** `dsh-plugin-guardian`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `plugin-management` `filesystem-write` `file-delete` `rollback` `configuration-edit` `client-injection` `github-only` · **Review:** The repository provides a fixed GitHub source identity; no plugin removal, residue cleanup, configuration write, rollback, or browser action was executed.
+
+- **Market** · [Strangelight-Merser/dsh-plugin-market@1fab057](https://github.com/Strangelight-Merser/dsh-plugin-market/commit/1fab057041f570042604c2f0f22154e44545507e) — A small, open plugin market for DeepSeek Harness
+  - **Evidence:** [manifest](https://github.com/Strangelight-Merser/dsh-plugin-market/blob/1fab057041f570042604c2f0f22154e44545507e/package.json) → [patch](https://github.com/Strangelight-Merser/dsh-plugin-market/blob/1fab057041f570042604c2f0f22154e44545507e/cordis.patch.yml) · **Identity:** `dsh-plugin-market`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · compatibility unknown
+  - **Signals:** `external-network` `client-injection` `process-control` `package-install` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
 - **DSH Fish Hub** · [stvlynn/dsh.fish@d81793b](https://github.com/stvlynn/dsh.fish/commit/d81793bcf57a8949ae9b24f2c935e01c222e4ce6) — Authenticated dsh.fish search and install tools for Harness artifacts.
   - **Evidence:** [manifest](https://github.com/stvlynn/dsh.fish/blob/d81793bcf57a8949ae9b24f2c935e01c222e4ce6/packages/dsh-plugin-hub/package.json) → [patch](https://github.com/stvlynn/dsh.fish/blob/d81793bcf57a8949ae9b24f2c935e01c222e4ce6/packages/dsh-plugin-hub/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -8207,6 +8307,106 @@ These entries are relevant to DSH but do not receive install recommendations unt
   - **Evidence:** [manifest](https://github.com/ZiFan1117/dsh-atom-market/blob/f8349dccab146ed21f6fc7c19cb74185d508904d/package.json) → [patch](https://github.com/ZiFan1117/dsh-atom-market/blob/f8349dccab146ed21f6fc7c19cb74185d508904d/cordis.patch.yml) · **Identity:** `dsh-atom-market`
   - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · mixed peer ranges
   - **Signals:** `external-network` `package-install` `license-incomplete` · **Review:** Held because repository license evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Opendesigner** · [aa2246740/dsh-opendesigner@6e80483](https://github.com/aa2246740/dsh-opendesigner/commit/6e8048313717f4fecbe6b1df3219dc4e2622a812) — DeepSeek Harness plugin: local-first visual React/Tailwind designer with a jailed tool surface.
+  - **Evidence:** [manifest](https://github.com/aa2246740/dsh-opendesigner/blob/6e8048313717f4fecbe6b1df3219dc4e2622a812/package.json) → [patch](https://github.com/aa2246740/dsh-opendesigner/blob/6e8048313717f4fecbe6b1df3219dc4e2622a812/cordis.patch.yml) · **Identity:** `dsh-opendesigner`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `client-injection` `filesystem-read` `mcp` `session-data` `package-install` `vision` `prepare` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **GIT UI Turnends FIX** · [akkrevsky/botnet@54ed93a](https://github.com/akkrevsky/botnet/commit/54ed93a4e8cc07803400abb3d32cebe1356f7238) — Fix-overlay for dsh-git-ui: guards completedTurnCount against a conversation snapshot whose turnEnds is still undefined on first mount, which crashed the slot entry 'conversation.session.header.utilities' and prevented the Git pill from rendering. Packaged in the style of shaobeichen/dsh-pocket (id-targeted cordis bundle patch + src + patch + README).
+  - **Evidence:** [manifest](https://github.com/akkrevsky/botnet/blob/54ed93a4e8cc07803400abb3d32cebe1356f7238/dsh-git-ui-fix/package.json) → [patch](https://github.com/akkrevsky/botnet/blob/54ed93a4e8cc07803400abb3d32cebe1356f7238/dsh-git-ui-fix/cordis.patch.yml) · **Identity:** `dsh-git-ui-turnends-fix`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `process-control` `session-data` `nested-bundle` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **TUI** · [changguo1998/dsh-toolset@bacc259](https://github.com/changguo1998/dsh-toolset/commit/bacc259ba9bf02c81d9e23c6c87c65fa9eea725d) — DSH (DeepSeek Harness) 进程内集成终端 UI
+  - **Evidence:** [manifest](https://github.com/changguo1998/dsh-toolset/blob/bacc259ba9bf02c81d9e23c6c87c65fa9eea725d/TUI/package.json) → [patch](https://github.com/changguo1998/dsh-toolset/blob/bacc259ba9bf02c81d9e23c6c87c65fa9eea725d/TUI/cordis.patch.yml) · **Identity:** `@dsh-toolset/dsh-tui`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `credentials` `client-injection` `session-data` `model-tools` `theme` `nested-bundle` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **GIT Push** · [EIGHTfs/dsh-git-push@13dd886](https://github.com/EIGHTfs/dsh-git-push/commit/13dd8861b2d183d74b739a2f82692b9145ef9321) — git 自动提交推送 + 代码审计门禁（含硬编码路径/IP）：设置页检测 token/公钥并显示 GitHub 用户；推送后用表格回传远端最近 3 次。内置提交历史查看器（只读，多语言配置文件默认中文 + 手动选择本地仓库）与 AI 回复推送许可（默认关）。
+  - **Evidence:** [manifest](https://github.com/EIGHTfs/dsh-git-push/blob/13dd8861b2d183d74b739a2f82692b9145ef9321/package.json) → [patch](https://github.com/EIGHTfs/dsh-git-push/blob/13dd8861b2d183d74b739a2f82692b9145ef9321/cordis.patch.yml) · **Identity:** `dsh-git-push`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `credentials` `session-data` `system-prompt` `model-tools` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because repository license, package license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Skill Scoreboard** · [EIGHTfs/dsh-skill-scoreboard@73215ef](https://github.com/EIGHTfs/dsh-skill-scoreboard/commit/73215eff5751ed5388f2bfd4e8ab9f865903ef89) — DSH skill 使用记分板：监听 tools/result，按会话去重自动累计 skill 加载次数；设置侧边栏显示记分榜页面；agent/pre-step 注入记分榜与 skill 实际路径供 AI 参考；导入导出记分 JSON，数据目录不存在则创建（v1.5.0）。
+  - **Evidence:** [manifest](https://github.com/EIGHTfs/dsh-skill-scoreboard/blob/73215eff5751ed5388f2bfd4e8ab9f865903ef89/package.json) → [patch](https://github.com/EIGHTfs/dsh-skill-scoreboard/blob/73215eff5751ed5388f2bfd4e8ab9f865903ef89/cordis.patch.yml) · **Identity:** `dsh-skill-scoreboard`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `filesystem-write` `process-control` `session-data` `package-install` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Obelisk Plugin** · [eric8810/obelisk@ee8f3fe](https://github.com/eric8810/obelisk/commit/ee8f3fefe9c96aabf0327984073a5585ed7d3d4a) — Optional DeepSeek Harness provider for its plugin-owned Obelisk agent skill.
+  - **Evidence:** [manifest](https://github.com/eric8810/obelisk/blob/ee8f3fefe9c96aabf0327984073a5585ed7d3d4a/packages/dsh-plugin/package.json) → [patch](https://github.com/eric8810/obelisk/blob/ee8f3fefe9c96aabf0327984073a5585ed7d3d4a/packages/dsh-plugin/obelisk.cordis.yml) · **Identity:** `@obelisk/dsh-obelisk-plugin`
+  - **Licenses:** repo `AGPL-3.0` / package `AGPL-3.0-only` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `external-network` `subprocess` `process-control` `database` `session-data` `model-tools` `package-install` `vision` `financial` `multi-agent` `theme` `nested-bundle` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Market** · [ghost616/dsh_plugin_manager@8d2a722](https://github.com/ghost616/dsh_plugin_manager/commit/8d2a7224446df682d5969de14d5a2956b87eb457) — Single-package distributable dsh bundle: Web Plugins-market UI plus its Host (GitHub search / install pipeline / manifest store / TrustGate) and Control (loader lifecycle + Remote gateway) halves
+  - **Evidence:** [manifest](https://github.com/ghost616/dsh_plugin_manager/blob/8d2a7224446df682d5969de14d5a2956b87eb457/package.json) → [patch](https://github.com/ghost616/dsh_plugin_manager/blob/8d2a7224446df682d5969de14d5a2956b87eb457/cordis.patch.yml) · **Identity:** `dsh-plugin-market`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `prepare` · declares rc.6 peers
+  - **Signals:** `client-injection` `process-control` `package-install` `prepare` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Scifi UI** · [guohengkai687/dsh-plugin-scifi-ui@1046797](https://github.com/guohengkai687/dsh-plugin-scifi-ui/commit/104679740343dd40d4d502ca2cc012ebecd9684c) — Sci-fi theme override and CRT chrome for the DeepSeek Harness web UI (127.0.0.1:3080).
+  - **Evidence:** [manifest](https://github.com/guohengkai687/dsh-plugin-scifi-ui/blob/104679740343dd40d4d502ca2cc012ebecd9684c/package.json) → [patch](https://github.com/guohengkai687/dsh-plugin-scifi-ui/blob/104679740343dd40d4d502ca2cc012ebecd9684c/cordis.patch.yml) · **Identity:** `dsh-plugin-scifi-ui`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `browser` `theme` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **PlugInOne** · [jiangyinluwei/dsh-plugInOne@60fc37c](https://github.com/jiangyinluwei/dsh-plugInOne/commit/60fc37c22b5ff9d36d4129e8dbc944657535b780) — Plugin settings relay for DSH: one 'Plugin settings' nav row that gathers every custom plugin's settings pages (sections, general items, plugin cards) into draggable, JSON-persisted tabs. Does not modify any plugin content.
+  - **Evidence:** [manifest](https://github.com/jiangyinluwei/dsh-plugInOne/blob/60fc37c22b5ff9d36d4129e8dbc944657535b780/package.json) → [patch](https://github.com/jiangyinluwei/dsh-plugInOne/blob/60fc37c22b5ff9d36d4129e8dbc944657535b780/cordis.patch.yml) · **Identity:** `dsh-plugInOne`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `client-injection` `filesystem-write` `process-control` `package-install` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Guardrail** · [jypjypjypjyp/dsh-guardrail@ff3b1f7](https://github.com/jypjypjypjyp/dsh-guardrail/commit/ff3b1f7583ab76a85acc00bbe5069fbbae38cb67) — 工具调用规范守卫：对 agent 工具调用参数做字符串匹配，命中危险行为拦截并注入原因（deny），或放行但注入警告（warn），附规则管理面板
+  - **Evidence:** [manifest](https://github.com/jypjypjypjyp/dsh-guardrail/blob/ff3b1f7583ab76a85acc00bbe5069fbbae38cb67/package.json) → [patch](https://github.com/jypjypjypjyp/dsh-guardrail/blob/ff3b1f7583ab76a85acc00bbe5069fbbae38cb67/cordis.patch.yml) · **Identity:** `dsh-guardrail`
+  - **Licenses:** repo `Unresolved` / package `BSD-3-Clause` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `external-network` `client-injection` `session-data` `model-tools` `vision` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Conversation Fold** · [LUOZIR/dsh-conversat-fold@c9ed3f5](https://github.com/LUOZIR/dsh-conversat-fold/commit/c9ed3f525d7ad12a439db592152b57cd92b156a9) — 折叠对话里助手回复的中间思考与工具调用过程：会话头部一键全局折叠/展开，每条独立过程也可单独折叠。DSH web 客户端插件。
+  - **Evidence:** [manifest](https://github.com/LUOZIR/dsh-conversat-fold/blob/c9ed3f525d7ad12a439db592152b57cd92b156a9/package.json) → [patch](https://github.com/LUOZIR/dsh-conversat-fold/blob/c9ed3f525d7ad12a439db592152b57cd92b156a9/cordis.patch.yml) · **Identity:** `@luozir/dsh-conversation-fold`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `client-injection` `session-data` `package-install` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Prompt Library** · [master1Sun/dsh-prompt-library@1b19f12](https://github.com/master1Sun/dsh-prompt-library/commit/1b19f123a8cdcaa611ff840af9916683ea5ef224) — DSH 提示词库插件：集中管理提示词（增删改查、标签分类、导入导出、AI 优化），聊天快捷收录与调用，附会话监控与文件预览。 DSH Prompt Library plugin: manage prompts (CRUD, tags, import/export, AI polish), quick capture & reuse in chat, plus conversation monitor and preview.
+  - **Evidence:** [manifest](https://github.com/master1Sun/dsh-prompt-library/blob/1b19f123a8cdcaa611ff840af9916683ea5ef224/package.json) → [patch](https://github.com/master1Sun/dsh-prompt-library/blob/1b19f123a8cdcaa611ff840af9916683ea5ef224/cordis.patch.yml) · **Identity:** `@sunjuntao/dsh-prompt-library`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · declares rc.6 peers
+  - **Signals:** `external-network` `client-injection` `process-control` `database` `session-data` `model-tools` `package-install` `vision` `prepublish-only` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **QQ Mode Console** · [NimuStudio/NimuQDock-dsh@38675ef](https://github.com/NimuStudio/NimuQDock-dsh/commit/38675ef43c792312c560e6e427e3fadffce7a763) — NimuQDock-dsh mode console for DeepSeek Harness settings UI (chat / agent)
+  - **Evidence:** [manifest](https://github.com/NimuStudio/NimuQDock-dsh/blob/38675ef43c792312c560e6e427e3fadffce7a763/plugins/qq-mode-console/package.json) → [patch](https://github.com/NimuStudio/NimuQDock-dsh/blob/38675ef43c792312c560e6e427e3fadffce7a763/plugins/qq-mode-console/cordis.patch.yml) · **Identity:** `qq-mode-console`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `client-injection` `process-control` `mcp` `session-data` `package-install` `vision` `nested-bundle` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Omnimux** · [omnimux-ai/omnimux-dsh@fa6bc3f](https://github.com/omnimux-ai/omnimux-dsh/commit/fa6bc3f130c436238d6e605cf5bdd61ae414f021) — OmniMux execution hub for DeepSeek Harness: product chrome, identity, model routes, and video jobs.
+  - **Evidence:** [manifest](https://github.com/omnimux-ai/omnimux-dsh/blob/fa6bc3f130c436238d6e605cf5bdd61ae414f021/plugins/omnimux/package.json) → [patch](https://github.com/omnimux-ai/omnimux-dsh/blob/fa6bc3f130c436238d6e605cf5bdd61ae414f021/plugins/omnimux/cordis.patch.yml) · **Identity:** `omnimux`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `prepare` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `client-injection` `session-data` `model-tools` `package-install` `web-search` `vision` `multi-agent` `nested-bundle` `prepare` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because repository license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **TUI** · [rabi/dsh-tui@3ad2846](https://github.com/rabi/dsh-tui/commit/3ad2846567d290cdfb61c5e95b7557ae9d1ce105) — The dsh terminal-surface bundle: a pi-style interactive TUI over dsh-base (transcript, editor, status line, in-terminal approvals)
+  - **Evidence:** [manifest](https://github.com/rabi/dsh-tui/blob/3ad2846567d290cdfb61c5e95b7557ae9d1ce105/package.json) → [patch](https://github.com/rabi/dsh-tui/blob/3ad2846567d290cdfb61c5e95b7557ae9d1ce105/cordis.patch.yml) · **Identity:** `@rabi/dsh-tui`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `postinstall` · declares rc.6 peers
+  - **Signals:** `credentials` `subprocess` `process-control` `mcp` `session-data` `model-tools` `package-install` `theme` `postinstall` `license-incomplete` · **Review:** Held because repository license evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Enkeep Bundle** · [Tivility/enkeep@b9473a4](https://github.com/Tivility/enkeep/commit/b9473a4062d67740ffef7ac45daebc902a23cb64) — Enkeep runtime bundle orchestrating receipt store, inbound, event relay, tools, external interaction, and affinity policy via cordis.patch.yml
+  - **Evidence:** [manifest](https://github.com/Tivility/enkeep/blob/b9473a4062d67740ffef7ac45daebc902a23cb64/packages/dsh-enkeep-bundle/package.json) → [patch](https://github.com/Tivility/enkeep/blob/b9473a4062d67740ffef7ac45daebc902a23cb64/packages/dsh-enkeep-bundle/cordis.patch.yml) · **Identity:** `@enkeep/dsh-enkeep-bundle`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `credentials` `filesystem-write` `process-control` `mcp` `browser` `database` `session-data` `model-tools` `package-install` `vision` `nested-bundle` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because repository license, package license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Session Delete** · [XXXXXQ-0206/dsh-session-delete@aacc760](https://github.com/XXXXXQ-0206/dsh-session-delete/commit/aacc760231f4123ecd9933f157fff72ce047bcaf) — DSH 会话回收站：侧边栏删除图标、回收站多选还原/彻底删除、活跃会话保护。 · Session trash & permanent delete for DeepSeek Harness.
+  - **Evidence:** [manifest](https://github.com/XXXXXQ-0206/dsh-session-delete/blob/aacc760231f4123ecd9933f157fff72ce047bcaf/package.json) → [patch](https://github.com/XXXXXQ-0206/dsh-session-delete/blob/aacc760231f4123ecd9933f157fff72ce047bcaf/cordis.patch.yml) · **Identity:** `dsh-session-delete`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · compatibility unknown
+  - **Signals:** `external-network` `client-injection` `process-control` `session-data` `theme` `prepublish-only` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Ecommerce Workbench Mock** · [zhangjunjesse/dsh-ecommerce-workbench@31922f4](https://github.com/zhangjunjesse/dsh-ecommerce-workbench/commit/31922f40bd74075a401f4779d8e7ed570444ab9f) — Ecommerce Workbench Mock plugin package for DeepSeek Harness.
+  - **Evidence:** [manifest](https://github.com/zhangjunjesse/dsh-ecommerce-workbench/blob/31922f40bd74075a401f4779d8e7ed570444ab9f/package.json) → [patch](https://github.com/zhangjunjesse/dsh-ecommerce-workbench/blob/31922f40bd74075a401f4779d8e7ed570444ab9f/cordis.patch.yml) · **Identity:** `dsh-ecommerce-workbench-mock`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `credentials` `client-injection` `filesystem-read` `process-control` `session-data` `vision` `theme` `license-incomplete` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because repository license, package license, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Ontology** · [ZiFan1117/bazidiy@c513a20](https://github.com/ZiFan1117/bazidiy/commit/c513a20f0ce61578926accd8c8583a0de3398c07) — BaziDIY: deterministic bazi/wuxing/bead rules as dsh tools, plus bracelet SVG rendering and a bead editor
+  - **Evidence:** [manifest](https://github.com/ZiFan1117/bazidiy/blob/c513a20f0ce61578926accd8c8583a0de3398c07/packages/ontology/package.json) → [patch](https://github.com/ZiFan1117/bazidiy/blob/c513a20f0ce61578926accd8c8583a0de3398c07/packages/ontology/cordis.patch.yml) · **Identity:** `@bazidiy/ontology`
+  - **Licenses:** repo `GPL-3.0` / package `MIT` · lifecycle `none` · declares rc.6 peers
+  - **Signals:** `external-network` `credentials` `client-injection` `session-data` `system-prompt` `model-tools` `nested-bundle` `license-conflict` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because license consistency, npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
+
+- **Work** · [zxheyi/dsh-work@9acaada](https://github.com/zxheyi/dsh-work/commit/9acaadafc02bd0d515cc3936303415fac7e39cd8) — Work plugin package for DeepSeek Harness.
+  - **Evidence:** [manifest](https://github.com/zxheyi/dsh-work/blob/9acaadafc02bd0d515cc3936303415fac7e39cd8/packages/work-bundle/package.json) → [patch](https://github.com/zxheyi/dsh-work/blob/9acaadafc02bd0d515cc3936303415fac7e39cd8/packages/work-bundle/cordis.patch.yml) · **Identity:** `@dsh-work/work`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `external-network` `session-data` `package-install` `nested-bundle` `identity-unresolved` `unresolved-install-identity` · **Review:** Held because npm or Git-source installation identity evidence is incomplete or conflicting; no candidate code was executed.
 
 ### Excluded after review
 
