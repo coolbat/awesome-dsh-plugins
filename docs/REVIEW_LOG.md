@@ -665,3 +665,35 @@ volatile and do not establish trust, compatibility, or installability.
   and 3,254 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-08 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `5fa973997b42d4f0fb81d18a895549d667c8b281`, generated at
+  `2026-09-07T22:04:46.718Z`.
+- Queue: 3,080 structural leads: 1,580 already listed, 17 discovery-held, and
+  1,483 ready for review. Every ready record used a full 40-character commit.
+- Increment: 116 records required new evidence: 73 new keys and 43 keys whose
+  fixed commit changed. The other 1,367 records matched exact key-and-commit
+  history.
+- Decisions for the 116-record increment: 20 catalog-reviewed, 20
+  catalog-held, 24 duplicate or superseded, 20 example/fixture/template,
+  archive, or test-plugin records, 2 non-plugin packages, and 30 source
+  conflicts. No records remain pending.
+- Catalog after review: 1,661 repository-unique records: 1,000 reviewed, 660
+  held, and 1 excluded.
+- Discovery health: the latest incremental run observed 60 repositories and 52
+  bundle manifests with zero query errors and no partial-result watermark. This
+  complete run recovered from the previous partial attempt.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 3,334 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
