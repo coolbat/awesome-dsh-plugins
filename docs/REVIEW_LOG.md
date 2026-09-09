@@ -697,3 +697,37 @@ volatile and do not establish trust, compatibility, or installability.
   and 3,334 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-09 — Daily fixed-source review
+
+- Input: PR #2 candidate head
+  `f7a33ae53d8b5a05051edc95a25c0689a3977b39`, generated at
+  `2026-09-08T21:54:51.677Z`.
+- Queue: 3,152 structural leads: 1,618 already listed, 17 discovery-held, and
+  1,517 ready for review. Every ready record used a full 40-character commit.
+- Increment: 140 records required new evidence: 74 new keys and 66 keys whose
+  fixed commit changed. The other 1,377 records matched exact key-and-commit
+  history.
+- Decisions for the 140-record increment: 20 catalog-reviewed, 28
+  catalog-held, 37 duplicate or superseded, 8 example/fixture/template or test
+  records, 4 non-plugin packages, and 43 source conflicts. No records remain
+  pending.
+- Catalog after review: 1,709 repository-unique records: 1,020 reviewed, 688
+  held, and 1 excluded.
+- Discovery health: the latest incremental attempt observed 60 repositories
+  and 37 bundle manifests but retained a partial-result watermark after one
+  oversized response from `Arnon-hs/open-source`. The last complete success was
+  `2026-09-08T17:17:10.992Z`; valid queue results were retained, but discovery
+  is not claimed to be complete.
+- Evidence boundary: fixed manifests, same-commit patches, repository and
+  package licenses, exact npm version metadata or documented Git installation
+  identity, lifecycle declarations, DSH peer ranges, and capability/risk
+  signals were read statically. No candidate package, hook, plugin, candidate
+  test, installer, binary, browser, server, Python environment, MCP server,
+  native helper, or candidate process was installed or executed.
+- Verification: `npm run check`, completion-mode ledger validation, generated
+  bilingual README checks, `git diff --check`, and
+  `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build` passed; 43 tests
+  and 3,430 static pages completed.
+- Limitation: static review does not prove runtime safety, runtime compatibility,
+  or complete discovery coverage.
