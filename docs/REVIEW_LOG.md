@@ -785,3 +785,58 @@ volatile and do not establish trust, compatibility, or installability.
   pass before squash merge. The main production deployment and public snapshot
   are checked separately after merge.
 - Static review does not establish runtime safety or runtime compatibility.
+
+## 2026-09-12 — Daily review, refreshing the unpublished September 11 PR
+
+- Frozen PR #2 head: `ae6e3add5f051699162a1620ba2a5860f94746fd`;
+  queue generated at `2026-09-11T21:46:00.169Z`.
+- Base main remains `6dee785987fb983e4d585afd95abc155d112e3ab`.
+  Continue PR #28 from `273608f09bb38e5345e4a0d4b868e562444bb2fd` in its
+  clean isolated worktree. The original September 10 draft remains untouched.
+  The prior PR was not merged; its completed fixed-source records are reused
+  only for exact candidate key and commit matches.
+- Queue: 3,508 leads = 1,665 already listed + 1,825 ready + 18 discovery-held.
+  Every ready candidate has a unique key and a complete 40-character commit.
+- Daily increment: 229 records across 105 repositories, comprising 121 new
+  keys and 108 changed commits. Reuse 1,596 exact historical dispositions.
+  Relative to main, 550 current candidates differ; earlier and daily source
+  reports retain separate provenance rather than treating them as one batch.
+- Daily outcomes: 13 catalog-reviewed, 48 catalog-held, 1 catalog-excluded,
+  97 duplicate/superseded, 9 example/fixture/archive, 2 non-plugin packages,
+  58 source conflicts and 1 structural rejection; 0 unavailable and 0 pending.
+- Full ledger: 1,825 records = 41 catalog-reviewed + 110 catalog-held + 1
+  catalog-excluded + 654 duplicate/superseded + 197 example/fixture/archive +
+  140 non-plugin + 630 source-conflict + 51 historical unavailable + 1
+  structural-rejected. Catalog: 1,866 = 1,063 reviewed + 801 held + 2 excluded.
+  All previous 1,804 catalog snapshots remain unchanged.
+- Evidence: all 229 fixed manifests and same-commit patches returned HTTP 200;
+  exact npm metadata returned 109 HTTP 200 and 120 HTTP 404 responses.
+  Repository/package licenses, distribution identities, DSH declarations,
+  lifecycle scripts and capability signals were checked separately. See
+  [the September 12 evidence report](../reports/review/2026-09-12.json).
+- Manual corrections: the DeepDeck build smoke fixture is not a product
+  plugin; select its private Bun Builder as a held desktop-coupled record.
+  The VAE canary scaffold is an example. Balance Chart intentionally provides
+  an empty patch and requires external profile edits, so it is structurally
+  rejected. Pasumao Workbench is excluded following the author's September 11
+  discontinuation and removal recommendation, not a claim that old releases
+  cannot run. Brave's source SPDX and README establish GPL-3.0-or-later despite
+  the generic GPL-3.0 license detector output.
+- Unresolved installation/build artifacts, repository licenses, wildcard-only
+  compatibility claims and desktop-native distribution remain held. QQ's open
+  access defaults, session-wide shell consent, OAuth publishing/message scopes,
+  native process control, context replacement and dynamic strategy code are
+  capability warnings; none was enabled or executed.
+- Discovery: the latest bounded incremental run succeeded with 60 repositories,
+  51 bundle manifests and 0 query errors. Attempt and success watermarks are
+  both `2026-09-11T21:46:00.169Z`; this is not exhaustive internet coverage.
+- Publication requires fresh local checks and production build, exact head
+  identity, GitHub quality and Cloudflare preview SUCCESS before squash merge;
+  production deployment and live snapshot acceptance are separate gates.
+- Local gates passed: `npm run check` (43 tests), complete-ledger validation
+  (1,825 records, 0 pending), `git diff --check`, and the production-origin
+  build (3,744 static pages). README generation and type checks passed.
+- No candidate package, hook, plugin, test, installer, binary, browser, server,
+  Python environment, MCP server, native helper or candidate subprocess ran.
+  Source sampling is bounded and records truncation. Static review is not
+  proof of runtime safety, runtime compatibility or tarball byte equivalence.
