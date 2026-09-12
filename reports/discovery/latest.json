@@ -1,13 +1,25 @@
 {
   "schemaVersion": 1,
-  "mode": null,
-  "observedAt": null,
-  "partial": false,
-  "queries": [],
+  "mode": "incremental",
+  "observedAt": "2026-09-12T21:28:55.930Z",
+  "partial": true,
+  "queries": [
+    "topic:dsh-plugin pushed:>=2026-09-10",
+    "topic:dsh-external pushed:>=2026-09-10",
+    "\"DeepSeek Harness\" plugin in:name,description,readme pushed:>=2026-09-10",
+    "\"dsh.bundle.patch\" in:readme pushed:>=2026-09-10",
+    "deepseek-harness in:name,description,readme pushed:>=2026-09-10"
+  ],
   "summary": {
-    "repositoriesObserved": 0,
-    "bundleManifestsFound": 0,
-    "errors": 0
+    "repositoriesObserved": 60,
+    "bundleManifestsFound": 37,
+    "errors": 1
   },
-  "errors": []
+  "errors": [
+    {
+      "query": null,
+      "repository": "99apps-id/termigo",
+      "message": "GithubRequestError: GitHub response exceeded 5000000 bytes."
+    }
+  ]
 }
