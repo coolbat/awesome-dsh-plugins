@@ -731,3 +731,112 @@ volatile and do not establish trust, compatibility, or installability.
   and 3,430 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-11 — Daily fixed-source review, including unpublished September 10 leads
+
+- Input: PR #2 head `4989a5dae0a28a2109f489a0a26236b2494ad54f`, generated
+  at `2026-09-10T21:40:59.689Z`, against main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`.
+- Workspace isolation: the unfinished September 10 draft was preserved without
+  modification. This wave uses a separate worktree based on current origin/main;
+  no unvalidated draft decision was reused as completed history.
+- Queue: 3,387 leads = 1,665 already listed + 1,704 ready + 18 discovery-held.
+  All ready records have full 40-character source commits and unique keys.
+- Increment: 372 records across 165 repositories required evidence: 234 new
+  keys and 138 changed source commits. The other 1,332 dispositions match exact
+  historical key-and-commit identities.
+- Increment decisions: 30 catalog-reviewed, 65 catalog-held, 135 duplicate or
+  superseded, 35 example/fixture/archive, 19 non-plugin packages, and 88 source
+  conflicts. No increment records are unavailable or structurally rejected.
+- Complete ledger: 1,704 records = 30 catalog-reviewed + 65 catalog-held + 615
+  duplicate/superseded + 195 fixture/example/archive + 138 non-plugin + 610
+  source-conflict + 51 historical unavailable; 0 pending.
+- Catalog: 1,804 repository-unique historical snapshots = 1,050 reviewed + 753
+  held + 1 excluded. Existing catalog source commits and decisions are retained.
+- Evidence: every increment manifest and its referenced fixed-commit patch
+  returned HTTP 200. Repository/package licenses, exact-version npm metadata,
+  documented Git distribution, lifecycle declarations, DSH peers/engines or
+  versioned compatibility claims and capability signals were checked. The
+  per-record evidence index is [the September 11 report](../reports/review/2026-09-11.json).
+  Entry-point source sampling is bounded and explicitly records truncation;
+  it is not a whole-code security audit or tarball byte-integrity verification.
+- Notable holds: explicit Git-install limitations in Model Advisor and the
+  Obsidian monorepo bridge; floating release identity for XingTu skills;
+  wildcard/workspace compatibility declarations; undeclared TUI composition
+  packages; a prerelease engine-range mismatch in File Explorer Kit; and
+  unestablished artwork/lyric rights in the email and VAE theme packages.
+  The `Minglink/dsh-infinite-gen-4` manifest's `dsh.repo` points to gen-3 and is
+  therefore a source conflict rather than a new catalog entry.
+- Risk disclosure: loopback authentication bypass, permission-preset replacement,
+  robot motion, browser/daemon control, Python/MCP processes, configuration
+  exports and filesystem rollback remain visible capabilities, not safety claims.
+- Discovery remains partial: the last attempt observed 60 repositories and 61
+  bundle manifests with one oversized response from `Arnon-hs/open-source`.
+  Last complete success: `2026-09-10T17:01:42.952Z`. Valid queue results were
+  retained; no complete discovery coverage is claimed.
+- Execution boundary: no candidate package, hook, plugin, test, installer,
+  binary, browser, server, Python environment, MCP server, native helper or
+  candidate subprocess was installed or executed.
+- Local verification passed: `npm run check` (43 tests), complete-ledger
+  validation (1,704 records, 0 pending), generated bilingual README verification,
+  `git diff --check`, and `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+  (3,620 static pages).
+- Publication gates: exact PR heads, GitHub quality and Cloudflare preview must
+  pass before squash merge. The main production deployment and public snapshot
+  are checked separately after merge.
+- Static review does not establish runtime safety or runtime compatibility.
+
+## 2026-09-12 — Daily review, refreshing the unpublished September 11 PR
+
+- Frozen PR #2 head: `ae6e3add5f051699162a1620ba2a5860f94746fd`;
+  queue generated at `2026-09-11T21:46:00.169Z`.
+- Base main remains `6dee785987fb983e4d585afd95abc155d112e3ab`.
+  Continue PR #28 from `273608f09bb38e5345e4a0d4b868e562444bb2fd` in its
+  clean isolated worktree. The original September 10 draft remains untouched.
+  The prior PR was not merged; its completed fixed-source records are reused
+  only for exact candidate key and commit matches.
+- Queue: 3,508 leads = 1,665 already listed + 1,825 ready + 18 discovery-held.
+  Every ready candidate has a unique key and a complete 40-character commit.
+- Daily increment: 229 records across 105 repositories, comprising 121 new
+  keys and 108 changed commits. Reuse 1,596 exact historical dispositions.
+  Relative to main, 550 current candidates differ; earlier and daily source
+  reports retain separate provenance rather than treating them as one batch.
+- Daily outcomes: 13 catalog-reviewed, 48 catalog-held, 1 catalog-excluded,
+  97 duplicate/superseded, 9 example/fixture/archive, 2 non-plugin packages,
+  58 source conflicts and 1 structural rejection; 0 unavailable and 0 pending.
+- Full ledger: 1,825 records = 41 catalog-reviewed + 110 catalog-held + 1
+  catalog-excluded + 654 duplicate/superseded + 197 example/fixture/archive +
+  140 non-plugin + 630 source-conflict + 51 historical unavailable + 1
+  structural-rejected. Catalog: 1,866 = 1,063 reviewed + 801 held + 2 excluded.
+  All previous 1,804 catalog snapshots remain unchanged.
+- Evidence: all 229 fixed manifests and same-commit patches returned HTTP 200;
+  exact npm metadata returned 109 HTTP 200 and 120 HTTP 404 responses.
+  Repository/package licenses, distribution identities, DSH declarations,
+  lifecycle scripts and capability signals were checked separately. See
+  [the September 12 evidence report](../reports/review/2026-09-12.json).
+- Manual corrections: the DeepDeck build smoke fixture is not a product
+  plugin; select its private Bun Builder as a held desktop-coupled record.
+  The VAE canary scaffold is an example. Balance Chart intentionally provides
+  an empty patch and requires external profile edits, so it is structurally
+  rejected. Pasumao Workbench is excluded following the author's September 11
+  discontinuation and removal recommendation, not a claim that old releases
+  cannot run. Brave's source SPDX and README establish GPL-3.0-or-later despite
+  the generic GPL-3.0 license detector output.
+- Unresolved installation/build artifacts, repository licenses, wildcard-only
+  compatibility claims and desktop-native distribution remain held. QQ's open
+  access defaults, session-wide shell consent, OAuth publishing/message scopes,
+  native process control, context replacement and dynamic strategy code are
+  capability warnings; none was enabled or executed.
+- Discovery: the latest bounded incremental run succeeded with 60 repositories,
+  51 bundle manifests and 0 query errors. Attempt and success watermarks are
+  both `2026-09-11T21:46:00.169Z`; this is not exhaustive internet coverage.
+- Publication requires fresh local checks and production build, exact head
+  identity, GitHub quality and Cloudflare preview SUCCESS before squash merge;
+  production deployment and live snapshot acceptance are separate gates.
+- Local gates passed: `npm run check` (43 tests), complete-ledger validation
+  (1,825 records, 0 pending), `git diff --check`, and the production-origin
+  build (3,744 static pages). README generation and type checks passed.
+- No candidate package, hook, plugin, test, installer, binary, browser, server,
+  Python environment, MCP server, native helper or candidate subprocess ran.
+  Source sampling is bounded and records truncation. Static review is not
+  proof of runtime safety, runtime compatibility or tarball byte equivalence.
