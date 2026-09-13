@@ -840,3 +840,54 @@ volatile and do not establish trust, compatibility, or installability.
   Python environment, MCP server, native helper or candidate subprocess ran.
   Source sampling is bounded and records truncation. Static review is not
   proof of runtime safety, runtime compatibility or tarball byte equivalence.
+
+## 2026-09-13 — Daily review, updating the unpublished September 11–12 PR
+
+- Frozen PR #2 head: `b59a6356d5b74ff63a3faa354cc6caf21e3da81b`;
+  queue generated at `2026-09-12T21:28:55.930Z`.
+- Main remains `6dee785987fb983e4d585afd95abc155d112e3ab`. Update PR #28
+  from its validated `e7715e6c1adde307004955e123545008e36a7cbc` head in the
+  isolated worktree. The original September 10 draft is preserved untouched.
+- Queue: 3,598 = 1,665 already listed + 1,915 ready + 18 discovery-held.
+  Ready keys are unique and all commits are full 40-character identities.
+- Daily increment: 175 records across 100 repositories, comprising 90 new
+  keys and 85 changed commits. Reuse 1,740 exact key/commit dispositions.
+- Daily outcomes: 15 catalog-reviewed, 42 catalog-held, 1 catalog-excluded,
+  43 duplicate/superseded, 12 example/fixture/archive, 7 non-plugin and 55
+  source-conflict; no new unavailable/structural-rejected and 0 pending.
+- Full ledger: 1,915 = 56 catalog-reviewed + 147 catalog-held + 2
+  catalog-excluded + 674 duplicate/superseded + 198 example/fixture/archive +
+  143 non-plugin + 643 source-conflict + 51 historical unavailable + 1
+  historical structural-rejected. Catalog: 1,924 = 1,078 reviewed + 843 held
+  + 3 excluded. All 1,866 previous catalog snapshots remain unchanged.
+- All 175 fixed manifests and same-commit patches returned HTTP 200. License,
+  installation identity, DSH compatibility, lifecycle hooks and capability
+  evidence are recorded separately in
+  [the September 13 report](../reports/review/2026-09-13.json).
+- The private CodeBuddy indicator patch names its parent package, whose exact
+  npm source commit conflicts with discovery; the child cannot bypass that
+  conflict. DSH File Edit is excluded following the author's explicit
+  discontinuation/migration statement, not a claim that old code cannot run.
+- Explicit README host versions supplement missing peer declarations for IM
+  Companion, Session Manager, Usage Monitor, Step Clock and Clipboard Menu.
+  IM Companion and Goal lack npm gitHead, so source/tarball byte equivalence
+  is not established. Build-only packages were inspected at original source
+  entrypoints where available; no build hook from a candidate was executed.
+- Held records retain unresolved licenses, standalone installation/build
+  evidence, versioned compatibility or asset/corpus licensing scope. Warnings
+  include session deletion, file restoration, autonomous follow-ups, external
+  credentials, real billed probes, sandbox overrides and native process use.
+- Discovery run 34720061036 was partial: 60 repositories, 37 bundle manifests,
+  1 error (`99apps-id/termigo`, GitHub response exceeded 5,000,000 bytes).
+  Valid results were retained. The last-success watermark remains
+  `2026-09-12T16:21:54.179Z`; do not claim exhaustive discovery.
+- Required release gates: `npm run check`, complete-ledger validation,
+  `git diff --check`, production-origin build, exact PR head identity and
+  explicit GitHub quality/Cloudflare preview SUCCESS. Squash merge and the
+  matching main production deployment require independent verification.
+- Local validation passed: 43 tests, complete ledger with 1,915 records and
+  0 pending, generated bilingual README checks, type/format checks and a
+  production-origin build containing 3,860 static pages.
+- No candidate package, hook, plugin, test, installer, binary, browser, server,
+  Python environment, MCP server, native helper or candidate subprocess ran.
+  Static review does not prove runtime safety or runtime compatibility.
