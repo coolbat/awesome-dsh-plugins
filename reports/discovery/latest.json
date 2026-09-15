@@ -1,13 +1,25 @@
 {
   "schemaVersion": 1,
-  "mode": null,
-  "observedAt": null,
-  "partial": false,
-  "queries": [],
+  "mode": "incremental",
+  "observedAt": "2026-09-15T22:18:16.530Z",
+  "partial": true,
+  "queries": [
+    "topic:dsh-plugin pushed:>=2026-09-13",
+    "topic:dsh-external pushed:>=2026-09-13",
+    "\"DeepSeek Harness\" plugin in:name,description,readme pushed:>=2026-09-13",
+    "\"dsh.bundle.patch\" in:readme pushed:>=2026-09-13",
+    "deepseek-harness in:name,description,readme pushed:>=2026-09-13"
+  ],
   "summary": {
-    "repositoriesObserved": 0,
-    "bundleManifestsFound": 0,
-    "errors": 0
+    "repositoriesObserved": 60,
+    "bundleManifestsFound": 51,
+    "errors": 1
   },
-  "errors": []
+  "errors": [
+    {
+      "query": null,
+      "repository": "hkjeon13/riley",
+      "message": "GithubRequestError: GitHub response exceeded 5000000 bytes."
+    }
+  ]
 }
