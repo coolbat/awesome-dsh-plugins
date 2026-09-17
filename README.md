@@ -78,7 +78,7 @@ The query set and request budgets live in
 ## Catalog
 
 <!-- CATALOG:START -->
-Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 held** · **3 excluded**
+Snapshot: **2026-09-17** · **2083 candidates** · **1130 reviewed** · **949 held** · **4 excluded**
 
 ### Reviewed native bundles
 
@@ -158,6 +158,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/alpacachen/dsh-kanban/blob/9f6de7dfa1e7f40e28f84f994da40a115ad16115/package.json) → [patch](https://github.com/alpacachen/dsh-kanban/blob/9f6de7dfa1e7f40e28f84f994da40a115ad16115/cordis.patch.yml) · **Identity:** `@alpacachen/dsh-kanban`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `client-injection` `process-control` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Element Picker** · [Animal2404/dsh-element-picker@fdef6e6](https://github.com/Animal2404/dsh-element-picker/commit/fdef6e6343fad7424451a662844c16995c80644a) — Pick interface elements into chat
+  - **Evidence:** [manifest](https://github.com/Animal2404/dsh-element-picker/blob/fdef6e6343fad7424451a662844c16995c80644a/package.json) → [patch](https://github.com/Animal2404/dsh-element-picker/blob/fdef6e6343fad7424451a662844c16995c80644a/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-element-picker`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `session-data` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.2. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Plugin Desktop** · [anywhere-labs/deepseek-harness-desktop@6074088](https://github.com/anywhere-labs/deepseek-harness-desktop/commit/6074088f5b660206e404b3591fab51fb99c69add) — An Electron desktop shell composed as a DSH Cordis plugin with terminal, profile, diagnostics, package, and update surfaces.
   - **Evidence:** [manifest](https://github.com/anywhere-labs/deepseek-harness-desktop/blob/6074088f5b660206e404b3591fab51fb99c69add/dsh-plugin-desktop/package.json) → [patch](https://github.com/anywhere-labs/deepseek-harness-desktop/blob/6074088f5b660206e404b3591fab51fb99c69add/dsh-plugin-desktop/cordis.patch.yml) · **Identity:** `dsh-plugin-desktop`
@@ -483,6 +488,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/kevenliu3/dhs-plugins/blob/8dd9e1292ee387b05534513d9d0e47812117f17a/dsh-workspace-session-monitor/package.json) → [patch](https://github.com/kevenliu3/dhs-plugins/blob/8dd9e1292ee387b05534513d9d0e47812117f17a/dsh-workspace-session-monitor/cordis.patch.yml) · **Identity:** `@kevenliu3/dsh-workspace-session-monitor`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `client-injection` `process-control` `session-data` `nested-bundle` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Session Cost** · [KIDLi1412/dsh-session-cost@8cb8fec](https://github.com/KIDLi1412/dsh-session-cost/commit/8cb8fecc3bf570572715437579562b86f3ca67db) — Session cost and account-balance display
+  - **Evidence:** [manifest](https://github.com/KIDLi1412/dsh-session-cost/blob/8cb8fecc3bf570572715437579562b86f3ca67db/package.json) → [patch](https://github.com/KIDLi1412/dsh-session-cost/blob/8cb8fecc3bf570572715437579562b86f3ca67db/cordis.patch.yml) · **Identity:** `@kidli1412/dsh-session-cost`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `financial` `credentials` `external-network` `session-data` `prepublish-only` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.5-rc.1. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH WhaleGirl** · [KLnormal/dsh_whalegirl@6cf1b30](https://github.com/KLnormal/dsh_whalegirl/commit/6cf1b30e151e7a3c5f849860acf0a5c010b47fbf) — A desktop-native animated companion driven by DSH session events.
   - **Evidence:** [manifest](https://github.com/KLnormal/dsh_whalegirl/blob/6cf1b30e151e7a3c5f849860acf0a5c010b47fbf/package.json) → [patch](https://github.com/KLnormal/dsh_whalegirl/blob/6cf1b30e151e7a3c5f849860acf0a5c010b47fbf/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -869,6 +879,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · compatibility unknown
   - **Signals:** `desktop-pet` `bundled-media` `client-injection` `browser-storage` `prepack-build` `github-only` · **Review:** The unpublished package documents a fixed GitHub source install and describes its bundled pet artwork as original; no build, media load, browser state, or animation was executed.
 
+- **Model Search** · [tofu-zyc/dsh-plugin-tofu-box@e48a580](https://github.com/tofu-zyc/dsh-plugin-tofu-box/commit/e48a58074418f4b96e13ad87435f71a7a5e6d3b9) — Searchable model menu in a plugin suite
+  - **Evidence:** [manifest](https://github.com/tofu-zyc/dsh-plugin-tofu-box/blob/e48a58074418f4b96e13ad87435f71a7a5e6d3b9/dsh-plugin-model-search/package.json) → [patch](https://github.com/tofu-zyc/dsh-plugin-tofu-box/blob/e48a58074418f4b96e13ad87435f71a7a5e6d3b9/dsh-plugin-model-search/cordis.patch.yml) · **Identity:** `dsh-plugin-model-search`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `nested-bundle` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: model-selection 0.1.0-rc.6; host 0.1.5-rc. Only the selected model-search subpackage is represented, not every plugin in this suite. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **TUI** · [tomowang/dsh-tui@d83d531](https://github.com/tomowang/dsh-tui/commit/d83d5319397fe332735166728d40037c584ee4ae) — Terminal front door for DeepSeek Harness (dsh): an out-of-tree TUI mode bundle over dsh-base
   - **Evidence:** [manifest](https://github.com/tomowang/dsh-tui/blob/d83d5319397fe332735166728d40037c584ee4ae/package.json) → [patch](https://github.com/tomowang/dsh-tui/blob/d83d5319397fe332735166728d40037c584ee4ae/cordis.patch.yml) · **Identity:** `@tomowang/dsh-tui`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · declares rc.6 peers
@@ -1004,6 +1019,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `external-network` `client-injection` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Awesome HUD** · [Ycet/dsh-awesome-hud@dc4659d](https://github.com/Ycet/dsh-awesome-hud/commit/dc4659d9878047479bb135ca9af7ab588d0a5db6) — Session HUD and workspace notes
+  - **Evidence:** [manifest](https://github.com/Ycet/dsh-awesome-hud/blob/dc4659d9878047479bb135ca9af7ab588d0a5db6/package.json) → [patch](https://github.com/Ycet/dsh-awesome-hud/blob/dc4659d9878047479bb135ca9af7ab588d0a5db6/cordis.patch.yml) · **Identity:** `dsh-awesome-hud`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `session-data` `credentials` `subprocess` `filesystem-write` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.1-rc.2; other lines not verified. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Usage Stats** · [Ychris12138/dsh-usage-stats@8f33be3](https://github.com/Ychris12138/dsh-usage-stats/commit/8f33be3fe9a2d5fd7266624940faf55fefc9a8eb) — Token usage heatmap, provider balances, and subscription quotas for the dsh web GUI
   - **Evidence:** [manifest](https://github.com/Ychris12138/dsh-usage-stats/blob/8f33be3fe9a2d5fd7266624940faf55fefc9a8eb/package.json) → [patch](https://github.com/Ychris12138/dsh-usage-stats/blob/8f33be3fe9a2d5fd7266624940faf55fefc9a8eb/cordis.patch.yml) · **Identity:** `dsh-usage-stats`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -1028,6 +1048,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/yzke/dsh-icon-theme/blob/2e341d850745ba29ae688de0eb882ecbabd17888/package.json) → [patch](https://github.com/yzke/dsh-icon-theme/blob/2e341d850745ba29ae688de0eb882ecbabd17888/cordis.patch.yml) · **Identity:** `dsh-icon-theme`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · compatibility unknown
   - **Signals:** `icon-theme` `settings-write` `filesystem-read` `client-injection` `prepare-build` · **Review:** The fixed source and matching public package identity were reviewed statically; no candidate code, install hook, network call, filesystem change, or UI behavior was executed.
+
+- **Sidebar Frog** · [zengqingsong/dsh-sidebar-frog@18d4e72](https://github.com/zengqingsong/dsh-sidebar-frog/commit/18d4e72c04bec304881e5e28f7e7f1104920a812) — Pop-out artifact sidebar
+  - **Evidence:** [manifest](https://github.com/zengqingsong/dsh-sidebar-frog/blob/18d4e72c04bec304881e5e28f7e7f1104920a812/package.json) → [patch](https://github.com/zengqingsong/dsh-sidebar-frog/blob/18d4e72c04bec304881e5e28f7e7f1104920a812/cordis.patch.yml) · **Identity:** `dsh-sidebar-frog`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `filesystem-read` `filesystem-write` `dynamic-code` `third-party-notices` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.2 web profile. Wrapper dynamically evaluates its host module and bundles PDF.js with third-party notices; large source sampling is truncated. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Context Panel** · [zhangxiang1993621/dsh-context-panel@aa2c80c](https://github.com/zhangxiang1993621/dsh-context-panel/commit/aa2c80c02a02af9ace46e22adb504ace45bdca8b) — Displays skills, rules, and files used by the active conversation inside a layout pane.
   - **Evidence:** [manifest](https://github.com/zhangxiang1993621/dsh-context-panel/blob/aa2c80c02a02af9ace46e22adb504ace45bdca8b/package.json) → [patch](https://github.com/zhangxiang1993621/dsh-context-panel/blob/aa2c80c02a02af9ace46e22adb504ace45bdca8b/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -1095,6 +1120,16 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/BiBoyang/dsh-eval-harness/blob/035d1c6e1ebf918bbb7bc2a83fd3173af15ea693/package.json) → [patch](https://github.com/BiBoyang/dsh-eval-harness/blob/035d1c6e1ebf918bbb7bc2a83fd3173af15ea693/cordis.patch.yml) · **Identity:** `dsh-eval-harness`
   - **Licenses:** repo `unknown` / package `MIT` · lifecycle `prepack` · compatibility unknown
   - **Signals:** `headless` `evaluation` · **Review:** A README owner spelling defect was observed; only a broad Cordis peer is declared.
+
+- **APP Manager** · [BlankDevil/dsh-app-manager@8db1c9f](https://github.com/BlankDevil/dsh-app-manager/commit/8db1c9f188518566834bcb3cd687554be4147a5c) — Command-line application manager
+  - **Evidence:** [manifest](https://github.com/BlankDevil/dsh-app-manager/blob/8db1c9f188518566834bcb3cd687554be4147a5c/package.json) → [patch](https://github.com/BlankDevil/dsh-app-manager/blob/8db1c9f188518566834bcb3cd687554be4147a5c/patch.yml) · **Identity:** `dsh-app-manager`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `subprocess` `package-install` `filesystem-write` `prepublish-only` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.5-rc.2. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Developer** · [builtin-pb/dsh-developer@5d2e493](https://github.com/builtin-pb/dsh-developer/commit/5d2e4937e6733dfdcf2f4c5e24fa39722611d6f6) — Development tools and delegation workflow
+  - **Evidence:** [manifest](https://github.com/builtin-pb/dsh-developer/blob/5d2e4937e6733dfdcf2f4c5e24fa39722611d6f6/package.json) → [patch](https://github.com/builtin-pb/dsh-developer/blob/5d2e4937e6733dfdcf2f4c5e24fa39722611d6f6/cordis.patch.yml) · **Identity:** `dsh-developer`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `model-tools` `filesystem-write` `subprocess` `multi-agent` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.2 on macOS/Linux; prior 0.1.1-rc.2. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Zh Kit** · [CatmaoU/dsh-zh-kit@2d00abe](https://github.com/CatmaoU/dsh-zh-kit/commit/2d00abeb62bb0306de1638a8de574f731fc88e71) — DeepSeek Harness 中文工具包：模型中文优先（推理/回答）+ 轨迹视图中文化与「人话」解释（融合 deepseek-harness-zh-cn 与 dsh-trajectory-zh）
   - **Evidence:** [manifest](https://github.com/CatmaoU/dsh-zh-kit/blob/2d00abeb62bb0306de1638a8de574f731fc88e71/package.json) → [patch](https://github.com/CatmaoU/dsh-zh-kit/blob/2d00abeb62bb0306de1638a8de574f731fc88e71/cordis.patch.yml) · **Identity:** `dsh-zh-kit`
@@ -1181,6 +1216,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `command-line` `ssh` `subprocess` `service-management` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
 
+- **IDE GIT** · [KannaKuron/dsh-ide-git@85cbeed](https://github.com/KannaKuron/dsh-ide-git/commit/85cbeed68b11298edce7881cda45f1a2d900302f) — IDE-style Git workbench
+  - **Evidence:** [manifest](https://github.com/KannaKuron/dsh-ide-git/blob/85cbeed68b11298edce7881cda45f1a2d900302f/package.json) → [patch](https://github.com/KannaKuron/dsh-ide-git/blob/85cbeed68b11298edce7881cda45f1a2d900302f/cordis.patch.yml) · **Identity:** `dsh-ide-git`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `subprocess` `filesystem-read` `filesystem-write` `client-injection` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.2-0. engines.dsh supplies the host declaration; the sidebar peer alone would not. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Context Lens** · [KinomotoMio/dsh-context-lens@e00745a](https://github.com/KinomotoMio/dsh-context-lens/commit/e00745ab36bcb08f2e6ef944a020f39ff5562dc8) — Shows the model context contributed by DSH plugins through host and client inspection surfaces.
   - **Evidence:** [manifest](https://github.com/KinomotoMio/dsh-context-lens/blob/e00745ab36bcb08f2e6ef944a020f39ff5562dc8/package.json) → [patch](https://github.com/KinomotoMio/dsh-context-lens/blob/e00745ab36bcb08f2e6ef944a020f39ff5562dc8/cordis.patch.yml) · **Identity:** `@kinomotomio/dsh-context-lens`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
@@ -1190,6 +1230,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/kxSenlin/dsh-selection-highlight/blob/6ece4332c71d73778dec9659467588d878470829/package.json) → [patch](https://github.com/kxSenlin/dsh-selection-highlight/blob/6ece4332c71d73778dec9659467588d878470829/cordis.patch.yml) · **Identity:** `dsh-selection-highlight`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `client-injection` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **GIT Worktree** · [LaoYueHanNi/dsh-git-worktree@1913176](https://github.com/LaoYueHanNi/dsh-git-worktree/commit/1913176bc8c304bffcd7d2fcd617ddcac3b6c04d) — Git worktree isolation for sessions
+  - **Evidence:** [manifest](https://github.com/LaoYueHanNi/dsh-git-worktree/blob/1913176bc8c304bffcd7d2fcd617ddcac3b6c04d/package.json) → [patch](https://github.com/LaoYueHanNi/dsh-git-worktree/blob/1913176bc8c304bffcd7d2fcd617ddcac3b6c04d/cordis.patch.yml) · **Identity:** `@laoyuehanni/dsh-git-worktree`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `subprocess` `filesystem-write` `session-data` `prepublish-only` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.2-rc.1. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **Think ZH** · [Len7183/DSH-Think-zh@06a27f6](https://github.com/Len7183/DSH-Think-zh/commit/06a27f64218e7c9367d502fe0f7b90cb8e17ed7a) — 强制 DeepSeek Harness 的回答与思考使用简体中文
   - **Evidence:** [manifest](https://github.com/Len7183/DSH-Think-zh/blob/06a27f64218e7c9367d502fe0f7b90cb8e17ed7a/package.json) → [patch](https://github.com/Len7183/DSH-Think-zh/blob/06a27f64218e7c9367d502fe0f7b90cb8e17ed7a/cordis.patch.yml) · **Identity:** `dsh-think-zh`
@@ -1215,6 +1260,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/LvDAO/dsh-exec-extension/blob/1a7c4e1e91740047f4aa501453f08e4e5fee1cfa/package.json) → [patch](https://github.com/LvDAO/dsh-exec-extension/blob/1a7c4e1e91740047f4aa501453f08e4e5fee1cfa/cordis.patch.yml) · **Identity:** `dsh-exec-extension`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · mixed peer ranges
   - **Signals:** `filesystem` `external-network` `credentials` `client-injection` `mcp` `native-helper` `prepare` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Rescue Bootloader** · [Mauit06/dsh-rescue-bootloader@a19b6a9](https://github.com/Mauit06/dsh-rescue-bootloader/commit/a19b6a94b80cdb6ee45c5d4c2ea53f4051d69cb3) — Crash recovery and safe-mode bootloader
+  - **Evidence:** [manifest](https://github.com/Mauit06/dsh-rescue-bootloader/blob/a19b6a94b80cdb6ee45c5d4c2ea53f4051d69cb3/package.json) → [patch](https://github.com/Mauit06/dsh-rescue-bootloader/blob/a19b6a94b80cdb6ee45c5d4c2ea53f4051d69cb3/cordis.patch.yml) · **Identity:** `dsh-rescue-bootloader`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `subprocess` `process-control` `filesystem-write` `native-helper` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.1. Python rescue server and installer were read only; they can rewrite launcher/profile state and control processes. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Bash Terminal** · [MAXeaglet/dsh-bash-terminal@6894913](https://github.com/MAXeaglet/dsh-bash-terminal/commit/6894913d71098f2ea24120d3a1afd5771f9ccd4a) — A Windows shell tool that routes commands through PowerShell, Git Bash, or WSL with a configurable default.
   - **Evidence:** [manifest](https://github.com/MAXeaglet/dsh-bash-terminal/blob/6894913d71098f2ea24120d3a1afd5771f9ccd4a/package.json) → [patch](https://github.com/MAXeaglet/dsh-bash-terminal/blob/6894913d71098f2ea24120d3a1afd5771f9ccd4a/cordis.patch.yml) · **Identity:** `dsh-bash-terminal`
@@ -1251,10 +1301,20 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
   - **Signals:** `native-bundle` `subprocess` `filesystem-write` `external-network` `client-injection` · **Review:** Fixed manifest, same-commit patch, licenses and installation identity checked statically. The fixed README requires DSH 0.1.5 or newer; Git write and remote PR actions are exposed capabilities, not executed checks. Author compatibility declarations are not independently runtime-tested. No candidate code executed; runtime safety and compatibility are not proven.
 
+- **Capability Menu** · [PKUfudawei/dsh-capability-menu@20a2d83](https://github.com/PKUfudawei/dsh-capability-menu/commit/20a2d836164258b63eeed62f9f5ac70047e42ffd) — Capability catalog and on-demand tool policy
+  - **Evidence:** [manifest](https://github.com/PKUfudawei/dsh-capability-menu/blob/20a2d836164258b63eeed62f9f5ac70047e42ffd/package.json) → [patch](https://github.com/PKUfudawei/dsh-capability-menu/blob/20a2d836164258b63eeed62f9f5ac70047e42ffd/cordis.patch.yml) · **Identity:** `@daweifu/capability-menu`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `prepare` · mixed peer ranges
+  - **Signals:** `native-bundle` `model-tools` `plugin-management` `permission-policy` `prepare` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.5-rc.2; ^0.1.1-rc.1; ^0.1.0-rc.7. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH UE Assets Operator** · [QSWWLTN/dsh-UEAssetsOperator@2dbb683](https://github.com/QSWWLTN/dsh-UEAssetsOperator/commit/2dbb6833c9b7e556131dbbe05b070a7e0f535576) — Native tools for Unreal Engine uasset inspection and Blueprint edits through built-in UE Python.
   - **Evidence:** [manifest](https://github.com/QSWWLTN/dsh-UEAssetsOperator/blob/2dbb6833c9b7e556131dbbe05b070a7e0f535576/package.json) → [patch](https://github.com/QSWWLTN/dsh-UEAssetsOperator/blob/2dbb6833c9b7e556131dbbe05b070a7e0f535576/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `MIT` / package `unknown` · lifecycle `none` · compatibility unknown
   - **Signals:** `unreal-engine` `asset-inspection` `filesystem-write` `subprocess` `python` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
+
+- **Noname KIT** · [qtaik/dsh-noname-kit@b8c5fe2](https://github.com/qtaik/dsh-noname-kit/commit/b8c5fe215a9dde7aa1946419e9716eb2cabca244) — Noname game-extension workshop
+  - **Evidence:** [manifest](https://github.com/qtaik/dsh-noname-kit/blob/b8c5fe215a9dde7aa1946419e9716eb2cabca244/package.json) → [patch](https://github.com/qtaik/dsh-noname-kit/blob/b8c5fe215a9dde7aa1946419e9716eb2cabca244/cordis.patch.yml) · **Identity:** `dsh-noname-kit`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `model-tools` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.2 || 0.1.5-rc.1 || 0.1.5-alpha.2 || 0.1.5-alpha.1 || 0.1.3-alpha.2 || 0.1.2-rc.1 || 0.1.2-alpha.5 || 0.1.2-alpha.4 || 0.1.2-alpha.3 || 0.1.2-alpha.2. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH NeoForge** · [r05En1cU/dsh-neoforge@7bbee40](https://github.com/r05En1cU/dsh-neoforge/commit/7bbee4096ecf563aab5cfff29c4b65f5d36790aa) — A plugin API layer with runtime mixins, snapshot and restore, and a Cordis-native event bus.
   - **Evidence:** [manifest](https://github.com/r05En1cU/dsh-neoforge/blob/7bbee4096ecf563aab5cfff29c4b65f5d36790aa/package.json) → [patch](https://github.com/r05En1cU/dsh-neoforge/blob/7bbee4096ecf563aab5cfff29c4b65f5d36790aa/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -1265,6 +1325,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/Rannist/balance-dsh/blob/3dd1af00a503c4adf6b521f567022f9ab63b0991/package.json) → [patch](https://github.com/Rannist/balance-dsh/blob/3dd1af00a503c4adf6b521f567022f9ab63b0991/cordis.patch.yml) · **Identity:** `balance-dsh`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `credentials` `package-install` `financial` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Dshline** · [riesbri/dshline@d3817b4](https://github.com/riesbri/dshline/commit/d3817b4e1586129c72e4ff0e38824b6c913f9434) — DSHline terminal frontend bundle
+  - **Evidence:** [manifest](https://github.com/riesbri/dshline/blob/d3817b4e1586129c72e4ff0e38824b6c913f9434/packages/dshline/package.json) → [patch](https://github.com/riesbri/dshline/blob/d3817b4e1586129c72e4ff0e38824b6c913f9434/packages/dshline/cordis.patch.yml) · **Identity:** `@dshline/dshline`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · mixed peer ranges
+  - **Signals:** `native-bundle` `session-data` `credentials` `subprocess` `filesystem-write` `nested-bundle` `prepare` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.6-alpha.1. Pins DSH 0.1.6-alpha.1 and has a prepare build hook; alpha runtime behavior was not tested. npm has no gitHead: tarball byte equivalence was not established. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Structured Output** · [royenheart/dsh-plugin-structured-output@1116e33](https://github.com/royenheart/dsh-plugin-structured-output/commit/1116e33d7dc06267e54acc2b310f79399b22ea18) — JSON Schema structured-output tools, a command, and native result validation.
   - **Evidence:** [manifest](https://github.com/royenheart/dsh-plugin-structured-output/blob/1116e33d7dc06267e54acc2b310f79399b22ea18/package.json) → [patch](https://github.com/royenheart/dsh-plugin-structured-output/blob/1116e33d7dc06267e54acc2b310f79399b22ea18/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -1416,6 +1481,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `prepublishOnly` · compatibility unknown
   - **Signals:** `ssh` `remote-execution` `filesystem-write` `credentials` `prepublish-build` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
 
+- **Adapter** · [Yan-Zero/dsh-std@c99b7e7](https://github.com/Yan-Zero/dsh-std/commit/c99b7e7b4c8542482f1710e99bc696f520fbd8d5) — Standard component-to-DSH adapter
+  - **Evidence:** [manifest](https://github.com/Yan-Zero/dsh-std/blob/c99b7e7b4c8542482f1710e99bc696f520fbd8d5/packages/adapter-dsh/package.json) → [patch](https://github.com/Yan-Zero/dsh-std/blob/c99b7e7b4c8542482f1710e99bc696f520fbd8d5/packages/adapter-dsh/cordis.patch.yml) · **Identity:** `@dsh-std/adapter-dsh`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `plugin-management` `model-tools` `filesystem-read` `session-data` `nested-bundle` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.2-alpha.2 less than 0.1.3 || greater than =0.1.5-rc.2 less than 0.1.6. npm has no gitHead: tarball byte equivalence was not established. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **About** · [YannZhou/dsh-about@bb6cfe6](https://github.com/YannZhou/dsh-about/commit/bb6cfe6a1dff8a9342b6fdb4f87d57a175d50a34) — DeepSeek Harness 设置中心「关于」分区：DeepSeek 图标 + 版本信息 + 检查更新（可选 npm 源：官方/npmmirror/本地配置，下拉式源选择，点击逐源测延迟，开合动画）+ 一键更新与自动重启 + GitHub 版本更新记录
   - **Evidence:** [manifest](https://github.com/YannZhou/dsh-about/blob/bb6cfe6a1dff8a9342b6fdb4f87d57a175d50a34/package.json) → [patch](https://github.com/YannZhou/dsh-about/blob/bb6cfe6a1dff8a9342b6fdb4f87d57a175d50a34/cordis.patch.yml) · **Identity:** `dsh-about`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -1508,6 +1578,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
   - **Signals:** `external-network` `client-injection` `subprocess` `process-control` `session-data` `model-tools` `package-install` `plugin-management` `multi-agent` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Context Actions** · [CN-Hang/dsh-context-actions@819b2ca](https://github.com/CN-Hang/dsh-context-actions/commit/819b2ca8aa5293175ec591ad7df4f5bfa9668ad5) — Context compression and handover buttons
+  - **Evidence:** [manifest](https://github.com/CN-Hang/dsh-context-actions/blob/819b2ca8aa5293175ec591ad7df4f5bfa9668ad5/package.json) → [patch](https://github.com/CN-Hang/dsh-context-actions/blob/819b2ca8aa5293175ec591ad7df4f5bfa9668ad5/cordis.patch.yml) · **Identity:** `dsh-context-actions`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `session-data` `filesystem-write` `client-injection` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **Message Timeline Navigation** · [cokiscarazo-rgb/dsh-plugin-message-timeline-navigation@2ef241a](https://github.com/cokiscarazo-rgb/dsh-plugin-message-timeline-navigation/commit/2ef241a4f3aee88bdedd7c48a2c3e0ecde743c1f) — Codex-style message timeline navigation for DSH web clients: a vertical rail of ticks on the conversation edge — hover to preview, click to jump, and the current reading progress stays highlighted.
   - **Evidence:** [manifest](https://github.com/cokiscarazo-rgb/dsh-plugin-message-timeline-navigation/blob/2ef241a4f3aee88bdedd7c48a2c3e0ecde743c1f/package.json) → [patch](https://github.com/cokiscarazo-rgb/dsh-plugin-message-timeline-navigation/blob/2ef241a4f3aee88bdedd7c48a2c3e0ecde743c1f/cordis.patch.yml) · **Identity:** `dsh-plugin-message-timeline-navigation`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -1537,6 +1612,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/DDDFXYqiming/dsh-annotation-patched/blob/1f11a845097588559f6d9e79ee3778e885784c5b/package.json) → [patch](https://github.com/DDDFXYqiming/dsh-annotation-patched/blob/1f11a845097588559f6d9e79ee3778e885784c5b/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-annotation-patched`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · declares rc.6 peers
   - **Signals:** `external-network` `client-injection` `session-data` `prepublish-only` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Delete Session** · [DDDMUC/dsh-delete-session@202aacd](https://github.com/DDDMUC/dsh-delete-session/commit/202aacd15e8947e69dae7cb8c7913e825a9553f2) — Delete sessions and their stored records
+  - **Evidence:** [manifest](https://github.com/DDDMUC/dsh-delete-session/blob/202aacd15e8947e69dae7cb8c7913e825a9553f2/package.json) → [patch](https://github.com/DDDMUC/dsh-delete-session/blob/202aacd15e8947e69dae7cb8c7913e825a9553f2/cordis.patch.yml) · **Identity:** `dsh-delete-session`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-write` `session-data` `destructive-actions` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.1. Deletes persistent session records and related files; destructive capability was not exercised. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **Proactive Notify** · [DemoJ/proactive-notify@b9032be](https://github.com/DemoJ/proactive-notify/commit/b9032beae455e5edc2863fe9c4beb77b0217b1dd) — DSH 主动通知插件：遇到权限问题和任务完成时弹出系统级通知
   - **Evidence:** [manifest](https://github.com/DemoJ/proactive-notify/blob/b9032beae455e5edc2863fe9c4beb77b0217b1dd/package.json) → [patch](https://github.com/DemoJ/proactive-notify/blob/b9032beae455e5edc2863fe9c4beb77b0217b1dd/cordis.patch.yml) · **Identity:** `proactive-notify`
@@ -1573,6 +1653,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · compatibility unknown
   - **Signals:** `multi-agent` `git-worktree` `filesystem-write` `local-web-server` `prepare-build` · **Review:** The public package maps to this repository, but wildcard DSH peers leave compatibility unproven; no build, agent, Git, merge, or dashboard action was run.
 
+- **Task Board** · [FiretrUCK666/dsh-task-board@cfac15f](https://github.com/FiretrUCK666/dsh-task-board/commit/cfac15f6e9505581364e883c3e9331c475e8e16b) — Task-board and scheduled-session automation
+  - **Evidence:** [manifest](https://github.com/FiretrUCK666/dsh-task-board/blob/cfac15f6e9505581364e883c3e9331c475e8e16b/package.json) → [patch](https://github.com/FiretrUCK666/dsh-task-board/blob/cfac15f6e9505581364e883c3e9331c475e8e16b/cordis.patch.yml) · **Identity:** `@firetruck666/dsh-task-board`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `multi-agent` `session-data` `filesystem-write` `external-network` `prepublish-only` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.5-rc.1. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Prompt Enhancer** · [Fishsb/dsh-prompt-enhancer@d42b2b4](https://github.com/Fishsb/dsh-prompt-enhancer/commit/d42b2b41503743a946696312b55001d6a452a0ef) — Uses an independent LLM call to rewrite draft prompts in the DSH composer with undo support.
   - **Evidence:** [manifest](https://github.com/Fishsb/dsh-prompt-enhancer/blob/d42b2b41503743a946696312b55001d6a452a0ef/package.json) → [patch](https://github.com/Fishsb/dsh-prompt-enhancer/blob/d42b2b41503743a946696312b55001d6a452a0ef/cordis.patch.yml) · **Identity:** `dsh-prompt-enhancer`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
@@ -1603,6 +1688,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
   - **Signals:** `native-bundle` `session-data` `system-prompt` `autonomous-followup` `filesystem-write` `client-injection` · **Review:** Fixed manifest, same-commit patch, license metadata and installation identity checked statically. Versioned DSH host-webserver peer is declared. npm omits gitHead; tarball/source byte equivalence is unproven. Autonomous follow-ups can consume model usage. Author compatibility declarations were not independently runtime-tested. No candidate code executed; static review does not prove runtime safety or compatibility.
 
+- **MOA** · [GooDAnDReaDY/dsh-moa@3377fc1](https://github.com/GooDAnDReaDY/dsh-moa/commit/3377fc1f951d3eba55590e3dfc1c231ae622aa89) — Mixture-of-agents orchestration
+  - **Evidence:** [manifest](https://github.com/GooDAnDReaDY/dsh-moa/blob/3377fc1f951d3eba55590e3dfc1c231ae622aa89/package.json) → [patch](https://github.com/GooDAnDReaDY/dsh-moa/blob/3377fc1f951d3eba55590e3dfc1c231ae622aa89/cordis.patch.yml) · **Identity:** `@goodandready/dsh-moa`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `multi-agent` `credentials` `external-network` `filesystem-write` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.0-rc.6. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Auto Continue 429** · [haochi72/dsh-auto-continue-429@924fb42](https://github.com/haochi72/dsh-auto-continue-429/commit/924fb42f25037a0f6efb841eff4ba8480e81c49d) — Retries DSH sessions after rate-limit errors and exposes a browser toggle for automatic continuation.
   - **Evidence:** [manifest](https://github.com/haochi72/dsh-auto-continue-429/blob/924fb42f25037a0f6efb841eff4ba8480e81c49d/package.json) → [patch](https://github.com/haochi72/dsh-auto-continue-429/blob/924fb42f25037a0f6efb841eff4ba8480e81c49d/cordis.patch.yml) · **Identity:** `dsh-auto-continue-429`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -1617,6 +1707,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/hkkz9522/dsh-session-manager/blob/67ede99f47a7e4d89058c24ae19418b7f251b399/package.json) → [patch](https://github.com/hkkz9522/dsh-session-manager/blob/67ede99f47a7e4d89058c24ae19418b7f251b399/cordis.patch.yml) · **Identity:** `dsh-session-manager`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
   - **Signals:** `native-bundle` `session-data` `filesystem-write` `data-deletion` `client-injection` · **Review:** Fixed manifest, same-commit patch, license metadata and installation identity checked statically. README maps package 0.4.10 to DSH 0.1.5-rc.1; exact npm gitHead matches. Session deletion and migration are write capabilities. Author compatibility declarations were not independently runtime-tested. No candidate code executed; static review does not prove runtime safety or compatibility.
+
+- **Notify Plus** · [hoyin-law/dsh-notify-plus@e658dce](https://github.com/hoyin-law/dsh-notify-plus/commit/e658dce3ece90b535964bc4424f566679e1b8dbd) — Context-rich Windows desktop notifications
+  - **Evidence:** [manifest](https://github.com/hoyin-law/dsh-notify-plus/blob/e658dce3ece90b535964bc4424f566679e1b8dbd/package.json) → [patch](https://github.com/hoyin-law/dsh-notify-plus/blob/e658dce3ece90b535964bc4424f566679e1b8dbd/cordis.patch.yml) · **Identity:** `dsh-notify-plus`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `session-data` `client-injection` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.1-rc.2 less than 0.2.0. Windows desktop only in the declared compatibility matrix; replaces stock notifications. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Nudge** · [huangmouren2023/deepseek-harness-toolkit@ea3ed50](https://github.com/huangmouren2023/deepseek-harness-toolkit/commit/ea3ed5023020db08fb3b396e9e3790cb4b43c9a4) — Automatically follows up after terminal failures or interruptions so the agent explains or resumes.
   - **Evidence:** [manifest](https://github.com/huangmouren2023/deepseek-harness-toolkit/blob/ea3ed5023020db08fb3b396e9e3790cb4b43c9a4/tools/dsh-nudge/package.json) → [patch](https://github.com/huangmouren2023/deepseek-harness-toolkit/blob/ea3ed5023020db08fb3b396e9e3790cb4b43c9a4/tools/dsh-nudge/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -1697,6 +1792,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/mexiaosqwq/dsh-web-mobile/blob/a65000625361633a5fe1517922778130e2ba9ef5/package.json) → [patch](https://github.com/mexiaosqwq/dsh-web-mobile/blob/a65000625361633a5fe1517922778130e2ba9ef5/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-mobile-nav`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · declares rc.6 peers
   - **Signals:** `external-network` `client-injection` `session-data` `package-install` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Teamflow** · [MichaelShii/dsh-plugin-teamflow@f7131b5](https://github.com/MichaelShii/dsh-plugin-teamflow/commit/f7131b51f5cdf8eec4f346026024f06d6574e40b) — Team development workflow and backlog
+  - **Evidence:** [manifest](https://github.com/MichaelShii/dsh-plugin-teamflow/blob/f7131b51f5cdf8eec4f346026024f06d6574e40b/package.json) → [patch](https://github.com/MichaelShii/dsh-plugin-teamflow/blob/f7131b51f5cdf8eec4f346026024f06d6574e40b/cordis.patch.yml) · **Identity:** `dsh-plugin-teamflow`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `multi-agent` `subprocess` `filesystem-write` `session-data` `prepublish-only` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.5-rc.2 less than 0.2.0. Versioned engines.dsh supplements wildcard peers; tsdown maps host/index.ts to lib/host.js. Postpublish checks were not run. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Agency Agents** · [MichengAI/dsh-agency-agents@9770f19](https://github.com/MichengAI/dsh-agency-agents/commit/9770f195040af75a9c71a4a7060634234678f304) — A summonable roster of bundled domain experts with remote and DSH Web integration surfaces.
   - **Evidence:** [manifest](https://github.com/MichengAI/dsh-agency-agents/blob/9770f195040af75a9c71a4a7060634234678f304/package.json) → [patch](https://github.com/MichengAI/dsh-agency-agents/blob/9770f195040af75a9c71a4a7060634234678f304/cordis.patch.yml) · **Identity:** `@michengai/dsh-agency-agents`
@@ -1933,6 +2033,16 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · compatibility unknown
   - **Signals:** `external-network` `client-injection` `session-data` `model-tools` `package-install` `prepare` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Notify Zeta** · [zeta987/dsh-notify-zeta@597d1ef](https://github.com/zeta987/dsh-notify-zeta/commit/597d1efb699436f9893791f9c33fecc39eee7983) — Windows questions and approval notifications
+  - **Evidence:** [manifest](https://github.com/zeta987/dsh-notify-zeta/blob/597d1efb699436f9893791f9c33fecc39eee7983/package.json) → [patch](https://github.com/zeta987/dsh-notify-zeta/blob/597d1efb699436f9893791f9c33fecc39eee7983/cordis.patch.yml) · **Identity:** `dsh-notify-zeta`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `native-helper` `subprocess` `session-data` `permission-policy` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.1. Windows 11/PowerShell 5.1 integration with an engine claim for 0.1.5-rc.1; no cross-platform runtime claim. npm has no gitHead: tarball byte equivalence was not established. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Escalation Advisor** · [zhangqian98/dsh-escalation-advisor@368f86e](https://github.com/zhangqian98/dsh-escalation-advisor/commit/368f86e9deeff949f08a512ac3d948bdc2f7fcd4) — Escalation advisor with task budgets
+  - **Evidence:** [manifest](https://github.com/zhangqian98/dsh-escalation-advisor/blob/368f86e9deeff949f08a512ac3d948bdc2f7fcd4/package.json) → [patch](https://github.com/zhangqian98/dsh-escalation-advisor/blob/368f86e9deeff949f08a512ac3d948bdc2f7fcd4/cordis.patch.yml) · **Identity:** `dsh-escalation-advisor`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `multi-agent` `session-data` `model-tools` `filesystem-write` `prepack` `prepublish-only` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.2-rc.1 || 0.1.5-alpha.2 || 0.1.5-rc.1. Old 0.1.5-rc.1 Advisor histories need a separately documented two-file core migration patch with hashes/backups. Unlimited task/session consultation defaults can incur model costs. No helper was run. Recorded lifecycle hooks: prepack, prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **Subagent Model Picker** · [Zim9729/dsh-subagent-model-picker@5fa4ea7](https://github.com/Zim9729/dsh-subagent-model-picker/commit/5fa4ea7b48df652c5808664e72abf6c771243675) — Per-conversation subagent model selection for DeepSeek Harness Desktop.
   - **Evidence:** [manifest](https://github.com/Zim9729/dsh-subagent-model-picker/blob/5fa4ea7b48df652c5808664e72abf6c771243675/package.json) → [patch](https://github.com/Zim9729/dsh-subagent-model-picker/blob/5fa4ea7b48df652c5808664e72abf6c771243675/cordis.patch.yml) · **Identity:** `@zim9729/dsh-subagent-model-picker`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · declares rc.6 peers
@@ -2085,6 +2195,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `database` `mcp` `external-network` `credentials` `model-tools` `workspace-data` · **Review:** The fixed source and npm identity both expose 2.0.0 from the same repository; no database, MCP server, credential, network connection, or agent tool was executed.
 
+- **FS Encoding** · [MrWeiCodes/dsh-fs-encoding@47b4a56](https://github.com/MrWeiCodes/dsh-fs-encoding/commit/47b4a560bab06c952214a45664fa32de44cee72e) — Encoding-aware file editing tools
+  - **Evidence:** [manifest](https://github.com/MrWeiCodes/dsh-fs-encoding/blob/47b4a560bab06c952214a45664fa32de44cee72e/package.json) → [patch](https://github.com/MrWeiCodes/dsh-fs-encoding/blob/47b4a560bab06c952214a45664fa32de44cee72e/cordis.patch.yml) · **Identity:** `dsh-fs-encoding`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `model-tools` `prepare` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.5-rc.2. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **RLM** · [mutsuki14/seam-rlm@f6fc9ea](https://github.com/mutsuki14/seam-rlm/commit/f6fc9eadda1cb8860265c572cdc6b61c380bda6f) — Persistent RLM kernel for DeepSeek Harness: codeRuntime + rlm() + snapshot
   - **Evidence:** [manifest](https://github.com/mutsuki14/seam-rlm/blob/f6fc9eadda1cb8860265c572cdc6b61c380bda6f/package.json) → [patch](https://github.com/mutsuki14/seam-rlm/blob/f6fc9eadda1cb8860265c572cdc6b61c380bda6f/cordis.patch.yml) · **Identity:** `@seamlabs/dsh-rlm`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
@@ -2170,6 +2285,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `file-upload` `document-extraction` `filesystem-write` `session-data` `client-injection` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
 
+- **Notebook** · [wyzh0117/dsh-notebook@ce6138b](https://github.com/wyzh0117/dsh-notebook/commit/ce6138b4fa72d29272bc647959d16fe10e972d6a) — Sidebar notebook and image attachments
+  - **Evidence:** [manifest](https://github.com/wyzh0117/dsh-notebook/blob/ce6138b4fa72d29272bc647959d16fe10e972d6a/package.json) → [patch](https://github.com/wyzh0117/dsh-notebook/blob/ce6138b4fa72d29272bc647959d16fe10e972d6a/cordis.patch.yml) · **Identity:** `dsh-notebook`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `client-injection` `prepare` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.0-rc.1 less than 0.2.0-0 || greater than =0.1.1-rc.1 less than 0.2.0-0 || greater than =0.1.5-rc.1 less than 0.2.0-0. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH File Explorer** · [Zalpha263/dsh-file-explorer@6cca848](https://github.com/Zalpha263/dsh-file-explorer/commit/6cca8489bdfc721a20cdf9b0de6b6de54cabe2a5) — Provides a persistent web file tree with preview, editing, context actions, upload, download, and archive tools.
   - **Evidence:** [manifest](https://github.com/Zalpha263/dsh-file-explorer/blob/6cca8489bdfc721a20cdf9b0de6b6de54cabe2a5/package.json) → [patch](https://github.com/Zalpha263/dsh-file-explorer/blob/6cca8489bdfc721a20cdf9b0de6b6de54cabe2a5/cordis.patch.yml) · **Identity:** `dsh-file-explorer`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -2184,6 +2304,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/Zenjibad/dsh-drop-any-file/blob/959a233cfa65060e3de315fdfd36bb7627fc2568/package.json) → [patch](https://github.com/Zenjibad/dsh-drop-any-file/blob/959a233cfa65060e3de315fdfd36bb7627fc2568/cordis.patch.yml) · **Identity:** `dsh-drop-any-file`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `drag-and-drop` `attachments` `filesystem-write` `client-injection` `github-only` · **Review:** The fixed source and author-documented GitHub install identity were reviewed statically; no candidate code, install hook, network call, filesystem change, or UI behavior was executed.
+
+- **Ecommerce Analyst Plugin** · [zjyjhkf/ecommerce-harness-plugin-for-jianheng@8f48bb2](https://github.com/zjyjhkf/ecommerce-harness-plugin-for-jianheng/commit/8f48bb2bc0aa047889253354bb1da584f27ab4c5) — E-commerce orders and spreadsheet analysis
+  - **Evidence:** [manifest](https://github.com/zjyjhkf/ecommerce-harness-plugin-for-jianheng/blob/8f48bb2bc0aa047889253354bb1da584f27ab4c5/package.json) → [patch](https://github.com/zjyjhkf/ecommerce-harness-plugin-for-jianheng/blob/8f48bb2bc0aa047889253354bb1da584f27ab4c5/cordis.patch.yml) · **Identity:** `ecommerce-analyst-plugin`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `financial` `model-tools` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.1-rc.2 less than 0.2.0. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Web Search Multi** · [zmh2000829/dsh-web-search-multi@558e750](https://github.com/zmh2000829/dsh-web-search-multi/commit/558e750555a8da5e54b9660f62079ff9fa3142a5) — Configurable SearXNG, Brave, Tavily, Gemini, and Wikipedia search provider for DeepSeek Harness
   - **Evidence:** [manifest](https://github.com/zmh2000829/dsh-web-search-multi/blob/558e750555a8da5e54b9660f62079ff9fa3142a5/package.json) → [patch](https://github.com/zmh2000829/dsh-web-search-multi/blob/558e750555a8da5e54b9660f62079ff9fa3142a5/cordis.patch.yml) · **Identity:** `dsh-web-search-multi`
@@ -3122,6 +3247,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · declares rc.6 peers
   - **Signals:** `external-network` `credentials` `client-injection` `database` `session-data` `model-tools` `package-install` `vision` `multi-agent` `theme` `prepublish-only` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Fishpai** · [OMSociety/dsh-fishpai@75e78b2](https://github.com/OMSociety/dsh-fishpai/commit/75e78b2262134859f50fff725ad0bdf13eb4abe5) — WeChat article-typesetting workspace
+  - **Evidence:** [manifest](https://github.com/OMSociety/dsh-fishpai/blob/75e78b2262134859f50fff725ad0bdf13eb4abe5/package.json) → [patch](https://github.com/OMSociety/dsh-fishpai/blob/75e78b2262134859f50fff725ad0bdf13eb4abe5/cordis.patch.yml) · **Identity:** `dsh-fishpai`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `filesystem-write` `model-tools` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: minimum 0.1.5-rc.2. MIT notices retain original MoPai attribution; article-generation and file writes remain unexecuted. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **Harness ACP** · [openma-ai/deepseek-harness-acp@89995bc](https://github.com/openma-ai/deepseek-harness-acp/commit/89995bcecfdbd9846ccaf0a65c7a477793dc2c1a) — Agent Client Protocol (ACP) adapter for DeepSeek Harness — use DeepSeek Harness from ACP clients such as Zed.
   - **Evidence:** [manifest](https://github.com/openma-ai/deepseek-harness-acp/blob/89995bcecfdbd9846ccaf0a65c7a477793dc2c1a/package.json) → [patch](https://github.com/openma-ai/deepseek-harness-acp/blob/89995bcecfdbd9846ccaf0a65c7a477793dc2c1a/cordis.patch.yml) · **Identity:** `@openma/deepseek-harness-acp`
   - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `prepublishOnly` · declares rc.6 peers
@@ -3316,6 +3446,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/supersyh-sss/dsh-voice-assistant/blob/f17233b97682f2b333d257cdc251ea92cc85e94a/package.json) → [patch](https://github.com/supersyh-sss/dsh-voice-assistant/blob/f17233b97682f2b333d257cdc251ea92cc85e94a/cordis.patch.yml) · **Identity:** `dsh-voice-assistant`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `external-network` `audio` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Whale Musume** · [Sutera-Diffusus/dsh-whale-musume@41a21d2](https://github.com/Sutera-Diffusus/dsh-whale-musume/commit/41a21d289af2bc268cbc83ebc50ba10158007026) — Whale-girl mascot and optional speech
+  - **Evidence:** [manifest](https://github.com/Sutera-Diffusus/dsh-whale-musume/blob/41a21d289af2bc268cbc83ebc50ba10158007026/package.json) → [patch](https://github.com/Sutera-Diffusus/dsh-whale-musume/blob/41a21d289af2bc268cbc83ebc50ba10158007026/cordis.patch.yml) · **Identity:** `dsh-whale-musume`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `vision` `audio` `external-network` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Only explicitly declared compatible releases are recorded; alpha releases marked unknown stay unknown. Asset generation was not run. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **Narrative Voice** · [TellToday/dsh-narrative-voice@7b4d13e](https://github.com/TellToday/dsh-narrative-voice/commit/7b4d13ef2437a87485851e1b8a2df60f9bcaafee) — A DSH (DeepSeek Harness) bundle plugin that rewrites the ask_user_question tool description at prompt-assembly time with a fixed narrative-voice rule (default: the answerer narrates), toggled live via the /voice command.
   - **Evidence:** [manifest](https://github.com/TellToday/dsh-narrative-voice/blob/7b4d13ef2437a87485851e1b8a2df60f9bcaafee/package.json) → [patch](https://github.com/TellToday/dsh-narrative-voice/blob/7b4d13ef2437a87485851e1b8a2df60f9bcaafee/cordis.patch.yml) · **Identity:** `@dsh-user/narrative-voice`
@@ -3682,6 +3817,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `client-injection` `subprocess` `process-control` `session-data` `model-tools` `vision` `multi-agent` `theme` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **DSH** · [zenstory-ai/oh-story-dsh@5de00e6](https://github.com/zenstory-ai/oh-story-dsh/commit/5de00e6b610b94fca9f0d9165f4ca8b6c83c6147) — Fiction, drama and video-production skills
+  - **Evidence:** [manifest](https://github.com/zenstory-ai/oh-story-dsh/blob/5de00e6b610b94fca9f0d9165f4ca8b6c83c6147/packages/dsh-plugin/package.json) → [patch](https://github.com/zenstory-ai/oh-story-dsh/blob/5de00e6b610b94fca9f0d9165f4ca8b6c83c6147/packages/dsh-plugin/cordis.patch.yml) · **Identity:** `@oh-story/dsh`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-write` `subprocess` `vision` `audio` `external-network` `nested-bundle` `prepack` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.5-rc.1. npm has no gitHead: tarball byte equivalence was not established. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Realtime Voice** · [zfu691531-hash/dsh-realtime-voice@91aae22](https://github.com/zfu691531-hash/dsh-realtime-voice/commit/91aae229357e647964bbf2e50ec7602c4ce55d4a) — Realtime speech-to-speech using Qwen or OpenAI-compatible providers.
   - **Evidence:** [manifest](https://github.com/zfu691531-hash/dsh-realtime-voice/blob/91aae229357e647964bbf2e50ec7602c4ce55d4a/package.json) → [patch](https://github.com/zfu691531-hash/dsh-realtime-voice/blob/91aae229357e647964bbf2e50ec7602c4ce55d4a/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
@@ -3754,6 +3894,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · declares rc.6 peers
   - **Signals:** `external-network` `credentials` `web-search` `remote-content` `client-injection` · **Review:** The fixed peers declare rc.6; provider calls, credential handling, quota logic, fallback behavior, and the prepare build were not executed.
 
+- **Synthetic WEB Search** · [auggie246/dsh-synthetic-web-search@aa16671](https://github.com/auggie246/dsh-synthetic-web-search/commit/aa16671b935ba35c7d98b47194fac4097f87ea42) — Synthetic web-search provider
+  - **Evidence:** [manifest](https://github.com/auggie246/dsh-synthetic-web-search/blob/aa16671b935ba35c7d98b47194fac4097f87ea42/package.json) → [patch](https://github.com/auggie246/dsh-synthetic-web-search/blob/aa16671b935ba35c7d98b47194fac4097f87ea42/cordis.patch.yml) · **Identity:** `@auggieteo/dsh-synthetic-web-search`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `external-network` `credentials` `web-search` `prepack` `prepare` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.1-rc.2 || ^0.1.2-rc.1 || ^0.1.5-rc.2. Recorded lifecycle hooks: prepack, prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH KB RAG** · [Breeze136/dsh-kb-rag@2ba96b7](https://github.com/Breeze136/dsh-kb-rag/commit/2ba96b785b154dec2fe76e64eb4a17516def92e1) — Local literature RAG with hybrid retrieval, reranking, citations, and a SQLite-backed Python engine.
   - **Evidence:** [manifest](https://github.com/Breeze136/dsh-kb-rag/blob/2ba96b785b154dec2fe76e64eb4a17516def92e1/npm-package/package.json) → [patch](https://github.com/Breeze136/dsh-kb-rag/blob/2ba96b785b154dec2fe76e64eb4a17516def92e1/npm-package/cordis.patch.yml) · **Identity:** `dsh-kb-rag`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
@@ -3808,6 +3953,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/FeiJi-9527/dsh-oc/blob/64922ebcaffc51754b2ad306a18e9d959959bf99/package.json) → [patch](https://github.com/FeiJi-9527/dsh-oc/blob/64922ebcaffc51754b2ad306a18e9d959959bf99/cordis.patch.yml) · **Identity:** `dsh-oc`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · declares rc.6 peers
   - **Signals:** `external-network` `credentials` `client-injection` `session-data` `package-install` `web-search` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **WEB Fetch Moli** · [GreyRaphael/dsh-web-fetch-moli@a74e741](https://github.com/GreyRaphael/dsh-web-fetch-moli/commit/a74e741d6fb4177a2ba15c5909fb8dc7c5f463f3) — Moli headless-browser web fetch
+  - **Evidence:** [manifest](https://github.com/GreyRaphael/dsh-web-fetch-moli/blob/a74e741d6fb4177a2ba15c5909fb8dc7c5f463f3/package.json) → [patch](https://github.com/GreyRaphael/dsh-web-fetch-moli/blob/a74e741d6fb4177a2ba15c5909fb8dc7c5f463f3/cordis.patch.yml) · **Identity:** `dsh-web-fetch-moli`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `browser` `native-code` `subprocess` `external-network` `prepublish-only` `prepare` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.2-alpha.0 less than 0.3.0. Uses a native Rust/browser runtime and source-build hooks; none was downloaded or launched. Recorded lifecycle hooks: prepublishOnly, prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Web Access** · [haibinwang9/dsh-web-access@1eaffaf](https://github.com/haibinwang9/dsh-web-access/commit/1eaffafe3130f8347b92cbb89f533cf9c5f97d7b) — Multi-provider Web search and URL extraction with fallback across SearXNG, Tavily, Brave, and DuckDuckGo.
   - **Evidence:** [manifest](https://github.com/haibinwang9/dsh-web-access/blob/1eaffafe3130f8347b92cbb89f533cf9c5f97d7b/package.json) → [patch](https://github.com/haibinwang9/dsh-web-access/blob/1eaffafe3130f8347b92cbb89f533cf9c5f97d7b/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -4086,6 +4236,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `session-data` `summarization` `model-request` `local-install` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
 
+- **Yammory System** · [KhalilYamber/yammory-system@db00fee](https://github.com/KhalilYamber/yammory-system/commit/db00fee6e5b787aecdf8090e26c9dafcbc0344f1) — Cross-session SQLite memory layer
+  - **Evidence:** [manifest](https://github.com/KhalilYamber/yammory-system/blob/db00fee6e5b787aecdf8090e26c9dafcbc0344f1/package.json) → [patch](https://github.com/KhalilYamber/yammory-system/blob/db00fee6e5b787aecdf8090e26c9dafcbc0344f1/cordis.patch.yml) · **Identity:** `yammory_system`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `database` `system-prompt` `session-data` `filesystem-write` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.2-rc.1 less than 0.2.0 || greater than =0.1.5-alpha.1 less than 0.2.0. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Context Structurer** · [kkkkkklze/dsh-context-structurer@0420f4c](https://github.com/kkkkkklze/dsh-context-structurer/commit/0420f4cbef56fcd3060e0e1e95e05796c6c08051) — Splits conversations into typed subcontexts and indexes them with a structured table of contents.
   - **Evidence:** [manifest](https://github.com/kkkkkklze/dsh-context-structurer/blob/0420f4cbef56fcd3060e0e1e95e05796c6c08051/package.json) → [patch](https://github.com/kkkkkklze/dsh-context-structurer/blob/0420f4cbef56fcd3060e0e1e95e05796c6c08051/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `unknown` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -4303,6 +4458,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · compatibility unknown
   - **Signals:** `external-network` `credentials` `client-injection` `session-data` `package-install` `financial` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Completion Guard** · [GreenLv/dsh-completion-guard@cc5cbc6](https://github.com/GreenLv/dsh-completion-guard/commit/cc5cbc6d408664172d9383de7c83c55ec6dfd602) — Task-contract completion gates
+  - **Evidence:** [manifest](https://github.com/GreenLv/dsh-completion-guard/blob/cc5cbc6d408664172d9383de7c83c55ec6dfd602/package.json) → [patch](https://github.com/GreenLv/dsh-completion-guard/blob/cc5cbc6d408664172d9383de7c83c55ec6dfd602/cordis.patch.yml) · **Identity:** `dsh-completion-guard`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `session-data` `model-tools` `filesystem-write` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.2 || 0.1.5-rc.1. Requires the documented exact 0.1.5-rc.1/rc.2 host combination; old-session migration and completion guarantees were not tested. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **Claude Oauth** · [grloper/dsh-claude-oauth@5ac6dca](https://github.com/grloper/dsh-claude-oauth/commit/5ac6dca2327d804b6ab30604284f86d02f322343) — Claude Pro/Max OAuth model provider for DeepSeek Harness with Google/Gmail login in Settings, auto-token refresh, live model discovery, and real-time quota tracking
   - **Evidence:** [manifest](https://github.com/grloper/dsh-claude-oauth/blob/5ac6dca2327d804b6ab30604284f86d02f322343/package.json) → [patch](https://github.com/grloper/dsh-claude-oauth/blob/5ac6dca2327d804b6ab30604284f86d02f322343/cordis.patch.yml) · **Identity:** `dsh-claude-oauth`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -4327,6 +4487,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/hxy91819/dsh-auth/blob/ea8e82707167ef5bb8036370ea0e618caacd9da4/package.json) → [patch](https://github.com/hxy91819/dsh-auth/blob/ea8e82707167ef5bb8036370ea0e618caacd9da4/cordis.patch.yml) · **Identity:** `dsh-auth`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
   - **Signals:** `authentication` `credentials` `reverse-proxy` `session-data` `prepack-build` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
+
+- **Security** · [id7869/dsh-security@9c7ff7a](https://github.com/id7869/dsh-security/commit/9c7ff7aaee68d1a1f9b6606cae1553cee0138bd0) — Security-review skills and workflow capsules
+  - **Evidence:** [manifest](https://github.com/id7869/dsh-security/blob/9c7ff7aaee68d1a1f9b6606cae1553cee0138bd0/package.json) → [patch](https://github.com/id7869/dsh-security/blob/9c7ff7aaee68d1a1f9b6606cae1553cee0138bd0/cordis.patch.yml) · **Identity:** `dsh-security`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `system-prompt` `model-tools` `filesystem-read` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: minimum 0.1.5-rc.1. Security-related names and author test claims are not a security certificate; README records conflicts with optional external agent-team workflows. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **Auto Mode** · [Igumi-BeXst/dsh-auto-mode@65ad25e](https://github.com/Igumi-BeXst/dsh-auto-mode/commit/65ad25edcc058c5449a4bc202fddd36b3f05a3e1) — Auto Mode for DeepSeek Harness: auto-accept approval prompts (Claude Code auto-accept equivalent); the composer status chip is both indicator and toggle — no chat messages
   - **Evidence:** [manifest](https://github.com/Igumi-BeXst/dsh-auto-mode/blob/65ad25edcc058c5449a4bc202fddd36b3f05a3e1/package.json) → [patch](https://github.com/Igumi-BeXst/dsh-auto-mode/blob/65ad25edcc058c5449a4bc202fddd36b3f05a3e1/cordis.patch.yml) · **Identity:** `dsh-auto-mode`
@@ -4393,10 +4558,20 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `credentials` `client-injection` `database` `session-data` `package-install` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Repeat Tool Breaker** · [snailium/dsh-repeat-tool-breaker@6043382](https://github.com/snailium/dsh-repeat-tool-breaker/commit/60433827dea40f45610359e258505ccf68989e2d) — Repeated tool-call breaker
+  - **Evidence:** [manifest](https://github.com/snailium/dsh-repeat-tool-breaker/blob/60433827dea40f45610359e258505ccf68989e2d/package.json) → [patch](https://github.com/snailium/dsh-repeat-tool-breaker/blob/60433827dea40f45610359e258505ccf68989e2d/cordis.patch.yml) · **Identity:** `dsh-repeat-tool-breaker`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `model-tools` `session-data` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.2-rc.1 and 0.1.5-rc.2. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Plugin Check** · [stimQQ/dshplugins@b48002d](https://github.com/stimQQ/dshplugins/commit/b48002d5ff6b78d5a205250d4f4920d5d0f2a66d) — Audits installed plugins for broken packages, stale DSH pins, and install-time code, then drafts repair issues.
   - **Evidence:** [manifest](https://github.com/stimQQ/dshplugins/blob/b48002d5ff6b78d5a205250d4f4920d5d0f2a66d/packages/dsh-plugin-check/package.json) → [patch](https://github.com/stimQQ/dshplugins/blob/b48002d5ff6b78d5a205250d4f4920d5d0f2a66d/packages/dsh-plugin-check/cordis.patch.yml) · **Identity:** `dsh-plugin-check`
   - **Licenses:** repo `unknown` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `plugin-audit` `dependency-audit` `lifecycle-scan` `issue-drafting` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
+
+- **Auto Pass** · [sujingkpo/dsh-auto-pass@0480e0e](https://github.com/sujingkpo/dsh-auto-pass/commit/0480e0e69eee395e3013ad990e3a66a7780a1fc2) — Model-reviewed automatic-approval preset
+  - **Evidence:** [manifest](https://github.com/sujingkpo/dsh-auto-pass/blob/0480e0e69eee395e3013ad990e3a66a7780a1fc2/package.json) → [patch](https://github.com/sujingkpo/dsh-auto-pass/blob/0480e0e69eee395e3013ad990e3a66a7780a1fc2/cordis.patch.yml) · **Identity:** `dsh-auto-pass`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `permission-policy` `multi-agent` `filesystem-write` `session-data` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.1. Patch includes full-access/no-approval presets as well as model-reviewed approvals; this is a permission-policy risk, not an endorsement. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Prior Probe** · [SuTang-vain/dsh-self-harness-tools@373b454](https://github.com/SuTang-vain/dsh-self-harness-tools/commit/373b4548bba62872cf25748b04f5407e00e75882) — Frozen probe batteries with deterministic offline scoring and optional single-shot provider calls.
   - **Evidence:** [manifest](https://github.com/SuTang-vain/dsh-self-harness-tools/blob/373b4548bba62872cf25748b04f5407e00e75882/plugins/prior-probe/package.json) → [patch](https://github.com/SuTang-vain/dsh-self-harness-tools/blob/373b4548bba62872cf25748b04f5407e00e75882/plugins/prior-probe/cordis.patch.yml) · **Identity:** `dsh-prior-probe`
@@ -4490,6 +4665,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `remote-command-execution` `external-network` `credentials` `screenshot` `session-data` `subprocess` · **Review:** The fixed source exposes remote command, screenshot, session, file, credential, and subprocess surfaces through QQ; its separate installer and all runtime paths were not executed.
 
+- **MCP Adapter** · [auggie246/dsh-mcp-adapter@4c05d60](https://github.com/auggie246/dsh-mcp-adapter/commit/4c05d6059b627c57c6e72b40f9ad59c883187fab) — MCP server and tool adapter
+  - **Evidence:** [manifest](https://github.com/auggie246/dsh-mcp-adapter/blob/4c05d6059b627c57c6e72b40f9ad59c883187fab/package.json) → [patch](https://github.com/auggie246/dsh-mcp-adapter/blob/4c05d6059b627c57c6e72b40f9ad59c883187fab/cordis.patch.yml) · **Identity:** `@auggieteo/dsh-mcp-adapter`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `mcp` `credentials` `subprocess` `external-network` `prepack` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.1-rc.2 || ^0.1.2-rc.1 || ^0.1.5-rc.1. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Weave** · [baixianger/dsh-weave@2e71605](https://github.com/baixianger/dsh-weave/commit/2e716052adb063a60cbd2cd11cdd071fabb35d08) — Connects DeepSeek Harness nodes through a private peer-to-peer weave protocol.
   - **Evidence:** [manifest](https://github.com/baixianger/dsh-weave/blob/2e716052adb063a60cbd2cd11cdd071fabb35d08/package.json) → [patch](https://github.com/baixianger/dsh-weave/blob/2e716052adb063a60cbd2cd11cdd071fabb35d08/cordis.patch.yml) · **Identity:** `dsh-weave`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
@@ -4499,6 +4679,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/better-er/dsh-peak-block/blob/718f245a0fad22acfe538176b602cd787901d4cc/package.json) → [patch](https://github.com/better-er/dsh-peak-block/blob/718f245a0fad22acfe538176b602cd787901d4cc/cordis.patch.yml) · **Identity:** `dsh-peak-block`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `model-tools` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **LLM Hawk Failover** · [bitcopath/dsh-plugins@43c6c37](https://github.com/bitcopath/dsh-plugins/commit/43c6c378739965a78f4785c3b6b1e53501dd6060) — Model-provider failover bundle
+  - **Evidence:** [manifest](https://github.com/bitcopath/dsh-plugins/blob/43c6c378739965a78f4785c3b6b1e53501dd6060/plugins/dsh-llm-hawk-failover/package.json) → [patch](https://github.com/bitcopath/dsh-plugins/blob/43c6c378739965a78f4785c3b6b1e53501dd6060/plugins/dsh-llm-hawk-failover/cordis.patch.yml) · **Identity:** `dsh-llm-hawk-failover`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `model-tools` `external-network` `credentials` `nested-bundle` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.1; 0.1.1-rc.2. The root README documents cloning this repository and adding its nested source package; build outputs were not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH WeChat Pro** · [bwhite55/dsh-wechat-pro@c726696](https://github.com/bwhite55/dsh-wechat-pro/commit/c7266964a1ce159a6c3d14c1bb3cbfc1f563c357) — Connects WeChat contacts to real DSH workspaces, sessions, prompts, approvals, event streams, and media transfers.
   - **Evidence:** [manifest](https://github.com/bwhite55/dsh-wechat-pro/blob/c7266964a1ce159a6c3d14c1bb3cbfc1f563c357/package.json) → [patch](https://github.com/bwhite55/dsh-wechat-pro/blob/c7266964a1ce159a6c3d14c1bb3cbfc1f563c357/cordis.patch.yml) · **Identity:** `dsh-wechat-pro`
@@ -4559,6 +4744,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/ddrwin/dsh-channel/blob/13629dfb8f006965abca32c97f2f573bc8f685c0/package.json) → [patch](https://github.com/ddrwin/dsh-channel/blob/13629dfb8f006965abca32c97f2f573bc8f685c0/cordis.patch.yml) · **Identity:** `dsh-channel`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · declares rc.6 peers
   - **Signals:** `cross-session-messaging` `session-data` `model-tools` `settings-read` `prepublish-build` `github-only` · **Review:** A matching fixed GitHub source exists while npm has no package; no heartbeat, session message, tool registration, build, or prepublish behavior was executed.
+
+- **Connect Workbuddy** · [dingminhua/dsh-connect-workbuddy@55abb58](https://github.com/dingminhua/dsh-connect-workbuddy/commit/55abb58f72aa64bd745ed7c8aacb4a0fc4446900) — WorkBuddy signed-in model adapter
+  - **Evidence:** [manifest](https://github.com/dingminhua/dsh-connect-workbuddy/blob/55abb58f72aa64bd745ed7c8aacb4a0fc4446900/package.json) → [patch](https://github.com/dingminhua/dsh-connect-workbuddy/blob/55abb58f72aa64bd745ed7c8aacb4a0fc4446900/cordis.patch.yml) · **Identity:** `dsh-connect-workbuddy`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `credentials` `external-network` `financial` `prepack` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.5-rc.1 less than 0.2.0 || greater than =0.1.2-rc.1 less than 0.2.0. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH QQBot Community** · [DLive/dsh-qqbot-community@c65813f](https://github.com/DLive/dsh-qqbot-community/commit/c65813fff5185f76e37f459f4daef575deaa8e6f) — Connects QQ Official Bot conversations to DSH sessions, prompts, event streams, and media handling.
   - **Evidence:** [manifest](https://github.com/DLive/dsh-qqbot-community/blob/c65813fff5185f76e37f459f4daef575deaa8e6f/package.json) → [patch](https://github.com/DLive/dsh-qqbot-community/blob/c65813fff5185f76e37f459f4daef575deaa8e6f/cordis.patch.yml) · **Identity:** `dsh-qqbot-community`
@@ -4630,6 +4820,16 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `notion-api` `credentials` `external-network` `model-tools` `content-write` `github-only` · **Review:** The fixed source supports credential references and broad Notion read and write tools; no token, workspace request, or content mutation was performed.
 
+- **Siyuan Notes** · [greyoak111/siyuan-codex-bridge@279d397](https://github.com/greyoak111/siyuan-codex-bridge/commit/279d397a9128d75adf71d09b2a43f36fa8a9719f) — SiYuan notes MCP bridge
+  - **Evidence:** [manifest](https://github.com/greyoak111/siyuan-codex-bridge/blob/279d397a9128d75adf71d09b2a43f36fa8a9719f/package.json) → [patch](https://github.com/greyoak111/siyuan-codex-bridge/blob/279d397a9128d75adf71d09b2a43f36fa8a9719f/cordis.patch.yml) · **Identity:** `dsh-siyuan-notes`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `mcp` `credentials` `subprocess` `external-network` `filesystem-write` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.0.1-rc.1 less than 0.1.0 || greater than =0.1.0-rc.1 less than 0.2.0-0. The same-commit MCP bridge reads SiYuan credentials and can invoke configured shell commands. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **ERP** · [GuoMonth/dsh-erp@86624d8](https://github.com/GuoMonth/dsh-erp/commit/86624d82377e802dda30ec3c5e24d94a842d319f) — ERP browser learning and local knowledge
+  - **Evidence:** [manifest](https://github.com/GuoMonth/dsh-erp/blob/86624d82377e802dda30ec3c5e24d94a842d319f/package.json) → [patch](https://github.com/GuoMonth/dsh-erp/blob/86624d82377e802dda30ec3c5e24d94a842d319f/cordis.patch.yml) · **Identity:** `@guosheng_047/dsh-erp`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `browser` `credentials` `database` `filesystem-write` `prepack` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.5-rc.2. Declares Node 24.18 up to but excluding 25 and DSH 0.1.5-rc.2; browser/ERP credentials and local knowledge are sensitive capabilities. npm has no gitHead: tarball byte equivalence was not established. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH YZJ Bridge** · [GuoxinShan/dsh-yzj@1415eae](https://github.com/GuoxinShan/dsh-yzj/commit/1415eaed78d170d90a4a7a1133373a03d6dcf612) — A profile bundle connecting Yunzhijia CLI capabilities, model tools, rich cards, and a workspace panel.
   - **Evidence:** [manifest](https://github.com/GuoxinShan/dsh-yzj/blob/1415eaed78d170d90a4a7a1133373a03d6dcf612/packages/bundle/package.json) → [patch](https://github.com/GuoxinShan/dsh-yzj/blob/1415eaed78d170d90a4a7a1133373a03d6dcf612/packages/bundle/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `unknown` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -4649,6 +4849,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/icodesign/orbis/blob/b9a8aad0caeb54a209edb884b1e6c9b96c4f7d6e/packages/orbis-remote-dsh/package.json) → [patch](https://github.com/icodesign/orbis/blob/b9a8aad0caeb54a209edb884b1e6c9b96c4f7d6e/packages/orbis-remote-dsh/cordis.patch.yml) · **Identity:** `@orbisapp/remote-dsh`
   - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `prepack` · declares rc.6 peers
   - **Signals:** `remote-access` `credentials` `session-data` `filesystem-write` `external-network` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
+
+- **Opencli** · [IKEASven69/dsh-opencli@fe92c45](https://github.com/IKEASven69/dsh-opencli/commit/fe92c45ed6e12761fafd71587c1a3688c02cf642) — Signed-in browser and site CLI tools
+  - **Evidence:** [manifest](https://github.com/IKEASven69/dsh-opencli/blob/fe92c45ed6e12761fafd71587c1a3688c02cf642/package.json) → [patch](https://github.com/IKEASven69/dsh-opencli/blob/fe92c45ed6e12761fafd71587c1a3688c02cf642/cordis.patch.yml) · **Identity:** `dsh-opencli`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `browser` `credentials` `subprocess` `external-network` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.1-rc.2 less than 0.3.0-0. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Connect** · [IvanWu2015/dsh-connect@838492d](https://github.com/IvanWu2015/dsh-connect/commit/838492defdab22473788cbb6d03a914656f59c68) — Channel-agnostic messaging bridge core for DeepSeek Harness (DSH): binds chat channels to DSH agents, streams replies, and pushes work summaries
   - **Evidence:** [manifest](https://github.com/IvanWu2015/dsh-connect/blob/838492defdab22473788cbb6d03a914656f59c68/packages/connect/package.json) → [patch](https://github.com/IvanWu2015/dsh-connect/blob/838492defdab22473788cbb6d03a914656f59c68/packages/connect/cordis.patch.yml) · **Identity:** `dsh-connect`
@@ -4675,6 +4880,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · declares rc.6 peers
   - **Signals:** `external-network` `credentials` `session-data` `model-tools` `multi-agent` `prepare` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **WEB Recorder** · [kakajun/dsh-web-recorder@f674959](https://github.com/kakajun/dsh-web-recorder/commit/f67495902ffabc4495d8b9081abadd017ce1a685) — Browser interaction recorder
+  - **Evidence:** [manifest](https://github.com/kakajun/dsh-web-recorder/blob/f67495902ffabc4495d8b9081abadd017ce1a685/package.json) → [patch](https://github.com/kakajun/dsh-web-recorder/blob/f67495902ffabc4495d8b9081abadd017ce1a685/cordis.patch.yml) · **Identity:** `dsh-web-recorder`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `browser` `credentials` `external-network` `filesystem-write` `prepublish-only` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.5-rc.1. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH Agent Sync** · [kuaiyukuaikuai/dsh-agent-sync@9d97956](https://github.com/kuaiyukuaikuai/dsh-agent-sync/commit/9d97956ee5168c2cf9755f84345928b0007fb5c2) — DSH plugin that scans other AI agents on this machine (Codex, Claude Code, cc-switch, custom sources) and one-click syncs their MCP servers and skills into DeepSeek Harness.
   - **Evidence:** [manifest](https://github.com/kuaiyukuaikuai/dsh-agent-sync/blob/9d97956ee5168c2cf9755f84345928b0007fb5c2/package.json) → [patch](https://github.com/kuaiyukuaikuai/dsh-agent-sync/blob/9d97956ee5168c2cf9755f84345928b0007fb5c2/cordis.patch.yml) · **Identity:** `dsh-agent-sync`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
@@ -4699,6 +4909,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/lunarmoon26/harness-alchemist/blob/59834366e113ac0cc5b38dde93a2f68303936fbd/package.json) → [patch](https://github.com/lunarmoon26/harness-alchemist/blob/59834366e113ac0cc5b38dde93a2f68303936fbd/cordis.patch.yml) · **Identity:** `harness-alchemist`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · compatibility unknown
   - **Signals:** `external-network` `filesystem-read` `package-install` `prepack` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **NET Proxy** · [mafeis/dsh-net-proxy@76d307c](https://github.com/mafeis/dsh-net-proxy/commit/76d307c31188c3e381b6661b311bf1d9ba1619c2) — Harness network-proxy integration
+  - **Evidence:** [manifest](https://github.com/mafeis/dsh-net-proxy/blob/76d307c31188c3e381b6661b311bf1d9ba1619c2/package.json) → [patch](https://github.com/mafeis/dsh-net-proxy/blob/76d307c31188c3e381b6661b311bf1d9ba1619c2/cordis.patch.yml) · **Identity:** `dsh-net-proxy`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `external-network` `credentials` `process-control` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.0-rc.6 || ^0.1.1-rc.1; ^0.1.5-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Plugin Manager** · [miaooon/dsh-plugin-manager@24eb36f](https://github.com/miaooon/dsh-plugin-manager/commit/24eb36fa037725a20ac175d9ea3986de681e5c72) — 第三方插件管理（设置 → 插件页内）:list installed third-party plugins, one-click enable/disable (profile patch), export selected plugins to an offline zip, and import exported zips without any network.
   - **Evidence:** [manifest](https://github.com/miaooon/dsh-plugin-manager/blob/24eb36fa037725a20ac175d9ea3986de681e5c72/package.json) → [patch](https://github.com/miaooon/dsh-plugin-manager/blob/24eb36fa037725a20ac175d9ea3986de681e5c72/cordis.patch.yml) · **Identity:** `dsh-plugin-manager`
@@ -4760,6 +4975,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `unknown` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `remote-access` `cloudflare` `reverse-proxy` `authentication` `external-network` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
 
+- **Chatnode Wechat** · [PRTS168/dsh-wechat-suite@f8a7f5b](https://github.com/PRTS168/dsh-wechat-suite/commit/f8a7f5bd3cc8c0002910e2355d255ac68364d157) — WeChat conversation and approval gateway
+  - **Evidence:** [manifest](https://github.com/PRTS168/dsh-wechat-suite/blob/f8a7f5bd3cc8c0002910e2355d255ac68364d157/package.json) → [patch](https://github.com/PRTS168/dsh-wechat-suite/blob/f8a7f5bd3cc8c0002910e2355d255ac68364d157/cordis.patch.yml) · **Identity:** `@dsh-cowork/chatnode-wechat`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `external-network` `credentials` `session-data` `permission-policy` `prepublish-only` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: 0.1.2-rc.1 and 0.1.5-rc.2. Preserves upstream MIT attribution; remote commands and approvals plus open allowFrom defaults require user configuration. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH XiaoTangYuan Game** · [qimidandapigu/dsh-xiaotangyuan-game@52baef4](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/commit/52baef4df34c961ee7914e75c02eba84b8838db9) — A game AI runtime that detects and installs supported game adapters from verified releases.
   - **Evidence:** [manifest](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/blob/52baef4df34c961ee7914e75c02eba84b8838db9/apps/harness-plugin/package.json) → [patch](https://github.com/qimidandapigu/dsh-xiaotangyuan-game/blob/52baef4df34c961ee7914e75c02eba84b8838db9/apps/harness-plugin/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
@@ -4779,6 +4999,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/raullenchai/rapid-mlx-dsh-provider/blob/b14ada226041d98f130e0cb8469391d5b42d612d/package.json) → [patch](https://github.com/raullenchai/rapid-mlx-dsh-provider/blob/b14ada226041d98f130e0cb8469391d5b42d612d/cordis.patch.yml) · **Identity:** `@rapid-mlx/dsh-provider`
   - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · compatibility unknown
   - **Signals:** `llm-provider` `local-network` `model-discovery` `github-only` · **Review:** The fixed source and author-documented GitHub install identity were reviewed statically; no candidate code, install hook, network call, filesystem change, or UI behavior was executed.
+
+- **LAN Gateway** · [rice-awa/dsh-lan-gateway@5bb69b9](https://github.com/rice-awa/dsh-lan-gateway/commit/5bb69b92eef2e62f7514802c041fd2bac03a47d8) — LAN and internet reverse-proxy gateway
+  - **Evidence:** [manifest](https://github.com/rice-awa/dsh-lan-gateway/blob/5bb69b92eef2e62f7514802c041fd2bac03a47d8/package.json) → [patch](https://github.com/rice-awa/dsh-lan-gateway/blob/5bb69b92eef2e62f7514802c041fd2bac03a47d8/cordis.patch.yml) · **Identity:** `@riceawa/dsh-lan-gateway`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `external-network` `credentials` `session-data` `prepack` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.2-rc.1 || ^0.1.5-rc.2. Disabled by default; enabling the gateway can bind all interfaces and share upstream session access. npm has no gitHead: tarball byte equivalence was not established. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH RingCentral** · [ringclaw/dsh-ringcentral@42b76e9](https://github.com/ringclaw/dsh-ringcentral/commit/42b76e9cf244f607fdfed17e2a905bff38001dd5) — Connects DSH sessions to RingCentral Team Messaging as an IM channel.
   - **Evidence:** [manifest](https://github.com/ringclaw/dsh-ringcentral/blob/42b76e9cf244f607fdfed17e2a905bff38001dd5/package.json) → [patch](https://github.com/ringclaw/dsh-ringcentral/blob/42b76e9cf244f607fdfed17e2a905bff38001dd5/cordis.patch.yml) · **Identity:** `dsh-ringcentral`
@@ -4814,6 +5039,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/Smalldy/godot-bridge/blob/ac81927d66d872db8f00a12431e748345b92dfc6/package.json) → [patch](https://github.com/Smalldy/godot-bridge/blob/ac81927d66d872db8f00a12431e748345b92dfc6/cordis.patch.yml) · **Identity:** `godot-bridge`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `godot` `tcp` `game-integration` `subprocess` `model-tools` · **Review:** Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.
+
+- **Smkit** · [smk-h/dsh-smkit@8dc4237](https://github.com/smk-h/dsh-smkit/commit/8dc423749011a19e18360ecfe088becb36798679) — MCP server manager with OAuth
+  - **Evidence:** [manifest](https://github.com/smk-h/dsh-smkit/blob/8dc423749011a19e18360ecfe088becb36798679/package.json) → [patch](https://github.com/smk-h/dsh-smkit/blob/8dc423749011a19e18360ecfe088becb36798679/cordis.patch.yml) · **Identity:** `@smai-kit/dsh-smkit`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `mcp` `credentials` `subprocess` `external-network` `session-data` `prepack` `prepare` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.2-rc.1 less than 0.2.0. npm has no gitHead: tarball byte equivalence was not established. Recorded lifecycle hooks: prepack, prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **Bottom Info Bar** · [songoao25/bottom-info-bar@06a554e](https://github.com/songoao25/bottom-info-bar/commit/06a554e6862fa4194e48eda83626f09b449d89f6) — A composer status bar for provider, model, live balance, peak pricing, countdowns, and spend totals.
   - **Evidence:** [manifest](https://github.com/songoao25/bottom-info-bar/blob/06a554e6862fa4194e48eda83626f09b449d89f6/plugin/package.json) → [patch](https://github.com/songoao25/bottom-info-bar/blob/06a554e6862fa4194e48eda83626f09b449d89f6/plugin/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -4860,6 +5090,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · compatibility unknown
   - **Signals:** `llm-provider` `openai-compatible` `external-network` `credentials` `prepack-build` · **Review:** The fixed source is the registry next release while the stable tag has the same base version; no provider request, credential access, or build ran.
 
+- **MCP Lazy** · [wings1848/dsh-mcp-lazy@12b1086](https://github.com/wings1848/dsh-mcp-lazy/commit/12b10868324f71270099cb2fb161583767cf8739) — Lazy MCP connection and tool gateway
+  - **Evidence:** [manifest](https://github.com/wings1848/dsh-mcp-lazy/blob/12b10868324f71270099cb2fb161583767cf8739/package.json) → [patch](https://github.com/wings1848/dsh-mcp-lazy/blob/12b10868324f71270099cb2fb161583767cf8739/cordis.patch.yml) · **Identity:** `dsh-mcp-lazy`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `mcp` `subprocess` `credentials` `external-network` `prepack` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: ^0.1.5-rc.1. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH OpenCode Go Usage** · [Xenia0922/dsh-opencode-go-usage@f7a7192](https://github.com/Xenia0922/dsh-opencode-go-usage/commit/f7a71928f0c5040a58cf45f6e41e4ac05da43317) — A draggable dashboard for OpenCode Go quota, per-request usage, and spending.
   - **Evidence:** [manifest](https://github.com/Xenia0922/dsh-opencode-go-usage/blob/f7a71928f0c5040a58cf45f6e41e4ac05da43317/package.json) → [patch](https://github.com/Xenia0922/dsh-opencode-go-usage/blob/f7a71928f0c5040a58cf45f6e41e4ac05da43317/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -4874,6 +5109,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/xiajingchun/dsh-nebulagraph-v5/blob/0f95d35f0704c1fc47131cbcf0d4de4a81a4bde4/package.json) → [patch](https://github.com/xiajingchun/dsh-nebulagraph-v5/blob/0f95d35f0704c1fc47131cbcf0d4de4a81a4bde4/cordis.patch.yml) · **Identity:** `dsh-nebula`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · compatibility unknown
   - **Signals:** `nebulagraph` `database-query` `external-network` `credentials` `model-tools` `prepare-build` · **Review:** The fixed source and author-documented GitHub install identity were reviewed statically; no candidate code, install hook, network call, filesystem change, or UI behavior was executed.
+
+- **Dshgo** · [xiazhi88/dshgo@0a9a3f4](https://github.com/xiazhi88/dshgo/commit/0a9a3f4bbd5ee2ff701119b85e6994f53bb1011c) — Mobile-friendly LAN web gateway
+  - **Evidence:** [manifest](https://github.com/xiazhi88/dshgo/blob/0a9a3f4bbd5ee2ff701119b85e6994f53bb1011c/package.json) → [patch](https://github.com/xiazhi88/dshgo/blob/0a9a3f4bbd5ee2ff701119b85e6994f53bb1011c/cordis.patch.yml) · **Identity:** `dshgo`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `external-network` `credentials` `session-data` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: minimum 0.1.2-rc.1. LAN gateway exposes host sessions; author minimum is 0.1.2-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **DSH Codex** · [Yan-Zero/dsh-codex@621b218](https://github.com/Yan-Zero/dsh-codex/commit/621b218f51080413094bc1d16e37f37142afd89d) — Connects ChatGPT OAuth, Codex models, search, remote image reading, and image generation to DSH.
   - **Evidence:** [manifest](https://github.com/Yan-Zero/dsh-codex/blob/621b218f51080413094bc1d16e37f37142afd89d/package.json) → [patch](https://github.com/Yan-Zero/dsh-codex/blob/621b218f51080413094bc1d16e37f37142afd89d/cordis.patch.yml) · **Identity:** `dsh-codex`
@@ -4931,6 +5171,16 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/a735624258/dsh-skill-picker/blob/f4e6f018bae34b70db048e5c84f4bc827aae7c97/package.json) → [patch](https://github.com/a735624258/dsh-skill-picker/blob/f4e6f018bae34b70db048e5c84f4bc827aae7c97/cordis.patch.yml) · **Identity:** `dsh-skill-picker`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · declares rc.6 peers
   - **Signals:** `external-network` `client-injection` `filesystem-read` `session-data` `package-install` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Embedded Workbench** · [AmethystLuna/embedded-workbench@7336058](https://github.com/AmethystLuna/embedded-workbench/commit/733605847a6cbbde8809286d31e352d7f5ee9563) — Embedded firmware development skills
+  - **Evidence:** [manifest](https://github.com/AmethystLuna/embedded-workbench/blob/733605847a6cbbde8809286d31e352d7f5ee9563/package.json) → [patch](https://github.com/AmethystLuna/embedded-workbench/blob/733605847a6cbbde8809286d31e352d7f5ee9563/cordis.patch.yml) · **Identity:** `dsh-embedded-workbench`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `system-prompt` `model-tools` `filesystem-read` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.0-rc.7. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Logicprobe** · [AmethystLuna/logicprobe@08bdc12](https://github.com/AmethystLuna/logicprobe/commit/08bdc127d1c42503de2d0facff8ed56fdb2e5490) — Design-claim verification workflow
+  - **Evidence:** [manifest](https://github.com/AmethystLuna/logicprobe/blob/08bdc127d1c42503de2d0facff8ed56fdb2e5490/package.json) → [patch](https://github.com/AmethystLuna/logicprobe/blob/08bdc127d1c42503de2d0facff8ed56fdb2e5490/cordis.patch.yml) · **Identity:** `dsh-logicprobe`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `system-prompt` `model-tools` `filesystem-read` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.0-rc.7. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **SSC Agent** · [Baiiduu/dsh-ssc-agent@077f320](https://github.com/Baiiduu/dsh-ssc-agent/commit/077f3205bdefb7679d17b51e86259b8d8deb89c8) — Software supply chain security agent preset for DeepSeek Harness.
   - **Evidence:** [manifest](https://github.com/Baiiduu/dsh-ssc-agent/blob/077f3205bdefb7679d17b51e86259b8d8deb89c8/package.json) → [patch](https://github.com/Baiiduu/dsh-ssc-agent/blob/077f3205bdefb7679d17b51e86259b8d8deb89c8/cordis.patch.yml) · **Identity:** `@aaub-software/dsh-ssc-agent`
@@ -5057,6 +5307,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `external-network` `client-injection` `process-control` `model-tools` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
 
+- **Skills Anywhere** · [noteflowai/dsh-skills-anywhere@b943731](https://github.com/noteflowai/dsh-skills-anywhere/commit/b9437312f37ef4bf7b2aea1e230cb9b6de31f0ef) — Cross-agent skill catalog provider
+  - **Evidence:** [manifest](https://github.com/noteflowai/dsh-skills-anywhere/blob/b9437312f37ef4bf7b2aea1e230cb9b6de31f0ef/package.json) → [patch](https://github.com/noteflowai/dsh-skills-anywhere/blob/b9437312f37ef4bf7b2aea1e230cb9b6de31f0ef/cordis.patch.yml) · **Identity:** `dsh-skills-anywhere`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-read` `subprocess` `mcp` `external-network` `prepare` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.5-rc.1. npm has no gitHead: tarball byte equivalence was not established. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 - **DSH HTB Skills** · [qingsiweisan/dsh-htb-skills@d04c3d0](https://github.com/qingsiweisan/dsh-htb-skills/commit/d04c3d04385cff83eb5db27a77faa7b3d0342125) — A versioned Hack The Box penetration-testing skill library with tiered routing and hidden references.
   - **Evidence:** [manifest](https://github.com/qingsiweisan/dsh-htb-skills/blob/d04c3d04385cff83eb5db27a77faa7b3d0342125/package.json) → [patch](https://github.com/qingsiweisan/dsh-htb-skills/blob/d04c3d04385cff83eb5db27a77faa7b3d0342125/cordis.patch.yml) · **Identity:** Git source / unknown
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
@@ -5111,6 +5366,11 @@ Snapshot: **2026-09-13** · **1924 candidates** · **1078 reviewed** · **843 he
   - **Evidence:** [manifest](https://github.com/xiaxi626/dsh-skills-nexus/blob/3abfb973f2a6dd4afb2a94276d50104e63bd96ee/package.json) → [patch](https://github.com/xiaxi626/dsh-skills-nexus/blob/3abfb973f2a6dd4afb2a94276d50104e63bd96ee/cordis.patch.yml) · **Identity:** `dsh-skills-nexus`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
   - **Signals:** `external-network` `filesystem-read` `subprocess` `process-control` `session-data` `package-install` `theme` · **Review:** The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.
+
+- **Prompt Persona** · [Xilin3/dsh-prompt-persona@7d69350](https://github.com/Xilin3/dsh-prompt-persona/commit/7d69350837ae39e9fb4b16875e0a9af0635a4b9e) — System-persona prompt settings
+  - **Evidence:** [manifest](https://github.com/Xilin3/dsh-prompt-persona/blob/7d69350837ae39e9fb4b16875e0a9af0635a4b9e/package.json) → [patch](https://github.com/Xilin3/dsh-prompt-persona/blob/7d69350837ae39e9fb4b16875e0a9af0635a4b9e/cordis.patch.yml) · **Identity:** `@xilin3/dsh-prompt-persona`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `system-prompt` `filesystem-write` `client-injection` · **Review:** Fixed manifest, same-commit patch, license and installation identity reviewed statically. Author DSH declaration: greater than =0.1.5-rc less than 2. No candidate code executed; static review is not runtime safety or compatibility proof.
 
 - **Math Research DSH** · [xsoc1/math-research-dsh@a5e6373](https://github.com/xsoc1/math-research-dsh/commit/a5e63739cd446c76258c050d9b053781dae9bae6) — A rigorous mathematics research suite with four agent skills, Lean verification, tests, and environment diagnostics.
   - **Evidence:** [manifest](https://github.com/xsoc1/math-research-dsh/blob/a5e63739cd446c76258c050d9b053781dae9bae6/package.json) → [patch](https://github.com/xsoc1/math-research-dsh/blob/a5e63739cd446c76258c050d9b053781dae9bae6/cordis.patch.yml) · **Identity:** Git source / unknown
@@ -9713,6 +9973,536 @@ These entries are relevant to DSH but do not receive install recommendations unt
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · mixed peer ranges
   - **Signals:** `native-bundle` `filesystem-write` `subprocess` `mcp` `external-network` `third-party-assets` `client-injection` `prepare` · **Review:** Held: source uses third-party Papergames branding/assets; their licensing scope is not established. Declared lifecycle hooks: prepare. No candidate code executed; static review does not prove runtime safety or compatibility.
 
+- **Theme Newsprint** · [2754LM/dsh-theme-newsprint@5c4615a](https://github.com/2754LM/dsh-theme-newsprint/commit/5c4615a5c5fb1fb552dbe8aef73864a99bee5a66) — Newsprint-style interface theme
+  - **Evidence:** [manifest](https://github.com/2754LM/dsh-theme-newsprint/blob/5c4615a5c5fb1fb552dbe8aef73864a99bee5a66/package.json) → [patch](https://github.com/2754LM/dsh-theme-newsprint/blob/5c4615a5c5fb1fb552dbe8aef73864a99bee5a66/cordis.patch.yml) · **Identity:** `dsh-theme-newsprint`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `theme` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Chat Jump** · [abdecd/dsh-chat-jump@440e8e6](https://github.com/abdecd/dsh-chat-jump/commit/440e8e69d013da1c799ebe12910bc618f8e8f696) — Conversation quick-jump navigation
+  - **Evidence:** [manifest](https://github.com/abdecd/dsh-chat-jump/blob/440e8e69d013da1c799ebe12910bc618f8e8f696/package.json) → [patch](https://github.com/abdecd/dsh-chat-jump/blob/440e8e69d013da1c799ebe12910bc618f8e8f696/cordis.patch.yml) · **Identity:** `dsh-chat-jump`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `session-data` `prepublish-only` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: ^0.1.5-rc.2. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Acryl DSH Editor Plugin CLI** · [acryldev/acryl-dsh-editor-plugin-cli@208b4d8](https://github.com/acryldev/acryl-dsh-editor-plugin-cli/commit/208b4d89580e82961566675a9f34d93032bdb41f) — Terminal file editor for ACRYL
+  - **Evidence:** [manifest](https://github.com/acryldev/acryl-dsh-editor-plugin-cli/blob/208b4d89580e82961566675a9f34d93032bdb41f/package.json) → [patch](https://github.com/acryldev/acryl-dsh-editor-plugin-cli/blob/208b4d89580e82961566675a9f34d93032bdb41f/cordis.patch.yml) · **Identity:** `acryl-dsh-editor-plugin-cli`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `compatibility-unresolved` `host-coupled` · **Review:** Held: no sufficiently versioned DSH host declaration; component is coupled to a separate host distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Dshker Workbench Client** · [ankye/dshker@f7d0e08](https://github.com/ankye/dshker/commit/f7d0e08de449142fdbd7dd44fac32f84f520ca40) — Desktop workbench client bundle
+  - **Evidence:** [manifest](https://github.com/ankye/dshker/blob/f7d0e08de449142fdbd7dd44fac32f84f520ca40/packages/dshker-workbench-client/package.json) → [patch](https://github.com/ankye/dshker/blob/f7d0e08de449142fdbd7dd44fac32f84f520ca40/packages/dshker-workbench-client/cordis.patch.yml) · **Identity:** `@ankye/dshker-workbench-client`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `session-data` `external-network` `nested-bundle` `unresolved-install-identity` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; component is coupled to a separate host distribution. The desktop embeds a pinned host, but its private client bundle is not an independently verified installation. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Anthropic Membership** · [antonio-mastropaolo/dsh-anthropic-membership@610be9e](https://github.com/antonio-mastropaolo/dsh-anthropic-membership/commit/610be9ef07f699721680e5a34d918fbd5745825a) — Claude membership provider adapter
+  - **Evidence:** [manifest](https://github.com/antonio-mastropaolo/dsh-anthropic-membership/blob/610be9ef07f699721680e5a34d918fbd5745825a/package.json) → [patch](https://github.com/antonio-mastropaolo/dsh-anthropic-membership/blob/610be9ef07f699721680e5a34d918fbd5745825a/cordis.patch.yml) · **Identity:** `dsh-anthropic-membership`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `credentials` `external-network` `client-injection` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Webrelay** · [Baisbt/dsh-plugin-webrelay@b8a3bdf](https://github.com/Baisbt/dsh-plugin-webrelay/commit/b8a3bdf19211e82b986dad8ad7f56ccf730865af) — Browser relay and prompt refinement
+  - **Evidence:** [manifest](https://github.com/Baisbt/dsh-plugin-webrelay/blob/b8a3bdf19211e82b986dad8ad7f56ccf730865af/package.json) → [patch](https://github.com/Baisbt/dsh-plugin-webrelay/blob/b8a3bdf19211e82b986dad8ad7f56ccf730865af/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-webrelay`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `prepare` · compatibility unknown
+  - **Signals:** `native-bundle` `browser` `external-network` `credentials` `session-data` `prepare` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Sidebar Downloads** · [BeiWay1145/dsh-sidebar-downloads@8d971f7](https://github.com/BeiWay1145/dsh-sidebar-downloads/commit/8d971f7cd4c7252a2e3d743196362d06094ce949) — Sidebar download-progress display
+  - **Evidence:** [manifest](https://github.com/BeiWay1145/dsh-sidebar-downloads/blob/8d971f7cd4c7252a2e3d743196362d06094ce949/package.json) → [patch](https://github.com/BeiWay1145/dsh-sidebar-downloads/blob/8d971f7cd4c7252a2e3d743196362d06094ce949/cordis.patch.yml) · **Identity:** `dsh-sidebar-downloads`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `subprocess` `client-injection` `prepublish-only` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. A peer on dsh-better-sidebar is not a DSH host-version declaration. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Trading Workbench** · [BSTester/dsh-trading-agents@d9cc2d6](https://github.com/BSTester/dsh-trading-agents/commit/d9cc2d646d8f10e695597ce5a35c952505e98ac9) — Trading research workbench
+  - **Evidence:** [manifest](https://github.com/BSTester/dsh-trading-agents/blob/d9cc2d646d8f10e695597ce5a35c952505e98ac9/plugins/workbench/package.json) → [patch](https://github.com/BSTester/dsh-trading-agents/blob/d9cc2d646d8f10e695597ce5a35c952505e98ac9/plugins/workbench/cordis.patch.yml) · **Identity:** `@bstester/dsh-trading-workbench`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `financial` `credentials` `mcp` `external-network` `nested-bundle` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` `host-coupled` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration; component is coupled to a separate host distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Screen Reader** · [cbg33695/dsh-screen-reader@25f50b9](https://github.com/cbg33695/dsh-screen-reader/commit/25f50b9f1fa731d121e576bf1bb0e6474a525f63) — Windows screen capture and pixel diff
+  - **Evidence:** [manifest](https://github.com/cbg33695/dsh-screen-reader/blob/25f50b9f1fa731d121e576bf1bb0e6474a525f63/package.json) → [patch](https://github.com/cbg33695/dsh-screen-reader/blob/25f50b9f1fa731d121e576bf1bb0e6474a525f63/cordis.patch.yml) · **Identity:** `dsh-screen-reader`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `vision` `subprocess` `filesystem-write` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **FIX Header Buttons** · [chendefine/dsh-fix-header-buttons@8520f63](https://github.com/chendefine/dsh-fix-header-buttons/commit/8520f63837afa0259a6ccf3ac6ad556a2684ef18) — Session-header button adjustments
+  - **Evidence:** [manifest](https://github.com/chendefine/dsh-fix-header-buttons/blob/8520f63837afa0259a6ccf3ac6ad556a2684ef18/package.json) → [patch](https://github.com/chendefine/dsh-fix-header-buttons/blob/8520f63837afa0259a6ccf3ac6ad556a2684ef18/cordis.patch.yml) · **Identity:** `dsh-fix-header-buttons`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Wecom Obsidian** · [ChrisThinking/wecom-obsidian@7687aae](https://github.com/ChrisThinking/wecom-obsidian/commit/7687aae551061dd7662dc492210c8331a9dd9c69) — WeCom-to-Obsidian collection bridge
+  - **Evidence:** [manifest](https://github.com/ChrisThinking/wecom-obsidian/blob/7687aae551061dd7662dc492210c8331a9dd9c69/package.json) → [patch](https://github.com/ChrisThinking/wecom-obsidian/blob/7687aae551061dd7662dc492210c8331a9dd9c69/bundle/cordis.patch.yml) · **Identity:** `dsh-wecom-obsidian`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `external-network` `credentials` `filesystem-write` `multi-agent` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Session Title Pattern** · [cq-guojia/dsh-session-title-pattern@e7ef206](https://github.com/cq-guojia/dsh-session-title-pattern/commit/e7ef206e0dd4a6bb2108ab24bb120597e8e239dc) — Model-generated session-title patterns
+  - **Evidence:** [manifest](https://github.com/cq-guojia/dsh-session-title-pattern/blob/e7ef206e0dd4a6bb2108ab24bb120597e8e239dc/package.json) → [patch](https://github.com/cq-guojia/dsh-session-title-pattern/blob/e7ef206e0dd4a6bb2108ab24bb120597e8e239dc/cordis.patch.yml) · **Identity:** `@cq-guojia/dsh-session-title-pattern`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `model-tools` `session-data` `prepublish-only` `license-incomplete` · **Review:** Held: repository or package license evidence is incomplete. Author DSH declaration: greater than =0.1.0-rc.0 less than 0.2.0-0. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Bailian Models** · [CroissanTTs/dsh-bailian-models@5cc39e6](https://github.com/CroissanTTs/dsh-bailian-models/commit/5cc39e6c51587bb08a972184f9b68e2c27bcb519) — Bailian model catalog adapter
+  - **Evidence:** [manifest](https://github.com/CroissanTTs/dsh-bailian-models/blob/5cc39e6c51587bb08a972184f9b68e2c27bcb519/package.json) → [patch](https://github.com/CroissanTTs/dsh-bailian-models/blob/5cc39e6c51587bb08a972184f9b68e2c27bcb519/cordis.patch.yml) · **Identity:** `dsh-bailian-models`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `credentials` `external-network` `model-tools` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Deepseek WEB Login** · [cv-superding/dsh-deepseek-web-login@b924699](https://github.com/cv-superding/dsh-deepseek-web-login/commit/b9246997c69d2fbbd65589a2d00e132167943ce7) — DeepSeek web-login model adapter
+  - **Evidence:** [manifest](https://github.com/cv-superding/dsh-deepseek-web-login/blob/b9246997c69d2fbbd65589a2d00e132167943ce7/package.json) → [patch](https://github.com/cv-superding/dsh-deepseek-web-login/blob/b9246997c69d2fbbd65589a2d00e132167943ce7/cordis.patch.yml) · **Identity:** `dsh-deepseek-web-login`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `prepare` · compatibility unknown
+  - **Signals:** `native-bundle` `browser` `credentials` `external-network` `model-tools` `prepare` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Cloudflare** · [d4551/cloudflare-dsh@a8ee890](https://github.com/d4551/cloudflare-dsh/commit/a8ee89029fe089a5b7eae80a6023da9d652a7518) — Cloudflare tools and model gateway bundle
+  - **Evidence:** [manifest](https://github.com/d4551/cloudflare-dsh/blob/a8ee89029fe089a5b7eae80a6023da9d652a7518/packages/bundle/package.json) → [patch](https://github.com/d4551/cloudflare-dsh/blob/a8ee89029fe089a5b7eae80a6023da9d652a7518/packages/bundle/cordis.patch.yml) · **Identity:** `cloudflare-dsh`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `credentials` `external-network` `mcp` `model-tools` `nested-bundle` `unresolved-install-identity` `artifact-mapping-unresolved` · **Review:** Held: public installation identity is not completely mapped; source-to-distribution artifact mapping is incomplete. Author DSH declaration: 0.1.2-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Singularity Agent Runtime** · [DangoSys/singularity@1032ec2](https://github.com/DangoSys/singularity/commit/1032ec218b0164f109fd0efd13c6ae6fdd95b3bf) — Graph-backed agent-runtime component
+  - **Evidence:** [manifest](https://github.com/DangoSys/singularity/blob/1032ec218b0164f109fd0efd13c6ae6fdd95b3bf/agent-runtime/package.json) → [patch](https://github.com/DangoSys/singularity/blob/1032ec218b0164f109fd0efd13c6ae6fdd95b3bf/agent-runtime/cordis.patch.yml) · **Identity:** `@dangosys/dsh-singularity-agent-runtime`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `model-tools` `filesystem-write` `nested-bundle` `unresolved-install-identity` `compatibility-unresolved` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration; component is coupled to a separate host distribution. Author DSH declaration: *. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Plain Slides** · [dangxinxing090-svg/dsh-plugin-plain-slides@85d7649](https://github.com/dangxinxing090-svg/dsh-plugin-plain-slides/commit/85d7649415305a094dc0d6e7277d02477872fd33) — Render replies as plain-language slides
+  - **Evidence:** [manifest](https://github.com/dangxinxing090-svg/dsh-plugin-plain-slides/blob/85d7649415305a094dc0d6e7277d02477872fd33/package.json) → [patch](https://github.com/dangxinxing090-svg/dsh-plugin-plain-slides/blob/85d7649415305a094dc0d6e7277d02477872fd33/cordis.patch.yml) · **Identity:** `dsh-plugin-plain-slides`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `session-data` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Maestro Govard** · [ddtcorex/dsh-maestro-govard@de635eb](https://github.com/ddtcorex/dsh-maestro-govard/commit/de635eb1feae36686297c2f8ef5d9db54956d884) — Maestro Govard workspace bridge
+  - **Evidence:** [manifest](https://github.com/ddtcorex/dsh-maestro-govard/blob/de635eb1feae36686297c2f8ef5d9db54956d884/package.json) → [patch](https://github.com/ddtcorex/dsh-maestro-govard/blob/de635eb1feae36686297c2f8ef5d9db54956d884/cordis.patch.yml) · **Identity:** `@ddtcorex/dsh-maestro-govard`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `subprocess` `filesystem-write` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` `artifact-mapping-unresolved` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration; source-to-distribution artifact mapping is incomplete. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Project Cybersyn DSH Plugin** · [dimensionlesslu-dotcom/cybersyn-for-dsh@8449de7](https://github.com/dimensionlesslu-dotcom/cybersyn-for-dsh/commit/8449de79d38a836dc0ad53250bede97d38914f91) — Human-supervised assurance workspace
+  - **Evidence:** [manifest](https://github.com/dimensionlesslu-dotcom/cybersyn-for-dsh/blob/8449de79d38a836dc0ad53250bede97d38914f91/package.json) → [patch](https://github.com/dimensionlesslu-dotcom/cybersyn-for-dsh/blob/8449de79d38a836dc0ad53250bede97d38914f91/cordis.patch.yml) · **Identity:** `project-cybersyn-dsh-plugin`
+  - **Licenses:** repo `GPL-3.0` / package `GPL-3.0-only` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `model-tools` `filesystem-write` `multi-agent` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: 0.1.1-rc.2. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Gemini WEB** · [dtsummery/dsh-gemini-web@975f91e](https://github.com/dtsummery/dsh-gemini-web/commit/975f91e2337d66a8292365f930576419680d8639) — Gemini web-session provider
+  - **Evidence:** [manifest](https://github.com/dtsummery/dsh-gemini-web/blob/975f91e2337d66a8292365f930576419680d8639/package.json) → [patch](https://github.com/dtsummery/dsh-gemini-web/blob/975f91e2337d66a8292365f930576419680d8639/cordis.patch.yml) · **Identity:** `dsh-gemini-web`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `browser` `credentials` `external-network` `license-incomplete` `compatibility-unresolved` · **Review:** Held: repository or package license evidence is incomplete; no sufficiently versioned DSH host declaration. Author DSH declaration: *. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Oauth Adapter** · [edge-sky/dsh-oauth-adapter@a3ac97e](https://github.com/edge-sky/dsh-oauth-adapter/commit/a3ac97ea4d26f75b66397622c5caad23746602f8) — OAuth account settings adapter
+  - **Evidence:** [manifest](https://github.com/edge-sky/dsh-oauth-adapter/blob/a3ac97ea4d26f75b66397622c5caad23746602f8/package.json) → [patch](https://github.com/edge-sky/dsh-oauth-adapter/blob/a3ac97ea4d26f75b66397622c5caad23746602f8/cordis.patch.yml) · **Identity:** `@edge-sky/dsh-oauth-adapter`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `credentials` `external-network` `client-injection` `prepack` `compatibility-conflict` · **Review:** Held: declared ranges and documented host compatibility are not aligned. Author DSH declaration: greater than =0.1.5-rc.2 less than 0.1.6-0. Peers require 0.1.5-rc.2 while installation documentation mentions 0.1.2-rc.1. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Model Filter** · [EiffelBS/dsh-plugin-model-filter@4d2ac20](https://github.com/EiffelBS/dsh-plugin-model-filter/commit/4d2ac20482e241667fc6f01baeb7754270e19f74) — Searchable model-selection menu
+  - **Evidence:** [manifest](https://github.com/EiffelBS/dsh-plugin-model-filter/blob/4d2ac20482e241667fc6f01baeb7754270e19f74/package.json) → [patch](https://github.com/EiffelBS/dsh-plugin-model-filter/blob/4d2ac20482e241667fc6f01baeb7754270e19f74/cordis.patch.yml) · **Identity:** `dsh-plugin-model-filter`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Language SET** · [Emck/tirol-dsh-language-set@814e1cb](https://github.com/Emck/tirol-dsh-language-set/commit/814e1cb7eb616df92b2c286ce7742bc6ac0fbdda) — System-prompt response language setting
+  - **Evidence:** [manifest](https://github.com/Emck/tirol-dsh-language-set/blob/814e1cb7eb616df92b2c286ce7742bc6ac0fbdda/package.json) → [patch](https://github.com/Emck/tirol-dsh-language-set/blob/814e1cb7eb616df92b2c286ce7742bc6ac0fbdda/cordis.patch.yml) · **Identity:** `@tirol/dsh-language-set`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · compatibility unknown
+  - **Signals:** `native-bundle` `system-prompt` `prepack` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Drawai** · [fourzkw/dsh-drawai@a920383](https://github.com/fourzkw/dsh-drawai/commit/a9203833cea3f6b35689ce2be40df58df730445f) — Diagram canvas and drawing tools
+  - **Evidence:** [manifest](https://github.com/fourzkw/dsh-drawai/blob/a9203833cea3f6b35689ce2be40df58df730445f/package.json) → [patch](https://github.com/fourzkw/dsh-drawai/blob/a9203833cea3f6b35689ce2be40df58df730445f/cordis.patch.yml) · **Identity:** `dsh-drawai`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `model-tools` `filesystem-write` `client-injection` `license-incomplete` `unresolved-install-identity` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped. Author DSH declaration: greater than =0.1.0-rc.1 less than 0.1.0 || greater than =0.1.5-rc.1 less than 0.2.0-0. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Story Mode** · [Furry-wucheng/dsh-story-mode@33ed46f](https://github.com/Furry-wucheng/dsh-story-mode/commit/33ed46fd1ac387c5c4c4cfeb55f1cc0f1f9f5bc6) — Short-fiction writing mode and tools
+  - **Evidence:** [manifest](https://github.com/Furry-wucheng/dsh-story-mode/blob/33ed46fd1ac387c5c4c4cfeb55f1cc0f1f9f5bc6/package.json) → [patch](https://github.com/Furry-wucheng/dsh-story-mode/blob/33ed46fd1ac387c5c4c4cfeb55f1cc0f1f9f5bc6/cordis.patch.yml) · **Identity:** `dsh-story-mode`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `system-prompt` `filesystem-write` `dynamic-code` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Hidden Paths** · [Gabrip780/dsh-hidden-paths@2ea36fd](https://github.com/Gabrip780/dsh-hidden-paths/commit/2ea36fdbf522c769b61aed7c29d9de0a76825b99) — Hidden-path and credential-filtering controls
+  - **Evidence:** [manifest](https://github.com/Gabrip780/dsh-hidden-paths/blob/2ea36fdbf522c769b61aed7c29d9de0a76825b99/package.json) → [patch](https://github.com/Gabrip780/dsh-hidden-paths/blob/2ea36fdbf522c769b61aed7c29d9de0a76825b99/cordis.patch.yml) · **Identity:** `dsh-hidden-paths`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `model-tools` `credentials` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Balance Meter** · [Guzhou2002/Fairy-DSH-Optimized@e73dfb7](https://github.com/Guzhou2002/Fairy-DSH-Optimized/commit/e73dfb7c2b906fba14e4f5eaddb552eb7326763c) — Balance-meter component in a desktop bundle
+  - **Evidence:** [manifest](https://github.com/Guzhou2002/Fairy-DSH-Optimized/blob/e73dfb7c2b906fba14e4f5eaddb552eb7326763c/balance-meter/dsh-balance-meter/package.json) → [patch](https://github.com/Guzhou2002/Fairy-DSH-Optimized/blob/e73dfb7c2b906fba14e4f5eaddb552eb7326763c/balance-meter/dsh-balance-meter/cordis.patch.yml) · **Identity:** `dsh-balance-meter`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `financial` `credentials` `client-injection` `nested-bundle` `unresolved-install-identity` `artifact-mapping-unresolved` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; source-to-distribution artifact mapping is incomplete; component is coupled to a separate host distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Netxops** · [hansjone/netxops@91f2e9a](https://github.com/hansjone/netxops/commit/91f2e9a5c8e3b7b7c66d0d5b865e1ddb5a990e4e) — Network operations and message delivery
+  - **Evidence:** [manifest](https://github.com/hansjone/netxops/blob/91f2e9a5c8e3b7b7c66d0d5b865e1ddb5a990e4e/package.json) → [patch](https://github.com/hansjone/netxops/blob/91f2e9a5c8e3b7b7c66d0d5b865e1ddb5a990e4e/cordis.patch.yml) · **Identity:** `dsh-netxops`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `credentials` `external-network` `filesystem-write` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Task Notice** · [Haoxiang-Fant/dsh-task-notice@193ecec](https://github.com/Haoxiang-Fant/dsh-task-notice/commit/193ececa4c0b6c3b93fc78940beeeb4d904e937d) — Task notifications and token-cost estimates
+  - **Evidence:** [manifest](https://github.com/Haoxiang-Fant/dsh-task-notice/blob/193ececa4c0b6c3b93fc78940beeeb4d904e937d/package.json) → [patch](https://github.com/Haoxiang-Fant/dsh-task-notice/blob/193ececa4c0b6c3b93fc78940beeeb4d904e937d/cordis.patch.yml) · **Identity:** `dsh-task-notice`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `financial` `session-data` `client-injection` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Sakiko FOR** · [hg4/sakiko-for-dsh@3c17044](https://github.com/hg4/sakiko-for-dsh/commit/3c1704415e5ed83731411f391b15ccf05a5a3e8a) — Character companion with voice and memory
+  - **Evidence:** [manifest](https://github.com/hg4/sakiko-for-dsh/blob/3c1704415e5ed83731411f391b15ccf05a5a3e8a/package.json) → [patch](https://github.com/hg4/sakiko-for-dsh/blob/3c1704415e5ed83731411f391b15ccf05a5a3e8a/cordis.patch.yml) · **Identity:** `sakiko-for-dsh`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `audio` `vision` `external-network` `session-data` `license-scope-unresolved` `compatibility-unresolved` · **Review:** Held: asset, vendored-code or license scope remains unresolved; no sufficiently versioned DSH host declaration. The code MIT license does not settle noncommercial character-asset restrictions described by the author. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Round Rightclick** · [hmr-BH/dsh-round-rightclick@9a642ff](https://github.com/hmr-BH/dsh-round-rightclick/commit/9a642ff380c8e49085b7b099f704f1b83c900ac2) — Radial conversation action menu
+  - **Evidence:** [manifest](https://github.com/hmr-BH/dsh-round-rightclick/blob/9a642ff380c8e49085b7b099f704f1b83c900ac2/package.json) → [patch](https://github.com/hmr-BH/dsh-round-rightclick/blob/9a642ff380c8e49085b7b099f704f1b83c900ac2/cordis.patch.yml) · **Identity:** `dsh-round-rightclick`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · compatibility unknown
+  - **Signals:** `native-bundle` `session-data` `filesystem-write` `subprocess` `prepare` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Dscode** · [HQ1995/deepseek-code@f6524d4](https://github.com/HQ1995/deepseek-code/commit/f6524d404c22bc266f12334455a27d71920a59bf) — DSCode TUI bridge and native launcher
+  - **Evidence:** [manifest](https://github.com/HQ1995/deepseek-code/blob/f6524d404c22bc266f12334455a27d71920a59bf/bridge/grok-leader/package.json) → [patch](https://github.com/HQ1995/deepseek-code/blob/f6524d404c22bc266f12334455a27d71920a59bf/bridge/grok-leader/cordis.patch.yml) · **Identity:** `@hqzhao95/dscode`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `native-code` `subprocess` `filesystem-write` `session-data` `nested-bundle` `artifact-mapping-unresolved` `host-coupled` · **Review:** Held: source-to-distribution artifact mapping is incomplete; component is coupled to a separate host distribution. Author DSH declaration: 0.1.5-rc.2. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Livechat** · [huashenglian/dsh-livechat@13c18c7](https://github.com/huashenglian/dsh-livechat/commit/13c18c746fc5d70f2986f36e7b0ec78821b2578c) — Conversation danmaku overlay
+  - **Evidence:** [manifest](https://github.com/huashenglian/dsh-livechat/blob/13c18c746fc5d70f2986f36e7b0ec78821b2578c/package.json) → [patch](https://github.com/huashenglian/dsh-livechat/blob/13c18c746fc5d70f2986f36e7b0ec78821b2578c/cordis.patch.yml) · **Identity:** `dsh-livechat`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `session-data` `model-tools` `client-injection` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Computer USE Advance** · [iii993/computer-use-advance@4134b48](https://github.com/iii993/computer-use-advance/commit/4134b48fcb96d296b509a92b6fa14441c12d389d) — Computer and Krita MCP bridge
+  - **Evidence:** [manifest](https://github.com/iii993/computer-use-advance/blob/4134b48fcb96d296b509a92b6fa14441c12d389d/package.json) → [patch](https://github.com/iii993/computer-use-advance/blob/4134b48fcb96d296b509a92b6fa14441c12d389d/cordis.patch.yml) · **Identity:** `computer-use-advance`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `mcp` `subprocess` `vision` `filesystem-write` `license-incomplete` `compatibility-unresolved` `artifact-mapping-unresolved` · **Review:** Held: repository or package license evidence is incomplete; no sufficiently versioned DSH host declaration; source-to-distribution artifact mapping is incomplete. Author DSH declaration: *. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **KDE Tint** · [iwinoid/dsh-kde-tint@c91cb0d](https://github.com/iwinoid/dsh-kde-tint/commit/c91cb0d35cb601d46315795c313b52cab7f4728e) — KDE system-accent interface tint
+  - **Evidence:** [manifest](https://github.com/iwinoid/dsh-kde-tint/blob/c91cb0d35cb601d46315795c313b52cab7f4728e/package.json) → [patch](https://github.com/iwinoid/dsh-kde-tint/blob/c91cb0d35cb601d46315795c313b52cab7f4728e/cordis.patch.yml) · **Identity:** `dsh-kde-tint`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `subprocess` `theme` `client-injection` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **OSS Sync** · [jackchun53/dsh-oss-sync@7e23696](https://github.com/jackchun53/dsh-oss-sync/commit/7e2369617903d66104964092162163b0db1ca3a7) — Object-storage settings and credential sync
+  - **Evidence:** [manifest](https://github.com/jackchun53/dsh-oss-sync/blob/7e2369617903d66104964092162163b0db1ca3a7/package.json) → [patch](https://github.com/jackchun53/dsh-oss-sync/blob/7e2369617903d66104964092162163b0db1ca3a7/cordis.patch.yml) · **Identity:** `dsh-oss-sync`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · compatibility unknown
+  - **Signals:** `native-bundle` `credentials` `external-network` `filesystem-write` `prepublish-only` `compatibility-conflict` · **Review:** Held: declared ranges and documented host compatibility are not aligned. Author DSH declaration: *. Wildcard peers are explicitly reported as rejected by the 0.1.5-rc.2 loader; sync can replace settings and credentials. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Locale PT BR** · [JoaoPauloNA/deepseek-harness-pt-br@4975db5](https://github.com/JoaoPauloNA/deepseek-harness-pt-br/commit/4975db5d8465ee872bb7e36f264c84eeaf3cd37e) — Brazilian Portuguese locale pack
+  - **Evidence:** [manifest](https://github.com/JoaoPauloNA/deepseek-harness-pt-br/blob/4975db5d8465ee872bb7e36f264c84eeaf3cd37e/package.json) → [patch](https://github.com/JoaoPauloNA/deepseek-harness-pt-br/blob/4975db5d8465ee872bb7e36f264c84eeaf3cd37e/cordis.patch.yml) · **Identity:** `dsh-locale-pt-br`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `compatibility-conflict` · **Review:** Held: declared ranges and documented host compatibility are not aligned. Author DSH declaration: greater than =0.1.0. A stable 0.1.0 lower bound does not explicitly admit the documented 0.1.0-rc.7 prerelease. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Novelist Bundle** · [julian0zzx/ai-novelist@4d7007e](https://github.com/julian0zzx/ai-novelist/commit/4d7007e027be426659a3ce262c729b948d74e13a) — Novel-composition profile bundle
+  - **Evidence:** [manifest](https://github.com/julian0zzx/ai-novelist/blob/4d7007e027be426659a3ce262c729b948d74e13a/packages/novelist-bundle/package.json) → [patch](https://github.com/julian0zzx/ai-novelist/blob/4d7007e027be426659a3ce262c729b948d74e13a/packages/novelist-bundle/cordis.patch.yml) · **Identity:** `@ai-novelist/novelist-bundle`
+  - **Licenses:** repo `AGPL-3.0` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `model-tools` `filesystem-write` `vision` `audio` `nested-bundle` `unresolved-install-identity` `license-scope-unresolved` · **Review:** Held: public installation identity is not completely mapped; asset, vendored-code or license scope remains unresolved. Repository AGPL-3.0 and package MIT declarations need an explicit scope explanation. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **PPT Maker** · [kitterfast/dsh-ppt-maker@b2a528a](https://github.com/kitterfast/dsh-ppt-maker/commit/b2a528abb7136164074264e84a8a63631dcc51ec) — Presentation-generation workflow menu
+  - **Evidence:** [manifest](https://github.com/kitterfast/dsh-ppt-maker/blob/b2a528abb7136164074264e84a8a63631dcc51ec/package.json) → [patch](https://github.com/kitterfast/dsh-ppt-maker/blob/b2a528abb7136164074264e84a8a63631dcc51ec/cordis.patch.yml) · **Identity:** `dsh-ppt-maker`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `system-prompt` `filesystem-write` `external-network` `vision` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Multimedia Webui Input** · [LCYLYM/dsh-attachments@097a88a](https://github.com/LCYLYM/dsh-attachments/commit/097a88acf0e8506a03c574a7659785ddb872eeca) — Folder-drop and attachment previews
+  - **Evidence:** [manifest](https://github.com/LCYLYM/dsh-attachments/blob/097a88acf0e8506a03c574a7659785ddb872eeca/package.json) → [patch](https://github.com/LCYLYM/dsh-attachments/blob/097a88acf0e8506a03c574a7659785ddb872eeca/cordis.patch.yml) · **Identity:** `dsh-multimedia-webui-input`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `vision` `prepack` `prepublish-only` `unresolved-install-identity` `artifact-mapping-unresolved` · **Review:** Held: public installation identity is not completely mapped; source-to-distribution artifact mapping is incomplete. Recorded lifecycle hooks: prepack, prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Openclaude** · [liangz2210-lgtm/dsh-openclaude-ecosystem@2ccd24f](https://github.com/liangz2210-lgtm/dsh-openclaude-ecosystem/commit/2ccd24f90465f003b38f23c0d14a0dca73b01560) — OpenClaude task-graph executor adapter
+  - **Evidence:** [manifest](https://github.com/liangz2210-lgtm/dsh-openclaude-ecosystem/blob/2ccd24f90465f003b38f23c0d14a0dca73b01560/packages/dsh-openclaude/package.json) → [patch](https://github.com/liangz2210-lgtm/dsh-openclaude-ecosystem/blob/2ccd24f90465f003b38f23c0d14a0dca73b01560/packages/dsh-openclaude/cordis.patch.yml) · **Identity:** `dsh-openclaude`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · compatibility unknown
+  - **Signals:** `native-bundle` `subprocess` `multi-agent` `filesystem-write` `nested-bundle` `prepublish-only` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Stock Panel** · [LisonEvf/dsh-stock-panel@d745f8a](https://github.com/LisonEvf/dsh-stock-panel/commit/d745f8aa8b7d1298623e494f32a427ee6c91a337) — Stock-research dashboard
+  - **Evidence:** [manifest](https://github.com/LisonEvf/dsh-stock-panel/blob/d745f8aa8b7d1298623e494f32a427ee6c91a337/package.json) → [patch](https://github.com/LisonEvf/dsh-stock-panel/blob/d745f8aa8b7d1298623e494f32a427ee6c91a337/cordis.patch.yml) · **Identity:** `@lisonevf/dsh-stock-panel`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `prepare` · compatibility unknown
+  - **Signals:** `native-bundle` `financial` `external-network` `model-tools` `prepare` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Courseware** · [lnsdlszsqxxx/dsh-courseware@130a7fc](https://github.com/lnsdlszsqxxx/dsh-courseware/commit/130a7fc4423f7740aa5030cb7484b8ca7e204ed6) — Template-based courseware generation
+  - **Evidence:** [manifest](https://github.com/lnsdlszsqxxx/dsh-courseware/blob/130a7fc4423f7740aa5030cb7484b8ca7e204ed6/package.json) → [patch](https://github.com/lnsdlszsqxxx/dsh-courseware/blob/130a7fc4423f7740aa5030cb7484b8ca7e204ed6/cordis.patch.yml) · **Identity:** `dsh-courseware`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `model-tools` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Context Lifecycle** · [luomious/deepseek-harness-desktop@92150fd](https://github.com/luomious/deepseek-harness-desktop/commit/92150fd0fcab31d59382d0c00666c74a71234453) — Desktop context-lifecycle component
+  - **Evidence:** [manifest](https://github.com/luomious/deepseek-harness-desktop/blob/92150fd0fcab31d59382d0c00666c74a71234453/dsh-context-lifecycle/package.json) → [patch](https://github.com/luomious/deepseek-harness-desktop/blob/92150fd0fcab31d59382d0c00666c74a71234453/dsh-context-lifecycle/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-context-lifecycle`
+  - **Licenses:** repo `MIT` / package `BSD-3-Clause` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `session-data` `client-injection` `nested-bundle` `unresolved-install-identity` `compatibility-unresolved` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration; component is coupled to a separate host distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Tool Sourcegraph** · [markab21/dsh-tool-sourcegraph@b157e57](https://github.com/markab21/dsh-tool-sourcegraph/commit/b157e5712b7bad0e5b93566d119ee506d7c94e3e) — Sourcegraph indexed-code search
+  - **Evidence:** [manifest](https://github.com/markab21/dsh-tool-sourcegraph/blob/b157e5712b7bad0e5b93566d119ee506d7c94e3e/package.json) → [patch](https://github.com/markab21/dsh-tool-sourcegraph/blob/b157e5712b7bad0e5b93566d119ee506d7c94e3e/cordis.patch.yml) · **Identity:** `dsh-tool-sourcegraph`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `external-network` `credentials` `web-search` `license-scope-unresolved` · **Review:** Held: asset, vendored-code or license scope remains unresolved. Author DSH declaration: ^0.1.5-rc.1. Vendored Sourcegraph provenance notes acknowledge an unresolved upstream licensing boundary; own MIT declaration is insufficient. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Plugin** · [microai-lab/dsh-topic-desk@a34337f](https://github.com/microai-lab/dsh-topic-desk/commit/a34337fb5584178a75a8d8f10e3e37077486b7f8) — Local trend and topic collection desk
+  - **Evidence:** [manifest](https://github.com/microai-lab/dsh-topic-desk/blob/a34337fb5584178a75a8d8f10e3e37077486b7f8/package.json) → [patch](https://github.com/microai-lab/dsh-topic-desk/blob/a34337fb5584178a75a8d8f10e3e37077486b7f8/cordis.patch.yml) · **Identity:** `@dsh-topic-desk/plugin`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `external-network` `model-tools` `filesystem-write` `unresolved-install-identity` `artifact-mapping-unresolved` · **Review:** Held: public installation identity is not completely mapped; source-to-distribution artifact mapping is incomplete. Author DSH declaration: 0.1.5-rc.2; greater than =0.1.5-rc.1 less than 0.2.0. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Jina** · [minatoAI/jina-web-search-dsh-plugin@2096c5b](https://github.com/minatoAI/jina-web-search-dsh-plugin/commit/2096c5be1cdbdd1c3f7e54029bdd5b105995d906) — Jina search, reading and embedding tools
+  - **Evidence:** [manifest](https://github.com/minatoAI/jina-web-search-dsh-plugin/blob/2096c5be1cdbdd1c3f7e54029bdd5b105995d906/package.json) → [patch](https://github.com/minatoAI/jina-web-search-dsh-plugin/blob/2096c5be1cdbdd1c3f7e54029bdd5b105995d906/cordis.patch.yml) · **Identity:** `dsh-jina`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `external-network` `credentials` `web-search` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Token Balance** · [Mrxiewei/dsh-token-balance@6fd2b4e](https://github.com/Mrxiewei/dsh-token-balance/commit/6fd2b4efe8e0b977fcb4fc6bde5c4f6f70c47327) — Account-balance and token fuel gauge
+  - **Evidence:** [manifest](https://github.com/Mrxiewei/dsh-token-balance/blob/6fd2b4efe8e0b977fcb4fc6bde5c4f6f70c47327/package.json) → [patch](https://github.com/Mrxiewei/dsh-token-balance/blob/6fd2b4efe8e0b977fcb4fc6bde5c4f6f70c47327/cordis.patch.yml) · **Identity:** `dsh-token-balance`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `credentials` `financial` `external-network` `compatibility-conflict` · **Review:** Held: declared ranges and documented host compatibility are not aligned. Author DSH declaration: greater than =0.1.0. Public Git/manual installation is documented, but prerelease host support is not established by the stable lower-bound peer. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Muen Plugins** · [muen-collective/muen-plugins@df8e952](https://github.com/muen-collective/muen-plugins/commit/df8e9525a3510cf163a21ffada6cd4ad37a59cbe) — Muen-delivered plugin inventory tab
+  - **Evidence:** [manifest](https://github.com/muen-collective/muen-plugins/blob/df8e9525a3510cf163a21ffada6cd4ad37a59cbe/plugins/dsh-muen-plugins/package.json) → [patch](https://github.com/muen-collective/muen-plugins/blob/df8e9525a3510cf163a21ffada6cd4ad37a59cbe/plugins/dsh-muen-plugins/cordis.patch.yml) · **Identity:** `@muen/dsh-muen-plugins`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `plugin-management` `nested-bundle` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` `host-coupled` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration; component is coupled to a separate host distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Contextbridge** · [NeoZhao233/ContextBridge@6ae4c9e](https://github.com/NeoZhao233/ContextBridge/commit/6ae4c9e21681681d5a4aa0d0c8c512d3ed86f723) — ContextBridge Python handoff adapter
+  - **Evidence:** [manifest](https://github.com/NeoZhao233/ContextBridge/blob/6ae4c9e21681681d5a4aa0d0c8c512d3ed86f723/integrations/dsh-plugin/package.json) → [patch](https://github.com/NeoZhao233/ContextBridge/blob/6ae4c9e21681681d5a4aa0d0c8c512d3ed86f723/integrations/dsh-plugin/cordis.patch.yml) · **Identity:** `contextbridge-dsh`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `subprocess` `session-data` `filesystem-read` `filesystem-write` `nested-bundle` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Author DSH declaration: *. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Chat Artifacts** · [ningbainb/deepseek-harness-desktop@23d58fd](https://github.com/ningbainb/deepseek-harness-desktop/commit/23d58fdad672a10037a39421b7d6cd78e81917f9) — Desktop chat-artifact renderer
+  - **Evidence:** [manifest](https://github.com/ningbainb/deepseek-harness-desktop/blob/23d58fdad672a10037a39421b7d6cd78e81917f9/packages/dsh-chat-artifacts/package.json) → [patch](https://github.com/ningbainb/deepseek-harness-desktop/blob/23d58fdad672a10037a39421b7d6cd78e81917f9/packages/dsh-chat-artifacts/cordis.patch.yml) · **Identity:** `@ningbainb/dsh-chat-artifacts`
+  - **Licenses:** repo `BSD-3-Clause` / package `Apache-2.0` · lifecycle `prepare` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `filesystem-write` `model-tools` `nested-bundle` `prepare` `unresolved-install-identity` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; component is coupled to a separate host distribution. Author DSH declaration: ^0.1.1-rc.1 || ^0.1.5-alpha.1 || ^0.1.5-rc.1; 0.1.5-alpha.1 || 0.1.5-rc.1. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Brand Yammaman** · [noiy19/Yammaman@9ed5cc9](https://github.com/noiy19/Yammaman/commit/9ed5cc92d8018abe4c2f35698650f8a14d0b4ecb) — Yammaman desktop branding module
+  - **Evidence:** [manifest](https://github.com/noiy19/Yammaman/blob/9ed5cc92d8018abe4c2f35698650f8a14d0b4ecb/yammaman-brand-plugin/package.json) → [patch](https://github.com/noiy19/Yammaman/blob/9ed5cc92d8018abe4c2f35698650f8a14d0b4ecb/yammaman-brand-plugin/cordis.patch.yml) · **Identity:** `@muen/dsh-brand-yammaman`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `theme` `nested-bundle` `license-incomplete` `unresolved-install-identity` `host-coupled` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; component is coupled to a separate host distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Tool Session** · [Nothing1024/dsh-session-tool@6f67377](https://github.com/Nothing1024/dsh-session-tool/commit/6f67377562a9580bfe42ffe05878f4182af5c809) — Persistent session delegation tools
+  - **Evidence:** [manifest](https://github.com/Nothing1024/dsh-session-tool/blob/6f67377562a9580bfe42ffe05878f4182af5c809/packages/tool-session/package.json) → [patch](https://github.com/Nothing1024/dsh-session-tool/blob/6f67377562a9580bfe42ffe05878f4182af5c809/packages/tool-session/cordis.patch.yml) · **Identity:** `tool-session`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `session-data` `multi-agent` `filesystem-write` `nested-bundle` `license-incomplete` `unresolved-install-identity` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped. Author DSH declaration: ^0.1.2-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Global Memory** · [oldsan888/dsh-global-memory@edb5ec9](https://github.com/oldsan888/dsh-global-memory/commit/edb5ec9f5c6be6e6b19e402e20f48b2fbb6afd36) — Global SQLite long-term memory
+  - **Evidence:** [manifest](https://github.com/oldsan888/dsh-global-memory/blob/edb5ec9f5c6be6e6b19e402e20f48b2fbb6afd36/package.json) → [patch](https://github.com/oldsan888/dsh-global-memory/blob/edb5ec9f5c6be6e6b19e402e20f48b2fbb6afd36/cordis.patch.yml) · **Identity:** `@oldsan888/dsh-global-memory`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · mixed peer ranges
+  - **Signals:** `native-bundle` `database` `session-data` `external-network` `system-prompt` `prepare` `release-pin-mismatch` · **Review:** Held: documented installation pin does not match this source snapshot. Author DSH declaration: 0.1.1-rc.2 || 0.1.2-alpha.1. The documented Git pin 4fc9bed446835682fd66dacd6451a71d84408ba2 differs from this candidate. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **DSH** · [openguardrails/openguardrails@1a6ea82](https://github.com/openguardrails/openguardrails/commit/1a6ea8220b817ad621444552c66e4211b62053f5) — Remote model-call and approval guard adapter
+  - **Evidence:** [manifest](https://github.com/openguardrails/openguardrails/blob/1a6ea8220b817ad621444552c66e4211b62053f5/integrations/agent/dsh/package.json) → [patch](https://github.com/openguardrails/openguardrails/blob/1a6ea8220b817ad621444552c66e4211b62053f5/integrations/agent/dsh/cordis.patch.yml) · **Identity:** `@openguardrails/dsh`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `external-network` `credentials` `session-data` `permission-policy` `nested-bundle` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Author DSH declaration: *. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Auth** · [PelyDeng/dsh-plugin-manager@ca55021](https://github.com/PelyDeng/dsh-plugin-manager/commit/ca5502173fff329bcd25994d9b388e3075351a18) — Plugin-account and access-control component
+  - **Evidence:** [manifest](https://github.com/PelyDeng/dsh-plugin-manager/blob/ca5502173fff329bcd25994d9b388e3075351a18/plugins/dsh-auth/package.json) → [patch](https://github.com/PelyDeng/dsh-plugin-manager/blob/ca5502173fff329bcd25994d9b388e3075351a18/plugins/dsh-auth/cordis.patch.yml) · **Identity:** `dsh-auth`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `credentials` `database` `filesystem-write` `nested-bundle` `unresolved-install-identity` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; component is coupled to a separate host distribution. Author DSH declaration: 0.1.5-alpha.2. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Knit** · [PolinniZhong/dsh-knit@5c7d9a6](https://github.com/PolinniZhong/dsh-knit/commit/5c7d9a6da641c77a5c4e0f03a5f220fbef30e973) — Relevant Markdown documents sidebar
+  - **Evidence:** [manifest](https://github.com/PolinniZhong/dsh-knit/blob/5c7d9a6da641c77a5c4e0f03a5f220fbef30e973/package.json) → [patch](https://github.com/PolinniZhong/dsh-knit/blob/5c7d9a6da641c77a5c4e0f03a5f220fbef30e973/cordis.patch.yml) · **Identity:** `dsh-knit`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `session-data` `client-injection` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Agent Board** · [PPawnsir/task-board-plugin@1154745](https://github.com/PPawnsir/task-board-plugin/commit/115474550147106059ca6c6c1b664f371cfecc1b) — Worker and verifier task board
+  - **Evidence:** [manifest](https://github.com/PPawnsir/task-board-plugin/blob/115474550147106059ca6c6c1b664f371cfecc1b/packages/dsh-agent-board/package.json) → [patch](https://github.com/PPawnsir/task-board-plugin/blob/115474550147106059ca6c6c1b664f371cfecc1b/packages/dsh-agent-board/cordis.patch.yml) · **Identity:** `dsh-agent-board`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `multi-agent` `filesystem-write` `session-data` `nested-bundle` `license-incomplete` `compatibility-unresolved` · **Review:** Held: repository or package license evidence is incomplete; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Thinking Language** · [qingmomo233/dsh-thinking-language@9764c3f](https://github.com/qingmomo233/dsh-thinking-language/commit/9764c3f8024a51ed2cfe7c5db5977b7864660132) — Reasoning-language prompt control
+  - **Evidence:** [manifest](https://github.com/qingmomo233/dsh-thinking-language/blob/9764c3f8024a51ed2cfe7c5db5977b7864660132/package.json) → [patch](https://github.com/qingmomo233/dsh-thinking-language/blob/9764c3f8024a51ed2cfe7c5db5977b7864660132/cordis.patch.yml) · **Identity:** `dsh-thinking-language`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `system-prompt` `client-injection` `license-incomplete` · **Review:** Held: repository or package license evidence is incomplete. Author DSH declaration: greater than =0.1.0-rc.5. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Browser Live** · [Raylen-berry/dsh-browser-live@00b9b0d](https://github.com/Raylen-berry/dsh-browser-live/commit/00b9b0de6a471fc6f3f308eeb6495ae739d52853) — Visible CDP browser-control workspace
+  - **Evidence:** [manifest](https://github.com/Raylen-berry/dsh-browser-live/blob/00b9b0de6a471fc6f3f308eeb6495ae739d52853/package.json) → [patch](https://github.com/Raylen-berry/dsh-browser-live/blob/00b9b0de6a471fc6f3f308eeb6495ae739d52853/cordis.patch.yml) · **Identity:** `dsh-browser-live`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `browser` `credentials` `subprocess` `filesystem-write` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: ^0.1.2-alpha.1; greater than =0.1.0-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Voice Local** · [Real-WangLe/dsh-voice-local@ed375e0](https://github.com/Real-WangLe/dsh-voice-local/commit/ed375e03c87675b6a4913b52e97e0384025f110a) — Local speech-input transcription
+  - **Evidence:** [manifest](https://github.com/Real-WangLe/dsh-voice-local/blob/ed375e03c87675b6a4913b52e97e0384025f110a/package.json) → [patch](https://github.com/Real-WangLe/dsh-voice-local/blob/ed375e03c87675b6a4913b52e97e0384025f110a/cordis.patch.yml) · **Identity:** `dsh-voice-local`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · compatibility unknown
+  - **Signals:** `native-bundle` `audio` `native-code` `external-network` `prepublish-only` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Author DSH declaration: *. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Solpi** · [ryanxie113/dsh-solpi@432b845](https://github.com/ryanxie113/dsh-solpi/commit/432b84549d86819d34e4a0ad52b94a793457dee8) — Action and context-efficiency mechanisms
+  - **Evidence:** [manifest](https://github.com/ryanxie113/dsh-solpi/blob/432b84549d86819d34e4a0ad52b94a793457dee8/packages/solpi-dsh/package.json) → [patch](https://github.com/ryanxie113/dsh-solpi/blob/432b84549d86819d34e4a0ad52b94a793457dee8/packages/solpi-dsh/cordis.patch.yml) · **Identity:** `solpi-dsh`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `prepare` · compatibility unknown
+  - **Signals:** `native-bundle` `model-tools` `filesystem-write` `system-prompt` `nested-bundle` `prepare` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` `artifact-mapping-unresolved` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration; source-to-distribution artifact mapping is incomplete. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Webops Plugin** · [sdegongzuo/dsh-webops-plugin@59b548c](https://github.com/sdegongzuo/dsh-webops-plugin/commit/59b548c4af4d47a4d824dcbe073098598e8d701f) — CDP browser operations and observation
+  - **Evidence:** [manifest](https://github.com/sdegongzuo/dsh-webops-plugin/blob/59b548c4af4d47a4d824dcbe073098598e8d701f/package.json) → [patch](https://github.com/sdegongzuo/dsh-webops-plugin/blob/59b548c4af4d47a4d824dcbe073098598e8d701f/cordis.patch.yml) · **Identity:** `dsh-webops-plugin`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `browser` `subprocess` `credentials` `external-network` `unresolved-install-identity` `artifact-mapping-unresolved` · **Review:** Held: public installation identity is not completely mapped; source-to-distribution artifact mapping is incomplete. Author DSH declaration: ^0.1.6-alpha.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Thincoder Suite** · [shenhuanageshei/dsh-thincoder-suite@99975a5](https://github.com/shenhuanageshei/dsh-thincoder-suite/commit/99975a5aac65bbac723268cb329800a5a2d6183a) — Advisor and engineering workflow suite
+  - **Evidence:** [manifest](https://github.com/shenhuanageshei/dsh-thincoder-suite/blob/99975a5aac65bbac723268cb329800a5a2d6183a/package.json) → [patch](https://github.com/shenhuanageshei/dsh-thincoder-suite/blob/99975a5aac65bbac723268cb329800a5a2d6183a/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-thincoder-suite`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `multi-agent` `filesystem-write` `model-tools` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Remote Attachments** · [shxtmaker/dsh-windows-launcher@676f6a0](https://github.com/shxtmaker/dsh-windows-launcher/commit/676f6a0e6d69a84c7c430a4952cfa5c5c5eea2f8) — Remote Windows attachment bridge
+  - **Evidence:** [manifest](https://github.com/shxtmaker/dsh-windows-launcher/blob/676f6a0e6d69a84c7c430a4952cfa5c5c5eea2f8/plugins/dsh-remote-attachments/package.json) → [patch](https://github.com/shxtmaker/dsh-windows-launcher/blob/676f6a0e6d69a84c7c430a4952cfa5c5c5eea2f8/plugins/dsh-remote-attachments/cordis.patch.yml) · **Identity:** `@shxtmaker/dsh-remote-attachments`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-read` `vision` `session-data` `nested-bundle` `license-incomplete` `unresolved-install-identity` `host-coupled` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; component is coupled to a separate host distribution. Author DSH declaration: greater than =0.1.5-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Artemis** · [SimonMedy/dsh-artemis@88a289f](https://github.com/SimonMedy/dsh-artemis/commit/88a289f1bc1242d879d8214824b8f186fb5e7d28) — ARTEMIS host integration
+  - **Evidence:** [manifest](https://github.com/SimonMedy/dsh-artemis/blob/88a289f1bc1242d879d8214824b8f186fb5e7d28/package.json) → [patch](https://github.com/SimonMedy/dsh-artemis/blob/88a289f1bc1242d879d8214824b8f186fb5e7d28/cordis.patch.yml) · **Identity:** `dsh-artemis`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `mcp` `subprocess` `client-injection` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Token Feiyong** · [singei8/DSH-TOKEN-feiyong@445e14c](https://github.com/singei8/DSH-TOKEN-feiyong/commit/445e14c6f9a6a0e585df8fb9259b8d77364604bc) — Token cost and balance display
+  - **Evidence:** [manifest](https://github.com/singei8/DSH-TOKEN-feiyong/blob/445e14c6f9a6a0e585df8fb9259b8d77364604bc/package.json) → [patch](https://github.com/singei8/DSH-TOKEN-feiyong/blob/445e14c6f9a6a0e585df8fb9259b8d77364604bc/cordis.patch.yml) · **Identity:** `dsh-token-feiyong`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `financial` `credentials` `external-network` `session-data` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Personal Assistant** · [softjava2026/dsh-personal-assistant@699c2cf](https://github.com/softjava2026/dsh-personal-assistant/commit/699c2cf3c057ffc62de103fcd7992583bc54c8ce) — Memory, calendar and note assistant bundle
+  - **Evidence:** [manifest](https://github.com/softjava2026/dsh-personal-assistant/blob/699c2cf3c057ffc62de103fcd7992583bc54c8ce/package.json) → [patch](https://github.com/softjava2026/dsh-personal-assistant/blob/699c2cf3c057ffc62de103fcd7992583bc54c8ce/cordis.patch.yml) · **Identity:** `dsh-personal-assistant`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · mixed peer ranges
+  - **Signals:** `native-bundle` `database` `mcp` `model-tools` `filesystem-write` `prepublish-only` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: greater than =0.1.0-rc.6 less than 0.2.0. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Context Graph** · [stelmakhdigital/dsh-graph-context@a88508f](https://github.com/stelmakhdigital/dsh-graph-context/commit/a88508f088e03532be806ef329bab4411e4f6fcc) — Repository context graph adapter
+  - **Evidence:** [manifest](https://github.com/stelmakhdigital/dsh-graph-context/blob/a88508f088e03532be806ef329bab4411e4f6fcc/package.json) → [patch](https://github.com/stelmakhdigital/dsh-graph-context/blob/a88508f088e03532be806ef329bab4411e4f6fcc/cordis.patch.yml) · **Identity:** `dsh-context-graph`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · compatibility unknown
+  - **Signals:** `native-bundle` `subprocess` `filesystem-read` `filesystem-write` `system-prompt` `prepare` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Author DSH declaration: *. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **WPS Office Next** · [sueccku/dsh-plugin-wps-office-next@0500350](https://github.com/sueccku/dsh-plugin-wps-office-next/commit/0500350c96797da292e283dbc414dec7b840606b) — Windows WPS Office automation
+  - **Evidence:** [manifest](https://github.com/sueccku/dsh-plugin-wps-office-next/blob/0500350c96797da292e283dbc414dec7b840606b/package.json) → [patch](https://github.com/sueccku/dsh-plugin-wps-office-next/blob/0500350c96797da292e283dbc414dec7b840606b/cordis.patch.yml) · **Identity:** `dsh-plugin-wps-office-next`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `mcp` `native-helper` `subprocess` `filesystem-write` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Tool Meta** · [sunwindy91/dsh-tool-meta@0246a66](https://github.com/sunwindy91/dsh-tool-meta/commit/0246a666e481f12dee2d67895b0c47601119024e) — Tool-outcome reflection and skill writing
+  - **Evidence:** [manifest](https://github.com/sunwindy91/dsh-tool-meta/blob/0246a666e481f12dee2d67895b0c47601119024e/package.json) → [patch](https://github.com/sunwindy91/dsh-tool-meta/blob/0246a666e481f12dee2d67895b0c47601119024e/cordis.patch.yml) · **Identity:** `@sunwindy/dsh-tool-meta`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `model-tools` `filesystem-write` `system-prompt` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Author DSH declaration: *. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Tabilet Skills** · [tabilet/tabilet-skills@039046e](https://github.com/tabilet/tabilet-skills/commit/039046e627c95291b5ec4eadce1bc2a47ef450ec) — Memory-bank skills and project dashboard
+  - **Evidence:** [manifest](https://github.com/tabilet/tabilet-skills/blob/039046e627c95291b5ec4eadce1bc2a47ef450ec/package.json) → [patch](https://github.com/tabilet/tabilet-skills/blob/039046e627c95291b5ec4eadce1bc2a47ef450ec/cordis.patch.yml) · **Identity:** `tabilet-skills`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `client-injection` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: ^0.1.5-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Deep Plugin Manager** · [temidayoxyz/deep-plugin-manager@914c850](https://github.com/temidayoxyz/deep-plugin-manager/commit/914c850c2d3f94b46f568c3ef324d65173378bd7) — GitHub-hosted plugin manager
+  - **Evidence:** [manifest](https://github.com/temidayoxyz/deep-plugin-manager/blob/914c850c2d3f94b46f568c3ef324d65173378bd7/package.json) → [patch](https://github.com/temidayoxyz/deep-plugin-manager/blob/914c850c2d3f94b46f568c3ef324d65173378bd7/cordis.patch.yml) · **Identity:** `dsh-deep-plugin-manager`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · compatibility unknown
+  - **Signals:** `native-bundle` `package-install` `plugin-management` `subprocess` `filesystem-write` `prepare` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **GIT FOR** · [theRMM714/git-for-dsh@3b75c1c](https://github.com/theRMM714/git-for-dsh/commit/3b75c1c350f9dcce53b02f5df314353d976be4d7) — Allowlisted Git command tool
+  - **Evidence:** [manifest](https://github.com/theRMM714/git-for-dsh/blob/3b75c1c350f9dcce53b02f5df314353d976be4d7/package.json) → [patch](https://github.com/theRMM714/git-for-dsh/blob/3b75c1c350f9dcce53b02f5df314353d976be4d7/cordis.patch.yml) · **Identity:** `git-for-dsh`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `subprocess` `credentials` `filesystem-write` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Author DSH declaration: *. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Quick Shell** · [thuCGRA/dsh-command-plugin@7fbba79](https://github.com/thuCGRA/dsh-command-plugin/commit/7fbba796ea52169953b625f8c952f2f619409bf0) — Quick shell-command tool
+  - **Evidence:** [manifest](https://github.com/thuCGRA/dsh-command-plugin/blob/7fbba796ea52169953b625f8c952f2f619409bf0/package.json) → [patch](https://github.com/thuCGRA/dsh-command-plugin/blob/7fbba796ea52169953b625f8c952f2f619409bf0/cordis.patch.yml) · **Identity:** `dsh-quick-shell`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `subprocess` `filesystem-write` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: ^0.1.1-rc.2. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Tdai Memory Plugin** · [TimKingNF/dsh-tdai-memory-plugin@4daee80](https://github.com/TimKingNF/dsh-tdai-memory-plugin/commit/4daee807d3eda436648454398aadabacdaee4587) — TencentDB agent-memory adapter
+  - **Evidence:** [manifest](https://github.com/TimKingNF/dsh-tdai-memory-plugin/blob/4daee807d3eda436648454398aadabacdaee4587/package.json) → [patch](https://github.com/TimKingNF/dsh-tdai-memory-plugin/blob/4daee807d3eda436648454398aadabacdaee4587/cordis.patch.yml) · **Identity:** `dsh-tdai-memory-plugin`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `external-network` `credentials` `session-data` `system-prompt` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Onenat Workbuddy Mention** · [toddpan/onenat-workbuddy-mention@6c901f6](https://github.com/toddpan/onenat-workbuddy-mention/commit/6c901f6bc320547be693f0dfbb8344125eb67d71) — OneNat WorkBuddy agent mentions
+  - **Evidence:** [manifest](https://github.com/toddpan/onenat-workbuddy-mention/blob/6c901f6bc320547be693f0dfbb8344125eb67d71/package.json) → [patch](https://github.com/toddpan/onenat-workbuddy-mention/blob/6c901f6bc320547be693f0dfbb8344125eb67d71/cordis.patch.yml) · **Identity:** `@dsh-external/onenat-workbuddy-mention`
+  - **Licenses:** repo `Unresolved` / package `BSD-3-Clause` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `subprocess` `credentials` `multi-agent` `external-network` `license-incomplete` · **Review:** Held: repository or package license evidence is incomplete. Author DSH declaration: greater than =0.1.5-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Agentflow** · [toustifer/agentflow@fed32be](https://github.com/toustifer/agentflow/commit/fed32beffabfb02e5b392a6deeef8a0cc4940008) — Agentflow MCP and skills component
+  - **Evidence:** [manifest](https://github.com/toustifer/agentflow/blob/fed32beffabfb02e5b392a6deeef8a0cc4940008/dsh-agentflow/package.json) → [patch](https://github.com/toustifer/agentflow/blob/fed32beffabfb02e5b392a6deeef8a0cc4940008/dsh-agentflow/cordis.patch.yml) · **Identity:** `@toustifer/dsh-agentflow`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `prepack` · declares rc.6 peers
+  - **Signals:** `native-bundle` `mcp` `subprocess` `filesystem-write` `nested-bundle` `prepack` `license-incomplete` `unresolved-install-identity` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped. Author DSH declaration: ^0.1.0-rc.6. The nested dsh-agentflow package is the real patch-mounted identity; public distribution and repository license remain incomplete. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Global Agent** · [tuantuan0218/TDSH@7bfb185](https://github.com/tuantuan0218/TDSH/commit/7bfb185f663c6264b04d1077d8c732c564f05af4) — Desktop global AGENTS editor
+  - **Evidence:** [manifest](https://github.com/tuantuan0218/TDSH/blob/7bfb185f663c6264b04d1077d8c732c564f05af4/resources/app/dsh-plugins/dsh-global-agent/package.json) → [patch](https://github.com/tuantuan0218/TDSH/blob/7bfb185f663c6264b04d1077d8c732c564f05af4/resources/app/dsh-plugins/dsh-global-agent/cordis.patch.yml) · **Identity:** `dsh-global-agent`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-write` `system-prompt` `nested-bundle` `unresolved-install-identity` `compatibility-unresolved` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration; component is coupled to a separate host distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Process Fold** · [uigdwunm/dsh-process-fold@f18535f](https://github.com/uigdwunm/dsh-process-fold/commit/f18535fdde112e78de0bd5f07292986cc20e4167) — Collapsible conversation process boxes
+  - **Evidence:** [manifest](https://github.com/uigdwunm/dsh-process-fold/blob/f18535fdde112e78de0bd5f07292986cc20e4167/package.json) → [patch](https://github.com/uigdwunm/dsh-process-fold/blob/f18535fdde112e78de0bd5f07292986cc20e4167/cordis.patch.yml) · **Identity:** `dsh-process-fold`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `session-data` `prepublish-only` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Rescue** · [ulooln/dsh-extarnal-rescue@98f4302](https://github.com/ulooln/dsh-extarnal-rescue/commit/98f4302ff786f45b9bde05585d09a05f374e658f) — Standalone host-repair agent
+  - **Evidence:** [manifest](https://github.com/ulooln/dsh-extarnal-rescue/blob/98f4302ff786f45b9bde05585d09a05f374e658f/package.json) → [patch](https://github.com/ulooln/dsh-extarnal-rescue/blob/98f4302ff786f45b9bde05585d09a05f374e658f/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-rescue`
+  - **Licenses:** repo `Unresolved` / package `BSD-3-Clause` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `subprocess` `filesystem-write` `process-control` `license-incomplete` `unresolved-install-identity` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped. Author DSH declaration: greater than =0.0.1-rc less than 2. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Arch Canvas** · [vesita/arch-canvas@6ce7824](https://github.com/vesita/arch-canvas/commit/6ce782471ff525fd68858b6cceeb4f680689c1d5) — Shared Mermaid architecture canvas
+  - **Evidence:** [manifest](https://github.com/vesita/arch-canvas/blob/6ce782471ff525fd68858b6cceeb4f680689c1d5/package.json) → [patch](https://github.com/vesita/arch-canvas/blob/6ce782471ff525fd68858b6cceeb4f680689c1d5/cordis.patch.yml) · **Identity:** `arch-canvas`
+  - **Licenses:** repo `Unresolved` / package `Unresolved` · lifecycle `prepack` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-write` `model-tools` `client-injection` `prepack` `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Antigravity** · [vesita/dsh-antigravity@d5528a9](https://github.com/vesita/dsh-antigravity/commit/d5528a9a2aded6359d6d0b85bdd34679b10bd905) — Antigravity model-provider adapter
+  - **Evidence:** [manifest](https://github.com/vesita/dsh-antigravity/blob/d5528a9a2aded6359d6d0b85bdd34679b10bd905/package.json) → [patch](https://github.com/vesita/dsh-antigravity/blob/d5528a9a2aded6359d6d0b85bdd34679b10bd905/cordis.patch.yml) · **Identity:** `dsh-antigravity`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `credentials` `external-network` `model-tools` `prepack` `license-incomplete` `unresolved-install-identity` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped. Author DSH declaration: ^0.1.5-rc.1. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Desktop Chrome** · [vibeinging/dsh-desktop@b37c4b0](https://github.com/vibeinging/dsh-desktop/commit/b37c4b0d7e12830847156eed3484301cbbeb7a15) — macOS desktop title-bar component
+  - **Evidence:** [manifest](https://github.com/vibeinging/dsh-desktop/blob/b37c4b0d7e12830847156eed3484301cbbeb7a15/packages/dsh-desktop-chrome/package.json) → [patch](https://github.com/vibeinging/dsh-desktop/blob/b37c4b0d7e12830847156eed3484301cbbeb7a15/packages/dsh-desktop-chrome/cordis.patch.yml) · **Identity:** `@vibeinging/dsh-desktop-chrome`
+  - **Licenses:** repo `MIT` / package `BSD-3-Clause` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `client-injection` `nested-bundle` `unresolved-install-identity` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; component is coupled to a separate host distribution. Author DSH declaration: 0.1.5-rc.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Memory Archive** · [vv5v5/dsh-memory-archive@a939720](https://github.com/vv5v5/dsh-memory-archive/commit/a9397201bd93903ca54818d98c71db919d9c4956) — Conversation memory archive and prompt viewer
+  - **Evidence:** [manifest](https://github.com/vv5v5/dsh-memory-archive/blob/a9397201bd93903ca54818d98c71db919d9c4956/package.json) → [patch](https://github.com/vv5v5/dsh-memory-archive/blob/a9397201bd93903ca54818d98c71db919d9c4956/cordis.patch.yml) · **Identity:** `dsh-memory-archive`
+  - **Licenses:** repo `CC-BY-NC-4.0` / package `CC-BY-NC-4.0` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `session-data` `filesystem-read` `filesystem-write` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Author DSH declaration: *. The root license is CC-BY-NC-4.0, not unresolved MIT; noncommercial terms and subcomponent notices must be retained. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Craft Adapter** · [wdx9413/craft@37a221a](https://github.com/wdx9413/craft/commit/37a221a1c7202f980db085dd6c902938456ddb57) — Craft governance adapter
+  - **Evidence:** [manifest](https://github.com/wdx9413/craft/blob/37a221a1c7202f980db085dd6c902938456ddb57/adapters/deepseek-harness/package.json) → [patch](https://github.com/wdx9413/craft/blob/37a221a1c7202f980db085dd6c902938456ddb57/adapters/deepseek-harness/cordis.patch.yml) · **Identity:** `dsh-craft-adapter`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `mcp` `subprocess` `model-tools` `nested-bundle` `compatibility-unresolved` `artifact-mapping-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration; source-to-distribution artifact mapping is incomplete. Author DSH declaration: *. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Remote Workspace** · [webro-nuaa/dsh-remote-workspace@6dcc448](https://github.com/webro-nuaa/dsh-remote-workspace/commit/6dcc448cf388650c655ab619ea5912df9d072182) — SSH-backed remote workspace
+  - **Evidence:** [manifest](https://github.com/webro-nuaa/dsh-remote-workspace/blob/6dcc448cf388650c655ab619ea5912df9d072182/package.json) → [patch](https://github.com/webro-nuaa/dsh-remote-workspace/blob/6dcc448cf388650c655ab619ea5912df9d072182/cordis.patch.yml) · **Identity:** `dsh-remote-workspace`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `credentials` `subprocess` `filesystem-write` `permission-policy` `license-incomplete` `unresolved-install-identity` · **Review:** Held: repository or package license evidence is incomplete; public installation identity is not completely mapped. Author DSH declaration: 0.1.5-rc.2. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Prompt Optimizer** · [WestFox-AwA/dsh-prompt-optimizer@f699a6b](https://github.com/WestFox-AwA/dsh-prompt-optimizer/commit/f699a6bf9b03e9fed7c6e3d8738fe939ac5bc826) — Pre-send prompt optimization
+  - **Evidence:** [manifest](https://github.com/WestFox-AwA/dsh-prompt-optimizer/blob/f699a6bf9b03e9fed7c6e3d8738fe939ac5bc826/package.json) → [patch](https://github.com/WestFox-AwA/dsh-prompt-optimizer/blob/f699a6bf9b03e9fed7c6e3d8738fe939ac5bc826/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-prompt-optimizer`
+  - **Licenses:** repo `BSD-3-Clause` / package `BSD-3-Clause` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `model-tools` `session-data` `external-network` `compatibility-unresolved` `release-pin-mismatch` · **Review:** Held: no sufficiently versioned DSH host declaration; documented installation pin does not match this source snapshot. Author DSH declaration: *. README release pin 0.1.7-beta.1 differs from manifest 0.1.9-beta.1. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Distillation Director** · [winsonpong98-cloud/dsh-distillation-director@e93d389](https://github.com/winsonpong98-cloud/dsh-distillation-director/commit/e93d38942782d14ee9b7df345fcbe4fc3aa7d7ea) — Book-to-skill distillation workflow
+  - **Evidence:** [manifest](https://github.com/winsonpong98-cloud/dsh-distillation-director/blob/e93d38942782d14ee9b7df345fcbe4fc3aa7d7ea/package.json) → [patch](https://github.com/winsonpong98-cloud/dsh-distillation-director/blob/e93d38942782d14ee9b7df345fcbe4fc3aa7d7ea/cordis.patch.yml) · **Identity:** `dsh-distillation-director`
+  - **Licenses:** repo `AGPL-3.0` / package `AGPL-3.0-or-later` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `system-prompt` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Spec Forge** · [winston-hoo/dsh-spec-forge@dd71923](https://github.com/winston-hoo/dsh-spec-forge/commit/dd71923bca6576dae673ba618000c0f734be8bcf) — Requirement clarification and template recall
+  - **Evidence:** [manifest](https://github.com/winston-hoo/dsh-spec-forge/blob/dd71923bca6576dae673ba618000c0f734be8bcf/package.json) → [patch](https://github.com/winston-hoo/dsh-spec-forge/blob/dd71923bca6576dae673ba618000c0f734be8bcf/cordis.patch.yml) · **Identity:** `dsh-spec-forge`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `system-prompt` `filesystem-write` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: greater than =0.1.0. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Cost Gauge** · [wjingshan/dsh-cost-gauge@1b6c1f5](https://github.com/wjingshan/dsh-cost-gauge/commit/1b6c1f5effeb463c1d199058597785cb0eed56f6) — API cost and balance gauge
+  - **Evidence:** [manifest](https://github.com/wjingshan/dsh-cost-gauge/blob/1b6c1f5effeb463c1d199058597785cb0eed56f6/package.json) → [patch](https://github.com/wjingshan/dsh-cost-gauge/blob/1b6c1f5effeb463c1d199058597785cb0eed56f6/cordis.patch.yml) · **Identity:** `dsh-cost-gauge`
+  - **Licenses:** repo `Unresolved` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `credentials` `financial` `external-network` `license-incomplete` `compatibility-unresolved` · **Review:** Held: repository or package license evidence is incomplete; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Dock Bridge** · [wjingshan/dsh-dock-launcher@f602a8a](https://github.com/wjingshan/dsh-dock-launcher/commit/f602a8a42d05d3af52523503bf04769be7b79ab4) — Desktop Dock runtime bridge
+  - **Evidence:** [manifest](https://github.com/wjingshan/dsh-dock-launcher/blob/f602a8a42d05d3af52523503bf04769be7b79ab4/plugins/dsh-dock-bridge/package.json) → [patch](https://github.com/wjingshan/dsh-dock-launcher/blob/f602a8a42d05d3af52523503bf04769be7b79ab4/plugins/dsh-dock-bridge/cordis.patch.yml) · **Identity:** `dsh-dock-bridge`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `credentials` `filesystem-write` `process-control` `nested-bundle` `unresolved-install-identity` `compatibility-unresolved` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration; component is coupled to a separate host distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Cluster UI** · [wsnxxxs/deepseek-harness-portable@d79de67](https://github.com/wsnxxxs/deepseek-harness-portable/commit/d79de67f0b4004d7e559ed29c75e0a5f87b4f382) — Portable host cluster-view component
+  - **Evidence:** [manifest](https://github.com/wsnxxxs/deepseek-harness-portable/blob/d79de67f0b4004d7e559ed29c75e0a5f87b4f382/apps/cluster-ui/package.json) → [patch](https://github.com/wsnxxxs/deepseek-harness-portable/blob/d79de67f0b4004d7e559ed29c75e0a5f87b4f382/apps/cluster-ui/cordis.patch.yml) · **Identity:** `@dsh-portable/cluster-ui`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `client-injection` `session-data` `nested-bundle` `unresolved-install-identity` `host-coupled` · **Review:** Held: public installation identity is not completely mapped; component is coupled to a separate host distribution. Patch enables host-provided cluster/agent-team components rather than demonstrating standalone distribution. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Port Manager** · [wyzh0117/dsh-port-manager@a2826bb](https://github.com/wyzh0117/dsh-port-manager/commit/a2826bbd07a88de3b5ec2a81cb140aa159ed200c) — Listening-port inventory and actions
+  - **Evidence:** [manifest](https://github.com/wyzh0117/dsh-port-manager/blob/a2826bbd07a88de3b5ec2a81cb140aa159ed200c/package.json) → [patch](https://github.com/wyzh0117/dsh-port-manager/blob/a2826bbd07a88de3b5ec2a81cb140aa159ed200c/cordis.patch.yml) · **Identity:** `dsh-port-manager`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `subprocess` `process-control` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Fakeip Safe Fetch** · [xiaoyonghaoe/dsh-fakeip-safe-fetch@aa91052](https://github.com/xiaoyonghaoe/dsh-fakeip-safe-fetch/commit/aa91052fbbc227e09cfb7cb1da966d8c3b0a9881) — Fake-IP-aware web fetch provider
+  - **Evidence:** [manifest](https://github.com/xiaoyonghaoe/dsh-fakeip-safe-fetch/blob/aa91052fbbc227e09cfb7cb1da966d8c3b0a9881/package.json) → [patch](https://github.com/xiaoyonghaoe/dsh-fakeip-safe-fetch/blob/aa91052fbbc227e09cfb7cb1da966d8c3b0a9881/cordis.patch.yml) · **Identity:** `dsh-fakeip-safe-fetch`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `external-network` `web-search` `prepack` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: 0.1.5-rc.2. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Normify** · [yan-mc/dsh-normify@ed404e5](https://github.com/yan-mc/dsh-normify/commit/ed404e5b8db0010ff57ec8486ec8749421072545) — Project structure and schema tools
+  - **Evidence:** [manifest](https://github.com/yan-mc/dsh-normify/blob/ed404e5b8db0010ff57ec8486ec8749421072545/package.json) → [patch](https://github.com/yan-mc/dsh-normify/blob/ed404e5b8db0010ff57ec8486ec8749421072545/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-normify`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `subprocess` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: greater than =0.1.5-rc.2 less than 0.2.0. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Skill Manager** · [Yinxe/deepseek-harness-plugins@2a15951](https://github.com/Yinxe/deepseek-harness-plugins/commit/2a15951846728367ba37c97e295b2f579ed68484) — Global and workspace skill editor
+  - **Evidence:** [manifest](https://github.com/Yinxe/deepseek-harness-plugins/blob/2a15951846728367ba37c97e295b2f579ed68484/plugins/skill-manager/package.json) → [patch](https://github.com/Yinxe/deepseek-harness-plugins/blob/2a15951846728367ba37c97e295b2f579ed68484/plugins/skill-manager/cordis.patch.yml) · **Identity:** `@dshp/skill-manager`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepublishOnly` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `plugin-management` `nested-bundle` `prepublish-only` `compatibility-unresolved` · **Review:** Held: no sufficiently versioned DSH host declaration. Recorded lifecycle hooks: prepublishOnly; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Teamkit** · [yjh051108/dsh-teamkit@b90a2e4](https://github.com/yjh051108/dsh-teamkit/commit/b90a2e419ac007ca16dec0ce4d538bf5e94b495d) — Agent-team skill collaboration tools
+  - **Evidence:** [manifest](https://github.com/yjh051108/dsh-teamkit/blob/b90a2e419ac007ca16dec0ce4d538bf5e94b495d/package.json) → [patch](https://github.com/yjh051108/dsh-teamkit/blob/b90a2e419ac007ca16dec0ce4d538bf5e94b495d/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-teamkit`
+  - **Licenses:** repo `BSD-3-Clause` / package `BSD-3-Clause` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-write` `multi-agent` `system-prompt` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. Author DSH declaration: greater than =0.0.1-rc less than 2. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Sidepanel** · [Yur0918/dsh-sidepanel@c840aaf](https://github.com/Yur0918/dsh-sidepanel/commit/c840aafc555e75efc3529f6c9057f3daba9b9801) — Artifact and side-chat panel
+  - **Evidence:** [manifest](https://github.com/Yur0918/dsh-sidepanel/blob/c840aafc555e75efc3529f6c9057f3daba9b9801/package.json) → [patch](https://github.com/Yur0918/dsh-sidepanel/blob/c840aafc555e75efc3529f6c9057f3daba9b9801/cordis.patch.yml) · **Identity:** `dsh-sidepanel`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-read` `session-data` `model-tools` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **User Addons** · [Yur0918/dsh-user-addons@e9f1529](https://github.com/Yur0918/dsh-user-addons/commit/e9f152907c08edcfb61caf1f10b5d7202f39d46c) — Uploads, archives and usage dashboard
+  - **Evidence:** [manifest](https://github.com/Yur0918/dsh-user-addons/blob/e9f152907c08edcfb61caf1f10b5d7202f39d46c/package.json) → [patch](https://github.com/Yur0918/dsh-user-addons/blob/e9f152907c08edcfb61caf1f10b5d7202f39d46c/cordis.patch.yml) · **Identity:** `dsh-user-addons`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `native-bundle` `filesystem-write` `session-data` `credentials` `unresolved-install-identity` `compatibility-unresolved` · **Review:** Held: public installation identity is not completely mapped; no sufficiently versioned DSH host declaration. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **PPT Studio** · [zbsph/dsh-ppt-studio@7e66763](https://github.com/zbsph/dsh-ppt-studio/commit/7e667634d84413f177e96d5b10936c8b51860439) — Presentation studio and template workflow
+  - **Evidence:** [manifest](https://github.com/zbsph/dsh-ppt-studio/blob/7e667634d84413f177e96d5b10936c8b51860439/package.json) → [patch](https://github.com/zbsph/dsh-ppt-studio/blob/7e667634d84413f177e96d5b10936c8b51860439/cordis.patch.yml) · **Identity:** `@dsh-external/dsh-ppt-studio`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `filesystem-write` `subprocess` `vision` `artifact-mapping-unresolved` `unresolved-install-identity` · **Review:** Held: source-to-distribution artifact mapping is incomplete; public installation identity is not completely mapped. Author DSH declaration: greater than =0.1.5-rc.2 less than 2. Git source exists, but the private TGZ placeholder and missing build artifacts do not provide a reproducible release mapping. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Skill Injector Plugin** · [Zenjibad/skill-injector-plugin@31a5d8e](https://github.com/Zenjibad/skill-injector-plugin/commit/31a5d8e0a570a48571f1b74a3b0e379412cfb5e1) — Selected-skill prompt injection
+  - **Evidence:** [manifest](https://github.com/Zenjibad/skill-injector-plugin/blob/31a5d8e0a570a48571f1b74a3b0e379412cfb5e1/package.json) → [patch](https://github.com/Zenjibad/skill-injector-plugin/blob/31a5d8e0a570a48571f1b74a3b0e379412cfb5e1/cordis.patch.yml) · **Identity:** `skill-injector-plugin`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `system-prompt` `filesystem-read` `client-injection` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: ^0.1.0-rc.6. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Github Issue** · [zhangj1164/dsh-mega-plugins@d039e3c](https://github.com/zhangj1164/dsh-mega-plugins/commit/d039e3c10cfd2469c4662f0ce7e130eda24a84bd) — Issue-report generation from telemetry
+  - **Evidence:** [manifest](https://github.com/zhangj1164/dsh-mega-plugins/blob/d039e3c10cfd2469c4662f0ce7e130eda24a84bd/packages/github-issue/dsh-github-issue/package.json) → [patch](https://github.com/zhangj1164/dsh-mega-plugins/blob/d039e3c10cfd2469c4662f0ce7e130eda24a84bd/packages/github-issue/dsh-github-issue/cordis.patch.yml) · **Identity:** `dsh-github-issue`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepare` · mixed peer ranges
+  - **Signals:** `native-bundle` `session-data` `external-network` `model-tools` `nested-bundle` `prepare` `unresolved-install-identity` `artifact-mapping-unresolved` · **Review:** Held: public installation identity is not completely mapped; source-to-distribution artifact mapping is incomplete. Author DSH declaration: ^0.1.5-rc.1. Recorded lifecycle hooks: prepare; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Health Scheduler** · [zhiheng-zhang-Mera/dsh-health-scheduler@c0f16e2](https://github.com/zhiheng-zhang-Mera/dsh-health-scheduler/commit/c0f16e24d7e3d79a43a2d8b98e7cc893a8096ead) — Host health and maintenance scheduler
+  - **Evidence:** [manifest](https://github.com/zhiheng-zhang-Mera/dsh-health-scheduler/blob/c0f16e24d7e3d79a43a2d8b98e7cc893a8096ead/package.json) → [patch](https://github.com/zhiheng-zhang-Mera/dsh-health-scheduler/blob/c0f16e24d7e3d79a43a2d8b98e7cc893a8096ead/cordis.patch.yml) · **Identity:** `dsh-health-scheduler`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `process-control` `filesystem-read` `prepack` `unresolved-install-identity` · **Review:** Held: public installation identity is not completely mapped. Author DSH declaration: ^0.1.1-rc.1. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Yawn** · [zhming0/dsh-yawn@e928346](https://github.com/zhming0/dsh-yawn/commit/e9283468ff3c943fbca88fd21e3a1e0347d107ed) — Remote sandbox control plane
+  - **Evidence:** [manifest](https://github.com/zhming0/dsh-yawn/blob/e9283468ff3c943fbca88fd21e3a1e0347d107ed/control-plane/package.json) → [patch](https://github.com/zhming0/dsh-yawn/blob/e9283468ff3c943fbca88fd21e3a1e0347d107ed/control-plane/cordis.patch.yml) · **Identity:** `@zhming0/dsh-yawn`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `prepack` · mixed peer ranges
+  - **Signals:** `native-bundle` `subprocess` `credentials` `filesystem-write` `permission-policy` `nested-bundle` `prepack` `unresolved-install-identity` `artifact-mapping-unresolved` · **Review:** Held: public installation identity is not completely mapped; source-to-distribution artifact mapping is incomplete. Author DSH declaration: 0.1.5-rc.2. Remote broker patch disables local tool and sandbox/approval components; distribution mapping is unresolved. Recorded lifecycle hooks: prepack; not executed. No candidate code executed; static review is not runtime safety or compatibility proof.
+
+- **Compact Agents** · [zhuto666/dsh-compact-agents@0f9167c](https://github.com/zhuto666/dsh-compact-agents/commit/0f9167c9882b6e87e9408af6d4ceaca5f8d2665e) — Force compression across live sessions
+  - **Evidence:** [manifest](https://github.com/zhuto666/dsh-compact-agents/blob/0f9167c9882b6e87e9408af6d4ceaca5f8d2665e/package.json) → [patch](https://github.com/zhuto666/dsh-compact-agents/blob/0f9167c9882b6e87e9408af6d4ceaca5f8d2665e/cordis.patch.yml) · **Identity:** `dsh-compact-agents`
+  - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `none` · mixed peer ranges
+  - **Signals:** `native-bundle` `session-data` `system-prompt` `unresolved-install-identity` `artifact-mapping-unresolved` · **Review:** Held: public installation identity is not completely mapped; source-to-distribution artifact mapping is incomplete. Author DSH declaration: greater than =0.1.0-rc.5. No candidate code executed; static review is not runtime safety or compatibility proof.
+
 ### Excluded after review
 
 - **DSH Project Organizer** · [caoqinnan-web/dsh-project-organizer@1bfb6d0](https://github.com/caoqinnan-web/dsh-project-organizer/commit/1bfb6d08f8be66aaebeec9062463682504364f9d) — A conversation organizer whose fixed documentation says DSH is not currently supported.
@@ -9729,6 +10519,11 @@ These entries are relevant to DSH but do not receive install recommendations unt
   - **Evidence:** [manifest](https://github.com/justarook1e/dsh-file-edit/blob/2d1a94d3c320e3841bddfefb318dfad9aafa9cc6/package.json) → [patch](https://github.com/justarook1e/dsh-file-edit/blob/2d1a94d3c320e3841bddfefb318dfad9aafa9cc6/cordis.patch.yml) · **Identity:** `dsh-file-edit`
   - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
   - **Signals:** `native-bundle` `discontinued` `filesystem-write` `subprocess` `data-deletion` `client-injection` `identity-unresolved` `compatibility-unresolved` · **Review:** Author states this repository is historical and no longer maintained after migration to justarook1e/dsh-ide-lite. Excluded as superseded; this does not claim the old code is nonfunctional. No candidate code executed; static review does not prove runtime safety or compatibility.
+
+- **Acryl DSH Editor Plugin WEB** · [acryldev/acryl-dsh-editor-plugin-web@9d220fa](https://github.com/acryldev/acryl-dsh-editor-plugin-web/commit/9d220fa063f8843d87dffe07e2c16e4baeace7bd) — Deprecated web editor fork
+  - **Evidence:** [manifest](https://github.com/acryldev/acryl-dsh-editor-plugin-web/blob/9d220fa063f8843d87dffe07e2c16e4baeace7bd/package.json) → [patch](https://github.com/acryldev/acryl-dsh-editor-plugin-web/blob/9d220fa063f8843d87dffe07e2c16e4baeace7bd/cordis.patch.yml) · **Identity:** `acryl-dsh-editor-plugin-web`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · author says unsupported
+  - **Signals:** `native-bundle` `filesystem-read` `filesystem-write` `subprocess` · **Review:** Excluded following explicit author deprecation. Author DSH declaration: ^0.1.5-alpha.1. The author deprecates this web fork in favor of the universal acryl-dsh-editor-plugin. No candidate code executed; static review is not runtime safety or compatibility proof.
 <!-- CATALOG:END -->
 
 ## How reviews work
