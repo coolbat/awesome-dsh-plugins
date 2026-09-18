@@ -17,11 +17,7 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": [
-        "external-network",
-        "vision",
-        "compatibility-unresolved"
-      ],
+      "signals": ["external-network", "vision", "compatibility-unresolved"],
       "noteEn": "Held for versioned DSH compatibility. Public Git clone/link documented; no versioned DSH support declaration. Default handlers permitting an action are not proof of enforcement. No candidate code or lifecycle hooks were executed; runtime safety and compatibility are unproven.",
       "noteZh": "因明确的 DSH 版本兼容声明证据不足而暂缓。Public Git clone/link documented; no versioned DSH support declaration. Default handlers permitting an action are not proof of enforcement. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。"
     },
@@ -1235,9 +1231,7 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": [
-        "external-network"
-      ],
+      "signals": ["external-network"],
       "noteEn": "Static evidence chain reviewed. Public Git clone/add documented; committed entry and versioned DSH peer range. Alters system prompt, without runtime safety claims. No candidate code or lifecycle hooks were executed; runtime safety and compatibility are unproven.",
       "noteZh": "固定源码证据链已完成静态审核。Public Git clone/add documented; committed entry and versioned DSH peer range. Alters system prompt, without runtime safety claims. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。"
     },
@@ -1258,10 +1252,7 @@
       "packageLicense": "MIT",
       "compatibility": "unknown",
       "lifecycle": "none",
-      "signals": [
-        "session-data",
-        "compatibility-unresolved"
-      ],
+      "signals": ["session-data", "compatibility-unresolved"],
       "noteEn": "Held for versioned DSH compatibility. Public Git and committed host/client entries; no versioned host compatibility declaration. No candidate code or lifecycle hooks were executed; runtime safety and compatibility are unproven.",
       "noteZh": "因明确的 DSH 版本兼容声明证据不足而暂缓。Public Git and committed host/client entries; no versioned host compatibility declaration. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。"
     },
@@ -1282,10 +1273,7 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": [
-        "model-tools",
-        "vision"
-      ],
+      "signals": ["model-tools", "vision"],
       "noteEn": "Static evidence chain reviewed. Public Git identity and versioned DSH peers/README versions; local meal selection and preference persistence, optional model prompts. No candidate code or lifecycle hooks were executed; runtime safety and compatibility are unproven.",
       "noteZh": "固定源码证据链已完成静态审核。Public Git identity and versioned DSH peers/README versions; local meal selection and preference persistence, optional model prompts. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。"
     },
@@ -1648,11 +1636,7 @@
       "packageLicense": "MIT",
       "compatibility": "mixed",
       "lifecycle": "none",
-      "signals": [
-        "client-injection",
-        "session-data",
-        "system-prompt"
-      ],
+      "signals": ["client-injection", "session-data", "system-prompt"],
       "noteEn": "Static evidence chain reviewed. Public Git, committed host/client entries, explicit 0.1.2-rc.1 compatibility declaration. Writes global settings and injects prompts before built-in identity. No candidate code or lifecycle hooks were executed; runtime safety and compatibility are unproven.",
       "noteZh": "固定源码证据链已完成静态审核。Public Git, committed host/client entries, explicit 0.1.2-rc.1 compatibility declaration. Writes global settings and injects prompts before built-in identity. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。"
     }

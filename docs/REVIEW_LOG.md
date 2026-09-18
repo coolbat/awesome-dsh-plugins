@@ -1,5 +1,50 @@
 # Review log
 
+## 2026-09-18 — Daily review and September 16–17 backlog completion
+
+- Beijing Friday; no Monday full reconciliation was scheduled.
+- Source: PR #2 at `1bd39b98a7ac573ba3beb1f6f8192766e302865b`.
+  Queue: 4,111 records = 1,662 already listed + 2,430 ready + 19 discovery-held.
+- Since September 17: 96 new keys and 72 changed source revisions, 168
+  fixed-source decisions: 18 catalog-reviewed, 38 catalog-held, 59 duplicate or
+  superseded, 36 source-conflict, 15 example/fixture/archive, 2 non-plugin.
+  No new catalog-excluded, unavailable or structural-rejected records today.
+- The September 17 source backlog was finalized today: 174 decisions and 55
+  catalog additions (14 reviewed, 41 held). The September 16 backlog had been
+  completed in checkpoint `30ea9aeba65ed41056910058dff270d1442d02f4`:
+  493 decisions with 52 reviewed, 106 held and 1 excluded catalog addition.
+  Wave decision totals are not unique plugins: a key may have different SHAs
+  across daily snapshots. Unchanged historical catalog records are preserved.
+- Complete current ledger: 128 catalog-reviewed, 294 catalog-held,
+  3 catalog-excluded, 850 duplicate/superseded, 718 source-conflict,
+  225 example/fixture/archive, 157 non-plugin, 53 unavailable,
+  2 structural-rejected; **0 pending**. The ledger covers the ready queue,
+  not all historical catalog entries.
+- Catalog: **2,194 = 1,162 reviewed + 1,028 held + 4 excluded**.
+  Only reviewed records are published in the plugin directory.
+- Latest discovery run `35281005105` succeeded; state-branch report observed
+  `2026-09-17T22:14:43.341Z`, 60 repositories, 62 bundle manifests, 0 errors,
+  `partial=false`. This is a bounded incremental pass, not complete coverage
+  of the internet. Earlier failed runs are not erased by this recovery.
+- Evidence: [September 17 backlog](../reports/review/2026-09-17.json) and
+  [September 18 review](../reports/review/2026-09-18.json), including fixed
+  manifests, patch hashes, licenses, installation identities, lifecycle
+  declarations, capability notes and explicit dispositions. Supplemental
+  source-file hashes are readings, not execution or whole-package audits.
+- Notable holds include Apache/MIT declaration conflicts, additional
+  noncommercial/artwork restrictions, unresolved native binary distribution,
+  floating nested package mappings and absent host version declarations.
+  Reviewed entries with approval-bypass, remote SSH, subprocess, personal-data
+  or health/genome capabilities retain explicit risk notes, not safety claims.
+- Original uncommitted September 10 and September 17 worktrees were preserved;
+  changes are isolated in `codex/review-new-candidates-20260918` based on latest
+  main with prior review-only checkpoints fast-forwarded.
+- Local/remote validation, merge and production deployment are independent
+  gates. This log records the review; it does not claim those later gates passed.
+- Static review does **not** establish runtime safety or compatibility. No
+  candidate code, lifecycle hook, test, installer, browser, server, Python
+  environment, MCP server, native helper or third-party subprocess was executed.
+
 ## 2026-08-15 — Initial evidence set
 
 - Discovery inputs:

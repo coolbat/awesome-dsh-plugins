@@ -37347,5 +37347,73 @@
       "noteEn": "Static evidence chain reviewed. Public Git, committed host/client entries, explicit 0.1.2-rc.1 compatibility declaration. Writes global settings and injects prompts before built-in identity. No candidate code or lifecycle hooks were executed; runtime safety and compatibility are unproven.",
       "noteZh": "固定源码证据链已完成静态审核。Public Git, committed host/client entries, explicit 0.1.2-rc.1 compatibility declaration. Writes global settings and injects prompts before built-in identity. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。"
     }
+  ],
+  "additionalSourceEvidence": [
+    {
+      "wave": 47,
+      "id": "2507483326-eteam",
+      "repository": "2507483326/eTeam",
+      "commit": "fabb667a5cb7daa27339e16fdb1e027901d384be",
+      "path": "tsconfig.host.json",
+      "url": "https://raw.githubusercontent.com/2507483326/eTeam/fabb667a5cb7daa27339e16fdb1e027901d384be/tsconfig.host.json",
+      "status": 200,
+      "bytes": 179,
+      "sha256": "504caa8932bbb8bbeb1da20b6dc0cf63cff1a65affb918de03a1493e8838a31b"
+    },
+    {
+      "wave": 47,
+      "id": "2507483326-eteam",
+      "repository": "2507483326/eTeam",
+      "commit": "fabb667a5cb7daa27339e16fdb1e027901d384be",
+      "path": "tsdown.config.ts",
+      "url": "https://raw.githubusercontent.com/2507483326/eTeam/fabb667a5cb7daa27339e16fdb1e027901d384be/tsdown.config.ts",
+      "status": 200,
+      "bytes": 10423,
+      "sha256": "1d78c9aad75e6be0118cfa09edfdae16cd66cc8157eabf3d684f97807cfc2e84"
+    },
+    {
+      "wave": 47,
+      "id": "2507483326-eteam",
+      "repository": "2507483326/eTeam",
+      "commit": "fabb667a5cb7daa27339e16fdb1e027901d384be",
+      "path": "src/host/index.ts",
+      "url": "https://raw.githubusercontent.com/2507483326/eTeam/fabb667a5cb7daa27339e16fdb1e027901d384be/src/host/index.ts",
+      "status": 200,
+      "bytes": 19042,
+      "sha256": "37ff6eb2c81d63c8a983d19c7c190bdeed6c00d8d4cb0ebc2c17674e551348f9"
+    },
+    {
+      "wave": 47,
+      "id": "ddxl123-dsh-notify-long",
+      "repository": "ddxl123/dsh-notify-long",
+      "commit": "bd2c86828e7b068a028bab5a3233ca025e67c6de",
+      "path": "scripts/link-harness-deps.mjs",
+      "url": "https://raw.githubusercontent.com/ddxl123/dsh-notify-long/bd2c86828e7b068a028bab5a3233ca025e67c6de/scripts/link-harness-deps.mjs",
+      "status": 200,
+      "bytes": 8105,
+      "sha256": "8df0f08a3809adef48278b29c7a47ea4d886f57263d31ef781989adddfa0c36e"
+    },
+    {
+      "wave": 47,
+      "id": "zaimokuza-yoshiteru-dsh-acp-adapter",
+      "repository": "zaimokuza-yoshiteru/dsh-acp-adapter",
+      "commit": "62db8e06bbe2ed8f9baa79fdd2431cf718b265e6",
+      "path": "src/host/composition/index.ts",
+      "url": "https://raw.githubusercontent.com/zaimokuza-yoshiteru/dsh-acp-adapter/62db8e06bbe2ed8f9baa79fdd2431cf718b265e6/src/host/composition/index.ts",
+      "status": 200,
+      "bytes": 1478,
+      "sha256": "bd5a887411c72aa9b5350bb231fd8bc5b0cd386812ea35746df208837144e30b"
+    },
+    {
+      "wave": 47,
+      "id": "zaimokuza-yoshiteru-dsh-acp-adapter",
+      "repository": "zaimokuza-yoshiteru/dsh-acp-adapter",
+      "commit": "62db8e06bbe2ed8f9baa79fdd2431cf718b265e6",
+      "path": "scripts/prepack.mjs",
+      "url": "https://raw.githubusercontent.com/zaimokuza-yoshiteru/dsh-acp-adapter/62db8e06bbe2ed8f9baa79fdd2431cf718b265e6/scripts/prepack.mjs",
+      "status": 200,
+      "bytes": 2549,
+      "sha256": "6880d98301952ccdeac9fdf218397b2b950b1f8a3324b93dc770f72efaddce7d"
+    }
   ]
 }
