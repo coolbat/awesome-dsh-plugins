@@ -1,5 +1,96 @@
 # Review log
 
+## 2026-09-19 — Daily fixed-source review
+
+- Beijing Saturday; no Monday full reconciliation is due.
+- PR #2 source: `f98ce488e3b1eda35835d40c5eefad19005aca81`.
+  Queue: 4,222 = 1,662 already listed + 2,541 ready + 19 discovery-held.
+- Relative to the last completed review at
+  `52540ce951ccb3f9bdfa91df04ea752b340a6116`, 111 keys are new and 104
+  have changed source revisions. All 215 received a static disposition:
+  14 reviewed, 31 held, 64 duplicate/superseded, 56 source-conflict,
+  29 example/fixture/archive, 20 non-plugin and 1 unavailable.
+  No new catalog-excluded or structural-rejected records were added.
+- Ledger: 2,541 records, **0 pending**. Dispositions: 139 catalog-reviewed,
+  318 catalog-held, 3 catalog-excluded, 878 duplicate/superseded,
+  740 source-conflict, 233 example/fixture/archive, 174 non-plugin,
+  54 unavailable and 2 structural-rejected. This is the current ready-queue
+  ledger, not the complete historical catalog.
+- Catalog: **2,239 = 1,176 reviewed + 1,059 held + 4 excluded**.
+  Added 45 repository-level entries; all 2,194 prior catalog entries remain
+  unchanged. Only reviewed records enter the public directory and sitemap.
+- Notable decisions: empty DSH APP component patches and the Balbes host
+  deployment bundle are non-plugin records. The raw terminal and archive
+  handlers lack an established request-authorization boundary in inspected
+  code and remain held. Voice/character asset restrictions, monorepo-root
+  install drift, unpublished versions, local-only distribution and missing
+  host-version declarations are recorded as explicit holds.
+- The secretary integration declares an actual `scripts.install` hook.
+  Its hook and installer were read as source only; their fixture writes,
+  profile-stat reads and module/profile mutations were not executed.
+  The lifecycle validator now accepts the literal `install` value so the
+  catalog does not mislabel this package as lifecycle `none`; a regression
+  assertion preserves that evidence. No existing lifecycle values changed.
+- Latest discovery run `35398194992` succeeded. Report observed
+  `2026-09-18T21:43:56.161Z`: 60 repositories, 50 bundle manifests,
+  0 query errors, `partial=false`. Earlier failed runs still exist; this
+  bounded incremental query pass is not complete internet coverage.
+- Evidence: [September 19 review](../reports/review/2026-09-19.json),
+  fixed manifests/patch hashes, license and npm metadata, source snippets,
+  explicit manual decisions and supplementary source-file hashes.
+- Work is isolated on `codex/review-new-candidates-20260919`; the original
+  dirty checkout is preserved. PR #28's previous Cloudflare preview failed.
+  Current-head local checks, remote quality/preview, merge and production
+  acceptance are separate gates and are not asserted by this review log.
+- No candidate code, package, lifecycle hook, test, installer, native helper,
+  browser, server, Python environment or MCP server was executed. Static
+  review does not establish runtime safety or compatibility.
+
+## 2026-09-18 — Daily review and September 16–17 backlog completion
+
+- Beijing Friday; no Monday full reconciliation was scheduled.
+- Source: PR #2 at `1bd39b98a7ac573ba3beb1f6f8192766e302865b`.
+  Queue: 4,111 records = 1,662 already listed + 2,430 ready + 19 discovery-held.
+- Since September 17: 96 new keys and 72 changed source revisions, 168
+  fixed-source decisions: 18 catalog-reviewed, 38 catalog-held, 59 duplicate or
+  superseded, 36 source-conflict, 15 example/fixture/archive, 2 non-plugin.
+  No new catalog-excluded, unavailable or structural-rejected records today.
+- The September 17 source backlog was finalized today: 174 decisions and 55
+  catalog additions (14 reviewed, 41 held). The September 16 backlog had been
+  completed in checkpoint `30ea9aeba65ed41056910058dff270d1442d02f4`:
+  493 decisions with 52 reviewed, 106 held and 1 excluded catalog addition.
+  Wave decision totals are not unique plugins: a key may have different SHAs
+  across daily snapshots. Unchanged historical catalog records are preserved.
+- Complete current ledger: 128 catalog-reviewed, 294 catalog-held,
+  3 catalog-excluded, 850 duplicate/superseded, 718 source-conflict,
+  225 example/fixture/archive, 157 non-plugin, 53 unavailable,
+  2 structural-rejected; **0 pending**. The ledger covers the ready queue,
+  not all historical catalog entries.
+- Catalog: **2,194 = 1,162 reviewed + 1,028 held + 4 excluded**.
+  Only reviewed records are published in the plugin directory.
+- Latest discovery run `35281005105` succeeded; state-branch report observed
+  `2026-09-17T22:14:43.341Z`, 60 repositories, 62 bundle manifests, 0 errors,
+  `partial=false`. This is a bounded incremental pass, not complete coverage
+  of the internet. Earlier failed runs are not erased by this recovery.
+- Evidence: [September 17 backlog](../reports/review/2026-09-17.json) and
+  [September 18 review](../reports/review/2026-09-18.json), including fixed
+  manifests, patch hashes, licenses, installation identities, lifecycle
+  declarations, capability notes and explicit dispositions. Supplemental
+  source-file hashes are readings, not execution or whole-package audits.
+- Notable holds include Apache/MIT declaration conflicts, additional
+  noncommercial/artwork restrictions, unresolved native binary distribution,
+  floating nested package mappings and absent host version declarations.
+  Reviewed entries with approval-bypass, remote SSH, subprocess, personal-data
+  or health/genome capabilities retain explicit risk notes, not safety claims.
+- Original uncommitted September 10 and September 17 worktrees were preserved;
+  changes are isolated in `codex/review-new-candidates-20260918` based on latest
+  main with prior review-only checkpoints fast-forwarded.
+- Local/remote validation, merge and production deployment are independent
+  gates. This log records the review; it does not claim those later gates passed.
+- Static review does **not** establish runtime safety or compatibility. No
+  candidate code, lifecycle hook, test, installer, browser, server, Python
+  environment, MCP server, native helper or third-party subprocess was executed.
+
 ## 2026-08-15 — Initial evidence set
 
 - Discovery inputs:
@@ -731,3 +822,163 @@ volatile and do not establish trust, compatibility, or installability.
   and 3,430 static pages completed.
 - Limitation: static review does not prove runtime safety, runtime compatibility,
   or complete discovery coverage.
+
+## 2026-09-11 — Daily fixed-source review, including unpublished September 10 leads
+
+- Input: PR #2 head `4989a5dae0a28a2109f489a0a26236b2494ad54f`, generated
+  at `2026-09-10T21:40:59.689Z`, against main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`.
+- Workspace isolation: the unfinished September 10 draft was preserved without
+  modification. This wave uses a separate worktree based on current origin/main;
+  no unvalidated draft decision was reused as completed history.
+- Queue: 3,387 leads = 1,665 already listed + 1,704 ready + 18 discovery-held.
+  All ready records have full 40-character source commits and unique keys.
+- Increment: 372 records across 165 repositories required evidence: 234 new
+  keys and 138 changed source commits. The other 1,332 dispositions match exact
+  historical key-and-commit identities.
+- Increment decisions: 30 catalog-reviewed, 65 catalog-held, 135 duplicate or
+  superseded, 35 example/fixture/archive, 19 non-plugin packages, and 88 source
+  conflicts. No increment records are unavailable or structurally rejected.
+- Complete ledger: 1,704 records = 30 catalog-reviewed + 65 catalog-held + 615
+  duplicate/superseded + 195 fixture/example/archive + 138 non-plugin + 610
+  source-conflict + 51 historical unavailable; 0 pending.
+- Catalog: 1,804 repository-unique historical snapshots = 1,050 reviewed + 753
+  held + 1 excluded. Existing catalog source commits and decisions are retained.
+- Evidence: every increment manifest and its referenced fixed-commit patch
+  returned HTTP 200. Repository/package licenses, exact-version npm metadata,
+  documented Git distribution, lifecycle declarations, DSH peers/engines or
+  versioned compatibility claims and capability signals were checked. The
+  per-record evidence index is [the September 11 report](../reports/review/2026-09-11.json).
+  Entry-point source sampling is bounded and explicitly records truncation;
+  it is not a whole-code security audit or tarball byte-integrity verification.
+- Notable holds: explicit Git-install limitations in Model Advisor and the
+  Obsidian monorepo bridge; floating release identity for XingTu skills;
+  wildcard/workspace compatibility declarations; undeclared TUI composition
+  packages; a prerelease engine-range mismatch in File Explorer Kit; and
+  unestablished artwork/lyric rights in the email and VAE theme packages.
+  The `Minglink/dsh-infinite-gen-4` manifest's `dsh.repo` points to gen-3 and is
+  therefore a source conflict rather than a new catalog entry.
+- Risk disclosure: loopback authentication bypass, permission-preset replacement,
+  robot motion, browser/daemon control, Python/MCP processes, configuration
+  exports and filesystem rollback remain visible capabilities, not safety claims.
+- Discovery remains partial: the last attempt observed 60 repositories and 61
+  bundle manifests with one oversized response from `Arnon-hs/open-source`.
+  Last complete success: `2026-09-10T17:01:42.952Z`. Valid queue results were
+  retained; no complete discovery coverage is claimed.
+- Execution boundary: no candidate package, hook, plugin, test, installer,
+  binary, browser, server, Python environment, MCP server, native helper or
+  candidate subprocess was installed or executed.
+- Local verification passed: `npm run check` (43 tests), complete-ledger
+  validation (1,704 records, 0 pending), generated bilingual README verification,
+  `git diff --check`, and `NEXT_PUBLIC_SITE_URL=https://dshplugin.net npm run build`
+  (3,620 static pages).
+- Publication gates: exact PR heads, GitHub quality and Cloudflare preview must
+  pass before squash merge. The main production deployment and public snapshot
+  are checked separately after merge.
+- Static review does not establish runtime safety or runtime compatibility.
+
+## 2026-09-12 — Daily review, refreshing the unpublished September 11 PR
+
+- Frozen PR #2 head: `ae6e3add5f051699162a1620ba2a5860f94746fd`;
+  queue generated at `2026-09-11T21:46:00.169Z`.
+- Base main remains `6dee785987fb983e4d585afd95abc155d112e3ab`.
+  Continue PR #28 from `273608f09bb38e5345e4a0d4b868e562444bb2fd` in its
+  clean isolated worktree. The original September 10 draft remains untouched.
+  The prior PR was not merged; its completed fixed-source records are reused
+  only for exact candidate key and commit matches.
+- Queue: 3,508 leads = 1,665 already listed + 1,825 ready + 18 discovery-held.
+  Every ready candidate has a unique key and a complete 40-character commit.
+- Daily increment: 229 records across 105 repositories, comprising 121 new
+  keys and 108 changed commits. Reuse 1,596 exact historical dispositions.
+  Relative to main, 550 current candidates differ; earlier and daily source
+  reports retain separate provenance rather than treating them as one batch.
+- Daily outcomes: 13 catalog-reviewed, 48 catalog-held, 1 catalog-excluded,
+  97 duplicate/superseded, 9 example/fixture/archive, 2 non-plugin packages,
+  58 source conflicts and 1 structural rejection; 0 unavailable and 0 pending.
+- Full ledger: 1,825 records = 41 catalog-reviewed + 110 catalog-held + 1
+  catalog-excluded + 654 duplicate/superseded + 197 example/fixture/archive +
+  140 non-plugin + 630 source-conflict + 51 historical unavailable + 1
+  structural-rejected. Catalog: 1,866 = 1,063 reviewed + 801 held + 2 excluded.
+  All previous 1,804 catalog snapshots remain unchanged.
+- Evidence: all 229 fixed manifests and same-commit patches returned HTTP 200;
+  exact npm metadata returned 109 HTTP 200 and 120 HTTP 404 responses.
+  Repository/package licenses, distribution identities, DSH declarations,
+  lifecycle scripts and capability signals were checked separately. See
+  [the September 12 evidence report](../reports/review/2026-09-12.json).
+- Manual corrections: the DeepDeck build smoke fixture is not a product
+  plugin; select its private Bun Builder as a held desktop-coupled record.
+  The VAE canary scaffold is an example. Balance Chart intentionally provides
+  an empty patch and requires external profile edits, so it is structurally
+  rejected. Pasumao Workbench is excluded following the author's September 11
+  discontinuation and removal recommendation, not a claim that old releases
+  cannot run. Brave's source SPDX and README establish GPL-3.0-or-later despite
+  the generic GPL-3.0 license detector output.
+- Unresolved installation/build artifacts, repository licenses, wildcard-only
+  compatibility claims and desktop-native distribution remain held. QQ's open
+  access defaults, session-wide shell consent, OAuth publishing/message scopes,
+  native process control, context replacement and dynamic strategy code are
+  capability warnings; none was enabled or executed.
+- Discovery: the latest bounded incremental run succeeded with 60 repositories,
+  51 bundle manifests and 0 query errors. Attempt and success watermarks are
+  both `2026-09-11T21:46:00.169Z`; this is not exhaustive internet coverage.
+- Publication requires fresh local checks and production build, exact head
+  identity, GitHub quality and Cloudflare preview SUCCESS before squash merge;
+  production deployment and live snapshot acceptance are separate gates.
+- Local gates passed: `npm run check` (43 tests), complete-ledger validation
+  (1,825 records, 0 pending), `git diff --check`, and the production-origin
+  build (3,744 static pages). README generation and type checks passed.
+- No candidate package, hook, plugin, test, installer, binary, browser, server,
+  Python environment, MCP server, native helper or candidate subprocess ran.
+  Source sampling is bounded and records truncation. Static review is not
+  proof of runtime safety, runtime compatibility or tarball byte equivalence.
+
+## 2026-09-13 — Daily review, updating the unpublished September 11–12 PR
+
+- Frozen PR #2 head: `b59a6356d5b74ff63a3faa354cc6caf21e3da81b`;
+  queue generated at `2026-09-12T21:28:55.930Z`.
+- Main remains `6dee785987fb983e4d585afd95abc155d112e3ab`. Update PR #28
+  from its validated `e7715e6c1adde307004955e123545008e36a7cbc` head in the
+  isolated worktree. The original September 10 draft is preserved untouched.
+- Queue: 3,598 = 1,665 already listed + 1,915 ready + 18 discovery-held.
+  Ready keys are unique and all commits are full 40-character identities.
+- Daily increment: 175 records across 100 repositories, comprising 90 new
+  keys and 85 changed commits. Reuse 1,740 exact key/commit dispositions.
+- Daily outcomes: 15 catalog-reviewed, 42 catalog-held, 1 catalog-excluded,
+  43 duplicate/superseded, 12 example/fixture/archive, 7 non-plugin and 55
+  source-conflict; no new unavailable/structural-rejected and 0 pending.
+- Full ledger: 1,915 = 56 catalog-reviewed + 147 catalog-held + 2
+  catalog-excluded + 674 duplicate/superseded + 198 example/fixture/archive +
+  143 non-plugin + 643 source-conflict + 51 historical unavailable + 1
+  historical structural-rejected. Catalog: 1,924 = 1,078 reviewed + 843 held
+  + 3 excluded. All 1,866 previous catalog snapshots remain unchanged.
+- All 175 fixed manifests and same-commit patches returned HTTP 200. License,
+  installation identity, DSH compatibility, lifecycle hooks and capability
+  evidence are recorded separately in
+  [the September 13 report](../reports/review/2026-09-13.json).
+- The private CodeBuddy indicator patch names its parent package, whose exact
+  npm source commit conflicts with discovery; the child cannot bypass that
+  conflict. DSH File Edit is excluded following the author's explicit
+  discontinuation/migration statement, not a claim that old code cannot run.
+- Explicit README host versions supplement missing peer declarations for IM
+  Companion, Session Manager, Usage Monitor, Step Clock and Clipboard Menu.
+  IM Companion and Goal lack npm gitHead, so source/tarball byte equivalence
+  is not established. Build-only packages were inspected at original source
+  entrypoints where available; no build hook from a candidate was executed.
+- Held records retain unresolved licenses, standalone installation/build
+  evidence, versioned compatibility or asset/corpus licensing scope. Warnings
+  include session deletion, file restoration, autonomous follow-ups, external
+  credentials, real billed probes, sandbox overrides and native process use.
+- Discovery run 34720061036 was partial: 60 repositories, 37 bundle manifests,
+  1 error (`99apps-id/termigo`, GitHub response exceeded 5,000,000 bytes).
+  Valid results were retained. The last-success watermark remains
+  `2026-09-12T16:21:54.179Z`; do not claim exhaustive discovery.
+- Required release gates: `npm run check`, complete-ledger validation,
+  `git diff --check`, production-origin build, exact PR head identity and
+  explicit GitHub quality/Cloudflare preview SUCCESS. Squash merge and the
+  matching main production deployment require independent verification.
+- Local validation passed: 43 tests, complete ledger with 1,915 records and
+  0 pending, generated bilingual README checks, type/format checks and a
+  production-origin build containing 3,860 static pages.
+- No candidate package, hook, plugin, test, installer, binary, browser, server,
+  Python environment, MCP server, native helper or candidate subprocess ran.
+  Static review does not prove runtime safety or runtime compatibility.

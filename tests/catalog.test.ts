@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1020);
+  assert.equal(plugins.length, 1176);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 1709,
-    reviewed: 1020,
-    held: 688,
-    excluded: 1,
+    total: 2239,
+    reviewed: 1176,
+    held: 1059,
+    excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 1709);
+  assert.equal(getEvidenceRecords().length, 2239);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -46,6 +46,14 @@ test("plugin detail links remain pinned to the reviewed commit", () => {
     plugin.patchUrl,
     "https://github.com/tt-a1i/archify/blob/cffdd42eed0ebf013aa070378d94facdd3d56b10/integrations/deepseek-harness/cordis.patch.yml",
   );
+});
+
+test("install lifecycle evidence is retained on the held secretary bundle", () => {
+  const plugin = getPluginBySlug("liangl1985-work-personal-secretary");
+  assert.ok(plugin);
+  assert.equal(plugin.status, "held");
+  assert.equal(plugin.lifecycle, "install");
+  assert.ok(plugin.noteEn.includes("scripts/install-test.mjs"));
 });
 
 test("the public category interface is deterministic", () => {
