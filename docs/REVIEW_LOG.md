@@ -1,5 +1,51 @@
 # Review log
 
+## 2026-09-19 — Daily fixed-source review
+
+- Beijing Saturday; no Monday full reconciliation is due.
+- PR #2 source: `f98ce488e3b1eda35835d40c5eefad19005aca81`.
+  Queue: 4,222 = 1,662 already listed + 2,541 ready + 19 discovery-held.
+- Relative to the last completed review at
+  `52540ce951ccb3f9bdfa91df04ea752b340a6116`, 111 keys are new and 104
+  have changed source revisions. All 215 received a static disposition:
+  14 reviewed, 31 held, 64 duplicate/superseded, 56 source-conflict,
+  29 example/fixture/archive, 20 non-plugin and 1 unavailable.
+  No new catalog-excluded or structural-rejected records were added.
+- Ledger: 2,541 records, **0 pending**. Dispositions: 139 catalog-reviewed,
+  318 catalog-held, 3 catalog-excluded, 878 duplicate/superseded,
+  740 source-conflict, 233 example/fixture/archive, 174 non-plugin,
+  54 unavailable and 2 structural-rejected. This is the current ready-queue
+  ledger, not the complete historical catalog.
+- Catalog: **2,239 = 1,176 reviewed + 1,059 held + 4 excluded**.
+  Added 45 repository-level entries; all 2,194 prior catalog entries remain
+  unchanged. Only reviewed records enter the public directory and sitemap.
+- Notable decisions: empty DSH APP component patches and the Balbes host
+  deployment bundle are non-plugin records. The raw terminal and archive
+  handlers lack an established request-authorization boundary in inspected
+  code and remain held. Voice/character asset restrictions, monorepo-root
+  install drift, unpublished versions, local-only distribution and missing
+  host-version declarations are recorded as explicit holds.
+- The secretary integration declares an actual `scripts.install` hook.
+  Its hook and installer were read as source only; their fixture writes,
+  profile-stat reads and module/profile mutations were not executed.
+  The lifecycle validator now accepts the literal `install` value so the
+  catalog does not mislabel this package as lifecycle `none`; a regression
+  assertion preserves that evidence. No existing lifecycle values changed.
+- Latest discovery run `35398194992` succeeded. Report observed
+  `2026-09-18T21:43:56.161Z`: 60 repositories, 50 bundle manifests,
+  0 query errors, `partial=false`. Earlier failed runs still exist; this
+  bounded incremental query pass is not complete internet coverage.
+- Evidence: [September 19 review](../reports/review/2026-09-19.json),
+  fixed manifests/patch hashes, license and npm metadata, source snippets,
+  explicit manual decisions and supplementary source-file hashes.
+- Work is isolated on `codex/review-new-candidates-20260919`; the original
+  dirty checkout is preserved. PR #28's previous Cloudflare preview failed.
+  Current-head local checks, remote quality/preview, merge and production
+  acceptance are separate gates and are not asserted by this review log.
+- No candidate code, package, lifecycle hook, test, installer, native helper,
+  browser, server, Python environment or MCP server was executed. Static
+  review does not establish runtime safety or compatibility.
+
 ## 2026-09-18 — Daily review and September 16–17 backlog completion
 
 - Beijing Friday; no Monday full reconciliation was scheduled.
