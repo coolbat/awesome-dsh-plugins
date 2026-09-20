@@ -1,5 +1,65 @@
 # Review log
 
+## 2026-09-20 — Daily fixed-source review
+
+- Beijing Sunday; no full weekly reconciliation was due. Original user changes
+  in the September 10 checkout were preserved. A clean dated worktree started
+  from origin/main and fast-forwarded the prior verified review checkpoint.
+- Source PR #2: `7c7ef584f9da0e18099763a56ad323d7acad7a5f`; prior audit:
+  `aaf36f0cccb3d441dc53524cf61f21fc44a5db08`. Queue: 4,324 records =
+  1,661 already-listed + 2,644 ready-for-review + 19 discovery-held.
+- Reviewed 205 fixed-source changes: 103 new keys and 102 changed commits.
+  Reused 2,439 exact key-and-commit decisions. Every source uses a full
+  40-character SHA; candidate code and hooks were not executed.
+- Increment dispositions: 15 catalog-reviewed, 38 catalog-held, 70
+  duplicate-or-superseded, 42 source-conflict and 40 example/fixture/archive;
+  zero new non-plugin, unavailable, structural-rejected or catalog-excluded.
+- Full ledger: 2,644 = 149 catalog-reviewed + 348 catalog-held + 3
+  catalog-excluded + 910 duplicate-or-superseded + 763 source-conflict +
+  241 example/fixture/archive + 174 non-plugin + 54 unavailable + 2
+  structural-rejected. Pending: 0.
+- Catalog: 2,292 = 1,191 reviewed + 1,097 held + 4 excluded. The prior
+  2,239 catalog snapshots are unchanged; 53 repository-unique records added.
+- Manual evidence checks supersede heuristic suggestions: wildcard-only
+  peers are not versioned compatibility; explicit fixed README/manifest
+  host declarations can supplement missing peers. The full Team Link README
+  supplies Git-source installation beyond the initial excerpt.
+- Held findings include HTTP authorization boundaries for ZCode Import,
+  Viewtune, Interviewer and Skill Links; Viewtune's small host entry spawns
+  OS file-reveal processes and is not display-only. Jev's exact npm endpoint
+  returned 404 despite publication claims and its source uses a workspace
+  companion. Aggregate bundles do not prove all component source mappings.
+- MUV Table and CentricMem preserve actual noncommercial license headings;
+  CentricMem's adapter-only MIT license does not relicense its skill content.
+  Project Navigation reserves original-code rights; Purge's MIT file and
+  additional README termination terms remain an unresolved license conflict.
+  The auto-update bundle retains its actual `install: bash install.sh` hook.
+- Discovery run
+  [35470530885](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/35470530885)
+  was partial: 60 repositories observed, 57 bundle manifests, one oversized
+  GitHub response for `gmh5225/awesome-game-security`. Valid results were
+  retained; success watermark remains `2026-09-19T16:32:33.054Z`.
+  Discovery completeness is not claimed.
+- Evidence: [September 20 report](../reports/review/2026-09-20.json),
+  fixed manifests/patch hashes, registry identity, lifecycle declarations,
+  source entrypoint hashes and supplemental license/source hashes.
+- Required release gates remain full local checks/build, zero pending,
+  unchanged source/head identities, GitHub quality SUCCESS and Cloudflare
+  preview SUCCESS. Preview is not production. No merge is permitted while
+  any required check is missing, failed or drifting.
+- Local gates passed: `npm run check` (44 tests), complete-ledger validation
+  (2,644 records, zero pending), generated README checks, diff whitespace
+  checks and a production-origin build (4,596 static routes). Formatting
+  preserves semantic equality to the frozen PR #2 queue.
+- Build output contains 22,986 files (largest 3,902,446 bytes). This exceeds
+  the documented [Pages Free plan file limit](https://developers.cloudflare.com/pages/platform/limits/#files)
+  of 20,000, but project plan and detailed provider logs are not confirmed;
+  this is a deployment-failure lead, not a proven cause or permission to
+  change hosting plans. The prior review head's preview had failed.
+- No candidate package, lifecycle hook, test, installer, binary, browser,
+  server, Python environment, MCP server, helper or candidate process ran.
+  Static review does not prove runtime safety or compatibility.
+
 ## 2026-09-19 — Daily fixed-source review
 
 - Beijing Saturday; no Monday full reconciliation is due.
