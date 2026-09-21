@@ -1042,3 +1042,37 @@ volatile and do not establish trust, compatibility, or installability.
 - No candidate package, hook, plugin, test, installer, binary, browser, server,
   Python environment, MCP server, native helper or candidate subprocess ran.
   Static review does not prove runtime safety or runtime compatibility.
+
+## 2026-09-21 — Daily fixed-source review and Monday reconciliation
+
+- Source PR #2: `b3a6c3430fb6acd0e28b3c75c14187db89ac85b0`; previous
+  review checkpoint: `e5131f6aa5d7d024822d76c3068b1fc17642cf5c`.
+- Processed 269 fresh records (135 new keys, 134 changed commits), retaining
+  2,510 exact key/commit decisions. New dispositions: 14 catalog-reviewed,
+  37 catalog-held, 104 duplicate/superseded, 47 source-conflict, 58 fixtures,
+  6 non-plugin and 3 unavailable. Full ledger: 2,779 records, 0 pending.
+- Queue: 4,458 = 1,659 already listed + 2,779 ready + 20 discovery-held.
+  Catalog: 2,343 = 1,205 reviewed + 1,134 held + 4 excluded. All previous
+  2,292 catalog records are unchanged; the 51 new records cite fixed sources.
+- Licenses, public install identity, same-commit bundle patches, compatibility,
+  lifecycle scripts and risk signals were inspected without candidate execution.
+  Unresolved licensing/asset scope, build artifacts, HTTP authorization and
+  version compatibility remain held. A recreated repository name is tracked by
+  separate repository ids and commits, preserving the unavailable older source.
+- Weekly reconciliation covers main, PR #2, the existing PR #28 checkpoint and
+  today's result. No duplicate keys/catalog ids/repositories, invalid commit
+  lengths, missing own-snapshot ledger or catalog mapping errors were found.
+  PR #2 retains main's historical ledger; the fresh audit, not that old ledger,
+  proves zero pending for the current ready queue.
+- Local validation: `npm run check` (44 tests), complete ledger, README checks,
+  `git diff --check`, and the production-origin build pass. Output: 4,698 static
+  pages and 23,496 files. The previously verified Cloudflare preview failure
+  enforces a 20,000-file limit; fresh remote gates must pass before any merge.
+- Current production is still main `6dee785987fb983e4d585afd95abc155d112e3ab`:
+  root/plugins/review HTTP 200, legacy `/en/` HTTP 301, and all 1,020 public
+  directory URLs match main. No production release is claimed for this audit.
+- Discovery is partial (60 repositories, 64 manifests, 2 oversized responses);
+  valid results were retained and the last-success watermark was not advanced.
+- See [daily evidence](../reports/review/2026-09-21.json) and
+  [weekly reconciliation](../reports/review/2026-09-21-weekly.md).
+  Static review does not prove runtime safety or runtime compatibility.
