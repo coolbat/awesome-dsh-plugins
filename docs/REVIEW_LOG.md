@@ -1043,6 +1043,54 @@ volatile and do not establish trust, compatibility, or installability.
   Python environment, MCP server, native helper or candidate subprocess ran.
   Static review does not prove runtime safety or runtime compatibility.
 
+## 2026-09-22 — Daily fixed-source review
+
+- Frozen PR #2: `9d4e8939d285c2501c895e2275caf7096eeaee32`; previous
+  review: `f19fc4114944d69ffaf8a759281047a285f2e670`. Main remains
+  `6dee785987fb983e4d585afd95abc155d112e3ab`. The original dirty checkout
+  is preserved; work proceeds in an isolated dated branch to update PR #28.
+- Queue: 4,542 = 1,659 already listed + 2,863 ready + 20 discovery-held.
+  Processed 213 records (84 new keys, 129 changed source commits); reused
+  2,650 exact key/commit outcomes. Every fresh manifest and same-commit patch
+  returned HTTP 200 and matched its discovery identity.
+- Fresh dispositions: 7 catalog-reviewed, 29 catalog-held, 76 duplicate or
+  superseded, 55 example/fixture/archive, 45 source-conflict, 1 non-plugin,
+  0 unavailable, 0 structural-rejected and 0 catalog-excluded; 0 pending.
+- Full ledger: 2,863 = 163 catalog-reviewed + 398 catalog-held + 3
+  catalog-excluded + 977 duplicate/superseded + 302 fixtures/archives + 180
+  non-plugin + 781 source-conflict + 57 unavailable + 2 structural-rejected.
+  Catalog: 2,379 = 1,212 reviewed + 1,163 held + 4 excluded. The previous
+  2,343 catalog snapshots remain unchanged, including their pinned commits.
+  Newer duplicate snapshots do not re-certify the retained older catalog code.
+- Actual GPL-3.0 license headings resolve two heuristic false positives that
+  matched an AGPL compatibility paragraph. These packages remain held for
+  install/artifact closure, not a fabricated license conflict. Eight committed
+  web-relay release copies are archives; the full Acryl desktop/CLI host is
+  non-plugin. Native adapters are not rejected merely for using Python or MCP.
+- Held HTTP boundaries include conditional/fail-open connection checks,
+  unprotected LAN defaults, same-origin-only destructive worktree routes,
+  unauthenticated shell configuration and Host-only backup settings. Missing
+  licensing, public install identity, artifact closure and versioned host
+  contracts remain held. Static permission checks do not prove safety.
+- Discovery run [35663589746](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/35663589746)
+  succeeded: 60 repositories, 57 bundle manifests, 5 incremental queries and
+  0 reported errors. Success watermark: `2026-09-21T22:37:16.255Z`.
+  This is bounded incremental coverage, not exhaustive internet discovery.
+- See [daily fixed-source evidence](../reports/review/2026-09-22.json).
+- Local gates passed with Node 22.23.1: `npm run check` (44 tests),
+  complete-ledger validation, README generation, types/format and
+  `git diff --check`. The production-origin build generated 4,770 static
+  pages and 23,856 files, still above the observed Cloudflare 20,000-file
+  preview limit. Fresh-head quality and preview SUCCESS remain mandatory;
+  local build success is not a successful deployment.
+- Read-only production checks: root/plugins/review return HTTP 200 and
+  `/en/` returns 301 to `/`. The 1,020 public directory URLs match main
+  exactly; this is the old production snapshot, not today's 2,379 entries.
+  No candidate package, hook, plugin, test, installer, binary, browser, server,
+  Python environment, MCP server, native helper or candidate subprocess ran.
+  Bounded/truncated source samples and npm metadata do not establish complete
+  tarball equivalence. Static review does not prove runtime safety or compatibility.
+
 ## 2026-09-21 — Daily fixed-source review and Monday reconciliation
 
 - Source PR #2: `b3a6c3430fb6acd0e28b3c75c14187db89ac85b0`; previous
