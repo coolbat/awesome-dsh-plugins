@@ -1,5 +1,73 @@
 # Review log
 
+## 2026-09-23 — Daily fixed-source review
+
+- Beijing Wednesday; no full Monday reconciliation was due. The original
+  dirty September 10 checkout was preserved. A dated isolated worktree
+  began at origin/main and fast-forwarded the prior audit checkpoint.
+- PR #2 source: `0d9a81f10c06b098012f53040d3fe53f4c2a2e6f`.
+  Prior audit: `5acec9288a91c1e136f21d3cb86ec9d222aa64c9`.
+  Queue: 4,642 = 1,659 already-listed + 2,963 ready + 20 discovery-held.
+- Reviewed 209 fixed-source changes: 100 new keys and 109 changed commits;
+  reused 2,754 exact key-and-commit dispositions. All source identities are
+  full 40-character commits. 207 manifests and same-SHA patch files were
+  retrieved; two fixed manifests returned 404 and were marked unavailable.
+- Increment dispositions: 6 catalog-reviewed, 43 catalog-held, 64
+  duplicate-or-superseded, 62 source-conflict, 32 example/fixture/archive
+  and 2 unavailable. No new non-plugin, structural-rejected or
+  catalog-excluded dispositions. Eight Web Relay release copies are archives,
+  not independent plugins. New source versions of retained catalog entries
+  classified as duplicates do not re-certify those historical snapshots.
+- Full ledger: 2,963 = 161 catalog-reviewed + 433 catalog-held + 3
+  catalog-excluded + 1,009 duplicate/superseded + 807 source-conflict +
+  309 example/fixture/archive + 180 non-plugin + 59 unavailable + 2
+  structural-rejected. Pending: 0. The ready-queue ledger is not the
+  historical directory; discovery-held records are outside this ready queue.
+- Catalog: 2,428 = 1,218 reviewed + 1,206 held + 4 excluded. All 2,379
+  previous directory snapshots remain unchanged; 49 unique repositories
+  were added. Only reviewed entries enter the public plugin directory.
+- Reviewed additions: reparse escape guard, model proxy, remote explorer,
+  system monitor, MCP panel and context trim. Their source/build mappings,
+  versioned host declarations, licenses and installation identity were
+  inspected. The system monitor uses a direct socket-loopback fence;
+  Remote Explorer uses connection.fetch. Neither is a runtime security proof.
+- Holds explicitly include raw HTTP/RPC authorization boundaries, missing
+  exported or companion artifacts, absent/publication-mismatched install
+  identities, missing license scope and unversioned compatibility. Python
+  CodeAct documents shell-equivalent, non-sandboxed model execution and is
+  held for operator risk acceptance; its UI-only profile patch does not
+  itself enable the separate CodeAct preset. Test Account is a real bundle,
+  not a fixture by repository name, and requests unrestricted file access.
+- Stepwise Distill has an actual postinstall hook which extracts installed
+  DSH host modules from app.asar; it was inspected, not executed. Path and
+  README edge cases were handled manually: TaskFlow/gh-watch main entries
+  without a leading dot exist; WX Preview has explicit multiline Git release
+  and checkout installation instructions. Sampled large bundles remain
+  bounded evidence, not full-code coverage.
+- Discovery run
+  [35791468625](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/35791468625)
+  retained valid results but was partial: 60 repositories observed, 58
+  bundle manifests and two oversized GitHub responses for ExploitHunter.app
+  and Deepseek-Harness-Desktop. Last-success watermark remains
+  `2026-09-22T17:39:36.046Z`; this is not complete internet discovery.
+- Evidence: [September 23 fixed-source report](../reports/review/2026-09-23.json),
+  manifest/patch/license/registry records, source sample hashes and manual
+  decisions. No candidate package, code, hook, test, installer, binary,
+  browser, server, Python environment, MCP server or native helper ran.
+- Audit, local validation, exact-head remote quality/preview, merge and
+  production deployment are separate gates. PR #28 is updated in place.
+  The prior preview failed at the provider's 20,000-file limit; there is
+  no permission to bypass checks, change the hosting plan or redesign the
+  export in this static-review change. No empty or duplicate PR is created.
+  Static review does not establish runtime safety or compatibility.
+- Local gates passed under Node 22.23.1: `npm run check` including all 44
+  tests, complete-ledger validation (2,963 records, 0 pending), generated
+  bilingual README checks, `git diff --check` and the production-origin
+  build (4,868 static pages). The frozen candidate JSON is semantically
+  identical to the exact PR #2 source. Output has 24,346 files; largest
+  file is 4,004,820 bytes. This still exceeds the prior confirmed provider
+  file-count limit; local build success is not preview or production success.
+
 ## 2026-09-20 — Daily fixed-source review
 
 - Beijing Sunday; no full weekly reconciliation was due. Original user changes
