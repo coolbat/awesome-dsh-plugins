@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1218);
+  assert.equal(plugins.length, 1225);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2428,
-    reviewed: 1218,
-    held: 1206,
+    total: 2472,
+    reviewed: 1225,
+    held: 1243,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2428);
+  assert.equal(getEvidenceRecords().length, 2472);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -62,6 +62,30 @@ test("the public category interface is deterministic", () => {
   assert.equal(categories.length, 11);
   assert.deepEqual([...categories], [...categories].sort());
   assert.ok(categories.includes("Developer Tools"));
+});
+
+test("the September 24 audit preserves source-build and lifecycle evidence", () => {
+  const stash = getPluginBySlug("wine-red-dsh-prompt-stash");
+  const search = getPluginBySlug("foreveryoungpp-dsh-web-search");
+  assert.ok(stash);
+  assert.ok(search);
+  assert.equal(stash.status, "reviewed");
+  assert.equal(search.status, "reviewed");
+  assert.ok(stash.noteEn.includes("No npm artifact equivalence is asserted"));
+  assert.ok(search.signals.includes("prepare-hook"));
+});
+
+test("the September 24 audit holds unresolved module and HTTP boundaries", () => {
+  const spec = getPluginBySlug("cyning12-specwave");
+  const wallet = getPluginBySlug(
+    "thinkofrain1213-deepseek-harness-wallet-patched",
+  );
+  assert.ok(spec);
+  assert.ok(wallet);
+  assert.equal(spec.status, "held");
+  assert.equal(wallet.status, "held");
+  assert.ok(spec.signals.includes("patch-module-identity-mismatch"));
+  assert.ok(wallet.signals.includes("authorization-boundary-unresolved"));
 });
 
 test("all evidence and the DSH contract use immutable commits", () => {

@@ -1,5 +1,65 @@
 # Review log
 
+## 2026-09-24 — Daily fixed-source review
+
+- Beijing Thursday; no Monday reconciliation was due. The original dirty
+  checkout was preserved. This dated isolated worktree began at origin/main
+  and fast-forwarded the previous audit checkpoint.
+- Source PR #2: `886f14f714220f36696ccf0bfdd2e1aa5381d367`.
+  Previous audit: `7c4f26ddc80252f11443676bf71c7e20afebc1db`.
+  Queue: 4,729 = 1,657 already-listed + 3,052 ready + 20 discovery-held.
+- Processed 220 fixed-source changes: 89 new keys and 131 changed commits;
+  reused 2,832 exact key-and-commit dispositions. All 220 fixed manifests
+  and same-SHA patch files returned HTTP 200 and matched the frozen identity.
+- Increment: 7 catalog-reviewed + 37 catalog-held + 106 duplicate/superseded
+  + 39 source-conflict + 25 example/fixture/archive + 6 non-plugin-package.
+  Zero new unavailable, structural-rejected or catalog-excluded decisions.
+  Updated sources classified as duplicates do not re-certify retained
+  historical catalog snapshots.
+- Complete ready-queue ledger: 3,052 = 166 catalog-reviewed + 461 catalog-held
+  + 3 catalog-excluded + 1,049 duplicate/superseded + 821 source-conflict
+  + 311 example/fixture/archive + 180 non-plugin-package + 59 unavailable
+  + 2 structural-rejected. Pending: 0. Discovery-held candidates are outside
+  this ready-queue ledger.
+- Catalog: 2,472 = 1,225 reviewed + 1,243 held + 4 excluded. All previous
+  2,428 catalog snapshots remain unchanged; 44 unique repositories added.
+  Only reviewed records enter the public directory.
+- Reviewed additions: process guard, web search, session colors, OpenCode
+  Go pool, PTC/Cordis preset, prompt stash and token tracker. Documented Git
+  build/install mappings can establish source identity when npm is absent;
+  they do not prove npm artifact equivalence. Host connection/Typert usage,
+  lifecycle scripts, credentials and filesystem capabilities were inspected.
+- Held records identify concrete missing evidence: unversioned host contracts,
+  unresolved public installation, missing or unpinned companion outputs,
+  license scope, and HTTP authorization boundaries. SpecWave's patch module
+  name differs from package.name; a CLI alias is not a loader alias. DeepBlend's
+  companions use unpinned Git path dependencies. A2A explicitly configures
+  noAuthentication and defaults to disabled/loopback; that is not verified
+  authorization for an externally exposed deployment. Origin headers and local
+  key encryption do not establish authenticated access to sensitive routes.
+- Discovery [35927858178](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/35927858178)
+  retained valid results but is partial: 60 repositories, 76 bundle manifests,
+  five incremental queries, two oversized GitHub responses (awesome-game-security
+  and ExploitHunter.app). Last successful watermark:
+  `2026-09-23T06:04:15.434Z`. No complete-internet-discovery claim is made.
+- Evidence: [September 24 fixed-source report](../reports/review/2026-09-24.json),
+  immutable manifest/patch/license/registry data, bounded source hashes and
+  per-record manual decisions. No candidate package, hook, test, installer,
+  binary, browser, server, Python environment, MCP server or native helper ran.
+- Audit, local gates, exact-head quality/preview, merge and production are
+  separate stages. PR #28 is updated in place. The previous Cloudflare preview
+  hit its 20,000-file limit; this audit does not authorize bypassing it,
+  changing hosting plans or redesigning the export. Static review does not
+  establish runtime safety or compatibility.
+
+- Local gates passed under Node 22.23.1: `npm run check` (46 tests), complete
+  ledger validation (3,052 records, 0 pending), generated bilingual README
+  checks, `git diff --check` and the production-origin build (4,956 static
+  pages). Frozen candidate JSON equals the exact PR #2 source semantically.
+  The output contains 24,786 files; largest is 4,033,950 bytes. This exceeds
+  the previously confirmed Cloudflare 20,000-file limit; a successful local
+  build is not a successful provider preview or production deployment.
+
 ## 2026-09-23 — Daily fixed-source review
 
 - Beijing Wednesday; no full Monday reconciliation was due. The original
