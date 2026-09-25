@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1225);
+  assert.equal(plugins.length, 1232);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2472,
-    reviewed: 1225,
-    held: 1243,
+    total: 2517,
+    reviewed: 1232,
+    held: 1281,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2472);
+  assert.equal(getEvidenceRecords().length, 2517);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -86,6 +86,29 @@ test("the September 24 audit holds unresolved module and HTTP boundaries", () =>
   assert.equal(wallet.status, "held");
   assert.ok(spec.signals.includes("patch-module-identity-mismatch"));
   assert.ok(wallet.signals.includes("authorization-boundary-unresolved"));
+});
+
+test("the September 25 audit retains source builds and exact worker artifacts", () => {
+  const git = getPluginBySlug("cherrchen-dsh-plugin-git");
+  const usage = getPluginBySlug("xie-tj-dsh-token-usage-ledger");
+  assert.ok(git);
+  assert.ok(usage);
+  assert.equal(git.status, "reviewed");
+  assert.equal(usage.status, "reviewed");
+  assert.ok(git.signals.includes("prepare-hook"));
+  assert.ok(git.noteEn.includes("no npm artifact equivalence is asserted"));
+  assert.ok(usage.noteEn.includes("backfill-worker"));
+});
+
+test("the September 25 audit preserves custom license and HTTP boundary holds", () => {
+  const editor = getPluginBySlug("klarkxy-dsh-editor");
+  const relay = getPluginBySlug("archaofan-dsh-notify-relay");
+  assert.ok(editor);
+  assert.ok(relay);
+  assert.equal(editor.status, "held");
+  assert.equal(editor.repoLicense, "SATA-2.1 (custom)");
+  assert.equal(relay.status, "held");
+  assert.ok(relay.signals.includes("authorization-boundary-unresolved"));
 });
 
 test("all evidence and the DSH contract use immutable commits", () => {

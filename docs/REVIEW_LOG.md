@@ -1,5 +1,66 @@
 # Review log
 
+## 2026-09-25 — Daily fixed-source review
+
+- Beijing Friday; no Monday reconciliation was due. The original dirty
+  checkout was preserved. A dated isolated worktree began at origin/main
+  and fast-forwarded the previous audit checkpoint; PR #28 is updated in place.
+- Source PR #2: `e20a2a9d2a89d99a3b02fab4d4e8bf81616588aa`.
+  Previous audit: `fd1efaa227c4f57666aad28abd01a2815d67986a`.
+  Queue: 4,844 = 1,656 already-listed + 3,167 ready + 21 discovery-held.
+- Processed 241 fixed-source changes: 115 new keys and 126 changed commits;
+  reused 2,926 exact key-and-commit dispositions. All source identities are
+  full 40-character commits. 240 manifests and same-SHA patches returned
+  HTTP 200 and matched the frozen identity. The yzbenyu-wq/dsh-pentest-maintained
+  manifest returned 404 and is recorded as unavailable.
+- Increment: 7 catalog-reviewed + 38 catalog-held + 139 duplicate/superseded
+  + 24 source-conflict + 32 example/fixture/archive + 1 unavailable.
+  Zero new non-plugin, structural-rejected or catalog-excluded decisions.
+  A duplicate/newer-source decision does not re-certify a retained historical
+  catalog snapshot or count multiple workspace manifests as separate repositories.
+- Complete ready-queue ledger: 3,167 = 170 catalog-reviewed + 488 catalog-held
+  + 3 catalog-excluded + 1,116 duplicate/superseded + 835 source-conflict
+  + 314 example/fixture/archive + 179 non-plugin-package + 60 unavailable
+  + 2 structural-rejected. Pending: 0. The 21 discovery-held candidates are
+  outside this ready-queue ledger, not an additional pending review count.
+- Catalog: 2,517 = 1,232 reviewed + 1,281 held + 4 excluded. All previous
+  2,472 catalog snapshots remain unchanged; 45 unique repositories were added.
+  Only reviewed records enter the public directory.
+- Reviewed additions: midtalk, Git panels, reasoning-level settings, prompt
+  switcher, Catppuccin themes, schedule tab and token usage ledger. Source/build
+  mappings, hook metadata, host contracts, licenses and installation identity
+  were inspected. Git installs do not imply npm artifact equivalence. The usage
+  ledger's actual backfill-worker and shared protocol files are present; a
+  guessed worker.js 404 is not evidence that the real worker is absent.
+- Holds name concrete unresolved evidence: publication/companion mappings,
+  versioned host contracts, license scope, raw HTTP authorization and expanded
+  runtime policy. A PRTS theme excludes third-party image assets from MIT.
+  The editor root LICENSE is custom SATA 2.1, not plain MIT. A hub's postinstall
+  can install DSH/pnpm globally and invoke PowerShell, while prepare writes
+  Git hooks. Header-only same-origin checks do not establish authenticated
+  remote access. Loopback checks are described precisely, not certified.
+- Discovery [36067640779](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/36067640779)
+  is partial: 60 repositories, 74 bundle manifests, five incremental queries,
+  one oversized GitHub response (ultrametricai/productarena). Valid results
+  were retained; last successful watermark: `2026-09-24T06:13:55.501Z`.
+  No claim of exhaustive discovery is made.
+- Evidence: [September 25 fixed-source report](../reports/review/2026-09-25.json),
+  immutable source/patch/license/registry metadata, bounded source hashes and
+  per-record manual decisions. No candidate package, hook, test, installer,
+  binary, browser, server, Python environment, MCP server or native helper ran.
+- Local validation, exact-head quality/preview, merge and production are
+  separate gates. The existing Cloudflare preview file-limit failure does not
+  authorize a plan change, export redesign, bypass or production retry. Static
+  review does not establish runtime safety or compatibility.
+
+- Local gates passed under Node 22.23.1: `npm run check` (48 tests), complete
+  ledger validation (3,167 records, 0 pending), generated bilingual README
+  checks, `git diff --check` and production-origin build (5,046 static pages).
+  Candidate JSON equals the exact PR #2 source semantically; catalog ids and
+  repository identities are unique. The output has 25,236 files; largest file
+  is 4,062,460 bytes. This exceeds the previously confirmed Cloudflare limit
+  of 20,000 files and is not evidence of a successful preview or deployment.
+
 ## 2026-09-24 — Daily fixed-source review
 
 - Beijing Thursday; no Monday reconciliation was due. The original dirty
