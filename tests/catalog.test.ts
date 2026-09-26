@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1020);
+  assert.equal(plugins.length, 1243);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 1709,
-    reviewed: 1020,
-    held: 688,
-    excluded: 1,
+    total: 2565,
+    reviewed: 1243,
+    held: 1318,
+    excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 1709);
+  assert.equal(getEvidenceRecords().length, 2565);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -48,12 +48,88 @@ test("plugin detail links remain pinned to the reviewed commit", () => {
   );
 });
 
+test("install lifecycle evidence is retained on the held secretary bundle", () => {
+  const plugin = getPluginBySlug("liangl1985-work-personal-secretary");
+  assert.ok(plugin);
+  assert.equal(plugin.status, "held");
+  assert.equal(plugin.lifecycle, "install");
+  assert.ok(plugin.noteEn.includes("scripts/install-test.mjs"));
+});
+
 test("the public category interface is deterministic", () => {
   const categories = getCategories();
 
   assert.equal(categories.length, 11);
   assert.deepEqual([...categories], [...categories].sort());
   assert.ok(categories.includes("Developer Tools"));
+});
+
+test("the September 24 audit preserves source-build and lifecycle evidence", () => {
+  const stash = getPluginBySlug("wine-red-dsh-prompt-stash");
+  const search = getPluginBySlug("foreveryoungpp-dsh-web-search");
+  assert.ok(stash);
+  assert.ok(search);
+  assert.equal(stash.status, "reviewed");
+  assert.equal(search.status, "reviewed");
+  assert.ok(stash.noteEn.includes("No npm artifact equivalence is asserted"));
+  assert.ok(search.signals.includes("prepare-hook"));
+});
+
+test("the September 24 audit holds unresolved module and HTTP boundaries", () => {
+  const spec = getPluginBySlug("cyning12-specwave");
+  const wallet = getPluginBySlug(
+    "thinkofrain1213-deepseek-harness-wallet-patched",
+  );
+  assert.ok(spec);
+  assert.ok(wallet);
+  assert.equal(spec.status, "held");
+  assert.equal(wallet.status, "held");
+  assert.ok(spec.signals.includes("patch-module-identity-mismatch"));
+  assert.ok(wallet.signals.includes("authorization-boundary-unresolved"));
+});
+
+test("the September 25 audit retains source builds and exact worker artifacts", () => {
+  const git = getPluginBySlug("cherrchen-dsh-plugin-git");
+  const usage = getPluginBySlug("xie-tj-dsh-token-usage-ledger");
+  assert.ok(git);
+  assert.ok(usage);
+  assert.equal(git.status, "reviewed");
+  assert.equal(usage.status, "reviewed");
+  assert.ok(git.signals.includes("prepare-hook"));
+  assert.ok(git.noteEn.includes("no npm artifact equivalence is asserted"));
+  assert.ok(usage.noteEn.includes("backfill-worker"));
+});
+
+test("the September 25 audit preserves custom license and HTTP boundary holds", () => {
+  const editor = getPluginBySlug("klarkxy-dsh-editor");
+  const relay = getPluginBySlug("archaofan-dsh-notify-relay");
+  assert.ok(editor);
+  assert.ok(relay);
+  assert.equal(editor.status, "held");
+  assert.equal(editor.repoLicense, "SATA-2.1 (custom)");
+  assert.equal(relay.status, "held");
+  assert.ok(relay.signals.includes("authorization-boundary-unresolved"));
+});
+
+test("the September 26 audit distinguishes declarative presets from host applications", () => {
+  const preset = getPluginBySlug("ink-dark-dsh-adversarial-review-preset");
+  assert.ok(preset);
+  assert.equal(preset.status, "reviewed");
+  assert.ok(preset.signals.includes("declarative-preset"));
+  assert.equal(getPluginBySlug("anywhere-labs-dsh-desktop"), null);
+  assert.equal(getPluginBySlug("roy-kid-tack"), null);
+});
+
+test("the September 26 audit preserves irreversible-action authorization holds", () => {
+  const purge = getPluginBySlug("hunlongbaize-dsh-deep-purge");
+  const bridge = getPluginBySlug("silenzerorz-obsidian-dsh-acp");
+  assert.ok(purge);
+  assert.ok(bridge);
+  assert.equal(purge.status, "held");
+  assert.equal(bridge.status, "held");
+  assert.ok(purge.signals.includes("authorization-boundary-unresolved"));
+  assert.ok(purge.signals.includes("permanent-deletion"));
+  assert.ok(bridge.signals.includes("authorization-boundary-unresolved"));
 });
 
 test("all evidence and the DSH contract use immutable commits", () => {
