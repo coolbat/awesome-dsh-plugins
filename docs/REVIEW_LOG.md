@@ -1,5 +1,70 @@
 # Review log
 
+## 2026-09-26 — Daily fixed-source review
+
+- Beijing Saturday; no Monday reconciliation was due. The original dirty
+  checkout was preserved; this dated isolated worktree began at origin/main
+  and fast-forwarded the previous audit checkpoint. PR #28 is updated in place.
+- Source PR #2: `31b95d3d6c3146beb19aef173054a547056f203e`.
+  Previous audit: `77a387a5dbe083b6d0e0949d5663eaa88fdd6889`.
+  Queue: 4,925 = 1,657 already-listed + 3,247 ready + 21 discovery-held.
+- Processed 191 fixed-source changes: 80 new keys and 111 changed commits;
+  reused 3,056 exact key-and-commit dispositions. All identities use full
+  40-character commits. 190 manifests and same-commit patches returned HTTP 200
+  and matched the frozen queue. The older Kaede0614 history-fictionologists
+  repository identity returned 404; the recreated repository has a different
+  discovery key and was assessed at its own available commit.
+- Increment: 11 catalog-reviewed + 37 catalog-held + 55 duplicate/superseded
+  + 48 source-conflict + 35 example/fixture/archive + 4 non-plugin-package
+  + 1 unavailable. Zero new structural-rejected or catalog-excluded decisions.
+  Duplicates/newer source snapshots do not re-certify or replace retained
+  historical catalog snapshots.
+- Complete ready-queue ledger: 3,247 = 177 catalog-reviewed + 519 catalog-held
+  + 3 catalog-excluded + 1,129 duplicate/superseded + 859 source-conflict
+  + 315 example/fixture/archive + 182 non-plugin-package + 61 unavailable
+  + 2 structural-rejected. Pending: 0. The 21 discovery-held records are not
+  additional pending records in this ready-queue ledger.
+- Catalog: 2,565 = 1,243 reviewed + 1,318 held + 4 excluded. All 2,517 previous
+  catalog records remain unchanged; 48 repository-level entries were added.
+  Only reviewed entries enter the public plugin directory.
+- Reviewed additions cover auto-memory, Chinese-language reminders, Git
+  worktrees, adaptive context, an adversarial-review preset, token statistics,
+  a developer persona, stream folding, desktop injection bridging, turn retries
+  and repetition guards. Exact npm or documented Git identity, licenses,
+  fixed manifests/patches, lifecycle metadata and versioned host declarations
+  were inspected. Reviewed does not mean harmless: curl's credential-bearing
+  argv, irreversible Git actions, cross-session memory, prompt overrides and
+  a persistent global monkey-patch are recorded explicitly.
+- Holds identify installation/build/companion gaps, missing host-version
+  contracts, license scope, direct shell policy and raw HTTP authorization.
+  A confirmation string is not authentication for permanent session deletion.
+  A status-only KDocs panel remains held because its companion core has a
+  different npm source commit. Game/model assets are not assumed to inherit
+  the code license. The private desktop app and Tack startup composition are
+  non-plugin packages; patch-only presets are not rejected for guessed JS 404s.
+- Discovery [36196812476](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/36196812476)
+  is partial: 60 repositories, 82 bundle manifests, five incremental queries,
+  one oversized GitHub response (ashfordeOU/aero-agent-skills). Valid results
+  were retained; last successful watermark: `2026-09-25T12:49:07.775Z`.
+  No exhaustive-discovery claim is made.
+- Evidence: [September 26 fixed-source report](../reports/review/2026-09-26.json),
+  fixed source/patch/license/registry metadata, bounded source hashes and manual
+  dispositions. Truncated hashes describe captured samples only. No candidate
+  package, lifecycle hook, test, installer, binary, browser, server, Python
+  environment, MCP server or native helper was executed.
+- Local verification, exact-head quality/preview, merge and production remain
+  separate gates. The existing Cloudflare preview file-limit failure does not
+  authorize export redesign, a hosting-plan change, bypass or production retry.
+  Static review does not establish runtime safety or compatibility.
+
+- Local gates passed under Node 22.23.1: `npm run check` (50 tests), complete
+  ledger validation (3,247 records, 0 pending), bilingual README checks,
+  `git diff --check` and production-origin build (5,142 static pages).
+  The candidate JSON equals fixed PR #2 data semantically; catalog ids and
+  repository identities are unique. Output: 25,716 files, largest 4,105,909
+  bytes. The output exceeds the previously confirmed 20,000-file Cloudflare
+  limit; a local build is not a preview or production deployment success.
+
 ## 2026-09-25 — Daily fixed-source review
 
 - Beijing Friday; no Monday reconciliation was due. The original dirty

@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1232);
+  assert.equal(plugins.length, 1243);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2517,
-    reviewed: 1232,
-    held: 1281,
+    total: 2565,
+    reviewed: 1243,
+    held: 1318,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2517);
+  assert.equal(getEvidenceRecords().length, 2565);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -109,6 +109,27 @@ test("the September 25 audit preserves custom license and HTTP boundary holds", 
   assert.equal(editor.repoLicense, "SATA-2.1 (custom)");
   assert.equal(relay.status, "held");
   assert.ok(relay.signals.includes("authorization-boundary-unresolved"));
+});
+
+test("the September 26 audit distinguishes declarative presets from host applications", () => {
+  const preset = getPluginBySlug("ink-dark-dsh-adversarial-review-preset");
+  assert.ok(preset);
+  assert.equal(preset.status, "reviewed");
+  assert.ok(preset.signals.includes("declarative-preset"));
+  assert.equal(getPluginBySlug("anywhere-labs-dsh-desktop"), null);
+  assert.equal(getPluginBySlug("roy-kid-tack"), null);
+});
+
+test("the September 26 audit preserves irreversible-action authorization holds", () => {
+  const purge = getPluginBySlug("hunlongbaize-dsh-deep-purge");
+  const bridge = getPluginBySlug("silenzerorz-obsidian-dsh-acp");
+  assert.ok(purge);
+  assert.ok(bridge);
+  assert.equal(purge.status, "held");
+  assert.equal(bridge.status, "held");
+  assert.ok(purge.signals.includes("authorization-boundary-unresolved"));
+  assert.ok(purge.signals.includes("permanent-deletion"));
+  assert.ok(bridge.signals.includes("authorization-boundary-unresolved"));
 });
 
 test("all evidence and the DSH contract use immutable commits", () => {
