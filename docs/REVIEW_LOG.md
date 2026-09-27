@@ -1,5 +1,64 @@
 # Review log
 
+## 2026-09-27 — Daily fixed-source review
+
+- Beijing Sunday; no Monday reconciliation was due. The original dirty checkout
+  was preserved. This dated isolated branch began at origin/main and fast-forwarded
+  the preceding audit checkpoint; PR #28 is updated in place.
+- Source PR #2: `a948a17727a438d1ebc2f459a51d1d05e204a4fc`.
+  Previous audit: `c743290133c9d155beab2f85f7bb094b21ece0c1`.
+  Queue: 5,005 = 1,657 already-listed + 3,327 ready + 21 discovery-held.
+- Processed 203 fixed-source changes: 80 new keys and 123 changed commits.
+  Reused 3,124 exact key-and-commit dispositions; historical review dates were
+  retained. All frozen identities use 40-character commits. 201 manifests and
+  same-commit patches matched; the two honghufox bio presets returned manifest
+  HTTP 404 and are unavailable at their fixed identities.
+- Increment: 5 catalog-reviewed + 38 catalog-held + 76 duplicate/superseded
+  + 37 source-conflict + 44 example/fixture/archive + 1 non-plugin-package
+  + 2 unavailable. Zero new structural-rejected or catalog-excluded decisions.
+  The acryl desktop host is not an independent plugin; the private experimental
+  Human Harness composition is not a published catalog entry.
+- Complete ready ledger: 3,327 = 177 catalog-reviewed + 553 catalog-held
+  + 3 catalog-excluded + 1,155 duplicate/superseded + 873 source-conflict
+  + 318 example/fixture/archive + 183 non-plugin-package + 63 unavailable
+  + 2 structural-rejected. Pending: 0. The 21 discovery-held records are outside
+  the ready ledger and are not silently treated as completed plugin reviews.
+- Catalog: 2,608 = 1,248 reviewed + 1,356 held + 4 excluded. All previous 2,565
+  catalog records remain unchanged; 43 unique repository entries were added.
+  A duplicate/newer-source disposition does not re-certify the historical snapshot.
+- Reviewed additions cover compaction rescue, associative memory, a federated
+  registry, database tools and ACP transcript replay. Fixed patches, licenses,
+  npm/Git identity, source-build mappings, lifecycle metadata, versioned host
+  declarations and capability boundaries were inspected. Database mutations,
+  model-bound conversation data, native canvas dependencies, MCP configuration
+  and third-party plugin installation remain risks, not runtime endorsements.
+- Holds include raw HTTP authorization gaps, missing public install mappings,
+  host-version contracts, license scope and companion/native artifacts. In
+  particular: Comate's random-bearer shim does not authenticate separate raw
+  status/action routes; sidebar file writes accept a missing Origin; recall's
+  caller-lineage lookup explicitly fails open; a HarmonyOS fork's root package
+  name differs from the module selected by its patch. These are not promoted.
+- Discovery [36274749276](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/36274749276)
+  was partial: 60 repositories, 66 bundle manifests, five incremental queries,
+  one oversized response (HaroldZ32/My-Power-Dsh). Valid results were retained;
+  last successful watermark: `2026-09-26T17:15:20.345Z`. No exhaustive claim.
+- Evidence: [September 27 fixed-source report](../reports/review/2026-09-27.json).
+  Hashes of bounded samples cover captured text only. No candidate code, lifecycle
+  hook, test, installer, binary, browser, server, Python environment, MCP server
+  or native helper was executed. Existing local project dependencies were reused.
+- Audit, exact-head CI/preview, merge and production are separate gates. The
+  existing Cloudflare file-limit failure does not authorize export redesign,
+  a paid plan, bypass or production retry. Static review is not runtime safety
+  or compatibility proof.
+
+- Local gates passed under Node 22.23.1: `npm run check` (52 tests), complete
+  ledger validation (3,327 records, 0 pending), bilingual README checks,
+  `git diff --check` and production-origin build (5,228 static pages).
+  Candidate data equals fixed PR #2 semantically; all old catalog entries remain
+  unchanged, with no duplicate keys, catalog ids/repositories or non-fixed SHAs.
+  Output: 26,146 files; largest 4,125,415 bytes. This exceeds the previously
+  confirmed Cloudflare 20,000-file limit; local build success is not deployment.
+
 ## 2026-09-26 — Daily fixed-source review
 
 - Beijing Saturday; no Monday reconciliation was due. The original dirty

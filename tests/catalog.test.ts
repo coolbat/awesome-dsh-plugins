@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1243);
+  assert.equal(plugins.length, 1248);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2565,
-    reviewed: 1243,
-    held: 1318,
+    total: 2608,
+    reviewed: 1248,
+    held: 1356,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2565);
+  assert.equal(getEvidenceRecords().length, 2608);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -130,6 +130,33 @@ test("the September 26 audit preserves irreversible-action authorization holds",
   assert.ok(purge.signals.includes("authorization-boundary-unresolved"));
   assert.ok(purge.signals.includes("permanent-deletion"));
   assert.ok(bridge.signals.includes("authorization-boundary-unresolved"));
+});
+
+test("the September 27 audit distinguishes shim tokens from raw route authorization", () => {
+  const comate = getPluginBySlug("dier-toushou-dsh-connect-comate");
+  const sidebar = getPluginBySlug("sailoumili-dsh-sidebar-plus");
+  const recall = getPluginBySlug("kittimzhe-dsh-session-recall");
+  assert.ok(comate);
+  assert.ok(sidebar);
+  assert.ok(recall);
+  assert.equal(comate.status, "held");
+  assert.equal(sidebar.status, "held");
+  assert.equal(recall.status, "held");
+  assert.ok(comate.signals.includes("authorization-boundary-unresolved"));
+  assert.ok(sidebar.signals.includes("dynamic-code-load"));
+  assert.ok(recall.signals.includes("lineage-fail-open"));
+});
+
+test("the September 27 audit retains authenticated boundaries and source mappings", () => {
+  const compact = getPluginBySlug("aa2246740-dsh-compact-saviour");
+  const data = getPluginBySlug("tomowang-dsh-data-agent");
+  assert.ok(compact);
+  assert.ok(data);
+  assert.equal(compact.status, "reviewed");
+  assert.equal(data.status, "reviewed");
+  assert.ok(compact.signals.includes("authenticated-host-route"));
+  assert.ok(data.signals.includes("native-canvas-dependency"));
+  assert.equal(getPluginBySlug("monthu56-taimen"), null);
 });
 
 test("all evidence and the DSH contract use immutable commits", () => {
