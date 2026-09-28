@@ -6032,15 +6032,15 @@
     },
     {
       "id": "ultronen-dsh-archived-chats",
-      "name": "DSH Archived Chats",
+      "name": "Archive Management / 归档管理",
       "repository": "Ultronen/dsh-archived-chats",
       "package": "dsh-archived-chats",
       "category": "UI & Workspace",
       "status": "reviewed",
-      "summaryEn": "A settings page for browsing, searching, restoring, and deleting archived sessions by workspace.",
-      "summaryZh": "按工作区浏览、搜索、恢复和删除已归档会话的设置页。",
+      "summaryEn": "Manage archived chats with search, preview, restore, workspace bulk archiving, ZIP import/export, and a Recycle Bin.",
+      "summaryZh": "管理已归档会话，支持搜索、预览、恢复、按工作区批量归档、ZIP 导入导出和回收站管理。",
       "branch": "main",
-      "commit": "8a6912e1f39f992e2d8bdf955b456b01e8927948",
+      "commit": "f519985a4bc7add41602e35931582dde60ea8e53",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "repoLicense": "MIT",
@@ -6051,10 +6051,12 @@
         "session-data",
         "archive-registry",
         "filesystem-delete",
-        "client-injection"
+        "client-injection",
+        "zip-import-export",
+        "external-network"
       ],
-      "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
-      "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
+      "noteEn": "Version 1.4.1 manifest, patch, licenses, and install identity checked at the pinned commit. dsh.engines.dsh declares a host range; runtime compatibility remains untested. lib/about.js checks public npm version metadata with a bodyless GET. Plugin capabilities were inspected statically, not executed.",
+      "noteZh": "已按固定提交静态核对 1.4.1 的 manifest、patch、许可证与安装身份。dsh.engines.dsh 声明宿主版本范围，运行时兼容性仍未实测。lib/about.js 使用无请求体的 GET 检查公开 npm 版本元数据。插件能力仅经静态核对，未执行。"
     },
     {
       "id": "ustc-xef2-dsh-llm-ustc",
