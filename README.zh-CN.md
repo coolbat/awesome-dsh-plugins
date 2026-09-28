@@ -831,10 +831,10 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `unknown` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `session-data` `message-navigation` `client-injection` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
-- **DSH Archived Chats** · [Ultronen/dsh-archived-chats@8a6912e](https://github.com/Ultronen/dsh-archived-chats/commit/8a6912e1f39f992e2d8bdf955b456b01e8927948) — 按工作区浏览、搜索、恢复和删除已归档会话的设置页。
-  - **证据:** [manifest](https://github.com/Ultronen/dsh-archived-chats/blob/8a6912e1f39f992e2d8bdf955b456b01e8927948/package.json) → [patch](https://github.com/Ultronen/dsh-archived-chats/blob/8a6912e1f39f992e2d8bdf955b456b01e8927948/cordis.patch.yml) · **身份:** `dsh-archived-chats`
+- **Archive Management / 归档管理** · [Ultronen/dsh-archived-chats@f519985](https://github.com/Ultronen/dsh-archived-chats/commit/f519985a4bc7add41602e35931582dde60ea8e53) — 管理已归档会话，支持搜索、预览、恢复、按工作区批量归档、ZIP 导入导出和回收站管理。
+  - **证据:** [manifest](https://github.com/Ultronen/dsh-archived-chats/blob/f519985a4bc7add41602e35931582dde60ea8e53/package.json) → [patch](https://github.com/Ultronen/dsh-archived-chats/blob/f519985a4bc7add41602e35931582dde60ea8e53/cordis.patch.yml) · **身份:** `dsh-archived-chats`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
-  - **能力信号:** `session-data` `archive-registry` `filesystem-delete` `client-injection` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
+  - **能力信号:** `session-data` `archive-registry` `filesystem-delete` `client-injection` `zip-import-export` `external-network` · **核验备注:** 已按固定提交静态核对 1.4.1 的 manifest、patch、许可证与安装身份。dsh.engines.dsh 声明宿主版本范围，运行时兼容性仍未实测。lib/about.js 使用无请求体的 GET 检查公开 npm 版本元数据。插件能力仅经静态核对，未执行。
 
 - **DSH Unarchive** · [uwu9039/dsh-unarchive@5f10e58](https://github.com/uwu9039/dsh-unarchive/commit/5f10e58188d808a12414ff134216f87fdb2d2ca9) — 带预览、恢复与可选归档确认的会话回收站。
   - **证据:** [manifest](https://github.com/uwu9039/dsh-unarchive/blob/5f10e58188d808a12414ff134216f87fdb2d2ca9/package.json) → [patch](https://github.com/uwu9039/dsh-unarchive/blob/5f10e58188d808a12414ff134216f87fdb2d2ca9/cordis.patch.yml) · **身份:** Git 源 / 未知
