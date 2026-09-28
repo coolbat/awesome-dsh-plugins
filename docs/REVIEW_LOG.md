@@ -1,5 +1,73 @@
 # Review log
 
+## 2026-09-28 — Daily fixed-source review and Monday reconciliation
+
+- Beijing Monday. The original dirty checkout was preserved; a dated branch
+  began at origin/main and fast-forwarded the previous audit checkpoint in the
+  clean isolated checkout. PR #28 is updated in place.
+- Source PR #2: `e7b56e9d591e50bc3edea698231932bebdfa5d2f`.
+  Previous audit: `b8347f6bcbaa1ecd3247d2ad73251447d3c2cdbd`.
+  Queue: 5,100 = 1,657 already-listed + 3,422 ready + 21 discovery-held.
+- Processed 241 fixed-source changes: 95 new keys and 146 changed commits;
+  reused 3,181 exact key-and-commit dispositions and historical review dates.
+  All 241 manifests and same-commit patches returned HTTP 200 and matched the
+  frozen identities; all commits are 40 characters.
+- Increment: 4 catalog-reviewed + 52 catalog-held + 74 duplicate/superseded
+  + 54 source-conflict + 48 example/fixture/archive + 9 non-plugin-package.
+  No new unavailable, structural-rejected or catalog-excluded decisions.
+  Tack host compositions and the Acryl desktop host are not standalone plugins;
+  the deprecated bridge is classified separately as an archive.
+- Complete ledger: 3,422 = 179 catalog-reviewed + 598 catalog-held
+  + 3 catalog-excluded + 1,169 duplicate/superseded + 896 source-conflict
+  + 326 example/fixture/archive + 186 non-plugin-package + 63 unavailable
+  + 2 structural-rejected. Pending: 0. The 21 discovery-held records are outside
+  this ready ledger, not silently completed plugin reviews.
+- Catalog: 2,664 = 1,252 reviewed + 1,408 held + 4 excluded. All previous 2,608
+  catalog entries are unchanged; 56 unique repository entries were added.
+  A duplicate/newer-source decision does not re-certify a retained old snapshot.
+- Reviewed additions cover Cline Pass routing, Sage memory, TokenLab routes
+  and opt-in cache warming. Static evidence covers fixed patches, licensing,
+  npm or documented Git installation, lifecycle scripts, versioned DSH targets,
+  source/build mapping and capabilities. Credentials, model costs, permanent
+  memory deletion, a dependency MCP server and process-wide fetch interception
+  remain risks rather than runtime endorsements.
+- Holds preserve specific evidence: raw session-deletion routes lack host
+  authentication; optional admission can fail open; a prepare hook requires a
+  sibling host checkout; a browser runs with no sandbox; a code-server launch
+  disables authentication and workspace trust; game artwork is outside a code
+  MIT license; a preset upgrade can replace an existing unmarked directory.
+- Latest discovery [36354770229](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/36354770229)
+  completed five bounded incremental queries: 60 repositories, 81 bundle
+  manifests and zero errors. Success watermark: `2026-09-27T22:17:50.201Z`.
+  The preceding failed run retained valid partial results without advancing
+  its success watermark. This is not exhaustive internet discovery.
+- Evidence: [daily report](../reports/review/2026-09-28.json),
+  [Monday reconciliation](../reports/review/2026-09-28-weekly.md) and
+  [machine-readable reconciliation](../reports/review/2026-09-28-weekly.json).
+  Bounded-source hashes cover captured text only. No candidate code, hook,
+  test, installer, binary, browser, server, Python environment, MCP server or
+  native helper was executed; only existing local project dependencies run.
+- Audit, exact-head quality/preview, merge and production are separate gates.
+  A Pages file-limit failure does not authorize export redesign, paid-plan
+  changes, bypass or production retry. Static review is not runtime safety
+  or compatibility proof.
+
+- Local gates passed under Node 22.23.1: `npm run check` (54 tests), complete
+  ledger validation (3,422 records, 0 pending), bilingual README checks,
+  `git diff --check` and production-origin build (5,340 static pages).
+  Output: 26,706 files; largest 4,140,929 bytes. The known Cloudflare
+  20,000-file ceiling remains exceeded; successful local build is not deployment.
+- Monday reconciliation found no duplicate candidate/ledger keys, catalog
+  ids/repositories/fixed sources, non-fixed commits, missing own-snapshot ledger
+  entries or invalid catalog mappings. PR #2 has 2,286 current ready identities
+  absent from its old ledger; this audit covers all of them. Current ready queue
+  equals the frozen snapshot and PR #2 semantically. Main and both audit README
+  generations were checked; PR #2's README/catalog still match main.
+- Production remains successful main `6dee785987fb983e4d585afd95abc155d112e3ab`:
+  1,020 reviewed, 688 held, 1 excluded. The three canonical paths return 200;
+  `/en/` returns 301 to `/`. Public and evidence URL sets match main exactly.
+  This is an existing production deployment, not publication of today's audit.
+
 ## 2026-09-27 — Daily fixed-source review
 
 - Beijing Sunday; no Monday reconciliation was due. The original dirty checkout

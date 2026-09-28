@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1248);
+  assert.equal(plugins.length, 1252);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2608,
-    reviewed: 1248,
-    held: 1356,
+    total: 2664,
+    reviewed: 1252,
+    held: 1408,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2608);
+  assert.equal(getEvidenceRecords().length, 2664);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -157,6 +157,37 @@ test("the September 27 audit retains authenticated boundaries and source mapping
   assert.ok(compact.signals.includes("authenticated-host-route"));
   assert.ok(data.signals.includes("native-canvas-dependency"));
   assert.equal(getPluginBySlug("monthu56-taimen"), null);
+});
+
+test("the September 28 audit preserves authorization and install artifact holds", () => {
+  const deletion = getPluginBySlug("miuzel-dsh-subagent-ui");
+  const workspace = getPluginBySlug("sen70s-dsh-workspace-plus");
+  const theme = getPluginBySlug("kenz1117-dsh-ui-rainbowspeak");
+  assert.ok(deletion);
+  assert.ok(workspace);
+  assert.ok(theme);
+  assert.equal(deletion.status, "held");
+  assert.equal(workspace.status, "held");
+  assert.equal(theme.status, "held");
+  assert.ok(deletion.signals.includes("unauthenticated-session-deletion"));
+  assert.ok(workspace.signals.includes("admission-fail-open"));
+  assert.ok(theme.signals.includes("sibling-checkout-required"));
+});
+
+test("the September 28 audit distinguishes opted-in cost from unresolved runtime policies", () => {
+  const warmer = getPluginBySlug("yoggu-dsh-cache-warmer");
+  const browser = getPluginBySlug("lyp88997-dsh-browser-service");
+  const editor = getPluginBySlug("vano1254-dsh-booster");
+  assert.ok(warmer);
+  assert.ok(browser);
+  assert.ok(editor);
+  assert.equal(warmer.status, "reviewed");
+  assert.ok(warmer.signals.includes("authenticated-host-route"));
+  assert.ok(warmer.signals.includes("opt-in-model-cost"));
+  assert.equal(browser.status, "held");
+  assert.ok(browser.signals.includes("browser-no-sandbox"));
+  assert.equal(editor.status, "held");
+  assert.ok(editor.signals.includes("code-server-auth-none"));
 });
 
 test("all evidence and the DSH contract use immutable commits", () => {
