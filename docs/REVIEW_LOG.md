@@ -1,5 +1,68 @@
 # Review log
 
+## 2026-09-29 — Daily fixed-source review
+
+- Beijing Tuesday; no Monday reconciliation is due. The original dirty
+  checkout was preserved, including both untracked m40 review files. The
+  dated isolated branch began at origin/main and fast-forwarded the previous
+  audit checkpoint. PR #28 is updated in place, not merged speculatively.
+- Frozen PR #2: `8a2066e08c9273684d85ff3372fde9914ea784fe`.
+  Previous audit: `b657278324a1d1a3b2f1c242b7c5adee469dfa73`.
+  Queue: 5,178 = 1,657 already-listed + 3,499 ready + 22 discovery-held.
+- Processed 201 changes: 77 new keys and 124 changed source commits. Reused
+  3,298 exact key/commit decisions and their historical review dates. All
+  source commits have 40 characters. 200 manifests and same-commit patches
+  returned HTTP 200 and matched the queue; LielingAi/dsh-zhishi-tools has a
+  fixed-manifest 404 and is explicitly unavailable, not silently skipped.
+- Fresh dispositions: 2 catalog-reviewed, 22 catalog-held, 92
+  duplicate-or-superseded, 48 source-conflict, 30 example/fixture/archive,
+  6 non-plugin-package, 1 unavailable; zero structural-rejected and
+  catalog-excluded additions. Ready ledger pending: 0.
+- Complete ledger: 3,499 = 181 catalog-reviewed + 610 catalog-held + 3
+  catalog-excluded + 1,205 duplicate/superseded + 916 source-conflict + 327
+  example/fixture/archive + 191 non-plugin + 64 unavailable + 2 structural
+  rejections. Discovery-held 22 remains outside this ready-review ledger.
+- Catalog: 2,688 = 1,254 reviewed + 1,430 held + 4 excluded. Added 24 unique
+  repository entries and preserved all 2,664 previous catalog records exactly.
+  GitHub repository IDs prove the desktop and Reactive Resume owner/name
+  changes are aliases; no duplicate catalog entries or invented source
+  conflicts were added. Duplicate/newer snapshots do not re-certify old code.
+- Reviewed additions are Linghun persistent memory (explicit legacy DSH range,
+  below 0.2.0) and the warm theme overlay (explicit Git-source installation).
+  npm 404 does not invalidate a documented source-installed local-scope package.
+  Their fixed patches, manifests, licenses, exported modules, version targets,
+  lifecycle declarations and important capabilities were inspected.
+- Holds distinguish evidence gaps: Grok's update overrides minimumReleaseAge;
+  Caveman rewrites shell commands at the execution boundary; several raw
+  configuration routes lack demonstrated connection authentication; artworks
+  are not covered by code MIT notices. Blueprint's root SATA-2.1 and nested
+  MIT licenses are separate scopes, while its toolbar needs an external host
+  patch. Mattermost has an actual MIT LICENSE despite stale README text, but
+  lacks a versioned DSH target. Private core product composition is non-plugin;
+  its independent native model adapter is separately held for installation,
+  licensing and workspace artifact closure.
+- Discovery [36500072115](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/36500072115)
+  is partial: 5 incremental queries, 60 repositories, 79 bundle manifests,
+  one oversized GitHub response for HaroldZ32/My-Power-Dsh. Valid results were
+  retained; success watermark stayed `2026-09-28T15:35:46.834Z`. This is not
+  exhaustive discovery and the failed run is not reported as success.
+- Evidence: [daily source report](../reports/review/2026-09-29.json).
+  Source inspection and large-file samples are bounded; captured hashes do
+  not claim npm tarball equivalence. No candidate code, lifecycle hook, test,
+  installer, binary, browser, server, Python environment, MCP server or native
+  helper was executed. Static review is not runtime safety or compatibility proof.
+- Local validation, exact-head remote quality/preview, merge and production
+  are independent gates. The prior Cloudflare preview failed at the observed
+  20,000-file ceiling. A file-limit failure does not authorize a redesign,
+  paid-plan change, bypass or repeated production release.
+- Final local gates passed under Node 22.23.1: `npm run check` (56 tests),
+  complete-ledger validation (3,499 records, 0 pending), generated bilingual
+  README checks, types/format, `git diff --check`, and the production-origin
+  build (5,388 generated routes; 26,946 files; largest 4,148,938 bytes).
+  Newly added catalog capability signals were manually refined so README
+  keyword hits are not misreported as proven runtime behavior. Fresh exact-head
+  remote gates remain mandatory; local build success is not deployment success.
+
 ## 2026-09-28 — Daily fixed-source review and Monday reconciliation
 
 - Beijing Monday. The original dirty checkout was preserved; a dated branch

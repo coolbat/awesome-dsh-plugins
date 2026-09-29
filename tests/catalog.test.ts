@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1252);
+  assert.equal(plugins.length, 1254);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2664,
-    reviewed: 1252,
-    held: 1408,
+    total: 2688,
+    reviewed: 1254,
+    held: 1430,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2664);
+  assert.equal(getEvidenceRecords().length, 2688);
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -46,6 +46,37 @@ test("plugin detail links remain pinned to the reviewed commit", () => {
     plugin.patchUrl,
     "https://github.com/tt-a1i/archify/blob/cffdd42eed0ebf013aa070378d94facdd3d56b10/integrations/deepseek-harness/cordis.patch.yml",
   );
+});
+
+test("the September 29 audit resolves source installs without duplicating renamed repositories", () => {
+  const theme = getPluginBySlug("zouwj16-dsh-bg-theme");
+  const memory = getPluginBySlug("syyr1987-dsh-linghun");
+  assert.ok(theme);
+  assert.ok(memory);
+  assert.equal(theme.status, "reviewed");
+  assert.ok(theme.signals.includes("documented-git-source-install"));
+  assert.equal(memory.status, "reviewed");
+  assert.ok(memory.noteEn.includes("below 0.2.0"));
+  assert.equal(getPluginBySlug("anywhere-labs-dsh-desktop"), null);
+  assert.equal(getPluginBySlug("reactive-resume-reactive-resume"), null);
+  assert.ok(getPluginBySlug("anywhere-labs-dsh-plugin-desktop"));
+  assert.ok(getPluginBySlug("amruthpillai-reactive-resume"));
+});
+
+test("the September 29 audit preserves license scopes and execution-policy holds", () => {
+  const blueprint = getPluginBySlug("klarkxy-dsh-plugins");
+  const grok = getPluginBySlug("baroncyrus-dsh-grok-subscription");
+  const caveman = getPluginBySlug("xz-dev-dsh-caveman");
+  assert.ok(blueprint);
+  assert.ok(grok);
+  assert.ok(caveman);
+  assert.equal(blueprint.repoLicense, "SATA-2.1 (custom)");
+  assert.equal(blueprint.packageLicense, "MIT");
+  assert.equal(blueprint.status, "held");
+  assert.equal(grok.status, "held");
+  assert.ok(grok.signals.includes("release-age-override"));
+  assert.equal(caveman.status, "held");
+  assert.ok(caveman.signals.includes("shell-command-rewrite"));
 });
 
 test("install lifecycle evidence is retained on the held secretary bundle", () => {
