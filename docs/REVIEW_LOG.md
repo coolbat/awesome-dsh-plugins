@@ -1,5 +1,60 @@
 # Review log
 
+## 2026-09-30 — Daily fixed-source review
+
+- Beijing Wednesday; no Monday reconciliation due. Original dirty checkout
+  and both untracked m40 files preserved. Reused a clean isolated checkout;
+  dated branch starts at origin/main and fast-forwards the previous audit.
+- PR #2 frozen at `2470f4ea576d8553aa6579006ecda7e1c49dda46`;
+  previous audit `0257659222b82bbfba2d453ba5ca1691c94f897a`.
+  Queue 5,221 = 1,658 already-listed + 3,541 ready + 22 discovery-held.
+- Reviewed 59 increments: 42 new keys and 17 changed source commits; reused
+  3,482 exact key/commit decisions with their original review dates. All 59
+  manifests and same-commit patches returned 200 and matched frozen identity.
+- Fresh dispositions: 6 catalog-reviewed, 23 catalog-held, 13 duplicate or
+  superseded, 8 source-conflict, 9 example/fixture/archive; zero non-plugin,
+  unavailable, structural-rejected or catalog-excluded additions. Pending: 0.
+- Complete ready ledger: 3,541 = 184 catalog-reviewed + 632 catalog-held + 3
+  catalog-excluded + 1,211 duplicate/superseded + 919 source-conflict + 335
+  fixture/archive + 191 non-plugin + 64 unavailable + 2 structural rejections.
+  Discovery-held 22 is outside this ready ledger, not silently approved.
+- Catalog: 2,717 = 1,260 reviewed + 1,453 held + 4 excluded. Added 29 unique
+  repository entries; all previous 2,688 catalog records remain unchanged.
+  Newer-source duplicate decisions do not re-certify retained catalog code.
+- Reviewed additions: balance monitor, timezone date context, workspace prompt,
+  MCP server settings, Telegram integration, Windows Everything search. Their
+  licenses, manifests, patches, installation identities, declared version
+  targets, lifecycle fields and important capability boundaries were inspected.
+  MCP mounting, external messaging and subprocess search remain capabilities
+  with runtime risks; no candidate was installed or invoked.
+- Held evidence gaps include missing lib/dist exports, unmapped public
+  artifacts, absent version targets, unresolved license scopes, and raw HTTP
+  routes whose same-origin checks do not prove user authentication. Session
+  deletion has UI confirmation but a model-facing path without that argument;
+  Ollama delegation can remove all deny-list filters. These policy gaps remain
+  explicit holds, not silently accepted. RefractRouter's benchmark-validation
+  adapter and a pnpm temporary store copy are explicit fixture/archive records.
+- Discovery [36642835947](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/36642835947)
+  is partial: 5 bounded incremental queries, 60 repositories, 32 bundle
+  manifests, 2 oversized responses (ultrametricai/ultrametric and
+  damianvtran/local-operator-ui). Valid results retained; last-success watermark
+  remains `2026-09-29T14:08:02.276Z`. This is not exhaustive discovery.
+- Evidence: [daily source report](../reports/review/2026-09-30.json).
+  Source samples are bounded; their hashes do not establish npm tarball
+  equivalence. No candidate code, hooks, tests, installer, browser, server,
+  Python environment, native helper, binary or MCP server was executed.
+  Static review is not runtime safety or compatibility proof.
+- Local gates, exact-head CI/preview, merge and production remain separate.
+  Prior preview hit Cloudflare's observed 20,000-file ceiling; this does not
+  authorize export redesign, evidence deletion, paid-plan changes or bypass.
+
+- Final local validation passed with Node 22.23.1: `npm run check` (58 tests),
+  complete-ledger validation, `git diff --check`, and the production-origin
+  build (5,446 generated routes). Export measured 27,236 files, 399,277,540
+  bytes total, largest file 4,170,368 bytes. Formatting and a nullable test
+  assertion were corrected before final green checks. The export file count
+  still exceeds the previously observed Cloudflare 20,000-file limit.
+
 ## 2026-09-29 — Daily fixed-source review
 
 - Beijing Tuesday; no Monday reconciliation is due. The original dirty

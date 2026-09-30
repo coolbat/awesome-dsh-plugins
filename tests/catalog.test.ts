@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1254);
+  assert.equal(plugins.length, 1260);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,43 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2688,
-    reviewed: 1254,
-    held: 1430,
+    total: 2717,
+    reviewed: 1260,
+    held: 1453,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2688);
+  assert.equal(getEvidenceRecords().length, 2717);
+});
+
+test("September 30 admitted native integrations keep fixed-source evidence", () => {
+  for (const id of [
+    "alanzhao0128-dsh-balance-monitor",
+    "drscrewdriver-dsh-date-wrapper",
+    "linbin-mk-dsh-workspace-prompt",
+    "railgun52-dsh-mcp-servers",
+    "teagnes-dsh-xxnerv-telegram",
+    "zhourenke-dsh-tool-everything",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl);
+    assert.ok(plugin.patchUrl.includes(plugin.commit));
+  }
+});
+
+test("September 30 incomplete artifacts and policy boundaries stay held", () => {
+  for (const id of [
+    "cheshireez-dsh-skill-hub",
+    "coency-dsh-session-delete",
+    "neptune810-dsh-model-router",
+    "movingelated-dsh-local-ollama-models",
+  ]) {
+    assert.equal(getPluginBySlug(id)?.status, "held");
+    assert.ok(!getPublishedPlugins().some((plugin) => plugin.id === id));
+  }
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {

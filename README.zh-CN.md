@@ -70,7 +70,7 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
 ## 插件目录
 
 <!-- CATALOG:START -->
-快照：**2026-09-29** · **2688 个候选** · **1254 个已核验** · **1430 个暂缓** · **4 个排除**
+快照：**2026-09-30** · **2717 个候选** · **1260 个已核验** · **1453 个暂缓** · **4 个排除**
 
 ### 已核验的原生 bundles
 
@@ -1850,6 +1850,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
   - **能力信号:** `external-network` `credentials` `subprocess` `mcp` `session-data` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
+- **Date Wrapper** · [drscrewdriver/dsh-date-wrapper@850de0f](https://github.com/drscrewdriver/dsh-date-wrapper/commit/850de0fe84bcbb7c713df3e9043c75ba5c2a7fa8) — 带时区的当前日期上下文，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/drscrewdriver/dsh-date-wrapper/blob/850de0fe84bcbb7c713df3e9043c75ba5c2a7fa8/package.json) → [patch](https://github.com/drscrewdriver/dsh-date-wrapper/blob/850de0fe84bcbb7c713df3e9043c75ba5c2a7fa8/cordis.patch.yml) · **身份:** `dsh-date-wrapper`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `system-prompt-context` · **核验备注:** 固定源码证据链已完成静态审核。MIT, documented Git installation, engines.dsh targets 0.2.0-rc.1 through pre-0.2.1; shipped src/index.js and format.js match the bundle. Registers systemPrompt.context using Intl date formatting. No network, file writes, subprocesses or lifecycle hooks in these two modules. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
 - **Next Reset** · [dsh-next/dsh-next-plugins@fe93309](https://github.com/dsh-next/dsh-next-plugins/commit/fe93309f3e6bcadc1ab5181160d81f54a7b3548c) — Next Reset 是一个面向 DeepSeek Harness 的插件。
   - **证据:** [manifest](https://github.com/dsh-next/dsh-next-plugins/blob/fe93309f3e6bcadc1ab5181160d81f54a7b3548c/packages/dsh-next-reset/package.json) → [patch](https://github.com/dsh-next/dsh-next-plugins/blob/fe93309f3e6bcadc1ab5181160d81f54a7b3548c/packages/dsh-next-reset/cordis.patch.yml) · **身份:** `@dsh-next/dsh-next-reset`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepare` · 兼容性未知
@@ -1994,6 +1999,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/lifangjin/dsh-paoding/blob/91b75a85718f7c6f050c4dee2b044ca780ceef95/package.json) → [patch](https://github.com/lifangjin/dsh-paoding/blob/91b75a85718f7c6f050c4dee2b044ca780ceef95/cordis.patch.yml) · **身份:** `dsh-paoding`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · peer range 混合
   - **能力信号:** `external-network` `mcp` `vision` `prepublish-only` `permission-policy` `filesystem-write` · **核验备注:** 固定源码证据链已完成静态审核。MIT, exact npm gitHead, README minimum DSH 0.1.5 and the native patch align. prepublishOnly checks client assets. The HTTP handler checks trusted loopback/configured hosts and origin; management can alter presets/tools and spawn dsh plugin update. Those policy and process effects were read, not exercised. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Workspace Prompt** · [linbin-mk/dsh-workspace-prompt@ebac360](https://github.com/linbin-mk/dsh-workspace-prompt/commit/ebac3600bfc0b825c29602a9387d4c60f16d3b02) — 按工作区配置提示词，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/linbin-mk/dsh-workspace-prompt/blob/ebac3600bfc0b825c29602a9387d4c60f16d3b02/package.json) → [patch](https://github.com/linbin-mk/dsh-workspace-prompt/blob/ebac3600bfc0b825c29602a9387d4c60f16d3b02/cordis.patch.yml) · **身份:** `@linbin-mk/dsh-workspace-prompt`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `settings-write` `prompt-injection-capability` · **核验备注:** 固定源码证据链已完成静态审核。Exact npm gitHead, MIT and DSH 0.1.7-rc.2 peers; shipped host/client match patch. Config fields are volatile, injection requires explicit enabled=true and deduplicates its own messages. Uses host settings rather than custom raw HTTP routes; no lifecycle hooks. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
 
 - **Openwrite** · [LiPu-jpg/Openwrite@64b2098](https://github.com/LiPu-jpg/Openwrite/commit/64b20984b2bbad6293a13841cf6a4c34c0f0303f) — OpenWrite 长篇小说领域后端接入 DeepSeek Harness：统一创作 Agent 预设 + 原生创作工作台
   - **证据:** [manifest](https://github.com/LiPu-jpg/Openwrite/blob/64b20984b2bbad6293a13841cf6a4c34c0f0303f/package.json) → [patch](https://github.com/LiPu-jpg/Openwrite/blob/64b20984b2bbad6293a13841cf6a4c34c0f0303f/cordis.patch.yml) · **身份:** `dsh-openwrite`
@@ -4401,6 +4411,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
   - **能力信号:** `external-network` `credentials` `client-injection` `process-control` `mcp` `package-install` `web-search` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
 
+- **Tool Everything** · [zhourenke/dsh-tool-everything@29dbca4](https://github.com/zhourenke/dsh-tool-everything/commit/29dbca4d18a273804acf520aeed309b0a52febcf) — Windows Everything 文件搜索，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/zhourenke/dsh-tool-everything/blob/29dbca4d18a273804acf520aeed309b0a52febcf/package.json) → [patch](https://github.com/zhourenke/dsh-tool-everything/blob/29dbca4d18a273804acf520aeed309b0a52febcf/cordis.patch.yml) · **身份:** `@zhourenke/dsh-tool-everything`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `filesystem-read` `subprocess-execution` `external-binary-required` · **核验备注:** 固定源码证据链已完成静态审核。MIT, documented Git installation, DSH 0.1.7-rc.2 peers and shipped single entry match patch. Registers Everything search via host subprocess with bounded stdout/stderr, cancellation and timeout. Requires separately installed es.exe; broad indexed filesystem visibility and command invocation remain runtime risks. No hooks. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
 - **DSH Free Search** · [zhouzhencheng07/dsh-free-search@2336dad](https://github.com/zhouzhencheng07/dsh-free-search/commit/2336dadd0c8ef593d6e8af2897327e4725b9c01e) — 接入 DSH 原生 Web seam 的免 Key 多源网页搜索 Provider。
   - **证据:** [manifest](https://github.com/zhouzhencheng07/dsh-free-search/blob/2336dadd0c8ef593d6e8af2897327e4725b9c01e/package.json) → [patch](https://github.com/zhouzhencheng07/dsh-free-search/blob/2336dadd0c8ef593d6e8af2897327e4725b9c01e/cordis.patch.yml) · **身份:** Git 源 / 未知
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
@@ -5047,6 +5062,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · peer range 混合
   - **能力信号:** `external-network` `credentials` `client-injection` `session-data` `model-tools` `package-install` `web-search` `vision` `email` `financial` `multi-agent` `prepack` `permission-policy` · **核验备注:** 固定源码证据链已完成静态审核。Exact npm gitHead and repository match the frozen source; MIT files and DSH 0.1.2 through 0.1.6 peer ranges are recorded. The prepack build is declared. OAuth credentials, provider requests, quota data and route CSRF checks are significant surfaces; none was exercised. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
 
+- **Balance Monitor** · [alanzhao0128/dsh-balance-monitor@6e6e37a](https://github.com/alanzhao0128/dsh-balance-monitor/commit/6e6e37a5584b7bc0385b32c014676ffd48c49d3e) — 供应商余额与用量监控，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/alanzhao0128/dsh-balance-monitor/blob/6e6e37a5584b7bc0385b32c014676ffd48c49d3e/package.json) → [patch](https://github.com/alanzhao0128/dsh-balance-monitor/blob/6e6e37a5584b7bc0385b32c014676ffd48c49d3e/cordis.patch.yml) · **身份:** `@alanzhao/dsh-balance-monitor`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `credentials-access` `network-access` `settings-write` · **核验备注:** 固定源码证据链已完成静态审核。Exact npm gitHead, MIT license, shipped host/client and config/signature modules; README targets DSH 0.1.5-rc.1 and later. Uses host connection.fetch routes and credential service for provider/session tokens. No lifecycle hooks. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
 - **DSH Notify Win** · [Andyqwe44/dsh-notify-win@a26c182](https://github.com/Andyqwe44/dsh-notify-win/commit/a26c1825a02dd077ef68b40095f6d33d91550e49) — 显示原生 Windows 任务与提问通知、闪烁任务栏，并可把 Toast 回答传回 DSH。
   - **证据:** [manifest](https://github.com/Andyqwe44/dsh-notify-win/blob/a26c1825a02dd077ef68b40095f6d33d91550e49/package.json) → [patch](https://github.com/Andyqwe44/dsh-notify-win/blob/a26c1825a02dd077ef68b40095f6d33d91550e49/cordis.patch.yml) · **身份:** `dsh-notify-win`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · 兼容性未知
@@ -5472,6 +5492,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `telephony` `audio` `credentials` `external-network` `agent-steering` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
+- **MCP Servers** · [railgun52/dsh-mcp-servers@f8ee559](https://github.com/railgun52/dsh-mcp-servers/commit/f8ee559c640a7e7bf6e9fd69ac912bf1c9899b0d) — MCP 服务设置与动态挂载，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/railgun52/dsh-mcp-servers/blob/f8ee559c640a7e7bf6e9fd69ac912bf1c9899b0d/package.json) → [patch](https://github.com/railgun52/dsh-mcp-servers/blob/f8ee559c640a7e7bf6e9fd69ac912bf1c9899b0d/cordis.patch.yml) · **身份:** `@railgun52/dsh-mcp-servers`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `subprocess-execution` `network-access` `settings-write` `mcp-server-mounting` · **核验备注:** 固定源码证据链已完成静态审核。Exact npm gitHead, MIT, DSH 0.1.7-rc.1 peers, all shipped host/invariant/client entries present. Host settings configure official mcp-client fibers, including stdio commands/env or remote HTTP URLs; this is execution capability, not a safety guarantee. No lifecycle hooks. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
 - **Rapid MLX DSH Provider** · [raullenchai/rapid-mlx-dsh-provider@b14ada2](https://github.com/raullenchai/rapid-mlx-dsh-provider/commit/b14ada226041d98f130e0cb8469391d5b42d612d) — 将本地 Rapid MLX 服务注册为 DSH 语言模型供应商路由。
   - **证据:** [manifest](https://github.com/raullenchai/rapid-mlx-dsh-provider/blob/b14ada226041d98f130e0cb8469391d5b42d612d/package.json) → [patch](https://github.com/raullenchai/rapid-mlx-dsh-provider/blob/b14ada226041d98f130e0cb8469391d5b42d612d/cordis.patch.yml) · **身份:** `@rapid-mlx/dsh-provider`
   - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `none` · 兼容性未知
@@ -5546,6 +5571,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/SunQingyuan0/Kabutack/blob/3e257a287a424a154ff92bed9bb0e871f2f540cc/package.json) → [patch](https://github.com/SunQingyuan0/Kabutack/blob/3e257a287a424a154ff92bed9bb0e871f2f540cc/cordis.patch.yml) · **身份:** `@dsh-external/kabutack`
   - **许可证:** repo `BSD-3-Clause` / package `BSD-3-Clause` · 生命周期 `postinstall` · peer range 混合
   - **能力信号:** `external-network` `client-injection` `mcp` `process-control` `postinstall` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+
+- **Xxnerv Telegram** · [Teagnes/dsh-xxnerv-telegram@72926cc](https://github.com/Teagnes/dsh-xxnerv-telegram/commit/72926ccf45a04fae06f897e6bd54354cc508985c) — Telegram 消息与通知，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/Teagnes/dsh-xxnerv-telegram/blob/72926ccf45a04fae06f897e6bd54354cc508985c/package.json) → [patch](https://github.com/Teagnes/dsh-xxnerv-telegram/blob/72926ccf45a04fae06f897e6bd54354cc508985c/cordis.patch.yml) · **身份:** `dsh-xxnerv-telegram`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `credentials-access` `network-access` `external-messaging` `settings-write` · **核验备注:** 固定源码证据链已完成静态审核。MIT, documented Git installation, DSH 0.1.7-rc.2 peers; shipped host/client/config/notify/telegram modules inspected. Bot token uses volatile secret form field; tools can send external messages and change settings, with optional turn-end sends and proxy/API endpoint configuration. No lifecycle hooks. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
 
 - **Gateway Core** · [temotee2103/dsh-overdrive@0f865f2](https://github.com/temotee2103/dsh-overdrive/commit/0f865f23004d2e25e4a816e559628d558c16d9e6) — Gateway Core 是一个面向 DeepSeek Harness 的插件。
   - **证据:** [manifest](https://github.com/temotee2103/dsh-overdrive/blob/0f865f23004d2e25e4a816e559628d558c16d9e6/packages/gateway-core/package.json) → [patch](https://github.com/temotee2103/dsh-overdrive/blob/0f865f23004d2e25e4a816e559628d558c16d9e6/packages/gateway-core/cordis.patch.yml) · **身份:** `@dsh-overdrive/gateway-core`
@@ -13519,6 +13549,121 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/xz-dev/dsh-caveman/blob/291d3b39a7a120100d4a6a1d9f84cd91fab08186/package.json) → [patch](https://github.com/xz-dev/dsh-caveman/blob/291d3b39a7a120100d4a6a1d9f84cd91fab08186/cordis.patch.yml) · **身份:** `dsh-caveman`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
   - **能力信号:** `runtime-policy-unresolved` `shell-command-rewrite` `external-native-binary` `mediated-command-fallback` · **核验备注:** 因运行时执行策略确认证据不足而暂缓。MIT and upstream fragment notices are present; the source documents Git/local installation and exact DSH 0.1.7-rc.2 with dsh-tui 0.11.1. The plugin wraps shell.execute and rewrites the command at the spawn boundary through an external rtk binary; approval of the rewritten command is not demonstrated. It also falls back from mediated command registration to the direct registry when registration fails. Those execution-policy boundaries require resolution. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Terminal** · [asymptotee/dsh-terminal@5bee1e6](https://github.com/asymptotee/dsh-terminal/commit/5bee1e60399caaed8e0e9139fe8d188cf0885104) — 替代终端界面，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/asymptotee/dsh-terminal/blob/5bee1e60399caaed8e0e9139fe8d188cf0885104/package.json) → [patch](https://github.com/asymptotee/dsh-terminal/blob/5bee1e60399caaed8e0e9139fe8d188cf0885104/cordis.patch.yml) · **身份:** `dsh-terminal`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · peer range 混合
+  - **能力信号:** `unresolved-install-identity` `artifact-mapping-unresolved` `lifecycle-prepublish` · **核验备注:** 因公开安装身份映射、插件包或配套产物映射证据不足而暂缓。DSH 0.1.7-rc.1 peers and loader patch target the TUI runner; exported dist artifacts were not retrieved at this commit and npm is 404. prepublishOnly runs a release build and verifier; neither executed. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **YON Panel** · [beckoningcoco/yon-plugin@896278f](https://github.com/beckoningcoco/yon-plugin/commit/896278f3d8e27aec22d8934033f55791542b5072) — Yon 项目、知识与数据源面板，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/beckoningcoco/yon-plugin/blob/896278f3d8e27aec22d8934033f55791542b5072/package.json) → [patch](https://github.com/beckoningcoco/yon-plugin/blob/896278f3d8e27aec22d8934033f55791542b5072/cordis.patch.yml) · **身份:** `dsh-plugin-yon-panel`
+  - **许可证:** repo `Unresolved` / package `MIT` · 生命周期 `prepack` · 兼容性未知
+  - **能力信号:** `license-incomplete` `compatibility-unresolved` `authorization-boundary-unresolved` `network-access` `filesystem-write` `lifecycle-prepack` · **核验备注:** 因仓库或包许可证、DSH 版本兼容声明、HTTP 接口授权边界证据证据不足而暂缓。Package says MIT but repository license remains unresolved. No versioned DSH peer; host delegates raw /yon APIs to companion modules. Client sample is truncated; authorization chain not established. prepack build recorded. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Skill HUB** · [cheshireez/dsh-skill-hub@9ebfbda](https://github.com/cheshireez/dsh-skill-hub/commit/9ebfbda003223e2d32f1191578a88f5aaffeed57) — 技能目录与导入管理，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/cheshireez/dsh-skill-hub/blob/9ebfbda003223e2d32f1191578a88f5aaffeed57/package.json) → [patch](https://github.com/cheshireez/dsh-skill-hub/blob/9ebfbda003223e2d32f1191578a88f5aaffeed57/cordis.patch.yml) · **身份:** `dsh-skill-hub`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `artifact-mapping-unresolved` `network-access` `filesystem-write` · **核验备注:** 因插件包或配套产物映射证据不足而暂缓。Exact npm gitHead and versioned DSH peers match, but declared lib/index.js and lib/client.js return 404 at the fixed source. Source imports route, repository and store helpers; source-to-published artifact mapping remains unproven. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Session Delete** · [coency/dsh-session-delete@cbe5b34](https://github.com/coency/dsh-session-delete/commit/cbe5b34439b25356170ab9fc3b063f6dc6b5bea4) — 永久删除会话，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/coency/dsh-session-delete/blob/cbe5b34439b25356170ab9fc3b063f6dc6b5bea4/package.json) → [patch](https://github.com/coency/dsh-session-delete/blob/cbe5b34439b25356170ab9fc3b063f6dc6b5bea4/cordis.patch.yml) · **身份:** `dsh-session-delete`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `runtime-policy-unresolved` `destructive-session-delete` `filesystem-write` · **核验备注:** 因运行时执行策略确认证据不足而暂缓。README targets DSH 0.1.7-rc.2 and Git installation; shipped host/client/core reviewed. UI uses plan and confirm, but model-facing runTool calls runDelete with dryRun false by default and no explicit confirmation argument. Destructive execution-policy acceptance remains unresolved. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Obsidian Sync** · [Dingpenghui-good/dsh-obsidian-sync@670bf07](https://github.com/Dingpenghui-good/dsh-obsidian-sync/commit/670bf071f7108795941dbd1162c437c60f44199d) — Obsidian 笔记库搜索与同步，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/Dingpenghui-good/dsh-obsidian-sync/blob/670bf071f7108795941dbd1162c437c60f44199d/package.json) → [patch](https://github.com/Dingpenghui-good/dsh-obsidian-sync/blob/670bf071f7108795941dbd1162c437c60f44199d/cordis.yml) · **身份:** `dsh-obsidian-sync`
+  - **许可证:** repo `Unresolved` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` `artifact-mapping-unresolved` `filesystem-read` `filesystem-write` · **核验备注:** 因仓库或包许可证、DSH 版本兼容声明、公开安装身份映射、插件包或配套产物映射证据不足而暂缓。Repository license and public installation mapping remain unresolved; DSH version contract not established. Exported lib entry is absent at fixed source and supplied cordis.yml uses a top-level row rather than an insert declaration. Only source inspected. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Opencode GO** · [Duskriver/dsh-opencode-go@4614dfb](https://github.com/Duskriver/dsh-opencode-go/commit/4614dfb30d017d65ffe2c7d43891df3b4e3e20ab) — OpenCode Go 模型供应商，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/Duskriver/dsh-opencode-go/blob/4614dfb30d017d65ffe2c7d43891df3b4e3e20ab/package.json) → [patch](https://github.com/Duskriver/dsh-opencode-go/blob/4614dfb30d017d65ffe2c7d43891df3b4e3e20ab/cordis.patch.yml) · **身份:** `dsh-opencode-go`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepack` · peer range 混合
+  - **能力信号:** `unresolved-install-identity` `credentials-access` `network-access` `lifecycle-prepack` `lifecycle-prepublish` · **核验备注:** 因公开安装身份映射证据不足而暂缓。MIT and versioned DSH peers; shipped host/client entries and credential/provider integration inspected. npm repository matches but no gitHead ties that published version to this source, and reviewed docs lack a Git install mapping. prepack/prepublishOnly build checks not executed. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Poke** · [fssama/dsh-poke@d5240c1](https://github.com/fssama/dsh-poke/commit/d5240c198c6316aa326d2f5a71e83e7b6bca84af) — 前台提醒与设备通知，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/fssama/dsh-poke/blob/d5240c198c6316aa326d2f5a71e83e7b6bca84af/package.json) → [patch](https://github.com/fssama/dsh-poke/blob/d5240c198c6316aa326d2f5a71e83e7b6bca84af/cordis.patch.yml) · **身份:** `dsh-poke`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `compatibility-unresolved` `subprocess-execution` `network-access` · **核验备注:** 因DSH 版本兼容声明证据不足而暂缓。MIT and npm repository identity observed; no versioned DSH compatibility evidence in manifest or reviewed README. Entry invokes OS/device commands via execFile and probes a loopback GUI; no lifecycle hooks. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **AI Invest Sidebar** · [haiting202-web/jiufeng-invest@335b486](https://github.com/haiting202-web/jiufeng-invest/commit/335b4866a4015584bb7d78b89a6b791298703a05) — 投资工作流侧栏，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/haiting202-web/jiufeng-invest/blob/335b4866a4015584bb7d78b89a6b791298703a05/dsh-ai-invest-sidebar/package.json) → [patch](https://github.com/haiting202-web/jiufeng-invest/blob/335b4866a4015584bb7d78b89a6b791298703a05/dsh-ai-invest-sidebar/cordis.patch.yml) · **身份:** `dsh-ai-invest-sidebar`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `unresolved-install-identity` `artifact-mapping-unresolved` `client-extension` · **核验备注:** 因公开安装身份映射、插件包或配套产物映射证据不足而暂缓。MIT and versioned DSH peers; nested sidebar package has no npm/Git subpackage install mapping. Host entry exists; bundled client is truncated, and release/desktop ZIP mapping to this commit is not established. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Alfresco Migrator** · [horelvis/alfresco-dsh-horcas@cde3112](https://github.com/horelvis/alfresco-dsh-horcas/commit/cde311200a437b6dffd8aa4fc64dbb234bb72ce0) — Alfresco 迁移工作流，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/horelvis/alfresco-dsh-horcas/blob/cde311200a437b6dffd8aa4fc64dbb234bb72ce0/package.json) → [patch](https://github.com/horelvis/alfresco-dsh-horcas/blob/cde311200a437b6dffd8aa4fc64dbb234bb72ce0/cordis.yml) · **身份:** `dsh-plugin-alfresco-migrator`
+  - **许可证:** repo `Unresolved` / package `Unresolved` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `license-incomplete` `unresolved-install-identity` `artifact-mapping-unresolved` `network-access` `filesystem-write` `legacy-dsh-target` · **核验备注:** 因仓库或包许可证、公开安装身份映射、插件包或配套产物映射证据不足而暂缓。Repository/package licenses and public package identity unresolved. Peers declare DSH 0.0.1-rc.1, not a current compatibility proof. Patch requires dist/index.js plus harness/auditor-gate.mjs; dist entry absent. Delegates migration writes and provisioning to companion modules. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Pentest** · [howmp/dsh-pentest@df15f80](https://github.com/howmp/dsh-pentest/commit/df15f80af58c1ebac5a903fa60c78e085c74b09b) — 渗透测试工作流与存储，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/howmp/dsh-pentest/blob/df15f80af58c1ebac5a903fa60c78e085c74b09b/package.json) → [patch](https://github.com/howmp/dsh-pentest/blob/df15f80af58c1ebac5a903fa60c78e085c74b09b/cordis.patch.yml) · **身份:** `@howmp/dsh-pentest`
+  - **许可证:** repo `Unresolved` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `license-incomplete` `artifact-mapping-unresolved` `security-testing-capability` `filesystem-write` · **核验备注:** 因仓库或包许可证、插件包或配套产物映射证据不足而暂缓。Package MIT but repository license unresolved. DSH version peers and native preset/storage patch present. lib/pentest.js sample is truncated and multi-entry preset/client mapping incomplete; lifecycle hooks absent. No security tooling was executed. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Project HUB** · [jackchen13755/dsh-project-hub@9073391](https://github.com/jackchen13755/dsh-project-hub/commit/907339105467d9bef83654e699c79b65c1f1bdd9) — 项目与会话工作台，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/jackchen13755/dsh-project-hub/blob/907339105467d9bef83654e699c79b65c1f1bdd9/package.json) → [patch](https://github.com/jackchen13755/dsh-project-hub/blob/907339105467d9bef83654e699c79b65c1f1bdd9/cordis.patch.yml) · **身份:** `dsh-project-hub`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `unresolved-install-identity` `compatibility-unresolved` `filesystem-read` `filesystem-write` `http-routes` · **核验备注:** 因DSH 版本兼容声明、公开安装身份映射证据不足而暂缓。MIT and shipped host/client; npm 404 and no documented public Git installation, no versioned DSH declaration. Reads session/workspace data and delegates database, API and tool writes to companion modules. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **DOC Index** · [JohnXu22786/docindex@ae43739](https://github.com/JohnXu22786/docindex/commit/ae4373967f5ec7351a124772e817afce9ccdb854) — 本地文档索引，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/JohnXu22786/docindex/blob/ae4373967f5ec7351a124772e817afce9ccdb854/package.json) → [patch](https://github.com/JohnXu22786/docindex/blob/ae4373967f5ec7351a124772e817afce9ccdb854/cordis.patch.yml) · **身份:** `dsh-doc-index`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepublishOnly` · peer range 混合
+  - **能力信号:** `unresolved-install-identity` `artifact-mapping-unresolved` `filesystem-read` `filesystem-write` `lifecycle-prepublish` `legacy-dsh-target` · **核验备注:** 因公开安装身份映射、插件包或配套产物映射证据不足而暂缓。MIT and legacy DSH peer range; npm 404, public install mapping unproven, exported dist/src/index.js absent. prepublishOnly build not executed. Source imports indexing engine and tools; optional embedding/model dependencies require separate review. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Repogate** · [JohnXu22786/github-mcp@6f99abe](https://github.com/JohnXu22786/github-mcp/commit/6f99abec44f1d7771b33fc74beafb802e0e67806) — GitHub MCP 桥接，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/JohnXu22786/github-mcp/blob/6f99abec44f1d7771b33fc74beafb802e0e67806/package.json) → [patch](https://github.com/JohnXu22786/github-mcp/blob/6f99abec44f1d7771b33fc74beafb802e0e67806/cordis.patch.yml) · **身份:** `repogate`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `compatibility-unresolved` `subprocess-execution` `credentials-access` `network-access` `external-write-capability` · **核验备注:** 因DSH 版本兼容声明证据不足而暂缓。MIT and documented Git installation, native bridge entry and same-commit patch present; no versioned DSH compatibility contract. Bridge spawns its MCP entry with inherited credentials and exposes GitHub read/write tools; read-only mode is optional. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Read** · [mic1on/dsh-read@a006789](https://github.com/mic1on/dsh-read/commit/a006789682bb835273e51edaa988720bb62c508c) — 本地电子书阅读器，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/mic1on/dsh-read/blob/a006789682bb835273e51edaa988720bb62c508c/package.json) → [patch](https://github.com/mic1on/dsh-read/blob/a006789682bb835273e51edaa988720bb62c508c/cordis.patch.yml) · **身份:** `dsh-read`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `authorization-boundary-unresolved` `filesystem-read` `filesystem-write` `http-routes` · **核验备注:** 因HTTP 接口授权边界证据证据不足而暂缓。MIT, documented Git installation and versioned DSH peers. Entry registers raw webServer book/progress routes with error wrapper but no session authorization check in that wrapper; loopback documentation is not an authentication boundary proof. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Local Ollama Models** · [Movingelated/dsh-local-ollama-models@34b8174](https://github.com/Movingelated/dsh-local-ollama-models/commit/34b8174f46ab7bbfb3bd3d084bd25189cbcf2224) — 本地 Ollama 任务委派，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/Movingelated/dsh-local-ollama-models/blob/34b8174f46ab7bbfb3bd3d084bd25189cbcf2224/package.json) → [patch](https://github.com/Movingelated/dsh-local-ollama-models/blob/34b8174f46ab7bbfb3bd3d084bd25189cbcf2224/cordis.patch.yml) · **身份:** `@local/dsh-local-ollama-models`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `compatibility-unresolved` `runtime-policy-unresolved` `network-access` `subagent-delegation` `tool-filter-fail-open` · **核验备注:** 因DSH 版本兼容声明、运行时执行策略确认证据不足而暂缓。MIT and documented Git source; no versioned DSH target established. startChild removes rejected deny-list names and can fall back to no tool filter, leaving read-only behavior as task text. Runtime policy acceptance unresolved. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Model Router** · [Neptune810/dsh-model-router@6abbb50](https://github.com/Neptune810/dsh-model-router/commit/6abbb5035f8ee5cb6a3128f8db31a7a0f7408996) — 逐步模型与推理路由，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/Neptune810/dsh-model-router/blob/6abbb5035f8ee5cb6a3128f8db31a7a0f7408996/package.json) → [patch](https://github.com/Neptune810/dsh-model-router/blob/6abbb5035f8ee5cb6a3128f8db31a7a0f7408996/cordis.patch.yml) · **身份:** `@neptune810/dsh-model-router`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `authorization-boundary-unresolved` `http-routes` `settings-write` `network-access` · **核验备注:** 因HTTP 接口授权边界证据证据不足而暂缓。Exact npm gitHead, MIT and README DSH 0.1.7-rc.2 baseline. Raw /model-router routes protect mutations with Origin/Sec-Fetch-Site comparison, but no session authentication; GET state/catalog are unguarded in reviewed handler. Same-origin checks alone do not establish user authorization. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Epistemic Fold** · [orangeofcarl0-sys/dsh-epistemic-fold@c8927f1](https://github.com/orangeofcarl0-sys/dsh-epistemic-fold/commit/c8927f1827e852a075280b8ab215780cb57d0499) — 上下文折叠与归档召回，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/orangeofcarl0-sys/dsh-epistemic-fold/blob/c8927f1827e852a075280b8ab215780cb57d0499/package.json) → [patch](https://github.com/orangeofcarl0-sys/dsh-epistemic-fold/blob/c8927f1827e852a075280b8ab215780cb57d0499/cordis.patch.yml) · **身份:** `dsh-epistemic-fold`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepare` · peer range 混合
+  - **能力信号:** `unresolved-install-identity` `artifact-mapping-unresolved` `lifecycle-prepare` `context-compaction` `filesystem-write` · **核验备注:** 因公开安装身份映射、插件包或配套产物映射证据不足而暂缓。MIT and DSH 0.1.7-rc.2 declaration. npm 404 and source install mapping incomplete; exported lib/entry.js absent, prepare builds artifacts. Patch disables compaction-basic and supplies replacement engine; neither build nor runtime executed. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **PEN** · [shine-yu-student/dsh-pen@dc31ace](https://github.com/shine-yu-student/dsh-pen/commit/dc31ace70639e2a59c6d70f8cfe0c7b4e74d71e7) — 模型绘图画布，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/shine-yu-student/dsh-pen/blob/dc31ace70639e2a59c6d70f8cfe0c7b4e74d71e7/package.json) → [patch](https://github.com/shine-yu-student/dsh-pen/blob/dc31ace70639e2a59c6d70f8cfe0c7b4e74d71e7/cordis.patch.yml) · **身份:** `@local/dsh-pen`
+  - **许可证:** repo `Unresolved` / package `Unresolved` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` `filesystem-write` `http-routes` `client-extension` · **核验备注:** 因仓库或包许可证、DSH 版本兼容声明、公开安装身份映射证据不足而暂缓。No resolved repo/package license, public install identity or versioned DSH declaration. Native tools/client/patch exist; writes exports and registers /pen routes. Companion raster library and authorization boundary require review before admission. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **DM8 Inspect** · [Shiyuedong-Jade/DM-inspect@dc06b01](https://github.com/Shiyuedong-Jade/DM-inspect/commit/dc06b01039e527c7451769cabdcfa6b3d30bfff2) — 达梦 DM8 数据库巡检与报告，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/Shiyuedong-Jade/DM-inspect/blob/dc06b01039e527c7451769cabdcfa6b3d30bfff2/package.json) → [patch](https://github.com/Shiyuedong-Jade/DM-inspect/blob/dc06b01039e527c7451769cabdcfa6b3d30bfff2/cordis.patch.yml) · **身份:** `dsh-plugin-dm8-inspect`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `unresolved-install-identity` `credentials-access` `database-access` `filesystem-write` · **核验备注:** 因公开安装身份映射证据不足而暂缓。MIT, DSH 0.1.5-rc.2 peer, shipped host/client and host connection credential route present. npm 404; README local file install does not establish a public distribution mapping to this fixed source. Database engine/report companions not executed. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Infinite GEN 5** · [SunsetRNE/dsh-infinite-gen-5@d8979f0](https://github.com/SunsetRNE/dsh-infinite-gen-5/commit/d8979f0ae5354ad0b1c367fa85c6f151beea562d) — 红队提示词与工作流实验，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/SunsetRNE/dsh-infinite-gen-5/blob/d8979f0ae5354ad0b1c367fa85c6f151beea562d/package.json) → [patch](https://github.com/SunsetRNE/dsh-infinite-gen-5/blob/d8979f0ae5354ad0b1c367fa85c6f151beea562d/cordis.patch.yml) · **身份:** `dsh-infinite-gen-5`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `license-incomplete` `unresolved-install-identity` `compatibility-unresolved` `runtime-policy-unresolved` `prompt-injection-capability` `http-routes` `license-terms-conflict` `security-testing-capability` · **核验备注:** 因DSH 版本兼容声明、仓库或包许可证、公开安装身份映射、运行时执行策略确认证据不足而暂缓。MIT files coexist with README additional license-termination wording requiring clarification. No versioned DSH target/public distribution mapping. Source modifies prompts and tools and exposes token-bearing control routes; broad runtime policy acceptance remains unresolved. No prompt payload executed. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Manager** · [Td0000000/dsh-plugin-manager@9d6ecac](https://github.com/Td0000000/dsh-plugin-manager/commit/9d6ecacc6fe2018245891dc998fe8766abe7ff8b) — 插件分组与管理，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/Td0000000/dsh-plugin-manager/blob/9d6ecacc6fe2018245891dc998fe8766abe7ff8b/package.json) → [patch](https://github.com/Td0000000/dsh-plugin-manager/blob/9d6ecacc6fe2018245891dc998fe8766abe7ff8b/cordis.patch.yml) · **身份:** `dsh-plugin-manager`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `unresolved-install-identity` `artifact-mapping-unresolved` `subprocess-execution` `filesystem-write` `plugin-removal` · **核验备注:** 因公开安装身份映射、插件包或配套产物映射证据不足而暂缓。MIT; README discusses DSH 0.2.0-rc.1 migration. npm 404, public package artifact mapping unproven, declared lib/index.js and lib/client.js absent at this commit. Source can spawn processes, edit profile YAML and remove plugins; not executed. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **V Hive** · [victor10035445/dsh-v-hive@9526c60](https://github.com/victor10035445/dsh-v-hive/commit/9526c60cdcc6bf93bce276a27edeb5c720da28dc) — 空间化会话蜂巢，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/victor10035445/dsh-v-hive/blob/9526c60cdcc6bf93bce276a27edeb5c720da28dc/package.json) → [patch](https://github.com/victor10035445/dsh-v-hive/blob/9526c60cdcc6bf93bce276a27edeb5c720da28dc/cordis.patch.yml) · **身份:** `dsh-v-hive`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `artifact-mapping-unresolved` `authorization-boundary-unresolved` `filesystem-write` `network-access` `subagent-delegation` `http-routes` · **核验备注:** 因插件包或配套产物映射、HTTP 接口授权边界证据证据不足而暂缓。MIT, documented fixed-SHA Git installation and DSH 0.1.2-rc.1 minimum. Large client sample truncated; host delegates lane/plugin import capabilities to companions and exposes layout, send/spawn routes. Full companion mapping and authorization chain not established. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
+
+- **Codespace Panel** · [Wz2-z/dsh-codespaces-kit@6aa754b](https://github.com/Wz2-z/dsh-codespaces-kit/commit/6aa754b92f00bb3509fe8f4fc983d40657284ec2) — GitHub Codespaces 控制面板，面向 DeepSeek Harness。
+  - **证据:** [manifest](https://github.com/Wz2-z/dsh-codespaces-kit/blob/6aa754b92f00bb3509fe8f4fc983d40657284ec2/plugins/dsh-codespace-panel/package.json) → [patch](https://github.com/Wz2-z/dsh-codespaces-kit/blob/6aa754b92f00bb3509fe8f4fc983d40657284ec2/plugins/dsh-codespace-panel/cordis.patch.yml) · **身份:** `dsh-codespace-panel`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · peer range 混合
+  - **能力信号:** `unresolved-install-identity` `credentials-access` `network-access` `external-write-capability` · **核验备注:** 因公开安装身份映射证据不足而暂缓。MIT code with CC BY documentation, README DSH 0.1.7-rc.2 baseline. Nested native panel and client exist, but no public subpackage distribution mapping. Reads GitHub credentials and can stop/restart Codespaces; sibling sync panel recorded separately as duplicate. 未运行候选代码或生命周期脚本；不构成运行时安全或兼容证明。
 
 ### 核验后排除
 
