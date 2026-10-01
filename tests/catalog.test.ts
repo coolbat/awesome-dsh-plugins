@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1260);
+  assert.equal(plugins.length, 1265);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,58 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2717,
-    reviewed: 1260,
-    held: 1453,
+    total: 2760,
+    reviewed: 1265,
+    held: 1491,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2717);
+  assert.equal(getEvidenceRecords().length, 2760);
+});
+
+test("October 1 source-installed native plugins retain exact evidence", () => {
+  for (const id of [
+    "cherrchen-dsh-theme-studio",
+    "erbsen16-dsh-client-ui-dracula",
+    "liang-liao-dsh-customize-search",
+    "seewhydee-dsh-emacs-bridge",
+    "young1lin-dsh-agents-rules",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+  }
+  assert.equal(
+    getPluginBySlug("loulangogogo-dsh-plugins-loulan")?.package,
+    "dsh-loulan-mcp",
+  );
+});
+
+test("October 1 holds preserve license labels and concrete boundary gaps", () => {
+  const vcs = getPluginBySlug("f-e-n-g-0531-dsh-vcs");
+  const roleModel = getPluginBySlug("try-works-role-model");
+  const billing = getPluginBySlug("niliemi-dsh-billing");
+  const essay = getPluginBySlug("zm886-dsh-ruankao-essay");
+  assert.ok(vcs);
+  assert.ok(roleModel);
+  assert.ok(billing);
+  assert.ok(essay);
+  assert.equal(
+    vcs.repoLicense,
+    "DSH VCS Non-Commercial Source Available License 1.0 (custom)",
+  );
+  assert.equal(
+    roleModel.repoLicense,
+    "BUSL-1.1 (modified 20-year change terms)",
+  );
+  assert.ok(billing.signals.includes("permissive-request-fence"));
+  assert.ok(essay.signals.includes("asset-path-outside-package"));
+  for (const plugin of [vcs, roleModel, billing, essay]) {
+    assert.equal(plugin.status, "held");
+    assert.ok(!getPublishedPlugins().some((record) => record.id === plugin.id));
+  }
 });
 
 test("September 30 admitted native integrations keep fixed-source evidence", () => {

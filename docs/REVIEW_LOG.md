@@ -1,5 +1,65 @@
 # Review log
 
+## 2026-10-01 — Daily fixed-source review
+
+- Beijing Thursday; no Monday reconciliation due. The original dirty checkout
+  and both untracked m40 files are preserved. A dated branch starts from
+  origin/main and fast-forwards the prior audit in the isolated checkout.
+- PR #2 frozen at `cb5d738a24169347994f6976bd6b1bf8a7584c09`;
+  previous audit `742a50ebb011e5be32afff0cd8b31e1464a40ad4`.
+  Queue 5,285 = 1,658 already-listed + 3,605 ready + 22 discovery-held.
+- Processed 123 changes: 64 new keys and 59 changed source commits. Reused
+  3,482 exact key/commit decisions and historical dates. All 123 fixed
+  manifests and same-commit patches returned 200 and matched frozen identity.
+- Fresh dispositions: 5 catalog-reviewed, 38 catalog-held, 35 source-conflict,
+  29 duplicate/superseded and 16 example/fixture/archive. Zero unavailable,
+  non-plugin, structural-rejected or catalog-excluded additions. Pending: 0.
+- Complete ready ledger: 3,605 = 186 catalog-reviewed + 662 catalog-held + 3
+  catalog-excluded + 1,223 duplicate/superseded + 934 source-conflict + 340
+  fixture/archive + 191 non-plugin + 64 unavailable + 2 structural rejections.
+  Discovery-held 22 remains outside this ledger, not silently approved.
+- Catalog 2,760 = 1,265 reviewed + 1,491 held + 4 excluded. Added 43 unique
+  repository entries and retained all previous 2,717 records unchanged.
+  Newer-source duplicate dispositions do not re-certify old catalog code.
+- Reviewed additions: theme studio, Dracula theme, Keenable search adapter,
+  Emacs bridge and instruction-rule loader. Fixed manifests, patches,
+  repository/package licenses, declared DSH targets, source/installation
+  mappings, lifecycle hooks and important capabilities were inspected.
+  Emacs bearer tokens, localStorage and SSE query transport retain local-origin
+  and log-exposure risks. Prompt rules remain untrusted input. Neither these
+  interfaces nor package builds were executed.
+- Holds distinguish missing evidence from policy decisions: permissive raw
+  HTTP admission, missing version targets, unresolved public/workspace
+  artifacts, native binary/model provenance and artwork license scope.
+  Browser actions and commit/push tools need explicit runtime policy
+  acceptance. A root skill entry resolves ../assets outside its own package.
+  Loulan's explicit hello test plugin is a fixture; its actual MCP package is
+  the held repository representative, with the rules package a duplicate.
+- Preserve actual license headings: DSH VCS has custom noncommercial terms;
+  Role Model has modified BUSL-1.1 twenty-year change terms. Neither is
+  automatically relabeled MIT or currently AGPL. Their unresolved artifact
+  mappings are held separately from the recorded license text.
+- Discovery [36789030119](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/36789030119)
+  is partial: 5 bounded incremental queries, 60 repositories, 31 bundle
+  manifests and 2 oversized GitHub responses (stablyai/orca and
+  adambkovacs/candidate-experience-benchmark). Valid results were retained;
+  successful watermark remains `2026-09-30T06:49:12.685Z`. Not exhaustive.
+- Evidence: [daily source report](../reports/review/2026-10-01.json), with
+  fixed source metadata, bounded sample hashes and supplemental source hashes.
+  Samples do not prove npm tarball equivalence. No candidate code, hooks,
+  tests, installer, binary, browser, server, Python environment, native helper
+  or MCP server was executed. Static review is not runtime safety or
+  compatibility proof.
+- Local validation, exact-head quality/preview, merge and production are
+  independent gates. PR #2 preview success does not approve PR #28. The
+  existing audit preview fails Cloudflare's observed 20,000-file ceiling;
+  this does not authorize export redesign, evidence deletion, paid-plan
+  changes, bypass or repeat production publication.
+- Final local validation passed on Node 22.23.1: `npm run check` (60 tests),
+  complete-ledger validation, `git diff --check`, and production-origin build
+  (5,532 routes). Export: 27,666 files, 405,694,100 bytes, largest 4,190,782
+  bytes. This still exceeds the observed Cloudflare 20,000-file ceiling.
+
 ## 2026-09-30 — Daily fixed-source review
 
 - Beijing Wednesday; no Monday reconciliation due. Original dirty checkout
