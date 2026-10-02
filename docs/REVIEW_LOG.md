@@ -1,5 +1,65 @@
 # Review log
 
+## 2026-10-02 — Daily fixed-source review
+
+- Beijing Friday; no Monday reconciliation due. Preserved the original dirty
+  checkout and both untracked m40 files. Dated isolated branch
+  `codex/review-new-candidates-20261002` starts from origin/main and
+  fast-forwards the previous audit `1d319d01d3f73acd38f84b7d66af2f6652585d06`.
+- PR #2 frozen at `2997bd81dfcc0aebb53bf716646602be7335327e`.
+  Queue 5,359 = 1,659 already-listed + 3,678 ready + 22 discovery-held.
+  Processed 146 changes: 73 new keys and 73 changed source commits;
+  reused 3,532 exact key/commit decisions with historical dates unchanged.
+- Fixed manifest/patch identity: 144 matching 200 responses, plus 2 fixed
+  manifests returning 404, classified unavailable (cloudyun888/dsh-roadmap
+  and YGHHT/dsh-flow-effort). Every source commit is 40 hexadecimal characters.
+- Fresh dispositions: 3 catalog-reviewed, 37 catalog-held, 24 source-conflict,
+  51 duplicate/superseded, 28 example/fixture/archive, 1 non-plugin-package,
+  2 unavailable; 0 structural-rejected or catalog-excluded. Pending: 0.
+  ACRYL Desktop is explicitly classified as the Electron host/application,
+  not admitted as a plugin merely because it has bundle metadata.
+- Complete ready ledger: 3,678 = 187 catalog-reviewed + 691 catalog-held + 3
+  catalog-excluded + 1,253 duplicate/superseded + 938 source-conflict + 347
+  fixture/archive + 191 non-plugin + 66 unavailable + 2 structural rejections.
+  Discovery-held 22 remains outside that ledger, not silently approved.
+- Catalog 2,800 = 1,268 reviewed + 1,528 held + 4 excluded. Added 40 unique
+  repository entries; all previous 2,760 catalog records remain unchanged.
+  Newer-source duplicate decisions do not re-certify historical catalog code.
+- Reviewed additions: MiMo TTS (explicit requestRejection route fence and
+  indexed recording identities), sidebar pins (settings/DOM migration),
+  and MiMo skin (visual settings and included MIT dependency notices).
+  Source install is distinguished from npm publication. Credentials,
+  voice-sample disclosure, paid usage, local persistence, UI compatibility
+  and build hooks remain stated risks, not runtime acceptance.
+- Holds include missing version/installation/artifact evidence, unconfirmed
+  artwork rights, and raw HTTP routes without demonstrated authenticated
+  admission (including the Bill HTTP fallback and MC Art dispatch).
+  Media Studio reads tool-supplied paths and detaches work if its controller
+  refuses; EverOS defaults to a shared plain-HTTP memory scope; Legion's
+  unbounded defaults and prompt-based approval require policy acceptance.
+  No vulnerability exploitation or complete dependency audit is claimed.
+- Discovery [36939713145](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/36939713145)
+  is partial: 5 bounded incremental queries, 60 repositories, 69 bundle
+  manifests; ArmourPiercer1/dsh-agent-team exceeded the 5,000,000-byte GitHub
+  response limit. Valid results retained; last successful watermark remains
+  `2026-10-01T14:34:30.765Z`. This is not exhaustive discovery.
+- PR #2 is the source queue, not the merge target. At intake it was UNSTABLE:
+  its Cloudflare preview succeeded, but Actions 36939912182 was action_required
+  with no completed quality job. Neither status clears PR #28's own gates.
+- Evidence: [daily source report](../reports/review/2026-10-02.json), including
+  fixed manifests, patch hashes, licenses, installation metadata, bounded
+  source sample hashes and supplemental source hashes. No candidate package,
+  code, hooks, tests, installer, binary, browser, server, Python environment,
+  native helper or MCP server was executed. Static review is not runtime
+  safety or compatibility proof.
+- Local checks, exact-head CI/preview, merge and production remain independent
+  gates. The prior audit preview hit Cloudflare's 20,000-file ceiling.
+  No export redesign, evidence deletion, plan purchase or bypass is authorized.
+- Final local validation passed on Node 22.23.1: `npm run check` (62 tests),
+  complete-ledger validation, `git diff --check`, and production-origin build
+  (5,612 routes). Export: 28,066 files, 411,589,858 bytes, largest 4,202,338
+  bytes, still above the observed Cloudflare file limit.
+
 ## 2026-10-01 — Daily fixed-source review
 
 - Beijing Thursday; no Monday reconciliation due. The original dirty checkout

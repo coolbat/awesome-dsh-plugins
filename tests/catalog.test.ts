@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1265);
+  assert.equal(plugins.length, 1268);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,49 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2760,
-    reviewed: 1265,
-    held: 1491,
+    total: 2800,
+    reviewed: 1268,
+    held: 1528,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2760);
+  assert.equal(getEvidenceRecords().length, 2800);
+});
+
+test("October 2 reviewed additions remain pinned and separate from held controls", () => {
+  for (const id of [
+    "1497105876-dsh-mimotts",
+    "andreytepaykin-dsh-sidebar-pins",
+    "ronnyjung2021-dsh-mimo-skin",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+  }
+  for (const id of ["jannchie-dsh-bill", "gmh13552-dsh-mc-art"]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes("authorization-boundary-unresolved"));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+});
+
+test("October 2 unresolved asset and runtime policies cannot become public listings", () => {
+  for (const [id, signal] of [
+    ["marronyao-deepwhale", "license-incomplete"],
+    ["1497105876-dsh-media-studio", "runtime-policy-unresolved"],
+    ["hxlls-dsh-everos-memory", "runtime-policy-unresolved"],
+    ["maci0-dsh-legion", "runtime-policy-unresolved"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
 });
 
 test("October 1 source-installed native plugins retain exact evidence", () => {
