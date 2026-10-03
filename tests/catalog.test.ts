@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1268);
+  assert.equal(plugins.length, 1272);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,56 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2800,
-    reviewed: 1268,
-    held: 1528,
+    total: 2848,
+    reviewed: 1272,
+    held: 1572,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2800);
+  assert.equal(getEvidenceRecords().length, 2848);
+});
+
+test("October 3 native additions keep immutable installation evidence", () => {
+  for (const id of [
+    "day-day-dream-dsh-page-refresh",
+    "eailersummer-dsh-session-list",
+    "sakuraqqq-dsh-auto-paste",
+    "wxj-71-dsh-sidebar-balance",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.equal(plugin.lifecycle, "none");
+    assert.notEqual(plugin.compatibility, "unknown");
+  }
+});
+
+test("October 3 holds preserve credential, artwork and execution boundaries", () => {
+  for (const [id, signal] of [
+    ["aicivilization-deepseek-harness-vps", "runtime-policy-unresolved"],
+    ["ceilcelia-dsh-travily-api", "authorization-boundary-unresolved"],
+    ["herta-st-dsh-theme-herta", "license-incomplete"],
+    ["xk150424-dsh-agent-ping", "authorization-boundary-unresolved"],
+    ["liancha22-dsh-puzzle-mode", "runtime-policy-unresolved"],
+    ["witherwithwinter-dsh-codinput", "artifact-mapping-unresolved"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(
+    getPluginBySlug("sgzeng-pbfuzz")?.repoLicense,
+    "PolyForm-Noncommercial-1.0.0",
+  );
+  assert.ok(
+    !getPluginBySlug("liancha22-dsh-puzzle-mode")?.signals.includes(
+      "authorization-boundary-unresolved",
+    ),
+  );
 });
 
 test("October 2 reviewed additions remain pinned and separate from held controls", () => {

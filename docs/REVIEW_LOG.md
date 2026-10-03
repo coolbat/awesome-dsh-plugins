@@ -1,5 +1,65 @@
 # Review log
 
+## 2026-10-03 — Daily fixed-source review
+
+- Beijing Saturday; no Monday reconciliation due. Original dirty checkout and
+  both untracked m40 files preserved. Isolated dated branch
+  `codex/review-new-candidates-20261003` starts from latest origin/main and
+  fast-forwards the prior audit `cc905936317982ec21fafa4626f57b2f8486712b`.
+- PR #2 frozen at `f66696e7b2adb0e601cb7f669b5ac851cfbab490`.
+  Queue 5,435 = 1,659 already-listed + 3,754 ready + 22 discovery-held.
+  Processed 140 changes: 76 new keys and 64 changed source commits;
+  reused 3,614 exact key/commit decisions and original review dates.
+- 139 fixed manifests and same-commit patches match frozen identity. The
+  remaining ALBUSHU/dsh-open-animation fixed manifest returned 404 on two
+  read-only requests and is unavailable; no mutable source was substituted.
+  All candidate source commits are 40 hexadecimal characters.
+- Fresh dispositions: 4 catalog-reviewed, 44 catalog-held, 56 source-conflict,
+  31 duplicate/superseded, 4 example/fixture/archive, 1 unavailable; zero
+  non-plugin, structural rejection or catalog exclusion. Pending: 0.
+- Ready ledger: 3,754 = 189 catalog-reviewed + 730 catalog-held + 3
+  catalog-excluded + 1,264 duplicate/superseded + 959 source-conflict + 349
+  fixture/archive + 191 non-plugin + 67 unavailable + 2 structural rejections.
+  The 22 discovery-held records remain outside the ready ledger.
+- Catalog: 2,848 = 1,272 reviewed + 1,572 held + 4 excluded; 48 new
+  repository-level entries. All 2,800 previous catalog entries remain exactly
+  unchanged. Newer-source duplicates do not re-certify retained catalog code.
+- Reviewed additions: page refresh (documented repository subdirectory and
+  DSH 0.2.0-rc.2), session list (documented Git-source install and DSH 0.1.5+),
+  auto paste (matching npm gitHead, host Typert RPC and scoped file writes),
+  sidebar balance (Git-source private package, host remote.account API and
+  DSH 0.1.7-rc.2 peer). All four have no package lifecycle hooks.
+- Holds include VPS mutable-main privileged shell payloads, WeChat sender
+  trust policy, raw Tavily probe and Agent Ping approval routes without
+  demonstrated session authentication, and Herta upstream animation/artwork
+  licensing. Puzzle Mode does call requestRejection; its hold concerns file
+  containment/mutation policy, not missing HTTP authentication. PolyForm
+  Noncommercial license text was recovered for PBFuzz and is preserved.
+- Source inspection used fixed-SHA archives as text, never executing them.
+  45 of 48 selected archive manifest/patch pairs matched raw fixed evidence;
+  three bounded archive requests timed out and remain held. Samples are
+  capped and incomplete module/companion closure is explicitly held.
+  See [daily evidence report](../reports/review/2026-10-03.json) for fixed
+  manifests, licenses, npm identity, archive/file hashes and limitations.
+- Discovery [37075568007](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/37075568007)
+  is partial: 5 bounded incremental queries, 60 repositories, 48 bundle
+  manifests; stablyai/orca and gmh5225/awesome-game-security exceeded the
+  5,000,000-byte response limit. Valid results retained; last successful
+  watermark is `2026-10-02T07:03:57.127Z`. Discovery is not exhaustive.
+- PR #2 is a source queue, not a merge target. At intake it was UNSTABLE:
+  Cloudflare preview succeeded but Actions 37075701317 was action_required.
+  PR #28 must pass its own exact-head gates. The prior audit preview failed
+  Cloudflare's 20,000-file limit; no exporter redesign, evidence deletion,
+  paid upgrade or gate bypass is part of this audit.
+- No candidate code, hooks, tests, installers, binaries, browser/server,
+  Python environment, native helper or MCP server was executed. Static
+  review is not runtime safety or compatibility proof. Local, CI, preview,
+  merge and production checks are independent acceptance stages.
+- Local validation passed on Node 22.23.1: `npm run check` (64 tests),
+  `validate-review-ledger --require-complete`, `git diff --check`, and the
+  production-origin build (5,708 routes). Export: 28,546 files, 418,583,716
+  bytes, largest file 4,216,901 bytes; still over the known 20,000-file ceiling.
+
 ## 2026-10-02 — Daily fixed-source review
 
 - Beijing Friday; no Monday reconciliation due. Preserved the original dirty
