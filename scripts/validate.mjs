@@ -30,6 +30,7 @@ const allowedCategories = new Set([
 ]);
 const allowedLifecycle = new Set([
   "none",
+  "install",
   "prepack",
   "prepublishOnly",
   "prepare",
