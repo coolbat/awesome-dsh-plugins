@@ -1,5 +1,71 @@
 # Review log
 
+## 2026-10-04 — Daily fixed-source review
+
+- Beijing Sunday; no Monday reconciliation due. Original dirty checkout and
+  both untracked m40 files preserved. Isolated dated branch
+  `codex/review-new-candidates-20261004` starts from latest origin/main and
+  fast-forwards prior audit `95cfc83f412aa0f8ac1ae3179269cb7447c8a652`.
+- PR #2 frozen at `e331314467fa86de2dd1afb972ed423545b195d1`.
+  Queue 5,564 = 1,659 already-listed + 3,883 ready + 22 discovery-held.
+  Processed 220 changes: 129 new keys and 91 changed source commits;
+  reused 3,663 exact key/commit decisions with original review dates.
+- All 220 fixed manifests and same-commit patches returned 200 and match
+  the frozen bundle identity. Every candidate commit is 40 hexadecimal
+  characters. No mutable source was substituted.
+- Fresh dispositions: 7 catalog-reviewed, 50 catalog-held, 41 source-conflict,
+  90 duplicate/superseded, 31 example/fixture/archive, 1 unavailable; zero
+  non-plugin, structural rejection or catalog exclusion. Pending: 0.
+- Ready ledger: 3,883 = 195 catalog-reviewed + 772 catalog-held + 3
+  catalog-excluded + 1,306 duplicate/superseded + 987 source-conflict + 359
+  fixture/archive + 191 non-plugin + 68 unavailable + 2 structural rejections.
+  The 22 discovery-held records remain outside the ready ledger.
+- Catalog: 2,905 = 1,279 reviewed + 1,622 held + 4 excluded; 57 new
+  repository-level entries. All previous 2,848 catalog entries remain exactly
+  unchanged. Newer-source duplicates do not re-certify retained catalog code.
+- Reviewed additions: team quorum controls, Hermes cost dashboard,
+  session insight, two distinct Russian locale packages, turn-status text
+  and live pricing. Fixed manifest/patch, repository/package license,
+  documented Git-source installation, versioned DSH targets and inspected
+  entry modules are recorded. Live Pricing has a prepublishOnly check hook;
+  the other six declare no lifecycle hooks. None were run. Private source
+  installation is not npm publication; displayed prices are not certified.
+- Holds preserve raw HTTP authorization gaps for message/session deletion,
+  process launching and paid prompt optimization; Feishu's shared default
+  password/empty-token deployment policy; Novel Forge's postinstall mutation
+  of dependency package manifests; and unlicensed audio/video/wallpaper
+  assets. Loopback/Host/optional Origin checks are not silently called absent,
+  nor treated as authenticated host-session admission.
+- The prompt-slim package is unavailable because its fixed manifest/README
+  explicitly says broken and abandoned, not because we executed it. The
+  vendored DSHM mobile package has conflicting upstream install identity.
+  MCP OAuth Gateway remains held as a configuration bundle with unresolved
+  version/companion mapping, not mislabeled a non-plugin solely for lacking
+  its own host code.
+- Source archives were inspected only as bounded regular text. Of 59
+  repository representatives, 54 archive manifest/patch pairs matched;
+  three exceeded the compressed limit and two timed out, all held.
+  Source-only exports, truncated entries and incomplete companion modules
+  remain explicitly unresolved. See [daily evidence report](../reports/review/2026-10-04.json)
+  for fixed manifests, licenses, npm identity, hashes and limitations.
+- Discovery [37157520875](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/37157520875)
+  completed 5 bounded incremental queries, observing 60 repositories and
+  31 bundle manifests with no reported errors. Successful watermark:
+  `2026-10-03T22:10:34.402Z`. This does not establish exhaustive discovery.
+- PR #2 remains a source queue, not a merge target. At intake it was
+  UNSTABLE: Cloudflare preview succeeded, but Actions 37157610298 was
+  action_required. PR #28 must pass its own exact-head gates. The prior
+  audit preview failed Cloudflare's 20,000-file limit; no exporter redesign,
+  evidence deletion, paid upgrade or gate bypass is part of this audit.
+- No candidate code, hooks, tests, installers, binaries, browser/server,
+  Python environment, native helper or MCP server was executed. Static
+  review is not runtime safety or compatibility proof. Local, CI, preview,
+  merge and production checks remain independent acceptance stages.
+- Local validation passed on Node 22.23.1: `npm run check` (66 tests),
+  `validate-review-ledger --require-complete`, `git diff --check`, and the
+  production-origin build (5,822 routes). Export: 29,116 files, 426,948,191
+  bytes, largest file 4,242,460 bytes; still over the known 20,000-file ceiling.
+
 ## 2026-10-03 — Daily fixed-source review
 
 - Beijing Saturday; no Monday reconciliation due. Original dirty checkout and

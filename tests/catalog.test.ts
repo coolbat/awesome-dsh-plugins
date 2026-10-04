@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1272);
+  assert.equal(plugins.length, 1279);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,61 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2848,
-    reviewed: 1272,
-    held: 1572,
+    total: 2905,
+    reviewed: 1279,
+    held: 1622,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2848);
+  assert.equal(getEvidenceRecords().length, 2905);
+});
+
+test("October 4 reviewed additions retain fixed source and lifecycle evidence", () => {
+  for (const id of [
+    "141w-dsh-quorum",
+    "cycycy8520-deepseekhermescostplugin",
+    "elari39-dsh-session-insight",
+    "exaleks-dsh-locale-ru",
+    "sf-002-dsh-locale-ru",
+    "wongiii-dsh-turn-status-text",
+    "xqtx9527-dsh-live-pricing",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(
+      plugin.lifecycle,
+      id === "xqtx9527-dsh-live-pricing" ? "prepublishOnly" : "none",
+    );
+  }
+});
+
+test("October 4 holds retain authentication, installation and asset boundaries", () => {
+  for (const [id, signal] of [
+    ["dddmuc-dsh-delete-turn", "authorization-boundary-unresolved"],
+    ["nay-1-dsh-session-menu-delete", "unauthenticated-session-deletion"],
+    ["sss-1012-deepseek-harness-manager", "unauthenticated-process-launch"],
+    ["smallwhitelin-dsh-feishu-bind", "shared-default-password"],
+    ["watersxya-dsh-novel-forge", "dependency-manifest-mutation"],
+    ["yimengqingfeng3-debug-dsh-completion-alert", "unlicensed-recording"],
+    ["y1x1n-dsh-prompt-optimizer", "missing-origin-allowed"],
+    ["zmhhaha-mcp-oauth-gateway", "configuration-required"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(
+    getPluginBySlug("watersxya-dsh-novel-forge")?.lifecycle,
+    "postinstall",
+  );
+  assert.equal(getPluginBySlug("yaopushen-dsh-prompt-slim"), null);
+  assert.equal(getPluginBySlug("rochelimitdawn-dshm"), null);
 });
 
 test("October 3 native additions keep immutable installation evidence", () => {
