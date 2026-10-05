@@ -1,5 +1,65 @@
 # Review log
 
+## 2026-10-05 — Daily fixed-source review and Monday reconciliation
+
+- Beijing Monday. Original dirty checkout and untracked m40 files are preserved;
+  reuse the isolated worktree on `codex/review-new-candidates-20261005`, based on
+  latest origin/main with the prior audit `e2df7c474ae2d4e3c7ed1d6a6f6e00aa9d6d23b2`
+  fast-forwarded. Existing audit PR #28 is the sole update target; PR #2 is a queue.
+- Freeze PR #2 at `ffe38f5acc7b83fe31afe8fabbd8f0733aea9f2b`: 5,668 candidates =
+  1,659 already-listed + 3,987 ready + 22 discovery-held. Process 210 identities:
+  104 new keys and 106 changed source commits; preserve 3,777 exact key/commit
+  decisions and their dates. All 210 fixed manifests and same-SHA patches match.
+- Fresh dispositions: 3 catalog-reviewed, 60 catalog-held, 39 source-conflict,
+  78 duplicate/superseded, 21 example/fixture/archive and 9 non-plugin-package.
+  No fresh unavailable, structural rejection or catalog exclusion. Pending 0.
+- Current ready ledger: 3,987 = 192 catalog-reviewed + 818 catalog-held + 3
+  catalog-excluded + 1,339 duplicate/superseded + 1,002 source-conflict + 369
+  example/fixture/archive + 194 non-plugin-package + 68 unavailable + 2
+  structural-rejected. Discovery-held records are outside the ready ledger.
+- Catalog: 2,968 = 1,282 reviewed + 1,682 held + 4 excluded. Add 63 repository
+  entries while preserving all previous 2,905 records exactly. Newer-source
+  duplicate decisions do not re-certify or replace older catalog snapshots.
+- Reviewed: UI Quote, Selection Quote and Recent sidebar. Fixed manifest/patch,
+  licenses, Git-source installation, versioned DSH declarations and full host /
+  client entry artifacts were read. Selection Quote's prepublishOnly hook was
+  recorded, not run; the other two have no lifecycle hook. Shared reference
+  names and host DOM selectors remain runtime compatibility caveats.
+- GitHub numeric IDs confirm two renames: dsh-propmt to dsh-prompt is held for
+  version compatibility, not a source conflict; reactive-resume's moved owner
+  maps to the existing catalog ID and adds no duplicate. Tack base/run/web are
+  application profiles; dsh-plugin-kit has an empty patch and library exports.
+- Holds explicitly preserve unresolved public install paths, version targets,
+  root/asset licenses, generated exports, Python/MCP/native companion closure,
+  destructive or autonomous execution policy, and paid-model raw HTTP admission.
+  Session cascade deletion contains a connection authentication fence; it is not
+  mislabeled as missing authentication. Liquid Glass's modification notice says
+  it preserves MIT grants; its hold is compatibility/artifact evidence, not an
+  invented license conflict.
+- Bounded source archives: 63 of 66 selected representative manifest/patch pairs
+  match; two archive requests timed out and one exceeded the compressed ceiling.
+  Raw fixed-source identity still matches for all 210. A missing retained member
+  is not proof that a remote file does not exist; no generated artifact is inferred
+  from npm metadata alone. See [daily evidence](../reports/review/2026-10-05.json).
+- Latest discovery run 37239694105 is partial/failed: 5 queries, 60 repositories,
+  47 manifests, 3 response-size errors (bojieli/OpenTallas, yieldchaser/Shipping,
+  stablyai/orca). Attempt 2026-10-04T22:21:32.926Z; successful watermark remains
+  2026-10-04T13:16:38.528Z. Valid results are retained, not called complete.
+- Monday comparison includes main, source PR #2, prior/current PR #28 and PR #32
+  across candidates, snapshot, ledger, catalog and both READMEs. PR #32's Archive
+  Management evidence changes are read-only and not an auto-merge target.
+  Details and current gate evidence: [weekly reconciliation](../reports/review/2026-10-05-weekly.md).
+- Cloudflare's 20,000-file limit remains an independent release blocker. Do not
+  delete audit evidence, redesign the exporter, buy an upgrade or bypass checks
+  within this audit. Existing production is checked separately from preview.
+- No candidate code, hooks, tests, installers, binaries, browser/server, Python
+  environment, native helper or MCP server was executed. Static review is not
+  runtime safety or compatibility proof.
+- Local Node 22.23.1 gates passed: `npm run check` (68 tests), complete-ledger
+  validation, diff check and production-origin build (5,948 static pages).
+  Export contains 29,746 files / 436,121,815 bytes; largest file 4,253,774 bytes.
+  This exceeds the confirmed Pages file ceiling, despite successful local build.
+
 ## 2026-10-04 — Daily fixed-source review
 
 - Beijing Sunday; no Monday reconciliation due. Original dirty checkout and

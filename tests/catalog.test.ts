@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1279);
+  assert.equal(plugins.length, 1282);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,50 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2905,
-    reviewed: 1279,
-    held: 1622,
+    total: 2968,
+    reviewed: 1282,
+    held: 1682,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2905);
+  assert.equal(getEvidenceRecords().length, 2968);
+});
+
+test("October 5 reviewed UI entries retain source and lifecycle evidence", () => {
+  for (const id of [
+    "bangbang-03-dsh-client-ui-quote",
+    "cfyofjackie-dsh-selection-quote",
+    "ttmouse-dsh-recent",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(
+      plugin.lifecycle,
+      id === "cfyofjackie-dsh-selection-quote" ? "prepublishOnly" : "none",
+    );
+    assert.ok(plugin.signals.includes("session-data"));
+  }
+});
+
+test("October 5 preserves renamed identity, HTTP holds and non-plugin boundaries", () => {
+  const renamed = getPluginBySlug("illuvorite-dsh-propmt");
+  const paid = getPluginBySlug("sunyuhuirong-polyprompt-ai");
+  const scale = getPluginBySlug("juliankang4-dsh-ui-scale");
+  assert.ok(renamed && paid && scale);
+  assert.equal(renamed.status, "held");
+  assert.ok(renamed.signals.includes("repository-renamed"));
+  assert.equal(paid.status, "held");
+  assert.ok(paid.signals.includes("authorization-boundary-unresolved"));
+  assert.equal(scale.status, "held");
+  assert.ok(scale.signals.includes("artifact-mapping-unresolved"));
+  assert.equal(getPluginBySlug("perrylink-dsh-plugin-kit"), null);
+  assert.equal(getPluginBySlug("roy-kid-tack"), null);
+  assert.equal(getPluginBySlug("reactive-resume-reactive-resume"), null);
+  assert.ok(getPluginBySlug("amruthpillai-reactive-resume"));
 });
 
 test("October 4 reviewed additions retain fixed source and lifecycle evidence", () => {
