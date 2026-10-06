@@ -1,5 +1,68 @@
 # Review log
 
+## 2026-10-06 — Daily fixed-source review
+
+- Beijing Tuesday; no Monday reconciliation due. Preserve the original dirty
+  checkout and both untracked m40 files. The isolated dated branch
+  `codex/review-new-candidates-20261006` starts from latest origin/main and
+  fast-forwards prior audit `f106b692d5798d7d46014442deecb62afe60cbc1`.
+  Existing audit PR #28 is the only update target; PR #2 is the discovery queue,
+  and independent author PR #32 is not an automatic merge target.
+- Freeze source PR #2 at `7c5b3bab1503894cc24b05a0f6f9ed61ddc7d765`:
+  5,734 candidates = 1,659 already-listed + 4,053 ready + 22 discovery-held.
+  Process 126 changed identities: 66 new keys and 60 changed source SHAs;
+  preserve 3,927 exact key/commit decisions with their original review dates.
+- Fresh dispositions: 1 catalog-reviewed, 47 catalog-held, 28 source-conflict,
+  21 duplicate/superseded, 23 example/fixture/archive, 4 non-plugin-package
+  and 2 unavailable. No fresh structural rejection or catalog exclusion.
+  The two unavailable fixed manifests returned HTTP 404; no mutable replacement
+  source was substituted. The other 124 manifest/patch pairs matched.
+- Ready ledger: 4,053 = 193 catalog-reviewed + 860 catalog-held + 3
+  catalog-excluded + 1,350 duplicate/superseded + 1,012 source-conflict + 369
+  example/fixture/archive + 194 non-plugin-package + 70 unavailable + 2
+  structural-rejected. Pending 0. Discovery-held records are outside this ledger.
+- Catalog: 3,016 = 1,283 reviewed + 1,729 held + 4 excluded. Add 48 repository
+  representatives while preserving all previous 2,968 catalog records exactly.
+  A newer-source duplicate does not re-certify or replace its retained snapshot.
+- Reviewed: Draft Keeper. MIT Git-source identity, native fixed patch, versioned
+  DSH declaration and full no-op host/client entries were checked. No lifecycle
+  hooks or runtime dependencies are declared. Browser IndexedDB image retention
+  remains a privacy caveat; restoration and compatibility were not runtime-tested.
+- Holds preserve public install and npm-to-source mapping gaps, generated/native
+  companion closure, missing DSH targets, and separate artwork licensing. AgentRQ
+  explicitly scopes AGPL root and Apache plugin licensing; this is not invented
+  license conflict. Prompt Seed and DSH Prompt do declare DSH version requirements.
+- Link listens on all interfaces and skips token checks when its default token is
+  empty. Picflow's inspected raw routes use a Host allowlist and can materialize
+  workspace images during listing; authenticated admission is not established.
+  Desktop Background permits absent Origin outside the host API fence. These
+  are static boundary holds, not demonstrated runtime exploitation. Plugin Share
+  does call connection.requestRejection before body parsing and requires import
+  confirmation; it is not mislabeled as lacking authentication.
+- All 48 selected representative archive manifest/patch pairs match. Archives
+  were read only as bounded regular text: 25-MB compressed / 100-MB uncompressed,
+  18-MB retained text and 300-KB per member. Missing retained members are not
+  proof of remote absence. GitHub numeric IDs confirmed the five inspected
+  differing repository identities are distinct, with no alias accepted today.
+  See [daily evidence](../reports/review/2026-10-06.json).
+- Latest discovery run 37396155337 is failed/partial: 5 queries, 60 repositories,
+  39 bundle manifests, one response-size error for bojieli/OpenTallas. Attempt
+  2026-10-06T00:51:34.284Z; successful watermark 2026-10-05T16:08:48.173Z.
+  Valid results are retained; this is not exhaustive discovery.
+- Cloudflare's 20,000-file limit remains a separate release blocker. Do not
+  delete evidence, alter the site exporter, upgrade a plan or bypass checks in
+  this audit. Remote preview and existing production are checked independently.
+- No candidate code, lifecycle hook, test, installer, binary, browser/server,
+  Python environment, native helper or MCP server was executed. Static review
+  does not prove runtime safety or compatibility.
+- Local Node 22.23.1 checks passed: full `npm run check` (70 tests), complete
+  ledger, diff check and production-origin build (6,044 static pages). Counts,
+  signal formatting and queue formatting were corrected after red checks;
+  formatted candidate values exactly match the frozen PR source.
+  Export: 30,226 files / 443,108,986 bytes; largest file 4,257,773 bytes.
+  A successful local build does not clear the 20,000-file deployment ceiling.
+  See [local gate evidence](../reports/review/2026-10-06-gates.json).
+
 ## 2026-10-05 — Daily fixed-source review and Monday reconciliation
 
 - Beijing Monday. Original dirty checkout and untracked m40 files are preserved;

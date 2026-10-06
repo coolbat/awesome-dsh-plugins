@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1282);
+  assert.equal(plugins.length, 1283);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,47 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 2968,
-    reviewed: 1282,
-    held: 1682,
+    total: 3016,
+    reviewed: 1283,
+    held: 1729,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 2968);
+  assert.equal(getEvidenceRecords().length, 3016);
+});
+
+test("October 6 draft restoration retains static evidence and privacy caveats", () => {
+  const plugin = getPluginBySlug("xwide-dsh-draft-keeper");
+  assert.ok(plugin);
+  assert.equal(plugin.status, "reviewed");
+  assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+  assert.ok(plugin.patchUrl?.includes(plugin.commit));
+  assert.notEqual(plugin.compatibility, "unknown");
+  assert.equal(plugin.lifecycle, "none");
+  assert.ok(plugin.signals.includes("local-storage"));
+  assert.ok(plugin.signals.includes("data-retention"));
+});
+
+test("October 6 holds preserve authorization, licensing and artifact boundaries", () => {
+  for (const [id, signal] of [
+    ["xwide-dsh-picflow", "authorization-boundary-unresolved"],
+    ["linyanzhi-dsh-link", "unauthenticated-default"],
+    ["ganglongyu-dsh-kun-like-pet", "third-party-assets"],
+    ["hgt158-dsh-plugin-share", "artifact-mapping-unresolved"],
+    ["featherhunter-dsh-prompt", "truncated-source"],
+    ["jgl0306-dsh-desktop-background", "authorization-boundary-unresolved"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  for (const id of ["zian-anson-dsh-prompt-seed", "featherhunter-dsh-prompt"]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
+  assert.equal(getPluginBySlug("shibamalaomushi-dsh-delete-guard"), null);
+  assert.equal(getPluginBySlug("xiqingyushan-ovo-dsh-composer-autopair"), null);
 });
 
 test("October 5 reviewed UI entries retain source and lifecycle evidence", () => {
