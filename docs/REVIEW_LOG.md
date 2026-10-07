@@ -1,5 +1,72 @@
 # Review log
 
+## 2026-10-07 — Daily fixed-source review
+
+- Beijing Wednesday; no weekly reconciliation due. Original dirty files and
+  untracked m40 artifacts remain untouched. Isolated branch
+  `codex/review-new-candidates-20261007` starts from latest origin/main and
+  fast-forwards prior audit `1aa961ac37780ed698dda7cdeda0f52da24e706e`.
+  Audit PR #28 is the sole update target; source queue PR #2 and independent
+  author PR #32 are not automatic merge targets.
+- Freeze PR #2 at `be901ae18795997f94180bca8795d258252123d0`:
+  5,797 candidates = 1,660 already-listed + 4,115 ready + 22 discovery-held.
+  Process 137 identities (62 new keys, 75 changed commits), retaining 3,978
+  exact key/commit decisions and their original dates. All 137 fixed manifests
+  and same-commit declared patches were retrieved and matched to discovery.
+- Fresh dispositions: 5 catalog-reviewed, 36 catalog-held, 41 source-conflict,
+  30 duplicate/superseded, 19 example/fixture/archive and 6 non-plugin-package.
+  No new unavailable, structural-rejected or catalog-excluded record. Pending 0.
+- Ready ledger: 4,115 = 197 catalog-reviewed + 889 catalog-held + 3
+  catalog-excluded + 1,367 duplicate/superseded + 1,017 source-conflict + 371
+  example/fixture/archive + 199 non-plugin-package + 70 unavailable + 2
+  structural-rejected. The 22 discovery-held records are not unreviewed ready
+  entries. Catalog: 3,057 = 1,288 reviewed + 1,765 held + 4 excluded; all prior
+  3,016 catalog records remain unchanged. Duplicate snapshots are not recertified.
+- Reviewed additions: Fullscreen Input, Open Session, Abyssal skin, PRTS skin
+  and Thinking Language. Fixed native patch, licenses, npm or Git installation,
+  committed entries, versioned DSH statements and absence of lifecycle hooks
+  were checked. Session creation may start billed turns; language-prompt intent
+  is not a guarantee of model behavior; theme/composer behavior was not run.
+- Agy indicator (manifest `home-plugin/agy-indicator/package.json`) explicitly
+  declares itself an internal component of agy-first-bridge, not an independent
+  install target. KnowLP root only mounts the official MCP adapter; its native
+  nested package is the held representative, with conflicting subpath-install
+  documentation and unresolved current compatibility/Python companion mapping.
+- Blue Bean/Landou is held for raw HTTP authorization evidence: inspected routes
+  expose workspace-file preview and account/session operations without an entry
+  authentication or Host/Origin guard; absent CORS headers alone are insufficient.
+  Outer-host protection is unverified, not a demonstrated runtime exploit.
+  Native Hooks, macOS Notify and Landou do have explicit DSH version statements.
+  Mixed MIT/noncommercial skill scopes and AGPL/commercial options are recorded
+  without inventing license contradictions.
+- Archive evidence is bounded inert text only. RefractRouter and Claude-Mem
+  timed out; Prime Memory and iLife exceeded compressed limits; the research
+  bundle exceeded the retained-text budget before its entries were captured.
+  Missing captured members are not proof of remote absence. Database Explorer's
+  patch differs only by a retained initial UTF-8 BOM versus HTTP text decoding;
+  it remains held for other evidence gaps. All five reviewed archive pairs match.
+  Seven differing repository identities have distinct GitHub numeric IDs; no
+  rename alias was accepted. See [daily evidence](../reports/review/2026-10-07.json).
+- Discovery run 37544620696 is failed/partial: 5 queries, 60 repositories,
+  44 bundle manifests and one 5,000,000-byte response-limit error for
+  adambkovacs/candidate-experience-benchmark. Latest attempt:
+  2026-10-06T23:06:16.837Z; successful watermark 2026-10-06T07:38:02.732Z.
+  Valid results were retained; discovery is not exhaustive.
+- Cloudflare's 20,000-file deployment limit remains an independent blocker.
+  This audit does not delete evidence, alter the exporter, change plans or bypass
+  gates. Remote preview must be checked for this exact head independently of
+  the unchanged existing production deployment.
+- No candidate code, lifecycle hook, test, installer, binary, browser/server,
+  Python environment, MCP server or native helper was executed. Static review
+  does not prove runtime safety or compatibility.
+- Local Node 22.23.1 gates pass: `npm run check` (72 tests), complete ledger,
+  diff check and production-origin build (6,126 static pages). Three stale
+  snapshot assertions were corrected after focused red tests; focused tests
+  then passed 53/53. Formatted candidate data is semantically identical to the
+  frozen PR source. Export: 30,636 files / 449,087,227 bytes, largest file
+  4,276,124 bytes. This exceeds the 20,000-file deployment ceiling despite the
+  successful build. See [local gate evidence](../reports/review/2026-10-07-gates.json).
+
 ## 2026-10-06 — Daily fixed-source review
 
 - Beijing Tuesday; no Monday reconciliation due. Preserve the original dirty

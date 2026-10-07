@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1283);
+  assert.equal(plugins.length, 1288);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,63 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3016,
-    reviewed: 1283,
-    held: 1729,
+    total: 3057,
+    reviewed: 1288,
+    held: 1765,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3016);
+  assert.equal(getEvidenceRecords().length, 3057);
+});
+
+test("October 7 native additions keep immutable identity and compatibility evidence", () => {
+  for (const id of [
+    "al-yichen-dsh-fullscreen-input",
+    "noexcs-dsh-open-session",
+    "tenebris173-dsh-skin-abyssal",
+    "tenebris173-dsh-skin-prts",
+    "wqzhellohhwy-dsh-thinking-language",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(plugin.lifecycle, "none");
+  }
+  assert.ok(
+    getPluginBySlug("noexcs-dsh-open-session")?.signals.includes(
+      "optional-billed-turn",
+    ),
+  );
+});
+
+test("October 7 holds preserve route, source-artifact and nested-bundle boundaries", () => {
+  for (const [id, signal] of [
+    ["jinghoor-dsh-landou-assistant", "authorization-boundary-unresolved"],
+    ["drscrewdriver-dsh-prime-memory", "archive-evidence-unavailable"],
+    ["wly8691-jpg-knowlp-rag", "python-companion"],
+    ["nepa77-dsh-plugin-balance-pet", "asset-license-scope"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(
+    getPluginBySlug("wly8691-jpg-knowlp-rag")?.manifest,
+    "packages/dsh-native/package.json",
+  );
+  assert.equal(getPluginBySlug("new-256-agy-first-bridge"), null);
+  for (const id of [
+    "jinghoor-dsh-landou-assistant",
+    "qianmang1-dsh-native-hooks",
+    "realdgd-dsh-macos-notify",
+  ]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
 });
 
 test("October 6 draft restoration retains static evidence and privacy caveats", () => {
