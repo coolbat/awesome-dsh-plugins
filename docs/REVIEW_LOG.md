@@ -1,5 +1,69 @@
 # Review log
 
+## 2026-10-08 — Daily fixed-source review
+
+- Beijing Thursday; no weekly reconciliation due. Original dirty worktree and
+  untracked m40 artifacts remain untouched. Isolated branch
+  `codex/review-new-candidates-20261008` starts from current origin/main and
+  fast-forwards prior audit `b03b0a5fecffb07a57f1012edf7c414442269394`.
+  Audit PR #28 is the update target; PR #2 is only the source queue and
+  independent author PR #32 remains read-only.
+- Freeze PR #2 at `1b1e2518d169bec00acced575776cb095bc03615`:
+  5,876 candidates = 1,660 already-listed + 4,194 ready + 22 discovery-held.
+  Process 124 changed identities: 79 new keys and 45 new source commits;
+  retain 4,070 exact key/commit decisions and their original dates.
+  All fresh manifest/declared patch pairs match the immutable discovery source.
+- Fresh dispositions: 6 catalog-reviewed, 27 catalog-held, 24 source-conflict,
+  41 duplicate/superseded, 25 example/fixture/archive and 1 non-plugin-package.
+  No new unavailable, structural-rejected or excluded catalog record. Pending 0.
+- Ready ledger: 4,194 = 202 catalog-reviewed + 911 catalog-held + 3
+  catalog-excluded + 1,401 duplicate/superseded + 1,034 source-conflict + 372
+  example/fixture/archive + 199 non-plugin-package + 70 unavailable + 2
+  structural-rejected. These counts describe the current ready queue, not the
+  entire retained catalog. Catalog: 3,090 = 1,294 reviewed + 1,792 held + 4
+  excluded. All prior 3,057 catalog records remain unchanged; duplicate decisions
+  do not re-certify their retained source snapshots.
+- Reviewed additions: Voice PTT, dsh-m, Agent Clean, Reverse Toolkit, Session
+  EVA Status and yoggu Token Cost. Checked native fixed manifest/patch,
+  repository/package licensing, npm gitHead or documented Git identity,
+  versioned DSH declarations and relevant source. dsh-m has a prepare build;
+  Reverse Toolkit has pack/publish checks. Microphone/audio transfer, package
+  management/restart, separate destructive CLI, generated hook text, DOM coupling
+  and installed-owner module loading are explicit capability signals.
+- Dafeiyu/Liangzi configuration routes only compare Origin to supplied Host and
+  accept missing Origin; Space Optimizer's custom-header cleanup guard and
+  wojiao42 Token Cost's session read route do not establish full authorization.
+  They remain held, not labeled proven runtime exploits. ACRYL Desktop is a
+  host distribution, explicitly non-plugin rather than an ordinary duplicate.
+- GitHub numeric ID confirms the Yan-Zero/dsh-std to T-Auto/dsh-std rename.
+  Missing exact npm gitHead and nested artifacts still hold the adapter; the
+  rename itself is not a conflict. Secret's fixed LICENSE-MIT and LICENSE-APACHE
+  resolve dual licensing, but installation/build mapping remains held. Simple
+  Pet's code MIT and separately restricted artwork scopes are kept distinct;
+  native PowerShell and optional billed warm-up are unexecuted capabilities.
+- Bounded inert archives matched all six reviewed manifest/patch pairs.
+  ZeroWall and Simple Pet archive retrieval timed out. Research Graph and Jot
+  archive retries resolved manifest/patch and TypeScript entry sources, but did
+  not establish built exports/release mapping. Missing captured members are not
+  proof of remote absence. See [daily evidence](../reports/review/2026-10-08.json).
+- Discovery run 37674037418 failed partially: 5 queries, 60 repositories,
+  68 bundle manifests; bojieli/OpenTallas exceeded the 5,000,000-byte response
+  limit and yieldchaser/Shipping returned HTTP 500. Latest attempt:
+  2026-10-07T19:23:07.320Z; successful watermark:
+  2026-10-07T07:18:28.391Z. Valid results were retained; discovery is not exhaustive.
+- Cloudflare's 20,000-file limit remains a separate release gate. This audit
+  does not change the exporter, delete evidence, change plans or bypass checks.
+  Exact-head CI and preview must be checked independently of existing production.
+- Local gates pass on Node 22.23.1: focused tests 55/55, full `npm run check`
+  (74 tests), complete-ledger validation, `git diff --check`, and the production
+  build with `NEXT_PUBLIC_SITE_URL=https://dshplugin.net`. The build generated
+  6,192 static pages and 30,966 export files (454,021,460 bytes), exceeding the
+  Cloudflare file-count limit. Candidate JSON remains semantically identical to
+  the pinned source. See [local gate evidence](../reports/review/2026-10-08-gates.json).
+- No candidate package, lifecycle hook, test, installer, binary, browser/server,
+  Python environment, MCP server or native helper was executed. Static review
+  does not prove runtime safety or compatibility.
+
 ## 2026-10-07 — Daily fixed-source review
 
 - Beijing Wednesday; no weekly reconciliation due. Original dirty files and

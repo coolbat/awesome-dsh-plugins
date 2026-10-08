@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1288);
+  assert.equal(plugins.length, 1294);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,64 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3057,
-    reviewed: 1288,
-    held: 1765,
+    total: 3090,
+    reviewed: 1294,
+    held: 1792,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3057);
+  assert.equal(getEvidenceRecords().length, 3090);
+});
+
+test("October 8 reviewed additions retain fixed identity and explicit capabilities", () => {
+  for (const [id, signal] of [
+    ["eicon-xyz-dsh-voice-ptt", "microphone-access"],
+    ["iasiv5-dsh-m", "host-trust-delegation"],
+    ["politarymonicy-dsh-agent-clean", "explicit-destructive-cli"],
+    ["wangyin572-dsh-plugin-reverse", "generated-debugging-script"],
+    ["whatcannotbesaid-dsh-session-eva-status", "dom-coupling"],
+    ["yoggu-dsh-token-cost", "estimated-cost-not-billing"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.ok(plugin.signals.includes(signal));
+  }
+});
+
+test("October 8 holds preserve authorization, alias, license and native-artifact gaps", () => {
+  for (const [id, signal] of [
+    [
+      "bauerelizabeth07139-dsh-pet-dafeiyu",
+      "authorization-boundary-unresolved",
+    ],
+    [
+      "bauerelizabeth07139-dsh-pet-liangzi",
+      "authorization-boundary-unresolved",
+    ],
+    ["t-auto-dsh-std", "repository-rename-verified"],
+    ["xinvxueyuan-cordis-plugin-secret", "dual-license-evidence"],
+    ["yangshen-swe-dsh-plugin-simple-pet", "asset-license-scope"],
+    ["wojiao42-dsh-space-optimizer", "custom-header-not-authentication"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(
+    getPluginBySlug("xinvxueyuan-cordis-plugin-secret")?.repoLicense,
+    "MIT OR Apache-2.0",
+  );
+  assert.notEqual(getPluginBySlug("t-auto-dsh-std")?.compatibility, "unknown");
+  assert.notEqual(
+    getPluginBySlug("yangshen-swe-dsh-plugin-simple-pet")?.compatibility,
+    "unknown",
+  );
 });
 
 test("October 7 native additions keep immutable identity and compatibility evidence", () => {
