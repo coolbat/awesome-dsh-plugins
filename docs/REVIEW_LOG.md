@@ -1,5 +1,74 @@
 # Review log
 
+## 2026-10-09 — Daily fixed-source review
+
+- Beijing Friday; no weekly reconciliation due. The original dirty checkout
+  and untracked m40 files remain untouched. Isolated dated branch
+  `codex/review-new-candidates-20261009` starts at current origin/main and
+  fast-forwards prior audit `10272b749a144bcf9cb59c882f9a383e645326b1`.
+  Only cumulative audit PR #28 is updated; PR #2 is the source queue and
+  independent author PR #32 remains read-only.
+- Freeze PR #2 at `939c33cbde330c65240049b6142e44928309b07c`:
+  5,942 candidates = 1,659 already-listed + 4,260 ready + 23 discovery-held.
+  Process 105 changed identities: 66 new keys and 39 changed source commits;
+  retain 4,155 exact key/commit outcomes and dates. 104 fresh manifests and
+  same-commit patches match; Famwu/dsh-obsidian-panel's fixed manifest returns
+  404 and is unavailable, without substituting a different branch or SHA.
+  A second GitHub Contents API lookup confirms no commit found for that ref.
+- Fresh dispositions: 3 catalog-reviewed, 26 catalog-held, 26 duplicate or
+  superseded, 20 source-conflict, 24 example/fixture/archive, 5 non-plugin-package
+  and 1 unavailable. No new structural-rejected or catalog-excluded record.
+  Pending: 0. Current ready ledger: 4,260 = 204 catalog-reviewed + 931
+  catalog-held + 3 catalog-excluded + 1,410 duplicate/superseded + 1,047
+  source-conflict + 388 example/fixture/archive + 204 non-plugin-package + 71
+  unavailable + 2 structural-rejected. Catalog: 3,119 = 1,297 reviewed +
+  1,818 held + 4 excluded; all prior 3,090 catalog records remain unchanged.
+  Duplicate outcomes do not re-certify retained older source snapshots.
+- Reviewed: Orquestrator, Gauntlet and dsh-hooks. Native fixed manifests,
+  patches, MIT licenses, npm gitHead or public Git-source identity, versioned
+  DSH declarations and relevant source are recorded. Orquestrator delegates
+  route trust checks to connection.requestRejection and registers a model-
+  invocable skill. Gauntlet uses host RPC and staged shell/file-capable agents;
+  its opt-in kit installer can replace kit entries. dsh-hooks checks direct
+  socket peers plus Host/Origin before routes; operator allowlist overrides,
+  configured shell commands and external notifications remain explicit risks.
+- WorkBuddy Search reads credentials through a private Electron native binding;
+  its helper mapping is held. MCP Connector's Host-based fence and Study's
+  assumed outer protection do not establish full route authorization. These
+  are unresolved boundaries, not demonstrated runtime exploits.
+- Odoo lint and Manoo patches only configure official adapters with external
+  commands; they are non-plugin-package. Novelist and Obscura contain their
+  own native entries and remain held, not rejected merely for using MCP.
+  Code Review has an explicit custom non-commercial source license, not a
+  missing license or MIT. WB Enhance Prompt's clean-room provenance notice
+  is a clarification item, not a finding of infringement.
+- Additional fixed compatibility documents establish Cetus 0.1.7-alpha.1 and
+  Context Manager 0.2.0-rc.2 baselines, so those holds do not claim missing
+  version declarations. Cetus exceeds the 25MB archive limit; Context Manager
+  and Tavern have truncated large entries. Artifact closure remains unresolved.
+  All three reviewed archive manifest/patch pairs match. Bounded static source
+  capture and npm metadata do not establish full published-tarball equivalence.
+- Discovery run [37830932486](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/37830932486)
+  failed partially: 5 queries, 60 repositories and 43 bundle manifests.
+  yieldchaser/Shipping returned HTTP 500; irvallensar/engagement-analyzer-llm
+  exceeded 5,000,000 response bytes. Last attempt: 2026-10-08T19:18:36.771Z;
+  last-success watermark: 2026-10-08T07:29:47.688Z. Valid results are retained;
+  coverage is not exhaustive. See [daily evidence](../reports/review/2026-10-09.json).
+- Cloudflare's previously confirmed 20,000-file limit remains a separate release
+  gate. This audit does not modify the exporter, delete evidence, change plans
+  or bypass checks. Current main remains `6dee785987fb983e4d585afd95abc155d112e3ab`;
+  production is independent of this pending audit. Fresh exact-head quality and
+  preview SUCCESS are required before any merge.
+- Local gates pass on Node 22.23.1: focused tests 57/57, full `npm run check`
+  (76 tests), complete-ledger validation and `git diff --check`. The production
+  build with `NEXT_PUBLIC_SITE_URL=https://dshplugin.net` generated 6,250 static
+  pages and 31,256 files (458,360,347 bytes), exceeding the Cloudflare limit.
+  Candidate JSON remains semantically identical to the frozen PR source.
+  See [local gate evidence](../reports/review/2026-10-09-gates.json).
+- No candidate package, lifecycle hook, test, installer, binary, browser/server,
+  Python environment, MCP server, native helper or candidate subprocess was
+  executed. Static review does not prove runtime safety or compatibility.
+
 ## 2026-10-08 — Daily fixed-source review
 
 - Beijing Thursday; no weekly reconciliation due. Original dirty worktree and

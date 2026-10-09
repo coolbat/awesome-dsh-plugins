@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-09T01:18:38.370Z",
+  "node": "v22.23.1",
+  "preliminaryFailures": [
+    {
+      "gate": "manual-disposition-validation",
+      "reason": "Two manual helper decisions initially used the non-schema label non-plugin; corrected to the existing closed-vocabulary non-plugin-package before writing finalized data."
+    },
+    {
+      "gate": "snapshot-count-tests",
+      "reason": "Focused tests had three stale count assertions: reviewed 1294 vs 1297, catalog total 3090 vs 3119 (held 1792 vs 1818), ledger 4194 vs 4260. Expected snapshots corrected and two October 9 capability/boundary regression tests added."
+    }
+  ],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-09T01:18:15.750Z",
+      "finishedAt": "2026-10-09T01:18:15.956Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-09T01:18:15.957Z",
+      "finishedAt": "2026-10-09T01:18:21.952Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-09T01:18:21.952Z",
+      "finishedAt": "2026-10-09T01:18:22.025Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-09T01:18:22.025Z",
+      "finishedAt": "2026-10-09T01:18:22.138Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-09T01:18:22.138Z",
+      "finishedAt": "2026-10-09T01:18:38.049Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 31256,
+    "bytes": 458360347,
+    "largest": [
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4313188
+      },
+      {
+        "path": "out/zh/plugins/index.html",
+        "bytes": 4263737
+      },
+      {
+        "path": "out/_next/static/chunks/2jv4g71jdq6f5.js",
+        "bytes": 4022173
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

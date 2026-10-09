@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1294);
+  assert.equal(plugins.length, 1297);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,71 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3090,
-    reviewed: 1294,
-    held: 1792,
+    total: 3119,
+    reviewed: 1297,
+    held: 1818,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3090);
+  assert.equal(getEvidenceRecords().length, 3119);
+});
+
+test("October 9 native additions retain fixed identity and explicit execution boundaries", () => {
+  for (const [id, signal] of [
+    ["frederico-kluser-dsh-orquestrator", "host-trust-delegation"],
+    ["iamtianyuyang-dsh-crap-agents", "explicit-kit-replacement"],
+    ["peterbon-dsh-hooks", "direct-peer-ip-fence"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(plugin.lifecycle, "none");
+    assert.ok(plugin.signals.includes(signal));
+  }
+});
+
+test("October 9 holds distinguish private helpers, licensing, raw routes and configuration-only adapters", () => {
+  for (const [id, signal] of [
+    ["du460138504-dsh-workbuddy-search", "private-native-binding"],
+    ["duhu2000-dsh-mcp-connector", "authorization-boundary-unresolved"],
+    ["f-e-n-g-0531-dsh-code-review", "license-scope-restricted"],
+    ["juna9969-dsh-wb-enhance-prompt", "license-provenance-review"],
+    ["lunaship-dsh-cetus", "archive-size-limit"],
+    ["pujie147-dsh-study-plugin", "outer-auth-assumption"],
+    ["xiaowenzhou-quota-monitor", "wildcard-peer-not-versioned"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(getPluginBySlug("bosd-odoo-lint"), null);
+  assert.equal(getPluginBySlug("cjamiel-manoo-manos"), null);
+  assert.ok(
+    getPluginBySlug("sodiumlayer-dsh-obscura")?.signals.includes(
+      "native-entry-with-mcp",
+    ),
+  );
+  assert.ok(
+    getPluginBySlug("kurohanekaoruko-dsh-novelist")?.signals.includes(
+      "native-subpath-entry",
+    ),
+  );
+  assert.equal(
+    getPluginBySlug("f-e-n-g-0531-dsh-code-review")?.repoLicense,
+    "DSH Code Review Non-Commercial Source Available License 1.0",
+  );
+  for (const id of [
+    "lunaship-dsh-cetus",
+    "missher12-missher-dsh-context-manager",
+    "juna9969-dsh-wb-enhance-prompt",
+  ]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
 });
 
 test("October 8 reviewed additions retain fixed identity and explicit capabilities", () => {
