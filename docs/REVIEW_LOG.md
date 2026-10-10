@@ -1,5 +1,84 @@
 # Review log
 
+## 2026-10-10 — Daily fixed-source review
+
+- Beijing Saturday; no weekly reconciliation due. Original dirty checkout and
+  both untracked m40 artifacts are preserved. Isolated dated branch
+  `codex/review-new-candidates-20261010` starts from current origin/main and
+  fast-forwards prior audit `bcdcd6786cdba80244f92bdb4859812cd77a1a74`.
+  Only cumulative audit PR #28 is updated; source queue PR #2 and independent
+  author PR #32 are not automatic merge targets.
+- Frozen PR #2: `72535f11f03b9574d32a6e5b65274e2f99833f39`.
+  Queue: 6,029 = 1,658 already-listed + 4,348 ready + 23 discovery-held.
+  Processed 190 identities: 88 new keys and 102 changed source commits.
+  Retained 4,158 exact key/commit decisions and dates. All 190 fixed manifests
+  and same-commit declared patch paths match; existence alone does not prove
+  that a patch contains valid native loader operations.
+- Fresh dispositions: 2 catalog-reviewed, 39 catalog-held, 69 duplicate or
+  superseded, 52 source-conflict, 22 example/fixture/archive, 5 non-plugin-package
+  and 1 structural-rejected. No fresh unavailable or catalog-excluded record.
+  Pending 0. Current ready ledger: 4,348 = 206 catalog-reviewed + 959 catalog-held
+  + 3 catalog-excluded + 1,434 duplicate/superseded + 1,080 source-conflict +
+  387 example/fixture/archive + 205 non-plugin-package + 71 unavailable +
+  3 structural-rejected. Catalog: 3,160 = 1,299 reviewed + 1,857 held + 4 excluded.
+  All prior 3,119 catalog records are unchanged. Duplicate outcomes do not
+  re-certify older retained source commits.
+- Reviewed additions: Cited and Russian Locale. Fixed native entries/patches,
+  repository/package licenses, explicit public Git installation, versioned
+  compatibility evidence and committed artifact source are recorded; both
+  archive manifest/patch pairs match. Cited has Apache-2.0 plus NOTICE and
+  exposes native tools over a configured remote endpoint; queries/session IDs,
+  bearer credentials and remote billing are explicit risks. Its source permits
+  HTTP, so remote credentials require an operator-selected trusted HTTPS URL.
+  Russian Locale has a documented 0.1.5-rc.2 baseline and a precise monorepo
+  subpath install; reviewing its dictionaries does not approve sibling voice
+  components, Python environments or installers.
+- Side Chat and Quick Prompts assume outer protection on raw webServer routes.
+  Prompt Tuner checks loopback/Host/Origin but does not establish a signed-user
+  boundary. WorkBuddy's shim secret is not its status/control trust boundary:
+  the status handler exposes the control key after header checks. These remain
+  held authorization questions, not demonstrated runtime exploits. WorkBuddy's
+  desktop credential reads, OAuth, probes and growth-task actions were not run.
+- EVA-Inspired-Theme has layered MIT code, CC-BY-NC-SA marks, OFL font and
+  external wallpaper rights; it is not unrestricted MIT. Rhine Lab branding,
+  QQ Bridge companions and HanaMesh provision artifacts have distinct asset or
+  dependency scope questions. QQ Bridge also hard-codes a developer's Windows
+  file import. Own-code licensing is not confused with third-party permissions.
+- Arcade's declared patch contains only comments: structural-rejected.
+  Yanshifu only configures official filesystem skills: non-plugin-package.
+  ACRYL Desktop is a host application, not a catalog plugin. Command Template
+  is a real native slash-command feature, not a fixture just because of its
+  name; the existing toolset repository represents it as a duplicate.
+- Historical regression tests caught a draft duplicate of Reactive Resume.
+  GitHub API re-confirmed old/new names share repository ID 249995750. The
+  draft duplicate was removed and the new snapshot linked to retained catalog
+  id `amruthpillai-reactive-resume`; historical tests and catalog were not weakened.
+  Its archive exceeded the 25MB capture limit; raw fixed source confirmed its
+  native apply() function. Knowledge Graph large entries are truncated.
+  Bounded evidence does not establish full published-tarball equivalence.
+- Discovery run [38003761161](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38003761161)
+  failed partially: 5 queries, 60 repositories, 56 bundle manifests; one
+  `bojieli/OpenTallas` response exceeded 5,000,000 bytes. Last attempt:
+  2026-10-09T23:18:50.745Z; success watermark: 2026-10-08T07:29:47.688Z.
+  Valid results remain available, but coverage is not exhaustive.
+  See [daily evidence](../reports/review/2026-10-10.json).
+- Local gates pass on Node 22.23.1: focused tests 59/59, full `npm run check`
+  (78 tests), complete-ledger validation and `git diff --check`. The production
+  origin build generated 6,332 static pages and 31,666 files (464,377,098 bytes),
+  exceeding the observed Cloudflare ceiling. Candidate JSON is semantically
+  identical to the pinned PR source. The draft rename error was corrected in
+  data; historical identity tests were preserved. See
+  [local gate evidence](../reports/review/2026-10-10-gates.json).
+- Cloudflare's observed 20,000-file limit remains a separate release blocker.
+  No exporter change, evidence deletion, plan upgrade, protection bypass,
+  rollback or repeated production release is authorized here. Main remains
+  `6dee785987fb983e4d585afd95abc155d112e3ab`; PR #2 preview success is not
+  success for this audit or for production. Exact-head quality and preview
+  SUCCESS plus all other gates are mandatory before any merge.
+- No candidate package, lifecycle hook, test, installer, binary, browser/server,
+  Python environment, MCP server, native helper or candidate subprocess was
+  executed. Static review does not prove runtime safety or compatibility.
+
 ## 2026-10-09 — Daily fixed-source review
 
 - Beijing Friday; no weekly reconciliation due. The original dirty checkout

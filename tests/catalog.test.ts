@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1297);
+  assert.equal(plugins.length, 1299);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,69 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3119,
-    reviewed: 1297,
-    held: 1818,
+    total: 3160,
+    reviewed: 1299,
+    held: 1857,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3119);
+  assert.equal(getEvidenceRecords().length, 3160);
+});
+
+test("October 10 admits fixed native adapters without extending review to sibling runtimes", () => {
+  for (const [id, signal] of [
+    ["ronniegex-dsh-cited", "remote-endpoint-trust"],
+    ["ubik-dsh-deepseek-mods", "sibling-runtime-out-of-scope"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(plugin.lifecycle, "none");
+    assert.ok(plugin.signals.includes(signal));
+  }
+  assert.equal(
+    getPluginBySlug("ubik-dsh-deepseek-mods")?.manifest,
+    "packages/locale-ru/package.json",
+  );
+});
+
+test("October 10 holds raw routes and artifacts while preserving structural and renamed identities", () => {
+  for (const [id, signal] of [
+    ["akatsukiiride-dsh-side-chat", "outer-auth-assumption"],
+    ["faide-cyber-dsh-workbuddy", "control-key-bootstrap-boundary"],
+    ["lzyyzznl-dsh-prompt-tuner", "loopback-not-authentication"],
+    ["cwbcheng-dsh-knowledge-graph", "bounded-source-truncated"],
+    ["whatcannotbesaid-eva-inspired-theme", "layered-asset-license"],
+    ["xueyingneko-qqbridge-plus", "machine-local-import"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  for (const id of [
+    "bihong2026-dsh-arcade",
+    "yanshi-robotics-yanshifu-plugin-cn",
+    "reactive-resume-reactive-resume",
+  ]) {
+    assert.equal(getPluginBySlug(id), null);
+  }
+  assert.ok(getPluginBySlug("amruthpillai-reactive-resume"));
+  assert.match(
+    getPluginBySlug("whatcannotbesaid-eva-inspired-theme")?.repoLicense ?? "",
+    /CC-BY-NC-SA-4\.0/,
+  );
+  for (const id of [
+    "ai-tool-labs-dsh-square",
+    "muyuyanran-dsh-client-ui-model-favorites",
+    "zyutsu-dsh-amoled-proxyapi",
+  ]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
 });
 
 test("October 9 native additions retain fixed identity and explicit execution boundaries", () => {
