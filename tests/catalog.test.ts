@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1299);
+  assert.equal(plugins.length, 1309);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,67 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3160,
-    reviewed: 1299,
-    held: 1857,
+    total: 3207,
+    reviewed: 1309,
+    held: 1894,
     excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3160);
+  assert.equal(getEvidenceRecords().length, 3207);
+});
+
+test("October 11 admissions preserve fixed native identity and substantive capabilities", () => {
+  for (const [id, signal] of [
+    ["argszero-dsh-mcp-tool-filter", "fail-open"],
+    ["jpolvora-deepseek-harness-git-explorer-plugin", "git-write"],
+    ["liu-zhengdong-dsh-simple-memory", "filesystem-read"],
+    ["megablue-dsh-feature-map", "documentation-mutation"],
+    ["mirelconstantin-dsh-ponytail-sync", "native-skill-provider"],
+    ["mirelconstantin-dsh-postgres-expert", "remote-endpoint-trust"],
+    ["pigeoncode258-dsh-client-freedom-diving", "host-ui-coupling"],
+    ["pigeoncode258-dsh-session-restore", "session-restore"],
+    ["was35-dsh-reclaim", "destructive-purge"],
+    ["whoshixiaodi-beep-dsh-enhance-prompt", "llm-data-transmission"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.ok(plugin.signals.includes(signal));
+  }
+});
+
+test("October 11 holds distinguish route authentication, helper artifacts and license scope", () => {
+  for (const [id, signal] of [
+    ["eivmosn-dsh-token-billing", "loopback-not-authentication"],
+    ["lihihe-dsh-thinking-slider", "diagnostic-log-write"],
+    ["irisblackwood-focus-guard", "machine-local-helper"],
+    ["shunjianbao-dsh-auto-shutdown", "system-shutdown"],
+    ["xiaoiver-dsh-unified-computer-use", "release-tag-unmapped"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  const decisionGate = getPluginBySlug("seasontemple-dsh-decision-gate");
+  assert.equal(decisionGate?.repoLicense, "BUSL-1.1");
+  assert.ok(!decisionGate?.signals.includes("license-incomplete"));
+  for (const id of [
+    "irisblackwood-focus-guard",
+    "ttommyth-dsh-compaction-decision-pruner",
+    "wqzhellohhwy-dsh-tool-manager",
+  ]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
+  assert.equal(getPluginBySlug("botharness-deepseekbot"), null);
+  assert.equal(
+    getPluginBySlug("botharness-botharness")?.commit,
+    "a3d19fb6914ab9f3b50d672817ce49ddecad5e65",
+  );
 });
 
 test("October 10 admits fixed native adapters without extending review to sibling runtimes", () => {

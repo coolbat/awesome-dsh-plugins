@@ -1,5 +1,86 @@
 # Review log
 
+## 2026-10-11 — Daily fixed-source review
+
+- Beijing Sunday; no weekly reconciliation due. Original dirty checkout and
+  both untracked m40 artifacts remain unchanged. Isolated branch
+  `codex/review-new-candidates-20261011` starts from current origin/main and
+  fast-forwards prior audit `8f00982ebacbb86e149841c12ea5864f09b7f099`.
+  Only cumulative audit PR #28 is updated; discovery PR #2 and independent
+  author PR #32 are not merge targets.
+- Frozen PR #2: `8caa755a474e54d30d994c80ef24062700df0f82`.
+  Queue: 6,105 = 1,658 already-listed + 4,422 ready + 25 discovery-held.
+  Reviewed 167 changed identities: 74 new keys and 93 changed source commits.
+  Reused 4,255 exact key/commit decisions with their dates. Of the fresh records,
+  166 manifest/patch pairs match fixed source; Yum-wu/dsh-memory's fixed manifest
+  is unavailable, without replacing its source identity with a mutable branch.
+- Fresh dispositions: 10 catalog-reviewed, 37 catalog-held, 69 duplicate or
+  superseded, 32 source-conflict, 15 example/fixture/archive, 3 non-plugin-package,
+  1 unavailable; no fresh catalog-excluded or structural-rejected. Pending 0.
+  Current ledger: 4,422 = 215 catalog-reviewed + 988 catalog-held +
+  3 catalog-excluded + 1,457 duplicate/superseded + 1,090 source-conflict +
+  389 example/fixture/archive + 205 non-plugin-package + 72 unavailable +
+  3 structural-rejected. Catalog: 3,207 records = 1,309 reviewed + 1,894 held +
+  4 excluded. All prior 3,160 catalog records are unchanged; a duplicate decision
+  does not re-certify an older retained commit.
+- Ten additions have complete static native/source evidence: MCP Tool Filter,
+  Git Explorer, Simple Memory, Feature Map, Ponytail Sync, Postgres Expert,
+  Client Freedom Diving, Session Restore, Reclaim and Enhance Prompt. Explicit
+  risks include fail-open registration filters, Git writes/discard and hooks,
+  prompt injection, documentation writes, remote MCP/LLM data transfer,
+  archive/session restoration and irreversible purge. Git Explorer's same-commit
+  INSTALL document resolves the root bundle and committed nested lib entries;
+  npm 404 alone does not invalidate this Git installation identity.
+- Token Billing's bare balance route contradicts a patch comment claiming no
+  host behavior. Thinking Slider writes a diagnostic log through a bare route;
+  the client-only feature description does not make its host an inert stub.
+  Host/Origin/Fetch-Metadata fences do not establish account authentication.
+  These and the other unresolved route/identity/artifact cases remain held.
+- Focus Guard has documented clone-plus-packages/core installation and versioned
+  peers, but a machine-specific Sentinel Python helper chain remains unverified.
+  WorkBuddy's native credential-decryption helpers and automatic system shutdown
+  need runtime policy acceptance. Decision Gate has real BUSL-1.1 licensing with
+  a 2030-10-10 Apache-2.0 change date, not missing license text or unrestricted MIT;
+  its public installation mapping remains held. Skill-provider adapters are not
+  misclassified as non-plugins merely because they include Markdown skills.
+- GitHub numeric IDs confirm BotHarness/BotHarness is now BotHarness/DeepSeekBot
+  (1373676024) and huangruiteng/loopx is now loopx-project/loopx (1255217938).
+  Fresh aliases do not add catalog rows. A pre-existing alias duplication remains:
+  `huangruiteng-loopx` and `loopx-project-loopx` are both retained held snapshots
+  in the prior catalog. Today's count is records, not canonical-unique repositories.
+  Canonical consolidation and old evidence URL handling are explicitly left for
+  reconciliation; no historical evidence was silently removed or re-certified.
+- All 47 proposed catalog entries received individual evidence review. 46 archive
+  manifest/patch pairs match; Guilduo's archive exceeded the 25 MB compressed
+  ceiling, so fixed raw host text supplements the capture and the artifact remains
+  held. Bounded capture or an uncaptured file never proves remote absence.
+  See [daily evidence](../reports/review/2026-10-11.json).
+- Discovery run [38092167164](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38092167164)
+  succeeded: 5 queries, 60 repositories, 102 bundle manifests, partial=false and
+  zero recorded query errors. Attempt/success watermark:
+  2026-10-10T22:38:33.336Z. This is bounded incremental discovery, not exhaustive
+  internet coverage. The preceding failed run is not confused with this recovery.
+- Three old snapshot-count tests failed as expected while 56 historical tests
+  passed. Counts were updated and two capability/identity/boundary regressions
+  added. Initial catalog validation caught uppercase signal labels and a missing
+  gate-report link; both were corrected without changing review decisions and
+  generated READMEs were refreshed. On Node 22.23.1, focused tests pass 61/61,
+  npm run check passes all 80 tests, complete-ledger validation and diff checks
+  pass. The production-origin build passes with 6,426 static pages and 32,136
+  files (471,452,736 bytes), above the observed Cloudflare file ceiling.
+  Candidate JSON is semantically identical to the pinned source. See
+  [gate evidence](../reports/review/2026-10-11-gates.json).
+- The prior audit head's Cloudflare deployment
+  `ca44be5d-bf3c-4c4d-abd6-ea0e705b8918` failed at the 20,000-file ceiling.
+  Exact new-head quality and preview SUCCESS remain mandatory. No exporter/site
+  change, evidence deletion, paid-plan change, protection bypass, rollback or
+  repeated production release is authorized. PR #2 preview success is unrelated
+  to this audit preview. Production remains main
+  `6dee785987fb983e4d585afd95abc155d112e3ab` until every release gate passes.
+- No candidate package, lifecycle hook, test, installer, binary, browser/server,
+  Python environment, MCP server, native helper or candidate subprocess ran.
+  Static review does not prove runtime safety or compatibility.
+
 ## 2026-10-10 — Daily fixed-source review
 
 - Beijing Saturday; no weekly reconciliation due. Original dirty checkout and
