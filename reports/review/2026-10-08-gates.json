@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-08T01:18:23.366Z",
+  "node": "v22.23.1",
+  "preliminaryFailures": [
+    {
+      "gate": "snapshot-count-tests",
+      "reason": "Focused tests had three stale count assertions: reviewed 1288 vs 1294, total 3057 vs 3090, ledger 4115 vs 4194. Expected snapshots corrected and two October 8 capability/boundary regression tests added."
+    }
+  ],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-08T01:17:57.047Z",
+      "finishedAt": "2026-10-08T01:17:57.297Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-08T01:17:57.298Z",
+      "finishedAt": "2026-10-08T01:18:03.886Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-08T01:18:03.886Z",
+      "finishedAt": "2026-10-08T01:18:03.961Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-08T01:18:03.961Z",
+      "finishedAt": "2026-10-08T01:18:04.072Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-08T01:18:04.072Z",
+      "finishedAt": "2026-10-08T01:18:23.019Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 30966,
+    "bytes": 454021460,
+    "largest": [
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4300097
+      },
+      {
+        "path": "out/zh/plugins/index.html",
+        "bytes": 4250624
+      },
+      {
+        "path": "out/_next/static/chunks/2aafhhhib0n7i.js",
+        "bytes": 3967331
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

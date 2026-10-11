@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-10-07T01:07:50.445Z",
+  "node": "v22.23.1",
+  "preliminaryFailures": [
+    {
+      "gate": "snapshot-count-tests",
+      "reason": "Focused tests produced three stale count failures: reviewed 1283 vs 1288, total 3016 vs 3057 and ledger 4053 vs 4115. Expected snapshots updated; two October 7 regression tests added."
+    }
+  ],
+  "gates": [
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-07T01:07:19.579Z",
+      "finishedAt": "2026-10-07T01:07:26.661Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-07T01:07:26.662Z",
+      "finishedAt": "2026-10-07T01:07:26.736Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-07T01:07:26.736Z",
+      "finishedAt": "2026-10-07T01:07:26.864Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-07T01:07:26.864Z",
+      "finishedAt": "2026-10-07T01:07:50.003Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 30636,
+    "bytes": 449087227,
+    "largest": [
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4276124
+      },
+      {
+        "path": "out/zh/plugins/index.html",
+        "bytes": 4226637
+      },
+      {
+        "path": "out/_next/static/chunks/0qsj0uc48j5xb.js",
+        "bytes": 3907529
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

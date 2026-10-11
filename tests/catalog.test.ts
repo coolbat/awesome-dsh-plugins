@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1020);
+  assert.equal(plugins.length, 1309);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,555 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 1709,
-    reviewed: 1020,
-    held: 688,
-    excluded: 1,
+    total: 3207,
+    reviewed: 1309,
+    held: 1894,
+    excluded: 4,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 1709);
+  assert.equal(getEvidenceRecords().length, 3207);
+});
+
+test("October 11 admissions preserve fixed native identity and substantive capabilities", () => {
+  for (const [id, signal] of [
+    ["argszero-dsh-mcp-tool-filter", "fail-open"],
+    ["jpolvora-deepseek-harness-git-explorer-plugin", "git-write"],
+    ["liu-zhengdong-dsh-simple-memory", "filesystem-read"],
+    ["megablue-dsh-feature-map", "documentation-mutation"],
+    ["mirelconstantin-dsh-ponytail-sync", "native-skill-provider"],
+    ["mirelconstantin-dsh-postgres-expert", "remote-endpoint-trust"],
+    ["pigeoncode258-dsh-client-freedom-diving", "host-ui-coupling"],
+    ["pigeoncode258-dsh-session-restore", "session-restore"],
+    ["was35-dsh-reclaim", "destructive-purge"],
+    ["whoshixiaodi-beep-dsh-enhance-prompt", "llm-data-transmission"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.ok(plugin.signals.includes(signal));
+  }
+});
+
+test("October 11 holds distinguish route authentication, helper artifacts and license scope", () => {
+  for (const [id, signal] of [
+    ["eivmosn-dsh-token-billing", "loopback-not-authentication"],
+    ["lihihe-dsh-thinking-slider", "diagnostic-log-write"],
+    ["irisblackwood-focus-guard", "machine-local-helper"],
+    ["shunjianbao-dsh-auto-shutdown", "system-shutdown"],
+    ["xiaoiver-dsh-unified-computer-use", "release-tag-unmapped"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  const decisionGate = getPluginBySlug("seasontemple-dsh-decision-gate");
+  assert.equal(decisionGate?.repoLicense, "BUSL-1.1");
+  assert.ok(!decisionGate?.signals.includes("license-incomplete"));
+  for (const id of [
+    "irisblackwood-focus-guard",
+    "ttommyth-dsh-compaction-decision-pruner",
+    "wqzhellohhwy-dsh-tool-manager",
+  ]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
+  assert.equal(getPluginBySlug("botharness-deepseekbot"), null);
+  assert.equal(
+    getPluginBySlug("botharness-botharness")?.commit,
+    "a3d19fb6914ab9f3b50d672817ce49ddecad5e65",
+  );
+});
+
+test("October 10 admits fixed native adapters without extending review to sibling runtimes", () => {
+  for (const [id, signal] of [
+    ["ronniegex-dsh-cited", "remote-endpoint-trust"],
+    ["ubik-dsh-deepseek-mods", "sibling-runtime-out-of-scope"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(plugin.lifecycle, "none");
+    assert.ok(plugin.signals.includes(signal));
+  }
+  assert.equal(
+    getPluginBySlug("ubik-dsh-deepseek-mods")?.manifest,
+    "packages/locale-ru/package.json",
+  );
+});
+
+test("October 10 holds raw routes and artifacts while preserving structural and renamed identities", () => {
+  for (const [id, signal] of [
+    ["akatsukiiride-dsh-side-chat", "outer-auth-assumption"],
+    ["faide-cyber-dsh-workbuddy", "control-key-bootstrap-boundary"],
+    ["lzyyzznl-dsh-prompt-tuner", "loopback-not-authentication"],
+    ["cwbcheng-dsh-knowledge-graph", "bounded-source-truncated"],
+    ["whatcannotbesaid-eva-inspired-theme", "layered-asset-license"],
+    ["xueyingneko-qqbridge-plus", "machine-local-import"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  for (const id of [
+    "bihong2026-dsh-arcade",
+    "yanshi-robotics-yanshifu-plugin-cn",
+    "reactive-resume-reactive-resume",
+  ]) {
+    assert.equal(getPluginBySlug(id), null);
+  }
+  assert.ok(getPluginBySlug("amruthpillai-reactive-resume"));
+  assert.match(
+    getPluginBySlug("whatcannotbesaid-eva-inspired-theme")?.repoLicense ?? "",
+    /CC-BY-NC-SA-4\.0/,
+  );
+  for (const id of [
+    "ai-tool-labs-dsh-square",
+    "muyuyanran-dsh-client-ui-model-favorites",
+    "zyutsu-dsh-amoled-proxyapi",
+  ]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
+});
+
+test("October 9 native additions retain fixed identity and explicit execution boundaries", () => {
+  for (const [id, signal] of [
+    ["frederico-kluser-dsh-orquestrator", "host-trust-delegation"],
+    ["iamtianyuyang-dsh-crap-agents", "explicit-kit-replacement"],
+    ["peterbon-dsh-hooks", "direct-peer-ip-fence"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(plugin.lifecycle, "none");
+    assert.ok(plugin.signals.includes(signal));
+  }
+});
+
+test("October 9 holds distinguish private helpers, licensing, raw routes and configuration-only adapters", () => {
+  for (const [id, signal] of [
+    ["du460138504-dsh-workbuddy-search", "private-native-binding"],
+    ["duhu2000-dsh-mcp-connector", "authorization-boundary-unresolved"],
+    ["f-e-n-g-0531-dsh-code-review", "license-scope-restricted"],
+    ["juna9969-dsh-wb-enhance-prompt", "license-provenance-review"],
+    ["lunaship-dsh-cetus", "archive-size-limit"],
+    ["pujie147-dsh-study-plugin", "outer-auth-assumption"],
+    ["xiaowenzhou-quota-monitor", "wildcard-peer-not-versioned"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(getPluginBySlug("bosd-odoo-lint"), null);
+  assert.equal(getPluginBySlug("cjamiel-manoo-manos"), null);
+  assert.ok(
+    getPluginBySlug("sodiumlayer-dsh-obscura")?.signals.includes(
+      "native-entry-with-mcp",
+    ),
+  );
+  assert.ok(
+    getPluginBySlug("kurohanekaoruko-dsh-novelist")?.signals.includes(
+      "native-subpath-entry",
+    ),
+  );
+  assert.equal(
+    getPluginBySlug("f-e-n-g-0531-dsh-code-review")?.repoLicense,
+    "DSH Code Review Non-Commercial Source Available License 1.0",
+  );
+  for (const id of [
+    "lunaship-dsh-cetus",
+    "missher12-missher-dsh-context-manager",
+    "juna9969-dsh-wb-enhance-prompt",
+  ]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
+});
+
+test("October 8 reviewed additions retain fixed identity and explicit capabilities", () => {
+  for (const [id, signal] of [
+    ["eicon-xyz-dsh-voice-ptt", "microphone-access"],
+    ["iasiv5-dsh-m", "host-trust-delegation"],
+    ["politarymonicy-dsh-agent-clean", "explicit-destructive-cli"],
+    ["wangyin572-dsh-plugin-reverse", "generated-debugging-script"],
+    ["whatcannotbesaid-dsh-session-eva-status", "dom-coupling"],
+    ["yoggu-dsh-token-cost", "estimated-cost-not-billing"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.ok(plugin.signals.includes(signal));
+  }
+});
+
+test("October 8 holds preserve authorization, alias, license and native-artifact gaps", () => {
+  for (const [id, signal] of [
+    [
+      "bauerelizabeth07139-dsh-pet-dafeiyu",
+      "authorization-boundary-unresolved",
+    ],
+    [
+      "bauerelizabeth07139-dsh-pet-liangzi",
+      "authorization-boundary-unresolved",
+    ],
+    ["t-auto-dsh-std", "repository-rename-verified"],
+    ["xinvxueyuan-cordis-plugin-secret", "dual-license-evidence"],
+    ["yangshen-swe-dsh-plugin-simple-pet", "asset-license-scope"],
+    ["wojiao42-dsh-space-optimizer", "custom-header-not-authentication"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(
+    getPluginBySlug("xinvxueyuan-cordis-plugin-secret")?.repoLicense,
+    "MIT OR Apache-2.0",
+  );
+  assert.notEqual(getPluginBySlug("t-auto-dsh-std")?.compatibility, "unknown");
+  assert.notEqual(
+    getPluginBySlug("yangshen-swe-dsh-plugin-simple-pet")?.compatibility,
+    "unknown",
+  );
+});
+
+test("October 7 native additions keep immutable identity and compatibility evidence", () => {
+  for (const id of [
+    "al-yichen-dsh-fullscreen-input",
+    "noexcs-dsh-open-session",
+    "tenebris173-dsh-skin-abyssal",
+    "tenebris173-dsh-skin-prts",
+    "wqzhellohhwy-dsh-thinking-language",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(plugin.lifecycle, "none");
+  }
+  assert.ok(
+    getPluginBySlug("noexcs-dsh-open-session")?.signals.includes(
+      "optional-billed-turn",
+    ),
+  );
+});
+
+test("October 7 holds preserve route, source-artifact and nested-bundle boundaries", () => {
+  for (const [id, signal] of [
+    ["jinghoor-dsh-landou-assistant", "authorization-boundary-unresolved"],
+    ["drscrewdriver-dsh-prime-memory", "archive-evidence-unavailable"],
+    ["wly8691-jpg-knowlp-rag", "python-companion"],
+    ["nepa77-dsh-plugin-balance-pet", "asset-license-scope"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(
+    getPluginBySlug("wly8691-jpg-knowlp-rag")?.manifest,
+    "packages/dsh-native/package.json",
+  );
+  assert.equal(getPluginBySlug("new-256-agy-first-bridge"), null);
+  for (const id of [
+    "jinghoor-dsh-landou-assistant",
+    "qianmang1-dsh-native-hooks",
+    "realdgd-dsh-macos-notify",
+  ]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
+});
+
+test("October 6 draft restoration retains static evidence and privacy caveats", () => {
+  const plugin = getPluginBySlug("xwide-dsh-draft-keeper");
+  assert.ok(plugin);
+  assert.equal(plugin.status, "reviewed");
+  assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+  assert.ok(plugin.patchUrl?.includes(plugin.commit));
+  assert.notEqual(plugin.compatibility, "unknown");
+  assert.equal(plugin.lifecycle, "none");
+  assert.ok(plugin.signals.includes("local-storage"));
+  assert.ok(plugin.signals.includes("data-retention"));
+});
+
+test("October 6 holds preserve authorization, licensing and artifact boundaries", () => {
+  for (const [id, signal] of [
+    ["xwide-dsh-picflow", "authorization-boundary-unresolved"],
+    ["linyanzhi-dsh-link", "unauthenticated-default"],
+    ["ganglongyu-dsh-kun-like-pet", "third-party-assets"],
+    ["hgt158-dsh-plugin-share", "artifact-mapping-unresolved"],
+    ["featherhunter-dsh-prompt", "truncated-source"],
+    ["jgl0306-dsh-desktop-background", "authorization-boundary-unresolved"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  for (const id of ["zian-anson-dsh-prompt-seed", "featherhunter-dsh-prompt"]) {
+    assert.notEqual(getPluginBySlug(id)?.compatibility, "unknown");
+  }
+  assert.equal(getPluginBySlug("shibamalaomushi-dsh-delete-guard"), null);
+  assert.equal(getPluginBySlug("xiqingyushan-ovo-dsh-composer-autopair"), null);
+});
+
+test("October 5 reviewed UI entries retain source and lifecycle evidence", () => {
+  for (const id of [
+    "bangbang-03-dsh-client-ui-quote",
+    "cfyofjackie-dsh-selection-quote",
+    "ttmouse-dsh-recent",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(
+      plugin.lifecycle,
+      id === "cfyofjackie-dsh-selection-quote" ? "prepublishOnly" : "none",
+    );
+    assert.ok(plugin.signals.includes("session-data"));
+  }
+});
+
+test("October 5 preserves renamed identity, HTTP holds and non-plugin boundaries", () => {
+  const renamed = getPluginBySlug("illuvorite-dsh-propmt");
+  const paid = getPluginBySlug("sunyuhuirong-polyprompt-ai");
+  const scale = getPluginBySlug("juliankang4-dsh-ui-scale");
+  assert.ok(renamed && paid && scale);
+  assert.equal(renamed.status, "held");
+  assert.ok(renamed.signals.includes("repository-renamed"));
+  assert.equal(paid.status, "held");
+  assert.ok(paid.signals.includes("authorization-boundary-unresolved"));
+  assert.equal(scale.status, "held");
+  assert.ok(scale.signals.includes("artifact-mapping-unresolved"));
+  assert.equal(getPluginBySlug("perrylink-dsh-plugin-kit"), null);
+  assert.equal(getPluginBySlug("roy-kid-tack"), null);
+  assert.equal(getPluginBySlug("reactive-resume-reactive-resume"), null);
+  assert.ok(getPluginBySlug("amruthpillai-reactive-resume"));
+});
+
+test("October 4 reviewed additions retain fixed source and lifecycle evidence", () => {
+  for (const id of [
+    "141w-dsh-quorum",
+    "cycycy8520-deepseekhermescostplugin",
+    "elari39-dsh-session-insight",
+    "exaleks-dsh-locale-ru",
+    "sf-002-dsh-locale-ru",
+    "wongiii-dsh-turn-status-text",
+    "xqtx9527-dsh-live-pricing",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.equal(
+      plugin.lifecycle,
+      id === "xqtx9527-dsh-live-pricing" ? "prepublishOnly" : "none",
+    );
+  }
+});
+
+test("October 4 holds retain authentication, installation and asset boundaries", () => {
+  for (const [id, signal] of [
+    ["dddmuc-dsh-delete-turn", "authorization-boundary-unresolved"],
+    ["nay-1-dsh-session-menu-delete", "unauthenticated-session-deletion"],
+    ["sss-1012-deepseek-harness-manager", "unauthenticated-process-launch"],
+    ["smallwhitelin-dsh-feishu-bind", "shared-default-password"],
+    ["watersxya-dsh-novel-forge", "dependency-manifest-mutation"],
+    ["yimengqingfeng3-debug-dsh-completion-alert", "unlicensed-recording"],
+    ["y1x1n-dsh-prompt-optimizer", "missing-origin-allowed"],
+    ["zmhhaha-mcp-oauth-gateway", "configuration-required"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(
+    getPluginBySlug("watersxya-dsh-novel-forge")?.lifecycle,
+    "postinstall",
+  );
+  assert.equal(getPluginBySlug("yaopushen-dsh-prompt-slim"), null);
+  assert.equal(getPluginBySlug("rochelimitdawn-dshm"), null);
+});
+
+test("October 3 native additions keep immutable installation evidence", () => {
+  for (const id of [
+    "day-day-dream-dsh-page-refresh",
+    "eailersummer-dsh-session-list",
+    "sakuraqqq-dsh-auto-paste",
+    "wxj-71-dsh-sidebar-balance",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.equal(plugin.lifecycle, "none");
+    assert.notEqual(plugin.compatibility, "unknown");
+  }
+});
+
+test("October 3 holds preserve credential, artwork and execution boundaries", () => {
+  for (const [id, signal] of [
+    ["aicivilization-deepseek-harness-vps", "runtime-policy-unresolved"],
+    ["ceilcelia-dsh-travily-api", "authorization-boundary-unresolved"],
+    ["herta-st-dsh-theme-herta", "license-incomplete"],
+    ["xk150424-dsh-agent-ping", "authorization-boundary-unresolved"],
+    ["liancha22-dsh-puzzle-mode", "runtime-policy-unresolved"],
+    ["witherwithwinter-dsh-codinput", "artifact-mapping-unresolved"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+  assert.equal(
+    getPluginBySlug("sgzeng-pbfuzz")?.repoLicense,
+    "PolyForm-Noncommercial-1.0.0",
+  );
+  assert.ok(
+    !getPluginBySlug("liancha22-dsh-puzzle-mode")?.signals.includes(
+      "authorization-boundary-unresolved",
+    ),
+  );
+});
+
+test("October 2 reviewed additions remain pinned and separate from held controls", () => {
+  for (const id of [
+    "1497105876-dsh-mimotts",
+    "andreytepaykin-dsh-sidebar-pins",
+    "ronnyjung2021-dsh-mimo-skin",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+  }
+  for (const id of ["jannchie-dsh-bill", "gmh13552-dsh-mc-art"]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes("authorization-boundary-unresolved"));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+});
+
+test("October 2 unresolved asset and runtime policies cannot become public listings", () => {
+  for (const [id, signal] of [
+    ["marronyao-deepwhale", "license-incomplete"],
+    ["1497105876-dsh-media-studio", "runtime-policy-unresolved"],
+    ["hxlls-dsh-everos-memory", "runtime-policy-unresolved"],
+    ["maci0-dsh-legion", "runtime-policy-unresolved"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "held");
+    assert.ok(plugin.signals.includes(signal));
+    assert.ok(!getPublishedPlugins().some((record) => record.id === id));
+  }
+});
+
+test("October 1 source-installed native plugins retain exact evidence", () => {
+  for (const id of [
+    "cherrchen-dsh-theme-studio",
+    "erbsen16-dsh-client-ui-dracula",
+    "liang-liao-dsh-customize-search",
+    "seewhydee-dsh-emacs-bridge",
+    "young1lin-dsh-agents-rules",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+  }
+  assert.equal(
+    getPluginBySlug("loulangogogo-dsh-plugins-loulan")?.package,
+    "dsh-loulan-mcp",
+  );
+});
+
+test("October 1 holds preserve license labels and concrete boundary gaps", () => {
+  const vcs = getPluginBySlug("f-e-n-g-0531-dsh-vcs");
+  const roleModel = getPluginBySlug("try-works-role-model");
+  const billing = getPluginBySlug("niliemi-dsh-billing");
+  const essay = getPluginBySlug("zm886-dsh-ruankao-essay");
+  assert.ok(vcs);
+  assert.ok(roleModel);
+  assert.ok(billing);
+  assert.ok(essay);
+  assert.equal(
+    vcs.repoLicense,
+    "DSH VCS Non-Commercial Source Available License 1.0 (custom)",
+  );
+  assert.equal(
+    roleModel.repoLicense,
+    "BUSL-1.1 (modified 20-year change terms)",
+  );
+  assert.ok(billing.signals.includes("permissive-request-fence"));
+  assert.ok(essay.signals.includes("asset-path-outside-package"));
+  for (const plugin of [vcs, roleModel, billing, essay]) {
+    assert.equal(plugin.status, "held");
+    assert.ok(!getPublishedPlugins().some((record) => record.id === plugin.id));
+  }
+});
+
+test("September 30 admitted native integrations keep fixed-source evidence", () => {
+  for (const id of [
+    "alanzhao0128-dsh-balance-monitor",
+    "drscrewdriver-dsh-date-wrapper",
+    "linbin-mk-dsh-workspace-prompt",
+    "railgun52-dsh-mcp-servers",
+    "teagnes-dsh-xxnerv-telegram",
+    "zhourenke-dsh-tool-everything",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl);
+    assert.ok(plugin.patchUrl.includes(plugin.commit));
+  }
+});
+
+test("September 30 incomplete artifacts and policy boundaries stay held", () => {
+  for (const id of [
+    "cheshireez-dsh-skill-hub",
+    "coency-dsh-session-delete",
+    "neptune810-dsh-model-router",
+    "movingelated-dsh-local-ollama-models",
+  ]) {
+    assert.equal(getPluginBySlug(id)?.status, "held");
+    assert.ok(!getPublishedPlugins().some((plugin) => plugin.id === id));
+  }
 });
 
 test("plugin detail links remain pinned to the reviewed commit", () => {
@@ -48,12 +590,177 @@ test("plugin detail links remain pinned to the reviewed commit", () => {
   );
 });
 
+test("the September 29 audit resolves source installs without duplicating renamed repositories", () => {
+  const theme = getPluginBySlug("zouwj16-dsh-bg-theme");
+  const memory = getPluginBySlug("syyr1987-dsh-linghun");
+  assert.ok(theme);
+  assert.ok(memory);
+  assert.equal(theme.status, "reviewed");
+  assert.ok(theme.signals.includes("documented-git-source-install"));
+  assert.equal(memory.status, "reviewed");
+  assert.ok(memory.noteEn.includes("below 0.2.0"));
+  assert.equal(getPluginBySlug("anywhere-labs-dsh-desktop"), null);
+  assert.equal(getPluginBySlug("reactive-resume-reactive-resume"), null);
+  assert.ok(getPluginBySlug("anywhere-labs-dsh-plugin-desktop"));
+  assert.ok(getPluginBySlug("amruthpillai-reactive-resume"));
+});
+
+test("the September 29 audit preserves license scopes and execution-policy holds", () => {
+  const blueprint = getPluginBySlug("klarkxy-dsh-plugins");
+  const grok = getPluginBySlug("baroncyrus-dsh-grok-subscription");
+  const caveman = getPluginBySlug("xz-dev-dsh-caveman");
+  assert.ok(blueprint);
+  assert.ok(grok);
+  assert.ok(caveman);
+  assert.equal(blueprint.repoLicense, "SATA-2.1 (custom)");
+  assert.equal(blueprint.packageLicense, "MIT");
+  assert.equal(blueprint.status, "held");
+  assert.equal(grok.status, "held");
+  assert.ok(grok.signals.includes("release-age-override"));
+  assert.equal(caveman.status, "held");
+  assert.ok(caveman.signals.includes("shell-command-rewrite"));
+});
+
+test("install lifecycle evidence is retained on the held secretary bundle", () => {
+  const plugin = getPluginBySlug("liangl1985-work-personal-secretary");
+  assert.ok(plugin);
+  assert.equal(plugin.status, "held");
+  assert.equal(plugin.lifecycle, "install");
+  assert.ok(plugin.noteEn.includes("scripts/install-test.mjs"));
+});
+
 test("the public category interface is deterministic", () => {
   const categories = getCategories();
 
   assert.equal(categories.length, 11);
   assert.deepEqual([...categories], [...categories].sort());
   assert.ok(categories.includes("Developer Tools"));
+});
+
+test("the September 24 audit preserves source-build and lifecycle evidence", () => {
+  const stash = getPluginBySlug("wine-red-dsh-prompt-stash");
+  const search = getPluginBySlug("foreveryoungpp-dsh-web-search");
+  assert.ok(stash);
+  assert.ok(search);
+  assert.equal(stash.status, "reviewed");
+  assert.equal(search.status, "reviewed");
+  assert.ok(stash.noteEn.includes("No npm artifact equivalence is asserted"));
+  assert.ok(search.signals.includes("prepare-hook"));
+});
+
+test("the September 24 audit holds unresolved module and HTTP boundaries", () => {
+  const spec = getPluginBySlug("cyning12-specwave");
+  const wallet = getPluginBySlug(
+    "thinkofrain1213-deepseek-harness-wallet-patched",
+  );
+  assert.ok(spec);
+  assert.ok(wallet);
+  assert.equal(spec.status, "held");
+  assert.equal(wallet.status, "held");
+  assert.ok(spec.signals.includes("patch-module-identity-mismatch"));
+  assert.ok(wallet.signals.includes("authorization-boundary-unresolved"));
+});
+
+test("the September 25 audit retains source builds and exact worker artifacts", () => {
+  const git = getPluginBySlug("cherrchen-dsh-plugin-git");
+  const usage = getPluginBySlug("xie-tj-dsh-token-usage-ledger");
+  assert.ok(git);
+  assert.ok(usage);
+  assert.equal(git.status, "reviewed");
+  assert.equal(usage.status, "reviewed");
+  assert.ok(git.signals.includes("prepare-hook"));
+  assert.ok(git.noteEn.includes("no npm artifact equivalence is asserted"));
+  assert.ok(usage.noteEn.includes("backfill-worker"));
+});
+
+test("the September 25 audit preserves custom license and HTTP boundary holds", () => {
+  const editor = getPluginBySlug("klarkxy-dsh-editor");
+  const relay = getPluginBySlug("archaofan-dsh-notify-relay");
+  assert.ok(editor);
+  assert.ok(relay);
+  assert.equal(editor.status, "held");
+  assert.equal(editor.repoLicense, "SATA-2.1 (custom)");
+  assert.equal(relay.status, "held");
+  assert.ok(relay.signals.includes("authorization-boundary-unresolved"));
+});
+
+test("the September 26 audit distinguishes declarative presets from host applications", () => {
+  const preset = getPluginBySlug("ink-dark-dsh-adversarial-review-preset");
+  assert.ok(preset);
+  assert.equal(preset.status, "reviewed");
+  assert.ok(preset.signals.includes("declarative-preset"));
+  assert.equal(getPluginBySlug("anywhere-labs-dsh-desktop"), null);
+  assert.equal(getPluginBySlug("roy-kid-tack"), null);
+});
+
+test("the September 26 audit preserves irreversible-action authorization holds", () => {
+  const purge = getPluginBySlug("hunlongbaize-dsh-deep-purge");
+  const bridge = getPluginBySlug("silenzerorz-obsidian-dsh-acp");
+  assert.ok(purge);
+  assert.ok(bridge);
+  assert.equal(purge.status, "held");
+  assert.equal(bridge.status, "held");
+  assert.ok(purge.signals.includes("authorization-boundary-unresolved"));
+  assert.ok(purge.signals.includes("permanent-deletion"));
+  assert.ok(bridge.signals.includes("authorization-boundary-unresolved"));
+});
+
+test("the September 27 audit distinguishes shim tokens from raw route authorization", () => {
+  const comate = getPluginBySlug("dier-toushou-dsh-connect-comate");
+  const sidebar = getPluginBySlug("sailoumili-dsh-sidebar-plus");
+  const recall = getPluginBySlug("kittimzhe-dsh-session-recall");
+  assert.ok(comate);
+  assert.ok(sidebar);
+  assert.ok(recall);
+  assert.equal(comate.status, "held");
+  assert.equal(sidebar.status, "held");
+  assert.equal(recall.status, "held");
+  assert.ok(comate.signals.includes("authorization-boundary-unresolved"));
+  assert.ok(sidebar.signals.includes("dynamic-code-load"));
+  assert.ok(recall.signals.includes("lineage-fail-open"));
+});
+
+test("the September 27 audit retains authenticated boundaries and source mappings", () => {
+  const compact = getPluginBySlug("aa2246740-dsh-compact-saviour");
+  const data = getPluginBySlug("tomowang-dsh-data-agent");
+  assert.ok(compact);
+  assert.ok(data);
+  assert.equal(compact.status, "reviewed");
+  assert.equal(data.status, "reviewed");
+  assert.ok(compact.signals.includes("authenticated-host-route"));
+  assert.ok(data.signals.includes("native-canvas-dependency"));
+  assert.equal(getPluginBySlug("monthu56-taimen"), null);
+});
+
+test("the September 28 audit preserves authorization and install artifact holds", () => {
+  const deletion = getPluginBySlug("miuzel-dsh-subagent-ui");
+  const workspace = getPluginBySlug("sen70s-dsh-workspace-plus");
+  const theme = getPluginBySlug("kenz1117-dsh-ui-rainbowspeak");
+  assert.ok(deletion);
+  assert.ok(workspace);
+  assert.ok(theme);
+  assert.equal(deletion.status, "held");
+  assert.equal(workspace.status, "held");
+  assert.equal(theme.status, "held");
+  assert.ok(deletion.signals.includes("unauthenticated-session-deletion"));
+  assert.ok(workspace.signals.includes("admission-fail-open"));
+  assert.ok(theme.signals.includes("sibling-checkout-required"));
+});
+
+test("the September 28 audit distinguishes opted-in cost from unresolved runtime policies", () => {
+  const warmer = getPluginBySlug("yoggu-dsh-cache-warmer");
+  const browser = getPluginBySlug("lyp88997-dsh-browser-service");
+  const editor = getPluginBySlug("vano1254-dsh-booster");
+  assert.ok(warmer);
+  assert.ok(browser);
+  assert.ok(editor);
+  assert.equal(warmer.status, "reviewed");
+  assert.ok(warmer.signals.includes("authenticated-host-route"));
+  assert.ok(warmer.signals.includes("opt-in-model-cost"));
+  assert.equal(browser.status, "held");
+  assert.ok(browser.signals.includes("browser-no-sandbox"));
+  assert.equal(editor.status, "held");
+  assert.ok(editor.signals.includes("code-server-auth-none"));
 });
 
 test("all evidence and the DSH contract use immutable commits", () => {
