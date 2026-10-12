@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1309);
+  assert.equal(plugins.length, 1313);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,70 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3207,
-    reviewed: 1309,
-    held: 1894,
-    excluded: 4,
+    total: 3265,
+    reviewed: 1313,
+    held: 1947,
+    excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3207);
+  assert.equal(getEvidenceRecords().length, 3265);
+});
+
+test("October 12 admissions retain fixed identity and capability disclosures", () => {
+  for (const [id, signal] of [
+    ["argszero-cordis-plugin-turn-budget-guard", "agent-cancellation"],
+    ["marcelongvargas-dsh-cost", "estimated-cost"],
+    ["wqzhellohhwy-dsh-projectless", "bounded-cleanup"],
+    ["ziyuan258-dsh-skill-router", "native-skill-provider"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.ok(plugin.signals.includes(signal));
+  }
+});
+
+test("October 12 holds distinguish route authorization and fixed license evidence", () => {
+  for (const id of [
+    "blanktasftu-dsh-ark",
+    "bonerush-dsh-obsidian-mem",
+    "sixzjd-dsh-usage-dash-board",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("authorization-boundary-unresolved"));
+    assert.ok(plugin?.signals.includes("loopback-not-authentication"));
+  }
+  assert.equal(
+    getPluginBySlug("lkvexa-spindoctor-qwerty-deepseek-harness")?.repoLicense,
+    "GPL-3.0-or-later",
+  );
+  assert.equal(
+    getPluginBySlug("wangxuewangxue98-dsh-motor-ai")?.repoLicense,
+    "PolyForm-Noncommercial-1.0.0",
+  );
+  assert.ok(
+    getPluginBySlug("miantiao1231-acmer-coach")?.signals.includes(
+      "license-scope-unresolved",
+    ),
+  );
+});
+
+test("weekly alias reconciliation preserves LoopX historical evidence without double admission", () => {
+  const canonical = getPluginBySlug("huangruiteng-loopx");
+  const duplicate = getPluginBySlug("loopx-project-loopx");
+  assert.equal(canonical?.status, "held");
+  assert.equal(duplicate?.status, "excluded");
+  assert.equal(duplicate?.commit, "09f10c4e37b89c6ed25f2f2354f89d641662e83c");
+  assert.equal(canonical?.commit, "fe80aecd7f7c8302e1e8f4296ad4061aa4679dca");
+  assert.ok(duplicate?.signals.includes("duplicate-canonical-repository"));
+  assert.ok(duplicate?.patchUrl?.includes(duplicate.commit));
+  assert.ok(
+    !getPublishedPlugins().some((plugin) => plugin.id === duplicate?.id),
+  );
 });
 
 test("October 11 admissions preserve fixed native identity and substantive capabilities", () => {

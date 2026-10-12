@@ -1,5 +1,71 @@
 # Review log
 
+## 2026-10-12 — Daily review and weekly reconciliation
+
+- Beijing Monday. Original dirty checkout and both untracked m40 artifacts are
+  preserved; work uses isolated `codex/review-new-candidates-20261012`, based on
+  origin/main then fast-forwarded to prior audit `ae287c22fdb2cb629558fe9177d2559a546c04de`.
+  Only cumulative audit PR #28 is updated; PR #2 and author PR #32 are not merge targets.
+- Frozen PR #2: `a09609dee06422fd72e8c7f98ec86cc4f475ed2c`.
+  Queue 6,226 = 1,658 already-listed + 4,530 ready + 38 discovery-held.
+  Reviewed 181 identities: 108 new keys and 73 changed source commits; reused
+  4,349 exact key/commit decisions and original dates. All 181 fixed manifests
+  and same-commit patches match; all 58 proposed catalog archive pairs match.
+  Bounded capture is not proof that uncaptured remote files are absent.
+- Fresh dispositions: 4 catalog-reviewed, 54 catalog-held, 72 duplicate/superseded,
+  31 source-conflict, 18 example/fixture/archive, 2 non-plugin-package, and zero
+  catalog-excluded/unavailable/structural-rejected. Pending 0. Current ledger:
+  219 catalog-reviewed + 1,031 catalog-held + 3 catalog-excluded + 1,492 duplicate/
+  superseded + 1,102 source-conflict + 403 fixture/archive + 205 non-plugin-package
+  + 72 unavailable + 3 structural-rejected = 4,530.
+- Four admissions: Turn Budget Guard, DSH Cost, Projectless and Skill Router.
+  Fixed license, installation, native patch and versioned host contract evidence
+  are recorded alongside cancellation, cost-estimation, bounded cleanup,
+  diagnostic-log and prompt-injection capabilities. No runtime claims are made.
+  Ark, Obsidian Memory and Usage Dashboard remain held because local socket/
+  Host/Origin fences alone do not establish mandatory account authorization.
+  Motor AI has PolyForm Noncommercial licensing; Spindoctor's fixed GPL text is
+  not replaced by mutable GitHub AGPL metadata. ACMer Coach's third-party dataset
+  redistribution provenance and boot-animation audio licensing remain unresolved.
+- Mechanical alias correction: numeric repository ID 1255217938 confirms both
+  LoopX paths refer to the same repository. `loopx-project-loopx` becomes excluded;
+  retained canonical `huangruiteng-loopx` stays held. Both historical IDs, fixed
+  commits, prior notes and evidence paths survive. No current ledger mapping is
+  changed. Catalog 3,265 = 1,313 reviewed + 1,947 held + 5 excluded; this is a
+  retained-record count, not a global canonical-unique repository claim.
+- Weekly reconciliation covers main, PR #2, prior PR #28, PR #32 and this audit.
+  No duplicate literal keys/IDs/repositories, non-40-character commits, missing
+  own-snapshot ledger entries, invalid catalog mappings or generated README drift.
+  PR #2 still carries its old 1,517-row ledger: 3,434 current ready identities are
+  not represented there; this audit covers all 4,530. PR #32 changes one archive
+  plugin source/description and two READMEs but has no exact-head checks.
+- Discovery run [38182465138](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38182465138)
+  is partial: 5 queries, 60 repositories, 60 manifests, one 5,000,000-byte response
+  ceiling error for stablyai/orca. Valid results retained. Attempt watermark
+  2026-10-11T22:57:59.699Z; last successful watermark 2026-10-11T18:08:53.846Z.
+  PR #2 includes the latest attempt, not an exhaustive discovery claim.
+- Local gates and production-origin build are recorded separately in
+  [gate evidence](../reports/review/2026-10-12-gates.json). On Node 22.23.1, focused
+  tests pass 64/64 and complete check passes 83/83 tests plus data/docs/type/lint
+  gates; require-complete and diff checks pass. Production build generates 6,542
+  pages and 32,716 files (479,986,937 bytes), above the 20,000-file ceiling.
+  Candidate JSON remains semantically identical to the frozen source. Previous-head quality
+  passed but Cloudflare preview `b5e64dc0-8876-425a-8bd2-d8dec51988af` failed at
+  20,000 files. Exact new-head quality and preview SUCCESS remain mandatory.
+  No source/UI/exporter changes, evidence deletion, paid-plan change, protection
+  bypass, rollback or production redeploy is included.
+- Production remains `6dee785987fb983e4d585afd95abc155d112e3ab`, successful deployment
+  `f2e32f47-7e17-4b05-ac53-ff129d91acc8`: root/plugins/review HTTP 200, old /en/ HTTP
+  301 to root. Live plugin IDs match main: 1,020 reviewed and 689 review entries
+  (688 held + 1 excluded), with no missing/extra IDs. Review page does not display
+  the snapshot date; its exact ID comparison, not a nonexistent date, is checked.
+- See [daily evidence](../reports/review/2026-10-12.json),
+  [weekly report](../reports/review/2026-10-12-weekly.md) and
+  [machine-readable reconciliation](../reports/review/2026-10-12-weekly.json).
+  No candidate code, lifecycle hooks, tests, installers, binaries, browser/server,
+  Python environment, native helper or MCP server ran. Static review is not
+  runtime safety or compatibility proof.
+
 ## 2026-10-11 — Daily fixed-source review
 
 - Beijing Sunday; no weekly reconciliation due. Original dirty checkout and
