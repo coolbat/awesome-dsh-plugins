@@ -70,7 +70,7 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
 ## 插件目录
 
 <!-- CATALOG:START -->
-快照：**2026-09-09** · **1709 个候选** · **1020 个已核验** · **688 个暂缓** · **1 个排除**
+快照：**2026-09-09** · **1710 个候选** · **1021 个已核验** · **688 个暂缓** · **1 个排除**
 
 ### 已核验的原生 bundles
 
@@ -5125,6 +5125,11 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **证据:** [manifest](https://github.com/skkjkk/dsh-usage-dashboard/blob/104cfb87a78bcc42f0feec39e95bf9bf202e9b36/package.json) → [patch](https://github.com/skkjkk/dsh-usage-dashboard/blob/104cfb87a78bcc42f0feec39e95bf9bf202e9b36/cordis.patch.yml) · **身份:** `@skkjkk/dsh-usage-dashboard`
   - **许可证:** repo `Apache-2.0` / package `Apache-2.0` · 生命周期 `prepublishOnly` · 兼容性未知
   - **能力信号:** `usage-dashboard` `token-usage` `cost-data` `session-data` `client-injection` `prepublish-build` · **核验备注:** 已静态核对固定源码与匹配的公开包身份；未执行候选代码、安装钩子、网络调用、文件系统变更或 UI 行为。
+
+- **dsh-version-guard** · [skyjjgw/dsh-version-guard@88e313d](https://github.com/skyjjgw/dsh-version-guard/commit/88e313df37c2b37896fd0a948844d4f614ef23e3) — 记录插件版本与 profile 配置快照，在 DSH 无法启动时通过独立恢复页回退到已知可用配置。
+  - **证据:** [manifest](https://github.com/skyjjgw/dsh-version-guard/blob/88e313df37c2b37896fd0a948844d4f614ef23e3/package.json) → [patch](https://github.com/skyjjgw/dsh-version-guard/blob/88e313df37c2b37896fd0a948844d4f614ef23e3/cordis.patch.yml) · **身份:** `dsh-version-guard`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
+  - **能力信号:** `filesystem` `local-http` `subprocess` `package-management` · **核验备注:** 固定 commit 上已确认 manifest 与 patch 对应结构；会写入本地 profile 配置和快照，显式依赖同步运行 pnpm install --ignore-scripts，尚未实测具体宿主版本兼容性。
 
 - **DSH Plugin Guardian** · [songoao25/dsh-plugin-guardian@bb49179](https://github.com/songoao25/dsh-plugin-guardian/commit/bb491797ab4a1b78dfbcab87821d6f8f59f24caf) — 提供图形化插件卸载、残留清理、快照回滚和恢复控制。
   - **证据:** [manifest](https://github.com/songoao25/dsh-plugin-guardian/blob/bb491797ab4a1b78dfbcab87821d6f8f59f24caf/package.json) → [patch](https://github.com/songoao25/dsh-plugin-guardian/blob/bb491797ab4a1b78dfbcab87821d6f8f59f24caf/cordis.patch.yml) · **身份:** `dsh-plugin-guardian`

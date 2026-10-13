@@ -49026,6 +49026,32 @@
       ],
       "noteEn": "Held because repository license evidence is incomplete or conflicting; no candidate code was executed.",
       "noteZh": "因repository license证据不足或冲突而暂缓；未执行候选代码。"
+    },
+    {
+      "id": "skyjjgw-dsh-version-guard",
+      "name": "dsh-version-guard",
+      "repository": "skyjjgw/dsh-version-guard",
+      "package": "dsh-version-guard",
+      "category": "Discovery & Management",
+      "status": "reviewed",
+      "summaryEn": "Snapshots plugin versions and profile configuration, with an independent recovery page to restore a known-good configuration when DSH cannot start.",
+      "summaryZh": "记录插件版本与 profile 配置快照，在 DSH 无法启动时通过独立恢复页回退到已知可用配置。",
+      "branch": "main",
+      "commit": "88e313df37c2b37896fd0a948844d4f614ef23e3",
+      "manifest": "package.json",
+      "patch": "cordis.patch.yml",
+      "repoLicense": "MIT",
+      "packageLicense": "MIT",
+      "compatibility": "unknown",
+      "lifecycle": "none",
+      "signals": [
+        "filesystem",
+        "local-http",
+        "subprocess",
+        "package-management"
+      ],
+      "noteEn": "Native manifest-to-patch structure confirmed at the pinned commit. Local profile configuration and snapshots are written; explicit dependency synchronization runs pnpm install --ignore-scripts. Runtime compatibility with a host version was not tested.",
+      "noteZh": "固定 commit 上已确认 manifest 与 patch 对应结构；会写入本地 profile 配置和快照，显式依赖同步运行 pnpm install --ignore-scripts，尚未实测具体宿主版本兼容性。"
     }
   ]
 }

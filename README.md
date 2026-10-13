@@ -78,7 +78,7 @@ The query set and request budgets live in
 ## Catalog
 
 <!-- CATALOG:START -->
-Snapshot: **2026-09-09** · **1709 candidates** · **1020 reviewed** · **688 held** · **1 excluded**
+Snapshot: **2026-09-09** · **1710 candidates** · **1021 reviewed** · **688 held** · **1 excluded**
 
 ### Reviewed native bundles
 
@@ -5133,6 +5133,11 @@ Snapshot: **2026-09-09** · **1709 candidates** · **1020 reviewed** · **688 he
   - **Evidence:** [manifest](https://github.com/skkjkk/dsh-usage-dashboard/blob/104cfb87a78bcc42f0feec39e95bf9bf202e9b36/package.json) → [patch](https://github.com/skkjkk/dsh-usage-dashboard/blob/104cfb87a78bcc42f0feec39e95bf9bf202e9b36/cordis.patch.yml) · **Identity:** `@skkjkk/dsh-usage-dashboard`
   - **Licenses:** repo `Apache-2.0` / package `Apache-2.0` · lifecycle `prepublishOnly` · compatibility unknown
   - **Signals:** `usage-dashboard` `token-usage` `cost-data` `session-data` `client-injection` `prepublish-build` · **Review:** The fixed source and matching public package identity were reviewed statically; no candidate code, install hook, network call, filesystem change, or UI behavior was executed.
+
+- **dsh-version-guard** · [skyjjgw/dsh-version-guard@88e313d](https://github.com/skyjjgw/dsh-version-guard/commit/88e313df37c2b37896fd0a948844d4f614ef23e3) — Snapshots plugin versions and profile configuration, with an independent recovery page to restore a known-good configuration when DSH cannot start.
+  - **Evidence:** [manifest](https://github.com/skyjjgw/dsh-version-guard/blob/88e313df37c2b37896fd0a948844d4f614ef23e3/package.json) → [patch](https://github.com/skyjjgw/dsh-version-guard/blob/88e313df37c2b37896fd0a948844d4f614ef23e3/cordis.patch.yml) · **Identity:** `dsh-version-guard`
+  - **Licenses:** repo `MIT` / package `MIT` · lifecycle `none` · compatibility unknown
+  - **Signals:** `filesystem` `local-http` `subprocess` `package-management` · **Review:** Native manifest-to-patch structure confirmed at the pinned commit. Local profile configuration and snapshots are written; explicit dependency synchronization runs pnpm install --ignore-scripts. Runtime compatibility with a host version was not tested.
 
 - **DSH Plugin Guardian** · [songoao25/dsh-plugin-guardian@bb49179](https://github.com/songoao25/dsh-plugin-guardian/commit/bb491797ab4a1b78dfbcab87821d6f8f59f24caf) — Offers graphical plugin uninstall, residue cleanup, snapshot rollback, and recovery controls.
   - **Evidence:** [manifest](https://github.com/songoao25/dsh-plugin-guardian/blob/bb491797ab4a1b78dfbcab87821d6f8f59f24caf/package.json) → [patch](https://github.com/songoao25/dsh-plugin-guardian/blob/bb491797ab4a1b78dfbcab87821d6f8f59f24caf/cordis.patch.yml) · **Identity:** `dsh-plugin-guardian`
