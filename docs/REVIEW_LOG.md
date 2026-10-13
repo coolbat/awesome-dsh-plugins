@@ -1,5 +1,75 @@
 # Review log
 
+## 2026-10-13 — Daily fixed-source review
+
+- Beijing Tuesday; no weekly reconciliation due. The original dirty checkout and
+  two untracked m40 artifacts are preserved. Isolated branch
+  `codex/review-new-candidates-20261013` starts from origin/main and fast-forwards
+  prior audit `d842184ed57cd60b30c4522bb52759f7af6c8651`. Only cumulative audit PR #28
+  is updated; discovery PR #2 and author PR #32 are not merge targets.
+- Frozen PR #2: `b051b31786de3009ffeaeb265752bcb9f4fbf328`.
+  Queue 6,268 = 1,658 already-listed + 4,572 ready + 38 discovery-held.
+  Reviewed 95 identities: 42 new keys and 53 changed source commits; reused
+  4,477 exact key/commit decisions with original dates. All 95 manifest/patch
+  pairs and all 24 proposed catalog archive pairs match their fixed source.
+  Missing bounded captures are not proof that remote files are absent.
+- Fresh dispositions: 3 catalog-reviewed, 21 catalog-held, 32 duplicate/superseded,
+  14 source-conflict, 24 example/fixture/archive and 1 non-plugin-package; zero
+  fresh catalog-excluded, unavailable or structural-rejected. Pending 0.
+  Ledger 4,572 = 222 catalog-reviewed + 1,050 catalog-held + 3 catalog-excluded +
+  1,502 duplicate/superseded + 1,110 source-conflict + 405 fixture/archive +
+  205 non-plugin-package + 72 unavailable + 3 structural-rejected.
+  Catalog 3,289 = 1,316 reviewed + 1,968 held + 5 excluded. All prior 3,265
+  catalog records are unchanged, including yesterday's LoopX alias correction.
+- Admissions: SSH Remote, Human Microbiome Function Mining and WorkBuddy.
+  Fixed licenses, native patches, Git installation, versioned DSH declarations
+  and committed entry chains were checked. Risk disclosures cover remote
+  processes/files and the fixed Python helper, preset-writing postinstall,
+  optional external scientific tools, OAuth credentials and provider usage.
+  Static relative-import checks do not certify dynamic dependencies or runtime
+  behavior, and peer declarations do not implicitly admit later prerelease lines.
+- Skills/MCP Manager remains held: loopback Host/Origin checks do not provide
+  mandatory DSH session authorization for recursive delete and server-start
+  routes. SSH Shell's direct terminal WebSocket upgrade lacks a visible account
+  fence. VS Code Themes remains held for unvalidated caller URL components and
+  unbounded VSIX buffering/inflation. These are evidence-based holds, not runtime
+  exploit claims. The Duckweed hello package is an explicit template; catalog
+  selection instead uses its separate preflight package. ACRYL Desktop is a
+  complete host distribution, not an independent plugin.
+- Discovery run [38312656938](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38312656938)
+  is partial: 5 queries, 60 repositories, 75 manifests. gmh5225/awesome-game-security
+  and morganlinton/VulcanBench exceeded the 5,000,000-byte response ceiling.
+  Valid results are retained; attempt watermark 2026-10-12T21:46:13.758Z, last
+  successful watermark 2026-10-11T18:08:53.846Z. This is not exhaustive discovery.
+- Local validation and production-origin build results are recorded in
+  [gate evidence](../reports/review/2026-10-13-gates.json). Node 22.23.1 passes
+  67/67 focused tests, full check with 86/86 tests, require-complete and diff
+  gates. Production-origin build succeeds with 6,590 pages and 32,956 files
+  (483,613,077 bytes), exceeding the 20,000-file ceiling. A preliminary missing
+  gate-report link was repaired before all gates were rerun. The prior exact-head
+  quality check passed, but Cloudflare preview
+  `8365a510-1878-45ca-bcf7-b65450139869` failed at the 20,000-file ceiling. New-head
+  checks must be inspected separately. No merge or production release is allowed
+  without every gate; same-commit CI must precede gated automatic Cloudflare
+  production deployment. No local deploy, UI/exporter change, evidence deletion,
+  paid-plan change, protection bypass or rollback is included.
+- Additional release blocker: a read-only project API check shows automatic
+  production Git integration on main with build command `npm run build`.
+  `.github/workflows/catalog.yml` independently checks PR/main and uploads an
+  artifact; it does not gate that Pages deployment. Therefore same-production-
+  commit CI-before-deploy ordering is not established. The pipeline must be
+  corrected separately before any merge/release, even if the file limit is fixed.
+  See [release preflight](../reports/review/2026-10-13-release-preflight.json).
+- Read-only production verification still resolves to main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`, deployment
+  `f2e32f47-7e17-4b05-ac53-ff129d91acc8`: root/plugins/review HTTP 200 and /en/ 301
+  to root. Live IDs match main: 1,020 reviewed and 689 review entries
+  (688 held + 1 excluded). These production counts are not the unmerged audit.
+- See [daily evidence](../reports/review/2026-10-13.json). No candidate package,
+  code, hook, tests, installer, binary, browser/server, Python environment,
+  native helper or MCP server was executed. Static review is not runtime safety,
+  compatibility or scientific-validity proof.
+
 ## 2026-10-12 — Daily review and weekly reconciliation
 
 - Beijing Monday. Original dirty checkout and both untracked m40 artifacts are

@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import * as reviewLedger from "../scripts/lib/review-ledger.mjs";
@@ -425,6 +426,23 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 4530 records (0 pending).",
+    "Review ledger valid: 4572 records (0 pending).",
   );
+});
+
+test("October 13 separates the hello template and desktop host from native plugins", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition] of [
+    ["1414177871:plugins/hello/package.json", "example-fixture-or-archive"],
+    ["1346337331:apps/acryl-desktop/package.json", "non-plugin-package"],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.ok(record);
+    assert.equal(record.disposition, disposition);
+    assert.equal(record.catalogId, null);
+    assert.match(record.commit, /^[a-f0-9]{40}$/);
+    assert.ok(record.reason.length > 40);
+  }
 });

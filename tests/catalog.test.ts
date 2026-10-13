@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1313);
+  assert.equal(plugins.length, 1316);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,51 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3265,
-    reviewed: 1313,
-    held: 1947,
+    total: 3289,
+    reviewed: 1316,
+    held: 1968,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3265);
+  assert.equal(getEvidenceRecords().length, 3289);
+});
+
+test("October 13 admissions retain fixed source and high-impact capability disclosures", () => {
+  for (const [id, signal] of [
+    ["crazyshout-dsh-ssh-remote", "python-helper"],
+    [
+      "liuyixin-lily-dsh-bio-human-microbiome-function-mining",
+      "postinstall-filesystem-write",
+    ],
+    ["wenh56884-wq-dsh-llm-workbuddy", "oauth-credentials"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.ok(plugin);
+    assert.equal(plugin.status, "reviewed");
+    assert.match(plugin.commit, /^[a-f0-9]{40}$/);
+    assert.ok(plugin.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin.compatibility, "unknown");
+    assert.ok(plugin.signals.includes(signal));
+  }
+});
+
+test("October 13 sensitive routes and archive fetches remain held", () => {
+  for (const id of [
+    "framecy-dsh-ssh-shell",
+    "sunlitcrack-dsh-skills-mcp-manager",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("authorization-boundary-unresolved"));
+  }
+  const themes = getPluginBySlug("zxbc-dsh-vscode-themes2");
+  assert.equal(themes?.status, "held");
+  assert.ok(themes?.signals.includes("unbounded-archive-read"));
+  assert.ok(themes?.signals.includes("unvalidated-url-components"));
+  const preflight = getPluginBySlug("duckweed-yhb-dsh-plugins");
+  assert.equal(preflight?.name, "Plugin Preflight");
+  assert.equal(preflight?.manifest, "plugins/preflight/package.json");
+  assert.equal(preflight?.status, "held");
 });
 
 test("October 12 admissions retain fixed identity and capability disclosures", () => {
