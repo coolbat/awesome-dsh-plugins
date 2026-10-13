@@ -6032,15 +6032,15 @@
     },
     {
       "id": "ultronen-dsh-archived-chats",
-      "name": "DSH Archived Chats",
+      "name": "Archive Management / 归档管理",
       "repository": "Ultronen/dsh-archived-chats",
       "package": "dsh-archived-chats",
       "category": "UI & Workspace",
       "status": "reviewed",
-      "summaryEn": "A settings page for browsing, searching, restoring, and deleting archived sessions by workspace.",
-      "summaryZh": "按工作区浏览、搜索、恢复和删除已归档会话的设置页。",
+      "summaryEn": "Manage archived and unarchived chats with search, previews, tags and notes, workspace archiving, ZIP backups, selected actions, a Recycle Bin, storage and retention, origins and branches, and automatic residual chat checks.",
+      "summaryZh": "管理已归档与未归档会话，支持搜索、预览、标签备注、工作区归档、ZIP 备份、选择操作、回收站恢复、空间与保留策略、来源分支和自动残留会话检查。",
       "branch": "main",
-      "commit": "8a6912e1f39f992e2d8bdf955b456b01e8927948",
+      "commit": "ce6df374da649eae306b9a7a5b73d1f3335ce7c9",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "repoLicense": "MIT",
@@ -6051,10 +6051,12 @@
         "session-data",
         "archive-registry",
         "filesystem-delete",
-        "client-injection"
+        "client-injection",
+        "zip-import-export",
+        "external-network"
       ],
-      "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
-      "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
+      "noteEn": "Version 1.5.2 manifest, patch, licenses, install identity, and user-facing capabilities checked at the pinned release commit. dsh.engines.dsh declares a host range; this directory does not certify runtime compatibility. lib/about.js checks public npm version metadata with a bodyless GET. This evidence refresh did not execute the plugin.",
+      "noteZh": "已按 1.5.2 固定发布提交静态核对 manifest、patch、许可证、安装身份与用户可见功能。dsh.engines.dsh 声明宿主范围，本目录不认证运行时兼容性。lib/about.js 使用无请求体的 GET 检查公开 npm 版本元数据。本次证据更新未执行插件。"
     },
     {
       "id": "ustc-xef2-dsh-llm-ustc",
