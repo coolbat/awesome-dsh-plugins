@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1316);
+  assert.equal(plugins.length, 1317);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,43 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3289,
-    reviewed: 1316,
-    held: 1968,
+    total: 3312,
+    reviewed: 1317,
+    held: 1990,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3289);
+  assert.equal(getEvidenceRecords().length, 3312);
+});
+
+test("October 14 cost dashboard admission retains fixed identity and capability disclosures", () => {
+  const plugin = getPluginBySlug("liaimei-dsh-cost-breakdown");
+  assert.ok(plugin);
+  assert.equal(plugin?.status, "reviewed");
+  assert.equal(plugin?.commit, "1baebd83d4007f5579f890b8226d2ae58345814e");
+  assert.ok(plugin.patchUrl?.includes(plugin.commit));
+  assert.notEqual(plugin.compatibility, "unknown");
+  assert.ok(plugin.signals.includes("estimated-cost"));
+  assert.ok(plugin.signals.includes("credential-backed-balance"));
+});
+
+test("October 14 sensitive route and filesystem boundaries remain held", () => {
+  for (const id of [
+    "wlx2007-dsh-skillshub",
+    "wjh-ux-dsh-wechat-media",
+    "leo-cjw-dsh-pharos",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("authorization-boundary-unresolved"));
+    assert.ok(plugin?.signals.includes("loopback-not-authentication"));
+  }
+  const review = getPluginBySlug("jiewiw-dsh-doc-review");
+  assert.equal(review?.status, "held");
+  assert.ok(review?.signals.includes("symlink-containment-unresolved"));
+  const cd = getPluginBySlug("john-walks-slow-dsh-cd");
+  assert.equal(cd?.status, "held");
+  assert.ok(cd?.signals.includes("model-supplied-confirmation"));
 });
 
 test("October 13 admissions retain fixed source and high-impact capability disclosures", () => {

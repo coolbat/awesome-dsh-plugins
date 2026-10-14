@@ -426,8 +426,28 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 4572 records (0 pending).",
+    "Review ledger valid: 4620 records (0 pending).",
   );
+});
+
+test("October 14 separates source conflicts, host distributions, wrappers and showcases", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition] of [
+    ["1414971193:plugins/dsh-memory-evolve/package.json", "source-conflict"],
+    ["1338524047:packages/desktop/package.json", "non-plugin-package"],
+    ["1357732445:.dsh/fist-mbt-plugin/package.json", "non-plugin-package"],
+    [
+      "1374007757:plugins/dsh-semi-ui-showcase-plugin/package.json",
+      "example-fixture-or-archive",
+    ],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, null);
+    assert.match(record?.commit, /^[a-f0-9]{40}$/);
+  }
 });
 
 test("October 13 separates the hello template and desktop host from native plugins", () => {

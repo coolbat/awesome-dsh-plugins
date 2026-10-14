@@ -1,5 +1,75 @@
 # Review log
 
+## 2026-10-14 — Daily fixed-source review
+
+- Beijing Wednesday; no weekly reconciliation due. The original dirty checkout
+  and both untracked m40 artifacts are preserved. Isolated branch
+  `codex/review-new-candidates-20261014` starts from latest origin/main and
+  fast-forwards prior audit `8c9658c053e5009efe8cf01a42675af5c3401000`.
+  Only cumulative audit PR #28 is updated; PR #2 and PR #32 are not merge targets.
+- Frozen PR #2: `0dd1deb1683fa86acf2fe9075f51684e311aec49`.
+  Queue 6,316 = 1,658 already-listed + 4,620 ready + 38 discovery-held.
+  Reviewed 90 identities: 48 new keys and 42 changed commits; reused 4,530 exact
+  key/commit decisions and their original dates. All 90 fixed manifest/patch
+  pairs match. Of 26 proposed catalog archive checks, 24 match; Corum and the
+  launcher archives exceed the bounded compressed-size limit. Missing captured
+  files are not proof that remote files are absent.
+- Fresh dispositions: 1 catalog-reviewed, 22 catalog-held, 44 duplicate/superseded,
+  18 source-conflict, 3 example/fixture/archive and 2 non-plugin-package; zero
+  fresh catalog-excluded, unavailable or structural-rejected. Pending 0.
+  Ledger 4,620 = 223 catalog-reviewed + 1,065 catalog-held + 3 catalog-excluded +
+  1,521 duplicate/superseded + 1,120 source-conflict + 406 fixture/archive +
+  207 non-plugin-package + 72 unavailable + 3 structural-rejected.
+  Catalog 3,312 = 1,317 reviewed + 1,990 held + 5 excluded. All prior 3,289
+  catalog records remain unchanged. Duplicate newer snapshots do not re-certify
+  or replace retained catalog commits.
+- Admission: Cost Breakdown. Apache-2.0/NOTICE, documented Git installation,
+  versioned DSH declarations, native patch and committed entries are checked.
+  The host uses connection-fetch registration for balance/context routes;
+  disclosures cover session contents, credential-backed balances, estimated
+  costs and optional loopback credit queries. Large generated client capture
+  is bounded; client source entry and host imports were inspected separately.
+- Document Review is held because lexical path checks precede direct filesystem
+  reads without realpath/host-policy enforcement; symlink containment is not
+  established. Session CD is held for generated-entry mapping and model-supplied
+  confirmation of workspace/sandbox relocation. SkillsHub, WeChat Media, Pharos
+  and other local write/control routes remain held where loopback/Host checks
+  do not establish mandatory account authorization. These are static evidence
+  gaps, not runtime exploit findings. Corum is a host distribution; FIST's bundle
+  only launches the official MCP client with a developer-specific local path.
+  The fnOS UI showcase is a fixture; the copied memory package's installation
+  documentation points to another source repository.
+- Discovery run [38458385300](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38458385300)
+  is partial: 5 queries, 60 repositories, 46 manifests. Three repository responses
+  exceeded 5,000,000 bytes: Dicklesworthstone/flywheel_connectors,
+  nuroctane/nur-cli and bojieli/OpenTallas. Valid results are retained; latest
+  attempt 2026-10-13T19:53:29.658Z, last successful watermark
+  2026-10-11T18:08:53.846Z. This is not exhaustive discovery.
+- Local validation and production-origin build results are recorded in
+  [gate evidence](../reports/review/2026-10-14-gates.json). Node 22.23.1 passes
+  70/70 focused tests, full check with 89/89 tests, complete-ledger and diff
+  checks. The production-origin build succeeds: 6,636 pages, 33,186 files and
+  486,983,318 bytes. This exceeds the observed 20,000-file ceiling. Two draft
+  category names were normalized to the existing schema before all gates ran.
+  Exact new-head quality
+  and Cloudflare preview results must be checked after push. A prior successful
+  quality check or PR #2 preview cannot certify this audit's new commit.
+- Separate release blockers remain: Pages' 20,000-file ceiling, and production
+  Git integration running `npm run build` without a proven dependency on required
+  GitHub checks for that same production commit. See the read-only
+  [release preflight](../reports/review/2026-10-14-release-preflight.json).
+  No merge, production deploy, local upload, UI/exporter change, evidence
+  deletion, paid-plan change, protection bypass or rollback is included.
+- Read-only production checks still match main
+  `6dee785987fb983e4d585afd95abc155d112e3ab` / deployment
+  `f2e32f47-7e17-4b05-ac53-ff129d91acc8`: root, plugins and review HTTP 200;
+  /en/ redirects 301 to root. Live IDs match 1,020 reviewed and 689 held/excluded
+  entries, with no missing or extra IDs. These are not the unmerged audit counts.
+- See [daily evidence](../reports/review/2026-10-14.json). No candidate package,
+  code, hook, test, installer, binary, browser/server, Python environment,
+  native helper or MCP server was executed. Static review is not runtime
+  safety or compatibility proof.
+
 ## 2026-10-13 — Daily fixed-source review
 
 - Beijing Tuesday; no weekly reconciliation due. The original dirty checkout and
