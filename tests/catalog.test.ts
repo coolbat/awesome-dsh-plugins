@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1317);
+  assert.equal(plugins.length, 1326);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,59 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3312,
-    reviewed: 1317,
-    held: 1990,
+    total: 3367,
+    reviewed: 1326,
+    held: 2036,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3312);
+  assert.equal(getEvidenceRecords().length, 3367);
+});
+
+test("October 15 admissions retain immutable identity and capability disclosures", () => {
+  for (const [id, signal] of [
+    ["3470437923-cloud-dsh-subagent-limit-slider", "settings-write"],
+    ["oliveryfaso-dsh-babel", "mcp"],
+    ["qin-smart-dsh-session-tabs", "browser-storage"],
+    ["ragnoryok1-dsh-client-locale-ru", "locale-prototype-change"],
+    ["satanfire-dsh-wechat", "external-write"],
+    ["yu-tao-li-dsh-computer-use-win", "native-helper"],
+    ["yubailoving-dsh-followup-suggestions", "model-usage"],
+    ["yuuturn-dsh-locale-ja", "local-font-styling"],
+    ["zyfgood-dsh-web-search-tavily", "credentials"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "reviewed");
+    assert.match(plugin?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(plugin?.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin?.compatibility, "unknown");
+    assert.ok(plugin?.signals.includes(signal));
+  }
+});
+
+test("October 15 holds preserve authorization, artifact and license boundaries", () => {
+  for (const id of [
+    "chenkai2-dsh-daemon",
+    "mfallah-dsh-mcp-studio",
+    "moonbowterfly-dsh-bio-genie",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("authorization-boundary-unresolved"));
+  }
+  for (const id of [
+    "first-fluke-oh-my-agent",
+    "scotthuang-agent-knock-knock",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("archive-limit"));
+  }
+  const desktop = getPluginBySlug("dsh-tauri-deepseek-harness-desktop");
+  assert.equal(desktop?.status, "held");
+  assert.ok(desktop?.repoLicense.includes("noncommercial"));
+  assert.equal(getPluginBySlug("qingyuna-answer-me-with-html"), null);
+  assert.equal(getPluginBySlug("yzsnstotz-hanaworlds-skills"), null);
 });
 
 test("October 14 cost dashboard admission retains fixed identity and capability disclosures", () => {

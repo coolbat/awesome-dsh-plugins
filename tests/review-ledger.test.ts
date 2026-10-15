@@ -426,7 +426,30 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 4620 records (0 pending).",
+    "Review ledger valid: 4716 records (0 pending).",
+  );
+});
+
+test("October 15 distinguishes skill-only bundles and development playgrounds", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition] of [
+    ["1401476500:package.json", "non-plugin-package"],
+    ["1413798525:package.json", "non-plugin-package"],
+    [
+      "1333718792:packages/dsh-tauri-ui-playground/package.json",
+      "example-fixture-or-archive",
+    ],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, null);
+    assert.match(record?.commit, /^[a-f0-9]{40}$/);
+  }
+  assert.equal(
+    current.sourceCommit,
+    "b772363e3399281403b591a29e067a985eec421e",
   );
 });
 

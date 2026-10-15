@@ -1,5 +1,75 @@
 # Review log
 
+## 2026-10-15 — Daily fixed-source review
+
+- Beijing Thursday; no weekly reconciliation due. Original checkout WIP and
+  untracked m40 artifacts are preserved. Isolated dated branch
+  `codex/review-new-candidates-20261015` starts from latest origin/main and
+  fast-forwards prior audit `edbecb2adf8a65921bee76d9fa5e5be4a20b657a`.
+  Only cumulative audit PR #28 is updated; PR #2, #32 and #33 are not merge targets.
+- Frozen PR #2: `b772363e3399281403b591a29e067a985eec421e`.
+  Queue 6,411 = 1,657 already-listed + 4,716 ready + 38 discovery-held.
+  Processed 212 fixed identities: 96 new keys and 116 changed commits;
+  reused 4,504 exact key/commit decisions with original review dates.
+  All 212 manifest/patch pairs match. Of 57 proposed catalog archive pairs,
+  55 match; oh-my-agent and agent-knock-knock exceed the 25 MB compressed bound.
+  Missing bounded captures do not prove remote files absent. The MEB .patch and
+  desktop LICENSE.details files required explicit text-extension capture.
+- Fresh dispositions: 9 reviewed, 46 held, 101 duplicate/superseded,
+  38 source-conflict, 16 example/fixture/archive and 2 non-plugin-package.
+  Fresh excluded/unavailable/structural-rejected: 0. Pending: 0.
+  Ledger 4,716 = 231 catalog-reviewed + 1,102 catalog-held + 3 catalog-excluded +
+  1,559 duplicate/superseded + 1,127 source-conflict + 411 fixture/archive +
+  208 non-plugin-package + 72 unavailable + 3 structural-rejected.
+  Catalog 3,367 = 1,326 reviewed + 2,036 held + 5 excluded.
+  All prior 3,312 catalog records remain unchanged. Duplicate newer snapshots
+  do not re-certify retained catalog commits.
+- Admissions: Subagent Limit Slider, Babel, Session Tabs, Russian Locale,
+  owner-bound WeChat bridge, Windows Computer Use adapter, Followup Suggestions,
+  Japanese Locale and Tavily search provider. Static evidence includes fixed
+  source, package/patch mapping, license scope, documented Git installation and
+  versioned peers or explicit README compatibility targets. Disclosures include
+  model usage, session data, settings writes, external messaging, MCP subprocesses
+  and Windows UI Automation/PowerShell/native compilation. None was executed.
+- Daemon management, MCP Studio, Bio Genie and other management routes are held
+  where captured raw HTTP guards do not establish authenticated Host identity.
+  Feishu is held for sender-to-existing-session ownership acceptance evidence.
+  Other holds cover installation, built/companion artifacts, licensing and
+  compatibility. These are evidence gaps, not demonstrated runtime exploits.
+  LICENSE.details adds noncommercial secondary-development terms to the Tauri
+  desktop repository; artwork rights are not inferred from code MIT licenses.
+  Skill-only HTML/HanaWorlds wrappers and the development UI playground are
+  explicitly classified outside the native-plugin catalog.
+- Stable repository IDs confirm ANOLISA, DeepSeekBot and the Tauri desktop
+  transfers. The distinct dsh-tauri-desk/dsh-tauri-plugins repository is not
+  conflated with the desktop transfer. See the per-record evidence and alias checks.
+- Discovery [run 38647029923](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38647029923)
+  failed closed after preserving valid partial results: 5 queries, 60 repositories,
+  49 manifests. nocobase/nocobase and gmh5225/awesome-game-security exceeded the
+  5,000,000-byte response bound. Attempt: 2026-10-14T22:21:25.446Z; last successful
+  watermark: 2026-10-14T06:12:40.904Z. Discovery is not exhaustive.
+- Local results are recorded in [gate evidence](../reports/review/2026-10-15-gates.json).
+  Node 22.23.1 passes 73/73 focused tests, full check with 92/92 tests,
+  complete-ledger and whitespace checks. Production-origin build succeeds:
+  6,746 pages, 33,736 files, 494,965,119 bytes, exceeding the observed file ceiling.
+  Draft test null expectation, signal casing and resulting README drift were
+  corrected before the successful final gates. New-head quality and Cloudflare
+  preview must be checked after push; old-head
+  quality success and PR #2 preview success do not certify this audit commit.
+- Release remains independently blocked by Pages' observed 20,000-file ceiling
+  and the absence of a proven same-production-commit CI-before-deploy dependency.
+  Read-only [release preflight](../reports/review/2026-10-15-release-preflight.json)
+  confirms the current Git integration builds independently. This audit does not
+  alter workflows, exporter/UI, plans, protection or production configuration.
+- Read-only production checks match main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`, deployment
+  `f2e32f47-7e17-4b05-ac53-ff129d91acc8`: /, /plugins/, /review/ return 200;
+  /en/ returns 301 to root. Live IDs match 1,020 reviewed and 689 held/excluded
+  with no missing or extra entries. These are not the unmerged audit totals.
+- See [daily evidence](../reports/review/2026-10-15.json). No candidate package,
+  hook, test, installer, binary, browser/server, Python environment, native helper
+  or MCP server was executed. Static review is not runtime safety or compatibility proof.
+
 ## 2026-10-14 — Daily fixed-source review
 
 - Beijing Wednesday; no weekly reconciliation due. The original dirty checkout
