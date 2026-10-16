@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-16T01:20:49.105Z",
+  "node": "v22.23.1",
+  "preliminaryFailures": [],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-16T01:20:20.461Z",
+      "finishedAt": "2026-10-16T01:20:20.942Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-16T01:20:20.943Z",
+      "finishedAt": "2026-10-16T01:20:28.531Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-16T01:20:28.531Z",
+      "finishedAt": "2026-10-16T01:20:28.614Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-16T01:20:28.615Z",
+      "finishedAt": "2026-10-16T01:20:28.763Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-16T01:20:28.763Z",
+      "finishedAt": "2026-10-16T01:20:48.666Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 34386,
+    "bytes": 504294939,
+    "largest": [
+      {
+        "path": "out/_next/static/chunks/1_279zp_yzrav.js",
+        "bytes": 4540111
+      },
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4439451
+      },
+      {
+        "path": "out/zh/plugins/index.html",
+        "bytes": 4390211
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

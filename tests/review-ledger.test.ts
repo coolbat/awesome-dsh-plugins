@@ -426,7 +426,7 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 4716 records (0 pending).",
+    "Review ledger valid: 4833 records (0 pending).",
   );
 });
 
@@ -449,8 +449,34 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "b772363e3399281403b591a29e067a985eec421e",
+    "436d309ae7c59ebd059553c2e74fc57bc070b46f",
   );
+});
+
+test("October 16 distinguishes live scene templates, fixtures and conflicting forks", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition] of [
+    ["1416779498:selfcheck/package.json", "example-fixture-or-archive"],
+    [
+      "1414558945:packages/sdlc-mock-llm/package.json",
+      "example-fixture-or-archive",
+    ],
+    [
+      "1412464741:.snapshot-backup-before-npm-install/package.json",
+      "example-fixture-or-archive",
+    ],
+    ["1351850830:scene-template/package.json", "duplicate-or-superseded"],
+    ["1351850830:no-browser-auth/package.json", "duplicate-or-superseded"],
+    ["1333130694:package.json", "source-conflict"],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, null);
+    assert.match(record?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(record?.reason.length > 40);
+  }
 });
 
 test("October 14 separates source conflicts, host distributions, wrappers and showcases", () => {

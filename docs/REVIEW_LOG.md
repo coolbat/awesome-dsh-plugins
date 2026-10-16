@@ -1,5 +1,68 @@
 # Review log
 
+## 2026-10-16 — Daily fixed-source review
+
+- Beijing Friday; no weekly reconciliation due. Original dirty checkout and m40
+  artifacts remain untouched. Isolated dated branch `codex/review-new-candidates-20261016`
+  continues audit `92ba304fad055fde510aa86da79b9813eed0ac08`, which contains current
+  origin/main `6dee785987fb983e4d585afd95abc155d112e3ab`. Only cumulative audit PR #28
+  is updated; discovery PR #2 is not a merge target.
+- Frozen PR #2: `436d309ae7c59ebd059553c2e74fc57bc070b46f`.
+  Queue 6,527 = 1,656 already-listed + 4,833 ready + 38 discovery-held.
+  Processed 193 identities: 117 new keys and 76 changed commits. Reused 4,640
+  exact key/commit decisions with original dates. All 193 manifest/patch pairs
+  match fixed source. Of 66 proposed catalog archives, 63 pairs match and 3
+  exceed the 25 MB compressed bound (rustdsh, whale-musume fork and ai-kb).
+  Missing bounded captures do not prove remote absence; large entry captures
+  are explicitly marked truncated rather than described as complete.
+- Fresh dispositions: 3 catalog-reviewed, 62 catalog-held, 59 duplicate/superseded,
+  40 source-conflict and 29 example/fixture/archive. Fresh non-plugin/excluded/
+  unavailable/structural-rejected: 0. Remaining pending: 0.
+  Ledger 4,833 = 234 catalog-reviewed + 1,151 catalog-held + 3 catalog-excluded +
+  1,596 duplicate/superseded + 1,143 source-conflict + 423 fixture/archive +
+  208 non-plugin-package + 72 unavailable + 3 structural-rejected.
+  Catalog 3,432 = 1,329 reviewed + 2,098 held + 5 excluded. All previous 3,367
+  catalog entries remain unchanged; duplicate newer commits are not recertified.
+- Admissions: Starsector skills/case tools, Git Panel and Better Session Title.
+  Fixed licenses, manifest/patch/entry mappings, documented public installation
+  and explicit versioned DSH evidence were checked. Disclosures include prompt
+  injection, case-file writes, destructive Git actions, possible Git hooks,
+  model-bound source diffs, and workspace/session changes. Nothing was executed.
+- Raw process-management, local task-state, clipboard, patch-notice and remote
+  websocket routes remain held where authenticated admission is unproven or
+  optional. Advisory Flow catches restriction failure but still claims writes
+  blocked; desktop window control modifies app.asar. These execution policies
+  require separate acceptance. Custom noncommercial and CZGD-PL license terms
+  are retained explicitly, not flattened to MIT.
+- A live scene-template host/client package is a repository duplicate, not a
+  fixture just because of its name. Selfcheck/mock/development-template/backup
+  packages are explicitly fixtures. Distinct lhh010 and omdsh-dev repository IDs
+  prevent shared commits from being treated as a rename or installation identity.
+  Verified transfer aliases are recorded separately in the evidence.
+- Discovery [run 38816993356](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38816993356)
+  succeeded: 5 queries, 60 repositories, 60 manifests, 0 errors and partial=false.
+  Attempt/success watermark: 2026-10-15T22:25:41.530Z. This bounded incremental
+  batch does not establish exhaustive internet discovery.
+- Local validation/build results are recorded in [gate evidence](../reports/review/2026-10-16-gates.json).
+  Node 22.23.1 passes 76/76 focused and 95/95 full tests, complete-ledger,
+  formatting, README generation, type and whitespace checks. Production-origin
+  build succeeds: 6,876 pages / 34,386 files / 504,294,939 bytes. This exceeds
+  the last verified 20,000-file Pages ceiling; local build success is not deployability.
+  New-head remote quality and preview are independently checked after push.
+  Prior-head success and PR #2 preview success do not certify this audit commit.
+- [Release preflight](../reports/review/2026-10-16-release-preflight.json) received
+  HTTP 401 from Cloudflare; current provider configuration/deployment cannot be
+  refreshed. Last verified configuration had a 20,000-file ceiling and no proven
+  same-commit CI-before-production dependency. No workflow, provider setting,
+  production configuration, merge, rollback or local deployment is performed.
+- Read-only live checks at 2026-10-16T01:06:59Z: root, /plugins/ and /review/
+  return 200; /en/ returns 301 to root. Live IDs exactly match current main's
+  1,020 reviewed and 689 held/excluded records, not the unmerged audit totals.
+  Current canonical provider deployment is not reconfirmed because of HTTP 401.
+- See [daily evidence](../reports/review/2026-10-16.json). No candidate package,
+  hook, test, installer, binary, browser/server, Python environment, native helper
+  or MCP server was executed. Static review is not runtime safety or compatibility proof.
+
 ## 2026-10-15 — Daily fixed-source review
 
 - Beijing Thursday; no weekly reconciliation due. Original checkout WIP and

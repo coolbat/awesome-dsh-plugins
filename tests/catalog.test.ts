@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1326);
+  assert.equal(plugins.length, 1329);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,56 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3367,
-    reviewed: 1326,
-    held: 2036,
+    total: 3432,
+    reviewed: 1329,
+    held: 2098,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3367);
+  assert.equal(getEvidenceRecords().length, 3432);
+});
+
+test("October 16 admissions preserve fixed source and capability disclosures", () => {
+  for (const [id, signal] of [
+    ["llap-bc221-starsector-agent-skill-and-checker", "filesystem-write"],
+    ["xbzbing-dsh-git-panel", "destructive-git-actions"],
+    ["xinspark-dsh-better-session-title", "workspace-delete"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "reviewed");
+    assert.match(plugin?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(plugin?.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin?.compatibility, "unknown");
+    assert.ok(plugin?.signals.includes(signal));
+  }
+});
+
+test("October 16 holds retain authorization, policy and custom-license boundaries", () => {
+  for (const id of [
+    "janpauldahlke-dsh-agent-processes",
+    "janpauldahlke-dsh-local-long-horizon",
+    "omdsh-dev-dsh-paste-input",
+    "xiamubumu-dsh-aux-degrade",
+    "xiamubumu-dsh-context-reclaim",
+    "zbzbhs-dsh-remote-agent",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("authorization-boundary-unresolved"));
+  }
+  assert.ok(
+    getPluginBySlug("lobitoxxx-dsh-flow")?.signals.includes("fail-open-policy"),
+  );
+  assert.ok(
+    getPluginBySlug("f-e-n-g-0531-dsh-execution-bus")?.repoLicense.includes(
+      "noncommercial",
+    ),
+  );
+  assert.equal(
+    getPluginBySlug("nesarf-oishikunaare-moe-moe-kyun")?.repoLicense,
+    "LicenseRef-CZGD-PL-1.0",
+  );
+  assert.equal(getPluginBySlug("lhh010-dsh-paste-input"), null);
 });
 
 test("October 15 admissions retain immutable identity and capability disclosures", () => {
