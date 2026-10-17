@@ -426,8 +426,45 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 4833 records (0 pending).",
+    "Review ledger valid: 4925 records (0 pending).",
   );
+});
+
+test("October 17 retains rename identity and separates compositions from fixtures", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition, catalogId] of [
+    [
+      "1373676024:packages/deepseekbot/package.json",
+      "duplicate-or-superseded",
+      "botharness-botharness",
+    ],
+    [
+      "1373676024:packages/todo/package.json",
+      "example-fixture-or-archive",
+      null,
+    ],
+    ["1420587336:package.json", "source-conflict", null],
+    ["1350325702:package.json", "non-plugin-package", null],
+    [
+      "1133901637:integrations/dsh-plugin/package.json",
+      "non-plugin-package",
+      null,
+    ],
+    ["1422216485:package.json", "non-plugin-package", null],
+    ["1416779498:selfcheck/package.json", "example-fixture-or-archive", null],
+    [
+      "1374007757:plugins/dsh-semi-ui-showcase-plugin/package.json",
+      "example-fixture-or-archive",
+      null,
+    ],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, catalogId);
+    assert.match(record?.commit ?? "", /^[a-f0-9]{40}$/);
+  }
 });
 
 test("October 15 distinguishes skill-only bundles and development playgrounds", () => {
@@ -449,7 +486,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "436d309ae7c59ebd059553c2e74fc57bc070b46f",
+    "7df66f3c690f95ab4f1ef2bea150d75181b3bd9d",
   );
 });
 

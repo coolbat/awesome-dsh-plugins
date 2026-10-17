@@ -1,5 +1,75 @@
 # Review log
 
+## 2026-10-17 — Daily fixed-source review
+
+- Beijing Saturday; weekly reconciliation is not due. Original checkout WIP and
+  m40 artifacts remain untouched. Isolated dated branch
+  `codex/review-new-candidates-20261017` continues prior audit
+  `a1376e6ec219c9f327c83bcfce19b444e220b983`, containing origin/main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`. Only audit PR #28 is updated;
+  discovery PR #2 and unrelated PRs are not merge targets.
+- Frozen PR #2: `7df66f3c690f95ab4f1ef2bea150d75181b3bd9d`.
+  Queue 6,619 = 1,656 already-listed + 4,925 ready + 38 discovery-held.
+  Reviewed 204 fixed identities: 92 new keys and 112 changed-source identities;
+  4,721 exact key/commit decisions retain their original dates and outcomes.
+  All 204 fixed manifest/patch pairs match. Of 66 representative archives,
+  63 pairs match and 3 exceed the 25 MB compressed capture bound (DeepSeekBot,
+  pm-tool, Tavotto). Capture absence does not prove missing upstream files.
+- Fresh dispositions: 6 catalog-reviewed, 55 catalog-held, 91 duplicate/superseded,
+  38 source-conflict, 11 example/fixture/archive and 3 non-plugin-package.
+  Fresh excluded/unavailable/structural-rejected: 0; remaining pending: 0.
+  Ledger 4,925 = 239 catalog-reviewed + 1,191 catalog-held + 3 catalog-excluded +
+  1,619 duplicate/superseded + 1,162 source-conflict + 425 fixture/archive +
+  211 non-plugin-package + 72 unavailable + 3 structural-rejected.
+  Catalog 3,493 = 1,335 reviewed + 2,153 held + 5 excluded. All prior 3,432
+  catalog entries are preserved unchanged; duplicate newer revisions are not
+  silently recertified or substituted for retained source snapshots.
+- Admissions: FX Marquee, Write Protect, Orchestrator Preset, AI Roundtable,
+  Tidewatch and Local Solution First. Fixed license, source/entry/patch mapping,
+  public installation identity and versioned DSH claims were checked. No hooks
+  are declared in those six manifests. Relative import scans are bounded text
+  checks, not exhaustive dynamic-dependency or runtime proofs. Disclosures cover
+  public market-data fetching, sandbox/grant changes and runner limitations,
+  skill/tool routing, model usage/session writes, cost estimates and prompt data.
+- Git worktree RPC's optional admission check, raw notification/todo/doctor
+  routes, and default-on quote diagnostics remain held for concrete boundary
+  evidence or policy acceptance. Source-only builds, oversized/truncated entries,
+  local-only installation, incomplete licenses and unversioned compatibility are
+  separately recorded. Arabic fonts have governing PDF terms and README-described
+  custom restrictions; hold is for unresolved full license scope, not absent
+  license files. Background video is not flattened into the code MIT license.
+- BotHarness/BotHarness and BotHarness/DeepSeekBot resolve to the same repository
+  ID 1373676024: preserve existing catalog identity. asgitnow and Yee-h Zen Proxy
+  IDs differ, so cross-repository installation remains source-conflict. WSL kit,
+  Ouroboros MCP integration and root-planner YAML are non-native compositions.
+  Selfcheck, todo example and UI showcase packages are explicit fixtures.
+- Discovery [run 38973789986](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38973789986)
+  failed partially: 5 queries, 60 repositories, 76 manifests and one GitHub 500
+  for yieldchaser/Shipping. Valid results retained. Attempt watermark
+  2026-10-16T22:07:27.891Z; successful watermark 2026-10-15T22:25:41.530Z.
+  This is not a successful complete discovery run or exhaustive internet coverage.
+- Local validation/build results are recorded in [gate evidence](../reports/review/2026-10-17-gates.json).
+  Node 22.23.1 passes 79/79 focused and 98/98 full tests, complete ledger,
+  type/format/README checks and whitespace checks. One stale expected source SHA
+  in a historical test was updated, then all gates rerun. Production-origin
+  build succeeds with 6,998 pages / 34,996 files / 513,103,465 bytes, exceeding
+  the last verified 20,000-file Pages limit. Local build is not deployability.
+  Remote quality and Cloudflare preview must be checked on the pushed audit head;
+  earlier audit or PR #2 check successes are not evidence for that new commit.
+- [Release preflight](../reports/review/2026-10-17-release-preflight.json) received
+  HTTP 401 from Cloudflare. Current provider configuration, deployment logs and
+  canonical production commit cannot be refreshed. The last verified 20,000-file
+  ceiling and missing proven same-commit CI-before-production dependency remain
+  unresolved. The repository workflow checks/builds/uploads but has no gated
+  production deployment job. No workflow/provider/plan/protection change, merge,
+  rollback, manual upload or local production deployment is performed.
+- Read-only live checks at 2026-10-17T01:03:13.316Z: root, /plugins/ and /review/
+  return 200; /en/ returns 301 to root. Live IDs exactly match main's 1,020
+  reviewed and 689 held/excluded records, not this unmerged audit catalog.
+- See [daily evidence](../reports/review/2026-10-17.json). No candidate package,
+  hook, test, installer, binary, browser/server, Python environment, native helper
+  or MCP server was executed. Static review is not runtime safety or compatibility proof.
+
 ## 2026-10-16 — Daily fixed-source review
 
 - Beijing Friday; no weekly reconciliation due. Original dirty checkout and m40

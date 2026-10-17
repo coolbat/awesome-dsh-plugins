@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1329);
+  assert.equal(plugins.length, 1335);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,59 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3432,
-    reviewed: 1329,
-    held: 2098,
+    total: 3493,
+    reviewed: 1335,
+    held: 2153,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3432);
+  assert.equal(getEvidenceRecords().length, 3493);
+});
+
+test("October 17 admissions retain fixed evidence and capability boundaries", () => {
+  for (const [id, signal] of [
+    ["0rangesoda1506-dsh-fx-marquee", "public-market-data"],
+    ["azazo1-dsh-write-protect", "runner-limitations"],
+    ["cuddly-guacamole-dsh-orchestrator-preset", "tool-guard"],
+    ["dinggy111-dsh-plugin-ai-roundtable", "model-usage"],
+    ["khalilyamber-dsh-tidewatch", "cost-estimation"],
+    ["shenhe3939-debug-local-solution-first", "skills-registration"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "reviewed");
+    assert.match(plugin?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(plugin?.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin?.compatibility, "unknown");
+    assert.ok(plugin?.signals.includes(signal));
+  }
+});
+
+test("October 17 holds preserve route, telemetry, artifact and font-license evidence", () => {
+  for (const id of [
+    "chrisjohnson-dsh-plugins",
+    "meltllsy-dsh-session-attention",
+    "meltllsy-dsh-todo-reminder",
+    "moonquake2004-dsh-doctor",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("authorization-boundary-unresolved"));
+  }
+  for (const [id, signal] of [
+    ["zhao-guang-ai-dsh-quote-annotate-pro", "default-on-telemetry"],
+    ["xiaofei-fei-dsh-prompt-history", "missing-built-entry"],
+    ["smsmy-dsh-arabic", "license-scope-unresolved"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes(signal));
+  }
+  assert.match(
+    getPluginBySlug("smsmy-dsh-arabic")?.repoLicense ?? "",
+    /thmanyah/,
+  );
+  assert.equal(getPluginBySlug("botharness-deepseekbot"), null);
+  assert.equal(getPluginBySlug("asgitnow-dsh-zen-proxy"), null);
 });
 
 test("October 16 admissions preserve fixed source and capability disclosures", () => {
