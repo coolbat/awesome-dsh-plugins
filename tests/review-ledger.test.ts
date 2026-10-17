@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import * as reviewLedger from "../scripts/lib/review-ledger.mjs";
@@ -425,6 +426,129 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 1517 records (0 pending).",
+    "Review ledger valid: 4925 records (0 pending).",
   );
+});
+
+test("October 17 retains rename identity and separates compositions from fixtures", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition, catalogId] of [
+    [
+      "1373676024:packages/deepseekbot/package.json",
+      "duplicate-or-superseded",
+      "botharness-botharness",
+    ],
+    [
+      "1373676024:packages/todo/package.json",
+      "example-fixture-or-archive",
+      null,
+    ],
+    ["1420587336:package.json", "source-conflict", null],
+    ["1350325702:package.json", "non-plugin-package", null],
+    [
+      "1133901637:integrations/dsh-plugin/package.json",
+      "non-plugin-package",
+      null,
+    ],
+    ["1422216485:package.json", "non-plugin-package", null],
+    ["1416779498:selfcheck/package.json", "example-fixture-or-archive", null],
+    [
+      "1374007757:plugins/dsh-semi-ui-showcase-plugin/package.json",
+      "example-fixture-or-archive",
+      null,
+    ],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, catalogId);
+    assert.match(record?.commit ?? "", /^[a-f0-9]{40}$/);
+  }
+});
+
+test("October 15 distinguishes skill-only bundles and development playgrounds", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition] of [
+    ["1401476500:package.json", "non-plugin-package"],
+    ["1413798525:package.json", "non-plugin-package"],
+    [
+      "1333718792:packages/dsh-tauri-ui-playground/package.json",
+      "example-fixture-or-archive",
+    ],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, null);
+    assert.match(record?.commit, /^[a-f0-9]{40}$/);
+  }
+  assert.equal(
+    current.sourceCommit,
+    "7df66f3c690f95ab4f1ef2bea150d75181b3bd9d",
+  );
+});
+
+test("October 16 distinguishes live scene templates, fixtures and conflicting forks", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition] of [
+    ["1416779498:selfcheck/package.json", "example-fixture-or-archive"],
+    [
+      "1414558945:packages/sdlc-mock-llm/package.json",
+      "example-fixture-or-archive",
+    ],
+    [
+      "1412464741:.snapshot-backup-before-npm-install/package.json",
+      "example-fixture-or-archive",
+    ],
+    ["1351850830:scene-template/package.json", "duplicate-or-superseded"],
+    ["1351850830:no-browser-auth/package.json", "duplicate-or-superseded"],
+    ["1333130694:package.json", "source-conflict"],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, null);
+    assert.match(record?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(record?.reason.length > 40);
+  }
+});
+
+test("October 14 separates source conflicts, host distributions, wrappers and showcases", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition] of [
+    ["1414971193:plugins/dsh-memory-evolve/package.json", "source-conflict"],
+    ["1338524047:packages/desktop/package.json", "non-plugin-package"],
+    ["1357732445:.dsh/fist-mbt-plugin/package.json", "non-plugin-package"],
+    [
+      "1374007757:plugins/dsh-semi-ui-showcase-plugin/package.json",
+      "example-fixture-or-archive",
+    ],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, null);
+    assert.match(record?.commit, /^[a-f0-9]{40}$/);
+  }
+});
+
+test("October 13 separates the hello template and desktop host from native plugins", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [key, disposition] of [
+    ["1414177871:plugins/hello/package.json", "example-fixture-or-archive"],
+    ["1346337331:apps/acryl-desktop/package.json", "non-plugin-package"],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.ok(record);
+    assert.equal(record.disposition, disposition);
+    assert.equal(record.catalogId, null);
+    assert.match(record.commit, /^[a-f0-9]{40}$/);
+    assert.ok(record.reason.length > 40);
+  }
 });
