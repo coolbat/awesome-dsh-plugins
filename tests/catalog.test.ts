@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1335);
+  assert.equal(plugins.length, 1348);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,84 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3493,
-    reviewed: 1335,
-    held: 2153,
+    total: 3560,
+    reviewed: 1348,
+    held: 2207,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3493);
+  assert.equal(getEvidenceRecords().length, 3560);
+});
+
+test("October 18 admissions preserve fixed identity and capability disclosures", () => {
+  for (const [id, signal] of [
+    ["1parado-dsh-deepseek-web-search", "credential-access"],
+    ["amador-aguilar-dsh-eslat", "localization"],
+    ["juliankang4-dsh-locale-ko", "localization"],
+    ["louifinn-dsh-tower", "git-merge-capability"],
+    ["meadalflute-dsh-enter-keymap", "keyboard-interception"],
+    ["minhaoli-dsh-session-query-vector", "session-data-egress"],
+    ["minhaoli-dsh-session-search", "session-content-read"],
+    ["minhaoli-dsh-ui-reload", "ui-reload"],
+    ["nalikco-dsh-memory", "persistent-memory"],
+    ["subin-gurung49-dsh-cost-meter", "credential-access"],
+    ["takboo-dsh-usage-state", "credential-access"],
+    ["wenwubei5-dsh-whale-pond", "canvas-animation"],
+    ["zou-hong-run-dsh-deepseek-search", "core-provider-replacement"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "reviewed");
+    assert.match(plugin?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(plugin?.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin?.compatibility, "unknown");
+    assert.ok(plugin?.signals.includes(signal));
+  }
+  assert.match(
+    getPluginBySlug("takboo-dsh-usage-state")?.noteEn ?? "",
+    /not npm provenance/,
+  );
+  assert.match(
+    getPluginBySlug("subin-gurung49-dsh-cost-meter")?.noteEn ?? "",
+    /own fork Git/,
+  );
+});
+
+test("October 18 holds distinguish authorization, execution, license and artifact boundaries", () => {
+  for (const id of [
+    "chs-1108-dsh-phone-bridge",
+    "drscrewdriver-dsh-tidy-display",
+    "fenlgy-weknora-in-dsh",
+    "jiangnanquan-dsh-ux",
+    "lizilong1993-dsh-offpeak",
+    "xiciyang-dsh-visual-memory",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("authorization-boundary-unresolved"));
+  }
+  for (const id of [
+    "amlyczz-dsh-agy-link",
+    "qingzhu093-dsh-latex-studio",
+    "moonlyric-dsh-turbowarp-bridge",
+  ]) {
+    assert.ok(
+      getPluginBySlug(id)?.signals.includes("runtime-policy-unresolved"),
+    );
+  }
+  assert.match(
+    getPluginBySlug("qinglansfr-dsh-qinglanpierce")?.repoLicense ?? "",
+    /Custom MIT-derived/,
+  );
+  assert.match(
+    getPluginBySlug("guga0620-dsh-pet-bellylaugh")?.repoLicense ?? "",
+    /excluded by NOTICE/,
+  );
+  assert.ok(
+    getPluginBySlug("121212165-dsh-plugin-cost-ledger")?.signals.includes(
+      "artifact-mapping-unresolved",
+    ),
+  );
+  assert.equal(getPluginBySlug("stansz-dsh-git-core"), null);
 });
 
 test("October 17 admissions retain fixed evidence and capability boundaries", () => {

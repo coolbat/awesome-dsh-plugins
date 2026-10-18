@@ -426,8 +426,19 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 4925 records (0 pending).",
+    "Review ledger valid: 5030 records (0 pending).",
   );
+});
+
+test("October 18 treats the empty Git core patch as infrastructure", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  const record = current.records.find(
+    (item: { key: string }) => item.key === "1422787299:package.json",
+  );
+  assert.equal(record?.disposition, "non-plugin-package");
+  assert.equal(record?.catalogId, null);
+  assert.equal(record?.commit, "70ca459d3e1b3bc7a66e5461d75ab281aef7cd63");
+  assert.match(record?.reason ?? "", /empty cordis.patch.yml/);
 });
 
 test("October 17 retains rename identity and separates compositions from fixtures", () => {
@@ -486,7 +497,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "7df66f3c690f95ab4f1ef2bea150d75181b3bd9d",
+    "735e7013f38b7401cfe95501a2d30eaeda03a254",
   );
 });
 

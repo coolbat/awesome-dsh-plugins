@@ -1,5 +1,79 @@
 # Review log
 
+## 2026-10-18 — Daily fixed-source review
+
+- Beijing Sunday; weekly reconciliation is not due. Original checkout WIP and
+  m40 artifacts remain untouched. Isolated branch
+  `codex/review-new-candidates-20261018` continues prior audit
+  `d2d4b1b2db36dfd303dd36d140a230cf01e7c7fb`, containing latest origin/main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`. Only cumulative audit PR #28 is
+  updated; discovery PR #2 is not a merge target.
+- Frozen PR #2: `735e7013f38b7401cfe95501a2d30eaeda03a254`.
+  Queue 6,725 = 1,656 already-listed + 5,030 ready + 39 discovery-held.
+  Processed 237 fixed identities: 105 new keys and 132 changed-source identities;
+  4,793 exact key/commit decisions retain their original dates and outcomes.
+  All 237 fixed manifest/patch pairs match discovery evidence. Archive capture is
+  bounded: 25 MB compressed / 100 MB uncompressed / 18 MB retained text, normally
+  300 KB per file. Korean locale client was fully captured under an explicit
+  800 KB exception. QinglanPierce archive patch has a BOM stripped by API text:
+  decoded normalized contents match, not raw byte identity. It remains held.
+- Fresh dispositions: 13 catalog-reviewed, 54 catalog-held, 114 duplicate/superseded,
+  37 source-conflict, 18 example/fixture/archive and 1 non-plugin-package.
+  Fresh excluded/unavailable/structural-rejected: 0; pending: 0.
+  Ledger 5,030 = 249 catalog-reviewed + 1,229 catalog-held + 3 catalog-excluded +
+  1,654 duplicate/superseded + 1,182 source-conflict + 426 fixture/archive +
+  212 non-plugin-package + 72 unavailable + 3 structural-rejected.
+  Catalog 3,560 = 1,348 reviewed + 2,207 held + 5 excluded. All prior 3,493
+  catalog entries remain unchanged; duplicate newer revisions are not recertified.
+- Thirteen admissions: DeepSeek Web Search, Spanish locale, Korean locale, Tower,
+  Enter Keymap, vector session query, session search, UI reload, Nalikco Memory,
+  the Subin Cost Meter fork, Usage State, Whale Pond and DeepSeek Search.
+  Fixed license, native patch/entry, public Git or exact npm installation identity,
+  lifecycle hooks and versioned DSH claims were inspected. Mixed historical/current
+  compatibility declarations do not prove current runtime compatibility. Local
+  relative-import closure checks are bounded; Nalikco dynamic plugin/store imports
+  were explicitly included. Third-party/dynamic dependencies are not exhaustively
+  certified. Disclosures include credentials, remote session content, filesystem
+  persistence, model spending, subprocesses, subagents and privileged Git operations.
+- Phone Bridge local-admin bypass, Tidy Display file reveal, WeKnora proxy/config,
+  DSH UX usage routes, Offpeak session controls and Visual Memory raw file route
+  remain held for authorization evidence. Agy's default permission skip, TurboWarp
+  debugger control and LaTeX subprocess/output cleanup remain held for execution
+  policy acceptance. This is not a claim of demonstrated exploitation.
+  Genshin/NaiLong/character assets are not covered merely by MIT code licensing;
+  QinglanPierce has additional prohibited-use terms. Source-only builds, external
+  companions, local-only installations and unknown DSH versions remain separately held.
+- Git Core has an empty patch and helper exports, so is infrastructure rather than
+  a native plugin. LoopX repository rename is verified by matching repository ID;
+  distinct forks are not aliases. FlyBot's source-conflicted companion is not cleared
+  by its native social adapter. Previously reviewed snapshots are retained unchanged.
+- Discovery [run 39071203272](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/39071203272)
+  succeeded: 5 queries, 60 repositories, 36 manifests, zero errors, partial=false.
+  Attempt/success watermark: 2026-10-17T21:30:27.240Z. Earlier run 39049586901
+  failed. This successful bounded batch is not exhaustive internet discovery.
+- Local verification and production-origin build results are recorded in
+  [gate evidence](../reports/review/2026-10-18-gates.json). Node 22.23.1 passes
+  82/82 focused tests and 101/101 full tests, complete ledger, type/format/README
+  checks and whitespace checks. A missing gate-report link target was first
+  supplied as explicitly pending, then the full gates were rerun. Build produces
+  7,132 pages and 35,666 files, above the last verified 20,000-file ceiling;
+  local build success is not deployment success. Remote quality and
+  Cloudflare preview must be checked against the pushed audit head; PR #2's
+  successful preview is not evidence for the audit head.
+- [Release preflight](../reports/review/2026-10-18-release-preflight.json) returned
+  Cloudflare HTTP 401 at 2026-10-18T00:58:14.291Z. Current configuration,
+  deployment logs and canonical production commit cannot be refreshed. The last
+  verified 20,000-file ceiling and unproven same-commit CI-before-production dependency
+  remain unresolved. Existing workflows and provider configuration are unchanged.
+  No merge, rollback, manual upload or local production deployment is performed.
+- Read-only live checks at 2026-10-18T00:58:15Z: root, /plugins/ and /review/
+  return 200; /en/ returns 301 to root. Live IDs match main's 1,020 reviewed and
+  689 held/excluded records, not this unmerged audit catalog.
+- See [daily evidence](../reports/review/2026-10-18.json). No candidate package,
+  code, hook, test, installer, binary, browser/server, Python environment, native
+  helper or MCP server was executed. Static review is not runtime safety or
+  compatibility proof.
+
 ## 2026-10-17 — Daily fixed-source review
 
 - Beijing Saturday; weekly reconciliation is not due. Original checkout WIP and
