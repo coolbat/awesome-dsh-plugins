@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-19T01:21:10.917Z",
+  "node": "v22.23.1",
+  "productionBuildEnvironment": {
+    "NEXT_PUBLIC_SITE_URL": "https://dshplugin.net"
+  },
+  "deploymentLimitEvidence": "20000 files last verified 2026-10-15; current provider API returned 401, so current configuration is not re-certified.",
+  "preliminaryFailures": [
+    {
+      "gate": "focused-tests",
+      "reason": "Two historical assertions were stale: the frozen queue SHA and the now-explicit scene-template retained catalog mapping. Updated those expectations and reran all gates."
+    }
+  ],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-19T01:20:44.777Z",
+      "finishedAt": "2026-10-19T01:20:44.988Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-19T01:20:44.989Z",
+      "finishedAt": "2026-10-19T01:20:52.311Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-19T01:20:52.311Z",
+      "finishedAt": "2026-10-19T01:20:52.394Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-19T01:20:52.394Z",
+      "finishedAt": "2026-10-19T01:20:52.534Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-19T01:20:52.535Z",
+      "finishedAt": "2026-10-19T01:21:10.506Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 36476,
+    "bytes": 534558308,
+    "largest": [
+      {
+        "path": "out/_next/static/chunks/26eivqcogyduz.js",
+        "bytes": 4857948
+      },
+      {
+        "path": "out/review/index.html",
+        "bytes": 4671340
+      },
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4572262
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

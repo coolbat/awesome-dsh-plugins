@@ -1,5 +1,80 @@
 # Review log
 
+## 2026-10-19 — Daily fixed-source review and weekly reconciliation
+
+- Beijing Monday. Original checkout WIP and m40 artifacts remain untouched.
+  Isolated dated branch `codex/review-new-candidates-20261019` continues audit
+  `e229e5e2f2fc458c1c726f8924b4a4557e0c75eb`, containing latest origin/main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`. Only audit PR #28 is updated;
+  discovery PR #2 and independently authored PRs #32/#33 are not merge targets.
+- Frozen PR #2: `d5f5b2007a901ac04bb4c28c319e1bb6307d0cfb`.
+  Queue 6,858 = 1,656 already-listed + 5,163 ready + 39 discovery-held.
+  Processed 248 fixed identities: 133 new keys and 115 changed-source records;
+  4,915 exact key/commit decisions preserve their original dates and outcomes.
+  245 manifest/patch pairs match; three fixed manifests return 404 and are
+  recorded unavailable. Archive capture remains bounded (25 MB compressed,
+  100 MB uncompressed, 18 MB retained text, normally 300 KB per file).
+- Fresh dispositions: 17 catalog-reviewed, 64 catalog-held, 81 duplicate/superseded,
+  75 source-conflict, 4 example/fixture/archive, 3 non-plugin-package,
+  3 unavailable and 1 structural-rejected. Fresh catalog-excluded: 0; pending: 0.
+  Ledger 5,163 = 260 catalog-reviewed + 1,277 catalog-held + 3 catalog-excluded +
+  1,676 duplicate/superseded + 1,229 source-conflict + 426 fixture/archive +
+  213 non-plugin-package + 75 unavailable + 4 structural-rejected.
+  Catalog 3,641 = 1,365 reviewed + 2,271 held + 5 excluded. All prior 3,560
+  catalog rows remain byte-equivalent as JSON records; duplicate revisions do not
+  recertify or silently replace those retained snapshots.
+- Seventeen admissions cover Bilibili notes, MT MCP, confirmed session deletion,
+  Jev gates, WSL file opening, read-only Git worktree status, boot compass,
+  prompt forecast, turn recap, image viewer, model selector, thinking API,
+  archived sessions, official UI cleanup and three reasoning-stream extensions.
+  Fixed native entries/patches, licenses, public Git or exact npm identities,
+  lifecycle scripts and versioned DSH claims were inspected. Thirty relative
+  closure checks plus explicit Python/PowerShell/boot asset reads are bounded
+  static evidence, not exhaustive transitive-dependency or runtime certification.
+- Holds distinguish insufficient HTTP authorization from installation, artifact,
+  licensing and version evidence. Restart force-kills any remaining old-port
+  listener; GUI-auth URL tools expose a credential-bearing URL to model context;
+  proxy/Git cleanup, approval-never modes and DNS-fail-open forwarding need policy
+  acceptance. These are recorded concerns, not claims of demonstrated exploitation.
+  Ulanworker uses Sustainable Use License 1.0; Portfolio has a commercial-attribution
+  condition; MIT code does not settle theme, emblem or character asset rights.
+- GitHub numeric repository ID confirms the BotHarness rename; retained identity
+  is preserved. Its todo package is an explicit example. Reasonix is configuration
+  only. Seiuna's scoped package is inserted under an unmatched unscoped patch name,
+  so receives structural-rejected. Scene-template is an actual native module, not
+  a starter template; it remains a duplicate of its repository representative.
+- Discovery [run 39168370647](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/39168370647)
+  failed partially: 5 queries, 60 repositories, 91 manifests and two 5 MB response
+  ceiling errors (steveseguin/b70-optimization-lab, gmh5225/awesome-game-security).
+  Valid results retained. Attempt watermark 2026-10-18T21:33:47.976Z; last successful
+  watermark 2026-10-18T16:35:30.489Z (run 39145665017). Not exhaustive discovery.
+- See [daily evidence](../reports/review/2026-10-19.json),
+  [local gates](../reports/review/2026-10-19-gates.json) and
+  [weekly reconciliation](../reports/review/2026-10-19-weekly.json).
+  The weekly report separately compares main, PR #2, prior PR #28, PRs #32/#33,
+  the updated audit and the untouched user WIP; it checks counts, keys, catalog
+  mappings, 40-character source SHAs and generated README drift.
+  See the [weekly summary](../reports/review/2026-10-19-weekly.md) for anomalies
+  and human decisions. Node 22.23.1 passes 85/85 focused and 104/104 full tests,
+  complete ledger, README/type/format/whitespace gates and production-origin build.
+  Two stale historical test expectations were corrected before rerunning all gates.
+  Export produces 7,294 pages / 36,476 files / 534,558,308 bytes, exceeding the
+  last verified 20,000-file limit; build success does not imply deployability.
+- [Release preflight](../reports/review/2026-10-19-release-preflight.json) returned
+  Cloudflare HTTP 401 at 2026-10-19T01:01:17.342Z. Provider configuration, build logs
+  and canonical production commit cannot be refreshed. The last verified
+  20,000-file ceiling and unproven same-commit CI-before-production dependency
+  remain separate release gates. Existing workflows/provider configuration are
+  unchanged; same-head GitHub quality and Cloudflare preview must be checked after
+  push. A successful discovery preview does not certify audit or production.
+- Read-only production checks at 2026-10-19T01:01:19Z: root, /plugins/, /review/
+  return 200; /en/ returns 301 to root. Live exact IDs match main's 1,020 reviewed
+  and 689 held/excluded, not this unmerged audit. No merge, rollback, local
+  production deploy, manual upload, or deployment retry is performed.
+- No candidate package, code, hook, test, installer, binary, browser/server,
+  Python environment, native helper or MCP server was executed. Static review
+  is not runtime safety or compatibility proof.
+
 ## 2026-10-18 — Daily fixed-source review
 
 - Beijing Sunday; weekly reconciliation is not due. Original checkout WIP and

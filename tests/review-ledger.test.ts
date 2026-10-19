@@ -426,8 +426,46 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 5030 records (0 pending).",
+    "Review ledger valid: 5163 records (0 pending).",
   );
+});
+
+test("October 19 distinguishes renamed repositories, actual templates and patch identities", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  assert.equal(
+    current.sourceCommit,
+    "d5f5b2007a901ac04bb4c28c319e1bb6307d0cfb",
+  );
+  for (const [key, disposition, catalogId] of [
+    [
+      "1373676024:packages/deepseekbot/package.json",
+      "duplicate-or-superseded",
+      "botharness-botharness",
+    ],
+    [
+      "1373676024:packages/todo/package.json",
+      "example-fixture-or-archive",
+      null,
+    ],
+    [
+      "1216785679:integrations/dsh-plugin/package.json",
+      "non-plugin-package",
+      null,
+    ],
+    ["1359659239:package.json", "structural-rejected", null],
+    [
+      "1351850830:scene-template/package.json",
+      "duplicate-or-superseded",
+      "wuzhiping-cordis-plugins",
+    ],
+  ]) {
+    const record = current.records.find(
+      (item: { key: string }) => item.key === key,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, catalogId);
+    assert.match(record?.commit ?? "", /^[a-f0-9]{40}$/);
+  }
 });
 
 test("October 18 treats the empty Git core patch as infrastructure", () => {
@@ -497,7 +535,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "735e7013f38b7401cfe95501a2d30eaeda03a254",
+    "d5f5b2007a901ac04bb4c28c319e1bb6307d0cfb",
   );
 });
 
@@ -521,7 +559,12 @@ test("October 16 distinguishes live scene templates, fixtures and conflicting fo
       (item: { key: string }) => item.key === key,
     );
     assert.equal(record?.disposition, disposition);
-    assert.equal(record?.catalogId, null);
+    assert.equal(
+      record?.catalogId,
+      key === "1351850830:scene-template/package.json"
+        ? "wuzhiping-cordis-plugins"
+        : null,
+    );
     assert.match(record?.commit ?? "", /^[a-f0-9]{40}$/);
     assert.ok(record?.reason.length > 40);
   }

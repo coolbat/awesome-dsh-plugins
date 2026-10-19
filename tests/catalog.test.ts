@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1348);
+  assert.equal(plugins.length, 1365);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,85 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3560,
-    reviewed: 1348,
-    held: 2207,
+    total: 3641,
+    reviewed: 1365,
+    held: 2271,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3560);
+  assert.equal(getEvidenceRecords().length, 3641);
+});
+
+test("October 19 admissions preserve fixed identity and capability disclosures", () => {
+  for (const [id, signal] of [
+    ["3588834014-del-bilibili-note-plugin", "user-cookie-access"],
+    ["aikunx-dsh-mt-mcp", "remote-mcp"],
+    ["billcx330-dsh-plugin-session-delete", "destructive-session-delete"],
+    ["jwe24-code-dsh-jev-loop", "external-judgment-service"],
+    ["ldwdg-dsh-wsl-file-open", "native-helper"],
+    ["leonz666-dsh-gitworktree-gui", "read-only-git"],
+    ["linshufan21-dsh-boot-compass", "native-window-introspection"],
+    ["littepointr-dsh-prompt-forecast", "additional-model-cost"],
+    ["littepointr-dsh-turn-recap", "additional-model-cost"],
+    ["ningyuanlee-dsh-image-viewer-pro", "clipboard-access"],
+    ["oliblue-evan-dsh-liao-models", "model-selection"],
+    ["qjf44-dsh-plugin-thinking-api", "credential-access"],
+    ["songjongdevsecops-dsh-arquivadas", "session-restore"],
+    ["tkhs101-dsh-official-cleanup", "host-setting-override"],
+    ["zhourenke-dsh-reasoning-merge", "llm-stream-transform"],
+    ["zhourenke-dsh-reasoning-mode", "global-fetch-wrapper"],
+    ["zhourenke-dsh-reasoning-summary", "additional-model-cost"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "reviewed");
+    assert.match(plugin?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(plugin?.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin?.compatibility, "unknown");
+    assert.ok(plugin?.signals.includes(signal));
+  }
+});
+
+test("October 19 holds retain concrete authorization and execution concerns", () => {
+  for (const id of [
+    "arun1016-dsh-cost",
+    "dongfangxy-dsh-open-project",
+    "m1r0er-dsh-workspace-gate",
+    "oliblue-evan-dsh-liao-github",
+    "oliblue-evan-dsh-liao-usage",
+    "sukjg1052-dsh-plugin-session-delete",
+    "xiez0324-rgb-dsh-dual-bridge",
+    "zjxj-nacl-dsh-image-studio",
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes("authorization-boundary-unresolved"));
+  }
+  for (const id of [
+    "434210jiuqi-coder-dsh-sync-autovpn",
+    "csuwzw-dsh-restart",
+    "lecywza-dsh-opencode-mode",
+    "ningyuanlee-dsh-gui-auth-url",
+    "qikairo7-dsh-web-search-fetch",
+  ]) {
+    assert.ok(
+      getPluginBySlug(id)?.signals.includes("runtime-policy-unresolved"),
+    );
+  }
+  assert.match(
+    getPluginBySlug("cyclezero-dsh-ulanworker")?.repoLicense ?? "",
+    /Sustainable Use/,
+  );
+  assert.match(
+    getPluginBySlug("piedpipermoney-dsh-skill-portfolio")?.repoLicense ?? "",
+    /commercial attribution/,
+  );
+  assert.match(
+    getPluginBySlug("xinyang20-dsh-campus-seu")?.repoLicense ?? "",
+    /CC-BY-SA/,
+  );
+  assert.equal(getPluginBySlug("botharness-deepseekbot"), null);
+  assert.equal(getPluginBySlug("esengine-deepseek-reasonix"), null);
+  assert.equal(getPluginBySlug("seiuna-dsh-bilibili-plugin"), null);
 });
 
 test("October 18 admissions preserve fixed identity and capability disclosures", () => {
