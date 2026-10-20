@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1365);
+  assert.equal(plugins.length, 1367);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,49 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 3641,
-    reviewed: 1365,
-    held: 2271,
+    total: 3680,
+    reviewed: 1367,
+    held: 2308,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 3641);
+  assert.equal(getEvidenceRecords().length, 3680);
+});
+
+test("October 20 admissions retain fixed source and credential disclosures", () => {
+  for (const [id, signal] of [
+    ["mrguang123-dsh-theme-caishen", "read-only-assets"],
+    ["shuffle-1992-dsh-connect-zcode", "encrypted-store-read"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "reviewed");
+    assert.match(plugin?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(plugin?.patchUrl?.includes(plugin.commit));
+    assert.notEqual(plugin?.compatibility, "unknown");
+    assert.ok(plugin?.signals.includes(signal));
+    assert.ok(plugin?.signals.includes("static-relative-closure"));
+  }
+});
+
+test("October 20 holds distinguish policy, authorization, artifact and license gaps", () => {
+  for (const [id, signal] of [
+    ["sal7one-dsh-design-studio", "authorization-boundary-unresolved"],
+    ["skepsun-dsh-engram", "workspace-boundary-unresolved"],
+    ["senguk520-dsh-multitask", "acl-permission-mutation"],
+    ["jsonling-trae-cn-provider", "upstream-policy-warning"],
+    ["rongyishuaige7-dsh-stats", "archive-capture-limit"],
+    ["zh-xx-antu", "generated-artifact-unmapped"],
+    ["unifilitence-dsh-notify-say", "third-party-voice-license-scope"],
+    ["hyperion2144-dsh-desktop-bun", "distinct-repository-install-target"],
+    ["yepyeel-dsh-prompt-suggestion", "compatibility-unresolved"],
+  ]) {
+    const plugin = getPluginBySlug(id);
+    assert.equal(plugin?.status, "held");
+    assert.ok(plugin?.signals.includes(signal));
+  }
+  assert.equal(getPluginBySlug("dxww123-dsh-alphasolve"), null);
+  assert.equal(getPluginBySlug("ejydovo-character-agent-v1"), null);
+  assert.equal(getPluginBySlug("qingyuna-answer-me-with-html"), null);
 });
 
 test("October 19 admissions preserve fixed identity and capability disclosures", () => {

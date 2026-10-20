@@ -1,5 +1,75 @@
 # Review log
 
+## 2026-10-20 — Daily fixed-source review
+
+- Beijing Tuesday; no weekly reconciliation was due. Original checkout WIP and
+  m40 artifacts remain untouched. Isolated branch
+  `codex/review-new-candidates-20261020` continues audit
+  `d0f07f3faf06936855781dc93481ed2d18776427`, containing origin/main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`. Only cumulative audit PR #28 is
+  updated; discovery PR #2 and independent PRs #32/#33 are not merge targets.
+- Frozen PR #2: `c965153ad0642372882b5a8639e360ff6d68985d`.
+  Queue 6,924 = 1,656 already-listed + 5,227 ready + 41 discovery-held.
+  Processed 183 fixed identities: 64 new keys and 119 changed-source records;
+  5,044 exact key/commit decisions preserve original dates and outcomes.
+  All 183 fixed manifest/patch pairs match. Of 42 possible catalog representatives,
+  41 archive manifest/patch pairs match and one archive exceeds the 25 MB capture
+  ceiling; that limitation is not evidence of upstream unavailability.
+- Fresh dispositions: 2 catalog-reviewed, 37 catalog-held, 82 duplicate/superseded,
+  46 source-conflict, 14 example/fixture/archive and 2 non-plugin-package.
+  Fresh catalog-excluded, unavailable and structural-rejected: 0; pending: 0.
+  Ledger 5,227 = 262 catalog-reviewed + 1,307 catalog-held + 3 catalog-excluded +
+  1,686 duplicate/superseded + 1,251 source-conflict + 425 fixture/archive +
+  214 non-plugin-package + 75 unavailable + 4 structural-rejected.
+  Catalog 3,680 = 1,367 reviewed + 2,308 held + 5 excluded. All prior 3,641
+  catalog records remain JSON-equivalent; duplicate revisions do not recertify
+  or silently replace those retained snapshots. Discovery-held is a queue status,
+  distinct from both catalog-held and ledger pending.
+- Admissions: Caishen theme (MIT artwork scope, exact DSH engine, path-contained
+  read-only asset routes and local prompt cards) and ZCode Coding Plan integration
+  (versioned DSH contract, local credential-store access, provider network calls
+  and redacted read-only status). Own Git installation, same-commit native patch
+  and entry files, licensing, lifecycle and capability signals were inspected.
+  Literal relative source closure was checked for these and three held packages;
+  it is not an exhaustive dynamic/transitive dependency or runtime verification.
+- Holds retain specific evidence gaps. Design Studio's same-origin generated HTML
+  and POST API need an established host authorization boundary. Engram's global
+  callId archive recall does not check the caller workspace in its inspected
+  handler. Multitask's automatic WRITE_OWNER repair and guard/approval changes
+  require execution-policy review. Trae's author warns of upstream terms/account
+  risk; this is a source claim, not a legal determination. Voice-pack redistribution
+  and television-dialogue scope remain distinct from MIT code licensing.
+- AlphaSolve explicitly distinguishes published npm 0.4.0 from the current
+  unpublished DSH-targeting source, so it is source-conflict. Character-extras has
+  an empty patch; Answer-me-with-HTML is an empty entry plus official skill
+  composition. Clawock and OpenViking are documented installable integrations
+  despite their examples paths: their mismatched npm gitHeads, not path names,
+  establish source-conflict. The SDLC mock is explicitly TEST-ONLY. Hyperion's Bun
+  and Tauri repositories have different numeric IDs, leaving installation mapping
+  unresolved rather than treating them as a rename.
+- Discovery [run 39338221692](https://github.com/coolbat/awesome-dsh-plugins/actions/runs/39338221692)
+  failed partially: 5 queries, 60 repositories, 65 manifests and two 5 MB response
+  ceiling errors (Ephemeral-AI-Lab/layerfs, stablyai/orca). Valid results retained;
+  latest attempt 2026-10-19T22:55:26.919Z, last successful watermark
+  2026-10-18T16:35:30.489Z. This is not exhaustive discovery.
+- See [daily evidence](../reports/review/2026-10-20.json),
+  [local gates](../reports/review/2026-10-20-gates.json) and
+  [release preflight](../reports/review/2026-10-20-release-preflight.json).
+  Provider API returned HTTP 401, so current configuration, canonical production
+  commit and logs cannot be refreshed. The last verified 20,000-file limit and
+  unproven same-production-commit quality-before-deployment dependency remain
+  independent release blockers. A source PR preview success does not certify
+  audit PR #28 or production. No workflow/provider/plan/protection changes,
+  candidate execution, automatic merge, local production deployment or rollback
+  were performed by this review.
+- Static review is evidence classification, not runtime safety or compatibility
+  proof. Exact post-push checks and production HTTP observations are reported
+  separately from the local source/build result.
+- Node 22.23.1 passes 88/88 focused and 107/107 full tests, complete-ledger,
+  README/type/format/whitespace gates and the production-origin build. Export:
+  7,372 pages / 36,866 files / 540,225,333 bytes, above the last verified
+  20,000-file ceiling. Local build success does not establish deployability.
+
 ## 2026-10-19 — Daily fixed-source review and weekly reconciliation
 
 - Beijing Monday. Original checkout WIP and m40 artifacts remain untouched.

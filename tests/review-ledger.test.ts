@@ -426,7 +426,46 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 5163 records (0 pending).",
+    "Review ledger valid: 5227 records (0 pending).",
+  );
+});
+
+test("October 20 separates empty scaffolds, skill compositions and published source conflicts", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [repository, manifest, disposition] of [
+    ["dxww123/dsh-alphasolve", "package.json", "source-conflict"],
+    [
+      "EJYDOvO/Character-Agent-V1",
+      "bundles/character-extras/package.json",
+      "non-plugin-package",
+    ],
+    ["QingyunA/answer-me-with-html", "package.json", "non-plugin-package"],
+    [
+      "KCNyu/clawock",
+      "examples/dsh/packages/clawock-dsh/package.json",
+      "source-conflict",
+    ],
+    [
+      "volcengine/OpenViking",
+      "examples/dsh-memory-plugin/package.json",
+      "source-conflict",
+    ],
+  ]) {
+    const record = current.records.find(
+      (item: { repository: string; manifest: string }) =>
+        item.repository.toLowerCase() === repository.toLowerCase() &&
+        item.manifest === manifest,
+    );
+    assert.equal(record?.disposition, disposition);
+    assert.equal(record?.catalogId, null);
+    assert.match(record?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(record?.reason.length > 80);
+  }
+  assert.equal(
+    current.records.filter(
+      (item: { disposition: string }) => item.disposition === "pending",
+    ).length,
+    0,
   );
 });
 
@@ -434,7 +473,7 @@ test("October 19 distinguishes renamed repositories, actual templates and patch 
   const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
   assert.equal(
     current.sourceCommit,
-    "d5f5b2007a901ac04bb4c28c319e1bb6307d0cfb",
+    "c965153ad0642372882b5a8639e360ff6d68985d",
   );
   for (const [key, disposition, catalogId] of [
     [
@@ -535,7 +574,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "d5f5b2007a901ac04bb4c28c319e1bb6307d0cfb",
+    "c965153ad0642372882b5a8639e360ff6d68985d",
   );
 });
 
