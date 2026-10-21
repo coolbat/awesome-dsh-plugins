@@ -426,7 +426,7 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 5227 records (0 pending).",
+    "Review ledger valid: 5336 records (0 pending).",
   );
 });
 
@@ -473,7 +473,7 @@ test("October 19 distinguishes renamed repositories, actual templates and patch 
   const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
   assert.equal(
     current.sourceCommit,
-    "c965153ad0642372882b5a8639e360ff6d68985d",
+    "4dcbebe8e5b98c8d193ab8d85e2bae9500970c66",
   );
   for (const [key, disposition, catalogId] of [
     [
@@ -574,7 +574,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "c965153ad0642372882b5a8639e360ff6d68985d",
+    "4dcbebe8e5b98c8d193ab8d85e2bae9500970c66",
   );
 });
 
@@ -627,6 +627,74 @@ test("October 14 separates source conflicts, host distributions, wrappers and sh
     assert.equal(record?.catalogId, null);
     assert.match(record?.commit, /^[a-f0-9]{40}$/);
   }
+});
+
+test("October 21 distinguishes shipped vendor components, probes and skill-only composition", () => {
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [repository, manifest, disposition] of [
+    ["Memory175/blender-mentor", "package.json", "non-plugin-package"],
+    [
+      "codezzzsleep/dsh-local-global",
+      "packages/dsh-lg-global/probe/package.json",
+      "example-fixture-or-archive",
+    ],
+    [
+      "Max-Null/seek-soul-in-darkness",
+      "shell/profile-template/vendor/dsh-better-sidebar/package.json",
+      "source-conflict",
+    ],
+    [
+      "Max-Null/seek-soul-in-darkness",
+      "shell/profile-template/vendor/dsh-capture/package.json",
+      "source-conflict",
+    ],
+    [
+      "Max-Null/seek-soul-in-darkness",
+      "shell/profile-template/vendor/dsh-ssid-panels/package.json",
+      "duplicate-or-superseded",
+    ],
+    ["mindie-agent/mindie-agent-dsh", "package.json", "catalog-held"],
+  ]) {
+    const row = current.records.find(
+      (item: { repository: string; manifest: string }) =>
+        item.repository.toLowerCase() === repository.toLowerCase() &&
+        item.manifest === manifest,
+    );
+    assert.equal(row?.disposition, disposition);
+    assert.match(row?.commit ?? "", /^[a-f0-9]{40}$/);
+  }
+});
+
+test("October 21 preserves trust-boundary holds and code versus artwork licensing", () => {
+  const catalog = JSON.parse(readFileSync("data/plugins.json", "utf8"));
+  for (const id of [
+    "xbbkok-dsh-user-profile",
+    "severuszh-dsh-ollama-usage",
+    "zneoxlab-dsh-deepseek-webdesk",
+    "klienkross-dsh-reverie",
+  ]) {
+    const row = catalog.plugins.find((item: { id: string }) => item.id === id);
+    assert.equal(row?.status, "held");
+    assert.ok(row?.signals.includes("authorization-boundary-unresolved"));
+  }
+  const theme = catalog.plugins.find(
+    (item: { id: string }) => item.id === "kurosawageeker-dsh-moe-clean",
+  );
+  assert.equal(theme?.status, "reviewed");
+  assert.equal(theme?.license, "MIT (code); CC BY-NC-SA-4.0 (artwork)");
+  const report = JSON.parse(
+    readFileSync("reports/review/2026-10-21.json", "utf8"),
+  );
+  assert.equal(report.freshCount, 225);
+  assert.equal(report.newKeys, 109);
+  assert.equal(report.changedSource, 116);
+  assert.equal(report.pending, 0);
+  const patch = report.archiveVerification.find(
+    (item: { id: string }) => item.id === "phocinae-dsh-evidence",
+  );
+  assert.equal(patch.patchRawExactMatch, false);
+  assert.equal(patch.patchMatch, true);
+  assert.match(patch.decodingNormalization, /Leading UTF-8 BOM only/);
 });
 
 test("October 13 separates the hello template and desktop host from native plugins", () => {
