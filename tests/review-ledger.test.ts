@@ -426,7 +426,7 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 5336 records (0 pending).",
+    "Review ledger valid: 5464 records (0 pending).",
   );
 });
 
@@ -473,7 +473,7 @@ test("October 19 distinguishes renamed repositories, actual templates and patch 
   const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
   assert.equal(
     current.sourceCommit,
-    "4dcbebe8e5b98c8d193ab8d85e2bae9500970c66",
+    "5cd268b7689ab0b809df7219a33defe628b204c1",
   );
   for (const [key, disposition, catalogId] of [
     [
@@ -574,7 +574,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "4dcbebe8e5b98c8d193ab8d85e2bae9500970c66",
+    "5cd268b7689ab0b809df7219a33defe628b204c1",
   );
 });
 
@@ -711,5 +711,141 @@ test("October 13 separates the hello template and desktop host from native plugi
     assert.equal(record.catalogId, null);
     assert.match(record.commit, /^[a-f0-9]{40}$/);
     assert.ok(record.reason.length > 40);
+  }
+});
+
+test("October 22 separates probes, presets, renamed repositories and local-path conflicts", () => {
+  const ledger = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [repository, manifest, disposition] of [
+    [
+      "serhaturtis/dsh-su",
+      "plugins/hello/package.json",
+      "example-fixture-or-archive",
+    ],
+    [
+      "serhaturtis/dsh-su",
+      "plugins/status-widget/package.json",
+      "catalog-held",
+    ],
+    [
+      "EquentR/dsh_plugins",
+      "obedient-preset/package.json",
+      "non-plugin-package",
+    ],
+    [
+      "wingsky-1/dsh-plugin-hub",
+      "packages/dsh-verify-isolated/package.json",
+      "non-plugin-package",
+    ],
+    [
+      "RestRegular/dsh-memory",
+      "source/memory-panel/package.json",
+      "source-conflict",
+    ],
+    [
+      "BotHarness/DeepSeekBot",
+      "packages/deepseekbot/package.json",
+      "duplicate-or-superseded",
+    ],
+  ]) {
+    const row = ledger.records.find(
+      (item: { repository: string; manifest: string }) =>
+        item.repository.toLowerCase() === repository.toLowerCase() &&
+        item.manifest === manifest,
+    );
+    assert.equal(row?.disposition, disposition);
+    assert.match(row?.commit ?? "", /^[a-f0-9]{40}$/);
+    assert.ok(row?.reason.length > 80);
+  }
+  const report = JSON.parse(
+    readFileSync("reports/review/2026-10-22.json", "utf8"),
+  );
+  assert.equal(report.freshCount, 229);
+  assert.equal(report.newKeys, 128);
+  assert.equal(report.changedSource, 101);
+  assert.equal(report.reusedExact, 5235);
+  assert.equal(report.pending, 0);
+  assert.deepEqual(report.catalogAdded, { held: 68, reviewed: 1 });
+  assert.equal(
+    Object.values(report.freshDispositions).reduce(
+      (sum: number, value) => sum + Number(value),
+      0,
+    ),
+    229,
+  );
+});
+
+test("October 22 requires native source and retains authorization holds", () => {
+  const catalog = JSON.parse(readFileSync("data/plugins.json", "utf8"));
+  const freeweb = catalog.plugins.find(
+    (item: { id: string }) => item.id === "explorerzyzhou-dsh-freeweb",
+  );
+  assert.equal(freeweb?.status, "reviewed");
+  assert.match(freeweb?.noteEn ?? "", /freeweb-search.js/);
+  for (const id of [
+    "144guanguan-dsh-plugins",
+    "autodog875-dsh-agent-progress",
+    "good-saltfish-dsh-novel-shelf",
+  ]) {
+    const row = catalog.plugins.find((item: { id: string }) => item.id === id);
+    assert.equal(row?.status, "held");
+    assert.ok(row?.signals.includes("authorization-boundary-unresolved"));
+  }
+  const representative = catalog.plugins.find(
+    (item: { id: string }) => item.id === "serhaturtis-dsh-su",
+  );
+  assert.equal(representative?.manifest, "plugins/status-widget/package.json");
+  assert.equal(
+    catalog.plugins.some(
+      (item: { id: string }) => item.id === "botharness-deepseekbot",
+    ),
+    false,
+  );
+});
+
+test("October 22 repository renames retain catalog identity by numeric GitHub ID", () => {
+  const ledger = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  const catalog = JSON.parse(readFileSync("data/plugins.json", "utf8"));
+  const report = JSON.parse(
+    readFileSync("reports/review/2026-10-22.json", "utf8"),
+  );
+  for (const [repositoryId, removedId, retainedId] of [
+    [
+      249995750,
+      "reactive-resume-reactive-resume",
+      "amruthpillai-reactive-resume",
+    ],
+    [1333860715, "jiangnanquan-dsh-uxexo", "jiangnanquan-dsh-ux"],
+    [1426681664, "kurosawageeker-dsh-moe-lite", "kurosawageeker-dsh-moe-clean"],
+    [
+      1389961028,
+      "underworld-oddball-dsh-volume-knob",
+      "underworld-oddball-sh-volume-shuff",
+    ],
+  ] as const) {
+    assert.equal(
+      catalog.plugins.some((row: { id: string }) => row.id === removedId),
+      false,
+    );
+    assert.equal(
+      catalog.plugins.filter((row: { id: string }) => row.id === retainedId)
+        .length,
+      1,
+    );
+    const rows = ledger.records.filter(
+      (row: { key: string; reviewedAt: string }) =>
+        row.key.startsWith(`${repositoryId}:`) &&
+        row.reviewedAt === "2026-10-22",
+    );
+    assert.equal(rows.length, 1);
+    assert.equal(rows[0].disposition, "duplicate-or-superseded");
+    assert.equal(rows[0].catalogId, retainedId);
+    const alias = report.repositoryAliasChecks.find(
+      (row: { repositoryId: number }) => row.repositoryId === repositoryId,
+    );
+    assert.equal(alias?.responses?.length, 2);
+    assert.ok(
+      alias.responses.every((row: { id: number }) => row.id === repositoryId),
+    );
   }
 });

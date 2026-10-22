@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-22T01:21:35.474Z",
+  "node": "v22.23.1",
+  "productionBuildEnvironment": {
+    "NEXT_PUBLIC_SITE_URL": "https://dshplugin.net"
+  },
+  "deploymentLimitEvidence": "20000 files last verified 2026-10-15; current provider API returned 401, so current configuration is not re-certified.",
+  "preliminaryFailures": [
+    {
+      "gate": "focused-tests",
+      "failure": "Three existing Reactive Resume rename regression tests failed before reconciliation.",
+      "resolution": "Verified immutable GitHub repository IDs; removed four renamed duplicate catalog additions and retained historical snapshots. Original regression assertions preserved."
+    }
+  ],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-22T01:20:41.978Z",
+      "finishedAt": "2026-10-22T01:20:42.525Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-22T01:20:42.528Z",
+      "finishedAt": "2026-10-22T01:20:54.614Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-22T01:20:54.614Z",
+      "finishedAt": "2026-10-22T01:20:54.737Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-22T01:20:54.738Z",
+      "finishedAt": "2026-10-22T01:20:54.941Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-22T01:20:54.942Z",
+      "finishedAt": "2026-10-22T01:21:34.971Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 38206,
+    "bytes": 559453329,
+    "largest": [
+      {
+        "path": "out/_next/static/chunks/3n4kprrbz60mu.js",
+        "bytes": 5119221
+      },
+      {
+        "path": "out/review/index.html",
+        "bytes": 5024732
+      },
+      {
+        "path": "out/zh/review/index.html",
+        "bytes": 4916579
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}
