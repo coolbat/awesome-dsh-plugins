@@ -6032,15 +6032,15 @@
     },
     {
       "id": "ultronen-dsh-archived-chats",
-      "name": "DSH Archived Chats",
+      "name": "Archive Management / 归档管理",
       "repository": "Ultronen/dsh-archived-chats",
       "package": "dsh-archived-chats",
       "category": "UI & Workspace",
       "status": "reviewed",
-      "summaryEn": "A settings page for browsing, searching, restoring, and deleting archived sessions by workspace.",
-      "summaryZh": "按工作区浏览、搜索、恢复和删除已归档会话的设置页。",
+      "summaryEn": "Browse archived and unarchived chats; search archived content with context previews, add tags and notes, archive by workspace, import/export ZIP backups, confirm permanent deletion of archived chats, inspect read-only origins and branches, and manually check residual chats.",
+      "summaryZh": "浏览已归档与未归档会话，支持归档正文搜索与上下文预览、标签备注、工作区批量归档、ZIP 备份导入导出、已归档会话确认后永久删除、只读来源与分支和手动残留会话检查。",
       "branch": "main",
-      "commit": "8a6912e1f39f992e2d8bdf955b456b01e8927948",
+      "commit": "d02470d3dfd6515da4b23534ae440a0cccfd3823",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "repoLicense": "MIT",
@@ -6051,10 +6051,13 @@
         "session-data",
         "archive-registry",
         "filesystem-delete",
-        "client-injection"
+        "client-injection",
+        "zip-import-export",
+        "external-network",
+        "package-management"
       ],
-      "noteEn": "Fixed source, manifest, patch, available license evidence, and documented install identity were reviewed statically; plugin code and declared capabilities were not executed.",
-      "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
+      "noteEn": "Version 1.6.0 manifest, patch, licenses and install identity checked at the pinned release commit. New recycling and automatic retention are disabled; legacy records remain accessible when present. Manual residual-chat checks require explicit deletion confirmation. Update checks read public npm metadata; Host-supported updates install an explicitly selected package version. This evidence refresh did not execute the plugin or certify runtime compatibility.",
+      "noteZh": "已按 1.6.0 固定发布提交静态核对 manifest、patch、许可证与安装身份。停止新增回收和自动保留策略，存在旧记录时保留兼容入口；手动残留会话检查的删除需要明确确认。更新检查读取公开 npm 元数据，宿主支持时安装明确选定的包版本。本次证据更新未执行插件，也不认证运行时兼容性。"
     },
     {
       "id": "ustc-xef2-dsh-llm-ustc",
