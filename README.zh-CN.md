@@ -831,10 +831,10 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `unknown` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `session-data` `message-navigation` `client-injection` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
-- **Archive Management / 归档管理** · [Ultronen/dsh-archived-chats@ce6df37](https://github.com/Ultronen/dsh-archived-chats/commit/ce6df374da649eae306b9a7a5b73d1f3335ce7c9) — 管理已归档与未归档会话，支持搜索、预览、标签备注、工作区归档、ZIP 备份、选择操作、回收站恢复、空间与保留策略、来源分支和自动残留会话检查。
-  - **证据:** [manifest](https://github.com/Ultronen/dsh-archived-chats/blob/ce6df374da649eae306b9a7a5b73d1f3335ce7c9/package.json) → [patch](https://github.com/Ultronen/dsh-archived-chats/blob/ce6df374da649eae306b9a7a5b73d1f3335ce7c9/cordis.patch.yml) · **身份:** `dsh-archived-chats`
+- **Archive Management / 归档管理** · [Ultronen/dsh-archived-chats@d02470d](https://github.com/Ultronen/dsh-archived-chats/commit/d02470d3dfd6515da4b23534ae440a0cccfd3823) — 浏览已归档与未归档会话，支持归档正文搜索与上下文预览、标签备注、工作区批量归档、ZIP 备份导入导出、已归档会话确认后永久删除、只读来源与分支和手动残留会话检查。
+  - **证据:** [manifest](https://github.com/Ultronen/dsh-archived-chats/blob/d02470d3dfd6515da4b23534ae440a0cccfd3823/package.json) → [patch](https://github.com/Ultronen/dsh-archived-chats/blob/d02470d3dfd6515da4b23534ae440a0cccfd3823/cordis.patch.yml) · **身份:** `dsh-archived-chats`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
-  - **能力信号:** `session-data` `archive-registry` `filesystem-delete` `client-injection` `zip-import-export` `external-network` · **核验备注:** 已按 1.5.2 固定发布提交静态核对 manifest、patch、许可证、安装身份与用户可见功能。dsh.engines.dsh 声明宿主范围，本目录不认证运行时兼容性。lib/about.js 使用无请求体的 GET 检查公开 npm 版本元数据。本次证据更新未执行插件。
+  - **能力信号:** `session-data` `archive-registry` `filesystem-delete` `client-injection` `zip-import-export` `external-network` `package-management` · **核验备注:** 已按 1.6.0 固定发布提交静态核对 manifest、patch、许可证与安装身份。停止新增回收和自动保留策略，存在旧记录时保留兼容入口；手动残留会话检查的删除需要明确确认。更新检查读取公开 npm 元数据，宿主支持时安装明确选定的包版本。本次证据更新未执行插件，也不认证运行时兼容性。
 
 - **DSH Unarchive** · [uwu9039/dsh-unarchive@5f10e58](https://github.com/uwu9039/dsh-unarchive/commit/5f10e58188d808a12414ff134216f87fdb2d2ca9) — 带预览、恢复与可选归档确认的会话回收站。
   - **证据:** [manifest](https://github.com/uwu9039/dsh-unarchive/blob/5f10e58188d808a12414ff134216f87fdb2d2ca9/package.json) → [patch](https://github.com/uwu9039/dsh-unarchive/blob/5f10e58188d808a12414ff134216f87fdb2d2ca9/cordis.patch.yml) · **身份:** Git 源 / 未知
