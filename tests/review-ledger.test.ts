@@ -426,7 +426,7 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 5464 records (0 pending).",
+    "Review ledger valid: 5592 records (0 pending).",
   );
 });
 
@@ -473,7 +473,7 @@ test("October 19 distinguishes renamed repositories, actual templates and patch 
   const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
   assert.equal(
     current.sourceCommit,
-    "5cd268b7689ab0b809df7219a33defe628b204c1",
+    "ee152dd27e9397483ea2eca3a621a0fd210430d4",
   );
   for (const [key, disposition, catalogId] of [
     [
@@ -574,7 +574,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "5cd268b7689ab0b809df7219a33defe628b204c1",
+    "ee152dd27e9397483ea2eca3a621a0fd210430d4",
   );
 });
 
@@ -715,7 +715,15 @@ test("October 13 separates the hello template and desktop host from native plugi
 });
 
 test("October 22 separates probes, presets, renamed repositories and local-path conflicts", () => {
-  const ledger = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  const report = JSON.parse(
+    readFileSync("reports/review/2026-10-22.json", "utf8"),
+  );
+  // Historical assertions use their frozen evidence, not a subsequently changed source SHA.
+  const ledger = {
+    records: report.evidence.map(
+      (item: { decision: unknown }) => item.decision,
+    ),
+  };
   for (const [repository, manifest, disposition] of [
     [
       "serhaturtis/dsh-su",
@@ -757,9 +765,6 @@ test("October 22 separates probes, presets, renamed repositories and local-path 
     assert.match(row?.commit ?? "", /^[a-f0-9]{40}$/);
     assert.ok(row?.reason.length > 80);
   }
-  const report = JSON.parse(
-    readFileSync("reports/review/2026-10-22.json", "utf8"),
-  );
   assert.equal(report.freshCount, 229);
   assert.equal(report.newKeys, 128);
   assert.equal(report.changedSource, 101);
@@ -832,14 +837,22 @@ test("October 22 repository renames retain catalog identity by numeric GitHub ID
         .length,
       1,
     );
-    const rows = ledger.records.filter(
-      (row: { key: string; reviewedAt: string }) =>
-        row.key.startsWith(`${repositoryId}:`) &&
-        row.reviewedAt === "2026-10-22",
-    );
+    const rows = report.evidence
+      .map((item: { decision: unknown }) => item.decision)
+      .filter(
+        (row: { key: string; reviewedAt: string }) =>
+          row.key.startsWith(`${repositoryId}:`) &&
+          row.reviewedAt === "2026-10-22",
+      );
     assert.equal(rows.length, 1);
     assert.equal(rows[0].disposition, "duplicate-or-superseded");
     assert.equal(rows[0].catalogId, retainedId);
+    const currentRows = ledger.records.filter((row: { key: string }) =>
+      row.key.startsWith(`${repositoryId}:`),
+    );
+    assert.equal(currentRows.length, 1);
+    assert.equal(currentRows[0].disposition, "duplicate-or-superseded");
+    assert.equal(currentRows[0].catalogId, retainedId);
     const alias = report.repositoryAliasChecks.find(
       (row: { repositoryId: number }) => row.repositoryId === repositoryId,
     );
@@ -847,5 +860,182 @@ test("October 22 repository renames retain catalog identity by numeric GitHub ID
     assert.ok(
       alias.responses.every((row: { id: number }) => row.id === repositoryId),
     );
+  }
+});
+
+test("October 23 reconciles every fixed-source delta without recertifying retained snapshots", () => {
+  const report = JSON.parse(
+    readFileSync("reports/review/2026-10-23.json", "utf8"),
+  );
+  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  assert.equal(report.sourceCommit, current.sourceCommit);
+  assert.equal(report.freshCount, 233);
+  assert.equal(report.newKeys, 128);
+  assert.equal(report.changedSource, 105);
+  assert.equal(report.reusedExact, 5359);
+  assert.equal(report.pending, 0);
+  assert.deepEqual(report.queue, {
+    "already-listed": 1654,
+    "ready-for-review": 5592,
+    held: 41,
+  });
+  assert.deepEqual(report.catalogAdded, { held: 55 });
+  assert.deepEqual(report.catalog, { reviewed: 1374, held: 2490, excluded: 5 });
+  assert.deepEqual(report.freshDispositions, {
+    "catalog-held": 55,
+    "source-conflict": 37,
+    "non-plugin-package": 4,
+    "duplicate-or-superseded": 116,
+    "example-fixture-or-archive": 20,
+    unavailable: 1,
+  });
+  assert.equal(
+    current.records.filter(
+      (r: { reviewedAt: string }) => r.reviewedAt === "2026-10-23",
+    ).length,
+    233,
+  );
+  for (const item of report.evidence) {
+    assert.match(item.candidate.commit, /^[a-f0-9]{40}$/);
+    assert.equal(item.decision.commit, item.candidate.commit);
+    assert.notEqual(item.decision.disposition, "pending");
+    if (item.decision.disposition !== "unavailable") {
+      assert.equal(item.manifest.status, 200);
+      assert.equal(item.patch.status, 200);
+      assert.equal(item.patch.matchesCandidate, true);
+    }
+  }
+  assert.match(report.discovery.coverage, /Partial.*Not exhaustive/s);
+});
+
+test("October 23 distinguishes native bundles from profiles, scaffolds and probes", () => {
+  const ledger = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  for (const [repository, manifest, disposition] of [
+    [
+      "KCNyu/clawock",
+      "examples/dsh/packages/clawock-dsh/package.json",
+      "source-conflict",
+    ],
+    [
+      "BotHarness/DeepSeekBot",
+      "packages/todo/package.json",
+      "example-fixture-or-archive",
+    ],
+    [
+      "baitouwuya/dsh-mcp-server",
+      "selfcheck/package.json",
+      "example-fixture-or-archive",
+    ],
+    [
+      "cyanwell/dsh-agent-soul",
+      "tools/soul-probe/package.json",
+      "example-fixture-or-archive",
+    ],
+    [
+      "wakeUpGitHub/dsh-plugin-market",
+      "package.json",
+      "example-fixture-or-archive",
+    ],
+    ["zxr121/MyDearFish", "fish/bundle/package.json", "non-plugin-package"],
+    [
+      "zxr121/MyDearFish",
+      "fish/plugins/dsh-fish-mind/package.json",
+      "catalog-held",
+    ],
+    [
+      "serhaturtis/dsh-su",
+      "plugins/hello/package.json",
+      "example-fixture-or-archive",
+    ],
+    [
+      "serhaturtis/dsh-su",
+      "plugins/rate-hours/package.json",
+      "example-fixture-or-archive",
+    ],
+  ]) {
+    const row = ledger.records.find(
+      (r: { repository: string; manifest: string }) =>
+        r.repository.toLowerCase() === repository.toLowerCase() &&
+        r.manifest === manifest,
+    );
+    assert.equal(row?.disposition, disposition, `${repository}:${manifest}`);
+  }
+  const records = JSON.parse(
+    readFileSync("data/review-catalog-m83.json", "utf8"),
+  ).catalogRecords;
+  const fish = records.find(
+    (r: { id: string }) => r.id === "zxr121-mydearfish",
+  );
+  assert.equal(fish.manifest, "fish/plugins/dsh-fish-mind/package.json");
+  for (const id of [
+    "arienax-dsh-gxworks",
+    "raktim-mondol-academic-harness",
+    "longge1213812138-dsh-anon-mode",
+  ]) {
+    const row = records.find((r: { id: string }) => r.id === id);
+    assert.equal(row?.status, "held");
+    assert.ok(row.signals.includes("native-bundle"));
+  }
+  assert.equal(
+    records.some(
+      (r: { id: string }) => r.id === "wakeupgithub-dsh-plugin-market",
+    ),
+    false,
+  );
+});
+
+test("October 23 preserves declared releases and corrected license scopes", () => {
+  const records = JSON.parse(
+    readFileSync("data/review-catalog-m83.json", "utf8"),
+  ).catalogRecords;
+  for (const id of [
+    "arienax-dsh-gxworks",
+    "cxv117793-blip-dsh-step-pause",
+    "elsmm-player-dsh-phone-theme-tool",
+    "kadima-code-dsh-subagent-toolkit",
+    "rasyidmmz-dsh-ai-memory",
+    "xinming-chenniang-dsh-longshot",
+    "xraytest-exneo-useful-dsh-workshop",
+    "yzmin-dsh-whale-pet",
+  ]) {
+    const row = records.find((r: { id: string }) => r.id === id);
+    assert.notEqual(row.compatibility, "unknown");
+    assert.equal(row.signals.includes("compatibility-unresolved"), false);
+  }
+  assert.equal(
+    records.find((r: { id: string }) => r.id === "noctfom-galatea-link-dsh")
+      .repoLicense,
+    "GPL-3.0",
+  );
+  assert.equal(
+    records.find(
+      (r: { id: string }) => r.id === "tests4gptplay-dsh-kujira-persona",
+    ).repoLicense,
+    "CC-BY-NC-SA-4.0",
+  );
+  assert.equal(
+    records.find(
+      (r: { id: string }) => r.id === "xraytest-exneo-useful-dsh-workshop",
+    ).repoLicense,
+    "LGPL-3.0 (root; AGPL-3.0 exceptions)",
+  );
+});
+
+test("October 23 retains missing-module, consent, sandbox and resource-boundary evidence", () => {
+  const records = JSON.parse(
+    readFileSync("data/review-catalog-m83.json", "utf8"),
+  ).catalogRecords;
+  for (const [id, signal] of [
+    ["averyjohnkucan-arch-dsh-ninfer", "missing-relative-module"],
+    ["raktim-mondol-academic-harness", "missing-relative-module"],
+    ["meisijiya-dsh-hindsight-memory", "default-policy-conflict"],
+    ["rasyidmmz-dsh-ai-memory", "sandbox-fallback"],
+    ["wzwei1990-dsh-napcat", "approval-policy-never"],
+    ["xinming-chenniang-dsh-longshot", "resource-bound-gap"],
+    ["zyfgood-dsh-mobile", "desktop-auth-fence-present"],
+  ]) {
+    const row = records.find((r: { id: string }) => r.id === id);
+    assert.equal(row?.status, "held");
+    assert.ok(row.signals.includes(signal));
   }
 });
