@@ -1,12 +1,18 @@
 {
   "schemaVersion": 1,
-  "mode": null,
-  "observedAt": null,
+  "mode": "incremental",
+  "observedAt": "2026-10-24T12:03:33.900Z",
   "partial": false,
-  "queries": [],
+  "queries": [
+    "topic:dsh-plugin pushed:>=2026-10-21",
+    "topic:dsh-external pushed:>=2026-10-21",
+    "\"DeepSeek Harness\" plugin in:name,description,readme pushed:>=2026-10-21",
+    "\"dsh.bundle.patch\" in:readme pushed:>=2026-10-21",
+    "deepseek-harness in:name,description,readme pushed:>=2026-10-21"
+  ],
   "summary": {
-    "repositoriesObserved": 0,
-    "bundleManifestsFound": 0,
+    "repositoriesObserved": 60,
+    "bundleManifestsFound": 60,
     "errors": 0
   },
   "errors": []
