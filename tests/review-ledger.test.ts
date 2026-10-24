@@ -426,7 +426,7 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 5592 records (0 pending).",
+    "Review ledger valid: 5752 records (0 pending).",
   );
 });
 
@@ -473,7 +473,7 @@ test("October 19 distinguishes renamed repositories, actual templates and patch 
   const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
   assert.equal(
     current.sourceCommit,
-    "ee152dd27e9397483ea2eca3a621a0fd210430d4",
+    "9b0a5b58470ad003b60389ba6d45c4389c1df70f",
   );
   for (const [key, disposition, catalogId] of [
     [
@@ -574,7 +574,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "ee152dd27e9397483ea2eca3a621a0fd210430d4",
+    "9b0a5b58470ad003b60389ba6d45c4389c1df70f",
   );
 });
 
@@ -867,8 +867,7 @@ test("October 23 reconciles every fixed-source delta without recertifying retain
   const report = JSON.parse(
     readFileSync("reports/review/2026-10-23.json", "utf8"),
   );
-  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
-  assert.equal(report.sourceCommit, current.sourceCommit);
+  assert.equal(report.sourceCommit, "ee152dd27e9397483ea2eca3a621a0fd210430d4");
   assert.equal(report.freshCount, 233);
   assert.equal(report.newKeys, 128);
   assert.equal(report.changedSource, 105);
@@ -890,8 +889,9 @@ test("October 23 reconciles every fixed-source delta without recertifying retain
     unavailable: 1,
   });
   assert.equal(
-    current.records.filter(
-      (r: { reviewedAt: string }) => r.reviewedAt === "2026-10-23",
+    report.evidence.filter(
+      (r: { decision: { reviewedAt: string } }) =>
+        r.decision.reviewedAt === "2026-10-23",
     ).length,
     233,
   );
