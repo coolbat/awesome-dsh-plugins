@@ -1,0 +1,72 @@
+{
+  "reviewedAt": "2026-10-25",
+  "checkedAt": "2026-10-25T00:56:14.063Z",
+  "mode": "read-only",
+  "project": "awesome-dsh-plugins",
+  "productionBranch": "main",
+  "cloudflare": {
+    "source": "github",
+    "productionDeploymentsEnabled": true,
+    "buildCommand": "npm run build",
+    "destinationDirectory": "out",
+    "previewDeploymentSetting": "all"
+  },
+  "githubWorkflow": {
+    "path": ".github/workflows/catalog.yml",
+    "sha256": "3893b030d55128fcac6abdd093d639f3ae8ac37531465dbfcc4916c37aabab25",
+    "events": [
+      "pull_request",
+      "push to main"
+    ],
+    "job": "quality",
+    "steps": [
+      "npm ci",
+      "npm run check",
+      "npm run build",
+      "upload out artifact"
+    ],
+    "deploymentJob": false
+  },
+  "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+  "production": {
+    "id": "f2e32f47-7e17-4b05-ac53-ff129d91acc8",
+    "commit": "6dee785987fb983e4d585afd95abc155d112e3ab",
+    "stage": {
+      "name": "deploy",
+      "started_on": "2026-09-09T01:15:05.478842Z",
+      "ended_on": "2026-09-09T01:15:52.662601Z",
+      "status": "success"
+    }
+  },
+  "conclusion": "Cloudflare read access restored. The prior audit commit preview failed during asset validation with an explicit 20000-file limit. Current production is a successful deployment of the unchanged main commit. Pages uses an independent Git build (npm run build); no same-production-commit GitHub quality dependency is established.",
+  "mergeAllowed": false,
+  "productionDeploymentTriggered": false,
+  "requiredNextStep": "Separately establish a same-commit CI-gated automatic production pipeline and resolve the independent 20000-file Pages limit. Do not merge this audit or deploy locally as a workaround.",
+  "scope": "No workflow, provider configuration, secrets, source/UI/exporter, plan, branch protections or production state were changed.",
+  "providerVerified": true,
+  "previousPreview": {
+    "id": "a78f75ea-ad1f-4d55-b848-02effb69d844",
+    "commit": "50460861584c14a02f569ccaa5a5a1522fa74978",
+    "stage": {
+      "name": "build",
+      "started_on": "2026-10-24T01:21:23.901083Z",
+      "ended_on": "2026-10-24T01:23:07.311595Z",
+      "status": "failure"
+    },
+    "errorLines": [
+      {
+        "ts": "2026-10-24T01:23:06.279947Z",
+        "line": "✘ [ERROR] Error: Pages only supports up to 20,000 files in a deployment. Ensure you have specified your build output directory correctly."
+      },
+      {
+        "ts": "2026-10-24T01:23:06.431375Z",
+        "line": "Failed to validate assets in the output directory with code: 1"
+      },
+      {
+        "ts": "2026-10-24T01:23:07.311595Z",
+        "line": "Failed: error occurred while validating assets in your output directory. Check the logs above for more information."
+      }
+    ],
+    "confirmedFileLimit": 20000
+  }
+}

@@ -1,5 +1,61 @@
 # Review log
 
+## 2026-10-25 — Daily fixed-source review
+
+- Beijing Sunday; no weekly reconciliation is due. Isolated date branch
+  `codex/review-new-candidates-20261025` continues audit commit
+  `50460861584c14a02f569ccaa5a5a1522fa74978`, which contains current main
+  `6dee785987fb983e4d585afd95abc155d112e3ab`. Original checkout WIP is preserved.
+- Frozen PR #2: `963a82c1fa737227d42bc368e62e219c8cab5b51`.
+  Queue: 7,554 = 1,653 already-listed + 5,858 ready + 43 discovery-held.
+  Processed 188 fixed identities: 106 new keys and 82 changed commits;
+  5,670 exact key/commit decisions retain their prior outcomes and dates.
+- Fresh dispositions: 4 reviewed, 67 held, 52 source-conflict, 44 duplicate,
+  18 fixture/archive, 2 non-plugin and 1 unavailable. No fresh catalog-excluded
+  or structural-rejected records; pending is zero. All 187 available fixed
+  manifest/patch pairs match; one fixed manifest returns 404.
+- Catalog: 3,997 = 1,382 reviewed + 2,610 held + 5 excluded. The original
+  3,926 retained catalog snapshots remain unchanged. New reviewed entries are
+  EDA Review, AuraCardea, Trace Waterfall and Session Delete, with explicit Git
+  source, licensing, DSH contracts, native entries and same-commit archive checks.
+  Lifecycle and capability evidence are recorded; static review is not runtime proof.
+- Reasonix and Xerj only configure official ACP/MCP clients and are non-plugin.
+  Corn diagnostic probes are fixtures; its repository and package license is
+  PolyForm-Noncommercial-1.0.0, not unresolved. SSiD's fixed desktop README says
+  `shell/profile-template` remains the live release baseline: three foreign-source
+  vendor packages are source-conflicts and four own components are duplicates,
+  not archived templates. Regression checks preserve that distinction.
+- Held records retain concrete installation, licensing, generated/companion
+  artifact, DSH version, HTTP authorization and execution-policy evidence gaps.
+  Archive or text limits are not assertions that remote files are absent.
+  No candidate package, hook, entrypoint, test, installer, binary, browser,
+  server, Python environment, MCP server, native helper or candidate subprocess ran.
+- Local gates pass on Node 22.23.1: `npm run check` (122 tests), complete ledger,
+  generated bilingual README checks, `git diff --check` and production-origin
+  build. Output: 8,006 static pages and 40,036 files.
+- Cloudflare read access is restored. Provider logs for the prior audit-head
+  deployment `a78f75ea-ad1f-4d55-b848-02effb69d844` explicitly report the 20,000-file
+  Pages limit. Current output exceeds that limit. The independent Git-integrated
+  build also lacks a proved dependency on successful same-production-commit
+  GitHub quality. Neither gate is bypassed; no workflow/provider/plan changes.
+- PR #2 preview succeeds, but exact-head quality run 40135314084 is
+  `action_required` with zero jobs; the specific required action is not exposed.
+  Only audit PR #28 is updated. Its new head requires fresh quality and preview
+  success; no merge or production deployment is claimed here.
+- Discovery run 40135184070 is partial: 5 queries, 60 repositories, 48 manifests,
+  three response-size errors (gmh5225/awesome-game-security, stablyai/orca,
+  steveseguin/b70-optimization-lab). Latest attempt 2026-10-24T21:39:49.148Z;
+  last successful watermark 2026-10-24T16:40:56.357Z. Valid results are retained;
+  this is not exhaustive discovery.
+- Production deployment `f2e32f47-7e17-4b05-ac53-ff129d91acc8` is provider-verified
+  successful at unchanged main. Read-only HTTP confirms root/plugins/review 200,
+  legacy `/en/` 301 to `/`, and exact main IDs: 1,020 public plus 689 held/excluded.
+  Production remains 1,709 records, not the 3,997-record audit branch.
+- Evidence: [fixed-source review](../reports/review/2026-10-25.json),
+  [local gates](../reports/review/2026-10-25-gates.json) and
+  [release preflight](../reports/review/2026-10-25-release-preflight.json).
+  Static review does not prove runtime safety or compatibility.
+
 ## 2026-10-20 — Daily fixed-source review
 
 - Beijing Tuesday; no weekly reconciliation was due. Original checkout WIP and

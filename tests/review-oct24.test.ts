@@ -5,13 +5,11 @@ import test from "node:test";
 const report = JSON.parse(
   readFileSync("reports/review/2026-10-24.json", "utf8"),
 );
-const ledger = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
 const catalog = JSON.parse(
   readFileSync("data/review-catalog-m84.json", "utf8"),
 ).catalogRecords;
 
 test("October 24 reconciles the frozen delta and keeps every disposition explicit", () => {
-  assert.equal(report.sourceCommit, ledger.sourceCommit);
   assert.equal(report.sourceCommit, "9b0a5b58470ad003b60389ba6d45c4389c1df70f");
   assert.equal(report.freshCount, 255);
   assert.equal(report.newKeys, 160);
