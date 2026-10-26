@@ -1,5 +1,16 @@
 # Review log
 
+## 2026-10-26 — Daily static review and Monday reconciliation
+
+- Frozen PR #2: 95793221767fbf429d701f6cd164a999c8040260; prior audit e517505df29f438c0a20f0b72e22c8ea4e62d333. Current main 6dee785987fb983e4d585afd95abc155d112e3ab is already contained. Original dirty checkout was preserved.
+- Queue 7675 = 1653 listed + 5978 ready + 44 discovery-held. Processed 228 fixed identities (121 new keys, 107 changed commits), retained 5750 exact historical decisions. Fresh outcomes: 10 reviewed, 80 held, 86 duplicate, 33 source-conflict, 15 fixtures, 2 unavailable and 2 non-plugin. Pending 0.
+- Catalog 4087 = 1392 reviewed + 2690 held + 5 excluded; prior 3997 catalog snapshots unchanged. LICENSE headings, actual native implementations and runtime versus JSDoc imports override heuristic classifications. Lifecycle and capability risks remain explicit.
+- Full local gates pass: npm run check (125 tests), complete-ledger, README/type/format checks, diff check and production-origin build. Export: 8186 pages, 40936 files; still above the previously provider-verified 20000-file ceiling.
+- Cloudflare API is unauthorized today (401); provider configuration and production records cannot be freshly verified. PR #2 preview SUCCESS is separate from action_required quality. PR #28 needs fresh exact-head checks; no merge or production deployment is authorized while the file ceiling and production CI dependency remain unresolved.
+- Current HTTP root/plugins/review return 200; /en/ returns 301 to /. All 1020 published and 689 evidence URLs match main, not the new audit catalog. Latest discovery is partial: 5 queries, 60 repositories, 61 manifests, 2 oversized responses. Valid results retained; latest queue is current but discovery is not exhaustive.
+- Weekly comparison covers main, PR #2, PR #28 checkpoint/current audit, PRs #32/#33, and read-only original WIP. Current audit has no duplicate keys/ids/repositories, invalid commits, missing decisions, catalog mapping failures or README drift. Other PRs are not automatic merge targets.
+- See [daily evidence](../reports/review/2026-10-26.json) and [weekly report](../reports/review/2026-10-26-weekly.md). No candidate code or lifecycle hooks were executed. Static review does not prove runtime safety or compatibility.
+
 ## 2026-10-25 — Daily fixed-source review
 
 - Beijing Sunday; no weekly reconciliation is due. Isolated date branch

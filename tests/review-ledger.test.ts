@@ -426,7 +426,7 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 5858 records (0 pending).",
+    "Review ledger valid: 5978 records (0 pending).",
   );
 });
 
@@ -473,7 +473,7 @@ test("October 19 distinguishes renamed repositories, actual templates and patch 
   const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
   assert.equal(
     current.sourceCommit,
-    "963a82c1fa737227d42bc368e62e219c8cab5b51",
+    "95793221767fbf429d701f6cd164a999c8040260",
   );
   for (const [key, disposition, catalogId] of [
     [
@@ -574,7 +574,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "963a82c1fa737227d42bc368e62e219c8cab5b51",
+    "95793221767fbf429d701f6cd164a999c8040260",
   );
 });
 
@@ -610,7 +610,14 @@ test("October 16 distinguishes live scene templates, fixtures and conflicting fo
 });
 
 test("October 14 separates source conflicts, host distributions, wrappers and showcases", () => {
-  const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
+  const historical = JSON.parse(
+    readFileSync("reports/review/2026-10-14.json", "utf8"),
+  );
+  const current = {
+    records: historical.evidence.map(
+      (row: { decision: unknown }) => row.decision,
+    ),
+  };
   for (const [key, disposition] of [
     ["1414971193:plugins/dsh-memory-evolve/package.json", "source-conflict"],
     ["1338524047:packages/desktop/package.json", "non-plugin-package"],

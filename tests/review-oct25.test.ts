@@ -5,14 +5,12 @@ import test from "node:test";
 const report = JSON.parse(
   readFileSync("reports/review/2026-10-25.json", "utf8"),
 );
-const ledger = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
 const catalog = JSON.parse(
   readFileSync("data/review-catalog-m85.json", "utf8"),
 ).catalogRecords;
 
 test("October 25 records the complete fixed-source delta without recertifying retained snapshots", () => {
   assert.equal(report.sourceCommit, "963a82c1fa737227d42bc368e62e219c8cab5b51");
-  assert.equal(ledger.sourceCommit, report.sourceCommit);
   assert.equal(report.freshCount, 188);
   assert.equal(report.newKeys, 106);
   assert.equal(report.changedSource, 82);
