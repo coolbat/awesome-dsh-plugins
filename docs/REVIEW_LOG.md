@@ -1,5 +1,17 @@
 # Review log
 
+## 2026-10-27 — Daily fixed-source review
+
+- Beijing Tuesday; no weekly reconciliation is due. Isolated date branch continues audit 31c95e9ada6c1090c364ca07ac4f516531eee47a, which contains current main 6dee785987fb983e4d585afd95abc155d112e3ab. Original dirty checkout remains untouched.
+- Frozen PR #2: fe64dee18a9484592475658e6636f85f83422d65. Queue 7764 = 1653 listed + 6065 ready + 46 discovery-held. Processed 142 fixed identities (87 new keys, 55 changed commits), retaining 5923 exact historical decisions. Fresh outcomes: 9 reviewed, 48 held, 60 duplicate, 21 source-conflict, 3 fixtures and 1 non-plugin. Pending 0.
+- Catalog 4144 = 1401 reviewed + 2738 held + 5 excluded; all 4087 prior catalog records remain unchanged. Nine admissions have fixed source/install identity, repository and package license evidence, native entrypoints and versioned DSH declarations. Swift and shell helper sources were read as text only; prepare hooks were never run.
+- Reasonix only configures official ACP/subagent plugins and is non-plugin; Lead Mode registers native skill/command implementations. README version declarations count as compatibility claims when peer fields omit them. Media Filter has MIT evidence in LICENSE.en; ANet root uses modified Apache terms distinct from its plugin package. Conditional connection authentication, unguarded raw routes, installation mapping and companion-artifact gaps retain explicit holds.
+- Discovery run 40417803936 is partial: 5 queries, 60 repositories, 45 manifests, one oversized response for stablyai/orca. Last attempted 2026-10-26T23:09:58.586Z; last successful watermark 2026-10-26T14:22:32.813Z. Valid results retained; this is not exhaustive discovery.
+- Full local gates pass on Node 22.23.1: npm run check (125 tests), complete-ledger, generated README/type/format checks, diff check and production-origin build. Export: 8300 static pages, 41506 files, above the previously verified 20000-file ceiling.
+- Cloudflare API read returns 401, so current provider configuration and canonical deployment are unverified. Prior audit-head preview failed; the previously verified 20000-file ceiling and same-production-commit CI dependency remain unresolved. Only cumulative audit PR #28 is updated, subject to fresh exact-head checks. PR #2 preview success does not satisfy audit or production gates.
+- Read-only HTTP root/plugins/review return 200; /en/ returns 301 to /. Public 1020 and evidence 689 URL sets match unchanged main. Production remains 1709 records. No merge, production deployment, workflow/provider change or local upload is performed while release gates fail.
+- Evidence: [fixed-source review](../reports/review/2026-10-27.json), [local gates](../reports/review/2026-10-27-gates.json), [release preflight](../reports/review/2026-10-27-release-preflight.json). No candidate code or lifecycle hooks were executed. Static review does not prove runtime safety or compatibility.
+
 ## 2026-10-26 — Daily static review and Monday reconciliation
 
 - Frozen PR #2: 95793221767fbf429d701f6cd164a999c8040260; prior audit e517505df29f438c0a20f0b72e22c8ea4e62d333. Current main 6dee785987fb983e4d585afd95abc155d112e3ab is already contained. Original dirty checkout was preserved.
