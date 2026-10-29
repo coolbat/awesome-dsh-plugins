@@ -1,0 +1,165 @@
+{
+  "reviewedAt": "2026-10-29",
+  "checkedAt": "2026-10-29T01:04:26.384Z",
+  "mode": "read-only",
+  "project": "awesome-dsh-plugins",
+  "productionBranch": "main",
+  "cloudflare": {
+    "source": "github",
+    "productionDeploymentsEnabled": true,
+    "buildCommand": "npm run build",
+    "destinationDirectory": "out",
+    "previewDeploymentSetting": "all"
+  },
+  "githubWorkflow": {
+    "path": ".github/workflows/catalog.yml",
+    "sha256": "3893b030d55128fcac6abdd093d639f3ae8ac37531465dbfcc4916c37aabab25",
+    "events": [
+      "pull_request",
+      "push to main"
+    ],
+    "job": "quality",
+    "steps": [
+      "npm ci",
+      "npm run check",
+      "npm run build",
+      "upload out artifact"
+    ],
+    "deploymentJob": false
+  },
+  "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+  "production": {
+    "id": "f2e32f47-7e17-4b05-ac53-ff129d91acc8",
+    "commit": "6dee785987fb983e4d585afd95abc155d112e3ab",
+    "stage": {
+      "name": "deploy",
+      "started_on": "2026-09-09T01:15:05.478842Z",
+      "ended_on": "2026-09-09T01:15:52.662601Z",
+      "status": "success"
+    }
+  },
+  "conclusion": "Observed Pages production Git integration on main only runs npm run build. The separate GitHub quality workflow has no deployment dependency or job proving quality success on that same production commit precedes deployment.",
+  "mergeAllowed": false,
+  "productionDeploymentTriggered": false,
+  "requiredNextStep": "Separately establish a same-commit CI-gated automatic production pipeline and resolve the independent 20000-file Pages limit. Do not merge this audit or deploy locally as a workaround.",
+  "scope": "No workflow, provider configuration, secrets, source/UI/exporter, plan, branch protections or production state were changed.",
+  "productionHttp": {
+    "checkedAt": "2026-10-29T00:57:45.491Z",
+    "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+    "catalog": {
+      "reviewed": 1020,
+      "held": 688,
+      "excluded": 1
+    },
+    "results": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": true
+      },
+      {
+        "path": "/plugins/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": true,
+        "actual": 1020,
+        "expected": 1020,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "path": "/review/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": false,
+        "actual": 689,
+        "expected": 689,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "path": "/en/",
+        "status": 301,
+        "location": "/",
+        "snapshotDatePresent": false
+      }
+    ]
+  },
+  "previousAuditPreview": {
+    "id": "6030fb2a-8e47-4b8f-95c4-19fb9a0db34d",
+    "environment": "preview",
+    "branch": "codex/review-new-candidates-20260911",
+    "commit": "45e1875ce96763abbe11fc3ba2589dc17ae48cdc",
+    "latestStage": {
+      "name": "build",
+      "started_on": "2026-10-28T01:17:30.913615Z",
+      "ended_on": "2026-10-28T01:18:43.475865Z",
+      "status": "failure"
+    },
+    "stages": [
+      {
+        "name": "queued",
+        "started_on": "2026-10-28T01:17:09.601615Z",
+        "ended_on": "2026-10-28T01:17:09.607506Z",
+        "status": "success"
+      },
+      {
+        "name": "initialize",
+        "started_on": "2026-10-28T01:17:09.607506Z",
+        "ended_on": "2026-10-28T01:17:12.113874Z",
+        "status": "success"
+      },
+      {
+        "name": "clone_repo",
+        "started_on": "2026-10-28T01:17:12.113874Z",
+        "ended_on": "2026-10-28T01:17:30.913615Z",
+        "status": "success"
+      },
+      {
+        "name": "build",
+        "started_on": "2026-10-28T01:17:30.913615Z",
+        "ended_on": "2026-10-28T01:18:43.475865Z",
+        "status": "failure"
+      },
+      {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": null,
+        "status": "idle"
+      }
+    ],
+    "url": "https://6030fb2a.awesome-dsh-plugins.pages.dev",
+    "errors": [
+      {
+        "ts": "2026-10-28T01:18:42.587224Z",
+        "line": "\u001b[31m✘ \u001b[41;31m[\u001b[41;97mERROR\u001b[41;31m]\u001b[0m \u001b[1mError: Pages only supports up to 20,000 files in a deployment. Ensure you have specified your build output directory correctly.\u001b[0m"
+      },
+      {
+        "ts": "2026-10-28T01:18:42.693051Z",
+        "line": "Failed to validate assets in the output directory with code: 1"
+      },
+      {
+        "ts": "2026-10-28T01:18:43.475865Z",
+        "line": "Failed: error occurred while validating assets in your output directory. Check the logs above for more information."
+      }
+    ]
+  },
+  "discoveryPr": {
+    "number": 2,
+    "head": "37b2959eff6ff15fe35215ee911976f054b29e99",
+    "mergeStateStatus": "UNSTABLE",
+    "quality": {
+      "runId": 40786577594,
+      "conclusion": "action_required",
+      "jobs": 0,
+      "url": "https://github.com/coolbat/awesome-dsh-plugins/actions/runs/40786577594",
+      "requiredActionDetail": "Not exposed by the returned run metadata; no diagnosis asserted."
+    },
+    "preview": {
+      "id": "73ff6558-f1f6-4d40-8e92-5463bc94cb12",
+      "conclusion": "SUCCESS",
+      "completedAt": "2026-10-28T23:22:52Z"
+    }
+  }
+}
