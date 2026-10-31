@@ -1,0 +1,163 @@
+{
+  "reviewedAt": "2026-10-31",
+  "checkedAt": "2026-10-31T00:58:44.268Z",
+  "mode": "read-only",
+  "project": "awesome-dsh-plugins",
+  "productionBranch": "main",
+  "cloudflare": {
+    "source": "github",
+    "productionDeploymentsEnabled": true,
+    "buildCommand": "npm run build",
+    "destinationDirectory": "out",
+    "previewDeploymentSetting": "all"
+  },
+  "githubWorkflow": {
+    "path": ".github/workflows/catalog.yml",
+    "sha256": "3893b030d55128fcac6abdd093d639f3ae8ac37531465dbfcc4916c37aabab25",
+    "events": [
+      "pull_request",
+      "push to main"
+    ],
+    "job": "quality",
+    "steps": [
+      "npm ci",
+      "npm run check",
+      "npm run build",
+      "upload out artifact"
+    ],
+    "deploymentJob": false
+  },
+  "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+  "production": {
+    "id": "f2e32f47-7e17-4b05-ac53-ff129d91acc8",
+    "commit": "6dee785987fb983e4d585afd95abc155d112e3ab",
+    "stage": {
+      "name": "deploy",
+      "started_on": "2026-09-09T01:15:05.478842Z",
+      "ended_on": "2026-09-09T01:15:52.662601Z",
+      "status": "success"
+    }
+  },
+  "conclusion": "Observed Pages production Git integration on main only runs npm run build. The separate GitHub quality workflow has no deployment dependency or job proving quality success on that same production commit precedes deployment.",
+  "mergeAllowed": false,
+  "productionDeploymentTriggered": false,
+  "requiredNextStep": "Separately establish a same-commit CI-gated automatic production pipeline and resolve the independent 20000-file Pages limit. Do not merge this audit or deploy locally as a workaround.",
+  "scope": "No workflow, provider configuration, secrets, source/UI/exporter, plan, branch protections or production state were changed.",
+  "priorAuditPreview": {
+    "id": "aa8cf737-8ea5-43a5-a87e-578abae26a4e",
+    "environment": "preview",
+    "branch": "codex/review-new-candidates-20260911",
+    "commit": "0b2c6e41db9180e7951deb6a759629d54b82fa13",
+    "latestStage": {
+      "name": "build",
+      "started_on": "2026-10-30T01:31:28.305076Z",
+      "ended_on": "2026-10-30T01:33:42.734381Z",
+      "status": "failure"
+    },
+    "stages": [
+      {
+        "name": "queued",
+        "started_on": "2026-10-30T01:31:02.437598Z",
+        "ended_on": "2026-10-30T01:31:02.445285Z",
+        "status": "success"
+      },
+      {
+        "name": "initialize",
+        "started_on": "2026-10-30T01:31:02.445285Z",
+        "ended_on": "2026-10-30T01:31:06.474524Z",
+        "status": "success"
+      },
+      {
+        "name": "clone_repo",
+        "started_on": "2026-10-30T01:31:06.474524Z",
+        "ended_on": "2026-10-30T01:31:28.305076Z",
+        "status": "success"
+      },
+      {
+        "name": "build",
+        "started_on": "2026-10-30T01:31:28.305076Z",
+        "ended_on": "2026-10-30T01:33:42.734381Z",
+        "status": "failure"
+      },
+      {
+        "name": "deploy",
+        "started_on": null,
+        "ended_on": null,
+        "status": "idle"
+      }
+    ],
+    "url": "https://aa8cf737.awesome-dsh-plugins.pages.dev",
+    "errors": [
+      {
+        "ts": "2026-10-30T01:33:41.610566Z",
+        "line": "\u001b[31m✘ \u001b[41;31m[\u001b[41;97mERROR\u001b[41;31m]\u001b[0m \u001b[1mError: Pages only supports up to 20,000 files in a deployment. Ensure you have specified your build output directory correctly.\u001b[0m"
+      },
+      {
+        "ts": "2026-10-30T01:33:41.782841Z",
+        "line": "Failed to validate assets in the output directory with code: 1"
+      },
+      {
+        "ts": "2026-10-30T01:33:42.734381Z",
+        "line": "Failed: error occurred while validating assets in your output directory. Check the logs above for more information."
+      }
+    ]
+  },
+  "productionHttp": {
+    "checkedAt": "2026-10-31T00:58:45.095Z",
+    "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+    "catalog": {
+      "reviewed": 1020,
+      "held": 688,
+      "excluded": 1
+    },
+    "results": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": true
+      },
+      {
+        "path": "/plugins/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": true,
+        "actual": 1020,
+        "expected": 1020,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "path": "/review/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": false,
+        "actual": 689,
+        "expected": 689,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "path": "/en/",
+        "status": 301,
+        "location": "/",
+        "snapshotDatePresent": false
+      }
+    ]
+  },
+  "discoveryPR": {
+    "number": 2,
+    "head": "daf4022bcfb75b9009ca02310dcd462e42121e99",
+    "mergeStateStatus": "UNSTABLE",
+    "quality": {
+      "run": 41142017445,
+      "conclusion": "action_required",
+      "jobs": 0
+    },
+    "cloudflarePreview": {
+      "id": "b84f3cb2-c129-4f68-9df3-ff508f3e12b8",
+      "conclusion": "SUCCESS"
+    },
+    "note": "Preview success is independent of required quality; this discovery PR is not an automatic merge target."
+  }
+}

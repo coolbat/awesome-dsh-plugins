@@ -1,0 +1,25 @@
+{
+  "reviewedAt": "2026-10-24",
+  "checkedAt": "2026-10-24T01:03:37.298Z",
+  "mode": "read-only",
+  "providerVerified": false,
+  "httpStatus": 401,
+  "conclusion": "Cloudflare API read is unauthorized. Current provider configuration and canonical deployment cannot be refreshed. Prior observed file ceiling and missing same-production-commit CI-before-deploy gate remain unresolved, not newly certified.",
+  "previousEvidence": "2026-10-15-release-preflight.json",
+  "mergeAllowed": false,
+  "productionDeploymentTriggered": false,
+  "requiredNextStep": "Restore authorized read access and separately resolve the Pages file ceiling and CI-before-production deployment dependency. No local production deployment workaround.",
+  "scope": "No workflow, provider configuration, secrets, source/UI/exporter, plan, protections or production state changed.",
+  "candidatePr": {
+    "number": 2,
+    "head": "9b0a5b58470ad003b60389ba6d45c4389c1df70f",
+    "mergeStateStatus": "UNSTABLE",
+    "mergeable": true,
+    "cloudflarePreview": "SUCCESS",
+    "qualityWorkflowRun": "https://github.com/coolbat/awesome-dsh-plugins/actions/runs/40032972698",
+    "workflowConclusion": "action_required",
+    "workflowJobs": 0,
+    "workflowUpdatedAt": "2026-10-23T22:20:33Z",
+    "interpretation": "Cloudflare preview success does not establish quality success. GitHub exposes action_required and no jobs, but the cause requiring action was not returned. No rerun or approval was performed."
+  }
+}
