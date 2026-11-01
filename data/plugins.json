@@ -31613,16 +31613,15 @@
       "repoLicense": "MIT",
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
-      "lifecycle": "prepare",
+      "lifecycle": "none",
       "signals": [
         "client-injection",
         "external-network",
         "filesystem-write",
-        "subprocess",
-        "prepare"
+        "subprocess"
       ],
-      "noteEn": "Refreshed from the release tag: the manifest-to-patch chain, both license fields, the npm identity and the prepare hook were reviewed statically; no lifecycle hook or plugin code was executed. Capabilities are local state files, network fetches and Windows/macOS notification subprocesses; there is no native code, credential use, browser control or package management.",
-      "noteZh": "按发布 tag 刷新：已静态核对 manifest 与 patch 链、两个许可证字段、npm 身份与 prepare hook；未执行生命周期 hook 或插件代码。能力面为本地状态文件、联网抓取与 Windows/macOS 通知子进程；无原生代码、凭据、浏览器控制与包管理。"
+      "noteEn": "Refreshed from the release tag: the manifest-to-patch chain, both license fields, the npm identity and the install-script surface were reviewed statically; the manifest declares no install-time lifecycle scripts, and no lifecycle hook or plugin code was executed. Capabilities are local state files, network fetches and Windows/macOS notification subprocesses; there is no native code, credential use, browser control or package management.",
+      "noteZh": "按发布 tag 刷新：已静态核对 manifest 与 patch 链、两个许可证字段、npm 身份与安装脚本面；manifest 不含安装期生命周期脚本，未执行生命周期 hook 或插件代码。能力面为本地状态文件、联网抓取与 Windows/macOS 通知子进程；无原生代码、凭据、浏览器控制与包管理。"
     },
     {
       "id": "featherhunter-dsh-mattpocock-skills-deck",
