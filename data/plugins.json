@@ -31604,21 +31604,25 @@
       "package": "dsh-gacha-calendar",
       "category": "Developer Tools",
       "status": "reviewed",
-      "summaryEn": "二游活动/卡池排期速查：侧边栏底部按钮，点击展开 10 款已安装二游的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置（原神/星铁/绝区零/鸣潮/明日方舟/终末地/蔚蓝档案国服+国际服/重返未来1999/异环）。",
-      "summaryZh": "二游活动/卡池排期速查：侧边栏底部按钮，点击展开 10 款已安装二游的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置（原神/星铁/绝区零/鸣潮/明日方舟/终末地/蔚蓝档案国服+国际服/重返未来1999/异环）。",
+      "summaryEn": "Sidebar gacha schedule lookup: a button at the bottom of the sidebar expands the current version, banners and event windows of 28 anime games, with automatic network refresh and a refresh-interval setting.",
+      "summaryZh": "二游活动/卡池排期速查：侧边栏底部按钮，点击展开 28 款游戏的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置。",
       "branch": "main",
-      "commit": "fa27efe5214dbdb2160fb9963f3bc1227248538a",
+      "commit": "ea1f069fd5eb8262d9b40457df8c6a6b69ab2ded",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "repoLicense": "MIT",
       "packageLicense": "MIT",
       "compatibility": "declared-rc6",
-      "lifecycle": "none",
+      "lifecycle": "prepare",
       "signals": [
-        "client-injection"
+        "client-injection",
+        "external-network",
+        "filesystem-write",
+        "subprocess",
+        "prepare"
       ],
-      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
-      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+      "noteEn": "Refreshed from the release tag: the manifest-to-patch chain, both license fields, the npm identity and the prepare hook were reviewed statically; no lifecycle hook or plugin code was executed. Capabilities are local state files, network fetches and Windows/macOS notification subprocesses; there is no native code, credential use, browser control or package management.",
+      "noteZh": "按发布 tag 刷新：已静态核对 manifest 与 patch 链、两个许可证字段、npm 身份与 prepare hook；未执行生命周期 hook 或插件代码。能力面为本地状态文件、联网抓取与 Windows/macOS 通知子进程；无原生代码、凭据、浏览器控制与包管理。"
     },
     {
       "id": "featherhunter-dsh-mattpocock-skills-deck",

@@ -1053,10 +1053,10 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `filesystem-read` `filesystem-write` `code-analysis` `documentation-generation` `github-only` · **核验备注:** 文档记录了固定 GitHub 安装；通配 skill-filesystem peer 无法证明兼容性，未读取代码库或生成文档。
 
-- **Gacha Calendar** · [EastMG/dsh-gacha-calendar@fa27efe](https://github.com/EastMG/dsh-gacha-calendar/commit/fa27efe5214dbdb2160fb9963f3bc1227248538a) — 二游活动/卡池排期速查：侧边栏底部按钮，点击展开 10 款已安装二游的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置（原神/星铁/绝区零/鸣潮/明日方舟/终末地/蔚蓝档案国服+国际服/重返未来1999/异环）。
-  - **证据:** [manifest](https://github.com/EastMG/dsh-gacha-calendar/blob/fa27efe5214dbdb2160fb9963f3bc1227248538a/package.json) → [patch](https://github.com/EastMG/dsh-gacha-calendar/blob/fa27efe5214dbdb2160fb9963f3bc1227248538a/cordis.patch.yml) · **身份:** `dsh-gacha-calendar`
-  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
-  - **能力信号:** `client-injection` · **核验备注:** 已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。
+- **Gacha Calendar** · [EastMG/dsh-gacha-calendar@ea1f069](https://github.com/EastMG/dsh-gacha-calendar/commit/ea1f069fd5eb8262d9b40457df8c6a6b69ab2ded) — 二游活动/卡池排期速查：侧边栏底部按钮，点击展开 28 款游戏的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置。
+  - **证据:** [manifest](https://github.com/EastMG/dsh-gacha-calendar/blob/ea1f069fd5eb8262d9b40457df8c6a6b69ab2ded/package.json) → [patch](https://github.com/EastMG/dsh-gacha-calendar/blob/ea1f069fd5eb8262d9b40457df8c6a6b69ab2ded/cordis.patch.yml) · **身份:** `dsh-gacha-calendar`
+  - **许可证:** repo `MIT` / package `MIT` · 生命周期 `prepare` · 声明 rc.6 peer
+  - **能力信号:** `client-injection` `external-network` `filesystem-write` `subprocess` `prepare` · **核验备注:** 按发布 tag 刷新：已静态核对 manifest 与 patch 链、两个许可证字段、npm 身份与 prepare hook；未执行生命周期 hook 或插件代码。能力面为本地状态文件、联网抓取与 Windows/macOS 通知子进程；无原生代码、凭据、浏览器控制与包管理。
 
 - **DSH Workbench** · [ghbhiee/dsh-plugins@2017411](https://github.com/ghbhiee/dsh-plugins/commit/2017411fca73e4294335eb25ea1ddaf6a5cb986b) — 集成终端、文件浏览器与文件预览的 Web 工作台。
   - **证据:** [manifest](https://github.com/ghbhiee/dsh-plugins/blob/2017411fca73e4294335eb25ea1ddaf6a5cb986b/packages/workbench/package.json) → [patch](https://github.com/ghbhiee/dsh-plugins/blob/2017411fca73e4294335eb25ea1ddaf6a5cb986b/packages/workbench/cordis.patch.yml) · **身份:** Git 源 / 未知
