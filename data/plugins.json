@@ -6037,10 +6037,10 @@
       "package": "dsh-archived-chats",
       "category": "UI & Workspace",
       "status": "reviewed",
-      "summaryEn": "Browse archived and unarchived chats; search archived content with context previews, add tags and notes, archive by workspace, import/export ZIP backups, confirm permanent deletion of archived chats, inspect read-only origins and branches, and manually check residual chats.",
-      "summaryZh": "浏览已归档与未归档会话，支持归档正文搜索与上下文预览、标签备注、工作区批量归档、ZIP 备份导入导出、已归档会话确认后永久删除、只读来源与分支和手动残留会话检查。",
+      "summaryEn": "Workspace-based archive management with scoped content search, conversation previews, tags and notes, ZIP backups, lineage graphs, confirmed permanent deletion and retries, and official Host updates.",
+      "summaryZh": "按工作区管理已归档与未归档会话，支持独立范围正文搜索、上下文预览、标签备注、ZIP 备份导入导出、会话谱系、永久删除确认与失败重试，以及官方宿主更新。",
       "branch": "main",
-      "commit": "d02470d3dfd6515da4b23534ae440a0cccfd3823",
+      "commit": "49183f293efeaf69a5d2d9cd2f2c120ae7023492",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "repoLicense": "MIT",
@@ -6056,8 +6056,8 @@
         "external-network",
         "package-management"
       ],
-      "noteEn": "Version 1.6.0 manifest, patch, licenses and install identity checked at the pinned release commit. New recycling and automatic retention are disabled; legacy records remain accessible when present. Manual residual-chat checks require explicit deletion confirmation. Update checks read public npm metadata; Host-supported updates install an explicitly selected package version. This evidence refresh did not execute the plugin or certify runtime compatibility.",
-      "noteZh": "已按 1.6.0 固定发布提交静态核对 manifest、patch、许可证与安装身份。停止新增回收和自动保留策略，存在旧记录时保留兼容入口；手动残留会话检查的删除需要明确确认。更新检查读取公开 npm 元数据，宿主支持时安装明确选定的包版本。本次证据更新未执行插件，也不认证运行时兼容性。"
+      "noteEn": "Version 1.7.1 manifest, patch, licenses and install identity checked at the pinned release commit. Both archive states support scoped content search and confirmed permanent deletion. Lineage graphs show recorded relationships. Updates delegate to the official Host manager. This catalog evidence refresh did not execute the plugin or certify runtime compatibility.",
+      "noteZh": "已按 1.7.1 固定发布提交核对 manifest、patch、许可证与安装身份。已归档与未归档各自支持正文搜索和确认永久删除，会话谱系图展示已记录的关系，更新交由官方宿主管理。本次目录证据更新未执行插件，也不认证运行时兼容性。"
     },
     {
       "id": "ustc-xef2-dsh-llm-ustc",
