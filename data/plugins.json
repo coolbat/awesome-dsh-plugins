@@ -6037,10 +6037,10 @@
       "package": "dsh-archived-chats",
       "category": "UI & Workspace",
       "status": "reviewed",
-      "summaryEn": "Workspace-based archive management with scoped content search, conversation previews, tags and notes, ZIP backups, lineage graphs, confirmed permanent deletion and retries, and official Host updates.",
-      "summaryZh": "按工作区管理已归档与未归档会话，支持独立范围正文搜索、上下文预览、标签备注、ZIP 备份导入导出、会话谱系、永久删除确认与失败重试，以及官方宿主更新。",
+      "summaryEn": "Workspace-based archive management with scoped content search, conversation previews, tags and notes, ZIP backups, lineage graphs, confirmed permanent deletion and retries, and official Host updates. Requires DeepSeek Harness 0.2.2-rc.1 or later.",
+      "summaryZh": "按工作区管理已归档与未归档会话，支持独立范围正文搜索、上下文预览、标签备注、ZIP 备份导入导出、会话谱系、永久删除确认与失败重试，以及官方宿主更新。最低要求 DeepSeek Harness 0.2.2-rc.1。",
       "branch": "main",
-      "commit": "49183f293efeaf69a5d2d9cd2f2c120ae7023492",
+      "commit": "ea236e725381dab6a5653214cad684fe1675f7c7",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "repoLicense": "MIT",
@@ -6056,8 +6056,8 @@
         "external-network",
         "package-management"
       ],
-      "noteEn": "Version 1.7.1 manifest, patch, licenses and install identity checked at the pinned release commit. Both archive states support scoped content search and confirmed permanent deletion. Lineage graphs show recorded relationships. Updates delegate to the official Host manager. This catalog evidence refresh did not execute the plugin or certify runtime compatibility.",
-      "noteZh": "已按 1.7.1 固定发布提交核对 manifest、patch、许可证与安装身份。已归档与未归档各自支持正文搜索和确认永久删除，会话谱系图展示已记录的关系，更新交由官方宿主管理。本次目录证据更新未执行插件，也不认证运行时兼容性。"
+      "noteEn": "Version 2.0.0 manifest, patch, licenses and install identity checked at the pinned release commit. Both archive states support scoped content search and confirmed permanent deletion. Lineage graphs show recorded relationships. Updates delegate to the official Host manager. This catalog evidence refresh did not execute the plugin or certify runtime compatibility. The manifest requires DSH 0.2.2-rc.1 or later.",
+      "noteZh": "已按 2.0.0 固定发布提交核对 manifest、patch、许可证与安装身份。已归档与未归档各自支持正文搜索和确认永久删除，会话谱系图展示已记录的关系，更新交由官方宿主管理。本次目录证据更新未执行插件，也不认证运行时兼容性。manifest 最低要求 DSH 0.2.2-rc.1。"
     },
     {
       "id": "ustc-xef2-dsh-llm-ustc",
