@@ -1,13 +1,40 @@
 {
   "schemaVersion": 1,
-  "mode": null,
-  "observedAt": null,
-  "partial": false,
-  "queries": [],
+  "mode": "incremental",
+  "observedAt": "2026-11-07T07:16:16.254Z",
+  "partial": true,
+  "queries": [
+    "topic:dsh-plugin pushed:>=2026-11-04",
+    "topic:dsh-external pushed:>=2026-11-04",
+    "\"DeepSeek Harness\" plugin in:name,description,readme pushed:>=2026-11-04",
+    "\"dsh.bundle.patch\" in:readme pushed:>=2026-11-04",
+    "deepseek-harness in:name,description,readme pushed:>=2026-11-04"
+  ],
   "summary": {
-    "repositoriesObserved": 0,
-    "bundleManifestsFound": 0,
-    "errors": 0
+    "repositoriesObserved": 60,
+    "bundleManifestsFound": 70,
+    "errors": 4
   },
-  "errors": []
+  "errors": [
+    {
+      "query": null,
+      "repository": "hashgraph-online/awesome-codex-plugins",
+      "message": "GithubRequestError: GitHub response exceeded 5000000 bytes."
+    },
+    {
+      "query": null,
+      "repository": "gmh5225/awesome-game-security",
+      "message": "GithubRequestError: GitHub response exceeded 5000000 bytes."
+    },
+    {
+      "query": null,
+      "repository": "comkocs/panedesk",
+      "message": "GithubRequestError: GitHub response exceeded 5000000 bytes."
+    },
+    {
+      "query": null,
+      "repository": "anthony-chaudhary/fak",
+      "message": "GithubRequestError: GitHub response exceeded 5000000 bytes."
+    }
+  ]
 }
