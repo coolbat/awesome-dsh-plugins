@@ -1,0 +1,71 @@
+{
+  "checkedAt": "2026-10-17T01:16:30.906Z",
+  "node": "v22.23.1",
+  "productionBuildEnvironment": { "NEXT_PUBLIC_SITE_URL": "https://dshplugin.net" },
+  "deploymentLimitEvidence": "20000 files was last verified on 2026-10-15; today's provider API returned 401. Current limit/configuration is not re-certified.",
+  "preliminaryFailures": [
+    {
+      "name": "focused-tests",
+      "cause": "Historical test asserted the previous discovery source SHA after the frozen queue changed.",
+      "resolution": "Updated the pinned expected source SHA to this reviewed snapshot; no production logic changed."
+    }
+  ],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-17T01:16:00.545Z",
+      "finishedAt": "2026-10-17T01:16:00.784Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-17T01:16:00.786Z",
+      "finishedAt": "2026-10-17T01:16:08.938Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-17T01:16:08.938Z",
+      "finishedAt": "2026-10-17T01:16:09.025Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-17T01:16:09.025Z",
+      "finishedAt": "2026-10-17T01:16:09.176Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-17T01:16:09.176Z",
+      "finishedAt": "2026-10-17T01:16:30.452Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 34996,
+    "bytes": 513103465,
+    "largest": [
+      {
+        "path": "out/_next/static/chunks/1vlke0o6hlybw.js",
+        "bytes": 4633114
+      },
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4462686
+      },
+      {
+        "path": "out/review/index.html",
+        "bytes": 4415899
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}
