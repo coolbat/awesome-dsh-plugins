@@ -1053,10 +1053,10 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `filesystem-read` `filesystem-write` `code-analysis` `documentation-generation` `github-only` · **核验备注:** 文档记录了固定 GitHub 安装；通配 skill-filesystem peer 无法证明兼容性，未读取代码库或生成文档。
 
-- **Gacha Calendar** · [EastMG/dsh-gacha-calendar@980e14c](https://github.com/EastMG/dsh-gacha-calendar/commit/980e14c822069b6b1ff1fe6ca49460b21e20286d) — 二游活动/卡池排期速查：侧边栏底部按钮，点击展开 28 款游戏的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置。
-  - **证据:** [manifest](https://github.com/EastMG/dsh-gacha-calendar/blob/980e14c822069b6b1ff1fe6ca49460b21e20286d/package.json) → [patch](https://github.com/EastMG/dsh-gacha-calendar/blob/980e14c822069b6b1ff1fe6ca49460b21e20286d/cordis.patch.yml) · **身份:** `dsh-gacha-calendar`
+- **Gacha Calendar** · [EastMG/dsh-gacha-calendar@086e987](https://github.com/EastMG/dsh-gacha-calendar/commit/086e987009ec4ac51f6075c9527ecf31d1ff61d6) — 二游活动/卡池排期速查：侧边栏底部按钮，点击展开 33 款游戏的当前版本、卡池与活动起止；支持联网自动刷新、逐条目到期提醒、侧栏轮播与当期排期 .ics 导出。
+  - **证据:** [manifest](https://github.com/EastMG/dsh-gacha-calendar/blob/086e987009ec4ac51f6075c9527ecf31d1ff61d6/package.json) → [patch](https://github.com/EastMG/dsh-gacha-calendar/blob/086e987009ec4ac51f6075c9527ecf31d1ff61d6/cordis.patch.yml) · **身份:** `dsh-gacha-calendar`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 声明 rc.6 peer
-  - **能力信号:** `client-injection` `external-network` `filesystem-write` `subprocess` · **核验备注:** 按 v0.12.12 发布提交刷新：已静态核对 manifest 与 patch 链、两个许可证字段、npm 身份与安装脚本面；manifest 不含安装期生命周期脚本（`preinstall` / `install` / `postinstall` / `prepare`），git hook 安装是普通 `setup:hooks` 脚本、无任何环节自动执行，`prepublishOnly` 为发布期构建检查；未执行生命周期 hook 或插件代码。能力面为本地状态文件、联网抓取与 Windows/macOS 通知子进程；无原生代码、凭据、浏览器控制与包管理。
+  - **能力信号:** `client-injection` `external-network` `filesystem-write` `subprocess` · **核验备注:** 按 v0.13.0 发布提交刷新：已静态核对 manifest 与 patch 链、两个许可证字段、npm 身份与安装脚本面；manifest 不含安装期生命周期脚本（`preinstall` / `install` / `postinstall` / `prepare`），git hook 安装是普通 `setup:hooks` 脚本、无任何环节自动执行，`publishOnly` 为发布期构建检查；未执行生命周期 hook 或插件代码。能力面为本地状态文件、联网抓取与 Windows/macOS 通知子进程；无原生代码、凭据、浏览器控制与包管理。
 
 - **DSH Workbench** · [ghbhiee/dsh-plugins@2017411](https://github.com/ghbhiee/dsh-plugins/commit/2017411fca73e4294335eb25ea1ddaf6a5cb986b) — 集成终端、文件浏览器与文件预览的 Web 工作台。
   - **证据:** [manifest](https://github.com/ghbhiee/dsh-plugins/blob/2017411fca73e4294335eb25ea1ddaf6a5cb986b/packages/workbench/package.json) → [patch](https://github.com/ghbhiee/dsh-plugins/blob/2017411fca73e4294335eb25ea1ddaf6a5cb986b/packages/workbench/cordis.patch.yml) · **身份:** Git 源 / 未知
