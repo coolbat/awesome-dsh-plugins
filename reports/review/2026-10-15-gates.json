@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-15T01:14:05.186Z",
+  "node": "v22.23.1",
+  "preliminaryFailures": [
+    {
+      "gate": "focused-tests",
+      "reason": "New absence regression expected undefined but getPluginBySlug correctly returns null; test expectation corrected, not application behavior."
+    },
+    {
+      "gate": "check",
+      "reason": "Normalized one capability signal to lowercase hyphenated schema; created explicitly pending gate evidence before checking its documentation link."
+    },
+    {
+      "gate": "docs:check",
+      "reason": "Regenerated both README files after the capability signal normalization changed the catalog snapshot."
+    }
+  ],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-15T01:13:37.322Z",
+      "finishedAt": "2026-10-15T01:13:37.535Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-15T01:13:37.536Z",
+      "finishedAt": "2026-10-15T01:13:45.095Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-15T01:13:45.095Z",
+      "finishedAt": "2026-10-15T01:13:45.180Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-15T01:13:45.180Z",
+      "finishedAt": "2026-10-15T01:13:45.313Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-15T01:13:45.313Z",
+      "finishedAt": "2026-10-15T01:14:04.758Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 33736,
+    "bytes": 494965119,
+    "largest": [
+      {
+        "path": "out/_next/static/chunks/10_462f79rfrs.js",
+        "bytes": 4444237
+      },
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4427890
+      },
+      {
+        "path": "out/zh/plugins/index.html",
+        "bytes": 4378618
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

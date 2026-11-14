@@ -1,0 +1,13 @@
+{
+  "reviewedAt": "2026-10-16",
+  "checkedAt": "2026-10-16T01:07:38.064Z",
+  "mode": "read-only",
+  "providerVerified": false,
+  "httpStatus": 401,
+  "conclusion": "Cloudflare API read is unauthorized. Current provider configuration and canonical deployment cannot be refreshed. Prior observed file ceiling and missing same-production-commit CI-before-deploy gate remain unresolved, not newly certified.",
+  "previousEvidence": "2026-10-15-release-preflight.json",
+  "mergeAllowed": false,
+  "productionDeploymentTriggered": false,
+  "requiredNextStep": "Restore authorized read access and separately resolve the Pages file ceiling and CI-before-production deployment dependency. No local production deployment workaround.",
+  "scope": "No workflow, provider configuration, secrets, source/UI/exporter, plan, protections or production state changed."
+}

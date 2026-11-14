@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-10T01:16:59.455Z",
+  "node": "v22.23.1",
+  "preliminaryFailures": [
+    {
+      "gate": "renamed-repository-regression",
+      "reason": "Two unchanged historical tests caught an erroneous second Reactive Resume catalog id in the draft. Rechecked GitHub numeric repository ID 249995750, classified the fresh snapshot duplicate-or-superseded and removed only the draft duplicate; historical tests and retained catalog source remain unchanged."
+    },
+    {
+      "gate": "snapshot-count-tests",
+      "reason": "Three old count tests failed as expected after the queue update. Final expected counts were updated to reviewed 1299, total 3160, held 1857 and ledger 4348. Two October 10 capability/boundary regression tests added."
+    }
+  ],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-10T01:16:33.815Z",
+      "finishedAt": "2026-10-10T01:16:34.167Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-10T01:16:34.168Z",
+      "finishedAt": "2026-10-10T01:16:40.875Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-10T01:16:40.875Z",
+      "finishedAt": "2026-10-10T01:16:40.956Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-10T01:16:40.956Z",
+      "finishedAt": "2026-10-10T01:16:41.082Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-10T01:16:41.082Z",
+      "finishedAt": "2026-10-10T01:16:59.106Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 31666,
+    "bytes": 464377098,
+    "largest": [
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4321566
+      },
+      {
+        "path": "out/zh/plugins/index.html",
+        "bytes": 4272138
+      },
+      {
+        "path": "out/_next/static/chunks/0l0acp-3k6kpm.js",
+        "bytes": 4092799
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

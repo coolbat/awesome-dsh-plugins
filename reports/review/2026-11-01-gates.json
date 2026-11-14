@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-11-01T01:10:03.213Z",
+  "node": "v22.23.1",
+  "productionBuildEnvironment": {
+    "NEXT_PUBLIC_SITE_URL": "https://dshplugin.net"
+  },
+  "deploymentLimitEvidence": "Fresh authenticated provider read on 2026-11-01 confirmed prior audit-head 3418a63598d884201cab083c159eca19bca1c0bf deployment 623531d9-748f-4735-acbf-e308606500b4 failed asset validation after building 8704 pages: Pages only supports up to 20,000 files in a deployment. Current export count is local corroboration. Production deployment has not been triggered.",
+  "gates": [
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-11-01T01:09:20.533Z",
+      "finishedAt": "2026-11-01T01:09:31.317Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-11-01T01:09:31.318Z",
+      "finishedAt": "2026-11-01T01:09:31.434Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-11-01T01:09:31.434Z",
+      "finishedAt": "2026-11-01T01:09:31.618Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-11-01T01:09:31.618Z",
+      "finishedAt": "2026-11-01T01:10:02.724Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 44126,
+    "bytes": 646070659,
+    "largest": [
+      {
+        "path": "out/review/index.html",
+        "bytes": 6199045
+      },
+      {
+        "path": "out/zh/review/index.html",
+        "bytes": 6094341
+      },
+      {
+        "path": "out/_next/static/chunks/21za976eeytdi.js",
+        "bytes": 6063010
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}
