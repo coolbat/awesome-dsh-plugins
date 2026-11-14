@@ -6031,7 +6031,7 @@
       "noteZh": "已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。"
     },
     {
-      "id": "ultronen-dsh-archived-chats",
+      "id": "ultroncn-dsh-archived-chats",
       "name": "Archive Management / 归档管理",
       "repository": "Ultroncn/dsh-archived-chats",
       "package": "dsh-archived-chats",
