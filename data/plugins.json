@@ -31604,10 +31604,10 @@
       "package": "dsh-gacha-calendar",
       "category": "Developer Tools",
       "status": "reviewed",
-      "summaryEn": "二游活动/卡池排期速查：侧边栏底部按钮，点击展开 10 款已安装二游的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置（原神/星铁/绝区零/鸣潮/明日方舟/终末地/蔚蓝档案国服+国际服/重返未来1999/异环）。",
-      "summaryZh": "二游活动/卡池排期速查：侧边栏底部按钮，点击展开 10 款已安装二游的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置（原神/星铁/绝区零/鸣潮/明日方舟/终末地/蔚蓝档案国服+国际服/重返未来1999/异环）。",
+      "summaryEn": "Sidebar gacha schedule lookup: a button at the bottom of the sidebar expands the current version, banners and event windows of 34 anime games, with automatic network refresh, per-entry end-time reminders, a sidebar ticker and an .ics export of the current schedule.",
+      "summaryZh": "二游活动/卡池排期速查：侧边栏底部按钮，点击展开 34 款游戏的当前版本、卡池与活动起止；支持联网自动刷新、逐条目到期提醒、侧栏轮播与当期排期 .ics 导出。",
       "branch": "main",
-      "commit": "fa27efe5214dbdb2160fb9963f3bc1227248538a",
+      "commit": "1ba299fd7c28838ec2ffb81ee9c0bc9f2d9a3c39",
       "manifest": "package.json",
       "patch": "cordis.patch.yml",
       "repoLicense": "MIT",
@@ -31615,10 +31615,13 @@
       "compatibility": "declared-rc6",
       "lifecycle": "none",
       "signals": [
-        "client-injection"
+        "client-injection",
+        "external-network",
+        "filesystem-write",
+        "subprocess"
       ],
-      "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
-      "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+      "noteEn": "Refreshed from the v0.13.2 release commit: the manifest-to-patch chain, both license fields, the npm identity and the install-script surface were reviewed statically; the manifest declares no install-time lifecycle scripts (`preinstall` / `install` / `postinstall` / `prepare`), the git-hook setup is a plain `setup:hooks` script that nothing runs automatically, and `prepublishOnly` runs at publish time only. Changes since the previous pin: coverage 33 → 34 games, long-window activities are no longer hidden, one unconfigured side no longer keeps showing its previous cached result, and 33 of 34 entries are shown by default.",
+      "noteZh": "按 v0.13.2 发布提交刷新：已静态核对 manifest 与 patch 链、两个许可证字段、npm 身份与安装脚本面；manifest 不含安装期生命周期脚本（`preinstall` / `install` / `postinstall` / `prepare`），git hook 安装是普通 `setup:hooks` 脚本、无任何环节自动执行，`prepublishOnly` 为发布期构建检查。相对上一版的变化：覆盖 33 → 34 款、长窗口活动不再隐藏、未配置来源的一侧不再沿用上次缓存结果、33/34 条目默认展示。"
     },
     {
       "id": "featherhunter-dsh-mattpocock-skills-deck",
