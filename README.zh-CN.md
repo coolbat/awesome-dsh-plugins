@@ -831,10 +831,10 @@ patch 路径，不 clone、不安装、也不执行第三方代码。只有候�
   - **许可证:** repo `unknown` / package `MIT` · 生命周期 `none` · 兼容性未知
   - **能力信号:** `session-data` `message-navigation` `client-injection` · **核验备注:** 已静态核对固定源码、manifest、patch、可用许可证证据与文档安装身份；未执行插件代码或声明能力。
 
-- **Archive Management / 归档管理** · [Ultroncn/dsh-archived-chats@a4c9b5b](https://github.com/Ultroncn/dsh-archived-chats/commit/a4c9b5b1da894e694fc4b36c496355b793782c4a) — 按工作区管理已归档与未归档会话，支持独立范围正文搜索、上下文预览、标签备注、ZIP 备份导入导出、会话谱系、永久删除确认与失败重试，以及官方宿主更新。支持 DeepSeek Harness 0.1.0-rc.7 起的旧宿主，并显式支持 0.2.2-rc.1 与 0.2.2-rc.2。
-  - **证据:** [manifest](https://github.com/Ultroncn/dsh-archived-chats/blob/a4c9b5b1da894e694fc4b36c496355b793782c4a/package.json) → [patch](https://github.com/Ultroncn/dsh-archived-chats/blob/a4c9b5b1da894e694fc4b36c496355b793782c4a/cordis.patch.yml) · **身份:** `dsh-archived-chats`
+- **Archive Management / 归档管理** · [Ultroncn/dsh-archived-chats@0884f59](https://github.com/Ultroncn/dsh-archived-chats/commit/0884f59c90de1fa99a8fa988e03850dcd3b1b16e) — 按工作区管理已归档与未归档会话，支持独立范围正文搜索、上下文预览、标签备注、ZIP 备份导入导出、会话谱系、永久删除确认与失败重试，以及官方宿主更新。支持 DeepSeek Harness 0.1.0-rc.7 起的旧宿主，并显式支持 0.2.2-rc.1、0.2.2-rc.2 与 0.2.2-rc.3。
+  - **证据:** [manifest](https://github.com/Ultroncn/dsh-archived-chats/blob/0884f59c90de1fa99a8fa988e03850dcd3b1b16e/package.json) → [patch](https://github.com/Ultroncn/dsh-archived-chats/blob/0884f59c90de1fa99a8fa988e03850dcd3b1b16e/cordis.patch.yml) · **身份:** `dsh-archived-chats`
   - **许可证:** repo `MIT` / package `MIT` · 生命周期 `none` · 兼容性未知
-  - **能力信号:** `session-data` `archive-registry` `filesystem-delete` `client-injection` `zip-import-export` `external-network` `package-management` · **核验备注:** 已按 2.0.2 固定发布提交核对 manifest、patch、许可证与安装身份。已归档与未归档各自支持正文搜索和确认永久删除，会话谱系图展示已记录的关系，更新交由官方宿主管理。本次目录证据更新未执行插件，也不认证运行时兼容性。manifest 恢复旧版宿主范围并显式包含 DSH 0.2.2-rc.2，受支持的旧版宿主可直接升级插件。
+  - **能力信号:** `session-data` `archive-registry` `filesystem-delete` `client-injection` `zip-import-export` `external-network` `package-management` · **核验备注:** 已按 2.0.3 固定发布提交核对 manifest、patch、许可证与安装身份。已归档与未归档各自支持正文搜索和确认永久删除，会话谱系图展示已记录的关系，更新交由官方宿主管理。本次目录证据更新未执行插件，也不认证运行时兼容性。manifest 恢复旧版宿主范围并显式包含 DSH 0.2.2-rc.2 与 0.2.2-rc.3，受支持的旧版宿主可直接升级插件。
 
 - **DSH Unarchive** · [uwu9039/dsh-unarchive@5f10e58](https://github.com/uwu9039/dsh-unarchive/commit/5f10e58188d808a12414ff134216f87fdb2d2ca9) — 带预览、恢复与可选归档确认的会话回收站。
   - **证据:** [manifest](https://github.com/uwu9039/dsh-unarchive/blob/5f10e58188d808a12414ff134216f87fdb2d2ca9/package.json) → [patch](https://github.com/uwu9039/dsh-unarchive/blob/5f10e58188d808a12414ff134216f87fdb2d2ca9/cordis.patch.yml) · **身份:** Git 源 / 未知
