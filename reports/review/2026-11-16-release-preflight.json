@@ -1,0 +1,70 @@
+{
+  "reviewedAt": "2026-11-16",
+  "checkedAt": "2026-11-16T01:05:14.351Z",
+  "mode": "read-only",
+  "providerVerified": false,
+  "httpStatus": 401,
+  "conclusion": "Cloudflare API read is unauthorized. Current provider configuration and canonical deployment cannot be refreshed. Prior observed file ceiling and missing same-production-commit CI-before-deploy gate remain unresolved, not newly certified.",
+  "previousEvidence": "reports/review/2026-11-15-release-preflight.json",
+  "mergeAllowed": false,
+  "productionDeploymentTriggered": false,
+  "requiredNextStep": "Restore authorized read access and separately resolve the Pages file ceiling and CI-before-production deployment dependency. No local production deployment workaround.",
+  "scope": "No workflow, provider configuration, secrets, source/UI/exporter, plan, protections or production state changed.",
+  "productionHttp": {
+    "checkedAt": "2026-11-16T01:05:17.367Z",
+    "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+    "catalog": {
+      "reviewed": 1020,
+      "held": 688,
+      "excluded": 1
+    },
+    "results": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": true
+      },
+      {
+        "path": "/plugins/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": true,
+        "actual": 1020,
+        "expected": 1020,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "path": "/review/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": false,
+        "actual": 689,
+        "expected": 689,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "path": "/en/",
+        "status": 301,
+        "location": "/",
+        "snapshotDatePresent": false
+      }
+    ]
+  },
+  "sourcePR": {
+    "number": 2,
+    "head": "361e7259c0768ccfa5cb451b9adcb59c3d92ab21",
+    "quality": {
+      "conclusion": "action_required",
+      "run": "https://github.com/coolbat/awesome-dsh-plugins/actions/runs/43752370341",
+      "jobs": 0
+    },
+    "preview": {
+      "conclusion": "SUCCESS",
+      "deploymentId": "e075f436-347b-45bc-9eac-2d6576afcaf4"
+    }
+  },
+  "weeklyReport": "reports/review/2026-11-16-weekly.json"
+}
