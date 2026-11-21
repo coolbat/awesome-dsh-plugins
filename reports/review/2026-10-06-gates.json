@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-10-06T01:17:34.871Z",
+  "node": "v22.23.1",
+  "preliminaryFailures": [
+    {
+      "gate": "catalog-count-tests",
+      "reason": "2 stale expected-count assertions after the new catalog wave; updated and regression tests added."
+    },
+    {
+      "gate": "catalog-validator",
+      "reason": "2 new prepublishOnly signal tags were not lowercase hyphenated; normalized to prepublish-only without altering the lifecycle evidence."
+    },
+    {
+      "gate": "ledger-count-test",
+      "reason": "The CLI output assertion still expected 3987 records; updated to the validated 4053-record source snapshot."
+    },
+    {
+      "gate": "candidate-formatting",
+      "reason": "The source queue required repository Prettier formatting; format-only change checked for semantic equality with the frozen PR source."
+    }
+  ],
+  "gates": [
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-06T01:17:12.613Z",
+      "finishedAt": "2026-10-06T01:17:17.948Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-06T01:17:17.949Z",
+      "finishedAt": "2026-10-06T01:17:18.017Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-06T01:17:18.017Z",
+      "finishedAt": "2026-10-06T01:17:18.124Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-06T01:17:18.124Z",
+      "finishedAt": "2026-10-06T01:17:34.609Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 30226,
+    "bytes": 443108986,
+    "largest": [
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4257773
+      },
+      {
+        "path": "out/zh/plugins/index.html",
+        "bytes": 4208258
+      },
+      {
+        "path": "out/_next/static/chunks/27av71krwfq4u.js",
+        "bytes": 3842192
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  }
+}

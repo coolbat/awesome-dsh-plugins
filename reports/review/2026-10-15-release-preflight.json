@@ -1,0 +1,46 @@
+{
+  "reviewedAt": "2026-10-15",
+  "checkedAt": "2026-10-15T01:01:23.265Z",
+  "mode": "read-only",
+  "project": "awesome-dsh-plugins",
+  "productionBranch": "main",
+  "cloudflare": {
+    "source": "github",
+    "productionDeploymentsEnabled": true,
+    "buildCommand": "npm run build",
+    "destinationDirectory": "out",
+    "previewDeploymentSetting": "all"
+  },
+  "githubWorkflow": {
+    "path": ".github/workflows/catalog.yml",
+    "sha256": "3893b030d55128fcac6abdd093d639f3ae8ac37531465dbfcc4916c37aabab25",
+    "events": [
+      "pull_request",
+      "push to main"
+    ],
+    "job": "quality",
+    "steps": [
+      "npm ci",
+      "npm run check",
+      "npm run build",
+      "upload out artifact"
+    ],
+    "deploymentJob": false
+  },
+  "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+  "production": {
+    "id": "f2e32f47-7e17-4b05-ac53-ff129d91acc8",
+    "commit": "6dee785987fb983e4d585afd95abc155d112e3ab",
+    "stage": {
+      "name": "deploy",
+      "started_on": "2026-09-09T01:15:05.478842Z",
+      "ended_on": "2026-09-09T01:15:52.662601Z",
+      "status": "success"
+    }
+  },
+  "conclusion": "Observed Pages production Git integration on main only runs npm run build. The separate GitHub quality workflow has no deployment dependency or job proving quality success on that same production commit precedes deployment.",
+  "mergeAllowed": false,
+  "productionDeploymentTriggered": false,
+  "requiredNextStep": "Separately establish a same-commit CI-gated automatic production pipeline and resolve the independent 20000-file Pages limit. Do not merge this audit or deploy locally as a workaround.",
+  "scope": "No workflow, provider configuration, secrets, source/UI/exporter, plan, branch protections or production state were changed."
+}

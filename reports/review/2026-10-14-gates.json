@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-14T01:15:04.030Z",
+  "node": "v22.23.1",
+  "preliminaryFailures": [
+    {
+      "gate": "catalog-validation",
+      "reason": "Two new category labels were outside the existing schema; normalized both to the existing Integrations category before full gates."
+    }
+  ],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-14T01:14:29.475Z",
+      "finishedAt": "2026-10-14T01:14:29.761Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-14T01:14:29.762Z",
+      "finishedAt": "2026-10-14T01:14:38.628Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-14T01:14:38.628Z",
+      "finishedAt": "2026-10-14T01:14:38.719Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-14T01:14:38.719Z",
+      "finishedAt": "2026-10-14T01:14:38.884Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-14T01:14:38.884Z",
+      "finishedAt": "2026-10-14T01:15:03.598Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 33186,
+    "bytes": 486983318,
+    "largest": [
+      {
+        "path": "out/plugins/index.html",
+        "bytes": 4395447
+      },
+      {
+        "path": "out/_next/static/chunks/0_yw8n3he53q0.js",
+        "bytes": 4360091
+      },
+      {
+        "path": "out/zh/plugins/index.html",
+        "bytes": 4346122
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

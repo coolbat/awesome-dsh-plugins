@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-10-27T01:19:23.806Z",
+  "node": "v22.23.1",
+  "productionBuildEnvironment": {
+    "NEXT_PUBLIC_SITE_URL": "https://dshplugin.net"
+  },
+  "deploymentLimitEvidence": "Provider API returned 401 on 2026-10-27, so fresh provider logs/settings are unavailable. GitHub reports prior audit-head deployment e2a8811a-456a-4b70-8b1d-c3160ec5c8c8 failed on 2026-10-26. An older 2026-10-25 provider read verified the 20,000-file limit; the current failure cause is not freshly verified. Current export count is local corroboration, not a fresh provider log. Production deployment has not been triggered.",
+  "gates": [
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-27T01:18:47.769Z",
+      "finishedAt": "2026-10-27T01:18:58.167Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-27T01:18:58.168Z",
+      "finishedAt": "2026-10-27T01:18:58.278Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-27T01:18:58.278Z",
+      "finishedAt": "2026-10-27T01:18:58.498Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-27T01:18:58.499Z",
+      "finishedAt": "2026-10-27T01:19:23.289Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 41506,
+    "bytes": 607880357,
+    "largest": [
+      {
+        "path": "out/review/index.html",
+        "bytes": 5683187
+      },
+      {
+        "path": "out/_next/static/chunks/3_c_yxe1aar-e.js",
+        "bytes": 5638632
+      },
+      {
+        "path": "out/zh/review/index.html",
+        "bytes": 5576806
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}
