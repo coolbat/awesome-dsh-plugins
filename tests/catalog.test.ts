@@ -13,7 +13,7 @@ import {
 test("the public directory exposes reviewed records only", () => {
   const plugins = getPublishedPlugins();
 
-  assert.equal(plugins.length, 1555);
+  assert.equal(plugins.length, 1558);
   assert.ok(plugins.every((plugin) => plugin.status === "reviewed"));
   assert.ok(
     !plugins.some((plugin) => plugin.id === "sandbaseai-sandbase-harness"),
@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 5248,
-    reviewed: 1555,
-    held: 3688,
+    total: 5287,
+    reviewed: 1558,
+    held: 3724,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 5248);
+  assert.equal(getEvidenceRecords().length, 5287);
 });
 
 test("October 20 admissions retain fixed source and credential disclosures", () => {
