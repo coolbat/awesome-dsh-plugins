@@ -426,7 +426,7 @@ test("the repository review ledger passes its CLI gate", () => {
   assert.equal(result.status, 0, result.stderr);
   assert.equal(
     result.stdout.trim(),
-    "Review ledger valid: 8550 records (0 pending).",
+    "Review ledger valid: 8614 records (0 pending).",
   );
 });
 
@@ -473,7 +473,7 @@ test("October 19 distinguishes renamed repositories, actual templates and patch 
   const current = JSON.parse(readFileSync("data/review-ledger.json", "utf8"));
   assert.equal(
     current.sourceCommit,
-    "8f091de54e5066e47ebc27c923c17bd471fc649c",
+    "55e5e6d01e982a8b33ec75ba6be9559639ce7d9a",
   );
   for (const [key, disposition, catalogId] of [
     [
@@ -574,7 +574,7 @@ test("October 15 distinguishes skill-only bundles and development playgrounds", 
   }
   assert.equal(
     current.sourceCommit,
-    "8f091de54e5066e47ebc27c923c17bd471fc649c",
+    "55e5e6d01e982a8b33ec75ba6be9559639ce7d9a",
   );
 });
 
