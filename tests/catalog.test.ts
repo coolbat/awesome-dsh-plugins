@@ -24,13 +24,13 @@ test("the evidence index preserves held and excluded records", () => {
   const stats = getCatalogStats();
 
   assert.deepEqual(stats, {
-    total: 5464,
+    total: 5501,
     reviewed: 1583,
-    held: 3876,
+    held: 3913,
     excluded: 5,
     categories: 11,
   });
-  assert.equal(getEvidenceRecords().length, 5464);
+  assert.equal(getEvidenceRecords().length, 5501);
 });
 
 test("October 20 admissions retain fixed source and credential disclosures", () => {
