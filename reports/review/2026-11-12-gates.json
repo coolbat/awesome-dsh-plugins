@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-11-12T01:17:08.378Z",
+  "node": "v22.23.1",
+  "productionBuildEnvironment": {
+    "NEXT_PUBLIC_SITE_URL": "https://dshplugin.net"
+  },
+  "deploymentLimitEvidence": "Current provider API returns HTTP 401. The previous successful authenticated observation dated 2026-11-01 recorded the 20000-file Pages ceiling; the current export count is independently measured locally. No production deployment is triggered.",
+  "gates": [
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-11-12T01:16:26.077Z",
+      "finishedAt": "2026-11-12T01:16:37.947Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-11-12T01:16:37.949Z",
+      "finishedAt": "2026-11-12T01:16:38.082Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-11-12T01:16:38.082Z",
+      "finishedAt": "2026-11-12T01:16:38.293Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-11-12T01:16:38.293Z",
+      "finishedAt": "2026-11-12T01:17:07.916Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 48686,
+    "bytes": 713331204,
+    "largest": [
+      {
+        "path": "out/review/index.html",
+        "bytes": 7127620
+      },
+      {
+        "path": "out/zh/review/index.html",
+        "bytes": 7024289
+      },
+      {
+        "path": "out/_next/static/chunks/3zic1n0kt5s33.js",
+        "bytes": 6841703
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}

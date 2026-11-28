@@ -1,0 +1,437 @@
+{
+  "checkedAt": "2026-11-23T01:17:17.787Z",
+  "latestSource": "59135e06d900f1fb581177c8041c67210266f939",
+  "refs": {
+    "main": {
+      "commit": "6dee785987fb983e4d585afd95abc155d112e3ab",
+      "queue": {
+        "already-listed": 1618,
+        "ready-for-review": 1517,
+        "held": 17
+      },
+      "snapshotSource": "f7a33ae53d8b5a05051edc95a25c0689a3977b39",
+      "snapshotCount": 1517,
+      "ledger": {
+        "source-conflict": 565,
+        "example-fixture-or-archive": 171,
+        "duplicate-or-superseded": 561,
+        "non-plugin-package": 121,
+        "catalog-held": 28,
+        "unavailable": 51,
+        "catalog-reviewed": 20
+      },
+      "catalog": {
+        "reviewed": 1020,
+        "held": 688,
+        "excluded": 1
+      },
+      "duplicateCandidateKeys": [],
+      "duplicateSnapshotKeys": [],
+      "duplicateLedgerKeys": [],
+      "duplicateCatalogIds": [],
+      "duplicateCatalogRepositories": [],
+      "non40SourceCommits": [],
+      "validationErrors": [],
+      "readmeCheck": {
+        "status": 0,
+        "output": "Generated README catalogs are up to date."
+      },
+      "latestReadyWithoutExactDecision": 7410,
+      "fileHashes": {
+        "data/candidates.json": "3bf4f7cbe64c71e89f1de0ebeb7b236ed1ea72e63d84818ee78bac73eaba796f",
+        "data/review-snapshot.json": "b5a39f30e70ff004eaf8a2b0bb2a40241d848c262a7c88925445d772d924af7a",
+        "data/review-ledger.json": "a72ec25a196d7fa14a40a8778b61c34cc3a27327705af5eaad3e12840be9bec8",
+        "data/plugins.json": "880ce98112d75cd267879356f344fdbf8c98983093f9a8280d2fc4a0b1c959f2",
+        "README.md": "236f598fdf8b62ecb6d83d74e5c0f37e2eabcc6cab044179bd9a3b38c7238762",
+        "README.zh-CN.md": "903303b8b5eda6b714abc386adfda82c3357560d9c7efe45325e3b8ee721a9d9"
+      }
+    },
+    "pr2": {
+      "commit": "59135e06d900f1fb581177c8041c67210266f939",
+      "queue": {
+        "already-listed": 1654,
+        "ready-for-review": 8496,
+        "held": 64
+      },
+      "snapshotSource": "f7a33ae53d8b5a05051edc95a25c0689a3977b39",
+      "snapshotCount": 1517,
+      "ledger": {
+        "source-conflict": 565,
+        "example-fixture-or-archive": 171,
+        "duplicate-or-superseded": 561,
+        "non-plugin-package": 121,
+        "catalog-held": 28,
+        "unavailable": 51,
+        "catalog-reviewed": 20
+      },
+      "catalog": {
+        "reviewed": 1020,
+        "held": 688,
+        "excluded": 1
+      },
+      "duplicateCandidateKeys": [],
+      "duplicateSnapshotKeys": [],
+      "duplicateLedgerKeys": [],
+      "duplicateCatalogIds": [],
+      "duplicateCatalogRepositories": [],
+      "non40SourceCommits": [],
+      "validationErrors": [],
+      "readmeCheck": {
+        "status": 0,
+        "output": "Generated README catalogs are up to date."
+      },
+      "latestReadyWithoutExactDecision": 7410,
+      "fileHashes": {
+        "data/candidates.json": "51921c355bd1d17aad3bc51a99cc305dd8cf19d58108f7f25a1108870008ae47",
+        "data/review-snapshot.json": "b5a39f30e70ff004eaf8a2b0bb2a40241d848c262a7c88925445d772d924af7a",
+        "data/review-ledger.json": "a72ec25a196d7fa14a40a8778b61c34cc3a27327705af5eaad3e12840be9bec8",
+        "data/plugins.json": "880ce98112d75cd267879356f344fdbf8c98983093f9a8280d2fc4a0b1c959f2",
+        "README.md": "236f598fdf8b62ecb6d83d74e5c0f37e2eabcc6cab044179bd9a3b38c7238762",
+        "README.zh-CN.md": "903303b8b5eda6b714abc386adfda82c3357560d9c7efe45325e3b8ee721a9d9"
+      }
+    },
+    "priorAudit": {
+      "commit": "e6de73e34fd2e07846f42c301d8e366a064eadf3",
+      "queue": {
+        "already-listed": 1654,
+        "ready-for-review": 8377,
+        "held": 64
+      },
+      "snapshotSource": "60745119865bac70ed9cef9f35e9c2ae57022d46",
+      "snapshotCount": 8377,
+      "ledger": {
+        "source-conflict": 1791,
+        "catalog-held": 2462,
+        "duplicate-or-superseded": 2635,
+        "catalog-reviewed": 415,
+        "unavailable": 105,
+        "example-fixture-or-archive": 678,
+        "non-plugin-package": 284,
+        "catalog-excluded": 3,
+        "structural-rejected": 4
+      },
+      "catalog": {
+        "reviewed": 1558,
+        "held": 3724,
+        "excluded": 5
+      },
+      "duplicateCandidateKeys": [],
+      "duplicateSnapshotKeys": [],
+      "duplicateLedgerKeys": [],
+      "duplicateCatalogIds": [],
+      "duplicateCatalogRepositories": [],
+      "non40SourceCommits": [],
+      "validationErrors": [],
+      "readmeCheck": {
+        "status": 0,
+        "output": "Generated README catalogs are up to date."
+      },
+      "latestReadyWithoutExactDecision": 199,
+      "fileHashes": {
+        "data/candidates.json": "5e2dac37be82f646d6d6b3a44baebde9d4a4f1fc122094a89bc12dbec3961563",
+        "data/review-snapshot.json": "8523d09fc69389af54c4511b8b8b3c7e5dab069af706c9781bf7d513b1e1c68b",
+        "data/review-ledger.json": "4ac8b2eefb41a43fc62e76a9c526fcfe85a8cdcde244d78d020e566ce09db5da",
+        "data/plugins.json": "9d934282876795c7f94b02d14a2d8dbed175e74c0830f49299661b4c02108feb",
+        "README.md": "33627e3a249bdcee0070aae9721c256c4cbe6af133aa9248240f3bdcef783ffc",
+        "README.zh-CN.md": "f857b0145da6ea13ec65166a948b7c35a02be03bcdfe4e879e1a5c90450826bc"
+      }
+    },
+    "pr33": {
+      "commit": "49cde8bdf84d767a0b99f4da73b77cc6b7e60a32",
+      "queue": {
+        "already-listed": 1618,
+        "ready-for-review": 1517,
+        "held": 17
+      },
+      "snapshotSource": "f7a33ae53d8b5a05051edc95a25c0689a3977b39",
+      "snapshotCount": 1517,
+      "ledger": {
+        "source-conflict": 565,
+        "example-fixture-or-archive": 171,
+        "duplicate-or-superseded": 561,
+        "non-plugin-package": 121,
+        "catalog-held": 28,
+        "unavailable": 51,
+        "catalog-reviewed": 20
+      },
+      "catalog": {
+        "reviewed": 1021,
+        "held": 688,
+        "excluded": 1
+      },
+      "duplicateCandidateKeys": [],
+      "duplicateSnapshotKeys": [],
+      "duplicateLedgerKeys": [],
+      "duplicateCatalogIds": [],
+      "duplicateCatalogRepositories": [],
+      "non40SourceCommits": [],
+      "validationErrors": [],
+      "readmeCheck": {
+        "status": 0,
+        "output": "Generated README catalogs are up to date."
+      },
+      "latestReadyWithoutExactDecision": 7410,
+      "fileHashes": {
+        "data/candidates.json": "3bf4f7cbe64c71e89f1de0ebeb7b236ed1ea72e63d84818ee78bac73eaba796f",
+        "data/review-snapshot.json": "b5a39f30e70ff004eaf8a2b0bb2a40241d848c262a7c88925445d772d924af7a",
+        "data/review-ledger.json": "a72ec25a196d7fa14a40a8778b61c34cc3a27327705af5eaad3e12840be9bec8",
+        "data/plugins.json": "9adaa83f235a36105d75e9a575db2b171da79c3b5ffbb7a48f708ddb27cec2be",
+        "README.md": "dce55be5df27c88568015a62babad3e120bf7946911e6b6149faa515cb12d7e8",
+        "README.zh-CN.md": "5a54f1b9f9a329b737eebc554d82529e5e7ca6f00d462a06d6afdd5ed8b20075"
+      }
+    },
+    "pr35": {
+      "commit": "25c244e00578b8d9448291f9d67a6855103071f3",
+      "queue": {
+        "already-listed": 1618,
+        "ready-for-review": 1517,
+        "held": 17
+      },
+      "snapshotSource": "f7a33ae53d8b5a05051edc95a25c0689a3977b39",
+      "snapshotCount": 1517,
+      "ledger": {
+        "source-conflict": 565,
+        "example-fixture-or-archive": 171,
+        "duplicate-or-superseded": 561,
+        "non-plugin-package": 121,
+        "catalog-held": 28,
+        "unavailable": 51,
+        "catalog-reviewed": 20
+      },
+      "catalog": {
+        "reviewed": 1020,
+        "held": 688,
+        "excluded": 1
+      },
+      "duplicateCandidateKeys": [],
+      "duplicateSnapshotKeys": [],
+      "duplicateLedgerKeys": [],
+      "duplicateCatalogIds": [],
+      "duplicateCatalogRepositories": [],
+      "non40SourceCommits": [],
+      "validationErrors": [],
+      "readmeCheck": {
+        "status": 0,
+        "output": "Generated README catalogs are up to date."
+      },
+      "latestReadyWithoutExactDecision": 7410,
+      "fileHashes": {
+        "data/candidates.json": "3bf4f7cbe64c71e89f1de0ebeb7b236ed1ea72e63d84818ee78bac73eaba796f",
+        "data/review-snapshot.json": "b5a39f30e70ff004eaf8a2b0bb2a40241d848c262a7c88925445d772d924af7a",
+        "data/review-ledger.json": "a72ec25a196d7fa14a40a8778b61c34cc3a27327705af5eaad3e12840be9bec8",
+        "data/plugins.json": "05211d461771be6003e60ca7ffe77bdade83fc42f1b14de75e3e607aaceaa7c7",
+        "README.md": "8c8f166db65be575c0aa2e0d8373d4b2aac0133695a0686446b612320d1229ab",
+        "README.zh-CN.md": "484ddbb318c4c946fbea8fab6b4b523404f14974d40a05d88106ee91a39c4cc3"
+      }
+    },
+    "currentAudit": {
+      "commit": null,
+      "queue": {
+        "already-listed": 1654,
+        "ready-for-review": 8496,
+        "held": 64
+      },
+      "snapshotSource": "59135e06d900f1fb581177c8041c67210266f939",
+      "snapshotCount": 8496,
+      "ledger": {
+        "source-conflict": 1807,
+        "catalog-held": 2518,
+        "duplicate-or-superseded": 2673,
+        "catalog-reviewed": 419,
+        "unavailable": 105,
+        "example-fixture-or-archive": 684,
+        "non-plugin-package": 283,
+        "catalog-excluded": 3,
+        "structural-rejected": 4
+      },
+      "catalog": {
+        "reviewed": 1564,
+        "held": 3785,
+        "excluded": 5
+      },
+      "duplicateCandidateKeys": [],
+      "duplicateSnapshotKeys": [],
+      "duplicateLedgerKeys": [],
+      "duplicateCatalogIds": [],
+      "duplicateCatalogRepositories": [],
+      "non40SourceCommits": [],
+      "validationErrors": [],
+      "readmeCheck": {
+        "status": 0,
+        "output": "Generated README catalogs are up to date."
+      },
+      "latestReadyWithoutExactDecision": 0,
+      "fileHashes": {
+        "data/candidates.json": "5a69174d7f8cf30301eca2c67360825bfe705f6f9977b447ae533e48a52ff2ab",
+        "data/review-snapshot.json": "49a1b758392a173e681a9ca42aa9b154620eb4a75309d3164da9340cc885eb45",
+        "data/review-ledger.json": "e10db0247abe5cb37a6c561a20beef7756fdb9a23c0ba8010d7bf8917069a86f",
+        "data/plugins.json": "44838451b00c7d0281474946b4e1861047dab40fd9da38615eadd5132c73fd60",
+        "README.md": "42ca1c5357a3a96c5fed89dc5f3b00b3d30e1bf8a72536ea1fe2b842a3d8e10d",
+        "README.zh-CN.md": "743011ef860da8f3c5c5239f0a51c222106cd21a16b103780ed5face48d61ceb"
+      }
+    }
+  },
+  "openPRs": [
+    {
+      "baseRefName": "main",
+      "baseRefOid": "6dee785987fb983e4d585afd95abc155d112e3ab",
+      "headRefName": "bot/catalog-discovery",
+      "headRefOid": "59135e06d900f1fb581177c8041c67210266f939",
+      "mergeCommit": null,
+      "mergeStateStatus": "UNSTABLE",
+      "mergeable": "MERGEABLE",
+      "number": 2,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-22T20:27:34Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://dash.cloudflare.com/?to=/a8076357128d3e8be7dca72dbda3e8bf/pages/view/awesome-dsh-plugins/8396c3e9-ee34-4c49-a5d6-791122022c08",
+          "name": "Cloudflare Pages",
+          "startedAt": "2026-11-22T20:27:34Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "url": "https://github.com/coolbat/awesome-dsh-plugins/pull/2",
+      "workflowRuns": [
+        {
+          "conclusion": "action_required",
+          "databaseId": 45066338013,
+          "status": "completed",
+          "url": "https://github.com/coolbat/awesome-dsh-plugins/actions/runs/45066338013",
+          "workflowName": "Catalog and website checks"
+        }
+      ]
+    },
+    {
+      "baseRefName": "main",
+      "baseRefOid": "6dee785987fb983e4d585afd95abc155d112e3ab",
+      "headRefName": "codex/review-new-candidates-20260911",
+      "headRefOid": "e6de73e34fd2e07846f42c301d8e366a064eadf3",
+      "mergeCommit": null,
+      "mergeStateStatus": "UNSTABLE",
+      "mergeable": "MERGEABLE",
+      "number": 28,
+      "statusCheckRollup": [
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-22T01:23:21Z",
+          "conclusion": "SUCCESS",
+          "detailsUrl": "https://github.com/coolbat/awesome-dsh-plugins/actions/runs/44971022462/job/137050596265",
+          "name": "quality",
+          "startedAt": "2026-11-22T01:20:48Z",
+          "status": "COMPLETED",
+          "workflowName": "Catalog and website checks"
+        },
+        {
+          "__typename": "CheckRun",
+          "completedAt": "2026-11-22T01:20:44Z",
+          "conclusion": "FAILURE",
+          "detailsUrl": "https://dash.cloudflare.com/?to=/a8076357128d3e8be7dca72dbda3e8bf/pages/view/awesome-dsh-plugins/3606ad0d-31a9-4b72-a505-bd7d72ab364b",
+          "name": "Cloudflare Pages",
+          "startedAt": "2026-11-22T01:20:44Z",
+          "status": "COMPLETED",
+          "workflowName": ""
+        }
+      ],
+      "url": "https://github.com/coolbat/awesome-dsh-plugins/pull/28",
+      "workflowRuns": [
+        {
+          "conclusion": "success",
+          "databaseId": 44971022462,
+          "status": "completed",
+          "url": "https://github.com/coolbat/awesome-dsh-plugins/actions/runs/44971022462",
+          "workflowName": "Catalog and website checks"
+        }
+      ]
+    },
+    {
+      "baseRefName": "main",
+      "baseRefOid": "6dee785987fb983e4d585afd95abc155d112e3ab",
+      "headRefName": "feat/add-dsh-version-guard",
+      "headRefOid": "49cde8bdf84d767a0b99f4da73b77cc6b7e60a32",
+      "mergeCommit": null,
+      "mergeStateStatus": "CLEAN",
+      "mergeable": "MERGEABLE",
+      "number": 33,
+      "statusCheckRollup": [],
+      "url": "https://github.com/coolbat/awesome-dsh-plugins/pull/33",
+      "workflowRuns": [
+        {
+          "conclusion": "failure",
+          "databaseId": 38427703693,
+          "status": "completed",
+          "url": "https://github.com/coolbat/awesome-dsh-plugins/actions/runs/38427703693",
+          "workflowName": "Catalog and website checks"
+        }
+      ]
+    },
+    {
+      "baseRefName": "main",
+      "baseRefOid": "6dee785987fb983e4d585afd95abc155d112e3ab",
+      "headRefName": "add-dsh-gacha-calendar",
+      "headRefOid": "25c244e00578b8d9448291f9d67a6855103071f3",
+      "mergeCommit": null,
+      "mergeStateStatus": "UNSTABLE",
+      "mergeable": "MERGEABLE",
+      "number": 35,
+      "statusCheckRollup": [],
+      "url": "https://github.com/coolbat/awesome-dsh-plugins/pull/35",
+      "workflowRuns": [
+        {
+          "conclusion": "action_required",
+          "databaseId": 43583039720,
+          "status": "completed",
+          "url": "https://github.com/coolbat/awesome-dsh-plugins/actions/runs/43583039720",
+          "workflowName": "Catalog and website checks"
+        }
+      ]
+    }
+  ],
+  "method": "Static reconciliation of frozen data and immutable refs. Current trusted README renderer only; no code from candidate repositories or contributor PRs was executed.",
+  "catalogChangesInOtherPRs": {
+    "pr33": [
+      {
+        "id": "skyjjgw-dsh-version-guard",
+        "repository": "skyjjgw/dsh-version-guard",
+        "commit": "88e313df37c2b37896fd0a948844d4f614ef23e3",
+        "status": "reviewed",
+        "compatibility": "unknown"
+      }
+    ],
+    "pr35": [
+      {
+        "id": "eastmg-dsh-gacha-calendar",
+        "repository": "EastMG/dsh-gacha-calendar",
+        "commit": "1ba299fd7c28838ec2ffb81ee9c0bc9f2d9a3c39",
+        "status": "reviewed",
+        "compatibility": "declared-rc6",
+        "priorAuditRecord": {
+          "id": "eastmg-dsh-gacha-calendar",
+          "name": "Gacha Calendar",
+          "repository": "EastMG/dsh-gacha-calendar",
+          "package": "dsh-gacha-calendar",
+          "category": "Developer Tools",
+          "status": "reviewed",
+          "summaryEn": "二游活动/卡池排期速查：侧边栏底部按钮，点击展开 10 款已安装二游的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置（原神/星铁/绝区零/鸣潮/明日方舟/终末地/蔚蓝档案国服+国际服/重返未来1999/异环）。",
+          "summaryZh": "二游活动/卡池排期速查：侧边栏底部按钮，点击展开 10 款已安装二游的当前版本、卡池与活动起止；支持联网自动刷新与刷新频率设置（原神/星铁/绝区零/鸣潮/明日方舟/终末地/蔚蓝档案国服+国际服/重返未来1999/异环）。",
+          "branch": "main",
+          "commit": "fa27efe5214dbdb2160fb9963f3bc1227248538a",
+          "manifest": "package.json",
+          "patch": "cordis.patch.yml",
+          "repoLicense": "MIT",
+          "packageLicense": "MIT",
+          "compatibility": "declared-rc6",
+          "lifecycle": "none",
+          "signals": [
+            "client-injection"
+          ],
+          "noteEn": "The fixed source, same-commit patch, licenses and installation identity were reviewed statically; lifecycle hooks, plugin code and capabilities were not executed.",
+          "noteZh": "已静态核对固定源码、同提交 patch、许可证与安装身份；未执行生命周期 hook、插件代码或相关能力。"
+        }
+      }
+    ]
+  },
+  "currentAuditHashNote": "Current working data hashes refreshed after formatting; JSON semantics, ledger completeness and README generation are validated by local gates."
+}

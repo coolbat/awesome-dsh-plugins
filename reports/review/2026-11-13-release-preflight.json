@@ -1,0 +1,82 @@
+{
+  "reviewedAt": "2026-11-13",
+  "checkedAt": "2026-11-13T01:08:58.587Z",
+  "mode": "read-only",
+  "providerVerified": false,
+  "httpStatus": 401,
+  "conclusion": "Cloudflare API read is unauthorized. Current provider configuration and canonical deployment cannot be refreshed. Prior observed file ceiling and missing same-production-commit CI-before-deploy gate remain unresolved, not newly certified.",
+  "previousEvidence": "reports/review/2026-11-12-release-preflight.json",
+  "mergeAllowed": false,
+  "productionDeploymentTriggered": false,
+  "requiredNextStep": "Restore authorized read access and separately resolve the Pages file ceiling and CI-before-production deployment dependency. No local production deployment workaround.",
+  "scope": "No workflow, provider configuration, secrets, source/UI/exporter, plan, protections or production state changed.",
+  "productionHttp": {
+    "checkedAt": "2026-11-13T01:09:01.113Z",
+    "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+    "catalog": {
+      "reviewed": 1020,
+      "held": 688,
+      "excluded": 1
+    },
+    "results": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": true
+      },
+      {
+        "path": "/plugins/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": true,
+        "actual": 1020,
+        "expected": 1020,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "path": "/review/",
+        "status": 200,
+        "location": null,
+        "snapshotDatePresent": false,
+        "actual": 689,
+        "expected": 689,
+        "missing": [],
+        "extra": []
+      },
+      {
+        "path": "/en/",
+        "status": 301,
+        "location": "/",
+        "snapshotDatePresent": false
+      }
+    ]
+  },
+  "sourcePullRequest": {
+    "number": 2,
+    "commit": "525485efdb3d5aebdc8a3c6ad0f4199436021ab7",
+    "mergeStateStatus": "UNSTABLE",
+    "quality": {
+      "run": 43305306407,
+      "conclusion": "action_required",
+      "jobs": 0
+    },
+    "pages": {
+      "deployment": "bbdb1550-2c1d-4c1a-b125-f102aa5e4365",
+      "conclusion": "SUCCESS"
+    }
+  },
+  "previousAuditPullRequest": {
+    "number": 28,
+    "commit": "e9c2c357ccf896da9377b61662ff1cb85aaa592d",
+    "quality": {
+      "run": 43133690434,
+      "conclusion": "SUCCESS"
+    },
+    "pages": {
+      "deployment": "f9cda321-1de0-4863-925f-410a2e3032c7",
+      "conclusion": "FAILURE"
+    }
+  }
+}

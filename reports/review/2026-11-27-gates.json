@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-11-27T01:20:32.144Z",
+  "node": "v22.23.1",
+  "productionBuildEnvironment": {
+    "NEXT_PUBLIC_SITE_URL": "https://dshplugin.net"
+  },
+  "deploymentLimitEvidence": "Current provider API returns HTTP 401. The previous successful authenticated observation dated 2026-11-01 recorded the 20000-file Pages ceiling; the current export count is independently measured locally. No production deployment is triggered.",
+  "gates": [
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-11-27T01:19:44.609Z",
+      "finishedAt": "2026-11-27T01:19:58.920Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-11-27T01:19:58.921Z",
+      "finishedAt": "2026-11-27T01:19:59.067Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-11-27T01:19:59.067Z",
+      "finishedAt": "2026-11-27T01:19:59.269Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-11-27T01:19:59.269Z",
+      "finishedAt": "2026-11-27T01:20:31.612Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 55076,
+    "bytes": 806741266,
+    "largest": [
+      {
+        "path": "out/review/index.html",
+        "bytes": 8372277
+      },
+      {
+        "path": "out/zh/review/index.html",
+        "bytes": 8270863
+      },
+      {
+        "path": "out/_next/static/chunks/0ef30b_0f-rdq.js",
+        "bytes": 7886226
+      }
+    ],
+    "historicallyObservedCloudflareFileLimit": 20000,
+    "currentProviderLimitVerified": false,
+    "withinHistoricallyObservedLimit": false,
+    "staticPages": 11014
+  },
+  "candidateSemanticMatch": true,
+  "resolvedInitialFindings": [
+    "A missing gate-report target was created before docs validation; final report records actual completed gates.",
+    "Two existing regression checks rejected an over-broad non-plugin classification for DeepSeekBot. Inspection found the own subagent-control adapter source and restored the duplicate mapping without changing these assertions."
+  ],
+  "testSummary": {
+    "tests": 125,
+    "passed": 125,
+    "failed": 0
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-20T01:09:48.133Z",
+  "node": "v22.23.1",
+  "productionBuildEnvironment": {
+    "NEXT_PUBLIC_SITE_URL": "https://dshplugin.net"
+  },
+  "deploymentLimitEvidence": "20000 files last verified 2026-10-15; current provider API returned 401, so current configuration is not re-certified.",
+  "preliminaryFailures": [],
+  "gates": [
+    {
+      "name": "focused-tests",
+      "command": "node --import tsx --test tests/catalog.test.ts tests/review-ledger.test.ts",
+      "startedAt": "2026-10-20T01:09:16.306Z",
+      "finishedAt": "2026-10-20T01:09:16.717Z",
+      "status": 0
+    },
+    {
+      "name": "check",
+      "command": "npm run check",
+      "startedAt": "2026-10-20T01:09:16.718Z",
+      "finishedAt": "2026-10-20T01:09:25.390Z",
+      "status": 0
+    },
+    {
+      "name": "complete-ledger",
+      "command": "node scripts/validate-review-ledger.mjs --require-complete",
+      "startedAt": "2026-10-20T01:09:25.390Z",
+      "finishedAt": "2026-10-20T01:09:25.481Z",
+      "status": 0
+    },
+    {
+      "name": "diff-check",
+      "command": "git diff --check",
+      "startedAt": "2026-10-20T01:09:25.481Z",
+      "finishedAt": "2026-10-20T01:09:25.626Z",
+      "status": 0
+    },
+    {
+      "name": "production-build",
+      "command": "npm run build",
+      "startedAt": "2026-10-20T01:09:25.626Z",
+      "finishedAt": "2026-10-20T01:09:47.760Z",
+      "status": 0
+    }
+  ],
+  "export": {
+    "files": 36866,
+    "bytes": 540225333,
+    "largest": [
+      {
+        "path": "out/_next/static/chunks/2fd0_gb88qnit.js",
+        "bytes": 4921184
+      },
+      {
+        "path": "out/review/index.html",
+        "bytes": 4754700
+      },
+      {
+        "path": "out/zh/review/index.html",
+        "bytes": 4645995
+      }
+    ],
+    "cloudflareFileLimit": 20000,
+    "withinLimit": false
+  },
+  "candidateSemanticMatch": true
+}
