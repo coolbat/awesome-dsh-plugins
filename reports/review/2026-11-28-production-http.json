@@ -1,0 +1,43 @@
+{
+  "checkedAt": "2026-11-28T01:03:42.790Z",
+  "main": "6dee785987fb983e4d585afd95abc155d112e3ab",
+  "catalog": {
+    "reviewed": 1020,
+    "held": 688,
+    "excluded": 1
+  },
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": null,
+      "snapshotDatePresent": true
+    },
+    {
+      "path": "/plugins/",
+      "status": 200,
+      "location": null,
+      "snapshotDatePresent": true,
+      "actual": 1020,
+      "expected": 1020,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "path": "/review/",
+      "status": 200,
+      "location": null,
+      "snapshotDatePresent": false,
+      "actual": 689,
+      "expected": 689,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "path": "/en/",
+      "status": 301,
+      "location": "/",
+      "snapshotDatePresent": false
+    }
+  ]
+}
